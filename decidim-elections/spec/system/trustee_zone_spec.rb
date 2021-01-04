@@ -100,4 +100,35 @@ describe "Trustee zone", type: :system do
       expect(page).to have_current_path(decidim.root_path)
     end
   end
+
+  context "when the bulletin_board is not configured" do
+    before do
+      Decidim::BulletinBoard.configure do |config|
+        config.authority_name = "Decidim Test Authority"
+        config.server = "https://bb.example.org"
+        config.number_of_trustees = 2
+        config.scheme = {
+          name: "test",
+          parameters: {
+            quorum: 2
+          }
+        }
+        config.api_key = nil
+        config.identification_private_key = nil
+      end
+
+      trustee
+      login_as user, scope: :user
+    end
+
+    it "notifies that it is not configured" do
+      visit decidim.account_path
+
+      expect(page).to have_content("Trustee zone")
+
+      visit decidim.decidim_elections_trustee_zone_path
+
+      expect(page).to have_content("Sorry, the Bulletin Board is not configured yet")
+    end
+  end
 end
