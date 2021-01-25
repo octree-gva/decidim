@@ -13,6 +13,8 @@ module Decidim
       include Decidim::ScopableParticipatorySpace
       include Decidim::Publicable
       include Decidim::HasUploadValidations
+      include Decidim::HasAttachments
+      include Decidim::HasAttachmentCollections
 
       VOTING_TYPE = %w(in_person online hybrid).freeze
 
@@ -85,6 +87,10 @@ module Decidim
 
       def to_param
         slug
+      end
+  
+      def attachment_context
+        :admin
       end
 
       def hybrid_voting?
