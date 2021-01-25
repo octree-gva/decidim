@@ -48,7 +48,8 @@ module Decidim
             start_time: form.start_time,
             end_time: form.end_time,
             banner_image: form.banner_image,
-            introductory_image: form.introductory_image
+            introductory_image: form.introductory_image,
+            voting_type: form.voting_type
           )
         end
       end

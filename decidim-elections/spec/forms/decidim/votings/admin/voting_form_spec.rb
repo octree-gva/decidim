@@ -13,6 +13,7 @@ describe Decidim::Votings::Admin::VotingForm do
   let(:slug) { "voting-slug" }
   let(:start_time) { 1.day.from_now }
   let(:end_time) { start_time + 1.month }
+  let(:voting_type) { "online" }
 
   let(:attributes) do
     {
@@ -22,7 +23,8 @@ describe Decidim::Votings::Admin::VotingForm do
         slug: slug,
         start_time: start_time,
         end_time: end_time,
-        scope_id: scope&.id
+        scope_id: scope&.id,
+        voting_type: voting_type
       }
     }
   end
@@ -107,5 +109,17 @@ describe Decidim::Votings::Admin::VotingForm do
     let(:scope) { nil }
 
     it { is_expected.to be_valid }
+  end
+
+  describe "when voting_type is missing" do
+    let(:voting_type) { nil }
+
+    it { is_expected.to be_invalid }
+  end
+
+  describe "when voting_type is not in the accepted values" do
+    let(:voting_type) { "invalid option" }
+
+    it { is_expected.to be_invalid }
   end
 end

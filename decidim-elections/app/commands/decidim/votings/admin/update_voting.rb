@@ -57,7 +57,8 @@ module Decidim
             slug: form.slug,
             start_time: form.start_time,
             end_time: form.end_time,
-            scope: form.scope
+            scope: form.scope,
+            voting_type: form.voting_type
           }.merge(uploader_attributes)
         end
 

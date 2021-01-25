@@ -14,6 +14,8 @@ module Decidim
       include Decidim::Publicable
       include Decidim::HasUploadValidations
 
+      VOTING_TYPE = %w(in_person online hybrid).freeze
+
       translatable_fields :title, :description
 
       belongs_to :organization,
@@ -83,6 +85,14 @@ module Decidim
 
       def to_param
         slug
+      end
+
+      def hybrid_voting?
+        voting_type == "hybrid"
+      end
+
+      def online_voting?
+        voting_type == "online"
       end
     end
   end
