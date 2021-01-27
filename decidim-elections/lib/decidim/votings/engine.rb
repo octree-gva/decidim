@@ -34,6 +34,7 @@ module Decidim
           end
         end
       end
+
       initializer "decidim_votings.assets" do |app|
         app.config.assets.precompile += %w(
           decidim_votings_manifest.js
