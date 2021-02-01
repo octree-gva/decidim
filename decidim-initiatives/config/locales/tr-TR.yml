@@ -16,14 +16,6 @@ tr:
           online: Çevrimiçi
         state: Statü
         title: Başlık
-      initiative_author:
-        address: Adres
-        city: Kent
-        id_document: DNI / NIE
-        name: Ad ve soyadı
-        phone_number: Telefon numarası
-        post_code: Posta kodu
-        province: il
       initiatives_committee_member:
         user: Komite Üyesi
       initiatives_type:
@@ -145,6 +137,11 @@ tr:
           email_outro: Bu bildirimi, %{resource_title} izlediğiniz için aldınız. Önceki bağlantıyı takip ederek bildirimleri almayı durdurabilirsiniz.
           email_subject: Girişim imzaları bitiş tarihi uzatıldı!
           notification_title: <a href="%{resource_path}">%{resource_title}</a> girişiminin imza bitiş tarihi uzatıldı.
+        initiative_sent_to_technical_validation:
+          email_intro: '"%{resource_title}" girişimi teknik doğrulamaya gönderildi. <a href="%{admin_initiative_url}"> Yönetici panelinden </a> kontrol edin'
+          email_outro: Bu bildirimi, platformun yöneticisi olduğunuz için aldınız.
+          email_subject: '"%{resource_title}" girişimi teknik doğrulamaya gönderildi.'
+          notification_title: '"%{resource_title}" girişimi teknik doğrulamaya gönderildi. <a href="%{admin_initiative_path}"> Yönetici panelinden </a> kontrol edin'
         milestone_completed:
           affected_user:
             email_intro: Girişiminiz %{resource_title}, imzaların %{percentage} kadarını elde etti!
@@ -211,6 +208,7 @@ tr:
           edit:
             accept: Girişimi kabul et
             confirm: Emin misin?
+            confirm_send_to_technical_validation: Emin misin?
             discard: Girişimi atın
             export_pdf_signatures: İmzaların PDF'sini dışa aktar
             export_votes: İmzaları dışa aktar
@@ -319,7 +317,7 @@ tr:
         fill_data:
           back: Geri
           continue: Devam et
-          fill_data_help: "<ul> <li>Girişinizin içeriğini gözden geçirin. Başlığınız anlaşılması kolay mı? Girişimin amacı net mi?</li> <li>İmzanın türünü seçmelisiniz. , Çevrimiçi ya da her ikisinin bir kombinasyonu kişiye ise</li> <li>girişiminin coğrafi kapsamı nedir? Şehir bölge mi?</li> </ul>"
+          fill_data_help: "<ul> <li> Girişiminizin içeriğini inceleyin. Başlığınızı anlamak kolay mı? Girişiminizin amacı açık mı? </li> <li> İmza türünü seçmeniz gerekiyor. Yüz yüze, çevrimiçi veya her ikisinin kombinasyonu </li> <li> Girişimin coğrafi kapsamı nedir? </li> </ul>"
           initiative_type: Girişim türü
           more_information: "(Daha fazla bilgi)"
           select_area: Bir alan seçin
@@ -327,19 +325,15 @@ tr:
         finish:
           back: Geri
           back_to_initiatives: Girişimlere geri dön
-          callout_text: Tebrikler! Vatandaş girişimi başarıyla oluşturuldu.
-          confirm: Onayla
+          callout_text: Tebrikler! Girişiminiz başarıyla oluşturuldu.
+          confirm: Bir yöneticinin gözden geçirmesi ve yayınlaması için inisiyatif göndereceksiniz. Yayınlandıktan sonra onu düzenleyemezsiniz. Emin misiniz?
           edit_my_initiative: Girişimlerimi düzenle
           go_to_my_initiatives: Benim girişimlerime git
           more_information: "(Daha fazla bilgi)"
           send_my_initiative: Girişimimi gönder
         finish_help:
-          access_reminder: Kullanıcı menüsü aracılığıyla girişimlerinize her zaman erişebileceğinizi unutmayın.
-          help_for_organizations: Eğer bir dernekseniz, Teşvik Komisyonunu oluşturan tüm kuruluşların yönetim kurulunun tutanaklarını yüklemeniz gerekecektir.
-          help_in_person_signatures: İmzaları şahsen ya da çevrimiçi olarak bir araya getirmeyi seçtiyseniz, gerekli bilgileri yüklemeniz gerekecektir.
-          help_text: Girişimi doğru şekilde işlemek için kullanıcı menüsünü bulacağınız, gerekli bilgileri yükleyeceğiniz ve işlem için göndereceğiniz yönetim paneline erişmeniz gerektiğini unutmayın.
-          initiatives_page_link: Tüm bu bilgileri inisiyatifler hakkında bilgilendirmek için %{link} bakabilirsiniz.
-          page: sayfa
+          access_reminder: Girişimlerinize Girişimler sayfasındaki %{link} filtresinden erişebilirsiniz.
+          publish_helper_text: Girişiminizin yayınlanması için gerekli bilgileri tamamlamanız ve bir yöneticinin incelemesi için <strong> teknik doğrulamaya göndermeniz </strong> gerektiğini unutmayın.
         previous_form:
           back: Geri
           continue: Devam et
@@ -347,14 +341,14 @@ tr:
           more_information: "(Daha fazla bilgi)"
         promotal_committee:
           back: Geri
-          individual_help_text: Bu tür bir vatandaş girişimi, en az %{committee_size} kişiden (avukatlar) oluşan bir Tanıtım Komisyonu gerektirir. Aşağıdaki bağlantıyı bu girişimin bir parçası olan diğer kişilerle paylaşmanız gerekir. Kişileriniz bu bağlantıyı aldıklarında, belirtilen adımları izlemeleri gerekecektir.
+          individual_help_text: Bu tür bir girişim, en az %{committee_size} kişiden (onaylayanlardan) oluşan bir Teşvik Komisyonu gerektirir. Aşağıdaki bağlantıyı bu girişimin parçası olan diğer kişilerle paylaşmalısınız. Kişileriniz bu bağlantıyı aldıklarında, belirtilen adımları izlemeleri gerekecektir.
           more_information: "(Daha fazla bilgi)"
         select_initiative_type:
           back: Geri
           choose_html: <strong>%{title}</strong> oluşturmak istiyorum
           more_information: "(Daha fazla bilgi)"
           select: Bu girişimi tanıtmak istiyorum
-          select_initiative_type_help: Vatandaş girişimleri, vatandaşlığın müdahalede bulunabileceği bir araç olup, Belediye Meclisi'nin, belediyenin yetki alanı dahilindeki genel menfaatlerin savunulması için eylemde bulunabilmesi için. Hangi girişimi başlatmak istiyorsunuz?
+          select_initiative_type_help: Girişimler, kuruluşun genel menfaati savunmak için eylemlerde bulunabilmesi için katılımcıların müdahale edebilecekleri bir araçtır. Hangi girişimi başlatmak istiyorsunuz?
         share_committee_link:
           continue: Devam et
           invite_to_committee_help: Tanıtım komitesinin bir parçası olacak kişileri davet etmek için bağlantı
@@ -363,6 +357,16 @@ tr:
           compare_help: Aşağıdaki girişimlerden herhangi biri sizinkine benziyorsa, imzalamanızı öneririz. Teklifinizin yerine getirilmesi için daha fazla olasılık olacak.
           continue: Benim girişim farklı
           more_information: "(Daha fazla bilgi)"
+      edit:
+        accept: Girişimi kabul edin
+        back: Geri
+        confirm: Emin misin?
+        discard: Girişimi atın
+        export_pdf_signatures: İmzaların PDF'sini dışa aktar
+        export_votes: İmzaları dışa aktar
+        reject: Girişimi reddet
+        title: Girişimi düzenle
+        update: Güncelle
       events:
         create_initiative_event:
           email_intro: "Takip ettiğiniz %{author_name} %{author_nickname} yeni bir girişim oluşturdu, inceleyin ve katkıda bulunun:"
@@ -374,6 +378,10 @@ tr:
           email_outro: Bu bildirimi %{author_nickname} adlı kişiyi takip ettiğiniz için aldınız. Önceki bağlantıyı izleyerek bildirim almayı durdurabilirsiniz.
           email_subject: Girişim %{author_nickname} tarafından onaylandı
           notification_title: <a href="%{resource_path}">%{resource_title} </a> girişimi <a href="%{author_path}">%{author_name} %{author_nickname} </a> tarafından onaylandı.
+      form:
+        add_attachments: Dokümanlar
+        attachment_legend: "(İsteğe bağlı) Ekler Ekleyin"
+        delete_attachment: Sil
       index:
         title: Girişimler
       initiative_signatures:
@@ -410,6 +418,13 @@ tr:
           hidden_authors_count:
             one: ve 1 kişi daha
             other: ve %{count} kişi daha
+        committee_members:
+          approve: Onayla
+          confirm_revoke: Emin misin?
+          invite_to_committee_help: Diğer katılımcıları tanıtım komitesine davet etmek için bu bağlantıyı paylaşın
+          no_members_yet: Tanıtım komitesinde üye yok
+          revoke: Geri al
+          title: Komite üyeleri
         count:
           title:
             one: "%{count} girişim"
@@ -450,6 +465,27 @@ tr:
           random: Rastgele
           recent: En yeni
           recently_published: Son yayınlananlar
+        print:
+          address: Adres
+          author_title: Girişimin yazarı
+          city: Kent
+          email: E-posta
+          full_name: Ad Soyad
+          general_title: Bir girişimin kabulü için başvuru
+          id_number: ID Numarası
+          initiative:
+            attachments: Ekli belgeler (lütfen her belgenin adını aşağıya yazın)
+            description: 'Açıklama:'
+            title: 'Başlık:'
+            type: Girişim türü
+          legal_text: Toplanan kişisel veriler, mevcut mevzuata göre kuruluş tarafından gizli bir şekilde birleştirilecek ve muamele edilecektir.
+          phone_number: Telefon numarası
+          place_date: Yer, Tarih
+          postal_code: Posta Kodu
+          print: Yazdır
+          province: İlçe / İl
+          section: 'Kuruluş tarafından istenirse, lütfen belirtilen yerlerde göndermek için bu formu yazdırın ve doldurun:'
+          signature: İmza
         result:
           answer_title:
             accepted: Bu teklif kabul edildi çünkü
@@ -460,9 +496,13 @@ tr:
             validating: Bu teklif değerlendiriliyor
           initiative_rejected_reason: Bu girişim, imza eksikliği nedeniyle reddedildi.
         show:
-          any_vote_method: Bu vatandaş girişimi, yüz yüze olduğu kadar çevrimiçi destek toplar.
+          any_vote_method: Bu girişim hem çevrimiçi hem de şahsen imzaları toplar.
+          confirm: Bir yöneticinin gözden geçirmesi ve yayınlaması için inisiyatif göndereceksiniz. Yayınlandıktan sonra onu düzenleyemezsiniz. Emin misiniz?
+          edit: Düzenle
           follow_description: Bu girişimde haber olduğunda bildirim alın
-          offline_method: Bu vatandaş girişimi sadece yüz yüze destekleri toplar.
+          offline_method: Bu girişim yalnızca şahsen imza toplar.
+          print: Girişimi Yazdır
+          send_to_technical_validation: Teknik doğrulamaya gönder
         signatures_count:
           one: " imza"
           other: " imzalar"
@@ -508,6 +548,9 @@ tr:
         accepted: Kabul Edildi
         expired: Süresi doldu
       unavailable_scope: Kullanılamayan kapsam
+      update:
+        error: Bir hata oluştu
+        success: Vatandaş girişimi başarıyla güncellendi
       versions:
         shared:
           back_to_resource: Girişime geri dönün

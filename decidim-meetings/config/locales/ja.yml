@@ -31,9 +31,7 @@ ja:
         title: タイトル
         transparent: 透明度
       minutes:
-        audio_url: オーディオ URL
         description: 説明
-        video_url: ビデオ URL
         visible: 非表示にする
     errors:
       models:
@@ -248,7 +246,6 @@ ja:
           form:
             address_help: 'アドレス: ジオコーダーが場所を見つけるために使用'
             location_help: '場所: ユーザーにメッセージが表示されます。'
-            location_hints_help: '位置情報：追加情報。例：建物の床。'
           index:
             title: ミーティング
           new:
@@ -386,7 +383,6 @@ ja:
           address_help: 'アドレス: ジオコーダーが場所を見つけるために使用'
           create_as: 次のユーザとしてミーティングを作成：
           location_help: '場所: ユーザーにメッセージが表示されます。'
-          location_hints_help: '位置情報：追加情報。例：建物の床。'
           select_a_category: カテゴリを選択してください
         index:
           new_meeting: 新しいミーティング
@@ -471,11 +467,6 @@ ja:
         description: 作成されたミーティング数
         object: ミーティング
         title: ミーティング
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_meetings:
-          past_meetings: 過去のミーティング
-          upcoming_meetings: 今後のミーティング
     participatory_spaces:
       highlighted_meetings:
         past_meetings: 過去のミーティング

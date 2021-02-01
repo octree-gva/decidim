@@ -6,6 +6,8 @@ module Decidim
     # title, description and any other useful information to render a custom result.
     class Result < Accountability::ApplicationRecord
       include Decidim::Resourceable
+      include Decidim::HasAttachments
+      include Decidim::HasAttachmentCollections
       include Decidim::HasComponent
       include Decidim::ScopableResource
       include Decidim::HasCategory
@@ -23,12 +25,14 @@ module Decidim
       translatable_fields :title, :description
 
       has_many :children, foreign_key: "parent_id", class_name: "Decidim::Accountability::Result", inverse_of: :parent, dependent: :destroy
-      belongs_to :parent, foreign_key: "parent_id", class_name: "Decidim::Accountability::Result", inverse_of: :children, optional: true, counter_cache: :children_count
+      belongs_to :parent, class_name: "Decidim::Accountability::Result", inverse_of: :children, optional: true, counter_cache: :children_count
 
       belongs_to :status, foreign_key: "decidim_accountability_status_id", class_name: "Decidim::Accountability::Status", inverse_of: :results, optional: true
 
       has_many :timeline_entries, -> { order(:entry_date) }, foreign_key: "decidim_accountability_result_id",
                                                              class_name: "Decidim::Accountability::TimelineEntry", inverse_of: :result, dependent: :destroy
+
+      scope :order_by_most_recent, -> { order(created_at: :desc) }
 
       after_save :update_parent_progress, if: -> { parent_id.present? }
 
@@ -87,6 +91,15 @@ module Decidim
         can_participate_in_space?(user)
       end
 
+      ransacker :id_string do
+        Arel.sql(%{cast("decidim_accountability_results"."id" as text)})
+      end
+
+      # Allow ransacker to search for a key in a hstore column (`title`.`en`)
+      ransacker :title do |parent|
+        Arel::Nodes::InfixOperation.new("->>", parent.table[:title], Arel::Nodes.build_quoted(I18n.locale.to_s))
+      end
+
       private
 
       # Private: When a row uses weight 1 and there's more than one, weight shouldn't be considered
@@ -94,7 +107,7 @@ module Decidim
       def children_use_weighted_progress?
         return false if children.pluck(:weight).all?(&:nil?)
 
-        children.length == 1 || children.pluck(:weight).none? { |weight| weight == 1.0 }
+        children.length == 1 || children.pluck(:weight).none? { |weight| weight&.to_d == 1.0.to_d }
       end
     end
   end

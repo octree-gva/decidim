@@ -36,9 +36,17 @@ tr:
         title: Başlık
       participatory_process_group:
         description: Açıklama
+        developer_group: Tanıtım grubu
+        group_url: Web sitesi
+        hashtag: Etiket
         hero_image: görüntü
-        name: isim
+        local_area: Organizasyon alanı
+        meta_scope: Kapsam meta verileri
         participatory_process_ids: İlgili süreçler
+        participatory_scope: Karar nedir
+        participatory_structure: Nasıl karar verilir
+        target: Katılanlar
+        title: Başlık
       participatory_process_step:
         cta_path: Eylem yolunu çağır
         cta_text: Harekete Geçirici Mesaj metni
@@ -94,6 +102,9 @@ tr:
         unpublish: Yayından Kaldır
       menu:
         participatory_process_groups: Süreç grupları
+        participatory_process_groups_submenu:
+          info: Bilgi
+          landing_page: Açılış sayfası
         participatory_processes: Süreçler
         participatory_processes_submenu:
           attachment_collections: Klasörler
@@ -117,7 +128,7 @@ tr:
           name: Katılımcı süreç
         participatory_process_group:
           fields:
-            name: isim
+            title: Başlık
           name: İşlem grubu
         participatory_process_step:
           fields:
@@ -145,6 +156,13 @@ tr:
           copy: kopya
           select: Çoğaltmak istediğiniz verileri seçin
           title: Yinelenen katılımcı süreç
+      participatory_process_group_landing_page:
+        edit:
+          active_content_blocks: Aktif içerik blokları
+          inactive_content_blocks: Aktif olmayan içerik blokları
+      participatory_process_group_landing_page_content_blocks:
+        edit:
+          update: Güncelle
       participatory_process_groups:
         destroy:
           error: Katılımcı süreç grubu yok edilirken bir hata oluştu.
@@ -301,10 +319,30 @@ tr:
       show:
         related_assemblies: İlgili kurullar
     participatory_process_groups:
+      content_blocks:
+        html_1:
+          name: İlk HTML bloğu
+        html_2:
+          name: İkinci HTML bloğu
+        html_3:
+          name: Üçüncü HTML bloğu
+        metadata:
+          developer_group: Tarafından teşvik
+          name: Meta veri
+          participatory_scope: Karar nedir
+          participatory_structure: Nasıl karar verilir
+          target: Katılanlar
+        participatory_processes:
+          name: Katılımcı süreçleri
+        stats:
+          name: İstatistikler
+        title:
+          meta_scope: Kapsam
+          name: Başlık, açıklama ve etiket
+          participatory_processes:
+            one: 1 süreç
+            other: "%{count} süreç"
       show:
-        group_participatory_processes:
-          one: '%{group}için 1 süreç'
-          other: "%{count} için işlemler %{group}"
         title: Katılımcı süreç grupları
     participatory_process_steps:
       index:
@@ -321,6 +359,11 @@ tr:
         participatory_process_copies:
           form:
             slug_help: 'URL sümükleri, bu işleme işaret eden URL''leri oluşturmak için kullanılır. Sadece harfleri, sayıları ve kısa çizgileri kabul eder ve bir harfle başlamalıdır. Örnek: %{url}'
+        participatory_process_groups:
+          form:
+            metadata: Meta veri
+            title: Genel bilgi
+            visibility: Görünürlük
         participatory_process_imports:
           form:
             document_legend: Doküman Ekle
@@ -392,6 +435,7 @@ tr:
           loading: Sonuçlar yükleniyor ...
       show:
         area: alan
+        belongs_to_group: Bu süreç,
         dates: Tarihler
         developer_group: Tanıtım grubu
         end_date: Bitiş tarihi
@@ -449,6 +493,8 @@ tr:
           more_info_about: '%{resource_name} süreci hakkında daha fazla bilgi'
           take_part: Yer almak
           take_part_in: '%{resource_name} sürecine katılın'
+        promoted_process_group:
+          more_info: Daha fazla bilgi
       process_header_steps:
         step: '%{total}adımdan %{current}'
         view_steps: Adımları göster

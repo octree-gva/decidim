@@ -55,6 +55,11 @@ module Decidim
         end.flatten
       end
 
+      let!(:files_question) { create :questionnaire_question, questionnaire: questionnaire, question_type: "files" }
+      let!(:files_answer) do
+        create :answer, :with_attachments, questionnaire: questionnaire, question: files_question, user: user, body: nil
+      end
+
       describe "#serialize" do
         let(:serialized) { subject.serialize }
 
@@ -74,6 +79,8 @@ module Decidim
             [key, choices.map { |choice| choice&.body }]
           end.to_h
 
+          serialized_files_answer = files_answer.attachments.map(&:url)
+
           expect(serialized).to include(
             "4. #{translated(multichoice_question.body, locale: I18n.locale)}" => multichoice_answer_choices.map(&:body)
           )
@@ -85,6 +92,10 @@ module Decidim
           expect(serialized).to include(
             "6. #{translated(matrixmultiple_question.body, locale: I18n.locale)}" => serialized_matrix_answer
           )
+
+          expect(serialized).to include(
+            "7. #{translated(files_question.body, locale: I18n.locale)}" => serialized_files_answer
+          )
         end
 
         context "and includes the attributes" do
@@ -92,7 +103,7 @@ module Decidim
 
           it "the id of the answer" do
             key = I18n.t(:id, scope: "decidim.forms.user_answers_serializer")
-            expect(serialized[key]).to eq an_answer.id
+            expect(serialized[key]).to eq an_answer.session_token
           end
 
           it "the creation of the answer" do

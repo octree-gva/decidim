@@ -26,6 +26,10 @@ tr:
           attributes:
             attachment:
               needs_to_be_reattached: Yeniden bağlanması gerekiyor
+        trustee:
+          attributes:
+            public_key:
+              cant_be_changed: değiştirilemez
   activerecord:
     models:
       decidim/elections/answer:
@@ -53,12 +57,14 @@ tr:
         confirm_destroy: Emin misin?
         destroy: Yok et
         edit: Düzenle
-        edit_answers: Cevapları düzenle
-        edit_questions: Soruları Düzenle
+        feedback: Seçmen geri bildirimi
         import: Teklifleri yanıtlara aktarın
+        manage_answers: Cevapları yönet
+        manage_questions: Soruları yönet
         new: Yeni %{name}
         preview: Önizleme
         publish: Yayınla
+        setup: Kur
         title: Eylemler
         unpublish: Yayımdan Kaldır
       admin:
@@ -78,6 +84,14 @@ tr:
           new:
             create: Cevap oluştur
             title: Yeni cevap
+          select:
+            disable: Cevabın seçimini kaldır
+            enable: Cevabı seçildi olarak işaretle
+            invalid: Bu cevabı seçerken bir sorun oluştu
+            success: Cevap başarıyla seçildi
+          unselect:
+            invalid: Bu cevabın seçimi kaldırılırken bir sorun oluştu
+            success: Cevabın seçimi başarıyla kaldırıldı
           update:
             invalid: Bu klasör güncellenirken bir hata oluştu
             success: Cevap başarıyla güncellendi
@@ -99,11 +113,17 @@ tr:
             title: Yeni seçim
           publish:
             success: Seçim başarıyla yayınlandı.
+          setup:
+            invalid: Bu seçimi ayarlarken bir sorun oluştu
+            success: Seçim, Bülten Panosuna başarıyla gönderildi
           unpublish:
             success: Seçim başarılı bir şekilde yayınlanmadı.
           update:
             invalid: Bu seçim güncellenirken bir sorun oluştu
             success: Seçim başarıyla güncellendi
+        exports:
+          elections: Seçimler
+          feedback_form_answers: Cevapların geri bildirimi
         models:
           answer:
             name: Cevap
@@ -111,6 +131,8 @@ tr:
             name: Seçim
           question:
             name: Soru
+          trustee:
+            name: Vekil
         proposals_imports:
           create:
             invalid: Teklifleri cevaplara aktarırken bir sorun oluştu
@@ -119,6 +141,7 @@ tr:
             create: Teklifleri yanıtlara aktarın
             no_components: Bu katılımcı alanda, teklifleri yanıtlara aktarmak için başka teklif bileşeni yoktur.
             select_component: Lütfen modülü bileşeni seçin
+            title: Teklifleri içe aktar
         questions:
           create:
             invalid: Yeni bir soru oluşturulurken bir hata oluştu
@@ -137,6 +160,50 @@ tr:
           update:
             invalid: Bu soru güncellenirken bir hata oluştu
             success: Soru başarıyla güncellendi
+        setup:
+          errors:
+            max_selections: Sorular, <strong> yanıt miktarı için doğru değere </strong> sahip değildir
+            minimum_answers: Soruların <strong> en az bir cevabı </strong> olmalıdır.
+            minimum_questions: Seçim <strong> en az bir soruyu içermelidir </strong>.
+            published: Seçim <strong> yayınlanmadı </strong>
+            time_before: Kurulum, seçim başlamadan <strong> en az 3 saat </strong> önce yapılıyor
+            trustee_public_key: <strong> geçerli bir genel anahtara </strong> sahip değil
+            trustees_quorum: Vekil sayısı <strong> gerekli vekil heyetine uymuyor </strong>
+          requirements:
+            max_selections: Tüm sorular <strong> maksimum cevap </strong> için doğru değere sahiptir
+            minimum_answers: Her sorunun <strong> en az 2 cevabı </strong> vardır
+            minimum_questions: Seçimde <strong> en az 1 soru </strong> var
+            published: Seçim <strong> yayınlandı </strong>
+            time_before: Kurulum, seçim başlamadan <strong> en az 3 saat </strong> önce yapılıyor
+            trustee_public_key: <strong> geçerli bir genel anahtara </strong> sahiptir
+            trustees_quorum: Bu güvenilenler listesinin boyutu doğru ve çetele sürecini gerçekleştirmek için <strong> en az %{quorum} güvenilen kişi </strong> gerekecek
+          show:
+            setup: Seçim yarat
+            title: Seçim ayarları
+          update:
+            setup: Seçimi güncelle
+            title: Seçim ayarları
+        trustees_participatory_spaces:
+          actions:
+            disable: Devre dışı
+            enable: Dikkate al
+          create:
+            exists: Bu katılımcı alan için vekil var
+            invalid: Vekil oluşturulurken bir sorun meydana geldi
+            success: Vekil başarıyla oluşturuldu
+          delete:
+            invalid: Bu vekili kaldırırken bir sorun oluştu
+            success: Vekil başarıyla kaldırıldı
+          form:
+            select_user: Kullanıcı seçin
+          index:
+            title: Vekiller
+          new:
+            create: Vekil Oluşturun
+            title: Yeni Vekil
+          update:
+            invalid: '%{trustee} vekili güncellenirken bir sorun oluştu'
+            success: Vekil %{trustee} başarıyla güncellendi
       admin_log:
         election:
           publish: "%{user_name}, %{resource_name} seçimini yayınladı"
@@ -172,14 +239,30 @@ tr:
           filter: Filtrele
           filter_by: Şuna göre filtrele
           unfold: Aç
+        preview:
+          available_answers: Mevcut cevaplar
+          description: Oylama sürecinde bulacağınız sorular bunlar
+          title: Seçim soruları
+        results:
+          description: Bunlar, her soru için oylamanın sonuçlarıdır
+          selected: Seçili
+          title: Seçim sonuçları
+          votes:
+            one: "%{count} oy"
+            other: "%{count} oy"
         show:
-          back: Tüm seçimler
+          back: Mevcut seçimler
           preview: Önizleme
           vote: Oy
           voting_period_status:
             finished: Oylama %{start_time} tarihinde başladı ve %{end_time} tarihinde sona erdi
             ongoing: Oylama %{end_time} tarihinde sona eriyor
             upcoming: Oylama %{start_time} tarihinde başlıyor
+      feedback:
+        answer:
+          invalid: Geri bildiriminizi gönderirken bir sorun oluştu.
+          spam_detected: Formu yanıtlarken bir sorun oluştu. Belki çok hızlı davrandın, tekrar deneyebilir misin?
+          success: Geri bildirim başarıyla gönderildi.
       models:
         answer:
           fields:
@@ -195,10 +278,55 @@ tr:
             answers: Cevaplar
             max_selections: Maks. Alan sayısı seçimler
             title: Başlık
+        trustees_participatory_space:
+          fields:
+            considered: dikkate al
+            email: E-posta
+            inactive: aktif değil
+            name: Adı
+            notification: Bildirim gönderildi
+            public_key: Herkese açık anahtar
+            status: Statü
       orders:
         label: Seçimleri şuna göre sırala
         older: Daha eski
         recent: En son
+      trustee_zone:
+        menu:
+          trustee_zone: Vekil bölgesi
+        trustees:
+          show:
+            elections:
+              list:
+                election: Seçim
+                status: Statü
+                voting_period: Oylama süresi
+              no_elections: Vekil olarak hareket ettiğiniz hiçbir seçim yoktur.
+              title: Seçimler
+            identification_keys:
+              cancel: İptal Et
+              generate: Kimlik anahtarları oluşturun
+              generate_error: Kimlik anahtarları oluşturulurken bir hata meydana geldi.
+              generate_legend: Vekil olarak seçimlere katılmak için bir kimlik anahtarı çifti oluşturmanız gerekir.
+              generate_legend_1: Düğmeye bastıktan sonra, oluşturulan tanımlama anahtarları ile dosyayı indirmelisiniz.
+              generate_legend_2: İndirilen dosyayı temiz bir USB cihazına kopyalayın
+              generate_legend_3: Bilgisayarınızda dosyanın bir kopyası olmadığından emin olun (ör. İndirilenler ve Masaüstü klasörlerini kontrol edin).
+              generate_legend_4: Dosyanın başka bir kopyasını farklı bir harici cihazda oluşturun ve çok güvenli bir yerde saklayın.
+              submit: Gönder
+              submit_legend: Yukarıda açıklanan tüm adımları izledikten sonra, açık kimlik anahtarını Decidim sunucusuna gönderme işlemini tamamlayın.
+              submit_title: Genel kimlik anahtarını gönderin
+              title: Vekil kimlik anahtarları
+              upload: Kimlik anahtarlarınızı yükleyin
+              upload_error:
+                invalid_format: Yüklenen dosya herhangi bir kimlik anahtarı içermiyor.
+                invalid_key: Yüklenen dosyadaki kimlik anahtarları yüklenemez.
+                invalid_public_key: Yüklenen dosyadaki tanımlama anahtarları, Decidim tarafından saklanan genel tanımlama anahtarıyla eşleşmiyor.
+              upload_legend: Decidim'de sizin genel kimlik anahtarlarınız var, ancak tarayıcınızda hala bu anahtarlar yok. Kimlik anahtarlarınızın olduğu dosyayı, oluşturduktan sonra oluşturduğunuz yedekten bilgisayarınıza aktarmanız gerekir.
+            not_supported_browser_description: Vekil olarak hareket etmek için kullanılamayan bir web tarayıcısı kullanıyorsunuz gibi görünüyor. Vekil görevlerinizi tamamlayabilmek için tarayıcınızın en son sürümünü kullandığınızdan emin olun veya en popüler tarayıcılardan herhangi birini kullanmayı deneyin.
+            not_supported_browser_title: Vekil kişi olarak hareket etmek için tarayıcıyı yükseltin
+            trustee_role_description: Bu platformda kutlanan bazı seçimlerde Vekil olarak görev yapmakla görevlendirildiniz.
+          update:
+            success: Tanımlama genel anahtarınız başarıyla saklandı.
       votes:
         confirm:
           answer: Cevap
@@ -249,6 +377,17 @@ tr:
           email_outro: Bu bildirimi, %{participatory_space_title} adlı kişiyi takip ettiğiniz için aldınız. Önceki bağlantıyı izleyerek bildirim almayı durdurabilirsiniz.
           email_subject: '%{resource_title} seçimi artık %{participatory_space_title} için aktif.'
           notification_title: <a href="%{resource_path}">%{resource_title} </a> seçimi artık %{participatory_space_title} için aktif.
+        trustees:
+          new_election:
+            email_intro: '%{resource_title} seçimi için vekil olarak eklendiniz.'
+            email_outro: Bu bildirimi, %{resource_title} seçiminde vekil kişi olarak eklendiğiniz için aldınız.
+            email_subject: '%{resource_title} seçimi için vekil olarak eklendiniz..'
+            notification_title: <a href="%{resource_path}">%{resource_title} </a> seçimi için bir vekilsiniz.
+          new_trustee:
+            email_intro: Bir yönetici sizi %{resource_name} için güvenilen kişi olarak ekledi. Genel anahtarınızı <a href='%{trustee_zone_url}'> güvenilen bölgenizde </a> oluşturmalısınız
+            email_outro: Bu bildirimi, %{resource_name} için vekil kişi olarak eklendiğiniz için aldınız.
+            email_subject: '%{resource_name} için vekil birisiniz.'
+            notification_title: <a href="%{participatory_space_url}">%{resource_name} </a> için vekil birisiniz.
     pages:
       home:
         statistics:

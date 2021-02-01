@@ -29,9 +29,7 @@ hu:
         title: Cím
         transparent: Átlátszó
       minutes:
-        audio_url: Audio url
         description: Leírás
-        video_url: Videó URL
         visible: Látható
     errors:
       models:
@@ -245,7 +243,6 @@ hu:
           form:
             address_help: 'Cím: Geocoder használata a helymeghatározáshoz'
             location_help: 'Helyszín: üzenet az adott felhasználóknak a találkozó helyéről'
-            location_hints_help: 'Helymeghatározási tippek: további információk. Példa: az épület padlója'
           index:
             title: Találkozók
           new:
@@ -430,11 +427,6 @@ hu:
         description: A létrehozott találkozók száma
         object: ülések
         title: találkozók
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_meetings:
-          past_meetings: Korábbi találkozók
-          upcoming_meetings: Közelgő találkozók
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Korábbi találkozók

@@ -21,7 +21,7 @@ module Decidim
                         :admin_terms_of_use_body
 
     has_many :static_pages, foreign_key: "decidim_organization_id", class_name: "Decidim::StaticPage", inverse_of: :organization, dependent: :destroy
-    has_many :static_page_topics, foreign_key: "organization_id", class_name: "Decidim::StaticPageTopic", inverse_of: :organization, dependent: :destroy
+    has_many :static_page_topics, class_name: "Decidim::StaticPageTopic", inverse_of: :organization, dependent: :destroy
     has_many :scopes, -> { order(name: :asc) }, foreign_key: "decidim_organization_id", class_name: "Decidim::Scope", inverse_of: :organization
     has_many :scope_types, -> { order(name: :asc) }, foreign_key: "decidim_organization_id", class_name: "Decidim::ScopeType", inverse_of: :organization
     has_many :areas, -> { order(name: :asc) }, foreign_key: "decidim_organization_id", class_name: "Decidim::Area", inverse_of: :organization
@@ -122,7 +122,7 @@ module Decidim
     end
 
     def open_data_file
-      @open_data_file ||= OpenDataUploader.new.tap do |uploader|
+      @open_data_file ||= OpenDataUploader.new(self).tap do |uploader|
         uploader.retrieve_from_store! open_data_file_path
         uploader.cache! open_data_file_path
       end
@@ -151,6 +151,10 @@ module Decidim
     # Required by ActsAsAuthor.
     def presenter
       Decidim::Debates::OfficialAuthorPresenter.new
+    end
+
+    def static_pages_accessible_for(user)
+      static_pages.accessible_for(self, user)
     end
 
     private

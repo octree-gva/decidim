@@ -6,7 +6,7 @@ module Decidim
   module Forms
     describe AnswerQuestionnaire do
       def tokenize(id)
-        Digest::MD5.hexdigest("#{id}-#{Rails.application.secrets.secret_key_base}")
+        "fake-hash-for-#{id}"
       end
 
       let(:current_organization) { create(:organization) }
@@ -121,6 +121,53 @@ module Decidim
             expect(Answer.second.ip_hash).to eq(nil)
             expect(Answer.third.session_token).to eq(tokenize(current_user.id))
             expect(Answer.third.ip_hash).to eq(nil)
+          end
+        end
+
+        context "with attachments" do
+          let(:question_1) { create(:questionnaire_question, questionnaire: questionnaire, question_type: :files) }
+          let(:form_params) do
+            {
+              "responses" => [
+                {
+                  "add_documents" => uploaded_files,
+                  "question_id" => question_1.id
+                }
+              ],
+              "tos_agreement" => "1"
+            }
+          end
+
+          context "when attachments are allowed", processing_uploads_for: Decidim::AttachmentUploader do
+            let(:uploaded_files) do
+              [
+                Decidim::Dev.test_file("city.jpeg", "image/jpeg"),
+                Decidim::Dev.test_file("Exampledocument.pdf", "application/pdf")
+              ]
+            end
+
+            it "creates multiple atachments for the proposal" do
+              expect { command.call }.to change(Decidim::Attachment, :count).by(2)
+              last_attachment = Decidim::Attachment.last
+              expect(last_attachment.attached_to).to be_kind_of(Decidim::Forms::Answer)
+            end
+          end
+
+          context "when attachments are allowed and file is invalid", processing_uploads_for: Decidim::AttachmentUploader do
+            let(:uploaded_files) do
+              [
+                Decidim::Dev.test_file("city.jpeg", "image/jpeg"),
+                Decidim::Dev.test_file("Exampledocument.pdf", "")
+              ]
+            end
+
+            it "does not create atachments for the proposal" do
+              expect { command.call }.to change(Decidim::Attachment, :count).by(0)
+            end
+
+            it "broadcasts invalid" do
+              expect { command.call }.to broadcast(:invalid)
+            end
           end
         end
       end

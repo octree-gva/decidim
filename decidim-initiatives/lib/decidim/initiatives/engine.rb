@@ -6,7 +6,6 @@ require "decidim/core"
 require "decidim/initiatives/current_locale"
 require "decidim/initiatives/initiatives_filter_form_builder"
 require "decidim/initiatives/initiative_slug"
-require "decidim/initiatives/api"
 require "decidim/initiatives/query_extensions"
 
 module Decidim
@@ -32,18 +31,24 @@ module Decidim
           initiative ? "/initiatives/#{initiative.slug}/f/#{params[:component_id]}" : "/404"
         }, constraints: { initiative_id: /[0-9]+/ }
 
-        resources :initiatives, param: :slug, only: [:index, :show], path: "initiatives" do
+        resources :initiatives, param: :slug, only: [:index, :show, :edit, :update], path: "initiatives" do
           resources :initiative_signatures
 
           member do
             get :authorization_sign_modal, to: "authorization_sign_modals#show"
+            get :print, to: "initiatives#print", as: "print"
+            get :send_to_technical_validation, to: "initiatives#send_to_technical_validation"
           end
 
           resource :initiative_vote, only: [:create, :destroy]
           resource :widget, only: :show, path: "embed"
-          resources :committee_requests, only: [:new], shallow: true do
+          resources :committee_requests, only: [:new] do
             collection do
               get :spawn
+            end
+            member do
+              get :approve
+              delete :revoke
             end
           end
           resources :versions, only: [:show, :index]
@@ -100,12 +105,13 @@ module Decidim
           badge.valid_for = [:user, :user_group]
 
           badge.reset = lambda { |model|
-            if model.is_a?(User)
+            case model
+            when User
               Decidim::Initiative.where(
                 author: model,
                 user_group: nil
               ).published.count
-            elsif model.is_a?(UserGroup)
+            when UserGroup
               Decidim::Initiative.where(
                 user_group: model
               ).published.count
@@ -115,9 +121,7 @@ module Decidim
       end
 
       initializer "decidim_initiatives.query_extensions" do
-        Decidim::Api::QueryType.define do
-          QueryExtensions.define(self)
-        end
+        Decidim::Api::QueryType.include QueryExtensions
       end
     end
   end

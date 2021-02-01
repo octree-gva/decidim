@@ -23,17 +23,25 @@ module Decidim
       unless user_signed_in?
         flash[:warning] = t("actions.login_before_access", scope: "decidim.core")
         store_location_for(:user, request.path)
-        return redirect_to decidim.new_user_session_path
+        redirect_to decidim.new_user_session_path
       end
     end
 
     # Check for all paths that should be allowed even if the user is not yet
     # authorized
     def allow_unauthorized_path?
-      # Changing the locale
-      return true if %r{^\/locale}.match?(request.path) || %r{^\/cookies}.match?(request.path)
+      return true if unauthorized_paths.any? { |path| /^#{path}/.match?(request.path) }
 
       false
+    end
+
+    def unauthorized_paths
+      # /locale is for changing the locale
+      # /cookies is for accepting the cookies
+      %w(/locale /cookies) + Decidim::StaticPage.where(
+        organization: current_organization,
+        allow_public_access: true
+      ).pluck(Arel.sql("CONCAT('/pages/', slug)"))
     end
   end
 end

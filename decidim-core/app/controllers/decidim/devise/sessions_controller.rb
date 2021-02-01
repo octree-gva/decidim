@@ -6,11 +6,9 @@ module Decidim
     class SessionsController < ::Devise::SessionsController
       include Decidim::DeviseControllers
 
+      # rubocop: disable Rails/LexicallyScopedActionFilter
       before_action :check_sign_in_enabled, only: :create
-
-      def create
-        super
-      end
+      # rubocop: enable Rails/LexicallyScopedActionFilter
 
       def destroy
         current_user.invalidate_all_sessions!
@@ -18,7 +16,9 @@ module Decidim
       end
 
       def after_sign_in_path_for(user)
-        if first_login_and_not_authorized?(user) && !user.admin? && !pending_redirect?(user)
+        if user.present? && user.blocked?
+          check_user_block_status(user)
+        elsif first_login_and_not_authorized?(user) && !user.admin? && !pending_redirect?(user)
           decidim_verifications.first_login_authorizations_path
         else
           super

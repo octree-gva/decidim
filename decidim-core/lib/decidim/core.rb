@@ -20,6 +20,7 @@ module Decidim
   autoload :Traceable, "decidim/traceable"
   autoload :Loggable, "decidim/loggable"
   autoload :Reportable, "decidim/reportable"
+  autoload :UserReportable, "decidim/user_reportable"
   autoload :Authorable, "decidim/authorable"
   autoload :Coauthorable, "decidim/coauthorable"
   autoload :Participable, "decidim/participable"
@@ -92,6 +93,7 @@ module Decidim
   autoload :HasUploadValidations, "decidim/has_upload_validations"
   autoload :FileValidatorHumanizer, "decidim/file_validator_humanizer"
   autoload :ShareableWithToken, "decidim/shareable_with_token"
+  autoload :RecordEncryptor, "decidim/record_encryptor"
 
   include ActiveSupport::Configurable
   # Loads seeds from all engines.
@@ -115,7 +117,7 @@ module Decidim
           organization,
           manifest.name,
           Decidim::Faker::Localized.wrapped("<p>", "</p>") do
-            Decidim::Faker::Localized.sentence(15)
+            Decidim::Faker::Localized.sentence(word_count: 15)
           end
         )
       end
@@ -149,7 +151,7 @@ module Decidim
 
   # Exposes a configuration option: The application available locales.
   config_accessor :available_locales do
-    %w(en bg ar ca cs da de el eo es es-MX es-PY et eu fi-pl fi fr fr-CA ga gl hr hu id is it ja lt lv mt nl no pl pt pt-BR ro ru sk sl sr sv tr uk)
+    %w(en bg ar ca cs da de el eo es es-MX es-PY et eu fi-pl fi fr fr-CA ga gl hr hu id is it ja ko lt lv mt nl no pl pt pt-BR ro ru sk sl sr sv tr uk vi zh-CN zh-TW)
   end
 
   # Exposes a configuration option: The application default locale.
@@ -556,7 +558,7 @@ module Decidim
     organization = begin
       if model.is_a?(Decidim::Organization)
         model
-      elsif model.respond_to?(:organization)
+      elsif model.respond_to?(:organization) && model.organization.present?
         model.organization
       end
     end

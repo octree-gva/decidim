@@ -21,19 +21,22 @@ tr:
         end_time: Bitiş zamanı
         location: yer
         location_hints: Yer ipuçları
+        online_meeting_url: Çevrimiçi Toplantı URL
         organizer_gid: gibi oluştur
         organizer_id: Düzenleyici
         private_meeting: Özel toplantı
         registration_form_enabled: Kayıt formu etkin
         registration_terms: Kayıt şartları
+        registration_url: Kayıt URL
         registrations_enabled: Kayıtlar etkinleştirildi
         start_time: Başlama zamanı
         title: Başlık
         transparent: Şeffaf
+        type_of_meeting: Tür
       minutes:
-        audio_url: Ses linki
+        audio_url: Ses URL'si
         description: Açıklama
-        video_url: Video linki
+        video_url: Video URL'si
         visible: Görünür
     errors:
       models:
@@ -87,9 +90,11 @@ tr:
             creation_enabled_for_participants: Katılımcılar toplantı oluşturabilir
             default_registration_terms: Varsayılan kayıt şartları
             enable_pads_creation: Altlık oluşturmayı etkinleştirin
+            registration_code_enabled: Kayıt kodu etkinleştirildi
             resources_permissions_enabled: Her toplantı için işlem izinleri ayarlanabilir
             scope_id: Kapsam
             scopes_enabled: Kapsamlar etkinleştirildi
+            terms_and_conditions_url_for_meeting_creators: Toplantı oluşturucuları için şartlar ve koşullar URL'si
           step:
             announcement: Duyuru
             comments_blocked: Yorumlar engellendi
@@ -202,6 +207,7 @@ tr:
             invalid: Bu gündemi güncellerken bir sorun oluştu
             success: Gündem başarıyla güncellendi
         exports:
+          meeting_comments: Yorumlar
           meetings: Toplantılar
           registrations: Kayıtlar
         invite_join_meeting_mailer:
@@ -249,11 +255,18 @@ tr:
                 other: Kendisiyle ilişkilendirilmiş %{count} teklif olduğu için toplantı yok edilemez
             success: Toplantı başarıyla silindi
           edit:
+            title: Toplantıyı Düzenle
             update: Güncelle
           form:
             address_help: 'Adres: Geocoder tarafından konumu bulmak için kullanılır'
+            available_slots_help: Sınırsız yuvanız varsa bunu 0 olarak bırakın
+            disclaimer: 'Sorumluluk reddi: Harici bir kayıt sistemi kullanarak, %{organization} organizatörlerinin, kullanıcılar tarafından harici hizmete sağlanan verilerden sorumlu olmadığını biliyorsunuz.'
             location_help: 'Konum: kullanıcılara buluşulacak yeri ima eden mesaj'
-            location_hints_help: 'Konum ipuçları: ek bilgi. Örnek: binanın zemini'
+            location_hints_help: 'Konum ipuçları: ek bilgi. Örnek: Yüz yüze bir toplantıysa binanın katı veya kısıtlı erişime sahip çevrimiçi bir toplantıysa toplantı parolası.'
+            online_meeting_url_help: 'Bağlantı: katılımcıların toplantınıza doğrudan bağlanmasına izin verin'
+            registration_url_help: 'Bağlantı: katılımcıların kayıtlar için kullandığınız harici hizmete girmesine izin verin'
+            select_a_meeting_type: Lütfen bir toplantı türü seçin
+            select_a_registration_type: Lütfen bir kayıt türü seçin
           index:
             title: Toplantılar
           new:
@@ -277,6 +290,7 @@ tr:
             invalid: Bu dakikalar oluşturulurken bir sorunla karşılaşıldı
             success: Dakika başarıyla oluşturuldu
           edit:
+            title: Dakikaları düzenleyin
             update: Güncelle
           new:
             create: Oluştur
@@ -357,6 +371,11 @@ tr:
             subject: Toplantınızın kaydı onaylandı
       meeting:
         not_allowed: Bu içeriği görüntüleme izniniz bulunmuyor
+      meeting_closes:
+        edit:
+          back: Geri
+          close: Toplantıyı kapat
+          title: Toplantıyı kapat
       meetings:
         count:
           meetings_count:
@@ -384,6 +403,12 @@ tr:
             user_groups: Gruplar
           scope: Kapsam
           search: Arama
+          type: Türü
+          type_values:
+            all: Tümü
+            hybrid: Her ikisi
+            in_person: Şahsen
+            online: Çevrimiçi
         filters_small_view:
           close_modal: Pencereyi kapat
           filter: Filtrele
@@ -391,10 +416,16 @@ tr:
           unfold: Aç
         form:
           address_help: 'Adres: Geocoder tarafından konumu bulmak için kullanılır'
+          available_slots_help: Sınırsız alanınız varsa bunu 0 olarak bırakın
           create_as: Toplantı oluştur
+          disclaimer: 'Sorumluluk reddi: Harici bir kayıt sistemi kullanarak, %{organization} organizatörlerinin, kullanıcılar tarafından harici hizmete sağlanan verilerden sorumlu olmadığını biliyorsunuz.'
           location_help: 'Konum: kullanıcılara buluşulacak yeri ima eden mesaj'
-          location_hints_help: 'Konum ipuçları: ek bilgi. Örnek: binanın zemini'
+          location_hints_help: 'Konum ipuçları: ek bilgi. Örnek: Yüz yüze bir toplantıysa binanın katı veya kısıtlı erişime sahip çevrimiçi bir toplantıysa toplantı parolası.'
+          online_meeting_url_help: 'Bağlantı: katılımcıların toplantınıza doğrudan bağlanmasına izin verin'
+          registration_url_help: 'Bağlantı: katılımcıların kayıtlar için kullandığınız harici hizmete girmesine izin verin'
           select_a_category: Lütfen bir kategori seçin
+          select_a_meeting_type: Lütfen bir toplantı türü seçin
+          select_a_registration_type: Lütfen bir kayıt türü seçin
         index:
           new_meeting: Yeni toplantı
         meeting_minutes:
@@ -413,6 +444,7 @@ tr:
         show:
           attendees: Katılımcı sayısı
           back: Listeye geri dön
+          close_meeting: Toplantıyı kapat
           contributions: Katkı sayımı
           date: Tarih
           edit_meeting: Toplantıyı Düzenle
@@ -459,6 +491,10 @@ tr:
           confirmed_html: Toplantı için kaydınız <a href="%{url}">%{title}</a> onaylandı.
           details: Toplantı detaylarını ekte bulabilirsiniz.
           registration_code: Kayıt kodunuz %{code}.
+      registration_type:
+        on_different_platform: Farklı bir platformda
+        on_this_platform: Bu platformu kullanın
+        registration_disabled: Kayıt olma devre dışı
       registrations:
         create:
           invalid: Bu toplantıya katılırken bir sorun oluştu.
@@ -469,6 +505,10 @@ tr:
         destroy:
           invalid: Bu toplantıdan ayrılırken bir sorun oluştu.
           success: Toplantıdan başarıyla ayrıldınız.
+      type_of_meeting:
+        hybrid: Her ikisi
+        in_person: Şahsen
+        online: Çevrimiçi
       types:
         private_meeting: Özel toplantı
         transparent: Şeffaf
@@ -479,11 +519,6 @@ tr:
         description: Oluşturulan toplantı sayısı
         object: toplantılar
         title: Toplantılar
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_meetings:
-          past_meetings: Geçmiş toplantılar
-          upcoming_meetings: Yaklaşan toplantılar
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Geçmiş toplantılar

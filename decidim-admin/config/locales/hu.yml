@@ -70,7 +70,6 @@ hu:
         rich_text_editor_in_public_views: A résztvevők számára a szövegszerkesztő felület engedélyezése
         secondary_color: Másodlagos
         send_welcome_notification: Üdvözlő értesítés küldése
-        show_statistics: Statisztikák megjelenítése
         success_color: Siker
         time_zone: Időzóna
         tos_version: Használati feltételek
@@ -145,7 +144,6 @@ hu:
           error: Hiba történt az adminra vonatkozó általános szerződési feltételek elfogadása során.
           success: Nagyszerű! Elfogadtad az admin felhasználási feltételeket.
         actions:
-          accept: Elfogadom ezeket az admin feltételeket
           are_you_sure: Biztosan visszautasítod az admin feltételek elfogadását?
           refuse: Admin feltételek elutasítása
           title: Elfogadom a felhasználási feltételeket
@@ -278,6 +276,19 @@ hu:
         update:
           error: Hiba történt az elem frissítése során.
           success: Az elem frissítése sikeres volt.
+      conflicts:
+        attempts: Próbálkozások
+        'false': 'Nincs'
+        managed_user_name: Kezelt felhasználó
+        solved: Megoldva
+        transfer:
+          email: Email
+          error: Hiba történt a jelenlegi résztvevő kezelt résztvevővé transzferálása során.
+          name: Név
+          reason: Ok
+          title: Átvezetés
+        'true': 'Igen'
+        user_name: Felhasználó
       dashboard:
         show:
           view_more_logs: További naplók megtekintése
@@ -572,7 +583,6 @@ hu:
           rich_text_editor_in_public_views_help: Néhány szövegmezőbe, a résztvevők HTML tag-eket tudnak majd beilleszteni a szövegszerkesztő segítségével.
           social_handlers: Social
           twitter: Twitter
-          url: Url
           youtube: Youtube
         update:
           error: Hiba történt a szervezet frissítése során.
@@ -607,7 +617,6 @@ hu:
           error: Hiba történt egy privát felhasználó törlésével a részvételi helyen.
           success: Privát felhasználó részvételi helyhez való hozzáférése törölve.
         index:
-          import_via_csv: Importálás CSV -ből
           title: Részvételi tér privát felhasználója
         new:
           create: Létrehozás
@@ -800,7 +809,6 @@ hu:
           fields:
             hidden_at: 'Rejtett itt:'
             report_count: Számol
-            reportable: Kimutatható
             reported_content_url: Jelentett URL tartalom
             reports: Jelentések
             visit_url: URL meglátogatása

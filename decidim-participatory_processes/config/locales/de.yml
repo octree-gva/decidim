@@ -36,9 +36,17 @@ de:
         title: Titel
       participatory_process_group:
         description: Beschreibung
+        developer_group: Gruppe der Unterstützer
+        group_url: Website
+        hashtag: Hashtag
         hero_image: Bild
-        name: Name
+        local_area: Organisationsbereich
+        meta_scope: Informationen zum Bereich
         participatory_process_ids: Ähnliche Beteiligungsprozesse
+        participatory_scope: Was wird entschieden
+        participatory_structure: Wie wird es entschieden
+        target: Wer nimmt teil
+        title: Titel
       participatory_process_step:
         cta_path: '"Call to Action"-Pfad'
         cta_text: Call to Action-Text
@@ -94,6 +102,9 @@ de:
         unpublish: Veröffentlichung rückgängig machen
       menu:
         participatory_process_groups: Prozessgruppen
+        participatory_process_groups_submenu:
+          info: Info
+          landing_page: Startseite
         participatory_processes: Beteiligungsprozesse
         participatory_processes_submenu:
           attachment_collections: Ordner
@@ -117,7 +128,7 @@ de:
           name: Beteiligungsprozess
         participatory_process_group:
           fields:
-            name: Name
+            title: Titel
           name: Prozessgruppe
         participatory_process_step:
           fields:
@@ -145,6 +156,13 @@ de:
           copy: Kopieren
           select: Wählen Sie aus, welche Daten Sie duplizieren möchten
           title: Beteiligungsprozess duplizieren
+      participatory_process_group_landing_page:
+        edit:
+          active_content_blocks: Aktive Inhaltsblöcke
+          inactive_content_blocks: Inaktive Inhaltsblöcke
+      participatory_process_group_landing_page_content_blocks:
+        edit:
+          update: Aktualisieren
       participatory_process_groups:
         destroy:
           error: Beim Löschen der Beteiligungsprozessgruppe ist ein Fehler aufgetreten.
@@ -301,10 +319,30 @@ de:
       show:
         related_assemblies: Ähnliche Versammlungen
     participatory_process_groups:
+      content_blocks:
+        html_1:
+          name: Erster HTML-Block
+        html_2:
+          name: Zweiter HTML-Block
+        html_3:
+          name: Dritter HTML-Block
+        metadata:
+          developer_group: Unterstützt von
+          name: Metadaten
+          participatory_scope: Was wird entschieden
+          participatory_structure: Wie wird es entschieden
+          target: Wer nimmt teil
+        participatory_processes:
+          name: Beteiligungsprozesse
+        stats:
+          name: Statistiken
+        title:
+          meta_scope: Umfang
+          name: Titel, Beschreibung und Hashtag
+          participatory_processes:
+            one: 1 Prozess
+            other: "%{count} Prozesse"
       show:
-        group_participatory_processes:
-          one: 1 Prozesse für %{group}
-          other: "%{count} Prozesse für %{group}"
         title: Partizipative Prozessgruppen
     participatory_process_steps:
       index:
@@ -321,6 +359,11 @@ de:
         participatory_process_copies:
           form:
             slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+        participatory_process_groups:
+          form:
+            metadata: Metadaten
+            title: Allgemeine Informationen
+            visibility: Sichtbarkeit
         participatory_process_imports:
           form:
             document_legend: Dokument hinzufügen
@@ -392,6 +435,7 @@ de:
           loading: Ergebnisse werden geladen ...
       show:
         area: Bereich
+        belongs_to_group: Dieser Prozess gehört zu
         dates: Daten
         developer_group: Promoter-Gruppe
         end_date: Enddatum
@@ -449,6 +493,8 @@ de:
           more_info_about: Weitere Informationen zum Prozess %{resource_name}
           take_part: Teilnehmen
           take_part_in: Beteiligen Sie sich am Prozess %{resource_name}
+        promoted_process_group:
+          more_info: Mehr Info
       process_header_steps:
         step: Schritt %{current} von %{total}
         view_steps: Schritte anzeigen

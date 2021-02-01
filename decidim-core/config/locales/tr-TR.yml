@@ -79,6 +79,7 @@ tr:
       logo: "%{organization} resmi logosu"
       skip_button: Ana içeriğe geç
     account:
+      blocked: Bu hesap, Şartlar ve Koşullar ihlali nedeniyle engellendi
       data_portability_export:
         file_no_exists: Dosya bulunmuyor
         notice: Verilerinizin indirilmesi şu anda devam ediyor. Tamamlandığında bir e-posta alacaksınız.
@@ -113,6 +114,8 @@ tr:
         delete: "%{user_name}, %{resource_name} bileşenini %{space_name} alanından kaldırdı"
         publish: "%{user_name}, %{resource_name} bileşenini %{space_name} alanında yayınladı"
         unpublish: "%{user_name}, %{resource_name} bileşenini %{space_name} alanındaki yayından kaldırdı"
+      impersonation_log:
+        manage: "%{user_name}, %{resource_name} adlı kaynağı yönetti çünkü %{reason}"
       moderation:
         hide: "%{user_name}, %{space_name} alanında %{resource_type} türünde bir kaynak sakladı"
         unreport: "%{user_name}, %{space_name} alanında %{resource_type} türünde bir kaynağı bildirmedi"
@@ -129,7 +132,7 @@ tr:
         update: "%{user_name} kuruluş ayarlarını güncelledi"
       participatory_space_private_user:
         create: "%{user_name}, %{resource_name} adlı kullanıcıyı özel katılımcı olması için davet etti"
-        create_via_csv: "%{user_name} özel bir kullanıcı olmak için %{resource_name} davet edildi"
+        create_via_csv: "%{user_name}, %{resource_name} kaynağını CSV aracılığıyla özel bir katılımcı olması için davet etti"
         delete: "%{user_name}, katılımcıyı %{resource_name} özel katılımcı özelliğini kaldırdı"
       scope:
         create: "%{user_name}, %{resource_name} kapsamı oluşturdu"
@@ -143,15 +146,21 @@ tr:
         delete: "%{user_name}, %{resource_name} statik sayfayı sildi"
         update: "%{user_name}, %{resource_name} statik sayfayı güncelledi"
       user:
+        block: "%{user_name}, %{resource_name} kullanıcısını engelledi"
         invite: "%{user_name} katılımcıyı %{resource_name} rolüyle davet etti: %{role}"
         officialize: "%{user_name}, katılımcıyı %{resource_name} resmileştirdi"
+        promote: "%{user_name}, %{resource_name} için terfi etti"
         remove_from_admin: "%{user_name}, kullanıcıyı %{resource_name} rolüyle kaldırıldı: %{role}"
         show_email: "%{user_name}, %{resource_name} katılımcının e-postasını aldı"
+        transfer: "%{user_name}, katılımcıyı %{resource_name} aktardı"
+        unblock: "%{user_name}, %{resource_name} engellemesini kaldırdı"
         unofficialize: "%{user_name}, katılımcının %{resource_name} resmiyetini kaldırdı"
       user_group:
         reject: "%{user_name}, %{resource_name} kullanıcı grubu doğrulamasını reddetti"
         verify: "%{user_name}, %{resource_name} kullanıcı grubunu doğruladı"
         verify_via_csv: "%{user_name}, bir CSV dosyası aracılığıyla %{resource_name} kullanıcı grubunu doğruladı"
+      user_moderation:
+        unreport: "%{user_name}, bir %{resource_type} - %{unreported_user_name} raporunu bildirdi"
     admin_terms_of_use:
       default_body: "<h2> YÖNETİCİ KULLANIM ŞARTLARI </h2> <p> Yerel Sistem Yöneticinizden olağan dersi almış olduğunuza güveniyoruz. Genellikle şu üç şeye indirgenir: </p> <ol> <li> Başkalarının mahremiyetine saygı gösterin. </li> <li> Tıklamadan önce düşünün. </li> <li> Büyük güç, büyük sorumluluk getirir. </li> </ol>"
     alert:
@@ -272,7 +281,7 @@ tr:
       dummy_authorization_workflow:
         name: Sahte yetkilendirme iş akışı
       errors:
-        duplicate_authorization: Bir katılımcı zaten aynı verilerle yetkilendirilmiştir.
+        duplicate_authorization: Bir katılımcı zaten aynı verilerle yetkilendirildi. Bir yönetici, bilgilerinizi doğrulamak için sizinle iletişime geçecektir.
       expired_at: '%{timestamp} bitti'
       expires_at: '%{timestamp} sona eriyor'
       foo_authorization:
@@ -318,6 +327,13 @@ tr:
           title: E-posta adresinizi doğrulayın
       show:
         close_modal: Pencereyi kapat
+    block_user_mailer:
+      notify:
+        body_1: Hesabınız kilitlendi.
+        body_2: 'Gerekçe: %{justification}'
+        greetings: Selamlar,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Merhaba,
+        subject: Hesabınız %{organization_name} tarafından engellendi
     collapsible_list:
       hidden_elements_count:
         one: ve %{count} daha
@@ -366,6 +382,13 @@ tr:
             dummy_step_translatable_text: Sahte Çevrilebilir Metin
     contact: İletişim
     content_blocks:
+      cta:
+        name: Resim, metin ve Harekete Geçirici Mesaj düğmesi
+      cta_settings_form:
+        background_image: Arka plan resmi
+        button_text: Harekete Geçirici Mesaj metni
+        button_url: Harekete Geçirici Mesaj URL'si
+        description: Açıklama
       footer_sub_hero:
         name: Dipnot alt afişi
       hero:
@@ -375,6 +398,11 @@ tr:
         welcome_text: Hoşgeldin Mesajı
       highlighted_content_banner:
         name: Vurgulanan içerik banner'ı
+      highlighted_elements_settings_form:
+        orders:
+          label: 'Öğeleri sıralama ölçütü:'
+          random: Rastgele
+          recent: En yeni
       how_to_participate:
         name: Nasıl katılacağım
       html:
@@ -409,7 +437,7 @@ tr:
           email_already_exists: Başka bir hesap aynı e-posta adresini kullanıyor
         new:
           complete_profile: Profilini tamamla
-          nickname_help: Benzersiz tanımlayıcınız %{organization}
+          nickname_help: Takma adınız %{organization}. Yalnızca harf, rakam, "-" ve "_" içerebilir.
           sign_up: Lütfen profilinizi tamamlayın
           subtitle: Kayıt işlemini tamamlamak için lütfen aşağıdaki formu doldurunuz.
           username_help: Gönderilerinizde görünen genel ad. Anonimliği garanti etmek amacıyla herhangi bir isim olabilir.
@@ -418,7 +446,7 @@ tr:
           already_have_an_account?: Zaten hesabınız var mı?
           newsletter: Ara sıra ilgili bilgileri içeren bir haber bülteni alın
           newsletter_title: İletişim izni
-          nickname_help: Benzersiz tanımlayıcınız %{organization}
+          nickname_help: Takma adınız %{organization}. Yalnızca harf, rakam, "-" ve "_" içerebilir.
           password_help: "Asgari %{minimun_characters} karakter, çok yaygın olmamalı (örnek: 123456) ve takma adınızdan ve eposta adresinizden farklı olmalıdır."
           sign_in: Oturum aç
           sign_up: kaydol
@@ -610,6 +638,14 @@ tr:
           notification_title: '%{user_group_name} kullanıcı grubu profilini güncelledi ve doğrulanmadan bırakıldı. Artık bunu <a href="%{groups_admin_path}"> yönetici panelinde </a> doğrulayabilirsiniz.'
       notification_event:
         notification_title: Bir olay <a href="%{resource_path}">%{resource_title}</a>.
+      reports:
+        resource_hidden:
+          email_intro: Bir yönetici, %{resource_type}'nizi %{report_reasons} olarak bildirildiği için kaldırdı.
+          email_outro: Bu bildirimi, kaldırılan içeriğin yazarı olduğunuz için aldınız.
+          email_subject: '%{resource_type} kaldırıldı'
+          notification_title: |-
+            Bir yönetici, %{resource_type}'nizi %{report_reasons} olarak bildirildiği için kaldırdı. </br>
+            <i>%{resource_content} </i>
       resource_endorsed:
         email_intro: 'Takip ettiğiniz %{endorser_name} %{endorser_nickname}, "%{resource_title}" ögesini az önce onayladı ve sizin için ilginç olabileceğini düşünüyoruz. Kontrol edin ve katkıda bulunun:'
         email_outro: Bu bildirimi %{endorser_nickname} adlı kişiyi takip ettiğiniz için aldınız. Önceki bağlantıyı izleyerek bildirim almayı durdurabilirsiniz.
@@ -673,7 +709,7 @@ tr:
         file:
           explanation: 'Dosya kılavuzu:'
           message_1: Bir resim veya bir belge olmalı.
-          message_2: Resimler için tercihen yatay resimleri kullanın, bu servis resmi kırpar.
+          message_2: Resimler için tercihen yatay resimleri kullanın, bu servis resmi kırpar. CSV dosyaları için, sütunlar arasındaki ayırıcı virgül (",") olmalıdır
         image:
           explanation: 'Dosya kılavuzu:'
           message_1: Tercihen herhangi bir metin içermeyen yatay bir resim.
@@ -1083,6 +1119,7 @@ tr:
       not_allowed: Bu içeriği görüntüleme izniniz bulunmuyor
     profile:
       deleted: Katılımcı silindi
+      inaccessible_message: Bu profile, Şartlar ve Koşullar ihlali nedeniyle erişilemez!
       view: Görünüm
     profiles:
       default_officialization_text_for_user_groups: Bu grup herkese açık olarak doğrulandı, adının gerçek adıyla eşleştiği doğrulandı
@@ -1123,13 +1160,15 @@ tr:
       report:
         authors: Yazarlar
         content: İçeriği bildir
+        content_original_language: İçerik orijinal dili
         date: Rapor edildi
         details: Ayrıntılar
         hello: Merhaba %{name}
-        manage_moderations: Denetimleri yönet
+        id: ID
         participatory_space: Katılımcı alanı
         reason: Nedeni
         report_html: <p>Aşağıdaki <a href="%{url}">içerik</a> bildirilmiştir.</p>
+        see_report: Raporu gör
         subject: Bir kaynak rapor edildi
     reports:
       create:
@@ -1202,6 +1241,15 @@ tr:
         report: Rapor
         spam: Tıklama, reklam, dolandırıcılık veya komut dosyası botları içerir.
         title: Sorun bildir
+      flag_user_modal:
+        already_reported: Bu içerik zaten bildirildi ve bir yönetici tarafından incelenecek.
+        close: Kapat
+        description: Kullanıcı hakkında uygunsuz olan nedir?
+        does_not_belong: Yasadışı faaliyet, intihar tehditleri, kişisel bilgiler veya %{organization_name} kuruluşuna ait olmadığını düşündüğünüz başka bir şey içeriyor.
+        offensive: Irkçılık, cinsiyetçilik, hakaretler, kişisel saldırılar, ölüm tehditleri, intihar talepleri veya her türlü nefret söylemi içerir.
+        report: Bildir
+        spam: Tıklama tuzağı, reklam, dolandırıcılık veya komut dosyası botları içerir.
+        title: Uygunsuz Kullanıcıyı bildirin
       floating_help:
         close: Yardımı Kapat
         help: yardım et
@@ -1277,6 +1325,13 @@ tr:
       update:
         error: İlgi alanlarınız güncellenirken bir hata oluştu.
         success: İlgi alanlarınız başarıyla güncellendi.
+    user_report_mailer:
+      notify:
+        body_1: Kullanıcı %{user}, %{token} tarafından rapor edildi
+        body_2: 'Gerekçe: %{reason}'
+        greetings: Selamlar,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Merhaba %{admin},
+        subject: '%{organization_name} içinde yeni bir kullanıcı bildirildi'
     version:
       show:
         back_to_resource: Geri git

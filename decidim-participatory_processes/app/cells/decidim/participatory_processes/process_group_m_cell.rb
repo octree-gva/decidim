@@ -16,7 +16,7 @@ module Decidim
       end
 
       def title
-        translated_attribute model.name
+        translated_attribute model.title
       end
 
       def resource_path
@@ -36,10 +36,12 @@ module Decidim
       end
 
       def processes_count_status
+        # rubocop: disable Style/StringConcatenation
         content_tag(
           :strong,
           t("layouts.decidim.participatory_process_groups.participatory_process_group.processes_count")
         ) + " " + processes_visible_for_user
+        # rubocop: enable Style/StringConcatenation
       end
 
       def processes_visible_for_user

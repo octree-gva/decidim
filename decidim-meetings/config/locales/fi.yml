@@ -21,15 +21,18 @@ fi:
         end_time: Lopetusaika
         location: Paikka
         location_hints: Paikan tarkemmat tiedot
+        online_meeting_url: Verkkotapaamisen osoite (URL)
         organizer_gid: Luo käyttäjänä
         organizer_id: Järjestäjä
         private_meeting: Yksityinen tapaaminen
         registration_form_enabled: Ilmoittautumislomake on käytössä
         registration_terms: Ilmoittautumisehdot
+        registration_url: Ilmoittautumisosoite (URL)
         registrations_enabled: Ilmoittautumiset ovat käytössä
         start_time: Aloitusaika
         title: Otsikko
         transparent: Läpinäkyvä
+        type_of_meeting: Tyyppi
       minutes:
         audio_url: Äänen URL-osoite
         description: Kuvaus
@@ -87,9 +90,11 @@ fi:
             creation_enabled_for_participants: Osallistujat voivat luoda tapaamisia
             default_registration_terms: Ilmoittautumisen oletusehdot
             enable_pads_creation: Ota käyttöön muistioiden luominen
+            registration_code_enabled: Ilmoittautumiskoodit käytössä
             resources_permissions_enabled: Toiminnallisuutta koskevat oikeudet voidaan asettaa jokaiselle tapaamiselle
             scope_id: Teema
             scopes_enabled: Teemat käytössä
+            terms_and_conditions_url_for_meeting_creators: Ehtojen osoite (URL) tapaamisten luojille
           step:
             announcement: Ilmoitus
             comments_blocked: Kommentointi estetty
@@ -202,6 +207,7 @@ fi:
             invalid: Esityslistan päivitys epäonnistui
             success: Esityslistan päivitys onnistui
         exports:
+          meeting_comments: Kommentit
           meetings: Tapaamiset
           registrations: Ilmoittautumiset
         invite_join_meeting_mailer:
@@ -249,11 +255,18 @@ fi:
                 other: Tapaamista ei voi poistaa, koska siihen on liitetty %{count} ehdotusta
             success: Tapaamisen poisto onnistui
           edit:
+            title: Muokkaa tapaamista
             update: Päivitä
           form:
             address_help: 'Osoite: käytetään karttapisteen etsimiseen geokoodauksen avulla'
+            available_slots_help: Määritä tähän kenttään arvo 0, jos tapahtuman paikkamäärää ei ole rajoitettu
+            disclaimer: 'Vastuuvapauslauseke: Käyttämällä ulkoista ilmoittautumisjärjestelmää olet tietoinen siitä, että organisaatio %{organization} ei ole vastuussa tiedoista, jotka käyttäjät ovat antaneet ulkoiselle palvelulle.'
             location_help: 'Paikka: kuvaus tapahtumapaikan tarkemmasta sijainnista osallistujille'
-            location_hints_help: 'Sijainnin vihjeteksti: lisätietoja sijainnista. Esimerkiksi rakennuksen kerros sijaintipaikalla'
+            location_hints_help: 'Vihjeet sijainnille: sijainnin lisätieto. Esimerkiksi rakennuksen kerros fyysisissä tapaamisissa tai tapaamisen salasana rajatussa verkkotapaamisessa.'
+            online_meeting_url_help: 'Linkki: salli osallistujien yhdistäminen tapaamiseen suoraan'
+            registration_url_help: 'Linkki: salli käyttäjien siirtyminen käytettyyn ulkoiseen ilmoittautumispalveluun'
+            select_a_meeting_type: Valitse tapaamisen tyyppi
+            select_a_registration_type: Valitse ilmoittautumisten tyyppi
           index:
             title: Tapaamiset
           new:
@@ -277,6 +290,7 @@ fi:
             invalid: Pöytäkirjan luonti epäonnistui
             success: Pöytäkirjan luonti onnistui
           edit:
+            title: Muokkaa pöytäkirjaa
             update: Päivitä
           new:
             create: Luo
@@ -357,6 +371,11 @@ fi:
             subject: Ilmoittautumisesi tapaamiseen on vahvistettu
       meeting:
         not_allowed: Sinulla ei ole lupaa tarkastella tätä tapaamista
+      meeting_closes:
+        edit:
+          back: Takaisin
+          close: Sulje tapaaminen
+          title: Sulje tapaaminen
       meetings:
         count:
           meetings_count:
@@ -384,6 +403,12 @@ fi:
             user_groups: Ryhmät
           scope: Teema
           search: Hae
+          type: Tyyppi
+          type_values:
+            all: Kaikki
+            hybrid: Molemmat
+            in_person: Fyysinen
+            online: Verkossa
         filters_small_view:
           close_modal: Sulje ikkuna
           filter: Rajaa
@@ -391,10 +416,16 @@ fi:
           unfold: Avaa
         form:
           address_help: 'Osoite: käytetään karttapisteen etsimiseen geokoodauksen avulla'
+          available_slots_help: Määritä tähän kenttään arvo 0, jos tapahtuman paikkamäärää ei ole rajoitettu
           create_as: Luo tapaaminen käyttäjänä
+          disclaimer: 'Vastuuvapauslauseke: Käyttämällä ulkoista ilmoittautumisjärjestelmää olet tietoinen siitä, että organisaatio %{organization} ei ole vastuussa tiedoista, jotka käyttäjät ovat antaneet ulkoiselle palvelulle.'
           location_help: 'Paikka: kuvaus tapahtumapaikan tarkemmasta sijainnista osallistujille'
-          location_hints_help: 'Sijainnin vihjeteksti: lisätietoja sijainnista. Esimerkiksi rakennuksen kerros sijaintipaikalla'
+          location_hints_help: 'Vihjeet sijainnille: sijainnin lisätieto. Esimerkiksi rakennuksen kerros fyysisissä tapaamisissa tai tapaamisen salasana rajatussa verkkotapaamisessa.'
+          online_meeting_url_help: 'Linkki: salli osallistujien yhdistäminen tapaamiseen suoraan'
+          registration_url_help: 'Linkki: salli käyttäjien siirtyminen käytettyyn ulkoiseen ilmoittautumispalveluun'
           select_a_category: Valitse aihepiiri
+          select_a_meeting_type: Valitse tapaamisen tyyppi
+          select_a_registration_type: Valitse ilmoittautumisten tyyppi
         index:
           new_meeting: Uusi tapaaminen
         meeting_minutes:
@@ -413,6 +444,7 @@ fi:
         show:
           attendees: Osallistujamäärä
           back: Takaisin listaan
+          close_meeting: Sulje tapaaminen
           contributions: Kontribuutioiden määrä
           date: Päivämäärä
           edit_meeting: Muokkaa tapaamista
@@ -459,6 +491,10 @@ fi:
           confirmed_html: Ilmoittautumisesi tapaamiseen <a href="%{url}">%{title}</a> on vahvistettu.
           details: Löydät tapaamisen tarkemmat tiedot liitteenä olevasta kalenterimerkinnästä.
           registration_code: Ilmoittautumiskoodisi on %{code}.
+      registration_type:
+        on_different_platform: Toisella alustalla
+        on_this_platform: Tällä alustalla
+        registration_disabled: Ilmoittautumiset eivät ole käytössä
       registrations:
         create:
           invalid: Tapaamiseen liittyminen epäonnistui.
@@ -469,6 +505,10 @@ fi:
         destroy:
           invalid: Tapaamisesta poistuminen epäonnistui.
           success: Olet poistunut tapaamisesta onnistuneesti.
+      type_of_meeting:
+        hybrid: Molemmat
+        in_person: Fyysinen
+        online: Verkossa
       types:
         private_meeting: Yksityinen tapaaminen
         transparent: Läpinäkyvä
@@ -479,11 +519,6 @@ fi:
         description: Tapaamisten määrä
         object: tapaamiset
         title: Tapaamiset
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_meetings:
-          past_meetings: Aikaisemmat tapaamiset
-          upcoming_meetings: Tulevat tapaamiset
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Aikaisemmat tapaamiset

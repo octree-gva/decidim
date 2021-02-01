@@ -70,7 +70,6 @@ ca:
         rich_text_editor_in_public_views: Habilitar l'editor de text enriquit
         secondary_color: Secundari
         send_welcome_notification: Envia la notificació de benvinguda
-        show_statistics: Mostrar estadístiques
         success_color: Èxit
         time_zone: Zona horària
         tos_version: Versió dels Termes de Servei
@@ -92,6 +91,7 @@ ca:
         organization: Organització
         plural: Plural
       static_page:
+        allow_public_access: Permet l'accés sense autenticació
         changed_notably: S'han produït canvis notables.
         content: Contingut
         organization: Organització
@@ -146,7 +146,6 @@ ca:
           error: S'ha produït un error en acceptar els Termes i Condicions dell panell d'administració.
           success: Genial! Has acceptat els Termes i Condicions del panell d'administració.
         actions:
-          accept: Estic d'acord amb aquests termes
           are_you_sure: Segur que vols rebutjar els Termes i Condicions del panell d'administració?
           refuse: Rebutjar els termes
           title: Accepto els Termes i Condicions d'Administració
@@ -296,6 +295,9 @@ ca:
         category_id_eq:
           label: Categoria
         filter_label: Filtre
+        moderations:
+          reportable_type_string_eq:
+            label: Tipus
         officialized_at_null:
           label: Estat
           values:
@@ -477,6 +479,9 @@ ca:
             does_not_belong: No pertany
             offensive: Ofensiu
             spam: Contingut no desitjat
+        reports:
+          index:
+            author: Autor(s)
       newsletter_templates:
         index:
           preview_template: Previsualitzar
@@ -582,7 +587,6 @@ ca:
           rich_text_editor_in_public_views_help: En algunes àrees de text, les participants podran inserir algunes etiquetes HTML amb l'editor de text enriquit.
           social_handlers: Social
           twitter: Twitter
-          url: URL
           youtube: YouTube
         update:
           error: S'ha produït un error en actualitzar aquesta organització.
@@ -617,7 +621,6 @@ ca:
           error: S'ha produït un error en eliminar una participant participada d'aquest espai participatiu.
           success: L'accés de la participant a l'espai de participació privat s'ha eliminat correctament.
         index:
-          import_via_csv: Importar via csv
           title: Participant de l'espai participatiu privat
         new:
           create: Crear
@@ -827,7 +830,6 @@ ca:
           fields:
             hidden_at: Data d'ocultació
             report_count: Recompte
-            reportable: Tipus
             reported_content_url: URL contingut del contingut reportat
             reports: Denúncies
             visit_url: Visiteu l'URL

@@ -54,6 +54,18 @@ Decidim.register_component(:accountability) do |component|
     exports.serializer Decidim::Accountability::ResultSerializer
   end
 
+  component.exports :result_comments do |exports|
+    exports.collection do |component_instance|
+      Decidim::Comments::Export.comments_for_resource(
+        Decidim::Accountability::Result, component_instance
+      )
+    end
+
+    exports.include_in_open_data = true
+
+    exports.serializer Decidim::Comments::CommentSerializer
+  end
+
   component.seeds do |participatory_space|
     admin_user = Decidim::User.find_by(
       organization: participatory_space.organization,
@@ -66,7 +78,7 @@ Decidim.register_component(:accountability) do |component|
       published_at: Time.current,
       participatory_space: participatory_space,
       settings: {
-        intro: Decidim::Faker::Localized.wrapped("<p>", "</p>") { Decidim::Faker::Localized.sentence(4) },
+        intro: Decidim::Faker::Localized.wrapped("<p>", "</p>") { Decidim::Faker::Localized.sentence(word_count: 4) },
         categories_label: Decidim::Faker::Localized.word,
         subcategories_label: Decidim::Faker::Localized.word,
         heading_parent_level_results: Decidim::Faker::Localized.word,
@@ -94,9 +106,9 @@ Decidim.register_component(:accountability) do |component|
 
       2.times do
         categories << Decidim::Category.create!(
-          name: Decidim::Faker::Localized.sentence(5),
+          name: Decidim::Faker::Localized.sentence(word_count: 5),
           description: Decidim::Faker::Localized.wrapped("<p>", "</p>") do
-            Decidim::Faker::Localized.paragraph(3)
+            Decidim::Faker::Localized.paragraph(sentence_count: 3)
           end,
           parent: parent_category,
           participatory_space: participatory_space
@@ -111,9 +123,9 @@ Decidim.register_component(:accountability) do |component|
             component: component,
             scope: participatory_space.organization.scopes.sample,
             category: category,
-            title: Decidim::Faker::Localized.sentence(2),
+            title: Decidim::Faker::Localized.sentence(word_count: 2),
             description: Decidim::Faker::Localized.wrapped("<p>", "</p>") do
-              Decidim::Faker::Localized.paragraph(3)
+              Decidim::Faker::Localized.paragraph(sentence_count: 3)
             end
           },
           visibility: "all"
@@ -132,9 +144,9 @@ Decidim.register_component(:accountability) do |component|
               end_date: Time.zone.today + 10,
               status: Decidim::Accountability::Status.all.sample,
               progress: rand(1..100),
-              title: Decidim::Faker::Localized.sentence(2),
+              title: Decidim::Faker::Localized.sentence(word_count: 2),
               description: Decidim::Faker::Localized.wrapped("<p>", "</p>") do
-                Decidim::Faker::Localized.paragraph(3)
+                Decidim::Faker::Localized.paragraph(sentence_count: 3)
               end
             },
             visibility: "all"
@@ -143,7 +155,7 @@ Decidim.register_component(:accountability) do |component|
           rand(0..5).times do |i|
             child_result.timeline_entries.create!(
               entry_date: child_result.start_date + i.days,
-              description: Decidim::Faker::Localized.sentence(2)
+              description: Decidim::Faker::Localized.sentence(word_count: 2)
             )
           end
 

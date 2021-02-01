@@ -15,10 +15,6 @@ module Decidim
       include Decidim::Admin::UserRolesHelper
       include Decidim::Admin::ResourceScopeHelper
 
-      def title
-        current_organization.name
-      end
-
       # Adds a link to the secondary navigation so admins can easily access the public page of the
       # element their working on.
       #
@@ -31,6 +27,11 @@ module Decidim
             I18n.t("decidim.admin.view_public_page")
           end
         end
+      end
+
+      def participatory_space_active_link?(component)
+        endpoints = component.manifest.admin_engine.try(:participatory_space_endpoints)
+        endpoints && is_active_link?(decidim_admin_participatory_processes.components_path(current_participatory_space), %r{/\d+/manage/(#{endpoints.join("|")})\b})
       end
     end
   end

@@ -5,7 +5,7 @@ require "spec_helper"
 describe "Admin manages answers", type: :system do
   let!(:proposals) { create_list :proposal, 3, :accepted, component: origin_component }
   let!(:origin_component) { create :proposal_component, participatory_space: current_component.participatory_space }
-  let(:election) { create :election, :upcoming, component: current_component }
+  let(:election) { create :election, component: current_component }
   let(:question) { create :question, election: election }
   let(:answer) { create :election_answer, question: question }
   let(:manifest_name) { "elections" }
@@ -19,11 +19,11 @@ describe "Admin manages answers", type: :system do
     visit_component_admin
 
     within find("tr", text: translated(election.title)) do
-      page.find(".action-icon--edit-questions").click
+      page.find(".action-icon--manage-questions").click
     end
 
     within find("tr", text: translated(question.title)) do
-      page.find(".action-icon--edit-answers").click
+      page.find(".action-icon--manage-answers").click
     end
   end
 
@@ -81,8 +81,8 @@ describe "Admin manages answers", type: :system do
     end
   end
 
-  context "when the election has started" do
-    let(:election) { create(:election, :started, component: current_component) }
+  context "when the election was created on the bulletin board" do
+    let(:election) { create(:election, :created, component: current_component) }
 
     it "cannot add a new answer" do
       expect(page).to have_no_content("New Answer")
@@ -124,8 +124,8 @@ describe "Admin manages answers", type: :system do
       end
     end
 
-    context "when the election has started" do
-      let(:election) { create(:election, :started, component: current_component) }
+    context "when the election was created on the bulletin board" do
+      let(:election) { create(:election, :created, component: current_component) }
 
       it "cannot update the answer" do
         within find("tr", text: translated(answer.title)) do
@@ -152,13 +152,39 @@ describe "Admin manages answers", type: :system do
       end
     end
 
-    context "when the election has started" do
-      let(:election) { create(:election, :started, component: current_component) }
+    context "when the election was created on the bulletin board" do
+      let(:election) { create(:election, :created, component: current_component) }
 
       it "cannot delete the question" do
         within find("tr", text: translated(answer.title)) do
           expect(page).to have_no_selector(".action-icon--remove")
         end
+      end
+    end
+  end
+
+  context "when answer has votes" do
+    let!(:election) { create :election, :results, component: current_component }
+    let!(:question) { election.questions.first }
+    let!(:answer) { question.answers.first }
+
+    it "can change selected status" do
+      within find("tr", text: translated(answer.title)) do
+        expect(page).to have_selector(".action-icon")
+      end
+    end
+
+    it "toggles selected status" do
+      within find("tr", text: translated(answer.title)) do
+        first(".action-icon").click
+      end
+
+      within find("tr", text: translated(answer.title)) do
+        expect(page).to have_selector(".action-icon--success")
+      end
+
+      within ".callout-wrapper" do
+        expect(page).to have_content("Answer successfully selected")
       end
     end
   end

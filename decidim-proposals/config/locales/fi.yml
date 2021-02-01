@@ -27,6 +27,9 @@ fi:
         user_group_id: Luo ehdotus käyttäjänä
       proposal_answer:
         answer: Vastaa
+        cost: Kustannusarvio
+        cost_report: Kustannusraportti
+        execution_period: Toteutusjakso
       proposals_copy:
         copy_proposals: Ymmärrän, että tämä tuo kaikki valitun komponentin ehdotukset nykyiseen komponenttiin ja että tätä toimenpidettä ei voi peruuttaa.
         origin_component_id: Osio josta ehdotukset kopioidaan
@@ -336,10 +339,6 @@ fi:
         description: Ehdotuksiin kohdistuneiden kannatusten määrä
         object: kannatukset
         title: Kannatukset
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_proposals:
-          proposals: Ehdotukset
     participatory_spaces:
       highlighted_proposals:
         see_all: Näytä kaikki ehdotukset (%{count} kpl)
@@ -356,7 +355,7 @@ fi:
         actions:
           preview: Esikatsele
         exports:
-          comments: Kommentit
+          proposal_comments: Kommentit
           proposals: Ehdotukset
         models:
           proposal:
@@ -380,7 +379,7 @@ fi:
           new_import:
             accepted_mime_types:
               md: Markdown
-              odt: Odt
+              odt: ODT
             bottom_hint: "(Voit esikatsella ja lajitella aineiston osioita)"
             document_legend: 'Lisää alle 2 Mt:n kokoinen tiedosto, josta jokainen osio kolmannelle tasolle saakka lisätään uusiksi ehdotuksiksi. Tuetut tiedostomuodot ovat: %{valid_mime_types}'
             title: Lisää aineisto
@@ -497,6 +496,7 @@ fi:
             no_components: Tässä osallistumistilassa ei ole muita ehdotuskomponentteja ehdotusten tuomiseksi.
             select_component: Valitse komponentti
             select_states: Tarkista tuotavien ehdotusten tilat
+            title: Tuo ehdotuksia
         proposals_merges:
           create:
             invalid: Valittujen ehdotusten yhdistäminen epäonnistui.
@@ -669,6 +669,9 @@ fi:
           step_3: Tee yhteistyöluonnoksesi valmiiksi
           step_of: Vaihe %{current_step_num} / %{total_steps}
           title: Yhteistyölunnoksen luonnin vaiheet
+      content_blocks:
+        highlighted_proposals:
+          proposals: Ehdotukset
       create:
         error: Ehdotuksen tallennus epäonnistui.
         success: Ehdotuksen luonti onnistui. Ehdotus on tallennettu luonnoksena.
@@ -721,6 +724,8 @@ fi:
           proposals_count:
             one: "%{count} ehdotus"
             other: "%{count} ehdotusta"
+        dynamic_map_instructions:
+          instructions: <h3>Voit siirtää karttapistettä</h3><p>Muistathan painaa "Päivitä sijainti" -painiketta ennen kuin julkaiset ehdotuksen.</p>
         edit:
           add_documents: Asiakirjat
           add_images: Tiedosto
@@ -781,6 +786,8 @@ fi:
             document_index: Asiakirjan hakemisto
           view_index:
             see_index: Näytä hakemisto
+        placeholder:
+          address: Mannerheimintie 1 A, 00100 Helsinki
         preview:
           modify: Muokkaa ehdotusta
           proposal_edit_before_minutes:
@@ -788,6 +795,7 @@ fi:
             other: Voit muokata tätä ehdotusta ensimmäisten %{count} minuutin aikana ehdotuksen julkaisemisesta. Kun tämä aikaikkuna sulkeutuu, et pysty muokkaamaan ehdotusta.
           publish: Julkaise
           title: Julkaise ehdotuksesi
+          update_position: Päivitä sijainti
         proposal:
           creation_date: 'Luontiaika: %{date}'
           view_proposal: Näytä ehdotus

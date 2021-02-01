@@ -56,6 +56,7 @@ module Decidim
             expect(organization.host).to eq("decide.gotham.gov")
             expect(organization.secondary_hosts).to match_array(["foo.gotham.gov", "bar.gotham.gov"])
             expect(organization.smtp_settings["from"]).to eq("Decide Gotham <decide@gotham.gov>")
+            expect(organization.smtp_settings["from_email"]).to eq("decide@gotham.gov")
             expect(organization.omniauth_settings["omniauth_settings_facebook_enabled"]).to eq(true)
             expect(organization.smtp_settings["from_email"]).to eq("decide@gotham.gov")
             expect(organization.file_upload_settings).to eq(upload_settings)
@@ -155,9 +156,10 @@ module Decidim
 
         def params_for_uploads(hash)
           hash.map do |key, value|
-            if value.is_a?(Hash)
+            case value
+            when Hash
               value = params_for_uploads(value)
-            elsif value.is_a?(Array)
+            when Array
               value = value.join(",")
             end
 

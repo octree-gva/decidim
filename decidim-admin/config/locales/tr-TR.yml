@@ -70,7 +70,6 @@ tr:
         rich_text_editor_in_public_views: Katılımcılar için zengin metin düzenleyiciyi etkinleştirin
         secondary_color: İkincil
         send_welcome_notification: Karşılama bildirimi gönder
-        show_statistics: İstatistikleri göster
         success_color: başarı
         time_zone: Zaman Dilimi
         tos_version: Hizmet sürümü şartları
@@ -94,6 +93,7 @@ tr:
       settings:
         scope_id: Kapsam
       static_page:
+        allow_public_access: Kimlik doğrulama olmadan erişime izin ver
         changed_notably: Gözle görülür değişiklikler oldu.
         content: içerik
         organization: organizasyon
@@ -148,7 +148,7 @@ tr:
           error: Yönetici kullanım şartlarını kabul ederken bir hata oluştu.
           success: Harika! Yönetici kullanım şartlarını kabul ettiniz.
         actions:
-          accept: Bu yönetici şartlarını kabul ediyorum
+          accept: Aşağıdaki şartları kabul ediyorum
           are_you_sure: Yönetici şartlarını reddettiğinizden emin misiniz?
           refuse: Yönetici şartlarını reddedin
           title: Kullanım şartlarını ve koşullarını kabul edin
@@ -227,6 +227,12 @@ tr:
       autocomplete:
         no_results: Sonuç bulunamadı
         search_prompt: Aramak için en az üç karakter girin
+      block_user:
+        new:
+          action: Hesabı engelle ve uyarı mesjı gönder
+          description: Bir kullanıcının engellenmesi, hesabının kullanılamaz hale gelmesine neden olur, gerekçenizde ve kullanıcının engellemesini kaldırmayı düşündüğünüz yollarla ilgili yönergeler sağlayabilirsiniz.
+          justification: Gerekçe
+          title: '%{name} Kullanıcısını Engelle'
       categories:
         create:
           error: Bu kategori oluşturulurken bir hata oluştu.
@@ -282,6 +288,21 @@ tr:
         update:
           error: Bu bileşeni güncellerken bir hata oluştu.
           success: Bileşen başarıyla güncellendi.
+      conflicts:
+        attempts: Girişimler
+        'false': 'Hayır'
+        managed_user_name: Yönetilen Kullanıcı
+        solved: Çözüldü
+        title: Doğrulamaların çatışmaları
+        transfer:
+          email: E-Posta
+          error: Mevcut katılımcıyı yönetilen katılımcıya aktarırken bir sorun oluştu.
+          name: İsim
+          reason: Nedeni
+          success: Aktarım başarıyla tamamlandı.
+          title: Aktar
+        'true': 'Evet'
+        user_name: Kullanıcı Adı
       dashboard:
         show:
           view_more_logs: Daha fazla günlükleri görüntüle
@@ -298,6 +319,9 @@ tr:
         category_id_eq:
           label: Kategori
         filter_label: Filtrele
+        moderations:
+          reportable_type_string_eq:
+            label: Türü
         officialized_at_null:
           label: Belirtmek, bildirmek
           values:
@@ -318,6 +342,7 @@ tr:
         search_label: Arama
         search_placeholder:
           name_or_nickname_or_email_cont: '%{collection} e-posta, isim veya takma ad ile arayın.'
+          reported_id_string_or_reported_content_cont: '%{collection} ''ı rapor edilebilir kimlik veya içeriğe göre arayın.'
           title_cont: Başlığa göre %{collection} ara.
         state_eq:
           label: Durum
@@ -382,8 +407,10 @@ tr:
         help_sections: Yardım bölümleri
         homepage: Anasayfa
         impersonations: impersonations
+        moderation: Küresel denetimler
         newsletters: Haber bültenleri
         participants: Katılımcılar
+        reported_users: Raporlanan Kullanıcı
         scope_types: Kapsam türleri
         scopes: kapsamları
         settings: Ayarlar
@@ -471,6 +498,20 @@ tr:
             phone: Telefon
             state: Belirtmek, bildirmek
             users_count: Kullanıcılar
+      moderated_users:
+        index:
+          actions:
+            title: Eylemler
+            unreport: Bildirilmedi
+          name: Adı
+          nickname: Rumuz
+          reason: Nedeni
+          title: Bildirilen kullanıcılar listesi
+        report:
+          reasons:
+            does_not_belong: Ait değil
+            offensive: Saldırgan
+            spam: İstenmeyen
       moderations:
         index:
           title: Denetimler
@@ -479,6 +520,21 @@ tr:
             does_not_belong: Ait değil
             offensive: saldırgan
             spam: İstenmeyen e
+        reports:
+          index:
+            author: Yazar(lar)
+            callout_html: Bir kullanıcı tarafından (kayıtlı hesabı olan herhangi biri olabilir) öğenin yanındaki %{icon} bayrağına tıklanarak bildirildiğinde, denetim panelinde bir içerik görünür.
+            content_original_language: İçerik orijinal dili
+            participatory_space: Katılımcı süreç
+            reported_content: Şikayet Edilmiş İçerik
+            see_current: Şu ankini gör
+            see_original: Orijinali gör
+            title: Moderatör raporları
+          show:
+            report_details: Nedenin ayrıntıları
+            report_language: Rapor dili
+            report_reason: Nedeni
+            title: Rapor ayrıntıları
       newsletter_templates:
         index:
           preview_template: Ön izleme
@@ -544,6 +600,9 @@ tr:
           error: Bu bülteni güncellerken bir hata oluştu.
           success: Bülten başarıyla güncellendi. Lütfen göndermeden önce gözden geçirin.
       officializations:
+        block:
+          error: Katılımcıyı engellerken bir hata oluştu
+          success: Katılımcı başarıyla engellendi
         create:
           success: Kullanıcı başarıyla onaylandı
         destroy:
@@ -551,6 +610,7 @@ tr:
         index:
           actions: Eylemler
           badge: rozet
+          block: Kullanıcıyı Engelle
           created_at: At düzenlendi
           name: isim
           nickname: Takma ad
@@ -558,8 +618,10 @@ tr:
           officialize: ', resmiyete'
           officialized: resmileştirilmiş
           reofficialize: Reofficialize
+          reports: Raporlar
           show_email: E-posta adresini göster
           status: durum
+          unblock: Kullanıcının Engelini Kaldır
           unofficialize: Unofficialize
         new:
           badge: Resmi görevlendirme rozeti
@@ -573,6 +635,9 @@ tr:
           hidden: saklı
           show: Göster
           title: Katılımcı e-posta adresini göster
+        unblock:
+          error: Katılımcıyı engellerken bir hata oluştu
+          success: Katılımcı başarıyla engellendi
       organization:
         edit:
           title: Kuruluş düzenle
@@ -619,7 +684,7 @@ tr:
           error: Bu katılımcı alan için özel bir kullanıcı silinirken bir hata oluştu.
           success: Katılımcı alan özel kullanıcı erişimi başarıyla yok edildi.
         index:
-          import_via_csv: Csv'den içe aktar
+          import_via_csv: CSV'den içe aktar
           title: Katılımcı alan özel kullanıcısı
         new:
           create: yaratmak
@@ -742,6 +807,7 @@ tr:
         impersonatable_users: Yönetilebilir kullanıcılar
         impersonations: Kullanıcılar yönetimi
         metrics: Metrik
+        panel: Yönetici
         participants: Kullanıcılar
         scope_types: Kapsam türleri
         scopes: kapsamları
@@ -807,6 +873,7 @@ tr:
           reason: Yönetilmeyen bir kullanıcıyı taklit ederken bir neden belirtmeniz gerekir
     moderations:
       actions:
+        expand: Genişlet
         hidden: Gizli
         hide: Saklamak
         not_hidden: Gizli değil
@@ -827,18 +894,28 @@ tr:
       models:
         moderation:
           fields:
+            created_at: Oluşturulma tarihi
             hidden_at: Gizli
+            participatory_space: Katılımcı alanı
             report_count: saymak
-            reportable: bildirilmesi zorunlu
+            reportable_id: Id
+            reportable_type: Türü
             reported_content_url: Raporlanan içerik URL'si
             reports: Raporlar
             visit_url: URL'yi ziyaret et
+        report:
+          fields:
+            details: Nedenin ayrıntıları
+            locale: Dil
+            reason: Nedeni
   errors:
     messages:
       invalid_json: Geçersiz JSON
   layouts:
     decidim:
       admin:
+        global_moderations:
+          title: Küresel denetimler
         newsletters:
           title: Haber bültenleri
         settings:

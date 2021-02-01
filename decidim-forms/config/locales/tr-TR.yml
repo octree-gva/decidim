@@ -78,7 +78,7 @@ tr:
             collapse: Tüm soruları daraltın
             expand: Tüm soruları genişletin
             preview: Önizleme
-            title: Formu düzenle
+            title: '%{questionnaire_for} için formu düzenleyin'
             unpublished_warning: Form yayınlanmadı. Sorularını değiştirebilirsiniz, ancak bunu yapmak mevcut cevapları silecektir.
           matrix_row:
             matrix_row: Satır

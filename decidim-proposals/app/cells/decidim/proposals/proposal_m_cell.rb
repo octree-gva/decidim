@@ -8,6 +8,8 @@ module Decidim
     class ProposalMCell < Decidim::CardMCell
       include ProposalCellsHelper
 
+      delegate :current_locale, to: :controller
+
       def badge
         render if has_badge?
       end
@@ -73,7 +75,7 @@ module Decidim
       end
 
       def creation_date_status
-        explanation = content_tag(:strong, t("activemodel.attributes.common.created_at"))
+        explanation = tag.strong(t("activemodel.attributes.common.created_at"))
         "#{explanation}<br>#{l(model.published_at.to_date, format: :decidim_short)}"
       end
 
@@ -87,7 +89,7 @@ module Decidim
 
       def endorsements_count
         with_tooltip t("decidim.endorsable.endorsements") do
-          icon("bullhorn", class: "icon--small") + " " + model.endorsements_count.to_s
+          "#{icon("bullhorn", class: "icon--small")} #{model.endorsements_count}"
         end
       end
 
@@ -121,6 +123,25 @@ module Decidim
 
       def resource_image_path
         @resource_image_path ||= has_image? ? model.attachments.find_by("content_type like '%image%'").url : nil
+      end
+
+      def cache_hash
+        hash = []
+        hash << "decidim/proposals/proposal_m"
+        hash << I18n.locale.to_s
+        hash << model.cache_version
+        hash << model.proposal_votes_count
+        hash << model.endorsements_count
+        hash << Digest::MD5.hexdigest(model.component.settings.to_json)
+        hash << Digest::MD5.hexdigest(resource_image_path) if resource_image_path
+        if current_user
+          hash << current_user.cache_version
+          hash << current_user.follows?(model) ? 1 : 0
+        end
+        hash << Digest::MD5.hexdigest(model.followers.to_json)
+        hash << Digest::MD5.hexdigest(model.coauthorships.map(&:cache_version).to_s)
+
+        hash.join("/")
       end
     end
   end

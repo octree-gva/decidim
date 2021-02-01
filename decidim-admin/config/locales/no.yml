@@ -70,7 +70,6 @@
         rich_text_editor_in_public_views: Aktiver rik-tekst-redigering for deltakere
         secondary_color: Sekundær
         send_welcome_notification: Send velkomst varsel
-        show_statistics: Vis statistikk
         success_color: Vellykket
         time_zone: Tidssone
         tos_version: Vilkår for tjenester versjon
@@ -146,7 +145,6 @@
           error: Det oppstod et problem med å godkjenne administrator vilkårene.
           success: Flott! Du har godtatt administratorenes vilkår for bruk.
         actions:
-          accept: Jeg er enig med disse administrasjonsvilkårene
           are_you_sure: Er du sikker på å nekte administrasjons vilkårene?
           refuse: Avslå administratorvilkårene
           title: Godta vilkårene for bruk
@@ -580,7 +578,7 @@
           rich_text_editor_in_public_views_help: I noen tekstområder vil deltakerne kunne sette inn noen HTML-tagger med å bruke den rike tekst redigereren.
           social_handlers: Sosial
           twitter: Twitter
-          url: Url
+          url: URL
           youtube: YouTube
         update:
           error: Det oppstod et problem med å oppdatere denne organisasjon.
@@ -615,7 +613,6 @@
           error: Det oppstod et problem med å slette en privat deltaker for dette deltakerområdet.
           success: Deltakerområde privat deltaker tilgang ødelagt.
         index:
-          import_via_csv: Improter via csv
           title: Deltakerområdets private deltaker
         new:
           create: Opprett
@@ -816,7 +813,7 @@
           fields:
             hidden_at: Skjult på
             report_count: Antall
-            reportable: Rapporterbar
+            reportable_id: Id
             reported_content_url: Rapportert innholds URL
             reports: Rapporter
             visit_url: Besøk URL

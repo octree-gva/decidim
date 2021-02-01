@@ -42,6 +42,7 @@ tr:
         title: Eylemler
       admin:
         exports:
+          result_comments: Yorumlar
           results: Sonuçlar
         import_results:
           new:
@@ -121,6 +122,11 @@ tr:
         value_types:
           parent_presenter:
             not_found: 'Üst veritabanında bulunamadı (ID: %{id})'
+      content_blocks:
+        highlighted_results:
+          dates: Tarih
+          results: Sonuç
+          unspecified: Belirtilmemiş
       import_mailer:
         import:
           errors: Hatalar
@@ -133,8 +139,12 @@ tr:
       models:
         result:
           fields:
+            category: Kategori
+            created_at: Oluşturuldu
             end_date: Bitiş tarihi
+            id: ID
             progress: İlerleme
+            scope: Kapsam
             start_date: Başlangıç tarihi
             status: durum
             title: Başlık
@@ -148,6 +158,9 @@ tr:
           fields:
             description: Açıklama
             entry_date: tarih
+      result_m:
+        executed: Yürütüldü
+        view: Görünüm
       results:
         count:
           results_count:
@@ -178,6 +191,15 @@ tr:
             votes: Destekler
         timeline:
           title: Proje gelişimi
+    admin:
+      filters:
+        results:
+          category_id_eq:
+            label: Kategori
+          scope_id_eq:
+            label: Kapsam
+          status_id_eq:
+            label: Durum
     components:
       accountability:
         name: Sorumluluk
@@ -212,10 +234,6 @@ tr:
         description: Üretilen sonuç sayısı
         object: sonuçlar
         title: Sonuçlar
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_results:
-          results: Sonuçlar
     participatory_spaces:
       highlighted_results:
         see_all: Tüm sonuçları gör (%{count})

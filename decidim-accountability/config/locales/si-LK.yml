@@ -15,6 +15,9 @@ si:
         models:
           status:
             name: තත්වය
+      content_blocks:
+        highlighted_results:
+          dates: දින
       import_mailer:
         import:
           errors: දෝෂ

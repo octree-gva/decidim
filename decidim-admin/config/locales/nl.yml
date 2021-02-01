@@ -67,7 +67,6 @@ nl:
         rich_text_editor_in_public_views: Gebruik de tekst editor voor deelnemers
         secondary_color: Tweede
         send_welcome_notification: Stuur welkomstmelding
-        show_statistics: Toon statistieken
         success_color: Succes
         time_zone: Tijdszone
         tos_version: Servicevoorwaarden versie
@@ -142,7 +141,6 @@ nl:
           error: Er is een fout opgetreden bij het accepteren van de admin gebruiksvoorwaarden.
           success: Geweldig! Je hebt de admin gebruiksvoorwaarden geaccepteerd.
         actions:
-          accept: Ik ga akkoord met deze admin gebruiksvoorwaarden
           are_you_sure: Weet u zeker dat u de admin gebruiksvoorwaarden wilt weigeren?
           refuse: Weiger de admin gebruiksvoorwaarden
           title: Ga akkoord met de gebruiksvoorwaarden
@@ -221,6 +219,12 @@ nl:
       autocomplete:
         no_results: geen resultaten gevonden
         search_prompt: Typ minimaal drie tekens om te zoeken
+      block_user:
+        new:
+          action: Blokkeer account en verzend reden
+          description: Een gebruiker blokkeren zal zijn account onbruikbaar maken, je kan in de toelichting en richtlijnen aangeven wanneer het deblokkeren van de gebruiker wordt overwogen.
+          justification: Reden
+          title: Gebruiker %{name} blokkeren
       categories:
         create:
           error: Er is een fout opgetreden bij het maken van deze categorie.
@@ -292,6 +296,9 @@ nl:
         category_id_eq:
           label: Categorie
         filter_label: Filteren
+        moderations:
+          reportable_type_string_eq:
+            label: Type
         officialized_at_null:
           label: Staat
           values:
@@ -312,6 +319,7 @@ nl:
         search_label: Zoeken
         search_placeholder:
           name_or_nickname_or_email_cont: Zoek %{collection} op e-mail, naam of bijnaam.
+          reported_id_string_or_reported_content_cont: Zoek %{collection} op rapporteerbaar id of op inhoud.
           title_cont: Zoek %{collection} op titel.
         state_eq:
           label: Provincie
@@ -465,6 +473,21 @@ nl:
             does_not_belong: Hoort niet
             offensive: Aanvallend
             spam: Spam
+        reports:
+          index:
+            author: Auteur(s)
+            callout_html: Een inhoud verschijnt in het moderatiescherm als die is gerapporteerd door een gebruiker (kan iedereen met een geregistreerde account zijn) door op de vlag %{icon} te klikken naast het item.
+            content_original_language: Oorspronkelijke taal inhoud
+            participatory_space: Participatieve ruimte
+            reported_content: Gerapporteerde inhoud
+            see_current: Bekijk huidige
+            see_original: Bekijk origineel
+            title: Moderatierapporten
+          show:
+            report_details: Reden details
+            report_language: Taal melden
+            report_reason: Reden
+            title: Rapport details
       newsletter_templates:
         index:
           preview_template: Voorbeeld
@@ -530,6 +553,9 @@ nl:
           error: Er is een fout opgetreden bij het bijwerken van deze nieuwsbrief.
           success: Nieuwsbrief is succesvol bijgewerkt. Controleer het voordat u verzendt.
       officializations:
+        block:
+          error: Er was een probleem bij het blokkeren van de deelnemer
+          success: Deelnemer met succes geblokkeerd
         create:
           success: Deelnemer met succes officieel gemaakt
         destroy:
@@ -537,6 +563,7 @@ nl:
         index:
           actions: acties
           badge: badge
+          block: Gebruiker blokkeren
           created_at: Aangemaakt op
           name: Naam
           nickname: Gebruikersnaam
@@ -546,6 +573,7 @@ nl:
           reofficialize: Hervalideren
           show_email: Toon e-mailadres
           status: status
+          unblock: Deblokkeer gebruiker
           unofficialize: Ingetrokken
         new:
           badge: Bevestigings badge
@@ -559,6 +587,9 @@ nl:
           hidden: hidden
           show: Weergeven
           title: Toon e-mailadres van gebruiker
+        unblock:
+          error: Er was een probleem bij het deblokkeren van de deelnemer
+          success: Deelnemer met succes gedeblokkeerd
       organization:
         edit:
           title: Organisatie bewerken
@@ -570,7 +601,6 @@ nl:
           rich_text_editor_in_public_views_help: In bepaalde teksten kunnen deelnemers enkele HTML-tags toevoegen door gebruik te maken van de rich text-editor.
           social_handlers: Sociaal
           twitter: Twitter
-          url: Url
           youtube: YouTube
         update:
           error: Er is een fout opgetreden bij het bijwerken van deze organisatie.
@@ -605,7 +635,6 @@ nl:
           error: Er was een probleem met het verwijderen van een privé-deelnemer voor deze participatieruimte.
           success: De toegang van de privé deelnemer voor burgerinspraak is met succes verwijderd.
         index:
-          import_via_csv: Importeren via csv
           title: Participerende ruimte voor privé deelnemer
         new:
           create: creëren
@@ -780,6 +809,7 @@ nl:
           reason: U moet een reden opgeven voor het beheer van een niet-beheerde deelnemer
     moderations:
       actions:
+        expand: Tonen
         hidden: Verborgen
         hide: Verbergen
         not_hidden: niet verstopt
@@ -800,12 +830,19 @@ nl:
       models:
         moderation:
           fields:
+            created_at: Aanmaakdatum
             hidden_at: Verborgen op
             report_count: Aantal
-            reportable: Rapporterbaar
+            reportable_id: Id
+            reportable_type: Type
             reported_content_url: Gerapporteerde inhouds-URL
             reports: Meldingen
             visit_url: Bezoek URL
+        report:
+          fields:
+            details: Reden details
+            locale: Taal
+            reason: Reden
   errors:
     messages:
       invalid_json: Ongeldige JSON

@@ -11,7 +11,14 @@ module Decidim
 
       routes do
         resources :elections, only: [:index, :show] do
-          resource :vote
+          resource :feedback, only: [:show] do
+            post :answer
+          end
+
+          resource :vote, only: [:new] do
+            post :cast
+            get :verify
+          end
         end
 
         root to: "elections#index"

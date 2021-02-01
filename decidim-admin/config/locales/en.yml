@@ -71,7 +71,6 @@ en:
         rich_text_editor_in_public_views: Enable rich text editor for participants
         secondary_color: Secondary
         send_welcome_notification: Send welcome notification
-        show_statistics: Show statistics
         success_color: Success
         time_zone: Time Zone
         tos_version: Terms of service version
@@ -95,6 +94,7 @@ en:
       settings:
         scope_id: Scope
       static_page:
+        allow_public_access: Allow access without authentication
         changed_notably: There have been noticeable changes.
         content: Content
         organization: Organization
@@ -135,21 +135,33 @@ en:
     admin:
       actions:
         add: Add
+        attachment:
+          new: New attachment
+        attachment_collection:
+          new: New attachment collection
         browse: Browse
+        category:
+          new: New category
         export: Export
         manage: Manage
         new: New %{name}
+        newsletter:
+          new: New newsletter
+        participatory_space_private_user:
+          new: New participatory space private user
         per_page: Per page
         permissions: Permissions
         reject: Reject
         share: Share
+        user:
+          new: New user
         verify: Verify
       admin_terms_of_use:
         accept:
           error: There's been an error while accepting the admin terms of use.
           success: Great! You've accepted the admin terms of use.
         actions:
-          accept: I agree this admin terms
+          accept: I agree with the following terms
           are_you_sure: Are you sure to refuse the admin terms?
           refuse: Refuse the admin terms
           title: Agree to the terms and conditions of use
@@ -228,6 +240,12 @@ en:
       autocomplete:
         no_results: No results found
         search_prompt: Type at least three characters to search
+      block_user:
+        new:
+          action: Block account and send justification
+          description: Blocking an user will render its account unusable, you may provide in your justification and guidelines on ways you deem you would consider unblocking the user.
+          justification: Justification
+          title: Block User %{name}
       categories:
         create:
           error: There was a problem creating this category.
@@ -283,6 +301,21 @@ en:
         update:
           error: There was a problem updating this component.
           success: The component was updated successfully.
+      conflicts:
+        attempts: Attempts
+        'false': 'No'
+        managed_user_name: Managed User
+        solved: Solved
+        title: Verifications's conflicts
+        transfer:
+          email: Email
+          error: There was a problem transfering the current participant to managed participant.
+          name: Name
+          reason: Reason
+          success: The current transfer has been successfully completed.
+          title: Transfer
+        'true': 'Yes'
+        user_name: User
       dashboard:
         show:
           view_more_logs: View more logs
@@ -299,6 +332,9 @@ en:
         category_id_eq:
           label: Category
         filter_label: Filter
+        moderations:
+          reportable_type_string_eq:
+            label: Type
         officialized_at_null:
           label: State
           values:
@@ -319,6 +355,7 @@ en:
         search_label: Search
         search_placeholder:
           name_or_nickname_or_email_cont: Search %{collection} by email, name or nickname.
+          reported_id_string_or_reported_content_cont: Search %{collection} by reportable id or content.
           title_cont: Search %{collection} by title.
         state_eq:
           label: State
@@ -383,8 +420,10 @@ en:
         help_sections: Help sections
         homepage: Homepage
         impersonations: Impersonations
+        moderation: Global moderations
         newsletters: Newsletters
         participants: Participants
+        reported_users: Reported Users
         scope_types: Scope types
         scopes: Scopes
         settings: Settings
@@ -472,6 +511,20 @@ en:
             phone: Phone
             state: State
             users_count: Participants count
+      moderated_users:
+        index:
+          actions:
+            title: Actions
+            unreport: Unreport
+          name: Name
+          nickname: Nickname
+          reason: Reason
+          title: Listing reported users
+        report:
+          reasons:
+            does_not_belong: Does not belong
+            offensive: Offensive
+            spam: Spam
       moderations:
         index:
           title: Moderations
@@ -480,6 +533,21 @@ en:
             does_not_belong: Does not belong
             offensive: Offensive
             spam: Spam
+        reports:
+          index:
+            author: Author(s)
+            callout_html: A content appears in the moderation panel when it has been signaled by a user (can be anyone with a registered account) by clicking on the %{icon} flag next to the item.
+            content_original_language: Content original language
+            participatory_space: Participatory space
+            reported_content: Reported content
+            see_current: See current
+            see_original: See original
+            title: Moderation reports
+          show:
+            report_details: Reason details
+            report_language: Report language
+            report_reason: Reason
+            title: Report details
       newsletter_templates:
         index:
           preview_template: Preview
@@ -545,6 +613,9 @@ en:
           error: There was a problem updating this newsletter.
           success: Newsletter updated successfully. Please review it before sending.
       officializations:
+        block:
+          error: There was an error blocking the participant
+          success: Participant successfully blocked
         create:
           success: Participant successfully officialized
         destroy:
@@ -552,6 +623,7 @@ en:
         index:
           actions: Actions
           badge: Badge
+          block: Block User
           created_at: Created At
           name: Name
           nickname: Nickname
@@ -559,8 +631,10 @@ en:
           officialize: Officialize
           officialized: Officialized
           reofficialize: Reofficialize
+          reports: Reports
           show_email: Show email address
           status: Status
+          unblock: Unblock User
           unofficialize: Unofficialize
         new:
           badge: Officialization badge
@@ -574,6 +648,9 @@ en:
           hidden: hidden
           show: Show
           title: Show participant email address
+        unblock:
+          error: There was an error unblocking the participant
+          success: Participant successfully unblocked
       organization:
         edit:
           title: Edit organization
@@ -585,7 +662,7 @@ en:
           rich_text_editor_in_public_views_help: In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
           social_handlers: Social
           twitter: Twitter
-          url: Url
+          url: URL
           youtube: YouTube
         update:
           error: There was a problem updating this organization.
@@ -620,7 +697,7 @@ en:
           error: There was a problem deleting a private participant for this participatory space.
           success: Participatory space private participant access successfully destroyed.
         index:
-          import_via_csv: Import via csv
+          import_via_csv: Import via CSV
           title: Participatory space private participant
         new:
           create: Create
@@ -743,6 +820,7 @@ en:
         impersonatable_users: Manageable participants
         impersonations: Participants management
         metrics: Metrics
+        panel: Admin
         participants: Participants
         scope_types: Scope types
         scopes: Scopes
@@ -808,6 +886,7 @@ en:
           reason: You need to provide a reason when managing a non managed participant
     moderations:
       actions:
+        expand: Expand
         hidden: Hidden
         hide: Hide
         not_hidden: Not hidden
@@ -828,18 +907,28 @@ en:
       models:
         moderation:
           fields:
+            created_at: Creation date
             hidden_at: Hidden at
+            participatory_space: Participatory space
             report_count: Count
-            reportable: Reportable
+            reportable_id: Id
+            reportable_type: Type
             reported_content_url: Reported content URL
             reports: Reports
             visit_url: Visit URL
+        report:
+          fields:
+            details: Reason details
+            locale: Language
+            reason: Reason
   errors:
     messages:
       invalid_json: Invalid JSON
   layouts:
     decidim:
       admin:
+        global_moderations:
+          title: Global moderations
         newsletters:
           title: Newsletters
         settings:

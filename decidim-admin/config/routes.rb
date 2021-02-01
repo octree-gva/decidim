@@ -38,10 +38,19 @@ Decidim::Admin::Engine.routes.draw do
       member do
         post :resend_invitation, to: "users#resend_invitation"
       end
+      resource :block, only: [:new, :create, :destroy], controller: :block_user
     end
 
     resources :officializations, only: [:new, :create, :index, :destroy], param: :user_id do
-      get :show_email, on: :member
+      member do
+        get :show_email
+      end
+    end
+
+    resources :moderated_users, only: [:index] do
+      member do
+        put :ignore
+      end
     end
 
     resources :impersonatable_users, only: [:index] do
@@ -89,6 +98,17 @@ Decidim::Admin::Engine.routes.draw do
     end
 
     resources :share_tokens, only: :destroy
+
+    resources :moderations, controller: "global_moderations" do
+      member do
+        put :unreport
+        put :hide
+        put :unhide
+      end
+      resources :reports, controller: "global_moderations/reports", only: [:index, :show]
+    end
+
+    resources :conflicts, only: [:index, :edit, :update], controller: "conflicts"
 
     root to: "dashboard#show"
   end

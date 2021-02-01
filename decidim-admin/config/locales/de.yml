@@ -70,7 +70,6 @@ de:
         rich_text_editor_in_public_views: Rich-Text-Editor für Teilnehmer aktivieren
         secondary_color: Sekundär
         send_welcome_notification: Willkommens-Benachrichtigung senden
-        show_statistics: Zeige Statistiken
         success_color: Erfolg
         time_zone: Zeitzone
         tos_version: Nutzungsbedingungen Version
@@ -94,6 +93,7 @@ de:
       settings:
         scope_id: Umfang
       static_page:
+        allow_public_access: Zugriff ohne Authentifizierung erlauben
         changed_notably: Es gab bemerkenswerte Änderungen.
         content: Inhalt
         organization: Organisation
@@ -148,7 +148,7 @@ de:
           error: Beim Akzeptieren der Nutzungsbedingungen ist ein Fehler aufgetreten.
           success: Super! Sie haben die Admin-Nutzungsbedingungen akzeptiert.
         actions:
-          accept: Ich stimme diesen Admin-Bedingungen zu
+          accept: Ich stimme den folgenden Bedingungen zu
           are_you_sure: Sind Sie sicher, dass Sie die Admin-Nutzungsbedingungen ablehnen möchten?
           refuse: Die Admin-Nutzungsbedingungen ablehnen
           title: Den Admin-Nutzungsbedingungen zustimmen
@@ -227,6 +227,12 @@ de:
       autocomplete:
         no_results: keine Ergebnisse gefunden
         search_prompt: Geben Sie mindestens drei Zeichen ein, um zu suchen
+      block_user:
+        new:
+          action: Konto sperren und Begründung senden
+          description: Das Blockieren eines Benutzers wird sein Konto unbrauchbar machen. Sie können begründen und Richtlinien dafür bieten, wie der Benutzer vorgehen könnte, damit Sie in Betracht ziehen, die Blockierung wieder aufzuheben.
+          justification: Begründung
+          title: Benutzer %{name} blockieren
       categories:
         create:
           error: Beim Erstellen dieser Kategorie ist ein Fehler aufgetreten.
@@ -282,6 +288,21 @@ de:
         update:
           error: Beim Aktualisieren dieser Komponente ist ein Fehler aufgetreten.
           success: Die Komponente wurde erfolgreich aktualisiert.
+      conflicts:
+        attempts: Versuche
+        'false': 'Nein'
+        managed_user_name: Verwalteter Benutzer
+        solved: Gelöst
+        title: Konflikte von Überprüfungen
+        transfer:
+          email: E-Mail
+          error: Es gab ein Problem bei der Übertragung des aktuellen Teilnehmers zu den verwalteten Teilnehmern.
+          name: Name
+          reason: Grund
+          success: Übertragung erfolgreich.
+          title: Übertragung
+        'true': 'Ja'
+        user_name: Nutzer
       dashboard:
         show:
           view_more_logs: Weitere Protokolle anzeigen
@@ -298,6 +319,9 @@ de:
         category_id_eq:
           label: Kategorie
         filter_label: Filtern
+        moderations:
+          reportable_type_string_eq:
+            label: Art
         officialized_at_null:
           label: Zustand
           values:
@@ -318,6 +342,7 @@ de:
         search_label: Suche
         search_placeholder:
           name_or_nickname_or_email_cont: Suche in %{collection} nach E-Mail, Name oder Benutzername.
+          reported_id_string_or_reported_content_cont: Suche %{collection} nach meldbarer Id oder Inhalt.
           title_cont: In %{collection} nach Titel suchen.
         state_eq:
           label: Bundesland
@@ -382,8 +407,10 @@ de:
         help_sections: Hilfeabschnitte
         homepage: Startseite
         impersonations: Identitätswechsel
+        moderation: Globale Moderationen
         newsletters: Newsletter
         participants: Teilnehmer
+        reported_users: Gemeldete Nutzer
         scope_types: Bereichstypen
         scopes: Bereiche
         settings: die Einstellungen
@@ -471,6 +498,20 @@ de:
             phone: Telefon
             state: Zustand
             users_count: Benutzer zählen
+      moderated_users:
+        index:
+          actions:
+            title: Aktionen
+            unreport: Meldung Rückgängig machen
+          name: Name
+          nickname: Spitzname
+          reason: Grund
+          title: Liste der gemeldeten Benutzer
+        report:
+          reasons:
+            does_not_belong: Gehört nicht zu
+            offensive: Offensiv
+            spam: Spam
       moderations:
         index:
           title: Moderationen
@@ -479,6 +520,21 @@ de:
             does_not_belong: Gehört nicht
             offensive: Beleidigend
             spam: Spam
+        reports:
+          index:
+            author: Autor(en)
+            callout_html: Ein Inhalt erscheint im Moderations-Panel, wenn er von einem Benutzer signalisiert wurde (kann jeder mit einem registrierten Konto sein), indem er auf die %{icon} Flagge neben dem Element klickt.
+            content_original_language: Originalsprache des Inhalts
+            participatory_space: Beteiligungsbereich
+            reported_content: Gemeldeter Inhalt
+            see_current: Siehe aktuelles
+            see_original: Original ansehen
+            title: Moderationsberichte
+          show:
+            report_details: Details zum Grund
+            report_language: Berichtssprache
+            report_reason: Grund
+            title: Berichtdetails
       newsletter_templates:
         index:
           preview_template: Vorschau
@@ -544,6 +600,9 @@ de:
           error: Beim Aktualisieren dieses Newsletters ist ein Fehler aufgetreten.
           success: Newsletter erfolgreich aktualisiert. Bitte überprüfen Sie es vor dem Senden.
       officializations:
+        block:
+          error: Beim Blockieren des Teilnehmers ist ein Fehler aufgetreten
+          success: Teilnehmer erfolgreich blockiert
         create:
           success: Benutzer wurde offiziell anerkannt
         destroy:
@@ -551,6 +610,7 @@ de:
         index:
           actions: Aktionen
           badge: Abzeichen
+          block: Benutzer blockieren
           created_at: Hergestellt in
           name: Name
           nickname: Spitzname
@@ -558,8 +618,10 @@ de:
           officialize: Offizialisieren
           officialized: Offizialisiert
           reofficialize: Reoffizialisieren
+          reports: Berichte
           show_email: E-Mail-Adresse anzeigen
           status: Status
+          unblock: Blockierung des Users aufheben
           unofficialize: Nicht offiziell
         new:
           badge: Offizielles Abzeichen
@@ -573,6 +635,9 @@ de:
           hidden: versteckt
           show: Anzeigen
           title: Teilnehmer E-Mail-Adresse anzeigen
+        unblock:
+          error: Beim Blockieren des Teilnehmers ist ein Fehler aufgetreten
+          success: Blockierung des Teilnehmers wurde erfolgreich aufgehoben
       organization:
         edit:
           title: Organisation bearbeiten
@@ -584,7 +649,7 @@ de:
           rich_text_editor_in_public_views_help: In einigen Textbereichen können Teilnehmer mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
           social_handlers: Sozial
           twitter: Twitter
-          url: Url
+          url: URL
           youtube: Youtube
         update:
           error: Beim Aktualisieren dieser Organisation ist ein Fehler aufgetreten.
@@ -619,7 +684,7 @@ de:
           error: Beim Löschen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
           success: Participatory Space Privater Benutzerzugriff wurde erfolgreich zerstört.
         index:
-          import_via_csv: Import via CSV
+          import_via_csv: Aus CSV-Datein importieren
           title: Participatory Space privater Benutzer
         new:
           create: Erstellen
@@ -742,6 +807,7 @@ de:
         impersonatable_users: Überschaubare Benutzer
         impersonations: Benutzerverwaltung
         metrics: Kriterien
+        panel: Admin
         participants: Benutzer
         scope_types: Bereichstypen
         scopes: Bereiche
@@ -807,6 +873,7 @@ de:
           reason: Sie müssen einen Grund angeben, wenn Sie sich als nicht verwalteter Benutzer ausgeben
     moderations:
       actions:
+        expand: Ausklappen
         hidden: Versteckt
         hide: verbergen
         not_hidden: Nicht versteckt
@@ -827,18 +894,28 @@ de:
       models:
         moderation:
           fields:
+            created_at: Erstellungsdatum
             hidden_at: Versteckt bei
+            participatory_space: Beteiligungsbereich
             report_count: Anzahl
-            reportable: Meldepflichtig
+            reportable_id: ID
+            reportable_type: Typ
             reported_content_url: URL des gemeldeten Inhalts
             reports: Berichte
             visit_url: Besuchs-URL
+        report:
+          fields:
+            details: Details zum Grund
+            locale: Sprache
+            reason: Grund
   errors:
     messages:
       invalid_json: Ungültiger JSON
   layouts:
     decidim:
       admin:
+        global_moderations:
+          title: Globale Moderationen
         newsletters:
           title: Newsletter
         settings:

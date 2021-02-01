@@ -44,6 +44,22 @@ module Decidim
           expect(user.name).to eq("Anonymous")
         end
       end
+
+      context "when the user is blocked and extended_data has user_name" do
+        let(:user) { build(:user, name: "Blocked user", blocked: true, extended_data: { "user_name": "Test" }) }
+
+        it "returns user name" do
+          expect(user.user_name).to eq("Test")
+        end
+      end
+
+      context "when the user is blocked and extended_data does not have user_name" do
+        let(:user) { build(:user, name: "Blocked user", blocked: true, extended_data: {}) }
+
+        it "returns user name" do
+          expect(user.user_name).to eq("Blocked user")
+        end
+      end
     end
 
     describe "validations", processing_uploads_for: Decidim::AvatarUploader do
@@ -157,8 +173,8 @@ module Decidim
         it "doesn't allow them" do
           weird_characters.each do |character|
             user = build(:user)
-            user.name = user.name.insert(rand(0..user.name.length), character)
-            user.nickname = user.nickname.insert(rand(0..user.nickname.length), character)
+            user.name.insert(rand(0..user.name.length), character)
+            user.nickname.insert(rand(0..user.nickname.length), character)
 
             expect(user).not_to be_valid
             expect(user.errors[:name].length).to eq(1)

@@ -45,6 +45,8 @@ fi:
             title: Muokkaa budjettia
             update: Päivitä budjetti
           index:
+            finished_orders: Valmiit äänet
+            pending_orders: Odottavat äänet
             title: Budjetit
           new:
             create: Luo budjetti
@@ -52,6 +54,8 @@ fi:
           update:
             invalid: Budjetin päivitys epäonnistui
             success: Budjetin päivitys onnistui
+        exports:
+          projects: Suunnitelmat
         models:
           budget:
             name: Budjetti
@@ -85,6 +89,7 @@ fi:
             create: Tuo ehdotuksia suunnitelmiksi
             no_components: Tässä osallistumistilassa ei ole ole muita ehdotuskomponentteja, joista voitaisiin tuoda ehdotuksia suunnitelmiksi.
             select_component: Valitse komponentti
+            title: Tuo ehdotuksia
       admin_log:
         budget:
           create: "%{user_name} loi budjetin %{resource_name} osallistumistilassa %{space_name}"
@@ -136,10 +141,15 @@ fi:
           description: Olet valinnut nämä suunnitelmat osaksi budjettia.
           title: Vahvista ääni
         budget_excess:
+          budget_excess:
+            description: Tämä suunnitelma ylittää maksimibudjetin, minkä takia sitä ei voida lisätä. Halutessasi voit poistaa valinnan jostain toisesta suunnitelmasta tai jättää äänesi nykyisten valintojen mukaisesti.
+            title: Maksimibudjetti ylitetty
           close: Sulje
-          description: Tämä suunnitelma ylittää maksimibudjetin, minkä takia sitä ei voida lisätä. Jos haluat, voit tehdä "tilaa" budjettiin poistamalla suunnitelman, jonka olet jo valinnut.
+          description: Tämä suunnitelma ylittää maksimibudjetin, minkä takia sitä ei voida lisätä. Halutessasi voit poistaa valinnan jostain toisesta suunnitelmasta tai jättää äänesi nykyisten valintojen mukaisesti.
           ok: OK
-          title: Maksimibudjetti ylitetty
+          projects_excess:
+            description: Tämä suunnitelma ylittää maksimisuunnitelmien määrän, minkä takia sitä ei voida lisätä. Halutessasi voit poistaa valinnan jostain toisesta suunnitelmasta tai jättää äänesi nykyisten valintojen mukaisesti.
+            title: Maksimisuunnitelmien määrä ylitetty
         budget_summary:
           are_you_sure: Haluatko varmasti peruuttaa äänesi?
           assigned: 'Varattu:'
@@ -147,9 +157,23 @@ fi:
           checked_out:
             description: Olet jo äänestänyt tätä budjettia. Jos muutit mieltäsi, %{cancel_link}.
             title: Budjetin äänestys suoritettu
-          description: Mitä suunnitelmia varten sinun mielestäsi budjettia tulisi varata? Varaa vähintään %{minimum_budget} suunnitelmille, jotka haluat toteutettavan ja äänestä mieltymystesi mukaisesti määrittääksesi budjetin.
-          description_minimum_projects_rule: Mille hankkeille budjetin rahaa tulisi jakaa? Valitse vähintään %{minimum_number} toivomaasi hanketta ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.
+          minimum_projects_rule:
+            description: Mille suunnitelmille budjetin rahaa tulisi jakaa? Valitse vähintään %{minimum_number} toivomaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.
+            instruction: "<li>Valitse vähintään %{minimum_number} haluamaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.</li>"
+          projects_rule:
+            description: Mille suunnitelmille budjetin rahaa tulisi jakaa? Valitse vähintään %{minimum_number} ja enintään %{maximum_number} toivomaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.
+            instruction: "<li>Valitse vähintään %{minimum_number} ja enintään %{maximum_number} haluamaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.</li>"
+          projects_rule_maximum_only:
+            description: Mille suunnitelmille budjetin rahaa tulisi jakaa? Valitse enintään %{maximum_number} toivomaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.
+            instruction: "<li>Valitse enintään %{maximum_number} haluamaasi suunnitelmaa ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.</li>"
+          rules:
+            title: Budjetoinnin säännöt
           title: Voit päättää budjetin
+          total_budget: Käytettävissä oleva budjetti
+          total_projects: Käytettävissä olevat äänet
+          vote_threshold_percent_rule:
+            description: Mille suunnitelmille budjetin rahaa tulisi jakaa? Varaa vähintään %{minimum_budget} suunnitelmille, jotka haluat toteutettavan ja äänestä mieltymystesi mukaisesti määrittääksesi budjetin.
+            instruction: "<li>Varaa vähintään %{minimum_budget} suunnitelmille ja äänestä haluamallasi tavalla vaikuttaaksesi budjetin jakautumiseen.</li>"
         count:
           projects_count:
             one: 1 suunnitelma
@@ -191,7 +215,7 @@ fi:
           votes:
             one: ääni
             other: ääntä
-          you_voted: Sinä äänestit
+          you_voted: Äänestit tätä
         project_budget_button:
           add: Lisää ääneesi
           add_descriptive: Lisää hanke %{resource_name} ääneesi
@@ -225,7 +249,10 @@ fi:
             total_budget: Kokonaisbudjetti
             vote_minimum_budget_projects_number: Valittavien projektien vähimmäismäärä
             vote_rule_minimum_budget_projects_enabled: 'Ota sääntö käyttöön: Valittavien suunnitelmien vähimmäismäärä'
+            vote_rule_selected_projects_enabled: 'Ota sääntö käyttöön: Valittavat suunnitelmat määritettyjen vähimmäis- ja enimmäismäärän mukaisesti'
             vote_rule_threshold_percent_enabled: 'Ota sääntö käyttöön: Kokonaisbudjetin prosentuaalinen vähimmäismäärä'
+            vote_selected_projects_maximum: Valittavien suunnitelmien enimmäismäärä
+            vote_selected_projects_minimum: Valittavien suunnitelmien vähimmäismäärä
             vote_threshold_percent: Äänestyksen kynnysprosentti
             workflow: Työnkulku
             workflow_choices:
@@ -264,4 +291,3 @@ fi:
         project_proposal: 'Tähän suunnitelmaan liittyvät ehdotukset:'
   index:
     confirmed_orders_count: Äänten määrä
-  total_budget: Kokonaisbudjetti

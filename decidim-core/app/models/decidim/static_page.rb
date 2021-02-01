@@ -15,7 +15,7 @@ module Decidim
     translatable_fields :title, :content
 
     belongs_to :organization, foreign_key: "decidim_organization_id", class_name: "Decidim::Organization", inverse_of: :static_pages
-    belongs_to :topic, foreign_key: "topic_id", class_name: "Decidim::StaticPageTopic", optional: true
+    belongs_to :topic, class_name: "Decidim::StaticPageTopic", optional: true
 
     validates :slug, presence: true, uniqueness: { scope: :organization }
     validates :slug, format: { with: /\A[a-z0-9-]+/ }
@@ -29,6 +29,16 @@ module Decidim
     before_update :can_update_slug?
 
     default_scope { order(arel_table[:weight].asc) }
+
+    scope :accessible_for, lambda { |organization, user|
+      collection = where(organization: organization)
+
+      if user.blank? && organization.force_users_to_authenticate_before_access_organization
+        collection.where(allow_public_access: true)
+      else
+        collection
+      end
+    }
 
     # Whether this is slug of a default page or not.
     #

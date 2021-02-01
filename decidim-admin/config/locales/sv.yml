@@ -70,7 +70,6 @@ sv:
         rich_text_editor_in_public_views: Aktivera rik textredigering för deltagare
         secondary_color: Sekundär
         send_welcome_notification: Skicka välkomstmeddelande
-        show_statistics: Visa statistik
         success_color: Färdigt
         time_zone: Tidszon
         tos_version: Version på användarvillkor
@@ -146,7 +145,6 @@ sv:
           error: Ett fel inträffade när användarvillkoren för administratörer skulle godkännas.
           success: Du har godkänt användarvillkoren för administratörer.
         actions:
-          accept: Jag godkänner villkoren för administratörer
           are_you_sure: Vill du avvisa villkoren för administratörer?
           refuse: Avvisa villkoren för administratörer
           title: Godkänn användarvillkoren
@@ -296,6 +294,9 @@ sv:
         category_id_eq:
           label: Kategori
         filter_label: Filtrera
+        moderations:
+          reportable_type_string_eq:
+            label: Typ
         officialized_at_null:
           label: Status
           values:
@@ -316,6 +317,7 @@ sv:
         search_label: Sök
         search_placeholder:
           name_or_nickname_or_email_cont: Sök i %{collection} efter e-post, namn eller smeknamn.
+          reported_id_string_or_reported_content_cont: Sök %{collection} efter anmälningsID eller innehåll.
           title_cont: Sök %{collection} efter titel.
         state_eq:
           label: Län
@@ -477,6 +479,21 @@ sv:
             does_not_belong: Hör inte hemma
             offensive: Stötande
             spam: Skräp
+        reports:
+          index:
+            author: Författare
+            callout_html: Ett innehåll visas i modereringspanelen när det har blivit signerat av en användare (kan vara vem som helst med ett registrerat konto) genom att klicka på %{icon} flaggan bredvid innehållet.
+            content_original_language: Innehållets originalspråk
+            participatory_space: Deltagarutrymme
+            reported_content: Rapporterat innehåll
+            see_current: Se nuvarande
+            see_original: Se original
+            title: Anmälningar
+          show:
+            report_details: Anledningsdetaljer
+            report_language: Anmälningsspråk
+            report_reason: Anledning
+            title: Anmälningsdetaljer
       newsletter_templates:
         index:
           preview_template: Förhandsvisa
@@ -617,7 +634,7 @@ sv:
           error: Det gick inte att ta bort en privat deltagare från deltagarutrymmet.
           success: Åtkomsten för privat deltagare till deltagarutrymmet har tagits bort.
         index:
-          import_via_csv: Importera via csv
+          import_via_csv: Importera via CSV
           title: Privat deltagare i deltagarutrymme
         new:
           create: Skapa
@@ -805,6 +822,7 @@ sv:
           reason: Du måste ange en anledning vid hantering av en icke-hanterad användare
     moderations:
       actions:
+        expand: Expandera
         hidden: Dold
         hide: Dölj
         not_hidden: Inte dold
@@ -825,12 +843,19 @@ sv:
       models:
         moderation:
           fields:
+            created_at: Skapandedatum
             hidden_at: Dold
             report_count: Antal
-            reportable: Rapporterbart
+            reportable_id: Id
+            reportable_type: Typ
             reported_content_url: Rapporterad innehållsadress
             reports: Rapporter
             visit_url: Besök URL
+        report:
+          fields:
+            details: Anledningsdetaljer
+            locale: Språk
+            reason: Anledning
   errors:
     messages:
       invalid_json: Ogiltig JSON

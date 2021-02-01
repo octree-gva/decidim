@@ -27,6 +27,9 @@ tr:
         user_group_id: Teklif oluştur
       proposal_answer:
         answer: Cevap
+        cost: Maliyet
+        cost_report: Maliyet raporu
+        execution_period: Yürütme süresi
       proposals_copy:
         copy_proposals: Bunun, seçilen bileşendeki tüm teklifleri mevcut bileşene aktaracağını ve bu işlemin geri alınamayacağını anlıyorum.
         origin_component_id: Teklifleri kopyalamak için bileşen
@@ -336,10 +339,6 @@ tr:
         description: Tekliflere verilen desteklerin sayısı
         object: destekler
         title: Destekler
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_proposals:
-          proposals: Teklifler
     participatory_spaces:
       highlighted_proposals:
         see_all: Tüm teklifleri görün (%{count})
@@ -356,7 +355,7 @@ tr:
         actions:
           preview: Ön izleme
         exports:
-          comments: Yorumlar
+          proposal_comments: Yorumlar
           proposals: Teklifler
         models:
           proposal:
@@ -380,9 +379,9 @@ tr:
           new_import:
             accepted_mime_types:
               md: Markdown
-              odt: odt
+              odt: ODT
             bottom_hint: "(Belge bölümlerini önizleyebilir ve sıralayabilirsiniz)"
-            document_legend: '2 MB''tan küçük bir belge ekleyin, her bölüm 3 seviye derinliğinde Teklifler''e ayrıştırılıncaya kadar Gösterilen biçimler: %{valid_mime_types}'
+            document_legend: '2 Mb''tan küçük bir belge ekleyin, 3 düzey derinliğe kadar her bölüm tekliflere ayrıştırılacaktır. Desteklenen biçimler şunlardır: %{valid_mime_types}'
             title: BELGE EKLE
             upload_document: Belge yükle
           publish:
@@ -497,6 +496,7 @@ tr:
             no_components: Teklifleri içe aktarmak için bu katılımcı alanda başka hiçbir teklif bileşeni bulunmamaktadır.
             select_component: Lütfen bir bileşen seçiniz
             select_states: İçe aktarılacak tekliflerin durumlarını kontrol et
+            title: Teklifleri içe aktar
         proposals_merges:
           create:
             invalid: Seçilen teklifler birleştirilirken bir hata oluştu.
@@ -669,6 +669,9 @@ tr:
           step_3: Ortak çalışma taslağınızı tamamlayın
           step_of: '%{total_steps}adımdan %{current_step_num}'
           title: İşbirliğine dayalı taslak oluşturma adımları
+      content_blocks:
+        highlighted_proposals:
+          proposals: Teklifler
       create:
         error: Teklif kaydedilirken bir sorun oluştu.
         success: Teklif başarıyla oluşturuldu. Taslak olarak kaydedildi.
@@ -721,6 +724,8 @@ tr:
           proposals_count:
             one: "%{count} teklif"
             other: "%{count} teklif"
+        dynamic_map_instructions:
+          instructions: <h3> Noktayı harita üzerinde hareket ettirebilirsiniz. </h3> <p> Teklifinizi yayınlamadan önce "Pozisyonu Güncelle" düğmesini tıklamayı unutmayın. </p>
         edit:
           add_documents: Dokümanlar
           add_images: Dosya
@@ -781,6 +786,8 @@ tr:
             document_index: Belge indeksi
           view_index:
             see_index: Endeksi görmek
+        placeholder:
+          address: Teklif adresi
         preview:
           modify: Teklifi değiştir
           proposal_edit_before_minutes:
@@ -788,6 +795,7 @@ tr:
             other: Bu teklifi, teklif yayınlandıktan sonraki ilk %{count} dakika içinde düzenleyebileceksiniz. Bu zaman aralığı geçtikten sonra teklifi düzenleyemezsiniz.
           publish: Yayınla
           title: Teklifinizi yayınlayın
+          update_position: Konumu güncelle
         proposal:
           creation_date: 'Oluşturma: %{date}'
           view_proposal: Teklifi görüntüle

@@ -29,6 +29,7 @@ tr:
             success: Yayın başarıyla silindi
           edit:
             save: Güncelleştirme
+            title: Gönderiyi düzenle
           index:
             title: Mesajlar
           new:

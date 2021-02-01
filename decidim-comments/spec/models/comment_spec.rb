@@ -5,7 +5,8 @@ require "spec_helper"
 module Decidim
   module Comments
     describe Comment do
-      let!(:commentable) { create(:dummy_resource) }
+      let(:component) { create(:component, manifest_name: "dummy") }
+      let!(:commentable) { create(:dummy_resource, component: component) }
       let!(:author) { create(:user, organization: commentable.organization) }
       let!(:comment) { create(:comment, commentable: commentable, author: author) }
       let!(:replies) { create_list(:comment, 3, commentable: comment, root_commentable: commentable) }
@@ -79,6 +80,26 @@ module Decidim
       it "is not valid if alignment is not 0, 1 or -1" do
         comment.alignment = 2
         expect(comment).not_to be_valid
+      end
+
+      describe "#visible?" do
+        subject { comment.visible? }
+
+        context "when component is not published" do
+          before do
+            allow(component).to receive(:published?).and_return(false)
+          end
+
+          it { is_expected.not_to be_truthy }
+        end
+
+        context "when participatory space is visible" do
+          before do
+            allow(component.participatory_space).to receive(:visible?).and_return(false)
+          end
+
+          it { is_expected.not_to be_truthy }
+        end
       end
 
       describe "#up_voted_by?" do
@@ -197,7 +218,7 @@ module Decidim
 
         describe "#body_length" do
           context "when no default comments length specified" do
-            let!(:body) { { en: ::Faker::Lorem.sentence(1000) } }
+            let!(:body) { { en: ::Faker::Lorem.sentence(word_count: 1000) } }
 
             it "is invalid" do
               comment.body = body
@@ -207,7 +228,7 @@ module Decidim
           end
 
           context "when organization has a default comments length params" do
-            let!(:body) { { en: ::Faker::Lorem.sentence(1600) } }
+            let!(:body) { { en: ::Faker::Lorem.sentence(word_count: 1600) } }
             let(:organization) { create(:organization, comments_max_length: 1500) }
             let(:component) { create(:component, organization: organization, manifest_name: "dummy") }
             let!(:commentable) { create(:dummy_resource, component: component) }
@@ -219,7 +240,7 @@ module Decidim
             end
 
             context "when component has a default comments length params" do
-              let!(:body) { { en: ::Faker::Lorem.sentence(2500) } }
+              let!(:body) { { en: ::Faker::Lorem.sentence(word_count: 2500) } }
 
               it "is invalid" do
                 component.update!(settings: { comments_max_length: 2000 })

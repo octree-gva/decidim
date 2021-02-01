@@ -63,7 +63,6 @@ sk:
         rich_text_editor_in_public_views: Povoliť pokročilý textový editor pre účastníkov
         secondary_color: Sekundárne
         send_welcome_notification: Poslať úvodné privítanie
-        show_statistics: Zobrazenie štatistík
         success_color: Úspech
         time_zone: Časové pásmo
         tos_version: Verzia podmienok použitia
@@ -138,7 +137,6 @@ sk:
           error: Pri odsúhlasení podmienok použitia nastala chyba.
           success: Skvele! Odsúhlasili ste podmienky použitia pre administrátorov.
         actions:
-          accept: Súhlasím s týmito podmienkami použitia.
           are_you_sure: Ste si istí, že chcete odmietnuť podmienky použitia pre administrátorov?
           refuse: "Odmietnuť podmienky použitia pre administrátorov.\n"
           title: Súhasím s podmienkami použitia.
@@ -557,7 +555,6 @@ sk:
           rich_text_editor_in_public_views_help: V niektorých textových oknách budú účastníci môcť vkladať niektoré HTML tagy pomocou pokročilého textového editoru.
           social_handlers: Sociálne
           twitter: Twitter
-          url: URL
           youtube: YouTube
         update:
           error: Pri aktualizácii organizácie došlo k chybe.
@@ -591,7 +588,6 @@ sk:
           error: Pri vymazaní súkromného používateľa pre tento participačný priestor došlo k chybe.
           success: Participatívny priestor bol zneprístupnený súkromnému užívateľovi.
         index:
-          import_via_csv: Import z CSV
           title: Súkromný účastník participatívneho priestoru
         new:
           create: Vytvoriť
@@ -784,7 +780,6 @@ sk:
           fields:
             hidden_at: Skryté
             report_count: Počet
-            reportable: Nahlásiteľné
             reported_content_url: Nahlásiť URL obsahu
             reports: Nahlásenia
             visit_url: Navštíviť URL

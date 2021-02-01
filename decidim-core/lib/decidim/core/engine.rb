@@ -37,7 +37,6 @@ require "kaminari"
 require "doorkeeper"
 require "doorkeeper-i18n"
 require "nobspw"
-require "kaminari"
 require "batch-loader"
 require "etherpad-lite"
 require "diffy"
@@ -89,9 +88,9 @@ module Decidim
       end
 
       initializer "decidim.graphql_api" do
-        Decidim::Api::QueryType.define do
-          Decidim::QueryExtensions.define(self)
-        end
+        # Enable them method `!` everywhere for compatibility, this line will be removed when upgrading to GraphQL 2.0
+        GraphQL::DeprecatedDSL.activate
+        Decidim::Api::QueryType.include Decidim::QueryExtensions
 
         Decidim::Api.add_orphan_type Decidim::Core::UserType
         Decidim::Api.add_orphan_type Decidim::Core::UserGroupType
@@ -110,7 +109,7 @@ module Decidim
         # that may be using the `geocoded_by` or `reverse_geocoded_by` class
         # methods injected by the Geocoder gem.
         ActiveSupport.on_load :active_record do
-          ActiveRecord::Base.send(:include, Decidim::Geocodable)
+          ActiveRecord::Base.include Decidim::Geocodable
         end
       end
 
@@ -513,7 +512,7 @@ module Decidim
       end
 
       config.to_prepare do
-        FoundationRailsHelper::FlashHelper.send(:include, Decidim::FlashHelperExtensions)
+        FoundationRailsHelper::FlashHelper.include Decidim::FlashHelperExtensions
       end
     end
   end

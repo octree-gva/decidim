@@ -25,7 +25,7 @@ module Decidim
           @meeting_spaces = @meeting_spaces.sort_by do |_param, name|
             name
           end
-          @meeting_spaces = @meeting_spaces.prepend(["all", t(".all")])
+          @meeting_spaces.prepend(["all", t(".all")])
         end
 
         def calendar
@@ -53,7 +53,7 @@ module Decidim
 
         def default_search_params
           {
-            scope: Meeting.visible_meeting_for(current_user)
+            scope: Meeting.not_hidden.visible_meeting_for(current_user)
           }
         end
 

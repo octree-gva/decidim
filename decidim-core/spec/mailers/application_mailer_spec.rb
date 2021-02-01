@@ -21,6 +21,13 @@ module Decidim
       let(:mail) { described_class.send_email(user, organization) }
       let(:from) { "" }
 
+      it "update correctly mail.delivery_method.settings" do
+        expect(mail.delivery_method.settings[:address]).to eq("mail.gotham.gov")
+        expect(mail.delivery_method.settings[:port]).to eq("25")
+        expect(mail.delivery_method.settings[:user_name]).to eq("f.laguardia")
+        expect(mail.delivery_method.settings[:password]).to eq("password")
+      end
+
       context "when there is no organization at all" do
         let(:mail) { described_class.send_email(user, nil) }
 
@@ -39,7 +46,7 @@ module Decidim
         end
       end
 
-      context "when from label is not set" do
+      context "when from is not set" do
         let(:from) { nil }
 
         it "set default values for mail.from and mail.reply_to" do
@@ -48,7 +55,7 @@ module Decidim
         end
       end
 
-      context "when from label is set" do
+      context "when from is set" do
         let(:from) { "Bruce Wayne <decide@gotham.org>" }
 
         it "set default values for mail.from and mail.reply_to" do

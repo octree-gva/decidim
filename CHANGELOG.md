@@ -30,67 +30,59 @@
 
 ## Upgrade Notes
 
-- **Bump Ruby to v2.6**
+- **Bump Ruby to v2.7**
 
-As per [\#6320](https://github.com/decidim/decidim/pull/6320) we've bumped the minimum Ruby version to 2.6.6.
+We've bumped the minimum Ruby version to 2.7.1, thanks to 2 PRs:
 
-- **Stable branches nomenclature changes**
+- [\#6320](https://github.com/decidim/decidim/pull/6320)
+- [\#6522](https://github.com/decidim/decidim/pull/6522)
 
-Since this release we're changing the branch nomenclature for stable branches. Until now we were using `x.y-stable`, now we will use `release/x.y-stable`.
-Legacy names for stable branches will be kept for a while but won't be created anymore, so new releases won't have the old `x.y-stable` nomenclature.
+- **Comments no longer use react**
 
-The plan is to keep new and old nomenclatures until the release of v0.25, so they will coexist until that release.
-When releasing v0.25 all stable branches with the nomenclature `x.y-stable` will be removed.
+As per [\#6498](https://github.com/decidim/decidim/pull/6498), the comments component is no longer implemented with the react component. In case you had customized the react component, it will still work as you would expect as the GraphQL API has not disappeared anywhere. You should, however, gradually migrate to the "new way" (Trailblazer cells) in order to ensure compatibility with future versions too.
 
-- **Maps**
+- **Consultations module deprecation**
 
-Maps functionality is now fully configurable. It defaults to HERE Maps as you'd expect when upgrading from an older version and it works still fine with your legacy style geocoder configuration after the update. This is, however, deprecated and it is highly recommended to define your maps configuration with the new style:
+As the new `Votings` module is being developed and will eventually replace the `Consultations` module, the latter enters the deprecation phase.
 
-```ruby
-# Before:
-Decidim.configure do |config|
-  config.geocoder = {
-    static_map_url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview",
-    here_api_key: Rails.application.secrets.geocoder[:here_api_key],
-    timeout: 5,
-    units: :km
-  }
-end
+### Added
 
-# After (remember to also update your secrets):
-Decidim.configure do |config|
-  config.maps = {
-    provider: :here,
-    api_key: Rails.application.secrets.maps[:api_key],
-    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  }
-  config.geocoder = {
-    timeout: 5,
-    units: :km
-  }
-end
-```
+- **decidim-core**: Adding functionality to report users [\#6696](https://github.com/decidim/decidim/pull/6696)
+- **decidim-admin**: Adding possibility of unreporting users [\#6696](https://github.com/decidim/decidim/pull/6696)
+- **decidim-core**: Add support for Visual Code Remote Containers and GitHub Codespaces [\6638](https://github.com/decidim/decidim/pull/6638)
 
-- **Debates and Comments are now in global search**
+### Changed
 
-Debates and Comments have been added to the global search and need to be
-indexed, otherwise all previous content won't be available as search results.
-You should run this in a Rails console at your server or create a migration to
-do it.
+- **Authorization metadata is now encrypted in the database**
 
-Please be aware that it could take a while if your database has a lot of
-content.
+As per [\#6947](https://github.com/decidim/decidim/pull/6947), the JSON values for the authorizations' `metadata` and `verification_metadata` columns in the `decidim_authorizations` database table are now automatically encrypted because they can contain identifiable or sensitive personal information connected to a user account. Storing this data in plain text in the database would be a security risk.
+
+You need to do changes to your code if you have been querying these tables in the past through the `Decidim::Authorization` model as follows:
 
 ```ruby
-  Decidim::Comments::Comment.find_each(&:try_update_index_for_search_resource)
-  Decidim::Debates::Debate.find_each(&:try_update_index_for_search_resource)
+Decidim::Authorization.where(
+  name: "your_authorization_handler"
+).where("metadata ->> 'gender' = ?", "f").find_each do |authorization|
+  puts "#{authorization.user.name} is a #{authorization.metadata["gender"]}"
+end
 ```
 
 - **Settings `maximum_attachment_size` and `maximum_avatar_size` moved to organization system settings**
+The problem with this code is that the data in the `metadata ->> 'gender'` column is now encrypted, so your search would not match any records in the database. Instead, you can do the following:
 
-As per [\#6377](https://github.com/decidim/decidim/pull/6377), the `maximum_attachment_size` and `maximum_avatar_size` settings will no longer have any effect if configured through the Decidim initializer configurations. Instead, these are now configured from the organization system settings at the `/system` path of your installation.
+```ruby
+Decidim::Authorization.where(
+  name: "your_authorization_handler"
+).find_each do |authorization|
+  next unless authorization.metadata["gender"] == "f"
 
-Note that if you had these previously configured in the initializer, these previous settings have been automatically migrated to all organizations in your installation after running the Decidim upgrade migrations.
+  puts "#{authorization.user.name} is a #{authorization.metadata["gender"]}"
+end
+```
+
+As you notice, when you are accessing the `metadata` or `verification_metadata` columns through the Active Record object, you can utilize the data in plain text. This is because the accessor method for these columns will automatically decrypt the data in the hash object.
+
+This is less performant but it is more secure. Security weighs more.
 
 ### Added
 
@@ -287,7 +279,10 @@ Note that if you had these previously configured in the initializer, these previ
 - **decidim-all**: Remove redundant translation files for Latvian [\#6439](https://github.com/decidim/decidim/pull/6439)
 - **decidim-proposals**: Remove legacy Proposals endorsements table [\#5643](https://github.com/decidim/decidim/pull/5643)
 - **decidim-core**, **decidim-initiatives**, **decidim-proposals**: Revert "Custom validator that checks string fields (\#6304)" [\#6316](https://github.com/decidim/decidim/pull/6316)
+### Removed
+
+- **decidim-core**: Remove legacy 'show statistics' checkbox in Appearance. [\#6575](https://github.com/decidim/decidim/pull/6575)
 
 ## Previous versions
 
-Please check [release/0.22-stable](https://github.com/decidim/decidim/blob/release/0.22-stable/CHANGELOG.md) for previous changes.
+Please check [release/0.23-stable](https://github.com/decidim/decidim/blob/release/0.23-stable/CHANGELOG.md) for previous changes.

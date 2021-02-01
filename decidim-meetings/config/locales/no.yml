@@ -21,19 +21,22 @@
         end_time: Sluttid
         location: Plassering
         location_hints: Plasseringstips
+        online_meeting_url: Link til nettmøte
         organizer_gid: Opprett som
         organizer_id: Planlegger
         private_meeting: Privat møte
         registration_form_enabled: Registreringsskjemaet aktivert
         registration_terms: Registrerings vilkår
+        registration_url: Link til registrering
         registrations_enabled: Registreringer aktivert
         start_time: Start-Tid
         title: Tittel
         transparent: Privat
+        type_of_meeting: Type møte
       minutes:
-        audio_url: Audio url
+        audio_url: Audio URL
         description: Beskrivelse
-        video_url: Video url
+        video_url: Video URL
         visible: Er synlig
     errors:
       models:
@@ -90,6 +93,7 @@
             resources_permissions_enabled: Handlings tillatelser kan settes for hvert møte
             scope_id: Tema
             scopes_enabled: Temaer aktivert
+            terms_and_conditions_url_for_meeting_creators: Link til vilkår og betingelser for arrangører
           step:
             announcement: Kunngjøring
             comments_blocked: Kommentarer blokkert
@@ -249,7 +253,6 @@
           form:
             address_help: 'Adresse: brukes av Geocoder for å finne lokasjonen'
             location_help: 'Plassering: melding rettet til brukerne som antyder stedet å møte på'
-            location_hints_help: 'Plasseringstips: tilleggsinfo. Eksempel: gulvet i bygningen'
           index:
             title: Møter
           new:
@@ -352,6 +355,11 @@
             subject: Registrering av møtet ditt er bekreftet
       meeting:
         not_allowed: Du er ikke tillatt å se dette møtet
+      meeting_closes:
+        edit:
+          back: Tilbake
+          close: Avslutt møte
+          title: Avslutt møte
       meetings:
         count:
           meetings_count:
@@ -452,11 +460,6 @@
         description: Antall møter opprettet
         object: møter
         title: Møter
-    participatory_processes:
-      participatory_process_groups:
-        highlighted_meetings:
-          past_meetings: Tidligere møter
-          upcoming_meetings: Kommende møter
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Tidligere møter

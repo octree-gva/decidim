@@ -61,7 +61,6 @@ lv:
         rich_text_editor_in_public_views: Iespējot bagātinātā teksta redaktoru dalībniekiem
         secondary_color: Sekundārais
         send_welcome_notification: Nosūtīt sveiciena paziņojumu
-        show_statistics: Rādīt statistiku
         success_color: Panākumi
         time_zone: Laika josla
         tos_version: Pakalpojumu sniegšanas noteikumu versija
@@ -136,7 +135,6 @@ lv:
           error: Piekrītot administratora lietošanas noteikumiem, radās kļūda.
           success: Lieliski! Jūs esat piekritis administratora lietošanas noteikumiem.
         actions:
-          accept: Es piekrītu šiem administratora noteikumiem
           are_you_sure: Vai tiešām nepiekrītat administratora noteikumiem?
           refuse: Nepiekrist administratora noteikumiem
           title: Piekrist lietošanas noteikumiem
@@ -550,7 +548,6 @@ lv:
         form:
           rich_text_editor_in_public_views_help: Atsevišķos teksta laukos, izmantojot bagātinātā teksta redaktoru, dalībnieki varēs ievietot dažus HTML tagus.
           social_handlers: Sociālie plašsaziņas līdzekļi
-          url: URL
         update:
           error: Šīs organizācijas atjaunināšanas laikā radās problēma.
           success: Organizācija ir veiksmīgi atjaunināta.
@@ -584,7 +581,6 @@ lv:
           error: Dzēšot privāto dalībnieku no šīs līdzdalības telpas, radās problēma.
           success: Privāto dalībnieku piekļuve līdzdalības telpai ir veiksmīgi dzēsta.
         index:
-          import_via_csv: Importēt no CSV
           title: Līdzdalības telpas privāts dalībnieks
         new:
           create: Izveidot
@@ -777,7 +773,6 @@ lv:
           fields:
             hidden_at: Paslēpts plkst.
             report_count: Skaits
-            reportable: Jāziņo
             reported_content_url: Paziņotā satura URL
             reports: Ziņojumi
             visit_url: Apmeklēt URL

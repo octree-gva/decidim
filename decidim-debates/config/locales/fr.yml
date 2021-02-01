@@ -45,18 +45,27 @@ fr:
             endorsements_enabled: Soutiens activés
     debates:
       actions:
+        active: Débats en cours
+        archive: Archiver
+        archived: Débats archivés
         close: Fermer
         confirm_destroy: Êtes-vous certain ?
         destroy: Supprimer
         edit: Modifier
         new: Nouveau %{name}
         title: Actions
+        unarchive: Annuler l'archivage
       admin:
         debate_closes:
           edit:
+            archive: Archiver ce débat
+            archive_help: L'archivage de ce débat le masquera de la section des débats publics
             close: Fermer
             title: Clore le débat
         debates:
+          archive:
+            invalid: Un problème est survenu lors de l'archivage du débat.
+            success: Le débat a été archivé avec succès.
           create:
             invalid: Il y a eu un problème lors de la création du débat.
             success: Débat créé avec succès.
@@ -65,14 +74,22 @@ fr:
           edit:
             title: Modifier le débat
             update: Actualiser le débat
+          empty: Aucun débat ne correspond à ces critères.
+          form:
+            debate_type: Type de débat
           index:
             title: Débats
           new:
             create: Créer un débat
             title: Nouveau débat
+          unarchive:
+            invalid: Un problème est survenu lors du désarchivage du débat.
+            success: Débat désarchivé avec succès.
           update:
             invalid: Il y a eu un problème lors de la mise à jour de ce débat.
             success: Débat mis à jour avec succès.
+        exports:
+          comments: Commentaires
         models:
           debate:
             name: Débat
@@ -152,6 +169,7 @@ fr:
           groups_count: Groupes
           last_comment_by: Dernier commentaire par
           no_comments_yet: Pas encore de commentaire
+          open: Ouvrir le débat
           participants_count: Participants
         update:
           invalid: Une erreur s'est produite lors de la mise à jour du débat.
@@ -200,10 +218,16 @@ fr:
           email_subject: Débats maintenant disponibles sur %{participatory_space_title}
           notification_title: Vous pouvez maintenant initier <a href="%{resource_path}">nouveaux débats</a> dans <a href="%{participatory_space_url}">%{participatory_space_title}</a>
         debate_closed:
-          email_intro: 'Le débat « %{resource_title} » est fermé. Vous pouvez lire les conclusions sur cette page :'
-          email_outro: Vous avez reçu cet avis parce que vous êtes abonné au débat « %{resource_title} ». Vous pouvez vous désabonner depuis le lien précédent.
-          email_subject: Le débat "%{resource_title}" est fermé
-          notification_title: Le débat <a href="%{resource_path}">%{resource_title}</a> est fermé.
+          affected_user:
+            email_intro: 'Le débat « %{resource_title} » est fermé. Vous pouvez lire les conclusions sur cette page :'
+            email_outro: Vous avez reçu cet avis parce que vous êtes abonné au débat « %{resource_title} ». Vous pouvez vous désabonner depuis le lien précédent.
+            email_subject: Le débat "%{resource_title}" est fermé
+            notification_title: Le débat <a href="%{resource_path}">%{resource_title}</a> est fermé.
+          follower:
+            email_intro: 'Le débat « %{resource_title} » est fermé. Vous pouvez lire les conclusions sur cette page :'
+            email_outro: Vous avez reçu cet avis parce que vous êtes abonné au débat « %{resource_title} ». Vous pouvez vous désabonner depuis le lien précédent.
+            email_subject: Le débat "%{resource_title}" est fermé
+            notification_title: Le débat <a href="%{resource_path}">%{resource_title}</a> est fermé.
     gamification:
       badges:
         commented_debates:

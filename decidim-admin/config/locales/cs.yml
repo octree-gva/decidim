@@ -70,7 +70,6 @@ cs:
         rich_text_editor_in_public_views: Povolit plnohodnotný textový editor pro účastníky
         secondary_color: Sekundární
         send_welcome_notification: Odeslat uvítací oznámení
-        show_statistics: Zobrazit statistiky
         success_color: Úspěch
         time_zone: Časové pásmo
         tos_version: Verze podmínek služby
@@ -94,6 +93,7 @@ cs:
       settings:
         scope_id: Oblast působnosti
       static_page:
+        allow_public_access: Povolit přístup bez autentizace
         changed_notably: Došlo ke znatelným změnám.
         content: Obsah
         organization: Organizace
@@ -148,7 +148,7 @@ cs:
           error: Při přijímání správcovských podmínek použití došlo k chybě.
           success: Skvělé! Přijali jste administrátorské podmínky použití.
         actions:
-          accept: Souhlasím s těmito podmínkami administrátora
+          accept: Souhlasím s následujícími podmínkami
           are_you_sure: Opravdu chcete odmítnout administrátorské podmínky?
           refuse: Odmítnout administrátorské podmínky
           title: Souhlasit s podmínkami používání
@@ -227,6 +227,12 @@ cs:
       autocomplete:
         no_results: Nenalezeny žádné výsledky
         search_prompt: Zadejte nejméně tři znaky, které chcete vyhledat
+      block_user:
+        new:
+          action: Blokovat účet a odeslat odůvodnění
+          description: Blokováním uživatele bude jeho účet nepoužitelný, ve svém odůvodnění a pokynech můžete uvést způsob, jaký považujete za vhodný k odblokování uživatele.
+          justification: Odůvodnění
+          title: Blokovat uživatele %{name}
       categories:
         create:
           error: Při vytváření této kategorie došlo k chybě.
@@ -282,6 +288,21 @@ cs:
         update:
           error: Při aktualizaci této komponenty došlo k chybě.
           success: Komponenta byla úspěšně aktualizována.
+      conflicts:
+        attempts: Pokusy
+        'false': 'Ne'
+        managed_user_name: Spravovaný uživatel
+        solved: Vyřešeno
+        title: Konflikty ověření
+        transfer:
+          email: E-mail
+          error: Při převodu aktuálního účastníka na spravovaného účastníka došlo k chybě.
+          name: Jméno
+          reason: Důvod
+          success: Aktuální převod byl úspěšně dokončen.
+          title: Převod
+        'true': 'Ano'
+        user_name: Uživatel
       dashboard:
         show:
           view_more_logs: Zobrazit další protokoly
@@ -298,6 +319,9 @@ cs:
         category_id_eq:
           label: Kategorie
         filter_label: Filtr
+        moderations:
+          reportable_type_string_eq:
+            label: Typ
         officialized_at_null:
           label: Stav
           values:
@@ -318,6 +342,7 @@ cs:
         search_label: Vyhledávání
         search_placeholder:
           name_or_nickname_or_email_cont: Hledat %{collection} podle e-mailu, jména nebo přezdívky.
+          reported_id_string_or_reported_content_cont: Hledat %{collection} podle nahlášeného Id nebo obsahu.
           title_cont: Hledat %{collection} podle názvu.
         state_eq:
           label: Stav
@@ -382,8 +407,10 @@ cs:
         help_sections: Sekce nápovědy
         homepage: Domovská stránka
         impersonations: Vydávání se za uživatele
+        moderation: Globální moderace
         newsletters: Zpravodaje
         participants: Účastníci
+        reported_users: Nahlášení uživatelé
         scope_types: Typ oblasti působnosti
         scopes: Oblasti působnosti
         settings: Nastavení
@@ -471,6 +498,20 @@ cs:
             phone: Telefon
             state: Stav
             users_count: Počet účastníků
+      moderated_users:
+        index:
+          actions:
+            title: Akce
+            unreport: Zrušit nahlášení
+          name: Jméno
+          nickname: Přezdívka
+          reason: Důvod
+          title: Seznam nahlášených uživatelů
+        report:
+          reasons:
+            does_not_belong: Nepatří
+            offensive: Urážlivý
+            spam: Nevyžádané
       moderations:
         index:
           title: Moderování
@@ -479,6 +520,21 @@ cs:
             does_not_belong: Nepatří
             offensive: Urážlivý
             spam: Spam
+        reports:
+          index:
+            author: Autor(ři)
+            callout_html: Obsah se zobrazí v panelu moderátora, když byl signalizován uživatelem (může to být někdo s registrovaným účtem) kliknutím na vlaječku %{icon} vedle položky.
+            content_original_language: Původní jazyk obsahu
+            participatory_space: Participační prostor
+            reported_content: Nahlášený obsah
+            see_current: Zobrazit aktuální
+            see_original: Zobrazit originál
+            title: Zprávy o moderování
+          show:
+            report_details: Detaily důvodu
+            report_language: Jazyk zprávy
+            report_reason: Důvod
+            title: Detaily hlášení
       newsletter_templates:
         index:
           preview_template: Náhled
@@ -544,6 +600,9 @@ cs:
           error: Při aktualizaci tohoto zpravodaje došlo k chybě.
           success: Zpravodaj byl úspěšně aktualizován. Před odesláním jej prosím zkontrolujte.
       officializations:
+        block:
+          error: Při blokování uživatele došlo k chybě
+          success: Uživatel byl úspěšně zablokován
         create:
           success: Uživatel úspěšně oficializován
         destroy:
@@ -551,6 +610,7 @@ cs:
         index:
           actions: Akce
           badge: Odznak
+          block: Zablokovat uživatele
           created_at: Vytvořeno na
           name: název
           nickname: Přezdívka
@@ -558,8 +618,10 @@ cs:
           officialize: Úředně
           officialized: Úředně
           reofficialize: Reofficialize
+          reports: Hlášení
           show_email: Zobrazit e-mailovou adresu
           status: Postavení
+          unblock: Odblokovat uživatele
           unofficialize: Odebrat oficializaci
         new:
           badge: Oficializační odznak
@@ -573,6 +635,9 @@ cs:
           hidden: skrytý
           show: Zobrazit
           title: Zobrazit e-mailovou adresu účastníka
+        unblock:
+          error: Při odblokování uživatele došlo k chybě
+          success: Uživatel byl úspěšně odblokován
       organization:
         edit:
           title: Upravit organizaci
@@ -584,7 +649,7 @@ cs:
           rich_text_editor_in_public_views_help: V některých textových oblastech budou účastníci moci vložit některé HTML tagy pomocí textového editoru.
           social_handlers: Sociální
           twitter: Twitter
-          url: Url
+          url: URL
           youtube: Youtube
         update:
           error: Při aktualizaci této organizace došlo k chybě.
@@ -619,7 +684,7 @@ cs:
           error: Při odstraňování soukromého uživatele tohoto participačního prostoru došlo k chybě.
           success: Přístup soukromého účastníka do participativního prostoru byl úspěšně zrušen.
         index:
-          import_via_csv: Importovat přes csv
+          import_via_csv: Importovat přes CSV
           title: Participační prostor soukromého účastníka
         new:
           create: Vytvořit
@@ -742,6 +807,7 @@ cs:
         impersonatable_users: Spravovatelní účastníci
         impersonations: Správa účastníků
         metrics: Metriky
+        panel: Admin
         participants: Uživatelé
         scope_types: Typy oblastí působnosti
         scopes: Oblasti působnosti
@@ -807,6 +873,7 @@ cs:
           reason: Při správě nespravovaného účastníka musíte uvést důvod
     moderations:
       actions:
+        expand: Rozbalit
         hidden: Skrytý
         hide: Skrýt
         not_hidden: Neskrytý
@@ -827,18 +894,28 @@ cs:
       models:
         moderation:
           fields:
+            created_at: Datum vytvoření
             hidden_at: Skryté u
+            participatory_space: Participativní prostor
             report_count: Spočítat
-            reportable: Reportable
+            reportable_id: Id
+            reportable_type: Typ
             reported_content_url: Oznámená adresa URL obsahu
             reports: Zprávy
             visit_url: Navštivte adresu URL
+        report:
+          fields:
+            details: Detaily důvodu
+            locale: Jazyk
+            reason: Důvod
   errors:
     messages:
       invalid_json: Neplatná JSON
   layouts:
     decidim:
       admin:
+        global_moderations:
+          title: Globální moderace
         newsletters:
           title: Zpravodaje
         settings:

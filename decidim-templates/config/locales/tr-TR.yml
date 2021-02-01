@@ -48,7 +48,7 @@ tr:
           form:
             save: Kaydet
             template_title: Şablon Bilgisi
-            title: Anket
+            title: '%{questionnaire_for} için anket şablonu'
           index:
             confirm_delete: Bu şablonu silmek istediğinizden emin misiniz?
             title: Anket şablonları

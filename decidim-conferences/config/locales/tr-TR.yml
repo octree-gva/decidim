@@ -402,6 +402,7 @@ tr:
         personal_website: Kişisel web sitesi
         show:
           more_info: Daha fazla bilgi
+          speaking_at: Konuşma
       conference_speaker_cell:
         personal_url:
           personal_website: Kişisel web sitesi
@@ -539,6 +540,12 @@ tr:
           email_outro: '"%{resource_title}" konferansını izlediğiniz için bu bildirimi aldınız. Bir önceki bağlantıdan takip etmeyi bırakabilirsiniz.'
           email_subject: '"%{resource_title}" konferansı geliyor!'
           notification_title: <a href="%{resource_path}">%{resource_title}</a> konferans 2 gün içinde geliyor.
+    help:
+      participatory_spaces:
+        conferences:
+          contextual: "<p> <strong> Konferans </strong>, çok sayıda kişinin konuşmacı olarak davet edildiği bir programda düzenlenen toplantılar ve büyük kongreler veya sosyal etkinlikler için tipik olan diğer bilgi alanları (kayıt, destek veren kuruluşların listesi) veya etkinlik sponsoru vb. </p> <p> Örnekler: Bir konferans, bir kuruluş ve üyeleri için alakalı bir etkinlik olabilir veya katılımcı bir sürecin parçası olarak veya bir danışma sürecini takiben gerçekleşebilir. </p>\n"
+          page: "<p> <strong> Konferans </strong>, çok sayıda kişinin konuşmacı olarak davet edildiği bir programda düzenlenen toplantılar ve büyük kongreler veya sosyal etkinlikler için tipik olan diğer bilgi alanları (kayıt, destek veren kuruluşların listesi) veya etkinlik sponsoru vb. </p> <p> Örnekler: Bir konferans, bir kuruluş ve üyeleri için alakalı bir etkinlik olabilir veya katılımcı bir sürecin parçası olarak veya bir danışma sürecini takiben gerçekleşebilir. </p>\n"
+          title: Konferans nedir?
     log:
       value_types:
         conference_presenter:

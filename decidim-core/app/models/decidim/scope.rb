@@ -17,13 +17,11 @@ module Decidim
                inverse_of: :scopes
 
     belongs_to :scope_type,
-               foreign_key: "scope_type_id",
                class_name: "Decidim::ScopeType",
                inverse_of: :scopes,
                optional: true
 
     belongs_to :parent,
-               foreign_key: "parent_id",
                class_name: "Decidim::Scope",
                inverse_of: :children,
                optional: true
@@ -72,6 +70,11 @@ module Decidim
       scope_ids = part_of
       scope_ids.select! { |id| id == root.id || !root.part_of.member?(id) } if root
       organization.scopes.where(id: scope_ids).sort { |s1, s2| part_of.index(s2.id) <=> part_of.index(s1.id) }
+    end
+
+    # Allow ransacker to search for a key in a hstore column (`name`.`en`)
+    ransacker :name do |parent|
+      Arel::Nodes::InfixOperation.new("->>", parent.table[:name], Arel::Nodes.build_quoted(I18n.locale.to_s))
     end
 
     private

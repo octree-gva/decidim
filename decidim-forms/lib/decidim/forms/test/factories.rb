@@ -13,6 +13,7 @@ FactoryBot.define do
     end
     tos { generate_localized_title }
     questionnaire_for { build(:participatory_process) }
+    salt { SecureRandom.hex(32) }
 
     trait :with_questions do
       questions do
@@ -90,6 +91,13 @@ FactoryBot.define do
     question { create(:questionnaire_question, questionnaire: questionnaire) }
     user { create(:user, organization: questionnaire.questionnaire_for.organization) }
     session_token { Digest::MD5.hexdigest(user.id.to_s) }
+
+    trait :with_attachments do
+      after(:create) do |answer, _evaluator|
+        create :attachment, :with_image, attached_to: answer
+        create :attachment, :with_pdf, attached_to: answer
+      end
+    end
   end
 
   factory :answer_option, class: "Decidim::Forms::AnswerOption" do

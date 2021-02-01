@@ -3,7 +3,7 @@
 require "spec_helper"
 
 describe "Admin manages questions", type: :system do
-  let(:election) { create :election, :upcoming, component: current_component }
+  let(:election) { create :election, component: current_component }
   let(:question) { create :question, election: election }
   let(:manifest_name) { "elections" }
 
@@ -16,7 +16,7 @@ describe "Admin manages questions", type: :system do
     visit_component_admin
 
     within find("tr", text: translated(election.title)) do
-      page.find(".action-icon--edit-questions").click
+      page.find(".action-icon--manage-questions").click
     end
   end
 
@@ -59,8 +59,8 @@ describe "Admin manages questions", type: :system do
     end
   end
 
-  context "when the election has started" do
-    let(:election) { create(:election, :started, component: current_component) }
+  context "when the election has created on the bulletin board" do
+    let(:election) { create(:election, :created, component: current_component) }
 
     it "cannot add a new question" do
       expect(page).to have_no_content("New Question")
@@ -94,8 +94,8 @@ describe "Admin manages questions", type: :system do
       end
     end
 
-    context "when the election has started" do
-      let(:election) { create(:election, :started, component: current_component) }
+    context "when the election has created on the bulletin board" do
+      let(:election) { create(:election, :created, component: current_component) }
 
       it "cannot update the question" do
         within find("tr", text: translated(question.title)) do
@@ -122,8 +122,8 @@ describe "Admin manages questions", type: :system do
       end
     end
 
-    context "when the election has started" do
-      let(:election) { create(:election, :started, component: current_component) }
+    context "when the election has created on the bulletin board" do
+      let(:election) { create(:election, :created, component: current_component) }
 
       it "cannot delete the question" do
         within find("tr", text: translated(question.title)) do

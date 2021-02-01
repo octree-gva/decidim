@@ -13,7 +13,7 @@ on:
 env:
   CI: "true"
   SIMPLECOV: "true"
-  RUBY_VERSION: 2.6.6
+  RUBY_VERSION: 2.7.1
   NODE_VERSION: 12.9.1
 
 jobs:
@@ -21,9 +21,10 @@ jobs:
     name: Lint code
     runs-on: ubuntu-latest
     if: "!startsWith(github.head_ref, 'chore/l10n')"
+    timeout-minutes: 60
     steps:
       - uses: rokroskar/workflow-run-cleanup-action@v0.2.2
-        if: "github.ref != 'refs/heads/master' || github.ref != 'refs/heads/develop'"
+        if: "github.ref != 'refs/heads/master' && github.ref != 'refs/heads/develop'"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - uses: actions/checkout@v2.0.0
@@ -42,9 +43,5 @@ jobs:
         name: Lint Ruby files
       - run: npm run lint
         name: Lint JS files
-      - run: bundle exec mdl *.md docs/**/*.md
-        name: Lint Markdown files
-      # erblint 0.0.30 raises a NameError but upgrading to 0.0.35 is too hard.
-      #
-      # - run: ./.github/run_erblint.sh
-        # name: Lint ERB files
+      - run: ./.github/run_erblint.sh
+        name: Lint ERB files

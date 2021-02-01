@@ -70,7 +70,6 @@ zh-CN:
         rich_text_editor_in_public_views: 为参与者启用富文本编辑器
         secondary_color: 次要文件
         send_welcome_notification: 发送欢迎通知
-        show_statistics: 显示统计
         success_color: 成功
         time_zone: 时区
         tos_version: 服务条款版本
@@ -146,7 +145,6 @@ zh-CN:
           error: 接受管理员使用条款时出错。
           success: 太棒了！您已经接受了管理员使用条款。
         actions:
-          accept: 我同意这个管理条款
           are_you_sure: 您确定要拒绝管理员条款吗？
           refuse: 拒绝管理条款
           title: 同意使用条款
@@ -582,7 +580,6 @@ zh-CN:
           rich_text_editor_in_public_views_help: 在某些文本领域，参与者将能够通过使用丰富的文本编辑器插入一些HTML标签。
           social_handlers: 社交活动
           twitter: 推特
-          url: 网址
           youtube: YouTube
         update:
           error: 更新这个组织时出现问题。
@@ -617,7 +614,6 @@ zh-CN:
           error: 删除这个参与空间的私人参与者时出错。
           success: 参与性空间私人参与者访问成功被摧毁。
         index:
-          import_via_csv: 通过 csv 导入
           title: 参与性空间私人参与者
         new:
           create: 创建
@@ -827,7 +823,6 @@ zh-CN:
           fields:
             hidden_at: 隐藏于
             report_count: 计数
-            reportable: 可重写
             reported_content_url: 报告的内容 URL
             reports: 报告
             visit_url: 访问 URL

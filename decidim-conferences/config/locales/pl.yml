@@ -547,6 +547,10 @@ pl:
           email_outro: Otrzymałeś to powiadomienie, ponieważ obserwujesz konferencję "%{resource_title}". Możesz przestać ją obserwować klikając poprzedni link.
           email_subject: Konferencja „%{resource_title}” już wkrótce!
           notification_title: Konferencja <a href="%{resource_path}">%{resource_title}</a> odbędzie się za 2 dni.
+    help:
+      participatory_spaces:
+        conferences:
+          title: Czym są konferencje?
     log:
       value_types:
         conference_presenter:

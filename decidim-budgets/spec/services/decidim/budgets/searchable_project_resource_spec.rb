@@ -113,10 +113,10 @@ module Decidim
 
     def expected_searchable_resource_attrs(resource, locale)
       {
-        "content_a" => I18n.transliterate(resource.title[locale]),
+        "content_a" => I18n.transliterate(translated(resource.title, locale: locale)),
         "content_b" => "",
         "content_c" => "",
-        "content_d" => I18n.transliterate(resource.description[locale]),
+        "content_d" => I18n.transliterate(translated(resource.description, locale: locale)),
         "locale" => locale,
 
         "decidim_organization_id" => resource.component.organization.id,

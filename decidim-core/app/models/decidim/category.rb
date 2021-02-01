@@ -10,7 +10,7 @@ module Decidim
 
     belongs_to :participatory_space, foreign_key: "decidim_participatory_space_id", foreign_type: "decidim_participatory_space_type", polymorphic: true
     has_many :subcategories, foreign_key: "parent_id", class_name: "Decidim::Category", dependent: :destroy, inverse_of: :parent
-    belongs_to :parent, class_name: "Decidim::Category", foreign_key: "parent_id", inverse_of: :subcategories, optional: true
+    belongs_to :parent, class_name: "Decidim::Category", inverse_of: :subcategories, optional: true
     has_many :categorizations, foreign_key: "decidim_category_id", class_name: "Decidim::Categorization", dependent: :destroy
 
     default_scope { order(arel_table[:parent_id].asc, arel_table[:weight].asc) }
@@ -36,6 +36,11 @@ module Decidim
 
     def unused?
       categorizations.empty?
+    end
+
+    # Allow ransacker to search for a key in a hstore column (`name`.`en`)
+    ransacker :name do |parent|
+      Arel::Nodes::InfixOperation.new("->>", parent.table[:name], Arel::Nodes.build_quoted(I18n.locale.to_s))
     end
 
     private

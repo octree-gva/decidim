@@ -45,18 +45,27 @@ fi-pl:
             endorsements_enabled: Suositukset käytössä
     debates:
       actions:
+        active: Aktiiviset keskustelut
+        archive: Arkisto
+        archived: Arkistoidut keskustelut
         close: Sulje
         confirm_destroy: Oletko varma?
         destroy: Poista
         edit: Muokkaa
         new: Uusi %{name}
         title: Toiminnot
+        unarchive: Palauta arkistosta
       admin:
         debate_closes:
           edit:
+            archive: Arkistoi tämä keskustelu
+            archive_help: Tämän keskustelun arkistointi piilottaa sen julkisten keskustelujen osiosta
             close: Sulje
             title: Sulje keskustelu
         debates:
+          archive:
+            invalid: Keskustelun arkistointi epäonnistui.
+            success: Keskustelun arkistointi onnistui.
           create:
             invalid: Keskustelua luotaessa tapahtui virhe.
             success: Keskustelu luotu onnistuneesti.
@@ -65,14 +74,24 @@ fi-pl:
           edit:
             title: Muokkaa keskustelua
             update: Päivitä keskustelu
+          empty: Yksikään keskustelu ei vastannut näitä hakukriteerejä.
+          form:
+            debate_type: Keskustelun tyyppi
+            finite: Määräaikainen (keskustelulla on alku- ja loppuaika)
+            open: Avoin (keskustelulla ei ole alku- ja loppuaikaa)
           index:
             title: Keskustelut
           new:
             create: Luo keskustelu
             title: Uusi keskustelu
+          unarchive:
+            invalid: Keskustelun palauttaminen arkistosta epäonnistui.
+            success: Keskustelun palauttaminen arkistosta onnistui.
           update:
             invalid: Keskustelun päivittämisessä tapahtui virhe.
             success: Keskustelu päivitetty onnistuneesti.
+        exports:
+          comments: Kommentit
         models:
           debate:
             name: Keskustelu
@@ -152,6 +171,7 @@ fi-pl:
           groups_count: Ryhmiä
           last_comment_by: Viimeisin kommentti käyttäjältä
           no_comments_yet: Ei vielä kommentteja
+          open: Avoin keskustelu
           participants_count: Osallistujia
         update:
           invalid: Keskustelun päivittäminen epäonnistui.
@@ -200,10 +220,16 @@ fi-pl:
           email_subject: Keskusteluja nyt käyettävissä kohdassa %{participatory_space_title}
           notification_title: Voit nyt aloittaa <a href="%{resource_path}">uusia keskusteluja</a> kohteessa <a href="%{participatory_space_url}">%{participatory_space_title}</a>
         debate_closed:
-          email_intro: 'Keskustelu "%{resource_title}" suljettiin. Voit lukea johtopäätökset täältä:'
-          email_outro: Tämä ilmoitus on lähetetty sinulle, koska seuraat keskustelua "%{resource_title}". Voit lopettaa seuraamisen edellä esitetyn linkin kautta.
-          email_subject: Keskustelu "%{resource_title}" suljettiin
-          notification_title: Keskustelu <a href="%{resource_path}">%{resource_title}</a> suljettiin.
+          affected_user:
+            email_intro: 'Keskustelu "%{resource_title}" suljettiin. Voit lukea johtopäätökset täältä:'
+            email_outro: Tämä ilmoitus on lähetetty sinulle, koska seuraat keskustelua "%{resource_title}". Voit lopettaa seuraamisen edellä esitetyn linkin kautta.
+            email_subject: Keskustelu "%{resource_title}" suljettiin
+            notification_title: Keskustelu <a href="%{resource_path}">%{resource_title}</a> suljettiin.
+          follower:
+            email_intro: 'Keskustelu "%{resource_title}" suljettiin. Voit lukea johtopäätökset täältä:'
+            email_outro: Tämä ilmoitus on lähetetty sinulle, koska seuraat keskustelua "%{resource_title}". Voit lopettaa seuraamisen edellä esitetyn linkin kautta.
+            email_subject: Keskustelu "%{resource_title}" suljettiin
+            notification_title: Keskustelu <a href="%{resource_path}">%{resource_title}</a> suljettiin.
     gamification:
       badges:
         commented_debates:

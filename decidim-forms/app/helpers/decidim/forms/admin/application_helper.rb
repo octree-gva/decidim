@@ -31,7 +31,7 @@ module Decidim
             "placeholder" => options[:placeholder],
             "locale" => I18n.locale
           }
-          content_tag :span, class: options[:class], data: data do
+          tag.span(class: options[:class], data: data) do
             truncate translated_attribute(title), length: options[:max_length], omission: options[:omission]
           end
         end
@@ -44,11 +44,6 @@ module Decidim
 
         def templates_defined?
           defined? Decidim::Templates::Admin::Concerns::Templatable
-        end
-
-        def title_for_questionnaire
-          scope = templates_defined? ? "decidim.templates.admin.questionnaire_templates" : "decidim.forms.admin.questionnaires"
-          t("form.title", scope: scope)
         end
       end
     end

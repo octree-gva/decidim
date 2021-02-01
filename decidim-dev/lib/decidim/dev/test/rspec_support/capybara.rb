@@ -16,6 +16,10 @@ module Decidim
     def switch_to_default_host
       Capybara.app_host = nil
     end
+
+    def switch_to_secure_context_host
+      Capybara.app_host = "http://localhost"
+    end
   end
 end
 
@@ -71,6 +75,10 @@ RSpec.configure do |config|
     using_wait_time(max_wait_time_for_slow_specs) do
       example.run
     end
+  end
+
+  config.after(type: :system) do |example|
+    warn page.driver.browser.manage.logs.get(:browser) unless example.metadata[:driver].eql?(:rack_test)
   end
 
   config.include Decidim::CapybaraTestHelpers, type: :system

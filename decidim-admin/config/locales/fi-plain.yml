@@ -70,7 +70,6 @@ fi-pl:
         rich_text_editor_in_public_views: Ota käyttöön rikas tekstieditori osallistujille
         secondary_color: Toissijainen
         send_welcome_notification: Lähetä tervetuloilmoitus
-        show_statistics: Näytä tilastot
         success_color: Onnistuminen
         time_zone: Aikavyöhyke
         tos_version: Käyttöehtojen versio
@@ -94,6 +93,7 @@ fi-pl:
       settings:
         scope_id: Teema
       static_page:
+        allow_public_access: Salli pääsy ilman kirjautumista
         changed_notably: On tapahtunut huomattavia muutoksia.
         content: Sisältö
         organization: Organisaatio
@@ -148,7 +148,7 @@ fi-pl:
           error: Hallintakäyttäjän ehtojen hyväksymisessä tapahtui virhe.
           success: Hienoa! Olet hyväksynyt hallintakäyttäjän ehdot.
         actions:
-          accept: Hyväksyn nämä hallintakäyttäjän ehdot
+          accept: Hyväksyn seuraavat ehdot
           are_you_sure: Haluatko varmasti olla hyväksymättä hallintakäyttäjän ehtoja?
           refuse: Kieltäydy hyväksymästä hallintakäyttäjän ehtoja
           title: Hyväksy käyttöehdot
@@ -227,6 +227,12 @@ fi-pl:
       autocomplete:
         no_results: Ei tuloksia
         search_prompt: Kirjoita vähintään kolme merkkiä hakuun
+      block_user:
+        new:
+          action: Estä tili ja lähetä perustelut
+          description: Estämällä käyttäjän estät kyseisen käyttäjän pääsyn hänen omalle tililleen. Voit antaa perusteluissasi ja ohjeistuksissasi tietoa siitä, mitä kyseinen käyttäjä voi tehdä palauttaakseen pääsyn tililleen.
+          justification: Perustelut
+          title: Estä käyttäjä %{name}
       categories:
         create:
           error: Tämän aihepiirin luonnissa tapahtui virhe.
@@ -282,6 +288,21 @@ fi-pl:
         update:
           error: Tämän komponentin päivittämisessä tapahtui virhe.
           success: Komponentti päivitetty onnistuneesti.
+      conflicts:
+        attempts: Yritykset
+        'false': 'Ei'
+        managed_user_name: Hallittu käyttäjä
+        solved: Ratkaistu
+        title: Tarkistusten ristiriidat
+        transfer:
+          email: Sähköposti
+          error: Nykyisen käyttäjän siirto hallituksi käyttäjäksi epäonnistui.
+          name: Nimi
+          reason: Syy
+          success: Siirto onnistui.
+          title: Siirrä
+        'true': 'Kyllä'
+        user_name: Käyttäjä
       dashboard:
         show:
           view_more_logs: Näytä lisää lokitietoja
@@ -298,6 +319,9 @@ fi-pl:
         category_id_eq:
           label: Aihepiiri
         filter_label: Suodata
+        moderations:
+          reportable_type_string_eq:
+            label: Tyyppi
         officialized_at_null:
           label: Tila
           values:
@@ -318,6 +342,7 @@ fi-pl:
         search_label: Hae
         search_placeholder:
           name_or_nickname_or_email_cont: '%{collection}: Hae sähköpostilla, nimellä tai nimimerkillä'
+          reported_id_string_or_reported_content_cont: Etsi kohteista %{collection} raportoitavan kohteen ID:n tai sisällön perusteella.
           title_cont: '%{collection}: Hae otsikon perusteella'
         state_eq:
           label: Tila
@@ -382,8 +407,10 @@ fi-pl:
         help_sections: Ohjeosiot
         homepage: Kotisivu
         impersonations: Esiintymiset toisena käyttäjänä
+        moderation: Yleiset moderoinnit
         newsletters: Uutiskirjeet
         participants: Osallistujat
+        reported_users: Ilmoitetut käyttäjät
         scope_types: Teematyypit
         scopes: Teemat
         settings: Asetukset
@@ -471,6 +498,20 @@ fi-pl:
             phone: Puhelinnumero
             state: Tila
             users_count: Käyttäjämäärä
+      moderated_users:
+        index:
+          actions:
+            title: Toiminnot
+            unreport: Poista ilmoitus
+          name: Nimi
+          nickname: Nimimerkki
+          reason: Syy
+          title: Ilmoitettujen käyttäjien lista
+        report:
+          reasons:
+            does_not_belong: Ei kuulu
+            offensive: Loukkaava
+            spam: Roskaposti
       moderations:
         index:
           title: Moderoinnit
@@ -479,6 +520,21 @@ fi-pl:
             does_not_belong: Ei kuulu
             offensive: Loukkaava
             spam: Roskaposti
+        reports:
+          index:
+            author: Tekijä(t)
+            callout_html: Sisältö tulee näkyviin moderointinäkymään, kun joku käyttäjä (kuka tahansa käyttäjä, jolla on tili alustalla) on ilmoittanut sisällön painamalla sisällön yhteydessä näkyvää %{icon} lippukuvaketta.
+            content_original_language: Sisällön alkuperäinen kieli
+            participatory_space: Osallistumistila
+            reported_content: Ilmoitettu sisältö
+            see_current: Näytä nykyinen
+            see_original: Näytä alkuperäinen
+            title: Moderointi-ilmoitukset
+          show:
+            report_details: Syyn lisätiedot
+            report_language: Ilmoituksen kieli
+            report_reason: Syy
+            title: Ilmoituksen lisätiedot
       newsletter_templates:
         index:
           preview_template: Esikatsele
@@ -544,6 +600,9 @@ fi-pl:
           error: Tämän uutiskirjeen päivityksessä tapahtui virhe.
           success: Uutiskirje päivitetty onnistuneesti. Tarkasta se läpi ennen lähetystä.
       officializations:
+        block:
+          error: Käyttäjän estäminen epäonnistui
+          success: Käyttäjän estäminen onnistui
         create:
           success: Käyttäjä virallistettu onnistuneesti
         destroy:
@@ -551,6 +610,7 @@ fi-pl:
         index:
           actions: Toiminnot
           badge: Kunniamerkki
+          block: Estä käyttäjä
           created_at: Luontihetki
           name: Nimi
           nickname: Nimimerkki
@@ -558,8 +618,10 @@ fi-pl:
           officialize: Virallista
           officialized: Virallistettu
           reofficialize: Virallista uudestaan
+          reports: Ilmoitukset
           show_email: Näytä sähköpostiosoite
           status: Tila
+          unblock: Poista käyttäjän esto
           unofficialize: Poista virallistaminen
         new:
           badge: Virallistamismerkki
@@ -573,6 +635,9 @@ fi-pl:
           hidden: piilotettu
           show: Näytä
           title: Näytä osallistujan sähköpostiosoite
+        unblock:
+          error: Käyttäjän eston poistaminen epäonnistui
+          success: Käyttäjän eston poistaminen onnistui
       organization:
         edit:
           title: Muokkaa organisaatiota
@@ -742,6 +807,7 @@ fi-pl:
         impersonatable_users: Hallittavat käyttäjät
         impersonations: Käyttäjien hallinta
         metrics: Tilastomittarit
+        panel: Hallintakäyttäjä
         participants: Käyttäjät
         scope_types: Teematyypit
         scopes: Teemat
@@ -807,6 +873,7 @@ fi-pl:
           reason: Sinun on annettava syy esittäessäsi käyttäjää, joka ei ole hallittu
     moderations:
       actions:
+        expand: Avaa
         hidden: Piilotettu
         hide: Piilota
         not_hidden: Näkyvillä
@@ -827,18 +894,28 @@ fi-pl:
       models:
         moderation:
           fields:
+            created_at: Luonnin ajankohta
             hidden_at: Piilotuksen ajankohta
+            participatory_space: Osallistumistila
             report_count: Määrä
-            reportable: Raportoitava
+            reportable_id: Id
+            reportable_type: Tyyppi
             reported_content_url: Raportoidun sisällön URL
             reports: Raportit
             visit_url: Vieraile URL-osoitteessa
+        report:
+          fields:
+            details: Syyn lisätiedot
+            locale: Kieli
+            reason: Syy
   errors:
     messages:
       invalid_json: Virheellinen JSON
   layouts:
     decidim:
       admin:
+        global_moderations:
+          title: Yleiset moderoinnit
         newsletters:
           title: Uutiskirjeet
         settings:

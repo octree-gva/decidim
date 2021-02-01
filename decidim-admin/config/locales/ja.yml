@@ -70,7 +70,6 @@ ja:
         rich_text_editor_in_public_views: 参加者にリッチテキストエディタを有効にする
         secondary_color: Secondary
         send_welcome_notification: ウェルカム通知を送信
-        show_statistics: 統計情報を表示
         success_color: 成功
         time_zone: タイムゾーン
         tos_version: Terms of service version
@@ -146,7 +145,6 @@ ja:
           error: 管理者の利用規約に同意中にエラーが発生しました。
           success: 素晴らしい！管理者の利用規約に同意しました。
         actions:
-          accept: この管理者規約に同意します
           are_you_sure: 管理者の条件を拒否してもよろしいですか？
           refuse: 同意しない
           title: 利用規約に同意する
@@ -582,7 +580,6 @@ ja:
           rich_text_editor_in_public_views_help: 一部のテキストエリアでは、参加者はリッチテキストエディタを使用してHTMLタグを挿入することができます。
           social_handlers: ソーシャル
           twitter: Twitter
-          url: URL
           youtube: YouTube
         update:
           error: この組織の更新に問題がありました。
@@ -617,7 +614,6 @@ ja:
           error: この参加スペースのプライベート参加者を削除する際に問題が発生しました。
           success: 参加スペースのプライベート参加者アクセスが正常に破棄されました。
         index:
-          import_via_csv: csv経由でインポート
           title: 参加スペースプライベート参加者
         new:
           create: 作成
@@ -827,7 +823,6 @@ ja:
           fields:
             hidden_at: '非表示:'
             report_count: カウント
-            reportable: 報告可能
             reported_content_url: 報告されたコンテンツ URL
             reports: レポート
             visit_url: URL を参照
