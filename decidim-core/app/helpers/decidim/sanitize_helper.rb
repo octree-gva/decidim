@@ -56,7 +56,7 @@ module Decidim
     end
 
     def decidim_html_escape(text)
-      ERB::Util.unwrapped_html_escape(text.to_str)
+      ERB::Util.unwrapped_html_escape(text.to_str).html_safe
     end
 
     def decidim_url_escape(text)
