@@ -13,29 +13,11 @@
     }
 
     &-container {
-<<<<<<< HEAD
+
       @apply flex flex-wrap flex-col md:flex-row gap-2 border-4 border-background rounded;
       
       ul {
         @apply flex-1 p-2;
-=======
-      @apply grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] items-center md:gap-0 border-4 border-background rounded overflow-hidden;
-
-      > *:nth-child(2) {
-        @apply p-4;
-
-        &:not(:last-child) {
-          @apply col-span-1 md:col-span-2 md:col-start-1 md:row-start-1;
-        }
-
-        &:last-child {
-          @apply col-span-1 md:col-span-2 md:col-start-2 pr-4;
-        }
-      }
-
-      > *:nth-child(3) {
-        @apply md:row-start-1 md:col-start-3 h-[135px];
->>>>>>> 7c5d7ca53b (fix: change flex to grid)
       }
     }
 
