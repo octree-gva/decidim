@@ -4,6 +4,7 @@ pt:
     models:
       decidim/comments/comment_by_followed_user_event: Comentar
       decidim/comments/comment_created_event: Comente
+      decidim/comments/comment_upvoted_event: Comment upvoted
       decidim/comments/reply_created_event: Comentário resposta
       decidim/comments/user_group_mentioned_event: Menção
       decidim/comments/user_mentioned_event: Menção
@@ -26,17 +27,26 @@ pt:
       comments:
         create:
           error: Ocorreu um problema ao criar o comentário
+        delete:
+          error: The comment could not be deleted.
         update:
           error: Ocorreu um problema ao actualizar a comentário.
+      comments_title: Comment
+      last_activity:
+        new_comment: 'New comment:'
       votes:
         create:
           error: Houve erros na votação do comentário.
     components:
       add_comment_form:
+        account_message: <a href="%{sign_in_url}">Log in</a> or <a href="%{sign_up_url}">create an account</a> to add your comment.
         form:
           body:
             label: Comente
             placeholder: O que você pensa sobre isso?
+          form_error: The text is required and it cannot be longer than %{length} characters.
+          submit_reply: Publish reply
+          submit_root_comment: Publish comment
           user_group_id:
             label: Comente como
         opinion:
@@ -54,12 +64,20 @@ pt:
         alignment:
           against: Contra
           in_favor: A favor
+        cancel_reply: Cancel reply
+        comment_label: Comment %{comment_id}
+        comment_label_reply: Comment %{comment_id} (reply to comment %{parent_comment_id})
         confirm_destroy: Tem a certeza que quer eliminar este comentário?
+        controls_label: Comment controls
         delete: Eliminar
         deleted_at: Comentário eliminado em %{date}
         deleted_user: Participante eliminado
         edit: Editar
         edited: Editado
+        hide_replies:
+          one: Hide reply
+          other: Hide %{count} replies
+        moderated_at: Comment moderated on %{date}
         reply: Responder
         report:
           action: Reportar
@@ -68,9 +86,13 @@ pt:
           description: Este conteúdo é impróprio?
           details: Comentários adicionais
           reasons:
+            does_not_belong: Contains illegal activity, suicide threats, personal information, or something else you think does not belong on %{organization_name}.
             offensive: Contém racismo, sexismo, insultos, ataques pessoais, ameaças de morte, pedidos de suicídio ou qualquer tipo de discurso de ódio.
             spam: Contém clickbait, publicidade, fraudes ou robots de scripts.
           title: Reportar conteúdo impróprio
+        show_replies:
+          one: Show reply
+          other: Show %{count} replies
         single_comment_link_title: Obter ligação
       comment_order_selector:
         order:
@@ -149,3 +171,6 @@ pt:
         description: Número de comentários gerados pelos participantes
         object: comentários
         title: Comentários
+  errors:
+    messages:
+      cannot_have_comments: cannot have comments
