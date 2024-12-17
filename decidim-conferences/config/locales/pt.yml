@@ -28,19 +28,23 @@ pt:
         show_statistics: Mostrar estatísticas
         sign_date: Data de assinatura
         signature: Assinatura
+        signature_name: Signature name
         slogan: Slogan
         slug: Campo de dados dinâmicos de URL
         start_date: Data de início
         title: Título
+        weight: Order position
       conference_media_link:
         date: Datas
         link: Hiperligação
         title: Título
+        weight: Order position
       conference_partner:
         link: Hiperligação
         logo: Logótipo
         name: Nome
         partner_type: Tipo de parceiro
+        weight: Order position
       conference_registration_invite:
         email: E-Mail
         name: Nome
@@ -50,17 +54,27 @@ pt:
         description: Descrição
         price: Preço
         title: Título
+        weight: Order position
       conference_speaker:
         affiliation: Afiliação
         avatar: Avatar
         conference_meeting_ids: Reuniões relacionadas
         full_name: Nome completo
+        personal_url: Personal URL
         position: Posição
+        short_bio: Short bio
+        twitter_handle: X handle
         user_id: Utilizador
       conference_user_role:
         email: E-mail
         name: Nome
         role: Função
+    errors:
+      models:
+        conference_registration_invite:
+          attributes:
+            email:
+              already_invited: This email has already been invited.
   activerecord:
     models:
       decidim/conference:
@@ -76,6 +90,12 @@ pt:
     admin:
       actions:
         confirm: Confirmar
+        new_conference: New conference
+        new_conference_user_role: New conference admin
+        new_media_link: New media link
+        new_partner: New partner
+        new_registration_type: New registration type
+        new_speaker: New speaker
         send_diplomas: Enviar certificados de participação
       conference_copies:
         new:
@@ -107,6 +127,12 @@ pt:
         new:
           create: Criar
           title: Novo orador da conferência.
+        publish:
+          invalid: There was a problem publishing this speaker.
+          success: Conference speaker successfully published.
+        unpublish:
+          invalid: There was a problem unpublishing this speaker.
+          success: Conference speaker successfully unpublished.
         update:
           error: Ocorreu um problema ao atualizar o orador desta conferência.
           success: Orador da conferência atualizado corretamente.
@@ -119,6 +145,8 @@ pt:
         edit:
           title: Atualizar administrador da conferência.
           update: Atualizar
+        index:
+          conference_admins_title: Conference admins
         new:
           create: Criar
           title: Novo administrador da conferência.
@@ -137,6 +165,7 @@ pt:
           title: Informação geral
         index:
           published: Publicado
+          unpublished: Unpublished
         new:
           create: Criar
           title: Conferência
@@ -176,11 +205,13 @@ pt:
           conference_invites: Convites
           conference_speakers: Oradores
           diploma: Certificado de Participação
+          info: About this conference
           media_links: Hiperligações de Multimédia
           moderations: Moderações
           partners: Parceiros
           registration_types: Tipos de Registo
           registrations: Registos
+          see_conference: See conference
           user_registrations: Registos de Utilizador
       models:
         conference:
@@ -293,6 +324,7 @@ pt:
           update: "%{user_name} actualizou o parceiro %{resource_name} na conferência %{space_name}"
         registration_type:
           create: "%{user_name} criou o tipo de registo %{resource_name} na conferência %{space_name}"
+          delete: "%{user_name} removed the %{resource_name} registration type from the %{space_name} conference"
           publish: "%{user_name} publicou o tipo de registo %{resource_name} na conferência %{space_name}"
           unpublish: "%{user_name} removeu a publicação do tipo de registo %{resource_name} na conferência %{space_name}"
           update: "%{user_name} atualizou o tipo de registo %{resource_name} na conferência %{space_name}"
@@ -308,6 +340,9 @@ pt:
         title: Oradores
     conferences:
       admin:
+        conference_copies:
+          form:
+            slug_help_html: 'URL slugs are used to generate the URLs that point to this conference. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
         conference_invites:
           create:
             error: Ocorreu um problema ao convidar o participante para se juntar à conferência.
@@ -322,6 +357,7 @@ pt:
             invite_attendee: Convidar participante
             invites: Convites
           new:
+            explanation: The participant will be invited to join a conference. If their email is not registered, they will be invited to the organization as well.
             invite: Convidar
             new_invite: Convidar participante
         conference_registrations:
@@ -341,6 +377,10 @@ pt:
             registrations_count:
               one: Ocorreu 1 registo.
               other: Ocorreram %{count} registos.
+            slug_help_html: 'URL slugs are used to generate the URLs that point to this conference. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+        content_blocks:
+          highlighted_conferences:
+            max_results: Maximum amount of elements to show
         diplomas:
           edit:
             save: Guardar
@@ -349,6 +389,7 @@ pt:
           invite:
             decline: Recusar convite '%{conference_title}'
             invited_existing_user_to_join_a_conference: "%{invited_by} convido-o para participar numa conferência em %{application}. Pode recusá-lo ou aceitá-lo através dos links abaixo."
+            invited_user_to_join_a_conference: "%{invited_by} has invited you to join a conference at %{application}. You can accept it through the link below."
             registration: Registo para '%{conference_title}'
         partners:
           index:
@@ -392,13 +433,16 @@ pt:
         create:
           invalid: Ocorreu um problema ao juntar-se a esta conferência.
           success: Você ingressou na conferência com sucesso.
+          unauthorized: You need to log in before registering to the conference.
         decline_invitation:
           invalid: Ocorreu um problema ao recusar o convite.
           success: Recusou o convite corretamente.
+          unauthorized: You need to log in before declining the invitation.
         destroy:
           invalid: Ocorreu um problema ao sair desta conferência.
           success: Saiu da conferência corretamente.
       conference_speaker:
+        go_to_twitter: Go to X
         more_info: mais informações
         personal_website: Sítio pessoal
         show:
@@ -407,19 +451,37 @@ pt:
       conference_speaker_cell:
         personal_url:
           personal_website: Sítio pessoal
+      conference_speakers:
+        index:
+          speakers:
+            one: Speaker
+            other: Speakers
       conferences:
         partners:
           collaborators: Parceiros
           main_promotors: Organizadores
         show:
+          already_have_an_account?: Already have an account?
+          are_you_new?: New participant?
           login_as: Iniciou sessão como %{name} <%{email}>
+          make_conference_registration: Register for the conference
+          manage_registration: Manage registration
           register: Registar
+          sign_in_description: Log in to register to the conference
+          sign_up_description: Create an account to register to the conference
       content_blocks:
         highlighted_conferences:
           name: Conferências realçadas
       index:
         title: Conferências
+      last_activity:
+        new_conference: 'New conference:'
       mailer:
+        conference_registration_mailer:
+          confirmation:
+            subject: Your conference's registration has been confirmed.
+          pending_validation:
+            subject: Your conference's registration is pending confirmation.
         invite_join_conference_mailer:
           invite:
             subject: Convite para se juntar a uma conferência
@@ -451,6 +513,7 @@ pt:
         home:
           highlighted_conferences:
             active_spaces: Conferências ativas
+            see_all_spaces: See all conferences
       registration_types:
         index:
           choose_an_option: 'Escolha a sua opção de registo:'
@@ -500,6 +563,10 @@ pt:
           contextual: "<p>Uma <strong>conferência</strong> é uma colecção de reuniões organizadas num programa, com um número de pessoas convidadas como oradores, e outras áreas de informação típicas a congressos ou eventos sociais de grande dimensão (registo, lista de organizações que apoiam ou patrocinam o evento, etc.).</p><p>Exemplos: A conferência pode ser um evento relevante para uma organização e para os seus membros, ou ter lugar como parte dum processo participativo ou seguir uma consultação.</p>"
           page: "<p>Uma <strong>conferência</strong> é uma colecção de reuniões organizadas num programa, com um número de pessoas convidadas como oradores, e outras áreas de informação típicas a congressos ou eventos sociais de grande dimensão (registo, lista de organizações que apoiam ou patrocinam o evento, etc.).</p><p>Exemplos: A conferência pode ser um evento relevante para uma organização e para os seus membros, ou ter lugar como parte dum processo participativo ou seguir uma consultação.</p>"
           title: O que são as conferências?
+    log:
+      value_types:
+        conference_presenter:
+          not_found: 'The conference was not found on the database (ID: %{id}).'
     media:
       index:
         description: Hiperligações sobre esta conferência
@@ -515,6 +582,7 @@ pt:
   layouts:
     decidim:
       conference_hero:
+        manage_registration: Manage registration
         register: Registar
       conferences:
         conference:
