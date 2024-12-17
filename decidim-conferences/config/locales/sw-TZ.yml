@@ -1,0 +1,601 @@
+---
+sw-TZ:
+  activemodel:
+    attributes:
+      conference:
+        assemblies_ids: crwdns4256:0crwdne4256:0
+        available_slots: crwdns4258:0crwdne4258:0
+        banner_image: crwdns4260:0crwdne4260:0
+        copy_categories: crwdns4262:0crwdne4262:0
+        copy_components: crwdns4264:0crwdne4264:0
+        copy_features: crwdns4266:0crwdne4266:0
+        decidim_scope_id: crwdns4268:0crwdne4268:0
+        description: crwdns4270:0crwdne4270:0
+        end_date: crwdns4272:0crwdne4272:0
+        hashtag: crwdns4274:0crwdne4274:0
+        hero_image: crwdns4276:0crwdne4276:0
+        location: crwdns4278:0crwdne4278:0
+        main_logo: crwdns4280:0crwdne4280:0
+        objectives: crwdns4282:0crwdne4282:0
+        participatory_processes_ids: crwdns4284:0crwdne4284:0
+        promoted: crwdns4286:0crwdne4286:0
+        published_at: crwdns4288:0crwdne4288:0
+        registration_terms: crwdns4290:0crwdne4290:0
+        registrations_enabled: crwdns4292:0crwdne4292:0
+        scope_id: crwdns4294:0crwdne4294:0
+        scopes_enabled: crwdns4296:0crwdne4296:0
+        short_description: crwdns4298:0crwdne4298:0
+        show_statistics: crwdns4300:0crwdne4300:0
+        sign_date: crwdns4302:0crwdne4302:0
+        signature: crwdns4304:0crwdne4304:0
+        signature_name: crwdns4306:0crwdne4306:0
+        slogan: crwdns4308:0crwdne4308:0
+        slug: crwdns4310:0crwdne4310:0
+        start_date: crwdns4312:0crwdne4312:0
+        title: crwdns4314:0crwdne4314:0
+        weight: crwdns4316:0crwdne4316:0
+      conference_media_link:
+        date: crwdns4318:0crwdne4318:0
+        link: crwdns4320:0crwdne4320:0
+        title: crwdns4322:0crwdne4322:0
+        weight: crwdns4324:0crwdne4324:0
+      conference_partner:
+        link: crwdns4326:0crwdne4326:0
+        logo: crwdns4328:0crwdne4328:0
+        name: crwdns4330:0crwdne4330:0
+        partner_type: crwdns4332:0crwdne4332:0
+        weight: crwdns4334:0crwdne4334:0
+      conference_registration_invite:
+        email: crwdns4336:0crwdne4336:0
+        name: crwdns4338:0crwdne4338:0
+        registration_type_id: crwdns4340:0crwdne4340:0
+        user_id: crwdns4342:0crwdne4342:0
+      conference_registration_type:
+        description: crwdns4344:0crwdne4344:0
+        price: crwdns4346:0crwdne4346:0
+        title: crwdns4348:0crwdne4348:0
+        weight: crwdns4350:0crwdne4350:0
+      conference_speaker:
+        affiliation: crwdns4352:0crwdne4352:0
+        avatar: crwdns4354:0crwdne4354:0
+        conference_meeting_ids: crwdns4356:0crwdne4356:0
+        full_name: crwdns4358:0crwdne4358:0
+        personal_url: crwdns4360:0crwdne4360:0
+        position: crwdns4362:0crwdne4362:0
+        short_bio: crwdns4364:0crwdne4364:0
+        twitter_handle: crwdns4366:0crwdne4366:0
+        user_id: crwdns4368:0crwdne4368:0
+      conference_user_role:
+        email: crwdns4370:0crwdne4370:0
+        name: crwdns4372:0crwdne4372:0
+        role: crwdns4374:0crwdne4374:0
+    errors:
+      models:
+        conference_registration_invite:
+          attributes:
+            email:
+              already_invited: crwdns4376:0crwdne4376:0
+  activerecord:
+    models:
+      decidim/conference:
+        one: crwdns4378:1crwdne4378:1
+        other: crwdns4378:5crwdne4378:5
+      decidim/conference_speaker:
+        one: crwdns4380:1crwdne4380:1
+        other: crwdns4380:5crwdne4380:5
+      decidim/conference_user_role:
+        one: crwdns4382:1crwdne4382:1
+        other: crwdns4382:5crwdne4382:5
+  decidim:
+    admin:
+      actions:
+        confirm: crwdns4384:0crwdne4384:0
+        new_conference: crwdns4386:0crwdne4386:0
+        new_conference_user_role: crwdns4388:0crwdne4388:0
+        new_media_link: crwdns4390:0crwdne4390:0
+        new_partner: crwdns4392:0crwdne4392:0
+        new_registration_type: crwdns4394:0crwdne4394:0
+        new_speaker: crwdns4396:0crwdne4396:0
+        send_diplomas: crwdns4398:0crwdne4398:0
+      conference_copies:
+        new:
+          copy: crwdns4400:0crwdne4400:0
+          select: crwdns4402:0crwdne4402:0
+          title: crwdns4404:0crwdne4404:0
+      conference_publications:
+        create:
+          error: crwdns4406:0crwdne4406:0
+          success: crwdns4408:0crwdne4408:0
+        destroy:
+          error: crwdns4410:0crwdne4410:0
+          success: crwdns4412:0crwdne4412:0
+      conference_registration:
+        confirm:
+          error: crwdns4414:0crwdne4414:0
+          success: crwdns4416:0crwdne4416:0
+      conference_speakers:
+        create:
+          error: crwdns4418:0crwdne4418:0
+          success: crwdns4420:0crwdne4420:0
+        destroy:
+          success: crwdns4422:0crwdne4422:0
+        edit:
+          title: crwdns4424:0crwdne4424:0
+          update: crwdns4426:0crwdne4426:0
+        index:
+          conference_speakers_title: crwdns4428:0crwdne4428:0
+        new:
+          create: crwdns4430:0crwdne4430:0
+          title: crwdns4432:0crwdne4432:0
+        publish:
+          invalid: crwdns4434:0crwdne4434:0
+          success: crwdns4436:0crwdne4436:0
+        unpublish:
+          invalid: crwdns4438:0crwdne4438:0
+          success: crwdns4440:0crwdne4440:0
+        update:
+          error: crwdns4442:0crwdne4442:0
+          success: crwdns4444:0crwdne4444:0
+      conference_user_roles:
+        create:
+          error: crwdns4446:0crwdne4446:0
+          success: crwdns4448:0crwdne4448:0
+        destroy:
+          success: crwdns4450:0crwdne4450:0
+        edit:
+          title: crwdns4452:0crwdne4452:0
+          update: crwdns4454:0crwdne4454:0
+        index:
+          conference_admins_title: crwdns4456:0crwdne4456:0
+        new:
+          create: crwdns4458:0crwdne4458:0
+          title: crwdns4460:0crwdne4460:0
+        update:
+          error: crwdns4462:0crwdne4462:0
+          success: crwdns4464:0crwdne4464:0
+      conferences:
+        create:
+          error: crwdns4466:0crwdne4466:0
+          success: crwdns4468:0crwdne4468:0
+        edit:
+          update: crwdns4470:0crwdne4470:0
+        exports:
+          registrations: crwdns4472:0crwdne4472:0
+        form:
+          title: crwdns4474:0crwdne4474:0
+        index:
+          published: crwdns4476:0crwdne4476:0
+          unpublished: crwdns4478:0crwdne4478:0
+        new:
+          create: crwdns4480:0crwdne4480:0
+          title: crwdns4482:0crwdne4482:0
+        update:
+          error: crwdns4484:0crwdne4484:0
+          success: crwdns4486:0crwdne4486:0
+      conferences_copies:
+        create:
+          error: crwdns4488:0crwdne4488:0
+          success: crwdns4490:0crwdne4490:0
+      media_links:
+        create:
+          error: crwdns4492:0crwdne4492:0
+          success: crwdns4494:0crwdne4494:0
+        destroy:
+          success: crwdns4496:0crwdne4496:0
+        edit:
+          title: crwdns4498:0crwdne4498:0
+          update: crwdns4500:0crwdne4500:0
+        index:
+          media_links_title: crwdns4502:0crwdne4502:0
+        new:
+          create: crwdns4504:0crwdne4504:0
+          title: crwdns4506:0crwdne4506:0
+        update:
+          error: crwdns4508:0crwdne4508:0
+          success: crwdns4510:0crwdne4510:0
+      menu:
+        conferences: crwdns4512:0crwdne4512:0
+        conferences_submenu:
+          attachment_collections: crwdns4514:0crwdne4514:0
+          attachment_files: crwdns4516:0crwdne4516:0
+          attachments: crwdns4518:0crwdne4518:0
+          categories: crwdns4520:0crwdne4520:0
+          components: crwdns4522:0crwdne4522:0
+          conference_admins: crwdns4524:0crwdne4524:0
+          conference_invites: crwdns4526:0crwdne4526:0
+          conference_speakers: crwdns4528:0crwdne4528:0
+          diploma: crwdns4530:0crwdne4530:0
+          info: crwdns4532:0crwdne4532:0
+          media_links: crwdns4534:0crwdne4534:0
+          moderations: crwdns4536:0crwdne4536:0
+          partners: crwdns4538:0crwdne4538:0
+          registration_types: crwdns4540:0crwdne4540:0
+          registrations: crwdns4542:0crwdne4542:0
+          see_conference: crwdns4544:0crwdne4544:0
+          user_registrations: crwdns4546:0crwdne4546:0
+      models:
+        conference:
+          fields:
+            created_at: crwdns4548:0crwdne4548:0
+            published: crwdns4550:0crwdne4550:0
+            title: crwdns4552:0crwdne4552:0
+        conference_speaker:
+          fields:
+            affiliation: crwdns4554:0crwdne4554:0
+            full_name: crwdns4556:0crwdne4556:0
+            position: crwdns4558:0crwdne4558:0
+          name: crwdns4560:0crwdne4560:0
+        conference_user_role:
+          fields:
+            email: crwdns4562:0crwdne4562:0
+            name: crwdns4564:0crwdne4564:0
+            role: crwdns4566:0crwdne4566:0
+          name: crwdns4568:0crwdne4568:0
+          roles:
+            admin: crwdns4570:0crwdne4570:0
+            collaborator: crwdns4572:0crwdne4572:0
+            moderator: crwdns4574:0crwdne4574:0
+            valuator: crwdns4576:0crwdne4576:0
+        media_link:
+          fields:
+            date: crwdns4578:0crwdne4578:0
+            link: crwdns4580:0crwdne4580:0
+            title: crwdns4582:0crwdne4582:0
+          name: crwdns4584:0crwdne4584:0
+        partner:
+          fields:
+            link: crwdns4586:0crwdne4586:0
+            logo: crwdns4588:0crwdne4588:0
+            name: crwdns4590:0crwdne4590:0
+            partner_type: crwdns4592:0crwdne4592:0
+          name: crwdns4594:0crwdne4594:0
+          types:
+            collaborator: crwdns4596:0crwdne4596:0
+            main_promotor: crwdns4598:0crwdne4598:0
+        registration_type:
+          fields:
+            conference_meetings: crwdns4600:0crwdne4600:0
+            price: crwdns4602:0crwdne4602:0
+            registrations_count: crwdns4604:0crwdne4604:0
+            title: crwdns4606:0crwdne4606:0
+            weight: crwdns4608:0crwdne4608:0
+          name: crwdns4610:0crwdne4610:0
+      partners:
+        create:
+          error: crwdns4612:0crwdne4612:0
+          success: crwdns4614:0crwdne4614:0
+        destroy:
+          success: crwdns4616:0crwdne4616:0
+        edit:
+          title: crwdns4618:0crwdne4618:0
+          update: crwdns4620:0crwdne4620:0
+        new:
+          create: crwdns4622:0crwdne4622:0
+          title: crwdns4624:0crwdne4624:0
+        update:
+          error: crwdns4626:0crwdne4626:0
+          success: crwdns4628:0crwdne4628:0
+      registration_type_publications:
+        create:
+          error: crwdns4630:0crwdne4630:0
+          success: crwdns4632:0crwdne4632:0
+        destroy:
+          error: crwdns4634:0crwdne4634:0
+          success: crwdns4636:0crwdne4636:0
+      registration_types:
+        create:
+          error: crwdns4638:0crwdne4638:0
+          success: crwdns4640:0crwdne4640:0
+        destroy:
+          success: crwdns4642:0crwdne4642:0
+        edit:
+          title: crwdns4644:0crwdne4644:0
+          update: crwdns4646:0crwdne4646:0
+        new:
+          create: crwdns4648:0crwdne4648:0
+          title: crwdns4650:0crwdne4650:0
+        update:
+          error: crwdns4652:0crwdne4652:0
+          success: crwdns4654:0crwdne4654:0
+      titles:
+        conferences: crwdns4656:0crwdne4656:0
+    admin_log:
+      conference:
+        create: "crwdns4658:0%{user_name}crwdnd4658:0%{resource_name}crwdne4658:0"
+        publish: "crwdns4660:0%{user_name}crwdnd4660:0%{resource_name}crwdne4660:0"
+        send_conference_diplomas: "crwdns4662:0%{user_name}crwdnd4662:0%{resource_name}crwdne4662:0"
+        unpublish: "crwdns4664:0%{user_name}crwdnd4664:0%{resource_name}crwdne4664:0"
+        update: "crwdns4666:0%{user_name}crwdnd4666:0%{resource_name}crwdne4666:0"
+        update_diploma: "crwdns4668:0%{user_name}crwdnd4668:0%{resource_name}crwdne4668:0"
+      conference_speaker:
+        create: "crwdns4670:0%{user_name}crwdnd4670:0%{resource_name}crwdnd4670:0%{space_name}crwdne4670:0"
+        delete: "crwdns4672:0%{user_name}crwdnd4672:0%{resource_name}crwdnd4672:0%{space_name}crwdne4672:0"
+        update: "crwdns4674:0%{user_name}crwdnd4674:0%{resource_name}crwdnd4674:0%{space_name}crwdne4674:0"
+      conference_user_role:
+        create: "crwdns4676:0%{user_name}crwdnd4676:0%{resource_name}crwdnd4676:0%{space_name}crwdne4676:0"
+        delete: "crwdns4678:0%{user_name}crwdnd4678:0%{resource_name}crwdnd4678:0%{space_name}crwdne4678:0"
+        update: "crwdns4680:0%{user_name}crwdnd4680:0%{resource_name}crwdnd4680:0%{space_name}crwdne4680:0"
+      conferences:
+        conference_registration:
+          confirm: "crwdns4682:0%{user_name}crwdnd4682:0%{resource_name}crwdne4682:0"
+        partner:
+          create: "crwdns4684:0%{user_name}crwdnd4684:0%{resource_name}crwdnd4684:0%{space_name}crwdne4684:0"
+          delete: "crwdns4686:0%{user_name}crwdnd4686:0%{resource_name}crwdnd4686:0%{space_name}crwdne4686:0"
+          update: "crwdns4688:0%{user_name}crwdnd4688:0%{resource_name}crwdnd4688:0%{space_name}crwdne4688:0"
+        registration_type:
+          create: "crwdns4690:0%{user_name}crwdnd4690:0%{resource_name}crwdnd4690:0%{space_name}crwdne4690:0"
+          delete: "crwdns4692:0%{user_name}crwdnd4692:0%{resource_name}crwdnd4692:0%{space_name}crwdne4692:0"
+          publish: "crwdns4694:0%{user_name}crwdnd4694:0%{resource_name}crwdnd4694:0%{space_name}crwdne4694:0"
+          unpublish: "crwdns4696:0%{user_name}crwdnd4696:0%{resource_name}crwdnd4696:0%{space_name}crwdne4696:0"
+          update: "crwdns4698:0%{user_name}crwdnd4698:0%{resource_name}crwdnd4698:0%{space_name}crwdne4698:0"
+      media_link:
+        create: "crwdns4700:0%{user_name}crwdnd4700:0%{resource_name}crwdnd4700:0%{space_name}crwdne4700:0"
+        delete: "crwdns4702:0%{user_name}crwdnd4702:0%{resource_name}crwdnd4702:0%{space_name}crwdne4702:0"
+        update: "crwdns4704:0%{user_name}crwdnd4704:0%{resource_name}crwdnd4704:0%{space_name}crwdne4704:0"
+    conference_program:
+      index:
+        title: crwdns4706:0crwdne4706:0
+    conference_speakers:
+      index:
+        title: crwdns4708:0crwdne4708:0
+    conferences:
+      admin:
+        conference_copies:
+          form:
+            slug_help_html: 'crwdns4710:0%{url}crwdne4710:0'
+        conference_invites:
+          create:
+            error: crwdns4712:0crwdne4712:0
+            success: crwdns4714:0crwdne4714:0
+          form:
+            attendee_type: crwdns4716:0crwdne4716:0
+            existing_user: crwdns4718:0crwdne4718:0
+            invite_explanation: crwdns4720:0crwdne4720:0
+            non_user: crwdns4722:0crwdne4722:0
+            select_user: crwdns4724:0crwdne4724:0
+          index:
+            invite_attendee: crwdns4726:0crwdne4726:0
+            invites: crwdns4728:0crwdne4728:0
+          new:
+            explanation: crwdns4730:0crwdne4730:0
+            invite: crwdns4732:0crwdne4732:0
+            new_invite: crwdns4734:0crwdne4734:0
+        conference_registrations:
+          index:
+            registrations: crwdns4736:0crwdne4736:0
+        conference_speakers:
+          form:
+            existing_user: crwdns4738:0crwdne4738:0
+            non_user: crwdns4740:0crwdne4740:0
+            select_user: crwdns4742:0crwdne4742:0
+            user_type: crwdns4744:0crwdne4744:0
+          index:
+            search: crwdns4746:0crwdne4746:0
+        conferences:
+          form:
+            available_slots_help: crwdns4748:0crwdne4748:0
+            registrations_count:
+              one: crwdns4750:1crwdne4750:1
+              other: crwdns4750:5%{count}crwdne4750:5
+            slug_help_html: 'crwdns4752:0%{url}crwdne4752:0'
+        content_blocks:
+          highlighted_conferences:
+            max_results: crwdns4754:0crwdne4754:0
+        diplomas:
+          edit:
+            save: crwdns4756:0crwdne4756:0
+            title: crwdns4758:0crwdne4758:0
+        invite_join_conference_mailer:
+          invite:
+            decline: crwdns4760:0%{conference_title}crwdne4760:0
+            invited_existing_user_to_join_a_conference: "crwdns4762:0%{invited_by}crwdnd4762:0%{application}crwdne4762:0"
+            invited_user_to_join_a_conference: "crwdns4764:0%{invited_by}crwdnd4764:0%{application}crwdne4764:0"
+            registration: crwdns4766:0%{conference_title}crwdne4766:0
+        partners:
+          index:
+            title: crwdns4768:0crwdne4768:0
+        registration_types:
+          form:
+            select_conference_meetings: crwdns4770:0crwdne4770:0
+          index:
+            title: crwdns4772:0crwdne4772:0
+        send_conference_diploma_mailer:
+          diploma:
+            diploma_html: crwdns4774:0%{url}crwdnd4774:0%{title}crwdne4774:0
+          diploma_user:
+            attendance_verified_by: crwdns4776:0crwdne4776:0
+            certificate_of_attendance: crwdns4778:0crwdne4778:0
+            certificate_of_attendance_description: crwdns4780:0%{user}crwdnd4780:0%{title}crwdnd4780:0%{location}crwdnd4780:0%{start}crwdnd4780:0%{end}crwdne4780:0
+        send_diploma:
+          error: crwdns4782:0crwdne4782:0
+          success: crwdns4784:0crwdne4784:0
+      conference:
+        registration_confirm:
+          cancel: crwdns4786:0crwdne4786:0
+          confirm: crwdns4788:0crwdne4788:0
+        show:
+          going: crwdns4790:0crwdne4790:0
+          no_slots_available: crwdns4792:0crwdne4792:0
+          registration: crwdns4794:0crwdne4794:0
+      conference_program:
+        show:
+          program: crwdns4796:0crwdne4796:0
+      conference_registration_mailer:
+        confirmation:
+          confirmed_html: crwdns4798:0%{url}crwdnd4798:0%{title}crwdne4798:0
+          details_1: 'crwdns4800:0%{registration_type}crwdnd4800:0%{price}crwdne4800:0'
+          details_2: crwdns4802:0crwdne4802:0
+        pending_validation:
+          confirmation_pending: crwdns4804:0crwdne4804:0
+          details: 'crwdns4806:0%{registration_type}crwdnd4806:0%{price}crwdne4806:0'
+          pending_html: crwdns4808:0%{url}crwdnd4808:0%{title}crwdne4808:0
+      conference_registrations:
+        create:
+          invalid: crwdns4810:0crwdne4810:0
+          success: crwdns4812:0crwdne4812:0
+          unauthorized: crwdns4814:0crwdne4814:0
+        decline_invitation:
+          invalid: crwdns4816:0crwdne4816:0
+          success: crwdns4818:0crwdne4818:0
+          unauthorized: crwdns4820:0crwdne4820:0
+        destroy:
+          invalid: crwdns4822:0crwdne4822:0
+          success: crwdns4824:0crwdne4824:0
+      conference_speaker:
+        go_to_twitter: crwdns4826:0crwdne4826:0
+        more_info: crwdns4828:0crwdne4828:0
+        personal_website: crwdns4830:0crwdne4830:0
+        show:
+          more_info: crwdns4832:0crwdne4832:0
+          speaking_at: crwdns4834:0crwdne4834:0
+      conference_speaker_cell:
+        personal_url:
+          personal_website: crwdns4836:0crwdne4836:0
+      conference_speakers:
+        index:
+          speakers:
+            one: crwdns4838:1crwdne4838:1
+            other: crwdns4838:5crwdne4838:5
+      conferences:
+        partners:
+          collaborators: crwdns4840:0crwdne4840:0
+          main_promotors: crwdns4842:0crwdne4842:0
+        show:
+          already_have_an_account?: crwdns4844:0crwdne4844:0
+          are_you_new?: crwdns4846:0crwdne4846:0
+          login_as: crwdns4848:0%{name}crwdnd4848:0%{email}crwdne4848:0
+          make_conference_registration: crwdns4850:0crwdne4850:0
+          manage_registration: crwdns4852:0crwdne4852:0
+          register: crwdns4854:0crwdne4854:0
+          sign_in_description: crwdns4856:0crwdne4856:0
+          sign_up_description: crwdns4858:0crwdne4858:0
+      content_blocks:
+        highlighted_conferences:
+          name: crwdns4860:0crwdne4860:0
+      index:
+        title: crwdns4862:0crwdne4862:0
+      last_activity:
+        new_conference: 'crwdns4864:0crwdne4864:0'
+      mailer:
+        conference_registration_mailer:
+          confirmation:
+            subject: crwdns4866:0crwdne4866:0
+          pending_validation:
+            subject: crwdns4868:0crwdne4868:0
+        invite_join_conference_mailer:
+          invite:
+            subject: crwdns4870:0crwdne4870:0
+        send_conference_diploma_mailer:
+          diploma:
+            subject: crwdns4872:0crwdne4872:0
+      models:
+        conference_invite:
+          fields:
+            email: crwdns4874:0crwdne4874:0
+            name: crwdns4876:0crwdne4876:0
+            registration_type: crwdns4878:0crwdne4878:0
+            sent_at: crwdns4880:0crwdne4880:0
+            status: crwdns4882:0crwdne4882:0
+          status:
+            accepted: crwdns4884:0%{at}crwdne4884:0
+            rejected: crwdns4886:0%{at}crwdne4886:0
+            sent: crwdns4888:0crwdne4888:0
+        conference_registration:
+          fields:
+            email: crwdns4890:0crwdne4890:0
+            name: crwdns4892:0crwdne4892:0
+            registration_type: crwdns4894:0crwdne4894:0
+            state: crwdns4896:0crwdne4896:0
+            states:
+              confirmed: crwdns4898:0crwdne4898:0
+              pending: crwdns4900:0crwdne4900:0
+      pages:
+        home:
+          highlighted_conferences:
+            active_spaces: crwdns4902:0crwdne4902:0
+            see_all_spaces: crwdns4904:0crwdne4904:0
+      registration_types:
+        index:
+          choose_an_option: 'crwdns4906:0crwdne4906:0'
+          no_registrations: crwdns4908:0crwdne4908:0
+          register: crwdns4910:0crwdne4910:0
+          title: crwdns4912:0crwdne4912:0
+      show:
+        details: crwdns4914:0crwdne4914:0
+        introduction: crwdns4916:0crwdne4916:0
+        objectives: crwdns4918:0crwdne4918:0
+        related_assemblies: crwdns4920:0crwdne4920:0
+        related_participatory_processes: crwdns4922:0crwdne4922:0
+    events:
+      conferences:
+        conference_registration_confirmed:
+          notification_title: crwdns4924:0%{resource_url}crwdnd4924:0%{resource_title}crwdne4924:0
+        conference_registration_validation_pending:
+          notification_title: crwdns4926:0%{resource_url}crwdnd4926:0%{resource_title}crwdne4926:0
+        conference_registrations_over_percentage:
+          email_intro: crwdns4928:0%{resource_title}crwdnd4928:0%{percentage}crwdne4928:0
+          email_outro: crwdns4930:0crwdne4930:0
+          email_subject: crwdns4932:0%{resource_title}crwdnd4932:0%{percentage}crwdne4932:0
+          notification_title: crwdns4934:0%{resource_path}crwdnd4934:0%{resource_title}crwdnd4934:0%{percentage}crwdne4934:0
+        conference_updated:
+          email_intro: 'crwdns4936:0%{resource_title}crwdne4936:0'
+          email_outro: crwdns4938:0%{resource_title}crwdne4938:0
+          email_subject: crwdns4940:0%{resource_title}crwdne4940:0
+          notification_title: crwdns4942:0%{resource_path}crwdnd4942:0%{resource_title}crwdne4942:0
+        registrations_enabled:
+          email_intro: 'crwdns4944:0%{resource_title}crwdne4944:0'
+          email_outro: crwdns4946:0%{resource_title}crwdne4946:0
+          email_subject: crwdns4948:0%{resource_title}crwdne4948:0
+          notification_title: crwdns4950:0%{resource_path}crwdnd4950:0%{resource_title}crwdne4950:0
+        role_assigned:
+          email_intro: crwdns4952:0%{role}crwdnd4952:0%{resource_title}crwdne4952:0
+          email_outro: crwdns4954:0%{role}crwdnd4954:0%{resource_title}crwdne4954:0
+          email_subject: crwdns4956:0%{role}crwdnd4956:0%{resource_title}crwdne4956:0
+          notification_title: crwdns4958:0%{role}crwdnd4958:0%{resource_url}crwdnd4958:0%{resource_title}crwdne4958:0
+        upcoming_conference:
+          email_intro: 'crwdns4960:0%{resource_title}crwdne4960:0'
+          email_outro: crwdns4962:0%{resource_title}crwdne4962:0
+          email_subject: crwdns4964:0%{resource_title}crwdne4964:0
+          notification_title: crwdns4966:0%{resource_path}crwdnd4966:0%{resource_title}crwdne4966:0
+    help:
+      participatory_spaces:
+        conferences:
+          contextual: "crwdns4968:0crwdne4968:0"
+          page: "crwdns4970:0crwdne4970:0"
+          title: crwdns4972:0crwdne4972:0
+    log:
+      value_types:
+        conference_presenter:
+          not_found: 'crwdns4974:0%{id}crwdne4974:0'
+    media:
+      index:
+        description: crwdns4976:0crwdne4976:0
+        title: crwdns4978:0crwdne4978:0
+    menu:
+      conferences: crwdns4980:0crwdne4980:0
+    statistics:
+      conferences_count: crwdns4982:0crwdne4982:0
+  devise:
+    mailer:
+      join_conference:
+        subject: crwdns4984:0crwdne4984:0
+  layouts:
+    decidim:
+      conference_hero:
+        manage_registration: crwdns4986:0crwdne4986:0
+        register: crwdns4988:0crwdne4988:0
+      conferences:
+        conference:
+          more_info: crwdns4990:0crwdne4990:0
+          take_part: crwdns4992:0crwdne4992:0
+        index:
+          promoted_conferences: crwdns4994:0crwdne4994:0
+        order_by_conferences:
+          conferences:
+            one: "crwdns4996:1%{count}crwdne4996:1"
+            other: "crwdns4996:5%{count}crwdne4996:5"
+      conferences_nav:
+        conference_partners_menu_item: crwdns4998:0crwdne4998:0
+        conference_speaker_menu_item: crwdns5000:0crwdne5000:0
+        media: crwdns5002:0crwdne5002:0
+        venues: crwdns5004:0crwdne5004:0
