@@ -1,0 +1,222 @@
+---
+sw-TZ:
+  activemodel:
+    attributes:
+      debate:
+        category_id: crwdns7954:0crwdne7954:0
+        closed_at: crwdns7956:0crwdne7956:0
+        conclusions: crwdns7958:0crwdne7958:0
+        decidim_category_id: crwdns7960:0crwdne7960:0
+        description: crwdns7962:0crwdne7962:0
+        end_time: crwdns7964:0crwdne7964:0
+        information_updates: crwdns7966:0crwdne7966:0
+        instructions: crwdns7968:0crwdne7968:0
+        scope_id: crwdns7970:0crwdne7970:0
+        start_time: crwdns7972:0crwdne7972:0
+        title: crwdns7974:0crwdne7974:0
+        user_group_id: crwdns7976:0crwdne7976:0
+    models:
+      decidim/debates/close_debate_event: crwdns7978:0crwdne7978:0
+      decidim/debates/create_debate_event: crwdns7980:0crwdne7980:0
+      decidim/debates/creation_disabled_event: crwdns7982:0crwdne7982:0
+      decidim/debates/creation_enabled_event: crwdns7984:0crwdne7984:0
+  activerecord:
+    models:
+      decidim/debates/debate:
+        one: crwdns7986:1crwdne7986:1
+        other: crwdns7986:5crwdne7986:5
+  decidim:
+    components:
+      debates:
+        actions:
+          comment: crwdns7988:0crwdne7988:0
+          create: crwdns7990:0crwdne7990:0
+          endorse: crwdns7992:0crwdne7992:0
+        name: crwdns7994:0crwdne7994:0
+        settings:
+          global:
+            announcement: crwdns7996:0crwdne7996:0
+            comments_enabled: crwdns7998:0crwdne7998:0
+            comments_max_length: crwdns8000:0crwdne8000:0
+            scope_id: crwdns8002:0crwdne8002:0
+            scopes_enabled: crwdns8004:0crwdne8004:0
+          step:
+            announcement: crwdns8006:0crwdne8006:0
+            comments_blocked: crwdns8008:0crwdne8008:0
+            creation_enabled: crwdns8010:0crwdne8010:0
+            endorsements_blocked: crwdns8012:0crwdne8012:0
+            endorsements_enabled: crwdns8014:0crwdne8014:0
+    debates:
+      actions:
+        close: crwdns8016:0crwdne8016:0
+        confirm_destroy: crwdns8018:0crwdne8018:0
+        destroy: crwdns8020:0crwdne8020:0
+        edit: crwdns8022:0crwdne8022:0
+        new: crwdns8024:0crwdne8024:0
+        title: crwdns8026:0crwdne8026:0
+      admin:
+        debate_closes:
+          edit:
+            close: crwdns8028:0crwdne8028:0
+            title: crwdns8030:0crwdne8030:0
+        debates:
+          create:
+            invalid: crwdns8032:0crwdne8032:0
+            success: crwdns8034:0crwdne8034:0
+          destroy:
+            success: crwdns8036:0crwdne8036:0
+          edit:
+            title: crwdns8038:0crwdne8038:0
+            update: crwdns8040:0crwdne8040:0
+          form:
+            debate_type: crwdns8042:0crwdne8042:0
+            finite: crwdns8044:0crwdne8044:0
+            open: crwdns8046:0crwdne8046:0
+          index:
+            title: crwdns8048:0crwdne8048:0
+          new:
+            create: crwdns8050:0crwdne8050:0
+            title: crwdns8052:0crwdne8052:0
+          update:
+            invalid: crwdns8054:0crwdne8054:0
+            success: crwdns8056:0crwdne8056:0
+        exports:
+          comments: crwdns8058:0crwdne8058:0
+      admin_log:
+        debate:
+          close: "crwdns8060:0%{user_name}crwdnd8060:0%{resource_name}crwdnd8060:0%{space_name}crwdne8060:0"
+          create: "crwdns8062:0%{user_name}crwdnd8062:0%{resource_name}crwdnd8062:0%{space_name}crwdne8062:0"
+          update: "crwdns8064:0%{user_name}crwdnd8064:0%{resource_name}crwdnd8064:0%{space_name}crwdne8064:0"
+      debate_m:
+        commented_time_ago: crwdns8066:0%{time}crwdne8066:0
+      debates:
+        close:
+          invalid: crwdns8068:0crwdne8068:0
+          success: crwdns8070:0crwdne8070:0
+        close_debate_modal:
+          cancel: crwdns8072:0crwdne8072:0
+          description: crwdns8074:0crwdne8074:0
+          send: crwdns8076:0crwdne8076:0
+        count:
+          debates_count:
+            one: "crwdns8078:1%{count}crwdne8078:1"
+            other: "crwdns8078:5%{count}crwdne8078:5"
+        create:
+          invalid: crwdns8080:0crwdne8080:0
+          success: crwdns8082:0crwdne8082:0
+        debates:
+          empty: crwdns8084:0crwdne8084:0
+          empty_filters: crwdns8086:0crwdne8086:0
+        edit:
+          back: crwdns8088:0crwdne8088:0
+          save: crwdns8090:0crwdne8090:0
+          title: crwdns8092:0crwdne8092:0
+        filters:
+          activity: crwdns8094:0crwdne8094:0
+          all: crwdns8096:0crwdne8096:0
+          category: crwdns8098:0crwdne8098:0
+          category_prompt: crwdns8100:0crwdne8100:0
+          commented: crwdns8102:0crwdne8102:0
+          my_debates: crwdns8104:0crwdne8104:0
+          official: crwdns8106:0crwdne8106:0
+          origin: crwdns8108:0crwdne8108:0
+          participants: crwdns8110:0crwdne8110:0
+          search: crwdns8112:0crwdne8112:0
+          state: crwdns8114:0crwdne8114:0
+          state_values:
+            closed: crwdns8116:0crwdne8116:0
+            open: crwdns8118:0crwdne8118:0
+          user_group: crwdns8120:0crwdne8120:0
+        form:
+          select_a_category: crwdns8122:0crwdne8122:0
+        index:
+          new_debate: crwdns8124:0crwdne8124:0
+        new:
+          back: crwdns8126:0crwdne8126:0
+          create: crwdns8128:0crwdne8128:0
+          title: crwdns8130:0crwdne8130:0
+        orders:
+          commented: crwdns8132:0crwdne8132:0
+          label: crwdns8134:0crwdne8134:0
+          random: crwdns8136:0crwdne8136:0
+          recent: crwdns8138:0crwdne8138:0
+          updated: crwdns8140:0crwdne8140:0
+        show:
+          close_debate: crwdns8142:0crwdne8142:0
+          debate_closed: crwdns8144:0crwdne8144:0
+          debate_conclusions_are: 'crwdns8146:0%{date}crwdne8146:0'
+          edit_conclusions: crwdns8148:0crwdne8148:0
+          edit_debate: crwdns8150:0crwdne8150:0
+          groups_count: crwdns8152:0crwdne8152:0
+          open: crwdns8154:0crwdne8154:0
+          participants_count: crwdns8156:0crwdne8156:0
+        update:
+          invalid: crwdns8158:0crwdne8158:0
+          success: crwdns8160:0crwdne8160:0
+      last_activity:
+        debate_updated: 'crwdns8162:0crwdne8162:0'
+        new_debate: 'crwdns8164:0crwdne8164:0'
+      models:
+        debate:
+          fields:
+            end: crwdns8166:0crwdne8166:0
+            end_time: crwdns8168:0crwdne8168:0
+            official_debate: crwdns8170:0crwdne8170:0
+            start: crwdns8172:0crwdne8172:0
+            start_time: crwdns8174:0crwdne8174:0
+            title: crwdns8176:0crwdne8176:0
+    events:
+      debates:
+        create_debate_event:
+          space_followers:
+            email_intro: |-
+              crwdns8178:0%{resource_title}crwdnd8178:0%{participatory_space_title}crwdne8178:0
+            email_outro: crwdns8180:0%{participatory_space_title}crwdne8180:0
+            email_subject: crwdns8182:0%{resource_title}crwdnd8182:0%{participatory_space_title}crwdne8182:0
+            notification_title: crwdns8184:0%{resource_path}crwdnd8184:0%{resource_title}crwdnd8184:0%{participatory_space_url}crwdnd8184:0%{participatory_space_title}crwdne8184:0
+          user_followers:
+            email_intro: |-
+              crwdns8186:0%{author_name}crwdnd8186:0%{author_nickname}crwdnd8186:0%{resource_title}crwdne8186:0
+            email_outro: crwdns8188:0%{author_nickname}crwdne8188:0
+            email_subject: crwdns8190:0%{resource_title}crwdnd8190:0%{author_nickname}crwdne8190:0
+            notification_title: crwdns8192:0%{author_path}crwdnd8192:0%{author_name}crwdnd8192:0%{author_nickname}crwdnd8192:0%{resource_path}crwdnd8192:0%{resource_title}crwdne8192:0
+        creation_disabled:
+          email_intro: 'crwdns8194:0%{participatory_space_title}crwdne8194:0'
+          email_outro: crwdns8196:0%{participatory_space_title}crwdne8196:0
+          email_subject: crwdns8198:0%{participatory_space_title}crwdne8198:0
+          notification_title: crwdns8200:0%{participatory_space_url}crwdnd8200:0%{participatory_space_title}crwdne8200:0
+        creation_enabled:
+          email_intro: 'crwdns8202:0%{participatory_space_title}crwdne8202:0'
+          email_outro: crwdns8204:0%{participatory_space_title}crwdne8204:0
+          email_subject: crwdns8206:0%{participatory_space_title}crwdne8206:0
+          notification_title: crwdns8208:0%{resource_path}crwdnd8208:0%{participatory_space_url}crwdnd8208:0%{participatory_space_title}crwdne8208:0
+        debate_closed:
+          affected_user:
+            email_intro: 'crwdns8210:0%{resource_title}crwdne8210:0'
+            email_outro: crwdns8212:0%{resource_title}crwdne8212:0
+            email_subject: crwdns8214:0%{resource_title}crwdne8214:0
+            notification_title: crwdns8216:0%{resource_path}crwdnd8216:0%{resource_title}crwdne8216:0
+          follower:
+            email_intro: 'crwdns8218:0%{resource_title}crwdne8218:0'
+            email_outro: crwdns8220:0%{resource_title}crwdne8220:0
+            email_subject: crwdns8222:0%{resource_title}crwdne8222:0
+            notification_title: crwdns8224:0%{resource_path}crwdnd8224:0%{resource_title}crwdne8224:0
+    gamification:
+      badges:
+        commented_debates:
+          conditions:
+            - crwdns8226:0crwdne8226:0
+          description: crwdns8228:0crwdne8228:0
+          description_another: crwdns8230:0%{score}crwdne8230:0
+          description_own: crwdns8232:0%{score}crwdne8232:0
+          name: crwdns8234:0crwdne8234:0
+          next_level_in: crwdns8236:0%{score}crwdne8236:0
+          unearned_another: crwdns8238:0crwdne8238:0
+          unearned_own: crwdns8240:0crwdne8240:0
+    metrics:
+      debates:
+        description: crwdns8242:0crwdne8242:0
+        object: crwdns8244:0crwdne8244:0
+        title: crwdns8246:0crwdne8246:0
+    statistics:
+      debates_count: crwdns8248:0crwdne8248:0
