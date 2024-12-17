@@ -31,6 +31,7 @@ pt:
           step:
             allow_answers: Permitir respostas
             allow_unregistered: Permitir que utilizadores não registados respondam ao inquérito
+            allow_unregistered_help: If active, no login will be required in order to answer the survey. This may lead to poor or unreliable data and it will be more vulnerable to automated attacks. Use with caution! Mind that a participant could answer the same survey multiple times, by using different browsers or the "private browsing" feature of her web browser.
             announcement: Anúncio
     events:
       surveys:
@@ -53,13 +54,24 @@ pt:
       answers_count: Respostas
     surveys:
       admin:
+        component:
+          actions:
+            answers_alert: If you publish the component, all results will be removed.
         exports:
           survey_user_answers: Respostas dos participantes aos inquéritos
         surveys:
           update:
             invalid: Ocorreu um problema ao guardar o inquérito.
             success: Inquérito guardado corretamente.
+      last_activity:
+        new_survey: 'New survey:'
+      survey_confirmation_mailer:
+        confirmation:
+          body: You have successfully answered the %{questionnaire_title} survey within %{participatory_space}
+          subject: Questionnaire %{questionnaire_title} answering confirmation
+        export_name: Survey answers
       surveys:
         answer:
           invalid: Ocorreu um problema ao responder ao inquérito.
+          spam_detected: There was a problem answering the form. Maybe you have been too quick, can you try again?
           success: Inquérito respondido corretamente.
