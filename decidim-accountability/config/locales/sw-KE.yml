@@ -97,91 +97,91 @@ sw:
             new_items:
               one: Mradi 1 uliochaguliwa utaletwa
               other: "%{count} miradi iliyochaguliwa itaagizwa kutoka nje"
-            no_components: There are no budgets components in this participatory space to import the projects into results.
-            origin_component_id: Origin component
-            select_component: Select a component
+            no_components: Hakuna vipengele vya bajeti katika nafasi hii shirikishi ya kuingiza miradi katika matokeo.
+            origin_component_id: Sehemu ya asili
+            select_component: Chagua sehemu
             success:
-              one: 1 project queued to be imported. You will be notified by email, once completed.
-              other: "%{count} projects queued to be imported. You will be notified by email, once completed."
-            title: Import projects from another component
+              one: Mradi 1 umewekwa kwenye foleni kuingizwa. Utaarifiwa kwa barua pepe, mara tu kukamilika.
+              other: "%{count} miradi iliyopangwa kuagizwa kutoka nje. Utaarifiwa kwa barua pepe, mara tu kukamilika."
+            title: Ingiza miradi kutoka kwa sehemu nyingine
         results:
           create:
-            invalid: There was a problem creating this result.
-            success: Result successfully created.
+            invalid: Kulikuwa na tatizo katika kuunda matokeo haya.
+            success: Matokeo imeundwa.
           destroy:
-            success: Result successfully deleted.
+            success: Matokeo yamefutwa.
           edit:
-            title: Edit result
-            update: Update result
+            title: Hariri matokeo
+            update: Hariri matokeo
           index:
-            title: Results
+            title: Matokeo
           new:
-            create: Create result
-            title: New result
+            create: Unda matokeo
+            title: Matokeo mapya
           update:
-            invalid: There was a problem updating this result.
-            success: Result successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha matokeo haya.
+            success: Matokeo kusasishwa.
         shared:
           subnav:
-            statuses: Statuses
+            statuses: Hadhi
         statuses:
           create:
-            invalid: There was a problem creating this status.
-            success: Status successfully created.
+            invalid: Kulikuwa na tatizo katika kuunda hali hii.
+            success: Hali imeundwa.
           destroy:
-            success: Status successfully deleted.
+            success: Hali imefutwa.
           edit:
-            title: Edit status
-            update: Update status
+            title: Badilisha hali
+            update: Sasisha hali
           index:
-            title: Statuses
+            title: Hadhi
           new:
-            create: Create status
-            title: New status
+            create: Unda hali
+            title: Hali mpya
           update:
-            invalid: There was a problem updating this status.
-            success: Status successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha hali hii.
+            success: Hali imesasishwa.
         timeline_entries:
           create:
-            invalid: There was a problem creating this entry.
-            success: Entry successfully created.
+            invalid: Kulikuwa na tatizo kuunda ingizo hili.
+            success: Ingizo limeundwa.
           destroy:
-            success: Entry successfully deleted.
+            success: Ingizo limefutwa.
           edit:
-            title: Edit entry
-            update: Update entry
+            title: Badilisha ingizo
+            update: Sasisha ingizo
           index:
-            title: Project timeline entries
+            title: Maingizo ya ratiba ya mradi
           new:
-            create: Create entry
-            title: New entry
+            create: Unda kiingilio
+            title: Ingizo jipya
           update:
-            invalid: There was a problem updating this entry.
-            success: Entry successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha ingizo hili.
+            success: Ingizo limesasishwa.
       admin_log:
         result:
-          create: "%{user_name} created result %{resource_name} in %{space_name}"
-          delete: "%{user_name} deleted the %{resource_name} result in %{space_name}"
-          update: "%{user_name} updated result %{resource_name} in %{space_name}"
+          create: "%{user_name} imeunda matokeo %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alifuta matokeo ya %{resource_name} katika %{space_name}"
+          update: "%{user_name} matokeo yaliyosasishwa %{resource_name} katika %{space_name}"
         status:
-          create: "%{user_name} created the %{resource_name} status"
-          delete: "%{user_name} deleted the %{resource_name} status"
-          update: "%{user_name} updated the %{resource_name} status"
+          create: "%{user_name} imeunda hali ya %{resource_name}"
+          delete: "%{user_name} ilifuta hali ya %{resource_name}"
+          update: "%{user_name} ilisasisha hali ya %{resource_name}"
         timeline_entry:
-          create: "%{user_name} created the %{resource_name} timeline entry"
-          delete: "%{user_name} deleted the %{resource_name} timeline entry"
-          update: "%{user_name} updated the %{resource_name} timeline entry"
+          create: "%{user_name} iliunda %{resource_name} ingizo la kalenda ya matukio"
+          delete: "%{user_name} ilifuta %{resource_name} ingizo la kalenda ya matukio"
+          update: "%{user_name} alisasisha %{resource_name} ingizo la kalenda ya matukio"
         value_types:
           parent_presenter:
-            not_found: 'The parent was not found on the database (ID: %{id})'
+            not_found: 'Mzazi hakupatikana kwenye hifadhidata (Kitambulisho: %{id})'
       content_blocks:
         highlighted_results:
-          results: Results
+          results: Matokeo
       import_mailer:
         import:
-          errors: Errors
-          errors_present: There was a problem importing results.
-          row_number: Row
+          errors: Makosa
+          errors_present: Kulikuwa na tatizo katika kuleta matokeo.
+          row_number: Safu
           subject: Successful import of results
           success: Successful import of results. You can review the results in the administration interface.
       import_projects_mailer:
@@ -272,7 +272,7 @@ sw:
           notification_title: The proposal <a href="%{proposal_path}">%{proposal_title}</a> has been included in the <a href="%{resource_path}">%{resource_title}</a> result.
         result_progress_updated:
           email_intro: 'The result "%{resource_title}", which includes the proposal "%{proposal_title}", is now %{progress}% complete. You can see it from this page:'
-          email_outro: You have received this notification because you are following "%{proposal_title}", and this proposal is included in the result "%{resource_title}". You can stop receiving notifications following the previous link.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}", na pendekezo hili limejumuishwa kwenye matokeo "%{resource_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
           email_subject: An update to %{resource_title} progress
           notification_title: The result <a href="%{resource_path}">%{resource_title}</a>, which includes the proposal <a href="%{proposal_path}">%{proposal_title}</a>, is now %{progress}% complete.
     metrics:
