@@ -3,100 +3,100 @@ sw:
   activemodel:
     attributes:
       result:
-        decidim_accountability_status_id: Status
-        decidim_category_id: Category
-        decidim_scope_id: Scope
-        description: Description
-        end_date: End date
-        meetings_ids: Included meetings
-        progress: Progress
-        project_ids: Included projects
-        proposals: Included proposals
-        start_date: Start date
-        subresults: Subresults
-        title: Title
-        updated_at: Updated at
+        decidim_accountability_status_id: Hali
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        description: Maelezo
+        end_date: Tarehe ya mwisho
+        meetings_ids: Ilijumuisha mikutano
+        progress: Maendeleo
+        project_ids: Ilijumuisha miradi
+        proposals: Imejumuisha mapendekezo
+        start_date: Tarehe ya kuanza
+        subresults: Matokeo madogo
+        title: Kichwa
+        updated_at: Ilisasishwa saa
       status:
-        description: Description
-        key: Key
-        name: Name
-        progress: Progress
+        description: Maelezo
+        key: Ufunguo
+        name: Jina
+        progress: Maendeleo
       timeline_entry:
-        description: Description
-        entry_date: Date
-        title: Title
+        description: Maelezo
+        entry_date: Tarehe
+        title: Kichwa
     models:
-      decidim/accountability/proposal_linked_event: Proposal included in a result
-      decidim/accountability/result_progress_updated_event: Result progress updated
+      decidim/accountability/proposal_linked_event: Pendekezo limejumuishwa katika matokeo
+      decidim/accountability/result_progress_updated_event: Maendeleo ya matokeo yamesasishwa
   activerecord:
     models:
       decidim/accountability/result:
-        one: Result
-        other: Results
+        one: Matokeo
+        other: Matokeo
   decidim:
     accountability:
       actions:
-        attachment_collections: Folders
-        attachments: Attachments
-        confirm_destroy: Are you sure you want to delete this %{name}?
-        destroy: Delete
-        edit: Edit
-        import: Import projects from another component
-        import_csv: Import results from CSV file
-        new_result: New result
-        new_status: New status
-        new_timeline_entry: New timeline entry
-        preview: Preview
-        timeline_entries: Project evolution
-        title: Actions
+        attachment_collections: Folda
+        attachments: Viambatisho
+        confirm_destroy: Je, una uhakika unataka kufuta hii %{name}?
+        destroy: Futa
+        edit: Hariri
+        import: Ingiza miradi kutoka kwa sehemu nyingine
+        import_csv: Ingiza matokeo kutoka kwa faili ya CSV
+        new_result: Matokeo mapya
+        new_status: Hali mpya
+        new_timeline_entry: Ingizo jipya la kalenda ya matukio
+        preview: Hakiki
+        timeline_entries: Maendeleo ya mradi
+        title: Vitendo
       admin:
         exports:
-          result_comments: Comments
-          results: Results
+          result_comments: Maoni
+          results: Matokeo
         import_results:
           new:
-            download_export: Download the Export with CSV format
-            import: Import
+            download_export: Pakua Hamisha kwa umbizo la CSV
+            import: Ingiza
             info: |
-              <p>We recommend that you follow these steps:</p>
+              <p>Tunapendekeza ufuate hatua hizi:</p>
               <ol>
-              <li><a href='%{link_new_status}' target='_blank'>Create the Statuses for the Results</a> that you want to add</li>
-              <li><a href='%{link_new_result}' target='_blank'>Create at least one Result manually</a> through this Admin panel before using Import, for having a better understanding of the format and what you will need to fill out.</li>
+              <li><a href='%{link_new_status}' target='_blank'>Unda Hali za Matokeo</a> ambazo ungependa kuongeza</li>
+              <li><a href='%{link_new_result}' target='_blank'>Unda angalau Tokeo moja wewe mwenyewe</a> kupitia kidirisha hiki cha Msimamizi kabla ya kutumia Leta, kwa kuelewa vyema umbizo na unachohitaji. kujaza.</li>
               <li>%{link_export_csv}</li>
-              <li>Make the changes locally. You can only change the following columns of the CSV:
+              <li>Fanya mabadiliko ndani ya nchi. Unaweza kubadilisha safu wima zifuatazo za CSV pekee:
                 <ul>
-                <li><b>category/id:</b> ID for the Category</li>
-                <li><b>scope/id:</b> ID for the Scope</li>
-                <li><b>parent/id:</b> ID of the parent (for related Results). Optional</li>
-                <li><b>title/en:</b> Title on English language. This will depend on your platform language configuration.</li>
-                <li><b>description/en:</b> Description on English language. This will depend on your platform language configuration.</li>
-                <li><b>start_date:</b> date when the result starts execution (format YYYY-MM-DD)</li>
-                <li><b>end_date:</b> date when the result ends execution (format YYYY-MM-DD)</li>
-                <li><b>status/id:</b> ID of the Status for this result</li>
-                <li><b>progress:</b> Percentage (from 0 to 100) of the execution</li>
-                <li><b>proposals_ids:</b> internal ID of the related proposals (separated with a comma). It gets automatically converted to <span class='attribute-name'>proposal_url</span></li>
+                <li><b>kitengo/id:</b> Kitambulisho cha Kitengo</li>
+                <li><b>wigo/id:</b> Kitambulisho cha Wigo</li>
+                <li><b>mzazi/id:</b> Kitambulisho cha mzazi (kwa Matokeo yanayohusiana). Hiari</li>
+                <li><b>kichwa/sw:</b> Kichwa kwenye lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+                <li><b>maelezo/sw:</b> Maelezo kuhusu lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+                <li><b>tarehe_ya_kuanza:</b> tarehe ambayo matokeo yanaanza utekelezaji (umbizo YYYY-MM-DD)</li>
+                <li><b>tarehe_ya_mwisho:</b> tarehe ambayo matokeo yanamaliza utekelezaji (umbizo YYYY-MM-DD)</li>
+                <li><b>hali/id:</b> Kitambulisho cha Hali ya matokeo haya</li>
+                <li><b>maendeleo:</b> Asilimia (kutoka 0 hadi 100) ya utekelezaji</li>
+                <li><b>vitambulisho_vya_mapendekezo:</b> Kitambulisho cha ndani cha mapendekezo husika (kimetenganishwa na koma). Inabadilishwa kiotomatiki hadi <span class='attribute-name'>proposal_url</span></li>
                 </ul>
               </li>
               </ol>
-            title: Import results from CSV file
+            title: Ingiza matokeo kutoka kwa faili ya CSV
         imports:
           create:
-            invalid: There was a problem importing the results.
-            success: The file has begun importing. You will receive an email in the next few minutes with the result of the import.
+            invalid: Kulikuwa na tatizo katika kuleta matokeo.
+            success: Faili imeanza kuletwa. Utapokea barua pepe katika dakika chache zijazo na matokeo ya uletaji.
         models:
           result:
-            name: Result
+            name: Matokeo
           status:
-            name: Status
+            name: Hali
         projects_import:
           create:
-            invalid: There was a problem importing the projects into results, please follow the instructions carefully and make sure you have selected projects for implementation.
+            invalid: Kulikuwa na tatizo la kuingiza miradi kwenye matokeo, tafadhali fuata maagizo kwa uangalifu na uhakikishe kuwa umechagua miradi ya utekelezaji.
           new:
-            create: Import
-            import_all_selected_projects: Import all projects selected for implementation
+            create: Ingiza
+            import_all_selected_projects: Ingiza miradi yote iliyochaguliwa kwa utekelezaji
             new_items:
-              one: 1 selected project will be imported
-              other: "%{count} selected projects will be imported"
+              one: Mradi 1 uliochaguliwa utaletwa
+              other: "%{count} miradi iliyochaguliwa itaagizwa kutoka nje"
             no_components: There are no budgets components in this participatory space to import the projects into results.
             origin_component_id: Origin component
             select_component: Select a component
