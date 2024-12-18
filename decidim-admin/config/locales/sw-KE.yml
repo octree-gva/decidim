@@ -269,316 +269,316 @@ sw:
           error: Kulikuwa na tatizo la kuunda kiambatisho kipya.
           success: Kiambatisho kimeundwa.
         destroy:
-          success: Attachment destroyed successfully.
+          success: Kiambatisho kimeharibiwa.
         edit:
-          title: Edit attachment
-          update: Update
+          title: Badilisha kiambatisho
+          update: Sasisha
         index:
-          attachments_title: Attachments
+          attachments_title: Viambatisho
         new:
-          create: Create attachment
-          title: New attachment
+          create: Unda kiambatisho
+          title: Kiambatisho kipya
         update:
-          error: There was a problem updating this attachment.
-          success: Attachment updated successfully.
+          error: Kulikuwa na tatizo la kusasisha kiambatisho hiki.
+          success: Kiambatisho kimesasishwa.
       attachments_privacy_warning:
-        message: Be careful when working with attachments in a private space. Any participant could share this document to others.
+        message: Kuwa mwangalifu wakati wa kufanya kazi na viambatisho kwenye nafasi ya kibinafsi. Mshiriki yeyote anaweza kushiriki hati hii kwa wengine.
       autocomplete:
-        no_results: No results found
-        search_prompt: Type at least three characters to search.
+        no_results: Hakuna matokeo yaliyopatikana
+        search_prompt: Andika angalau herufi tatu ili kutafuta.
       block_user:
         new:
-          action: Block account and send justification
-          already_reported_html: Continuing with this action you will also hide all the participants contents.
-          description: Blocking a user will render their account unusable. You may provide in your justification any guidelines on ways you would consider unblocking the user.
-          justification: Justification
-          title: Block User %{name}
+          action: Zuia akaunti na utume sababu
+          already_reported_html: Ukiendelea na hatua hii pia utaficha maudhui yote ya washiriki.
+          description: Kuzuia mtumiaji kutafanya akaunti yake kutotumika. Unaweza kutoa katika uhalalishaji wako miongozo yoyote kuhusu njia ambazo ungezingatia kumfungulia mtumiaji.
+          justification: Kuhesabiwa haki
+          title: Zuia Mtumiaji %{name}
       categories:
         create:
-          error: There was a problem creating this category.
-          success: Category created successfully.
+          error: Kulikuwa na tatizo katika kuunda aina hii.
+          success: Kitengo kimeundwa.
         destroy:
-          error: There was a problem deleting this category. Please delete any subcategory first, make sure no other entity belongs to this category and try again.
-          success: Category deleted successfully.
+          error: Kulikuwa na tatizo katika kufuta aina hii. Tafadhali futa kitengo chochote kwanza, hakikisha kuwa hakuna huluki nyingine iliyo katika kategoria hii na ujaribu tena.
+          success: Kitengo kimefutwa.
         edit:
-          title: Edit category
-          update: Update
+          title: Badilisha kategoria
+          update: Sasisha
         index:
-          categories_title: Categories
+          categories_title: Kategoria
         new:
-          create: Create category
-          title: New category
+          create: Unda kategoria
+          title: Kategoria mpya
         update:
-          error: There was a problem updating this category.
-          success: Category updated successfully.
+          error: Kulikuwa na tatizo la kusasisha aina hii.
+          success: Kitengo kimesasishwa.
       component_permissions:
         update:
-          error: There was a problem updating the permissions of this component.
-          success: Permissions updated successfully.
+          error: Kulikuwa na tatizo la kusasisha ruhusa za kipengele hiki.
+          success: Ruhusa zimesasishwa.
       components:
         create:
-          error: There was a problem creating this component.
-          success: Component created successfully.
-          success_landing_page: Component created successfully. You can add a content block for this component in the home of the space. Go to <a href="%{landing_page_path}">Landing page</a> to configure it.
+          error: Kulikuwa na tatizo la kuunda kijenzi hiki.
+          success: Kijenzi kimeundwa.
+          success_landing_page: Kijenzi kimeundwa. Unaweza kuongeza kizuizi cha maudhui kwa kipengele hiki katika nyumba ya nafasi. Nenda kwa <a href="%{landing_page_path}">Ukurasa wa kutua</a> ili kuisanidi.
         destroy:
-          error: There was a problem destroying this component.
-          success: Component deleted successfully.
+          error: Kulikuwa na tatizo la kuharibu kijenzi hiki.
+          success: Kipengele kimefutwa.
         edit:
-          title: Edit component
-          update: Update
+          title: Hariri sehemu
+          update: Sasisha
         form:
-          default_step_settings: Default step settings
-          global_settings: Global settings
-          step_settings: Step settings
+          default_step_settings: Mipangilio ya hatua chaguo-msingi
+          global_settings: Mipangilio ya kimataifa
+          step_settings: Mipangilio ya hatua
         index:
-          add: Add component
+          add: Ongeza sehemu
           headers:
-            actions: Actions
-            name: Component name
-            scope: Component scope
-            type: Component type
+            actions: Vitendo
+            name: Jina la sehemu
+            scope: Upeo wa kipengele
+            type: Aina ya kipengele
         new:
-          add: Add component
-          title: 'Add component: %{name}'
+          add: Ongeza sehemu
+          title: 'Ongeza sehemu: %{name}'
         publish:
-          success: The component has been successfully published.
-        title: Components
+          success: Kipengele kimechapishwa kwa ufanisi.
+        title: Vipengele
         unpublish:
-          success: The component has been successfully unpublished.
+          success: Kijenzi kimebatilishwa.
         update:
-          error: There was a problem updating this component.
-          success: The component was updated successfully.
+          error: Kulikuwa na tatizo la kusasisha kijenzi hiki.
+          success: Kijenzi kimesasishwa.
       conflicts:
-        attempts: Attempts
-        'false': 'No'
+        attempts: Majaribio
+        'false': 'Hapana'
         index:
-          text: Search by current user email, name or nickname.
-        managed_user_name: Managed User
-        solved: Solved
-        title: Verification conflicts
+          text: Tafuta kwa barua pepe ya mtumiaji wa sasa, jina au jina la utani.
+        managed_user_name: Mtumiaji Anayesimamiwa
+        solved: Imetatuliwa
+        title: Migogoro ya uthibitishaji
         transfer:
-          email: Email
-          error: There was a problem transferring the current participant to managed participant.
-          name: Name
-          reason: Reason
-          success: The current transfer has been successfully completed.
-          title: Transfer
-        'true': 'Yes'
-        user_name: User
+          email: Barua pepe
+          error: Kulikuwa na tatizo la kuhamisha mshiriki wa sasa hadi kwa mshiriki anayesimamiwa.
+          name: Jina
+          reason: Sababu
+          success: Uhamisho wa sasa umekamilika.
+          title: Uhamisho
+        'true': 'Ndiyo'
+        user_name: Mtumiaji
       content_blocks:
         create:
-          error: There was an error while creating the content block.
-          success: Content block successfully created.
+          error: Kulikuwa na hitilafu wakati wa kuunda kizuizi cha maudhui.
+          success: Uzuiaji wa maudhui umeundwa.
         destroy:
-          error: There was a problem trying to delete this content block.
-          success: Content block successfully deleted.
+          error: Kulikuwa na tatizo wakati wa kujaribu kufuta kizuizi hiki cha maudhui.
+          success: Uzuiaji wa maudhui umefutwa.
         edit:
-          active_content_blocks: Active content blocks
-          add: Add content block
-          destroy_confirmation: Are you sure you want to delete this content block?
-          inactive_content_blocks: Inactive content blocks
-          title: Page contents
-          update: Update
+          active_content_blocks: Maudhui amilifu huzuia
+          add: Ongeza kizuizi cha yaliyomo
+          destroy_confirmation: Je, una uhakika unataka kufuta kizuizi hiki cha maudhui?
+          inactive_content_blocks: Maudhui yasiyotumika huzuia
+          title: Yaliyomo kwenye ukurasa
+          update: Sasisha
       dashboard:
         pending_moderations:
           announcement:
-            one: There are %{count} pending moderation
-            other: There are %{count} pending moderations
-          goto_moderation: Go to global moderations
-          title: Pending Moderations
+            one: Kuna %{count} zinazosubiri kukaguliwa
+            other: Kuna vidhibiti %{count} vinavyosubiri
+          goto_moderation: Nenda kwa udhibiti wa kimataifa
+          title: Udhibiti Unaosubiri
         show:
-          dropdown: Dropdown
-          view_more_logs: View more logs
+          dropdown: Kunjuzi
+          view_more_logs: Tazama kumbukumbu zaidi
       domain_allowlist:
         form:
-          domain_too_short: Domain too short
+          domain_too_short: Kikoa kifupi sana
         update:
-          error: Failed to update list of allowed external domains
-          success: The list of allowed external domain successfully updated.
+          error: Imeshindwa kusasisha orodha ya vikoa vya nje vinavyoruhusiwa
+          success: Orodha ya kikoa cha nje kinachoruhusiwa imesasishwa.
       exports:
-        export_as: "%{name} as %{export_format}"
+        export_as: "%{name} kama %{export_format}"
         formats:
           CSV: CSV
           Excel: Excel
           FormPDF: PDF
           JSON: JSON
-        notice: Your export is currently in progress. You will receive an email when it is complete.
+        notice: Uhamishaji wako unaendelea kwa sasa. Utapokea barua pepe itakapokamilika.
       filters:
         category_id_eq:
-          label: Category
-        filter_label: Filter
+          label: Kategoria
+        filter_label: Chuja
         invitation_accepted_at_present:
-          label: Invite accepted
+          label: Mwaliko umekubaliwa
           values:
-            'false': 'No'
-            'true': 'Yes'
+            'false': 'Hapana'
+            'true': 'Ndiyo'
         last_sign_in_at_present:
-          label: Ever logged in
+          label: Umewahi kuingia
           values:
-            'false': 'No'
-            'true': 'Yes'
+            'false': 'Hapana'
+            'true': 'Ndiyo'
         moderated_users:
           reports_reason_eq:
-            label: Report reason
+            label: Ripoti sababu
             values:
-              does_not_belong: Does not belong
-              offensive: Offensive
-              spam: Spam
+              does_not_belong: Si mali
+              offensive: Inakera
+              spam: Barua taka
         moderations:
           reportable_type_string_eq:
-            label: Type
+            label: Aina
         officialized_at_null:
-          label: State
+          label: Jimbo
           values:
-            'false': Officialized
-            'true': Not officialized
+            'false': Imewekwa rasmi
+            'true': Si rasmi
         participatory_space_private_users:
           user_invitation_accepted_at_not_null:
-            label: Invitation accepted
+            label: Mwaliko umekubaliwa
             values:
-              'false': Not accepted
-              'true': Accepted
+              'false': Haikubaliki
+              'true': Imekubaliwa
           user_invitation_sent_at_not_null:
-            label: Invitation sent
+            label: Mwaliko umetumwa
             values:
-              'false': Not sent
-              'true': Sent
+              'false': Haijatumwa
+              'true': Imetumwa
         private_space_eq:
-          label: Private
+          label: Privat
           values:
-            'false': Public
-            'true': Private
+            'false': Hadharani
+            'true': Privat
         published_at_null:
-          label: Published
+          label: Imechapishwa
           values:
-            'false': Published
-            'true': Unpublished
-        remove_all: Remove all
+            'false': Imechapishwa
+            'true': Haijachapishwa
+        remove_all: Ondoa zote
         scope_id_eq:
-          label: Scope
-        search_label: Search
+          label: Upeo
+        search_label: Tafuta
         search_placeholder:
-          name_or_nickname_or_email_cont: Search %{collection} by email, name or nickname.
-          report_count_eq: Report count eq
-          reported_id_string_or_reported_content_cont: Search %{collection} by reportable id or content.
-          title_cont: Search %{collection} by title.
-          user_name_or_user_nickname_or_user_email_cont: Search %{collection} by email, name or nickname.
+          name_or_nickname_or_email_cont: Tafuta %{collection} kwa barua pepe, jina au lakabu.
+          report_count_eq: Idadi ya ripoti eq
+          reported_id_string_or_reported_content_cont: Tafuta %{collection} kwa kitambulisho kinachoweza kuripotiwa au maudhui.
+          title_cont: Tafuta %{collection} kwa kichwa.
+          user_name_or_user_nickname_or_user_email_cont: Tafuta %{collection} kwa barua pepe, jina au lakabu.
         state_eq:
-          label: State
+          label: Jimbo
           values:
-            all: All
-            pending: Pending
-            rejected: Rejected
-            verified: Verified
+            all: Wote
+            pending: Inasubiri
+            rejected: Imekataliwa
+            verified: Imethibitishwa
       forms:
         file_help:
           import:
-            explanation: 'Guidance for file:'
-            message_1: CSV, JSON and Excel (.xlsx) files are supported
-            message_2: For CSV files, the separator between columns must be a semicolon (";")
+            explanation: 'Mwongozo wa faili:'
+            message_1: Faili za CSV, JSON na Excel (.xlsx) zinatumika
+            message_2: Kwa faili za CSV, kitenganishi kati ya safu wima lazima kiwe nusu koloni (";")
       help_sections:
-        error: There was a problem updating the help sections.
+        error: Kulikuwa na tatizo la kusasisha sehemu za usaidizi.
         form:
-          save: Save
-        success: Help sections updated successfully.
+          save: Hifadhi
+        success: Sehemu za usaidizi zimesasishwa.
       impersonatable_users:
         index:
           filter:
-            all: All
-            managed: Managed
-            not_managed: Not managed
-          impersonate: Impersonate
-          impersonate_new_managed_user: Manage new participant
-          managed: Managed
-          name: Name
-          needs_authorization_warning: You need at least one authorization enabled for this organization.
-          not_managed: Not managed
-          promote: Promote
-          search: Search
-          status: Status
-          view_logs: View logs
+            all: Wote
+            managed: Inasimamiwa
+            not_managed: Haijasimamiwa
+          impersonate: Kuiga
+          impersonate_new_managed_user: Dhibiti mshiriki mpya
+          managed: Inasimamiwa
+          name: Jina
+          needs_authorization_warning: Unahitaji angalau uidhinishaji mmoja uwezeshwe kwa shirika hili.
+          not_managed: Haijasimamiwa
+          promote: Kuza
+          search: Tafuta
+          status: Hali
+          view_logs: Tazama kumbukumbu
       impersonations:
         close_session:
-          error: There was a problem closing the current participant management session.
-          success: The current impersonation session has been successfully ended.
+          error: Kulikuwa na tatizo wakati wa kufunga kipindi cha sasa cha usimamizi wa mshiriki.
+          success: Kipindi cha sasa cha uigaji kimekamilika.
         create:
-          error: There was a problem managing the participant.
-          success: The managed participant has been successfully created.
+          error: Kulikuwa na tatizo la kudhibiti mshiriki.
+          success: Mshiriki anayesimamiwa ameundwa kwa ufanisi.
         form:
-          authorization_method: Authorization method
-          name: Name
-          reason: Reason
+          authorization_method: Mbinu ya uidhinishaji
+          name: Jina
+          reason: Sababu
         new:
-          impersonate: Impersonate
-          impersonate_existing_managed_user: Manage participant "%{name}"
-          impersonate_existing_user: Manage participant "%{name}"
-          impersonate_new_managed_user: Manage new participant
+          impersonate: Kuiga
+          impersonate_existing_managed_user: Dhibiti mshiriki "%{name}"
+          impersonate_existing_user: Dhibiti mshiriki "%{name}"
+          impersonate_new_managed_user: Dhibiti mshiriki mpya
       imports:
-        and: and
+        and: na
         data_errors:
           duplicate_headers:
-            detail: Please check that file contains required columns or headers only once.
+            detail: Tafadhali hakikisha kuwa faili ina safu wima au vichwa vinavyohitajika mara moja tu.
             message:
-              one: Duplicate column %{columns}.
-              other: Duplicate columns %{columns}.
+              one: Nakala safu wima %{columns}.
+              other: Nakala safu wima %{columns}.
           invalid_indexes:
             lines:
-              detail: Please check that these lines are formatted correctly and contain valid records.
+              detail: Tafadhali hakikisha kuwa mistari hii imeumbizwa ipasavyo na ina rekodi halali.
               message:
-                one: Found an error in the import file on line %{indexes}.
-                other: Found errors in the import file on lines %{indexes}.
+                one: Imepata hitilafu katika faili ya kuleta kwenye mstari %{indexes}.
+                other: Imepata hitilafu katika faili ya kuleta kwenye mistari %{indexes}.
             records:
-              detail: Please check that these records are formatted correctly and contain valid records.
+              detail: Tafadhali hakikisha kwamba rekodi hizi zimeumbizwa ipasavyo na zina rekodi halali.
               message:
-                one: Found an error in the import file for records with order numbers %{indexes}.
-                other: Found errors in the import file for records with order numbers %{indexes}.
+                one: Imepata hitilafu katika faili ya kuleta rekodi zilizo na nambari za agizo %{indexes}.
+                other: Imepata hitilafu katika faili ya kuleta rekodi zilizo na nambari za agizo %{indexes}.
           missing_headers:
-            detail: Please check that the file contains required columns.
+            detail: Tafadhali hakikisha kuwa faili ina safu wima zinazohitajika.
             message:
-              one: Missing column %{columns}.
-              other: Missing columns %{columns}.
-        error: There was a problem during the import.
-        example_error: There was a problem creating an example for the given type.
+              one: Safu wima %{columns} haipo.
+              other: Safu wima %{columns} hazipo.
+        error: Kulikuwa na tatizo wakati wa kuleta.
+        example_error: Kulikuwa na tatizo la kuunda mfano wa aina fulani.
         new:
           accepted_mime_types:
             csv: CSV
             json: JSON
             xlsx: Excel (.xlsx)
           actions:
-            back: Back
-          download_example: Download example
-          download_example_format: Example as %{name}
-          file_legend: Add an import file that will be parsed.
-          import: Import
-        notice: "%{count} %{resource_name} successfully imported."
+            back: Nyuma
+          download_example: Pakua mfano
+          download_example_format: Mfano kama %{name}
+          file_legend: Ongeza faili ya kuleta ambayo itachanganuliwa.
+          import: Ingiza
+        notice: "%{count} %{resource_name} imeingizwa kwa mafanikio."
       logs:
         filters:
-          participatory_space: Find participatory space
-          text: Search by user email, name or nickname.
-          user: User
+          participatory_space: Tafuta nafasi shirikishi
+          text: Tafuta kwa barua pepe ya mtumiaji, jina au jina la utani.
+          user: Mtumiaji
         logs_list:
-          no_logs_yet: There are no logs yet.
-          no_matching_logs: There are no logs with the provided search filters. Try to change them and retry.
+          no_logs_yet: Bado hakuna kumbukumbu.
+          no_matching_logs: Hakuna kumbukumbu zilizo na vichujio vya utafutaji vilivyotolewa. Jaribu kuzibadilisha na ujaribu tena.
       managed_users:
         promotion:
-          error: There was a problem promoting the managed participant.
-          success: The managed participant has been successfully promoted.
+          error: Kulikuwa na tatizo la kukuza mshiriki anayesimamiwa.
+          success: Mshiriki anayesimamiwa amepandishwa cheo.
         promotions:
           new:
-            explanation: Managed participants can be promoted to standard participants. It means they will be invited to the application and you will not be able to manage them again. The invited participant will receive an email to accept your invitation.
-            new_managed_user_promotion: New managed participant promotion
-            promote: Promote
+            explanation: Washiriki wanaosimamiwa wanaweza kupandishwa vyeo hadi washiriki wa kawaida. Inamaanisha kuwa wataalikwa kwenye programu na hutaweza kuzidhibiti tena. Mshiriki aliyealikwa atapokea barua pepe ili kukubali mwaliko wako.
+            new_managed_user_promotion: Matangazo mapya ya mshiriki anayesimamiwa
+            promote: Kuza
       menu:
-        admin_log: Admin activity log
-        admins: Admins
-        appearance: Appearance
-        area_types: Area types
-        areas: Areas
-        components: Components
-        configuration: Configuration
-        content: Reported content
-        external_domain_allowlist: Allowed external domains
-        help_sections: Help sections
+        admin_log: Kumbukumbu ya shughuli za msimamizi
+        admins: Wasimamizi
+        appearance: Muonekano
+        area_types: Aina za eneo
+        areas: Maeneo
+        components: Vipengele
+        configuration: Usanidi
+        content: Maudhui yaliyoripotiwa
+        external_domain_allowlist: Vikoa vya nje vinavyoruhusiwa
+        help_sections: Sehemu za usaidizi
         homepage: Homepage
         impersonations: Impersonations
         manage: Manage
