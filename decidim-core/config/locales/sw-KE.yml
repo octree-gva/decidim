@@ -1994,7 +1994,7 @@ sw:
         title: Participant settings
         user_groups: Groups
   locale:
-    name: English
+    name: Swahili
     name_with_error: English (error!)
   password_validator:
     denied: is denied
