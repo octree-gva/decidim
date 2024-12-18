@@ -579,279 +579,279 @@ sw:
         content: Maudhui yaliyoripotiwa
         external_domain_allowlist: Vikoa vya nje vinavyoruhusiwa
         help_sections: Sehemu za usaidizi
-        homepage: Homepage
-        impersonations: Impersonations
-        manage: Manage
-        moderation: Global moderations
-        newsletters: Newsletters
-        participants: Participants
-        reported_users: Reported participants
-        scope_types: Scope types
-        scopes: Scopes
-        see_site: See site
-        settings: Settings
-        static_page_topics: Topics
-        static_pages: Pages
-        user_groups: Groups
-        users: Participants
+        homepage: Ukurasa wa nyumbani
+        impersonations: Uigaji
+        manage: Dhibiti
+        moderation: Udhibiti wa kimataifa
+        newsletters: Vijarida
+        participants: Washiriki
+        reported_users: Washiriki walioripotiwa
+        scope_types: Aina za upeo
+        scopes: Mawanda
+        see_site: Tazama tovuti
+        settings: Mipangilio
+        static_page_topics: Mada
+        static_pages: Kurasa
+        user_groups: Vikundi
+        users: Washiriki
       metrics:
         metrics:
-          see_more_metrics: See more metrics
+          see_more_metrics: Angalia vipimo zaidi
       models:
         area:
           fields:
-            area_type: Area type
-            name: Name
+            area_type: Aina ya eneo
+            name: Jina
         area_type:
           fields:
-            name: Name
-            plural: Plural
+            name: Jina
+            plural: Wingi
         attachment:
           fields:
-            collection: Folder
-            content_type: Type
-            file_size: Size
-            title: Title
-          name: Attachment
+            collection: Folda
+            content_type: Aina
+            file_size: Ukubwa
+            title: Kichwa
+          name: Kiambatisho
         attachment_collection:
-          name: Folder
+          name: Folda
         category:
-          name: Category
+          name: Kategoria
         impersonation_log:
           fields:
-            admin: Admin
-            ended_at: Ended at
-            expired_at: Expired at
-            reason: Reason
-            started_at: Started at
-            user: Participant
+            admin: Msimamizi
+            ended_at: Ilimalizika saa
+            expired_at: Muda wake umeisha saa
+            reason: Sababu
+            started_at: Ilianza saa
+            user: Mshiriki
         newsletter:
           fields:
-            created_at: Created at
-            progress: Progress
-            sent_at: Sent at
-            sent_to: Sent to
-            subject: Subject
-          name: Newsletter
+            created_at: Imeundwa saa
+            progress: Maendeleo
+            sent_at: Imetumwa saa
+            sent_to: Imetumwa kwa
+            subject: Somo
+          name: Jarida
         participatory_space_private_user:
-          name: Participatory space private participant
+          name: Nafasi shirikishi mshiriki binafsi
         scope:
           fields:
-            name: Name
-            scope_type: Scope type
+            name: Jina
+            scope_type: Aina ya upeo
         scope_type:
           fields:
-            name: Name
-            plural: Plural
+            name: Jina
+            plural: Wingi
         share_token:
           fields:
-            created_at: Created at
-            expires_at: Expires at
-            last_used_at: Last time used
-            times_used: Times used
-            token: Token
-            user: Created by
+            created_at: Imeundwa saa
+            expires_at: Inaisha saa
+            last_used_at: Mara ya mwisho kutumika
+            times_used: Nyakati zilizotumika
+            token: Ishara
+            user: Imeundwa na
         static_page:
           fields:
-            created_at: Created at
-            title: Title
+            created_at: Imeundwa saa
+            title: Kichwa
         user:
           fields:
-            created_at: Creation date
-            email: Email
-            last_sign_in_at: Last log in date
-            name: Name
-            role: Role
+            created_at: Tarehe ya kuundwa
+            email: Barua pepe
+            last_sign_in_at: Tarehe ya mwisho ya kuingia
+            name: Jina
+            role: Jukumu
             roles:
-              admin: Admin
-              user_manager: Participant manager
-          name: Participant
+              admin: Msimamizi
+              user_manager: Meneja mshiriki
+          name: Mshiriki
         user_group:
           fields:
-            actions: Actions
-            created_at: Created at
-            document_number: Document number
-            name: Name
-            nickname: Nickname
-            phone: Phone
-            state: State
-            users_count: Participants count
+            actions: Vitendo
+            created_at: Imeundwa saa
+            document_number: Nambari ya hati
+            name: Jina
+            nickname: Jina la utani
+            phone: Simu
+            state: Jimbo
+            users_count: Washiriki wanahesabu
       moderated_users:
         index:
           actions:
-            block: Block User
-            title: Actions
-            unblock: Unblock User
-            unreport: Unreport
-          name: Name
-          nickname: Nickname
-          reason: Reason
-          reports: Reports count
-          title: Reported participants
+            block: Zuia Mtumiaji
+            title: Vitendo
+            unblock: Ondoa kizuizi kwa Mtumiaji
+            unreport: Acha kuripoti
+          name: Jina
+          nickname: Jina la utani
+          reason: Sababu
+          reports: Ripoti kuhesabu
+          title: Washiriki walioripotiwa
         report:
           reasons:
-            does_not_belong: Does not belong
-            offensive: Offensive
-            spam: Spam
+            does_not_belong: Si mali
+            offensive: Inakera
+            spam: Barua taka
         tabs:
-          blocked: Blocked
-          unblocked: Not Blocked
+          blocked: Imezuiwa
+          unblocked: Haijazuiwa
       moderations:
         index:
-          title: Reported content
+          title: Maudhui yaliyoripotiwa
         report:
           reasons:
-            does_not_belong: Does not belong
-            hidden_during_block: Hidden while blocking user
-            offensive: Offensive
-            spam: Spam
+            does_not_belong: Si mali
+            hidden_during_block: Imefichwa wakati inazuia mtumiaji
+            offensive: Inakera
+            spam: Barua taka
         reports:
           index:
-            author: Author(s)
-            callout_html: A content appears in the moderation panel when it has been signaled by a user (can be anyone with a registered account) by clicking on the %{icon} flag next to the item.
-            content_original_language: Content original language
-            participatory_space: Participatory space
-            reported_content: Reported content
-            see_current: See current
-            see_original: See original
-            title: Moderation reports
+            author: Waandishi
+            callout_html: Maudhui huonekana kwenye kidirisha cha udhibiti wakati yameonyeshwa na mtumiaji (anaweza kuwa mtu yeyote aliye na akaunti iliyosajiliwa) kwa kubofya alama ya %{icon} karibu na kipengee.
+            content_original_language: Lugha asili ya maudhui
+            participatory_space: Nafasi shirikishi
+            reported_content: Maudhui yaliyoripotiwa
+            see_current: Tazama ya sasa
+            see_original: Angalia asili
+            title: Ripoti za usimamizi
           show:
-            report_details: Reason details
-            report_language: Report language
-            report_reason: Reason
-            title: Report details
+            report_details: Maelezo ya sababu
+            report_language: Lugha ya ripoti
+            report_reason: Sababu
+            title: Ripoti maelezo
       newsletter_templates:
         index:
-          preview_template: Preview
-          title: Newsletter templates
-          use_template: Use this template
+          preview_template: Hakiki
+          title: Violezo vya jarida
+          use_template: Tumia kiolezo hiki
         show:
-          preview: 'Preview template: %{template_name}'
-          use_template: Use this template
+          preview: 'Hakiki kiolezo: %{template_name}'
+          use_template: Tumia kiolezo hiki
       newsletters:
         create:
-          error: There was a problem creating this newsletter.
-          success: Newsletter created successfully. Please review it before sending.
+          error: Kulikuwa na tatizo la kuunda jarida hili.
+          success: Jarida limeundwa kwa mafanikio. Tafadhali ihakiki kabla ya kutuma.
         deliver:
-          error: There was a problem delivering this newsletter.
-          success: Newsletter delivered successfully.
+          error: Kulikuwa na tatizo katika kuwasilisha jarida hili.
+          success: Jarida liliwasilishwa kwa mafanikio.
         destroy:
-          error_already_sent: 'Can''t destroy newsletter: It has already been sent.'
-          success: Newsletter destroyed successfully.
+          error_already_sent: 'Haiwezi kuharibu jarida: Tayari limetumwa.'
+          success: Jarida limeharibiwa.
         edit:
-          save_and_preview: Save and preview
-          title: Edit newsletter
+          save_and_preview: Hifadhi na uhakiki
+          title: Hariri jarida
         index:
-          all: all
-          all_users: 'All users '
-          and: 'and '
-          confirm_delete: Are you sure you want to delete this newsletter?
-          followers: 'followers '
-          has_been_sent_to: 'Has been sent to: '
-          no_scopes: No scopes
-          not_sent: Not sent
-          participants: 'participants '
-          segmented_to: 'Segmented to %{subject}: '
-          subscribed_count: 'Subscribed:'
-          title: Newsletters
+          all: zote
+          all_users: 'Watumiaji wote'
+          and: 'na'
+          confirm_delete: Je, una uhakika unataka kufuta jarida hili?
+          followers: 'wafuasi'
+          has_been_sent_to: 'Imetumwa kwa:'
+          no_scopes: Hakuna mawanda
+          not_sent: Haijatumwa
+          participants: 'washiriki'
+          segmented_to: 'Imegawanywa hadi %{subject}:'
+          subscribed_count: 'Umejisajili:'
+          title: Vijarida
         new:
-          save: Save
-          title: New newsletter
+          save: Hifadhi
+          title: Jarida jipya
         select_recipients_to_deliver:
-          all_spaces: All
-          all_users_help: Sends newsletter to all confirmed users.
-          confirm_deliver: Are you sure you want to deliver this newsletter? This action cannot be undone.
-          deliver: Deliver newsletter
-          followers_help: Sends newsletter to all confirmed users that follow any selected participatory spaces in the list.
-          none: None
-          participants_help: Sends newsletter to all confirmed users that have participated in any of the selected participatory spaces in the list.
-          recipients_count: This newsletter will be send to <strong id='recipients_count'>%{count}</strong> users.
-          scopes_help: Sends newsletter to users that have any of the selected scope activated in their account's "My Interests" settings.
-          select_scopes: Filter for users having activated any selected scope in their account's My Interests settings.
-          select_spaces: Select spaces to segment the newsletter
-          select_users: Select which users you want to send the newsletter
-          title: Select recipients to deliver
-          warning: "<strong>Attention:</strong> This newsletter will only be send to users that have activated <em>I want to receive newsletters</em> in their notifications settings."
+          all_spaces: Wote
+          all_users_help: Inatuma jarida kwa watumiaji wote waliothibitishwa.
+          confirm_deliver: Je, una uhakika unataka kuwasilisha jarida hili? Kitendo hiki hakiwezi kutenduliwa.
+          deliver: Peana jarida
+          followers_help: Hutuma jarida kwa watumiaji wote waliothibitishwa wanaofuata nafasi zozote shirikishi zilizochaguliwa kwenye orodha.
+          none: Hakuna
+          participants_help: Hutuma jarida kwa watumiaji wote waliothibitishwa ambao wameshiriki katika nafasi yoyote shirikishi iliyochaguliwa kwenye orodha.
+          recipients_count: Jarida hili litatumwa kwa <strong id='recipients_count'>%{count}</strong> watumiaji.
+          scopes_help: Hutuma jarida kwa watumiaji ambao wamewezesha upeo wowote uliochaguliwa katika mipangilio ya akaunti yao ya "Maslahi Yangu".
+          select_scopes: Kichujio cha watumiaji ambao wamewasha upeo wowote waliochaguliwa katika mipangilio ya akaunti yao ya Maslahi Yangu.
+          select_spaces: Chagua nafasi ili kugawa jarida
+          select_users: Chagua watumiaji gani unataka kutuma jarida
+          title: Chagua wapokeaji wa kuwasilisha
+          warning: "<strong>Tahadhari:</strong> Jarida hili litatumwa tu kwa watumiaji ambao wamewasha <em>Nataka kupokea majarida</em> katika mipangilio yao ya arifa."
         send:
-          no_recipients: No recipients for this selection.
+          no_recipients: Hakuna wapokeaji wa uteuzi huu.
         send_to_user:
-          sent_successfully: Newsletter has been sent successfully to %{email}
+          sent_successfully: Jarida limetumwa kwa %{email}
         show:
-          preview: Preview
-          select_recipients_to_deliver: Select recipients to deliver
-          send_me_a_test_email: Send me a test email
-          subject: Subject
+          preview: Hakiki
+          select_recipients_to_deliver: Chagua wapokeaji wa kuwasilisha
+          send_me_a_test_email: Nitumie barua pepe ya majaribio
+          subject: Somo
         update:
-          error: There was a problem updating this newsletter.
-          success: Newsletter updated successfully. Please review it before sending.
+          error: Kulikuwa na tatizo la kusasisha jarida hili.
+          success: Jarida limesasishwa. Tafadhali ihakiki kabla ya kutuma.
       officializations:
         block:
-          error: There was an error blocking the participant.
-          success: Participant successfully blocked.
+          error: Kulikuwa na hitilafu katika kumzuia mshiriki.
+          success: Mshiriki amezuiwa.
         create:
-          success: Participant successfully officialized.
+          success: Mshiriki alifaulu rasmi.
         destroy:
-          success: Participant successfully unofficialized.
+          success: Mshiriki amefaulu kuwa rasmi.
         index:
-          actions: Actions
-          badge: Badge
-          block: Block User
-          created_at: Created At
-          name: Name
-          nickname: Nickname
-          not_officialized: Not officialized
-          officialize: Officialize
-          officialized: Officialized
-          reofficialize: Reofficialize
-          reports: Reports
-          show_email: Show email address
-          status: Status
-          unblock: Unblock User
-          unofficialize: Unofficialize
+          actions: Vitendo
+          badge: Beji
+          block: Zuia Mtumiaji
+          created_at: Imeundwa Katika
+          name: Jina
+          nickname: Jina la utani
+          not_officialized: Si rasmi
+          officialize: Rasmishwa
+          officialized: Imewekwa rasmi
+          reofficialize: Kurasimisha upya
+          reports: Ripoti
+          show_email: Onyesha anwani ya barua pepe
+          status: Hali
+          unblock: Ondoa kizuizi kwa Mtumiaji
+          unofficialize: Usiwe rasmi
         new:
-          badge: Officialization badge
-          officialize: Officialize
-          title: Officialize participant "%{name}"
+          badge: Beji ya kurasimisha
+          officialize: Rasmishwa
+          title: Rasmisha mshiriki "%{name}"
         show_email_modal:
-          description: If you need to contact a participant directly, you can click on the Show button to see their email address. This action will be logged.
-          email_address: Email address
-          full_name: Full name
-          hidden: hidden
-          show: Show
-          title: Show participant's email address
+          description: Ikiwa unahitaji kuwasiliana na mshiriki moja kwa moja, unaweza kubofya kitufe cha Onyesha ili kuona anwani yake ya barua pepe. Kitendo hiki kitawekwa.
+          email_address: Anwani ya barua pepe
+          full_name: Jina kamili
+          hidden: siri
+          show: Onyesha
+          title: Onyesha anwani ya barua pepe ya mshiriki
         unblock:
-          error: There was an error unblocking the participant.
-          success: Participant successfully unblocked.
+          error: Kulikuwa na hitilafu katika kumfungulia mshiriki.
+          success: Mshiriki amefanikiwa kufungua.
       organization:
         edit:
-          title: Edit organization
-          update: Update
+          title: Badilisha shirika
+          update: Sasisha
         form:
           facebook: Facebook
           github: GitHub
           instagram: Instagram
-          rich_text_editor_in_public_views_help: In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
-          social_handlers: Social
+          rich_text_editor_in_public_views_help: Katika baadhi ya maeneo ya maandishi, washiriki wataweza kuingiza baadhi ya lebo za HTML kwa kutumia kihariri cha maandishi tajiri.
+          social_handlers: Kijamii
           twitter: X
           url: URL
           youtube: YouTube
         update:
-          error: There was a problem updating this organization.
-          success: Organization updated successfully.
+          error: Kulikuwa na tatizo la kusasisha shirika hili.
+          success: Shirika limesasishwa.
       organization_appearance:
         edit:
-          update: Update
+          update: Sasisha
         form:
           colors:
-            choose_color: Choose a primary color
-            colors_title: Organization colors
-            colors_warning_html: Warning! Changing these colors can break the accessibility contrasts. You can check the contrast of your choosing with <a href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</a> or other similar tools.
-            explanation: This tool helps you out to choose a color scheme, made up of hues equally spaced around the color wheel, that will be used in the organization's website.
-            legend_html: Main application colors, based on the <a href="https://www.color-meanings.com/triadic-colors/">Triadic algorithm</a>. The <i>secondary</i> color is auto-calculated from the primary color and the saturation you chose.
-            saturation: Saturation
-            title: Color chooser
-            update_suggested_colors: Update suggested colors
-          cta_button_path_help_html: 'You can overwrite where the Call To Action button in the homepage links to. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. The Call To Action button is shown in the homepage between the welcome text and the description. Example: %{url}'
+            choose_color: Chagua rangi ya msingi
+            colors_title: Rangi za shirika
+            colors_warning_html: Onyo! Kubadilisha rangi hizi kunaweza kuvunja utofauti wa ufikivu. Unaweza kuangalia utofauti wa chaguo lako kwa <a href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</a> au zana zingine zinazofanana.
+            explanation: Zana hii inakusaidia kuchagua mpango wa rangi, unaojumuisha rangi zilizowekwa kwa usawa karibu na gurudumu la rangi, ambazo zitatumika kwenye tovuti ya shirika.
+            legend_html: Rangi kuu za programu, kulingana na <a href="https://www.color-meanings.com/triadic-colors/">algorithm ya Triadic</a>. Rangi <i>ya pili</i> huhesabiwa kiotomatiki kutoka kwa rangi msingi na mjazo uliochagua.
+            saturation: Kueneza
+            title: Kichagua rangi
+            update_suggested_colors: Sasisha rangi zilizopendekezwa
+          cta_button_path_help_html: 'Unaweza kubatilisha ambapo kitufe cha Wito wa Kuchukua Hatua katika ukurasa wa nyumbani kinaunganishwa. Tumia njia zisizo kamili, sio URL kamili hapa. Inakubali herufi, nambari, deshi na mikwaruzo, na lazima ianze na herufi. Kitufe cha Wito wa Kuchukua Hatua kinaonyeshwa katika ukurasa wa nyumbani kati ya maandishi ya kukaribisha na maelezo. Mfano: %{url}'
           cta_button_text_help: You can overwrite the Call To Action button text in the homepage for each available language in your organization. If not set, the default value will be used. The Call To Action button is shown in the homepage between the welcome text and the description.
           header_snippets:
             header_snippets_help_html: Use this field to add things to the HTML head. The most common use is to integrate third-party services that require some extra JavaScript or CSS. Also, you can use it to add extra meta tags to the HTML. Note that this will only be rendered in public pages, not in the admin section. If the code interacts with external APIs or does not comply with the application security guidelines, it will be necessary to change the Content Security Policy. Read more about <a href="https://docs.decidim.org/develop/en/customize/content_security_policy">on the documentation site</a> .
