@@ -273,20 +273,20 @@ sw:
         result_progress_updated:
           email_intro: 'The result "%{resource_title}", which includes the proposal "%{proposal_title}", is now %{progress}% complete. You can see it from this page:'
           email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}", na pendekezo hili limejumuishwa kwenye matokeo "%{resource_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
-          email_subject: An update to %{resource_title} progress
-          notification_title: The result <a href="%{resource_path}">%{resource_title}</a>, which includes the proposal <a href="%{proposal_path}">%{proposal_title}</a>, is now %{progress}% complete.
+          email_subject: Sasisho la maendeleo ya %{resource_title}
+          notification_title: Matokeo <a href="%{resource_path}">%{resource_title}</a>, ambayo ni pamoja na pendekezo <a href="%{proposal_path}">%{proposal_title}</a>, sasa ni %{progress}% imekamilika.
     metrics:
       results:
-        description: Number of results generated
-        object: results
-        title: Results
+        description: Idadi ya matokeo yaliyotolewa
+        object: matokeo
+        title: Matokeo
     participatory_spaces:
       highlighted_results:
-        see_all: See all results
+        see_all: Tazama matokeo yote
     resource_links:
       included_projects:
-        result_project: Projects included in this result
+        result_project: Miradi iliyojumuishwa katika matokeo haya
       included_proposals:
-        result_proposal: Proposals included in this result
+        result_proposal: Mapendekezo yaliyojumuishwa katika matokeo haya
     statistics:
-      results_count: Results
+      results_count: Matokeo
