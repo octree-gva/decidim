@@ -3,18 +3,18 @@ sw:
   activemodel:
     attributes:
       assemblies_type:
-        title: Title
+        title: Kichwa
       assembly:
-        announcement: Announcement
-        area_id: Area
-        assembly_type: Assembly type
-        assembly_type_other: Assembly type other
-        banner_image: Banner image
-        closing_date: Closing date
-        closing_date_reason: Closing date reason
-        composition: Composition
-        copy_categories: Copy categories
-        copy_components: Copy components
+        announcement: Tangazo
+        area_id: Eneo
+        assembly_type: Aina ya mkusanyiko
+        assembly_type_other: Aina nyingine ya mkusanyiko
+        banner_image: Picha ya bango
+        closing_date: Tarehe ya kufunga
+        closing_date_reason: Sababu ya tarehe ya kufunga
+        composition: Muundo
+        copy_categories: Nakili kategoria
+        copy_components: Nakili vipengele
         copy_features: Copy features
         created_by: Created by
         created_by_other: Created by other
