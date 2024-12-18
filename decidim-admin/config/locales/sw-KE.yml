@@ -3,56 +3,56 @@ sw:
   activemodel:
     attributes:
       area:
-        area_type: Area type
-        name: Name
-        organization: Organization
+        area_type: Aina ya eneo
+        name: Jina
+        organization: Shirika
       area_type:
-        name: Name
-        organization: Organization
-        plural: Plural
+        name: Jina
+        organization: Shirika
+        plural: Wingi
       attachment:
-        attachment_collection_id: Folder
-        description: Description
-        file: File
-        title: Attachment or image name
-        weight: Order position
+        attachment_collection_id: Folda
+        description: Maelezo
+        file: Faili
+        title: Kiambatisho au jina la picha
+        weight: Nafasi ya agizo
       attachment_collection:
-        description: Description
-        name: Name
-        weight: Order position
+        description: Maelezo
+        name: Jina
+        weight: Nafasi ya agizo
       category:
-        description: Description
-        name: Name
-        parent_id: Parent
-        weight: Order position
+        description: Maelezo
+        name: Jina
+        parent_id: Mzazi
+        weight: Nafasi ya agizo
       component:
-        name: Name
-        published_at: Published at
-        weight: Order position
+        name: Jina
+        published_at: Iliyochapishwa saa
+        weight: Nafasi ya agizo
       external_domain:
-        value: Value
+        value: Thamani
       help_section:
-        content: Content
+        content: Maudhui
       id: ID
       import:
-        user_group_id: Create imports as
+        user_group_id: Unda uagizaji kama
       newsletter:
-        body: Body
-        send_to_all_users: Send to all users
-        send_to_followers: Send to followers
-        send_to_participants: Send to participants
-        subject: Subject
+        body: Mwili
+        send_to_all_users: Tuma kwa watumiaji wote
+        send_to_followers: Tuma kwa wafuasi
+        send_to_participants: Tuma kwa washiriki
+        subject: Somo
       organization:
-        admin_terms_of_service_body: Body for the admin terms of service
-        alert_color: Alert
-        available_authorizations: Available authorizations
-        badges_enabled: Enable badges
-        comments_max_length: Comments max length (Leave 0 for default value)
-        cta_button_path: Call To Action button path
-        cta_button_text: Call To Action button text
-        customize_welcome_notification: Customize welcome notification
-        default_locale: Default locale
-        description: Description
+        admin_terms_of_service_body: Chombo cha sheria na masharti ya msimamizi
+        alert_color: Tahadhari
+        available_authorizations: Uidhinishaji unaopatikana
+        badges_enabled: Washa beji
+        comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+        cta_button_path: Njia ya kitufe cha Wito kwa Kitendo
+        cta_button_text: Maandishi ya kitufe cha Wito Kufanya Hatua
+        customize_welcome_notification: Badilisha arifa ya kukaribisha kukufaa
+        default_locale: Lugha chaguomsingi
+        description: Maelezo
         enable_omnipresent_banner: Show omnipresent banner
         enable_participatory_space_filters: Enable participatory space filters
         facebook_handler: Facebook handler
@@ -104,170 +104,170 @@ sw:
         welcome_notification_subject: Welcome notification subject
         youtube_handler: YouTube handler
       participatory_space_private_user:
-        email: Email
-        name: Name
+        email: Barua pepe
+        name: Jina
       scope:
-        code: Code
-        name: Name
-        organization: Organization
-        parent_id: Parent
-        scope_type: Scope type
-        scope_type_id: Scope type
+        code: Kanuni
+        name: Jina
+        organization: Shirika
+        parent_id: Mzazi
+        scope_type: Aina ya upeo
+        scope_type_id: Aina ya upeo
       scope_type:
-        name: Name
-        organization: Organization
-        plural: Plural
+        name: Jina
+        organization: Shirika
+        plural: Wingi
       settings:
-        scope_id: Scope
+        scope_id: Upeo
       static_page:
-        allow_public_access: Allow access without authentication
-        changed_notably: There have been noticeable changes.
-        content: Content
-        organization: Organization
-        show_in_footer: Show in the footer
-        slug: URL slug
-        title: Title
-        topic_id: Topic
-        weight: Order position
+        allow_public_access: Ruhusu ufikiaji bila uthibitishaji
+        changed_notably: Kumekuwa na mabadiliko yanayoonekana.
+        content: Maudhui
+        organization: Shirika
+        show_in_footer: Onyesha kwenye kijachini
+        slug: Uvimbe wa URL
+        title: Kichwa
+        topic_id: Mada
+        weight: Nafasi ya agizo
       static_page_topic:
-        description: Description
-        name: Topic name
-        show_in_footer: Show in the footer
-        title: Title
-        weight: Order position
+        description: Maelezo
+        name: Jina la mada
+        show_in_footer: Onyesha kwenye kijachini
+        title: Kichwa
+        weight: Nafasi ya agizo
       user_group_csv_verification:
-        file: File
+        file: Faili
     errors:
       models:
         newsletter:
           attributes:
             base:
-              at_least_one_space: Select at least one participatory space.
+              at_least_one_space: Chagua angalau nafasi moja ya ushiriki.
         organization:
           attributes:
             official_img_footer:
-              allowed_file_content_types: Invalid image file
+              allowed_file_content_types: Faili ya picha si sahihi
         participatory_space_private_user_csv_import:
           attributes:
             file:
-              malformed: Malformed import file, please read through the instructions carefully and make sure the file is UTF-8 encoded.
+              malformed: Faili ya kuleta yenye hitilafu, tafadhali soma maagizo kwa makini na uhakikishe kuwa faili imesimbwa UTF-8.
         user_group_csv_verification:
           attributes:
             file:
-              malformed: Malformed import file, please read through the instructions carefully and make sure the file is UTF-8 encoded.
+              malformed: Faili ya kuleta yenye hitilafu, tafadhali soma maagizo kwa makini na uhakikishe kuwa faili imesimbwa UTF-8.
       new_import:
         attributes:
           file:
-            invalid_file: Invalid file provided, please check that the file is correctly formatted.
-            invalid_mime_type: Invalid MIME type.
+            invalid_file: Faili batili iliyotolewa, tafadhali hakikisha kuwa faili imeumbizwa ipasavyo.
+            invalid_mime_type: Aina ya MIME si sahihi.
   activerecord:
     attributes:
       decidim/static_page:
-        content: Content
-        slug: URL slug
-        title: Title
+        content: Maudhui
+        slug: Uvimbe wa URL
+        title: Kichwa
       doorkeeper/application:
-        authorize_url: Authorize URL
-        client_id: Client ID
-        client_secret: Client Secret
-        organization_name: Organization name
-        organization_url: Organization URL
-        redirect_uri: Redirect URI
-        site: Website
+        authorize_url: Idhinisha URL
+        client_id: ID ya Mteja
+        client_secret: Siri ya Mteja
+        organization_name: Jina la shirika
+        organization_url: URL ya shirika
+        redirect_uri: Elekeza URI kwingine
+        site: Tovuti
   decidim:
     admin:
       actions:
-        add: Add
+        add: Ongeza
         attachment:
-          new: New attachment
+          new: Kiambatisho kipya
         attachment_collection:
-          new: New attachment folder
-        browse: Browse
+          new: Folda mpya ya kiambatisho
+        browse: Vinjari
         category:
-          new: New category
-        export: Export all
-        export-selection: Export selection
-        import: Import
-        manage: Manage
+          new: Kategoria mpya
+        export: Hamisha zote
+        export-selection: Uteuzi wa kuuza nje
+        import: Ingiza
+        manage: Dhibiti
         newsletter:
-          new: New newsletter
+          new: Jarida jipya
         participatory_space_private_user:
-          new: New participatory space private user
-        per_page: Per page
-        permissions: Permissions
-        reject: Reject
-        send_me_a_test_email: Send me a test email
-        share: Share
+          new: Mtumiaji wa kibinafsi wa nafasi shirikishi mpya
+        per_page: Kwa kila ukurasa
+        permissions: Ruhusa
+        reject: Kataa
+        send_me_a_test_email: Nitumie barua pepe ya majaribio
+        share: Shiriki
         user:
-          new: New admin
-        verify: Verify
+          new: Msimamizi mpya
+        verify: Thibitisha
       admin_terms_of_service:
         accept:
-          error: There was an error while accepting the admin terms of service.
-          success: Great! You have accepted the admin terms of service.
+          error: Kulikuwa na hitilafu wakati wa kukubali sheria na masharti ya msimamizi.
+          success: Kubwa! Umekubali sheria na masharti ya msimamizi.
         actions:
-          accept: I agree with the terms
-          are_you_sure: Are you sure you want to refuse the admin terms of service?
-          refuse: Refuse the admin terms
-          title: Agree to the terms of service
+          accept: Nakubaliana na masharti
+          are_you_sure: Je, una uhakika unataka kukataa sheria na masharti ya msimamizi?
+          refuse: Kataa masharti ya msimamizi
+          title: Kubali sheria na masharti
         required_review:
-          alert: 'Required: Review our admin terms of service'
-          callout: Please take a moment to review the admin terms of service. Otherwise you will not be able to manage the platform.
-          cta: Review them now.
-        title: Admin terms of service
+          alert: 'Inahitajika: Kagua sheria na masharti ya msimamizi wetu'
+          callout: Tafadhali chukua muda kukagua sheria na masharti ya msimamizi. Vinginevyo hutaweza kudhibiti jukwaa.
+          cta: Zikague sasa.
+        title: Masharti ya huduma ya msimamizi
       area_types:
         create:
-          error: There was a problem creating a new area type.
-          success: Area type created successfully.
+          error: Kulikuwa na tatizo la kuunda aina mpya ya eneo.
+          success: Aina ya eneo imeundwa kwa ufanisi.
         destroy:
-          success: Area type successfully destroyed.
+          success: Aina ya eneo imeharibiwa.
         edit:
-          title: Edit area type
-          update: Update
+          title: Badilisha aina ya eneo
+          update: Sasisha
         new:
-          create: Create area type
-          title: New area type
+          create: Unda aina ya eneo
+          title: Aina mpya ya eneo
         update:
-          error: There was a problem updating this area type.
-          success: Area type updated successfully.
+          error: Kulikuwa na tatizo la kusasisha aina hii ya eneo.
+          success: Aina ya eneo imesasishwa.
       areas:
         create:
-          error: There was a problem creating a new area.
-          success: Area created successfully.
+          error: Kulikuwa na tatizo la kuunda eneo jipya.
+          success: Eneo limeundwa.
         destroy:
-          has_spaces: This area has dependent spaces. Please make sure no Participatory Space references this area before deleting it.
-          success: Area successfully destroyed.
+          has_spaces: Eneo hili lina nafasi tegemezi. Tafadhali hakikisha hakuna Nafasi Shirikishi inayorejelea eneo hili kabla ya kulifuta.
+          success: Eneo limeharibiwa.
         edit:
-          title: Edit area
-          update: Update
+          title: Badilisha eneo
+          update: Sasisha
         new:
-          create: Create area
-          title: New area
-        no_areas: No Areas
+          create: Unda eneo
+          title: Eneo jipya
+        no_areas: Hakuna Maeneo
         update:
-          error: There was a problem updating this area.
-          success: Area updated successfully.
+          error: Kulikuwa na tatizo la kusasisha eneo hili.
+          success: Eneo limesasishwa.
       attachment_collections:
         create:
-          error: There was a problem creating a new folder.
-          success: Folder created successfully.
+          error: Kulikuwa na tatizo la kuunda folda mpya.
+          success: Folda imeundwa.
         destroy:
-          success: Folder destroyed successfully.
+          success: Folda imeharibiwa.
         edit:
-          title: Edit folder
-          update: Update
+          title: Badilisha folda
+          update: Sasisha
         index:
-          attachment_collections_title: Attachment folders
+          attachment_collections_title: Folda za viambatisho
         new:
-          create: Create
-          title: New folder
+          create: Unda
+          title: Folda mpya
         update:
-          error: There was a problem updating this folder.
-          success: Folder updated successfully.
+          error: Kulikuwa na tatizo la kusasisha folda hii.
+          success: Folda imesasishwa.
       attachments:
         create:
-          error: There was a problem creating a new attachment.
-          success: Attachment created successfully.
+          error: Kulikuwa na tatizo la kuunda kiambatisho kipya.
+          success: Kiambatisho kimeundwa.
         destroy:
           success: Attachment destroyed successfully.
         edit:
