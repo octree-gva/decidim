@@ -53,55 +53,55 @@ sw:
         customize_welcome_notification: Badilisha arifa ya kukaribisha kukufaa
         default_locale: Lugha chaguomsingi
         description: Maelezo
-        enable_omnipresent_banner: Show omnipresent banner
-        enable_participatory_space_filters: Enable participatory space filters
+        enable_omnipresent_banner: Onyesha bango lililo kila mahali
+        enable_participatory_space_filters: Washa vichujio vya nafasi shirikishi
         facebook_handler: Facebook handler
-        favicon: Icon
-        force_authentication: Force authentication
-        force_users_to_authenticate_before_access_organization: Force users to authenticate before access organization
-        from: Sender's email address
+        favicon: Aikoni
+        force_authentication: Lazimisha uthibitishaji
+        force_users_to_authenticate_before_access_organization: Lazimisha watumiaji kuthibitisha kabla ya kufikia shirika
+        from: Anwani ya barua pepe ya mtumaji
         github_handler: GitHub handler
-        header_snippets: Header snippets
-        highlight_alternative_color: Highlight, alternative
-        highlight_color: Highlight
-        highlighted_content_banner_action_subtitle: Action button subtitle
+        header_snippets: Vijisehemu vya kichwa
+        highlight_alternative_color: Angazia, mbadala
+        highlight_color: Angazia
+        highlighted_content_banner_action_subtitle: Manukuu ya kitufe cha kitendo
         highlighted_content_banner_action_title: Action button title
-        highlighted_content_banner_action_url: Action button URL
-        highlighted_content_banner_enabled: Show the highlighted content banner
-        highlighted_content_banner_image: Image
-        highlighted_content_banner_short_description: Short description
-        highlighted_content_banner_title: Title
-        host: Host
+        highlighted_content_banner_action_url: URL ya kitufe cha kitendo
+        highlighted_content_banner_enabled: Onyesha bango la maudhui lililoangaziwa
+        highlighted_content_banner_image: Picha
+        highlighted_content_banner_short_description: Maelezo mafupi
+        highlighted_content_banner_title: Kichwa
+        host: Mwenyeji
         instagram_handler: Instagram handler
-        logo: Logo
-        machine_translation_display_priority: Machine translation display priority
-        machine_translation_display_priority_original: Original text first
-        machine_translation_display_priority_translation: Translated text first
-        name: Name
-        official_img_footer: Official logo footer
-        official_url: Official organization URL
-        omnipresent_banner_short_description: Short description
-        omnipresent_banner_title: Title
+        logo: Nembo
+        machine_translation_display_priority: Kipaumbele cha onyesho la utafsiri wa mashine
+        machine_translation_display_priority_original: Maandishi asilia kwanza
+        machine_translation_display_priority_translation: Maandishi yaliyotafsiriwa kwanza
+        name: Jina
+        official_img_footer: Kijachini cha nembo rasmi
+        official_url: URL ya shirika rasmi
+        omnipresent_banner_short_description: Maelezo mafupi
+        omnipresent_banner_title: Kichwa
         omnipresent_banner_url: URL
-        organization_admin_email: Organization admin email
-        organization_admin_name: Organization admin name
-        organization_locales: Organization locales
-        primary_color: Primary
-        reference_prefix: Reference prefix
-        rich_text_editor_in_public_views: Enable rich text editor for participants
-        secondary_color: Secondary
-        secondary_hosts: Secondary hosts
-        send_welcome_notification: Send welcome notification
-        success_color: Success
-        tertiary_color: Tertiary
-        time_zone: Time Zone
-        tos_version: Terms of service version
+        organization_admin_email: Barua pepe ya msimamizi wa shirika
+        organization_admin_name: Jina la msimamizi wa shirika
+        organization_locales: Maeneo ya shirika
+        primary_color: Msingi
+        reference_prefix: Kiambishi awali cha marejeleo
+        rich_text_editor_in_public_views: Washa kihariri cha maandishi tajiri kwa washiriki
+        secondary_color: Sekondari
+        secondary_hosts: Wenyeji wa sekondari
+        send_welcome_notification: Tuma arifa ya kukaribisha
+        success_color: Mafanikio
+        tertiary_color: Elimu ya juu
+        time_zone: Eneo la Saa
+        tos_version: Toleo la Masharti ya huduma
         twitter_handler: X handler
-        user_groups_enabled: Enable groups
-        users_registration_mode: Users registration mode
-        warning_color: Warning
-        welcome_notification_body: Welcome notification body
-        welcome_notification_subject: Welcome notification subject
+        user_groups_enabled: Washa vikundi
+        users_registration_mode: Hali ya usajili wa watumiaji
+        warning_color: Onyo
+        welcome_notification_body: Mwili wa arifa za kukaribisha
+        welcome_notification_subject: Somo la arifa ya kukaribisha
         youtube_handler: YouTube handler
       participatory_space_private_user:
         email: Barua pepe
