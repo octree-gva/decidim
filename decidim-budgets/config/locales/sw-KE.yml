@@ -368,21 +368,21 @@ sw:
         budget_published:
           email_intro: 'Bajeti ya %{resource_title} sasa inatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
           email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
-          email_subject: The %{resource_title} budget is now active for %{participatory_space_title}.
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> budget is now active for %{participatory_space_title}.
+          email_subject: Bajeti ya %{resource_title} sasa inatumika kwa %{participatory_space_title}.
+          notification_title: Bajeti ya <a href="%{resource_path}">%{resource_title}</a> sasa inatumika kwa %{participatory_space_title}.
     orders:
       checkout:
-        error: There was a problem processing your vote.
-        success_html: <p>Your vote has been successfully accepted.</p> <p class="text-sm font-normal">You can explore the <a class="text-secondary underline" href="%{rest_of_budgets_link}">rest of budgets</a>.</p>
-        success_no_left_budgets_html: Your vote has been successfully accepted.
+        error: Kulikuwa na tatizo kuchakata kura yako.
+        success_html: <p>Kura yako imekubaliwa kwa ufanisi.</p> <p class="text-sm font-normal">Unaweza kuchunguza <a class="text-secondary underline" href="%{rest_of_budgets_link}"> mapumziko ya bajeti</a>.</p>
+        success_no_left_budgets_html: Kura yako imekubaliwa.
       destroy:
-        error: There was a problem canceling your vote.
-        success: Your vote has been successfully canceled.
+        error: Kulikuwa na tatizo katika kughairi kura yako.
+        success: Kura yako imeghairiwa.
     resource_links:
       included_proposals:
-        project_proposal: Proposals included in this project
+        project_proposal: Mapendekezo yaliyojumuishwa katika mradi huu
     statistics:
-      orders_count: Supports
-      projects_count: Projects
+      orders_count: Inasaidia
+      projects_count: Miradi
   index:
-    confirmed_orders_count: Votes count
+    confirmed_orders_count: Idadi ya kura
