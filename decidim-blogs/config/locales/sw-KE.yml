@@ -19,80 +19,80 @@ sw:
       actions:
         author_id: Unda chapisho kama
         confirm_destroy: Je, una uhakika unataka kufuta chapisho hili?
-        destroy: Delete
-        edit: Edit
-        new: New post
-        title: Actions
+        destroy: Futa
+        edit: Hariri
+        new: Chapisho jipya
+        title: Vitendo
       admin:
         posts:
           create:
-            invalid: There was a problem creating this post.
-            success: Post successfully created.
+            invalid: Kulikuwa na tatizo kuunda chapisho hili.
+            success: Chapisho limeundwa.
           destroy:
-            success: Post successfully deleted.
+            success: Chapisho limefutwa.
           edit:
-            save: Update
-            title: Edit post
+            save: Sasisha
+            title: Badilisha chapisho
           index:
-            not_published_yet: Not published yet.
-            title: Posts
+            not_published_yet: Bado haijachapishwa.
+            title: Machapisho
           new:
-            create: Create
-            title: Create post
+            create: Unda
+            title: Unda chapisho
           update:
-            invalid: There was a problem saving the post.
-            success: Post successfully saved.
+            invalid: Kulikuwa na tatizo katika kuhifadhi chapisho.
+            success: Chapisho limehifadhiwa.
       admin_log:
         post:
-          create: "%{user_name} created the %{resource_name} blog post in %{space_name}"
-          delete: "%{user_name} deleted the %{resource_name} blog post from %{space_name}"
-          update: "%{user_name} updated the %{resource_name} blog post in %{space_name}"
+          create: "%{user_name} aliunda chapisho la blogu la %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alifuta chapisho la blogu %{resource_name} kutoka %{space_name}"
+          update: "%{user_name} alisasisha %{resource_name} chapisho la blogu katika %{space_name}"
       content_blocks:
         highlighted_posts:
-          last_published: Last published
-          name: Posts
-          see_all: See all posts
+          last_published: Ilichapishwa mwisho
+          name: Machapisho
+          see_all: Tazama machapisho yote
       last_activity:
-        new_post: 'New post:'
+        new_post: 'Chapisho jipya:'
       models:
         post:
           fields:
-            author: Author
-            body: Body
-            official_blog_post: Official post
-            published_at: Publish time
-            title: Title
+            author: Mwandishi
+            body: Mwili
+            official_blog_post: Chapisho rasmi
+            published_at: Wakati wa kuchapisha
+            title: Kichwa
       posts:
         index:
           count:
-            one: "%{count} post"
-            other: "%{count} posts"
-          empty: There are no posts yet.
+            one: " %{count} Chapisho"
+            other: "%{count} Machapisho "
+          empty: Bado hakuna machapisho.
     components:
       blogs:
         actions:
-          comment: Comment
-          create: Create
-          destroy: Delete
-          endorse: Endorse
-          update: Update
-        name: Blog
+          comment: Maoni
+          create: Unda
+          destroy: Futa
+          endorse: Thibitisha
+          update: Sasisha
+        name: Blogu
         settings:
           global:
-            announcement: Announcement
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
           step:
-            announcement: Announcement
-            comments_blocked: Comments blocked
-            endorsements_blocked: Endorsements blocked
-            endorsements_enabled: Endorsements enabled
+            announcement: Tangazo
+            comments_blocked: Maoni yamezuiwa
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
     events:
       blogs:
         post_created:
-          email_intro: The post "%{resource_title}" has been published in "%{participatory_space_title}" that you are following.
-          email_outro: You have received this notification because you are following "%{participatory_space_title}". You can unfollow it from the previous link.
-          email_subject: New post published in %{participatory_space_title}
-          notification_title: The post <a href="%{resource_path}">%{resource_title}</a> has been published in %{participatory_space_title}
+          email_intro: Chapisho "%{resource_title}" limechapishwa katika "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Chapisho jipya lililochapishwa katika %{participatory_space_title}
+          notification_title: Chapisho <a href="%{resource_path}">%{resource_title}</a> limechapishwa katika %{participatory_space_title}
     statistics:
-      posts_count: Posts
+      posts_count: Machapisho
