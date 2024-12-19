@@ -3,9 +3,9 @@ sw:
   activemodel:
     attributes:
       budget:
-        decidim_scope_id: Scope
-        description: Description
-        title: Title
+        decidim_scope_id: Upeo
+        description: Maelezo
+        title: Kichwa
         total_budget: Total budget
         weight: Order position
       project:
