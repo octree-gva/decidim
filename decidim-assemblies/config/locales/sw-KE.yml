@@ -15,446 +15,446 @@ sw:
         composition: Muundo
         copy_categories: Nakili kategoria
         copy_components: Nakili vipengele
-        copy_features: Copy features
-        created_by: Created by
-        created_by_other: Created by other
-        creation_date: Date created
-        decidim_area_id: Area
-        decidim_assemblies_type_id: Assembly type
-        decidim_scope_id: Scope
-        description: Description
-        developer_group: Promoter group
-        document: Document
-        domain: Domain
-        duration: Duration
+        copy_features: Nakili vipengele
+        created_by: Imeundwa na
+        created_by_other: Imeundwa na wengine
+        creation_date: Tarehe iliyoundwa
+        decidim_area_id: Eneo
+        decidim_assemblies_type_id: Aina ya mkusanyiko
+        decidim_scope_id: Upeo
+        description: Maelezo
+        developer_group: Kikundi cha wakuzaji
+        document: Hati
+        domain: Kikoa
+        duration: Muda
         facebook: Facebook
         github: GitHub
         hashtag: Hashtag
-        hero_image: Home image
-        import_attachments: Import attachments
-        import_categories: Import categories
-        import_components: Import components
-        included_at: Included at
+        hero_image: Picha ya nyumbani
+        import_attachments: Ingiza viambatisho
+        import_categories: Ingiza kategoria
+        import_components: Ingiza vipengele
+        included_at: Imejumuishwa katika
         instagram: Instagram
-        internal_organisation: Internal organisation
-        is_transparent: Is transparent
-        local_area: Organization area
-        meta_scope: Scope metadata
-        parent_id: Parent assembly
-        participatory_processes_ids: Related participatory processes
-        participatory_scope: What is decided
-        participatory_structure: How is it decided
-        private_space: Private space
-        promoted: Highlighted
-        published_at: Published at
-        purpose_of_action: Purpose of action
-        scope_id: Scope
-        scopes_enabled: Scopes enabled
-        short_description: Short description
+        internal_organisation: Shirika la ndani
+        is_transparent: Ni wazi
+        local_area: Eneo la shirika
+        meta_scope: Metadata ya upeo
+        parent_id: Mkutano wa wazazi
+        participatory_processes_ids: Michakato shirikishi inayohusiana
+        participatory_scope: Nini kinaamuliwa
+        participatory_structure: Inaamuliwa vipi
+        private_space: Nafasi ya kibinafsi
+        promoted: Imeangaziwa
+        published_at: Iliyochapishwa saa
+        purpose_of_action: Kusudi la hatua
+        scope_id: Upeo
+        scopes_enabled: Upeo umewezeshwa
+        short_description: Maelezo mafupi
         slug: URL slug
-        special_features: Special features
-        subtitle: Subtitle
-        target: Who participates
-        title: Title
+        special_features: Vipengele maalum
+        subtitle: Manukuu
+        target: Nani anashiriki
+        title: Kichwa
         twitter: X
-        weight: Order position
+        weight: Nafasi ya agizo
         youtube: YouTube
       assembly_member:
-        birthday: Birthday
-        birthplace: Birthplace
-        ceased_date: Ceased date
-        designation_date: Designation date
-        full_name: Full name
-        gender: Gender
+        birthday: Siku ya kuzaliwa
+        birthplace: Mahali pa kuzaliwa
+        ceased_date: Tarehe ya kusimamishwa
+        designation_date: Tarehe ya kuteuliwa
+        full_name: Jina kamili
+        gender: Jinsia
         non_user_avatar: Avatar
-        position: Position
-        user_id: User or group
-        weight: Order position
+        position: Nafasi
+        user_id: Mtumiaji au kikundi
+        weight: Nafasi ya agizo
       assembly_user_role:
-        email: Email
-        name: Name
-        role: Role
+        email: Barua pepe
+        name: Jina
+        role: Jukumu
     errors:
       models:
         assembly:
           attributes:
             document:
-              allowed_file_content_types: 'Invalid document type. Only files with the following extensions are allowed: %{types}.'
+              allowed_file_content_types: 'Aina batili ya hati. Faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}.'
   activerecord:
     models:
       decidim/assembly:
-        one: Assembly
-        other: Assemblies
+        one: Bunge
+        other: Mikusanyiko
       decidim/assembly_member:
-        one: Assembly member
-        other: Assembly members
+        one: Mjumbe wa Bunge
+        other: Wajumbe wa Bunge
       decidim/assembly_user_role:
-        one: Assembly user role
-        other: Assembly user roles
+        one: Jukumu la mtumiaji wa mkusanyiko
+        other: Kusanya majukumu ya mtumiaji
   decidim:
     admin:
       actions:
-        import_assembly: Import
-        new_assembly: New assembly
-        new_assembly_member: New assembly member
-        new_assembly_type: New assembly type
-        new_assembly_user_role: New assembly admin
+        import_assembly: Ingiza
+        new_assembly: Mkutano mpya
+        new_assembly_member: Mjumbe mpya wa mkutano
+        new_assembly_type: Aina mpya ya mkusanyiko
+        new_assembly_user_role: Msimamizi mpya wa mkutano
       assemblies:
         create:
-          error: There was a problem creating a new assembly.
-          success: Assembly created successfully.
+          error: Kulikuwa na tatizo kuunda mkusanyiko mpya.
+          success: Mkutano umeundwa.
         edit:
-          update: Update
+          update: Sasisha
         index:
-          private: Private
-          public: Public
-          published: Published
-          unpublished: Unpublished
+          private: Privat
+          public: Hadharani
+          published: Imechapishwa
+          unpublished: Haijachapishwa
         new:
-          create: Create
-          title: New assembly
+          create: Unda
+          title: Mkutano mpya
         update:
-          error: There was a problem updating this assembly.
-          success: Assembly successfully updated.
+          error: Kulikuwa na tatizo la kusasisha mkusanyiko huu.
+          success: Mkusanyiko umesasishwa.
       assemblies_copies:
         create:
-          error: There was a problem duplicating this assembly.
-          success: Assembly successfully duplicated.
+          error: Kulikuwa na tatizo katika kunakili mkusanyiko huu.
+          success: Mkusanyiko umenakiliwa.
       assemblies_types:
         create:
-          error: There was a problem creating a new assembly type.
-          success: Assembly type created successfully.
+          error: Kulikuwa na tatizo la kuunda aina mpya ya mkusanyiko.
+          success: Aina ya mkusanyiko imeundwa.
         destroy:
-          success: Assembly type successfully deleted.
+          success: Aina ya mkusanyiko imefutwa.
         new:
-          create: Create
-          title: New assembly type
+          create: Unda
+          title: Aina mpya ya mkusanyiko
         update:
-          error: There was a problem updating this assembly type.
-          success: Assembly type successfully updated.
+          error: Kulikuwa na tatizo la kusasisha aina hii ya mkusanyiko.
+          success: Aina ya mkusanyiko imesasishwa.
       assembly_copies:
         new:
-          copy: Copy
-          select: Select which data you would like to duplicate
-          title: Duplicate assembly
+          copy: Nakili
+          select: Chagua data ambayo ungependa kurudia
+          title: Mkusanyiko wa nakala
       assembly_imports:
         create:
-          error: There was a problem importing this assembly.
-          success: Assembly successfully imported.
+          error: Kulikuwa na tatizo katika kuleta mkusanyiko huu.
+          success: Kikusanyiko kimefaulu kuletwa.
         new:
-          import: Import
-          select: Select which data you would like to import
-          title: Import assembly
+          import: Ingiza
+          select: Chagua data ambayo ungependa kuleta
+          title: Ingiza mkusanyiko
       assembly_members:
         create:
-          error: There was a problem adding a member for this assembly.
-          success: Member successfully created for this assembly.
+          error: Kulikuwa na tatizo la kuongeza mshiriki wa mkutano huu.
+          success: Mwanachama ameundwa kwa ajili ya mkutano huu.
         destroy:
-          success: Member successfully deleted for this assembly.
+          success: Mwanachama amefutwa kwa mkusanyiko huu.
         edit:
-          title: Update assembly member
-          update: Update
+          title: Sasisha mshiriki wa mkutano
+          update: Sasisha
         index:
-          assembly_members_title: Assembly members
+          assembly_members_title: Wajumbe wa Bunge
         new:
-          create: Create
-          title: New assembly member
+          create: Unda
+          title: Mjumbe mpya wa mkutano
         update:
-          error: There was a problem updating the member for this assembly.
-          success: Member successfully updated for this assembly.
+          error: Kulikuwa na tatizo la kusasisha mshiriki wa mkutano huu.
+          success: Mwanachama amesasishwa kwa mkutano huu.
       assembly_publications:
         create:
-          error: There was a problem publishing this assembly.
-          success: Assembly successfully published.
+          error: Kulikuwa na tatizo la kuchapisha mkusanyiko huu.
+          success: Bunge limechapishwa.
         destroy:
-          error: There was a problem unpublishing this assembly.
-          success: Assembly successfully unpublished.
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa mkusanyiko huu.
+          success: Bunge limebatilisha uchapishaji.
       assembly_user_roles:
         create:
-          error: There was a problem adding an admin for this assembly.
-          success: Admin successfully added to this assembly.
+          error: Kulikuwa na tatizo la kuongeza msimamizi wa mkusanyiko huu.
+          success: Msimamizi ameongezwa kwenye mkusanyiko huu.
         destroy:
-          success: Admin successfully removed from this assembly.
+          success: Msimamizi ameondolewa kwenye mkusanyiko huu.
         edit:
-          title: Update assembly admin
-          update: Update
+          title: Sasisha msimamizi wa mkusanyiko
+          update: Sasisha
         index:
-          assembly_admins_title: Assembly admins
+          assembly_admins_title: Wasimamizi wa Bunge
         new:
-          create: Create
-          title: New assembly admin
+          create: Unda
+          title: Msimamizi mpya wa mkutano
         update:
-          error: There was a problem updating an admin for this assembly.
-          success: Admin updated successfully for this assembly.
+          error: Kulikuwa na tatizo la kusasisha msimamizi wa mkusanyiko huu.
+          success: Msimamizi amesasisha kwa mkusanyiko huu.
       filters:
         ceased_date_not_null:
-          label: Ceased
+          label: Imekoma
           values:
-            'false': Not ceased
-            'true': Ceased
+            'false': Haijakoma
+            'true': Imekoma
         decidim_assemblies_type_id_eq:
-          label: Assembly type
+          label: Aina ya mkusanyiko
         search_placeholder:
-          full_name_or_user_name_or_user_nickname_cont: Search by name or nickname
+          full_name_or_user_name_or_user_nickname_cont: Tafuta kwa jina au lakabu
       menu:
-        assemblies: Assemblies
+        assemblies: Mikusanyiko
         assemblies_submenu:
-          assembly_admins: Assembly admins
-          assembly_members: Members
-          attachment_collections: Folders
-          attachment_files: Files
-          attachments: Attachments
-          categories: Categories
-          components: Components
-          info: About this assembly
-          landing_page: Landing page
-          moderations: Moderations
-          private_users: Private participants
-          see_assembly: See assembly
-        assemblies_types: Assemblies types
+          assembly_admins: Wasimamizi wa Bunge
+          assembly_members: Wanachama
+          attachment_collections: Folda
+          attachment_files: Faili
+          attachments: Viambatisho
+          categories: Kategoria
+          components: Vipengele
+          info: Kuhusu mkusanyiko huu
+          landing_page: Ukurasa wa kutua
+          moderations: Ukadiriaji
+          private_users: Washiriki binafsi
+          see_assembly: Tazama mkusanyiko
+        assemblies_types: Aina za mikusanyiko
       models:
         assemblies_types:
           fields:
-            created_at: Created at
-            title: Title
+            created_at: Imeundwa saa
+            title: Kichwa
         assembly:
           fields:
-            actions: Actions
-            created_at: Created at
-            private: Private
-            promoted: Highlighted
-            published: Published
-            title: Title
-          name: Assembly
+            actions: Vitendo
+            created_at: Imeundwa saa
+            private: Privat
+            promoted: Imeangaziwa
+            published: Imechapishwa
+            title: Kichwa
+          name: Bunge
         assembly_member:
           fields:
-            ceased_date: Ceased date
-            designation_date: Designation date
-            full_name: Name
-            position: Position
-          name: Member
+            ceased_date: Tarehe ya kusimamishwa
+            designation_date: Tarehe ya kuteuliwa
+            full_name: Jina
+            position: Nafasi
+          name: Mwanachama
           positions:
-            other: Other
-            president: President
-            secretary: Secretary
-            vice_president: Vice president
+            other: Nyingine
+            president: Rais
+            secretary: Katibu
+            vice_president: Makamu wa rais
         assembly_user_role:
           fields:
-            email: Email
-            name: Name
-            role: Role
-          name: Assembly admin
+            email: Barua pepe
+            name: Jina
+            role: Jukumu
+          name: Msimamizi wa Bunge
           roles:
-            admin: Administrator
-            collaborator: Collaborator
-            moderator: Moderator
-            valuator: Valuator
+            admin: Msimamizi
+            collaborator: Mshiriki
+            moderator: Msimamizi
+            valuator: Mthamini
       titles:
-        assemblies: Assemblies
-        assemblies_types: Assemblies types
+        assemblies: Mikusanyiko
+        assemblies_types: Aina za mikusanyiko
     admin_log:
       assembly:
-        create: "%{user_name} created the %{resource_name} assembly"
-        duplicate: "%{user_name} duplicated the %{resource_name} assembly"
-        export: "%{user_name} exported the %{resource_name} assembly"
-        import: "%{user_name} imported the %{resource_name} assembly"
-        publish: "%{user_name} published the %{resource_name} assembly"
-        unpublish: "%{user_name} unpublished the %{resource_name} assembly"
-        update: "%{user_name} updated the %{resource_name} assembly"
+        create: "%{user_name} aliunda mkusanyiko wa %{resource_name}"
+        duplicate: "%{user_name} imenakili mkusanyiko wa %{resource_name}"
+        export: "%{user_name} alihamisha mkusanyiko wa %{resource_name}"
+        import: "%{user_name} ilileta mkusanyiko wa %{resource_name}"
+        publish: "%{user_name} alichapisha mkusanyiko wa %{resource_name}"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa mkusanyiko wa %{resource_name}"
+        update: "%{user_name} alisasisha mkusanyiko wa %{resource_name}"
       assembly_member:
-        create: "%{user_name} created the %{resource_name} member in the %{space_name} assembly"
-        delete: "%{user_name} removed the %{resource_name} member from the %{space_name} assembly"
-        update: "%{user_name} updated the %{resource_name} member in the %{space_name} assembly"
+        create: "%{user_name} aliunda mwanachama %{resource_name} katika mkusanyiko wa %{space_name}"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kutoka kwa mkusanyiko wa %{space_name}"
+        update: "%{user_name} alisasisha mshiriki %{resource_name} katika mkusanyiko wa %{space_name}"
       assembly_setting:
-        update: "%{user_name} updated the assemblies settings"
+        update: "%{user_name} alisasisha mipangilio ya mikusanyiko"
       assembly_type:
-        create: "%{user_name} created the %{resource_name} assembly type"
-        delete: "%{user_name} removed the %{resource_name} assembly type"
-        publish: "%{user_name} published the %{resource_name} assembly type"
-        unpublish: "%{user_name} unpublished the %{resource_name} assembly type"
-        update: "%{user_name} updated the %{resource_name} assembly type"
+        create: "%{user_name} aliunda %{resource_name} aina ya mkusanyiko"
+        delete: "%{user_name} imeondoa aina ya mkusanyiko wa %{resource_name}"
+        publish: "%{user_name} alichapisha %{resource_name} aina ya mkusanyiko"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa %{resource_name} aina ya mkusanyiko"
+        update: "%{user_name} alisasisha aina ya mkusanyiko wa %{resource_name}"
       assembly_user_role:
-        create: "%{user_name} invited %{resource_name} to the %{space_name} assembly"
-        delete: "%{user_name} removed the participant %{resource_name} from the %{space_name} assembly"
-        update: "%{user_name} changed the role of %{resource_name} in the %{space_name} assembly"
+        create: "%{user_name} alialika %{resource_name} kwenye mkusanyiko wa %{space_name}"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kutoka kwa mkusanyiko wa %{space_name}"
+        update: "%{user_name} alibadilisha jukumu la %{resource_name} katika mkusanyiko wa %{space_name}"
     assemblies:
       admin:
         assemblies:
           form:
-            announcement_help: The text you enter here will be shown to the user right below the assembly information.
-            duration: Duration
-            duration_help: If the duration of this assembly is limited, select the end date. Otherwise, it will appear as indefinite.
-            filters: Filters
-            images: Images
-            included_at_help: Select the date when this assembly was added to the platform. It does not necessarily have to be the same as the creation date.
+            announcement_help: Maandishi utakayoingiza hapa yataonyeshwa kwa mtumiaji chini ya maelezo ya mkusanyiko.
+            duration: Muda
+            duration_help: Ikiwa muda wa mkusanyiko huu ni mdogo, chagua tarehe ya mwisho. Vinginevyo, itaonekana kama isiyo na kikomo.
+            filters: Vichujio
+            images: Picha
+            included_at_help: Chagua tarehe ambayo mkusanyiko huu uliongezwa kwenye jukwaa. Si lazima iwe sawa na tarehe ya uumbaji.
             metadata: Metadata
-            other: Other
-            select_a_created_by: Select a created by
-            select_an_area: Select an Area
-            select_an_assembly_type: Select an assembly type
-            select_parent_assembly: Select parent assembly
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this assembly. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
-            social_handlers: Social
-            title: General Information
-            visibility: Visibility
+            other: Nyingine
+            select_a_created_by: Chagua iliyoundwa na
+            select_an_area: Chagua Eneo
+            select_an_assembly_type: Chagua aina ya mkusanyiko
+            select_parent_assembly: Chagua mkusanyiko wa wazazi
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mkusanyiko huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+            social_handlers: Kijamii
+            title: Taarifa za Jumla
+            visibility: Mwonekano
         assemblies_types:
           form:
-            title: Edit assembly type
+            title: Badilisha aina ya mkusanyiko
         assembly_copies:
           form:
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this assembly. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mkusanyiko huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
         assembly_imports:
           form:
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this assembly. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mkusanyiko huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
         assembly_members:
           form:
-            existing_user: Existing participant
-            explanation: 'Guidance for image:'
-            image_guide: Preferably a portrait image that does not have any text.
-            non_user: Non participant
-            non_user_avatar_help: You should get the consent of the persons before publishing them as a member.
-            select_a_position: Select a position
-            select_user: Select a participant
-            user_type: Participant type
+            existing_user: Mshiriki aliyepo
+            explanation: 'Mwongozo wa picha:'
+            image_guide: Ikiwezekana picha ya wima ambayo haina maandishi yoyote.
+            non_user: Asiyeshiriki
+            non_user_avatar_help: Unapaswa kupata idhini ya watu kabla ya kuwachapisha kama mwanachama.
+            select_a_position: Chagua nafasi
+            select_user: Chagua mshiriki
+            user_type: Aina ya mshiriki
         content_blocks:
           highlighted_assemblies:
-            max_results: Maximum amount of elements to show
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
         new_import:
           accepted_types:
             json: JSON
       assemblies:
         description:
-          area_name: Area
-          closing_date: Closing date
-          created_by: Created by
-          creation_date: Date created
-          data: Assembly data
-          developer_group: Promoter group
-          duration: Duration
-          included_at: Included at
-          indefinite_duration: Indefinite
-          local_area: Organization Area
-          meta_scope: Scope
-          participatory_scope: What is decided
-          participatory_structure: How is it decided
-          target: Who participates
-          title: About this assembly
+          area_name: Eneo
+          closing_date: Tarehe ya kufunga
+          created_by: Imeundwa na
+          creation_date: Tarehe iliyoundwa
+          data: Data ya mkusanyiko
+          developer_group: Kikundi cha wakuzaji
+          duration: Muda
+          included_at: Imejumuishwa katika
+          indefinite_duration: Isiyo na kikomo
+          local_area: Eneo la Shirika
+          meta_scope: Upeo
+          participatory_scope: Nini kinaamuliwa
+          participatory_structure: Inaamuliwa vipi
+          target: Nani anashiriki
+          title: Kuhusu mkusanyiko huu
         filters:
           names:
-            all: All
-          type: Type
+            all: Wote
+          type: Aina
         show:
-          title: About this assembly
+          title: Kuhusu mkusanyiko huu
       assembly_members:
         index:
-          members: Members
+          members: Wanachama
       assembly_types:
-        commission: Comission
-        consultative_advisory: Consultative/Advisory
-        executive: Executive
-        government: Government
-        others: Others
-        participatory: Participatory
-        working_group: Working group
+        commission: Tume
+        consultative_advisory: Ushauri
+        executive: Mtendaji
+        government: Serikali
+        others: Wengine
+        participatory: Shirikishi
+        working_group: Kikundi cha kazi
       content_blocks:
         children_assemblies:
-          name: Assemblies
+          name: Mikusanyiko
         dates_metadata:
-          name: Dates metadata
+          name: Metadata ya tarehe
         extra_data:
-          name: Type & duration
+          name: Aina na muda
         highlighted_assemblies:
-          name: Highlighted assemblies
+          name: Makusanyiko yaliyoangaziwa
         related_assemblies:
-          name: Related assemblies
+          name: Makusanyiko yanayohusiana
       created_by:
-        city_council: City Council
-        others: Others
-        public: Public
+        city_council: Halmashauri ya Jiji
+        others: Wengine
+        public: Hadharani
       filter:
-        all: All types
-        commission: Commission
-        consultative_advisory: Consultative/Advisory
-        executive: Executive
-        government: Government
-        help: 'Show:'
-        others: Others
-        participatory: Participatory
-        working_group: Working group
+        all: Aina zote
+        commission: Tume
+        consultative_advisory: Ushauri
+        executive: Mtendaji
+        government: Serikali
+        help: 'Onyesha:'
+        others: Wengine
+        participatory: Shirikishi
+        working_group: Kikundi cha kazi
       index:
-        title: Assemblies
+        title: Mikusanyiko
       last_activity:
-        new_assembly: 'New assembly:'
+        new_assembly: 'Mkutano mpya:'
       pages:
         home:
           highlighted_assemblies:
-            active_spaces: Active assemblies
-            see_all_spaces: See all assemblies
+            active_spaces: Mikusanyiko hai
+            see_all_spaces: Tazama makusanyiko yote
         user_profile:
           member_of:
-            member_of: Member of
+            member_of: Mjumbe wa
       show:
-        assembly_type: Assembly type
-        duration: Duration
-        private_space: This is a private assembly
-        social_networks_title: Visit assembly on
+        assembly_type: Aina ya mkusanyiko
+        duration: Muda
+        private_space: Huu ni mkutano wa kibinafsi
+        social_networks_title: Tembelea mkusanyiko
     assembly_members:
       assembly_member:
-        designated_on: Designated on
+        designated_on: Imeteuliwa kwenye
       index:
-        title: Members
+        title: Wanachama
     events:
       assemblies:
         create_assembly_member:
-          email_intro: An admin of the <a href="%{resource_url}">%{resource_name}</a> assembly has added you as one of its members.
-          email_outro: You have received this notification because you have been invited to an assembly. Check the <a href="%{resource_url}">assembly page</a> to contribute!
-          email_subject: You have been invited to be a member of the %{resource_name} assembly!
-          notification_title: You have been registered as a member of Assembly <a href="%{resource_path}">%{resource_name}</a>. Check the <a href="%{resource_path}">assembly page</a> to contribute!
+          email_intro: Msimamizi wa mkutano wa <a href="%{resource_url}">%{resource_name}</a> amekuongeza kama mmoja wa wanachama wake.
+          email_outro: Umepokea arifa hii kwa sababu umealikwa kwenye mkusanyiko. Angalia <a href="%{resource_url}">ukurasa wa mkusanyiko</a> ili kuchangia!
+          email_subject: Umealikwa kuwa mshiriki wa mkusanyiko wa %{resource_name}!
+          notification_title: Umesajiliwa kama mwanachama wa Bunge <a href="%{resource_path}">%{resource_name}</a>. Angalia <a href="%{resource_path}">ukurasa wa mkusanyiko</a> ili kuchangia!
       assembly:
         role_assigned:
-          email_intro: You have been assigned as %{role} for assembly "%{resource_title}".
-          email_outro: You have received this notification because you are %{role} of the "%{resource_title}" assembly.
-          email_subject: You have been assigned as %{role} for "%{resource_title}".
-          notification_title: You have been assigned as %{role} for assembly <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: Umepewa kama %{role} ya mkusanyiko "%{resource_title}".
+          email_outro: Umepokea arifa hii kwa sababu wewe ni %{role} la mkusanyiko wa "%{resource_title}".
+          email_subject: Umepewa kama %{role} ya "%{resource_title}".
+          notification_title: Umepewa kama %{role} ya mkusanyiko <a href="%{resource_url}">%{resource_title}</a>.
     help:
       participatory_spaces:
         assemblies:
-          contextual: "<p>An <strong>assembly</strong> is a group of members of an organization who meet periodically to make decisions about a specific area or scope of the organization.</p> <p>Assemblies hold meetings, some are private and some are open. If they are open, it is possible to participate in them (for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken by this organ).</p> <p>Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.</p>\n"
-          page: "<p>An <strong>assembly</strong> is a group of members of an organization who meet periodically to make decisions about a specific area or scope of the organization.</p> <p>Assemblies hold meetings, some are private and some are open. If they are open, it is possible to participate in them (for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken by this organ).</p> <p>Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.</p>\n"
-          title: What are assemblies?
+          contextual: "<p>Mkutano</strong> ni kundi la wanachama wa shirika ambao hukutana mara kwa mara ili kufanya maamuzi kuhusu eneo au upeo mahususi wa shirika.</p> <p>Mikutano hufanya mikutano, mingine ni ya faragha. na zingine ziko wazi. Ikiwa zimefunguliwa, inawezekana kushiriki katika hizo (kwa mfano: kuhudhuria ikiwa uwezo unaruhusu, kuongeza pointi kwenye ajenda, au kutoa maoni juu ya mapendekezo na maamuzi yaliyochukuliwa na chombo hiki).</p> <p>Mifano : Mkutano mkuu (ambao hukutana mara moja kwa mwaka ili kufafanua mienendo mikuu ya shughuli za shirika pamoja na vyombo vyake vya utendaji kwa kura), baraza la ushauri la usawa (ambalo hukutana kila baada ya miezi miwili kufanya mapendekezo ya jinsi ya kuboresha mahusiano ya kijinsia katika shirika), tume ya tathmini (ambayo hukutana kila mwezi kufuatilia mchakato) au shirika la dhamana (ambalo hukusanya matukio, dhuluma au mapendekezo ya kuboresha taratibu za kufanya maamuzi) yote ni mifano ya makusanyiko. </p>"
+          page: "<p>Mkutano</strong> ni kundi la wanachama wa shirika ambao hukutana mara kwa mara ili kufanya maamuzi kuhusu eneo au upeo mahususi wa shirika.</p> <p>Mikutano hufanya mikutano, mingine ni ya faragha. na zingine ziko wazi. Ikiwa zimefunguliwa, inawezekana kushiriki katika hizo (kwa mfano: kuhudhuria ikiwa uwezo unaruhusu, kuongeza pointi kwenye ajenda, au kutoa maoni juu ya mapendekezo na maamuzi yaliyochukuliwa na chombo hiki).</p> <p>Mifano : Mkutano mkuu (ambao hukutana mara moja kwa mwaka ili kufafanua mienendo mikuu ya shughuli za shirika pamoja na vyombo vyake vya utendaji kwa kura), baraza la ushauri la usawa (ambalo hukutana kila baada ya miezi miwili kufanya mapendekezo ya jinsi ya kuboresha mahusiano ya kijinsia katika shirika), tume ya tathmini (ambayo hukutana kila mwezi kufuatilia mchakato) au shirika la dhamana (ambalo hukusanya matukio, dhuluma au mapendekezo ya kuboresha taratibu za kufanya maamuzi) yote ni mifano ya makusanyiko. </p>"
+          title: Makusanyiko ni nini?
     log:
       value_types:
         assembly_presenter:
-          not_found: 'The assembly was not found on the database (ID: %{id})'
+          not_found: 'Mkusanyiko haukupatikana kwenye hifadhidata (ID: %{id})'
         assembly_type_presenter:
-          not_found: 'The assembly type was not found on the database (ID: %{id})'
+          not_found: 'Aina ya mkusanyiko haikupatikana kwenye hifadhidata (ID: %{id})'
     menu:
-      assemblies: Assemblies
+      assemblies: Mikusanyiko
     metrics:
       assemblies:
-        description: Number of assemblies created
-        object: assemblies
-        title: Assemblies
+        description: Idadi ya makusanyiko yaliyoundwa
+        object: makusanyiko
+        title: Mikusanyiko
     participatory_processes:
       show:
-        related_assemblies: Related assemblies
+        related_assemblies: Makusanyiko yanayohusiana
     statistics:
-      assemblies_count: Assemblies
+      assemblies_count: Mikusanyiko
   layouts:
     decidim:
       assemblies:
         assembly:
-          more_info: More info
-          take_part: Take part
+          more_info: Maelezo zaidi
+          take_part: Shiriki
         index:
-          promoted_assemblies: Highlighted assemblies
+          promoted_assemblies: Makusanyiko yaliyoangaziwa
         metadata:
           children_item:
-            one: "%{count} assembly"
-            other: "%{count} assemblies"
+            one: "%{count} mkusanyiko"
+            other: "%{count} makusanyiko"
         order_by_assemblies:
           assemblies:
-            one: "%{count} assemblies"
-            other: "%{count} assemblies"
+            one: "%{count} makusanyiko"
+            other: "%{count} makusanyiko"
       assembly_navigation:
-        assembly_member_menu_item: Members
+        assembly_member_menu_item: Wanachama
