@@ -3,22 +3,22 @@ sw:
   activemodel:
     attributes:
       post:
-        body: Body
-        decidim_author_id: Author
-        published_at: Publish time
-        title: Title
+        body: Mwili
+        decidim_author_id: Mwandishi
+        published_at: Wakati wa kuchapisha
+        title: Kichwa
     models:
-      decidim/blogs/create_post_event: New blog post
+      decidim/blogs/create_post_event: Chapisho jipya la blogi
   activerecord:
     models:
       decidim/blogs/post:
-        one: Post
-        other: Posts
+        one: Chapisha
+        other: Machapisho
   decidim:
     blogs:
       actions:
-        author_id: Create post as
-        confirm_destroy: Are you sure you want to delete this post?
+        author_id: Unda chapisho kama
+        confirm_destroy: Je, una uhakika unataka kufuta chapisho hili?
         destroy: Delete
         edit: Edit
         new: New post
