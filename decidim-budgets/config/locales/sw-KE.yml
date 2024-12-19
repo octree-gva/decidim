@@ -6,88 +6,88 @@ sw:
         decidim_scope_id: Upeo
         description: Maelezo
         title: Kichwa
-        total_budget: Total budget
-        weight: Order position
+        total_budget: Jumla ya bajeti
+        weight: Nafasi ya agizo
       project:
-        budget_amount: Budget amount
-        decidim_category_id: Category
-        decidim_scope_id: Scope
-        description: Description
-        proposal_ids: Related proposals
-        proposals: Proposals
-        selected: Selected for implementation
-        title: Title
+        budget_amount: Kiasi cha bajeti
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        description: Maelezo
+        proposal_ids: Mapendekezo yanayohusiana
+        proposals: Mapendekezo
+        selected: Imechaguliwa kwa utekelezaji
+        title: Kichwa
       proposals_import:
-        scope_id: Scope
+        scope_id: Upeo
   activerecord:
     models:
       decidim/budgets/budget:
-        one: Budget
-        other: Budgets
+        one: Bajeti
+        other: Bajeti
       decidim/budgets/project:
-        one: Project
-        other: Projects
+        one: Mradi
+        other: Miradi
   decidim:
     admin:
       filters:
         projects:
           category_id_eq:
-            label: Category
+            label: Kategoria
           scope_id_eq:
-            label: Scope
+            label: Upeo
           selected_at_null:
-            label: Selected
+            label: Imechaguliwa
             values:
-              'false': Selected for implementation
-              'true': Not selected for implementation
+              'false': Imechaguliwa kwa utekelezaji
+              'true': Haijachaguliwa kwa utekelezaji
     budgets:
       actions:
-        attachment_collections: Folders
-        attachments: Attachments
-        confirm_destroy: Are you sure you want to delete this project?
-        destroy: Delete
-        edit: Edit
-        edit_projects: Manage projects
-        import: Import proposals to projects
-        new_budget: New budget
-        new_project: New project
-        preview: Preview
-        send_voting_reminders: Send voting reminders
-        title: Actions
+        attachment_collections: Folda
+        attachments: Viambatisho
+        confirm_destroy: Je, una uhakika unataka kufuta mradi huu?
+        destroy: Futa
+        edit: Hariri
+        edit_projects: Dhibiti miradi
+        import: Mapendekezo ya kuagiza kwa miradi
+        new_budget: Bajeti mpya
+        new_project: Mradi mpya
+        preview: Hakiki
+        send_voting_reminders: Tuma vikumbusho vya kupiga kura
+        title: Vitendo
       admin:
         budgets:
           create:
-            invalid: There was a problem creating this budget.
-            success: Budget successfully created.
+            invalid: Kulikuwa na tatizo katika kuunda bajeti hii.
+            success: Bajeti imeundwa.
           destroy:
-            invalid: There was a problem deleting this budget.
-            success: Budget successfully deleted.
+            invalid: Kulikuwa na tatizo katika kufuta bajeti hii.
+            success: Bajeti imefutwa.
           edit:
-            title: Edit budget
-            update: Update budget
+            title: Badilisha bajeti
+            update: Sasisha bajeti
           index:
-            finished_orders: Finished votes
-            pending_orders: Pending votes
-            title: Budgets
-            users_with_finished_orders: Users with finished votes
-            users_with_pending_orders: Users with pending votes
+            finished_orders: Kura zilizokamilika
+            pending_orders: Kura zinazosubiri
+            title: Bajeti
+            users_with_finished_orders: Watumiaji walio na kura zilizokamilika
+            users_with_pending_orders: Watumiaji walio na kura zinazosubiri
           new:
-            create: Create budget
-            title: New budget
+            create: Tengeneza bajeti
+            title: Bajeti mpya
           update:
-            invalid: There was a problem updating this budget.
-            success: Budget successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha bajeti hii.
+            success: Bajeti imesasishwa.
         exports:
-          projects: Projects
+          projects: Miradi
         models:
           budget:
-            name: Budget
+            name: Bajeti
           project:
-            name: Project
+            name: Mradi
         projects:
           create:
-            invalid: There was a problem creating this project.
-            success: Project successfully created.
+            invalid: Kulikuwa na tatizo kuunda mradi huu.
+            success: Mradi umeundwa.
           destroy:
             success: Project successfully deleted.
           edit:
