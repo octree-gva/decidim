@@ -2,71 +2,71 @@
 sw:
   activemodel:
     models:
-      decidim/comments/comment_by_followed_user_event: Comment
-      decidim/comments/comment_created_event: Comment
-      decidim/comments/comment_upvoted_event: Comment upvoted
-      decidim/comments/reply_created_event: Comment reply
-      decidim/comments/user_group_mentioned_event: Mention
-      decidim/comments/user_mentioned_event: Mention
+      decidim/comments/comment_by_followed_user_event: Maoni
+      decidim/comments/comment_created_event: Maoni
+      decidim/comments/comment_upvoted_event: Maoni yameidhinishwa
+      decidim/comments/reply_created_event: Jibu la maoni
+      decidim/comments/user_group_mentioned_event: Taja
+      decidim/comments/user_mentioned_event: Taja
   activerecord:
     models:
       decidim/comments/comment:
-        one: Comment
-        other: Comments
+        one: Maoni
+        other: Maoni
       decidim/comments/comment_vote:
-        one: Vote
-        other: Votes
+        one: Kura
+        other: Kura
   decidim:
     comments:
       admin:
         shared:
           availability_fields:
-            enabled: Comments enabled
-            end_time: Comments enabled until
-            start_time: Comments enabled from
+            enabled: Maoni yamewezeshwa
+            end_time: Maoni yamewezeshwa hadi
+            start_time: Maoni yamewezeshwa kutoka
       comments:
         create:
-          error: There was a problem creating the comment.
+          error: Kulikuwa na tatizo la kuunda maoni.
         delete:
-          error: The comment could not be deleted.
+          error: Maoni hayakuweza kufutwa.
         update:
-          error: There was a problem updating the comment.
-      comments_title: Comment
+          error: Kulikuwa na tatizo la kusasisha maoni.
+      comments_title: Maoni
       last_activity:
-        new_comment: 'New comment:'
+        new_comment: 'Maoni mapya:'
       votes:
         create:
-          error: There was a problem voting the comment.
+          error: Kulikuwa na tatizo la kupiga kura maoni.
     components:
       add_comment_form:
-        account_message: <a href="%{sign_in_url}">Log in</a> or <a href="%{sign_up_url}">create an account</a> to add your comment.
+        account_message: <a href="%{sign_in_url}">Ingia</a> au <a href="%{sign_up_url}">uunde akaunti</a> ili kuongeza maoni yako.
         form:
           body:
-            label: Comment
-            placeholder: What do you think about this?
-          form_error: The text is required and it cannot be longer than %{length} characters.
-          submit_reply: Publish reply
-          submit_root_comment: Publish comment
+            label: Maoni
+            placeholder: Una maoni gani kuhusu hili?
+          form_error: Maandishi yanahitajika na hayawezi kuwa marefu zaidi ya vibambo %{length}.
+          submit_reply: Chapisha jibu
+          submit_root_comment: Chapisha maoni
           user_group_id:
-            label: Comment as
+            label: Toa maoni kama
         opinion:
-          label: Your opinion about this topic
-          negative: Negative
-          negative_selected: Your opinion about this topic is negative
-          neutral: Neutral
-          neutral_selected: Your opinion about this topic is neutral
-          positive: Positive
-          positive_selected: Your opinion about this topic is positive
-        remaining_characters: "%{count} characters left"
-        remaining_characters_1: "%{count} character left"
-        title: Add your comment
+          label: Maoni yako kuhusu mada hii
+          negative: Hasi
+          negative_selected: Maoni yako kuhusu mada hii ni hasi
+          neutral: Si upande wowote
+          neutral_selected: Maoni yako kuhusu mada hii hayaegemei upande wowote
+          positive: Chanya
+          positive_selected: Maoni yako kuhusu mada hii ni chanya
+        remaining_characters: "%{count} wahusika kushoto"
+        remaining_characters_1: "%{count} mhusika kushoto"
+        title: Ongeza maoni yako
       comment:
         alignment:
-          against: Against
-          in_favor: In favor
-        cancel_reply: Cancel reply
-        comment_label: Comment %{comment_id}
-        comment_label_reply: Comment %{comment_id} (reply to comment %{parent_comment_id})
+          against: Dhidi ya
+          in_favor: Katika neema
+        cancel_reply: Ghairi jibu
+        comment_label: Maoni %{comment_id}
+        comment_label_reply: Maoni %{comment_id} (jibu maoni %{parent_comment_id})
         confirm_destroy: Are you sure you want to delete this comment?
         controls_label: Comment controls
         delete: Delete
