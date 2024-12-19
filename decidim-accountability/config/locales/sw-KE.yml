@@ -182,96 +182,96 @@ sw:
           errors: Makosa
           errors_present: Kulikuwa na tatizo katika kuleta matokeo.
           row_number: Safu
-          subject: Successful import of results
-          success: Successful import of results. You can review the results in the administration interface.
+          subject: Imefaulu kuleta matokeo
+          success: Imefaulu kuleta matokeo. Unaweza kukagua matokeo katika kiolesura cha utawala.
       import_projects_mailer:
         import:
           added_projects:
-            one: One result was imported from projects.
-            other: "%{count} results were imported from projects."
-          subject: Successful import of projects
-          success: Successful imported projects to results in the %{component_name} component. You can review the results in the administration interface.
+            one: Matokeo moja yaliletwa kutoka kwa miradi.
+            other: "%{count} matokeo yaliingizwa kutoka kwa miradi."
+          subject: Uagizaji wa miradi uliofanikiwa
+          success: Miradi iliyoingizwa imefaulu kufikia matokeo katika kipengele cha %{component_name}. Unaweza kukagua matokeo katika kiolesura cha utawala.
       last_activity:
-        new_result: 'New result:'
+        new_result: 'Matokeo mapya:'
       models:
         result:
           fields:
-            category: Category
-            created_at: Created
-            end_date: End date
+            category: Kategoria
+            created_at: Imeundwa
+            end_date: Tarehe ya mwisho
             id: ID
-            progress: Progress
-            scope: Scope
-            start_date: Start date
-            status: Status
-            title: Title
+            progress: Maendeleo
+            scope: Upeo
+            start_date: Tarehe ya kuanza
+            status: Hali
+            title: Kichwa
         status:
           fields:
-            description: Description
-            key: Key
-            name: Name
-            progress: Progress
+            description: Maelezo
+            key: Ufunguo
+            name: Jina
+            progress: Maendeleo
         timeline_entry:
           fields:
-            entry_date: Date
-            title: Title
+            entry_date: Tarehe
+            title: Kichwa
       results:
         count:
           results_count:
-            one: 1 result
-            other: "%{count} results"
+            one: 1 matokeo
+            other: "%{count} matokeo"
         filters:
-          all: All
+          all: Wote
         home:
-          categories_label: Categories
-          empty: There are no results yet.
-          empty_filters: There are no results with this criteria.
-          subcategories_label: Subcategories
+          categories_label: Kategoria
+          empty: Bado hakuna matokeo.
+          empty_filters: Hakuna matokeo na vigezo hivi.
+          subcategories_label: Vijamii
         home_header:
-          global_status: Global execution status
+          global_status: Hali ya utekelezaji wa kimataifa
         nav_breadcrumb:
-          global: Global execution
-        no_results: There are no projects
+          global: Utekelezaji wa kimataifa
+        no_results: Hakuna miradi
         search:
-          search: Search for actions
+          search: Tafuta vitendo
         show:
           stats:
-            back_to_resource: Go back to result
+            back_to_resource: Rudi kwenye matokeo
         timeline:
-          title: Project evolution
+          title: Maendeleo ya mradi
     admin:
       filters:
         results:
           category_id_eq:
-            label: Category
+            label: Kategoria
           scope_id_eq:
-            label: Scope
+            label: Upeo
           status_id_eq:
-            label: Status
+            label: Hali
     components:
       accountability:
         actions:
-          comment: Comment
-        name: Accountability
+          comment: Maoni
+        name: Uwajibikaji
         settings:
           global:
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
-            display_progress_enabled: Display progress
-            intro: Intro
-            scope_id: Scope
-            scopes_enabled: Scopes enabled
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            display_progress_enabled: Onyesha maendeleo
+            intro: Utangulizi
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
           step:
-            comments_blocked: Comments blocked
+            comments_blocked: Maoni yamezuiwa
     events:
       accountability:
         proposal_linked:
-          email_intro: 'The proposal "%{proposal_title}" has been included in a result. You can see it from this page:'
-          email_outro: You have received this notification because you are following "%{proposal_title}". You can stop receiving notifications following the previous link.
-          email_subject: An update to %{proposal_title}
-          notification_title: The proposal <a href="%{proposal_path}">%{proposal_title}</a> has been included in the <a href="%{resource_path}">%{resource_title}</a> result.
+          email_intro: 'Pendekezo "%{proposal_title}" limejumuishwa kwenye tokeo. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{proposal_title}
+          notification_title: Pendekezo <a href="%{proposal_path}">%{proposal_title}</a> limejumuishwa kwenye <a href="%{resource_path}">%{resource_title}</a> tokeo.
         result_progress_updated:
-          email_intro: 'The result "%{resource_title}", which includes the proposal "%{proposal_title}", is now %{progress}% complete. You can see it from this page:'
+          email_intro: 'Matokeo "%{resource_title}", ambayo ni pamoja na pendekezo "%{proposal_title}", sasa %{progress}% imekamilika. Unaweza kuiona kutoka kwa ukurasa huu:'
           email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}", na pendekezo hili limejumuishwa kwenye matokeo "%{resource_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
           email_subject: Sasisho la maendeleo ya %{resource_title}
           notification_title: Matokeo <a href="%{resource_path}">%{resource_title}</a>, ambayo ni pamoja na pendekezo <a href="%{proposal_path}">%{proposal_title}</a>, sasa ni %{progress}% imekamilika.
