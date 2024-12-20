@@ -61,27 +61,27 @@ sw:
         name: Jina la utani
         password: Nenosiri
         password_confirmation: Uthibitishaji wa nenosiri
-        remember_me: Remember me
+        remember_me: Nikumbuke
     models:
       decidim/amendment:
-        one: Amendment
-        other: Amendments
+        one: Marekebisho
+        other: Marekebisho
       decidim/endorsement:
-        one: Endorsement
-        other: Endorsements
+        one: Uidhinishaji
+        other: Ridhaa
       decidim/user:
-        one: Participant
-        other: Participants
+        one: Mshiriki
+        other: Washiriki
       decidim/user_group:
-        one: Group
-        other: Groups
+        one: Kikundi
+        other: Vikundi
   booleans:
-    'false': 'No'
-    'true': 'Yes'
+    'false': 'Hapana'
+    'true': 'Ndiyo'
   date:
     buttons:
-      close: Close
-      select: Select
+      close: Funga
+      select: Chagua
     formats:
       decidim_short: "%d/%m/%Y"
       decidim_short_dashed: "%d-%m-%Y"
@@ -90,24 +90,24 @@ sw:
       decidim_with_month_name: "%d %B %Y"
       decidim_with_month_name_short: "%d %b"
       help:
-        date_format: 'Format: dd/mm/yyyy'
+        date_format: 'Umbizo: dd/mm/yyyy'
       order: d-m-y
       separator: "/"
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: karibu saa 1
+        other: takriban saa %{count}
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
-      half_a_minute: half a minute
+        one: karibu mwezi 1
+        other: takriban miezi %{count}
+      half_a_minute: nusu dakika
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
+        one: chini ya dakika moja
+        other: chini ya dakika %{count}
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
+        one: chini ya sekunde 1
+        other: chini ya sekunde %{count}
       short:
         about_x_days: "%{count}d"
         about_x_hours: "%{count}h"
@@ -126,320 +126,320 @@ sw:
         x_seconds: "%{count}s"
         x_years: "%{count}y"
       x_days:
-        one: 1 day
-        other: "%{count} days"
+        one: siku 1
+        other: "Siku %{count}"
       x_hours:
-        one: 1 hour
-        other: "%{count} hours"
+        one: Saa 1
+        other: "Saa %{count}"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: Dakika 1
+        other: "Dakika %{count}"
       x_months:
-        one: 1 month
-        other: "%{count} months"
+        one: mwezi 1
+        other: "Miezi %{count}"
       x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
+        one: Sekunde 1
+        other: "Sekunde %{count}"
   decidim:
     accessibility:
-      external_link: External link
-      front_page_link: Go to front page
-      logo: "%{organization}'s official logo"
-      opens_in_new_tab: Opens in new tab
-      skip_button: Skip to main content
+      external_link: Kiungo cha nje
+      front_page_link: Nenda kwenye ukurasa wa mbele
+      logo: "Nembo rasmi ya %{organization}"
+      opens_in_new_tab: Hufungua katika kichupo kipya
+      skip_button: Ruka hadi kwa yaliyomo kuu
     account:
-      blocked: This account has been blocked due to terms of service violation
+      blocked: Akaunti hii imezuiwa kwa sababu ya ukiukaji wa sheria na masharti
       delete:
-        alert: This action cannot be undone. If you delete your account you will not be able to log in with your credentials. The deletion of your account will result in the anonymization of your contributions. You will still be able to create a new account, but these contributions will not be associated with it.
+        alert: Kitendo hiki hakiwezi kutenduliwa. Ukiifuta akaunti yako hutaweza kuingia na kitambulisho chako. Kufutwa kwa akaunti yako kutasababisha michango yako isijulikane. Bado utaweza kufungua akaunti mpya, lakini michango hii haitahusishwa nayo.
         confirm:
-          close: Close window
-          ok: Yes, I want to delete my account
-          question: Are you sure you want to delete your account?
-          title: Delete my account
-        explanation: Please, fill in the reason you want to delete your account (optional).
-        leaving_authorizations_behind: Some data bound to your authorization will be saved for security. If you create another account and authorize again, this data will be recovered to your new account.
+          close: Funga dirisha
+          ok: Ndiyo, ninataka kufuta akaunti yangu
+          question: Je, una uhakika unataka kufuta akaunti yako?
+          title: Futa akaunti yangu
+        explanation: Tafadhali, jaza sababu unayotaka kufuta akaunti yako (si lazima).
+        leaving_authorizations_behind: Baadhi ya data iliyoambatanishwa na uidhinishaji wako itahifadhiwa kwa usalama. Ukifungua akaunti nyingine na kuidhinisha tena, data hii itarejeshwa kwenye akaunti yako mpya.
       destroy:
-        error: There was a problem deleting your account.
-        success: Your account was successfully deleted.
+        error: Kulikuwa na tatizo la kufuta akaunti yako.
+        success: Akaunti yako ilifutwa.
       download_your_data_export:
-        file_no_exists: File does not exist
-        notice: The download of your data is currently in progress. You will receive an email when it is complete.
+        file_no_exists: Faili haipo
+        notice: Upakuaji wa data yako unaendelea kwa sasa. Utapokea barua pepe itakapokamilika.
       email_change:
-        body1: We have sent an email to %{unconfirmed_email} to verify your new email address.
-        body2: Need us to send the verification email again? %{resend_link} or %{cancel_link}.
-        cancel: cancel
-        cancel_error: Could not cancel the email change.
-        cancel_successfully: Email change cancelled successfully.
-        resend_error: Could not resend confirmation email.
-        resend_successfully: Confirmation email resent successfully to %{unconfirmed_email}.
-        send_again: Send again
-        title: Email change verification
+        body1: Tumetuma barua pepe kwa %{unconfirmed_email} ili kuthibitisha anwani yako mpya ya barua pepe.
+        body2: Je, unahitaji kutuma barua pepe ya uthibitishaji tena? %{resend_link} au %{cancel_link}.
+        cancel: ghairi
+        cancel_error: Haikuweza kughairi mabadiliko ya barua pepe.
+        cancel_successfully: Mabadiliko ya barua pepe yameghairiwa.
+        resend_error: Haikuweza kutuma tena barua pepe ya uthibitishaji.
+        resend_successfully: Barua pepe ya uthibitishaji imetumwa tena kwa %{unconfirmed_email}.
+        send_again: Tuma tena
+        title: Uthibitishaji wa mabadiliko ya barua pepe
       show:
-        available_locales_helper: Choose the language you want to use to browse and receive notifications on the platform.
-        change_password: Change password
-        update_account: Update account
+        available_locales_helper: Chagua lugha unayotaka kutumia ili kuvinjari na kupokea arifa kwenye jukwaa.
+        change_password: Badilisha nenosiri
+        update_account: Sasisha akaunti
       update:
-        error: There was a problem updating your account.
-        success: Your account was successfully updated.
-        success_with_email_confirmation: Your account was successfully updated. You will receive an email to confirm your new email address.
+        error: Kulikuwa na tatizo la kusasisha akaunti yako.
+        success: Akaunti yako imesasishwa.
+        success_with_email_confirmation: Akaunti yako imesasishwa. Utapokea barua pepe ili kuthibitisha anwani yako mpya ya barua pepe.
     activity:
-      time_ago: "%{time} ago"
+      time_ago: "%{time} iliyopita"
     admin:
       actions:
-        cancel: Cancel
+        cancel: Ghairi
       password_change:
-        alert: You need to change your password in order to proceed further.
-        notification: Admin users need to change their password every %{days} days.
+        alert: Unahitaji kubadilisha nenosiri lako ili kuendelea zaidi.
+        notification: Watumiaji wasimamizi wanahitaji kubadilisha nenosiri lao kila baada ya siku %{days}.
     admin_log:
       area:
-        create: "%{user_name} created the %{resource_name} area"
-        delete: "%{user_name} deleted the %{resource_name} area"
-        update: "%{user_name} updated the %{resource_name} area"
+        create: "%{user_name} aliunda eneo la %{resource_name}"
+        delete: "%{user_name} alifuta eneo la %{resource_name}"
+        update: "%{user_name} alisasisha eneo la %{resource_name}"
       area_type:
-        create: "%{user_name} created the %{resource_name} area type"
-        delete: "%{user_name} deleted the %{resource_name} area type"
-        update: "%{user_name} updated the %{resource_name} area type"
+        create: "%{user_name} aliunda aina ya eneo la %{resource_name}"
+        delete: "%{user_name} alifuta aina ya eneo la %{resource_name}"
+        update: "%{user_name} alisasisha aina ya eneo la %{resource_name}"
       attachment:
-        create: "%{user_name} created the %{resource_name} attachment"
-        delete: "%{user_name} deleted the %{resource_name} attachment"
-        update: "%{user_name} updated the %{resource_name} attachment"
+        create: "%{user_name} aliunda kiambatisho %{resource_name}"
+        delete: "%{user_name} alifuta kiambatisho %{resource_name}"
+        update: "%{user_name} alisasisha kiambatisho %{resource_name}"
       attachment_collection:
-        create: "%{user_name} created the %{resource_name} attachment collection"
-        delete: "%{user_name} deleted the %{resource_name} attachment collection"
-        update: "%{user_name} updated the %{resource_name} attachment collection"
+        create: "%{user_name} aliunda mkusanyiko wa viambatisho %{resource_name}"
+        delete: "%{user_name} alifuta mkusanyiko wa viambatisho %{resource_name}"
+        update: "%{user_name} alisasisha mkusanyiko wa viambatisho %{resource_name}"
       category:
-        create: "%{user_name} added the %{resource_name} category to the %{space_name} space"
-        delete: "%{user_name} deleted the %{resource_name} category from the %{space_name} space"
-        update: "%{user_name} updated the %{resource_name} category in the %{space_name} space"
+        create: "%{user_name} aliongeza kategoria ya %{resource_name} kwenye nafasi ya %{space_name}"
+        delete: "%{user_name} alifuta kategoria ya %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        update: "%{user_name} alisasisha kitengo cha %{resource_name} katika nafasi ya %{space_name}"
       component:
-        create: "%{user_name} added the %{resource_name} component to the %{space_name} space"
-        delete: "%{user_name} removed the %{resource_name} component from the %{space_name} space"
-        export_component: "%{user_name} exported the %{resource_name} %{component_name} in %{space_name} as %{format_name}"
-        publish: "%{user_name} published the %{resource_name} component in the %{space_name} space"
-        unpublish: "%{user_name} unpublished the %{resource_name} component from the %{space_name} space"
-        update_permissions_with_space: "%{user_name} updated the permissions of %{resource_name} in %{space_name}"
+        create: "%{user_name} aliongeza kijenzi %{resource_name} kwenye nafasi ya %{space_name}"
+        delete: "%{user_name} aliondoa kijenzi %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        export_component: "%{user_name} alihamisha %{resource_name} %{component_name} katika %{space_name} kama %{format_name}"
+        publish: "%{user_name} alichapisha kijenzi %{resource_name} katika nafasi ya %{space_name}"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa kijenzi %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        update_permissions_with_space: "%{user_name} alisasisha ruhusa za %{resource_name} katika %{space_name}"
       contextual_help_section:
-        update: "%{user_name} updated the %{resource_name} help section"
+        update: "%{user_name} alisasisha sehemu ya usaidizi ya %{resource_name}"
       helpers:
-        answers: answers
-        comments: comments
-        projects: projects
-        results: results
+        answers: majibu
+        comments: maoni
+        projects: miradi
+        results: matokeo
       impersonation_log:
-        manage: "%{user_name} has managed %{resource_name} because %{reason}"
+        manage: "%{user_name} imesimamia %{resource_name} kwa sababu %{reason}"
       moderation:
-        hide: "%{user_name} hid a resource of type %{resource_type} in the %{space_name} space"
-        unreport: "%{user_name} unreported a resource of type %{resource_type} in the %{space_name} space"
+        hide: "%{user_name} alificha rasilimali ya aina %{resource_type} kwenye nafasi ya %{space_name}"
+        unreport: "%{user_name} hakuripoti rasilimali ya aina %{resource_type} katika nafasi ya %{space_name}"
       newsletter:
-        create: "%{user_name} created the %{resource_name} newsletter"
-        delete: "%{user_name} deleted the %{resource_name} newsletter"
-        deliver: "%{user_name} delivered the %{resource_name} newsletter"
-        update: "%{user_name} updated the %{resource_name} newsletter"
+        create: "%{user_name} aliunda jarida la %{resource_name}"
+        delete: "%{user_name} alifuta jarida la %{resource_name}"
+        deliver: "%{user_name} aliwasilisha jarida la %{resource_name}"
+        update: "%{user_name} alisasisha jarida la %{resource_name}"
       oauth_application:
-        create: "%{user_name} created the %{resource_name} OAuth application"
-        delete: "%{user_name} deleted the %{resource_name} OAuth application"
-        update: "%{user_name} updated the %{resource_name} OAuth application"
+        create: "%{user_name} aliunda programu ya %{resource_name} OAuth"
+        delete: "%{user_name} alifuta %{resource_name} OAuth programu"
+        update: "%{user_name} alisasisha %{resource_name} OAuth programu"
       organization:
-        update: "%{user_name} updated the organization settings"
-        update_external_domain: "%{user_name} updated the organization external domains"
+        update: "%{user_name} alisasisha mipangilio ya shirika"
+        update_external_domain: "%{user_name} alisasisha vikoa vya nje vya shirika"
       participatory_space_private_user:
-        create: "%{user_name} invited %{resource_name} to be a private participant"
-        create_via_csv: "%{user_name} invited %{resource_name} via CSV to be a private participant"
-        delete: "%{user_name} removed the participant %{resource_name} as a private participant"
+        create: "%{user_name} alimwalika %{resource_name} kuwa mshiriki wa faragha"
+        create_via_csv: "%{user_name} alimwalika %{resource_name} kupitia CSV kuwa mshiriki wa faragha"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kama mshiriki wa kibinafsi."
       scope:
-        create: "%{user_name} created the %{resource_name} scope"
-        create_with_parent: "%{user_name} created the %{resource_name} scope inside the %{parent_scope} scope"
-        delete: "%{user_name} deleted the %{resource_name} scope"
-        delete_with_parent: "%{user_name} deleted the %{resource_name} scope inside the %{parent_scope} scope"
-        update: "%{user_name} updated the %{resource_name} scope"
-        update_with_parent: "%{user_name} updated the %{resource_name} scope inside the %{parent_scope} scope"
+        create: "%{user_name} aliunda upeo wa %{resource_name}"
+        create_with_parent: "%{user_name} aliunda upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
+        delete: "%{user_name} alifuta upeo wa %{resource_name}"
+        delete_with_parent: "%{user_name} alifuta upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
+        update: "%{user_name} alisasisha upeo wa %{resource_name}"
+        update_with_parent: "%{user_name} alisasisha upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
       scope_type:
-        create: "%{user_name} created the %{resource_name} scope type"
-        delete: "%{user_name} deleted the %{resource_name} scope type"
-        update: "%{user_name} updated the %{resource_name} scope type"
+        create: "%{user_name} aliunda %{resource_name} aina ya upeo"
+        delete: "%{user_name} alifuta aina ya upeo wa %{resource_name}"
+        update: "%{user_name} alisasisha aina ya upeo wa %{resource_name}"
       static_page:
-        create: "%{user_name} created the %{resource_name} static page"
-        delete: "%{user_name} deleted the %{resource_name} static page"
-        update: "%{user_name} updated the %{resource_name} static page"
+        create: "%{user_name} aliunda %{resource_name} ukurasa tuli"
+        delete: "%{user_name} alifuta %{resource_name} ukurasa tuli"
+        update: "%{user_name} alisasisha %{resource_name} ukurasa tuli"
       user:
-        block: "%{user_name} blocked user %{resource_name}"
-        invite: "%{user_name} invited the participant %{resource_name} with role: %{role}"
-        officialize: "%{user_name} officialized the participant %{resource_name}"
-        promote: "%{user_name} has promoted %{resource_name}"
-        remove_from_admin: "%{user_name} removed the participant %{resource_name} with role: %{role}"
-        show_email: "%{user_name} retrieved the email of the participant %{resource_name}"
-        transfer: "%{user_name} transfered the participant %{resource_name}"
-        unblock: "%{user_name} unblocked user %{resource_name}"
-        unofficialize: "%{user_name} unofficialized the participant %{resource_name}"
+        block: "%{user_name} mtumiaji aliyezuiwa %{resource_name}"
+        invite: "%{user_name} alimwalika mshiriki %{resource_name} mwenye jukumu: %{role}"
+        officialize: "%{user_name} alirasimisha mshiriki %{resource_name}"
+        promote: "%{user_name} amekuza %{resource_name}"
+        remove_from_admin: "%{user_name} aliondoa mshiriki %{resource_name} kwa jukumu: %{role}"
+        show_email: "%{user_name} alipata barua pepe ya mshiriki %{resource_name}"
+        transfer: "%{user_name} alihamisha mshiriki %{resource_name}"
+        unblock: "%{user_name} umemfungua mtumiaji %{resource_name}"
+        unofficialize: "%{user_name} hakuja rasmi mshiriki %{resource_name}"
       user_group:
-        block: "%{user_name} blocked user group %{resource_name}"
-        reject: "%{user_name} rejected the %{resource_name} group verification"
-        unblock: "%{user_name} unblocked user group %{resource_name}"
-        verify: "%{user_name} verified the group %{resource_name}"
-        verify_via_csv: "%{user_name} verified the group %{resource_name} via a CSV file"
+        block: "%{user_name} kikundi cha watumiaji kilichozuiwa %{resource_name}"
+        reject: "%{user_name} amekataa uthibitishaji wa kikundi cha %{resource_name}"
+        unblock: "%{user_name} umeondoa kizuizi cha kikundi cha watumiaji %{resource_name}"
+        verify: "%{user_name} alithibitisha kikundi %{resource_name}"
+        verify_via_csv: "%{user_name} alithibitisha kikundi %{resource_name} kupitia faili ya CSV"
       user_moderation:
-        unreport: "%{user_name} unreported an %{resource_type} - %{unreported_user_name}"
+        unreport: "%{user_name} hajaripoti %{resource_type} - %{unreported_user_name}"
     admin_terms_of_service:
-      default_body: "<h2>ADMIN TERMS OF SERVICE</h2><p>We trust you have received the usual lecture from the local System Administrator. It usually boils down to these three things:</p><ol><li>Respect the privacy of others.</li><li>Think before you click.</li><li>With great power comes great responsibility.</li></ol>"
+      default_body: "<h2>MASHARTI YA USIMAMIZI WA HUDUMA</h2><p>Tunaamini kuwa umepokea hotuba ya kawaida kutoka kwa Msimamizi wa Mfumo wa karibu nawe. Kawaida inategemea mambo haya matatu:</p><ol><li>Heshimu faragha ya wengine.</li><li>Fikiri kabla ya kubofya.</li><li>Kwa uwezo mkubwa huja wajibu mkubwa. .</li></ol>"
     alert:
-      dismiss: Dismiss notification
+      dismiss: Ondoa arifa
     amendments:
       accepted:
-        error: An error ocurred while accepting the amendment.
-        success: The amendment has been accepted successfully.
+        error: Hitilafu ilitokea wakati wa kukubali marekebisho.
+        success: Marekebisho yamekubaliwa kwa mafanikio.
       amendable:
-        button: Amend %{model_name}
-        error: There has been an error amending this resource.
-        promote_button: Promote to %{model_name}
-        promote_confirm_text: Are you sure you want to promote this emendation?
-        promote_help_text: You can promote this emendation and publish it as an independent %{model_name}.
+        button: Rekebisha %{model_name}
+        error: Kumekuwa na hitilafu katika kurekebisha rasilimali hii.
+        promote_button: Pandisha cheo hadi %{model_name}
+        promote_confirm_text: Je, una uhakika unataka kutangaza marekebisho haya?
+        promote_help_text: Unaweza kutangaza toleo hili na kulichapisha kama %{model_name} inayojitegemea.
       amendments:
         title:
-          one: "%{count} amendment"
-          other: "%{count} amendments"
+          one: "%{count} marekebisho"
+          other: "%{count} marekebisho"
       created:
-        error: An error ocurred while creating the amendment draft.
-        success: Amendment draft has been created successfully.
+        error: Hitilafu ilitokea wakati wa kuunda rasimu ya marekebisho.
+        success: Rasimu ya marekebisho imeundwa.
       destroy_draft:
-        error: There was a problem deleting the amendment draft.
-        success: Amendment draft was successfully deleted.
+        error: Kulikuwa na tatizo katika kufuta rasimu ya marekebisho.
+        success: Rasimu ya marekebisho ilifutwa.
       edit_draft:
-        discard: Discard this draft
-        send: Preview
-        title: Edit Amendment Draft
+        discard: Tupa rasimu hii
+        send: Hakiki
+        title: Hariri Rasimu ya Marekebisho
       emendation:
         actions:
-          button_accept: Accept
-          button_reject: Reject
-          help_text: Review the changes and accept or reject this amendment. A notification will be sent to its author(s).
+          button_accept: Kubali
+          button_reject: Kataa
+          help_text: Kagua mabadiliko na ukubali au ukatae marekebisho haya. Arifa itatumwa kwa waandishi wake.
         announcement:
           accepted: |-
-            This amendment for the %{amendable_type} %{proposal_link} has been
-            accepted on <strong>%{date}</strong>.
+            Marekebisho haya ya %{amendable_type} %{proposal_link} yamefanywa
+            ilikubaliwa mnamo <strong>%{date}</strong>.
           evaluating: |-
-            This amendment for the %{amendable_type} %{proposal_link}
-            is being evaluated.
-          promoted: Promoted to a %{amendable_type}.
-          rejected: This amendment for the %{amendable_type} %{proposal_link} was rejected on <strong>%{date}</strong>.
+            Marekebisho haya ya %{amendable_type} %{proposal_link}
+            inatathminiwa.
+          promoted: Imepandishwa hadhi hadi %{amendable_type}.
+          rejected: Marekebisho haya ya %{amendable_type} %{proposal_link} yalikataliwa tarehe <strong>%{date}</strong>.
           withdrawn: |-
-            This amendment for the %{amendable_type} %{proposal_link}
-            has been withdrawn by the author.
-      name: Amendment
+            Marekebisho haya ya %{amendable_type} %{proposal_link}
+            imeondolewa na mwandishi.
+      name: Marekebisho
       new:
-        amendment_author: Amendment author
-        send: Create
-        title: Create Amendment Draft
+        amendment_author: Mwandishi wa marekebisho
+        send: Unda
+        title: Unda Rasimu ya Marekebisho
       preview_draft:
-        modify: Modify
-        publish: Publish
-        title: Publish Amendment Draft
+        modify: Rekebisha
+        publish: Chapisha
+        title: Chapisha Rasimu ya Marekebisho
       promoted:
-        error: There was a problem publishing the amendment as a new proposal.
-        success: The amendment has been successfully published as a new proposal.
+        error: Kulikuwa na tatizo la kuchapisha marekebisho kama pendekezo jipya.
+        success: Marekebisho hayo yamechapishwa kwa ufanisi kama pendekezo jipya.
       publish_draft:
-        error: There was a problem publishing the amendment.
-        success: Amendment successfully published.
+        error: Kulikuwa na tatizo la kuchapisha marekebisho.
+        success: Marekebisho yamechapishwa.
       rejected:
-        error: There was a problem rejecting this amendment, please try again later.
-        success: The amendment has been successfully rejected.
+        error: Kulikuwa na tatizo la kukataa marekebisho haya, tafadhali jaribu tena baadaye.
+        success: Marekebisho hayo yamekataliwa.
       review:
-        back: Back
-        heading: Review the amendment
-        send: Accept amendment
+        back: Nyuma
+        heading: Kagua marekebisho
+        send: Kubali marekebisho
       update_draft:
-        error: There was a problem updating the amendment draft.
-        success: Amendment draft successfully updated.
+        error: Kulikuwa na tatizo la kusasisha rasimu ya marekebisho.
+        success: Rasimu ya marekebisho imesasishwa.
       withdraw:
-        error: An error ocurred while withdrawing the amendment.
-        success: The amendment has been withdrawn successfully.
+        error: Hitilafu ilitokea wakati wa kuondoa marekebisho.
+        success: Marekebisho hayo yameondolewa kwa mafanikio.
       wizard_step_form:
         steps:
-          '1': Create your amendment
-          '2': Publish your amendment
-    anonymous_user: Anonymous
+          '1': Tengeneza marekebisho yako
+          '2': Chapisha marekebisho yako
+    anonymous_user: Asiyejulikana
     application:
       document:
-        download: Download file
-        visit_link: Visit link
+        download: Pakua faili
+        visit_link: Tembelea kiungo
       documents:
         component_documents:
-          dummy: Dummy component documents
-          meetings: Meetings documents
-        documents: Documents
-        related_documents: Related documents
+          dummy: Nyaraka za sehemu ya dummy
+          meetings: Nyaraka za mikutano
+        documents: Nyaraka
+        related_documents: Nyaraka zinazohusiana
       photo:
-        alt: Media picture
-        title: Image
+        alt: Picha ya vyombo vya habari
+        title: Picha
       photos:
-        photos: Images
-        related_photos: Related images
+        photos: Picha
+        related_photos: Picha zinazohusiana
     author:
       avatar: 'Avatar: %{name}'
       comments:
-        one: comment
-        other: comments
+        one: maoni
+        other: maoni
       endorsements:
-        one: endorsement
-        other: endorsements
-      official_author: Official
+        one: uidhinishaji
+        other: ridhaa
+      official_author: Rasmi
     authorization_handlers:
       another_dummy_authorization_handler:
-        explanation: Get verified by introducing a passport number starting with "A".
+        explanation: Thibitisha kwa kutambulisha nambari ya pasipoti inayoanza na "A".
         fields:
-          passport_number: Passport number
-          postal_code: Postal code
-        name: Another example authorization
+          passport_number: Nambari ya pasipoti
+          postal_code: Msimbo wa posta
+        name: Mfano mwingine wa idhini
       dummy_authorization_handler:
-        explanation: Get verified by introducing a document number ending with "X".
+        explanation: Thibitisha kwa kutambulisha nambari ya hati inayoishia na "X".
         fields:
-          allowed_postal_codes: Allowed postal codes (separated by commas)
-          allowed_scope_id: Allowed scope
-          document_number: Document number
-          postal_code: Postal code
-          scope_id: Scope
-        name: Example authorization
+          allowed_postal_codes: Misimbo ya posta inayoruhusiwa (imetenganishwa na koma)
+          allowed_scope_id: Upeo unaoruhusiwa
+          document_number: Nambari ya hati
+          postal_code: Msimbo wa posta
+          scope_id: Upeo
+        name: Uidhinishaji wa mfano
       dummy_authorization_workflow:
-        name: Dummy authorization workflow
+        name: Mtiririko wa uidhinishaji wa dummy
       errors:
-        duplicate_authorization: A participant is already authorized with the same data. An administrator will contact you to verify your details.
-      expired_at: Expired at %{timestamp}
-      expires_at: Expires at %{timestamp}
+        duplicate_authorization: Mshiriki tayari ameidhinishwa na data sawa. Msimamizi atawasiliana nawe ili kuthibitisha maelezo yako.
+      expired_at: Muda wake uliisha saa %{timestamp}
+      expires_at: Muda wake unaisha saa %{timestamp}
       foo_authorization:
         fields:
-          bar: Bar
+          bar: Baa
           foo: Foo
-        name: Foo authorization
-      granted_at: Granted at %{timestamp}
+        name: Uidhinishaji wa Foo
+      granted_at: Imetolewa kwa %{timestamp}
       sms:
-        explanation: Submit your mobile phone number so we can check your identity.
-        name: Code by SMS
-      started_at: Started at %{timestamp}
+        explanation: Tuma nambari yako ya simu ili tuweze kuangalia utambulisho wako.
+        name: Rekodi kwa SMS
+      started_at: Ilianza saa %{timestamp}
     authorization_modals:
       content:
         expired:
-          authorize: Reauthorize with "%{authorization}"
-          explanation: Your authorization has expired. In order to perform this action, you need to be reauthorized with "%{authorization}".
-          title: Authorization has expired
+          authorize: Idhinisha upya kwa "%{authorization}"
+          explanation: Uidhinishaji wako umekwisha. Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa tena na "%{authorization}".
+          title: Uidhinishaji umekwisha
         incomplete:
-          cancel: Cancel
-          explanation: 'Even though you are currently authorized with "%{authorization}", we need you to reauthorize because we lack the following data:'
+          cancel: Ghairi
+          explanation: 'Ingawa kwa sasa umeidhinishwa na "%{authorization}", tunahitaji uidhinishe tena kwa sababu hatuna data ifuatayo:'
           invalid_field: "%{field}"
-          reauthorize: Reauthorize
-          title: Please reauthorize
+          reauthorize: Idhinisha upya
+          title: Tafadhali ruhusu tena
         missing:
-          authorize: Authorize with "%{authorization}"
-          explanation: In order to perform this action, you need to be authorized with "%{authorization}".
-          title: Authorization required
+          authorize: Idhinisha na "%{authorization}"
+          explanation: Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa na "%{authorization}".
+          title: Uidhinishaji unahitajika
         ok:
-          title: You have been authorized while in this page. Please, reload the page to perform your action.
+          title: Umeidhinishwa ukiwa katika ukurasa huu. Tafadhali, pakia upya ukurasa ili kutekeleza kitendo chako.
         pending:
-          explanation: In order to perform this action, you need to be authorized with "%{authorization}", but your authorization is still in progress.
-          resume: Check your "%{authorization}" authorization progress.
-          title: Authorization is still in progress
+          explanation: Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa na "%{authorization}", lakini uidhinishaji wako bado unaendelea.
+          resume: Angalia maendeleo yako ya uidhinishaji wa "%{authorization}".
+          title: Uidhinishaji bado unaendelea
         unauthorized:
-          explanation: Sorry, you cannot perform this action as some of your authorization data does not match.
-          invalid_field: "%{field} value %{value} is not valid."
-          ok: Ok
+          explanation: Samahani, huwezi kutekeleza kitendo hiki kwa kuwa baadhi ya data yako ya uidhinishaji hailingani.
+          invalid_field: "%{field} thamani %{value} si halali."
+          ok: Sawa
           title: Not authorized
         unconfirmed:
           confirmation_instructions: 'If you have not received the confirmation instructions you can request them again:'
