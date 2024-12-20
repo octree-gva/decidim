@@ -440,247 +440,248 @@ sw:
           explanation: Samahani, huwezi kutekeleza kitendo hiki kwa kuwa baadhi ya data yako ya uidhinishaji hailingani.
           invalid_field: "%{field} thamani %{value} si halali."
           ok: Sawa
-          title: Not authorized
+          title: Haijaidhinishwa
         unconfirmed:
-          confirmation_instructions: 'If you have not received the confirmation instructions you can request them again:'
-          explanation_html: In order to perform this action you need to be authorized, before doing that you need to confirm your email <strong>%{email}</strong>.
-          request_confirmation_instructions: Request confirmation instructions
-          title: Confirm your email
+          confirmation_instructions: 'Ikiwa haujapokea maagizo ya uthibitishaji unaweza kuyaomba tena:'
+          explanation_html: Ili kutekeleza kitendo hiki unahitaji kuidhinishwa, kabla ya kufanya hivyo unahitaji kuthibitisha barua pepe yako <strong>%{email}</strong>.
+          request_confirmation_instructions: Omba maagizo ya uthibitisho
+          title: Thibitisha barua pepe yako
     block_user_mailer:
       notify:
-        body_1: Your account was blocked.
-        body_2: 'Reason: %{justification}'
-        greetings: Greetings,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
-        hello: Hello,
-        subject: Your account was blocked by %{organization_name}
+        body_1: Akaunti yako imezuiwa.
+        body_2: 'Sababu: %{justification}'
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Habari,
+        subject: Akaunti yako ilizuiwa na %{organization_name}
     collapsible_list:
       hidden_elements_count:
-        one: and %{count} more
-        other: and %{count} more
-      see_less: "(see less)"
+        one: na %{count} zaidi
+        other: na %{count} zaidi
+      see_less: "(tazama kidogo)"
     components:
       component_order_selector:
-        no_content: We could not find any content with this criteria.
+        no_content: Hatukuweza kupata maudhui yoyote yenye vigezo hivi.
         order:
-          all_types: All types
-          collaborative_draft: Collaborative Draft
-          comment: Comment
-          debate: Debate
-          initiative: Initiative
-          meeting: Meeting
-          order: Budgeting vote
-          post: Post
-          proposal: Proposal
-          question: Question
-        title: 'Show:'
+          all_types: Aina zote
+          collaborative_draft: Rasimu ya Ushirikiano
+          comment: Maoni
+          debate: Mjadala
+          initiative: Mpango
+          meeting: Mkutano
+          order: Kura ya bajeti
+          post: Chapisha
+          proposal: Pendekezo
+          question: Swali
+        title: 'Onyesha:'
       dummy:
         actions:
-          bar: Bar
+          bar: Baa
           foo: Foo
-        name: Dummy Component
+        name: Sehemu ya Dummy
         settings:
           global:
-            amendments_enabled: Amendments enabled
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length
-            dummy_global_attribute1: Dummy Attribute 1
-            dummy_global_attribute2: Dummy Attribute 2
-            dummy_global_translatable_text: Dummy Translatable Text
-            enable_pads_creation: Enable pads creation
-            resources_permissions_enabled: Resources permissions enabled
-            scope_id: Scope
-            scopes_enabled: Scopes enabled
+            amendments_enabled: Marekebisho yamewashwa
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni
+            dummy_global_attribute1: Sifa ya Dummy 1
+            dummy_global_attribute2: Sifa ya Dummy 2
+            dummy_global_translatable_text: Maandishi ya Dummy yanayoweza Kutafsirika
+            enable_pads_creation: Washa uundaji wa pedi
+            resources_permissions_enabled: Ruhusa za rasilimali zimewashwa
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
           step:
-            amendment_creation_enabled: Amendment creation enabled
-            amendment_promotion_enabled: Amendment promotion enabled
-            amendment_reaction_enabled: Amendment reaction enabled
-            amendments_visibility: Amendment visibility
-            comments_blocked: Comments blocked
-            dummy_step_attribute1: Dummy Step Attribute 1
-            dummy_step_attribute2: Dummy Step Attribute 2
-            dummy_step_translatable_text: Dummy Step Translatable Text
-    contact: Contact
+            amendment_creation_enabled: Uundaji wa marekebisho umewashwa
+            amendment_promotion_enabled: Ukuzaji wa marekebisho umewashwa
+            amendment_reaction_enabled: Maoni ya marekebisho yamewashwa
+            amendments_visibility: Mwonekano wa marekebisho
+            comments_blocked: Maoni yamezuiwa
+            dummy_step_attribute1: Dummy Hatua Sifa 1
+            dummy_step_attribute2: Dummy Hatua Sifa 2
+            dummy_step_translatable_text: Maandishi ya Kutafsiri ya Hatua ya Dummy
+    contact: Wasiliana
     content_blocks:
       announcement:
-        name: Announcement
+        name: Tangazo
       cta:
-        name: Image, text and Call To Action button
+        name: Picha, maandishi na kitufe cha Wito Kufanya Hatua
       cta_settings_form:
-        background_image: Background image
-        button_text: Call To Action text
-        button_url: Call To Action URL
-        description: Description
+        background_image: Picha ya usuli
+        button_text: Maandishi ya Wito Kufanya Hatua
+        button_url: Wito kwa Kitendo URL
+        description: Maelezo
       footer_sub_hero:
-        name: Footer sub hero banner
+        name: Bango la shujaa mdogo chini ya ukurasa
       global_menu:
-        name: Global menu
+        name: Menyu ya kimataifa
       hero:
-        name: Hero image and CTA
+        name: Picha ya shujaa na CTA
       hero_settings_form:
-        background_image: Background image
-        welcome_text: Welcome text
+        background_image: Picha ya usuli
+        welcome_text: Maandishi ya kukaribisha
       highlighted_content_banner:
-        name: Highlighted content banner
+        name: Bango la maudhui lililoangaziwa
       highlighted_elements_settings_form:
         components:
-          all: All
-          label: 'Select component:'
+          all: Wote
+          label: 'Chagua kipengele:'
         orders:
-          label: 'Sort elements by:'
-          random: Random
-          recent: Most recent
+          label: 'Panga vipengele kwa:'
+          random: Nasibu
+          recent: Hivi karibuni
       how_to_participate:
-        name: How to participate
+        name: Jinsi ya kushiriki
       html:
-        html_content: HTML content
-        name: HTML block
+        html_content: Maudhui ya HTML
+        name: Kizuizi cha HTML
       last_activity:
-        name: Last activity
-        title: Last activity
-        view_all: View all
+        name: Shughuli ya mwisho
+        title: Shughuli ya mwisho
+        view_all: Tazama zote
       last_activity_settings_form:
-        max_last_activity_users: Maximum number of user avatars with recent activity to show
+        max_last_activity_users: Idadi ya juu zaidi ya avatar za mtumiaji zilizo na shughuli za hivi majuzi za kuonyesha
       main_data:
-        name: Main data
+        name: Data kuu
       metadata:
         name: Metadata
       metrics:
-        name: Organization metrics
+        name: Vipimo vya shirika
       participatory_space_metrics:
-        name: Metrics
+        name: Vipimo
       participatory_space_stats:
-        name: Statistics
+        name: Takwimu
       social_networks_metadata:
-        name: Social networks
+        name: Mitandao ya kijamii
       static_page:
         section:
-          name: Section
-          section_content: Content
+          name: Sehemu
+          section_content: Maudhui
         summary:
-          name: Summary
-          summary_content: Content
+          name: Muhtasari
+          summary_content: Maudhui
         two_pane_section:
-          left_column: Left column
-          name: Two-column section
-          right_column: Right column
+          left_column: Safu wima ya kushoto
+          name: Sehemu ya safu mbili
+          right_column: Safu wima ya kulia
       stats:
-        name: Organization statistics
+        name: Takwimu za shirika
       sub_hero:
-        name: Sub hero banner
+        name: Bango la shujaa mdogo
     core:
       actions:
-        login_before_access: Please, log in with your account before access.
-        unauthorized: You are not authorized to perform this action.
+        login_before_access: Tafadhali, ingia na akaunti yako kabla ya kufikia.
+        unauthorized: Hujaidhinishwa kutekeleza kitendo hiki.
       application_helper:
         filter_area_values:
-          all: All
+          all: Wote
         filter_category_values:
-          all: All
+          all: Wote
         filter_scope_values:
-          all: All
+          all: Wote
     devise:
       omniauth_registrations:
         create:
-          email_already_exists: Another account is using the same email address.
+          email_already_exists: Akaunti nyingine inatumia barua pepe ile ile.
         new:
-          complete_profile: Complete profile
-          nickname_help: Your alias in %{organization}. Can only contain letters, numbers, '-' and '_'.
-          sign_up: Please complete your profile
-          subtitle: Please fill in the following form in order to complete the account creation
-          username_help: Public name that appears on your posts. With the aim of guaranteeing the anonymity, can be any name.
+          complete_profile: Kamilisha wasifu
+          nickname_help: Lakabu yako katika %{organization}. Inaweza kuwa na herufi, nambari, '-' na '_' pekee.
+          sign_up: Tafadhali kamilisha wasifu wako
+          subtitle: Tafadhali jaza fomu ifuatayo ili kukamilisha uundaji wa akaunti
+          username_help: Jina la umma linaloonekana kwenye machapisho yako. Kwa lengo la kuhakikisha kutokujulikana, inaweza kuwa jina lolote.
       registrations:
         create:
-          error: There was a problem creating your account.
+          error: Kulikuwa na tatizo la kuunda akaunti yako.
         new:
-          already_have_an_account?: Already have an account?
-          log_in: Log in
-          newsletter: Receive an occasional newsletter with relevant information
-          newsletter_title: Contact permission
-          sign_up: Create an account
-          subtitle: Create an account to participate in the platform.
-          terms: the terms of service
-          tos_agreement: By signing up you agree to %{link}.
-          tos_title: Terms of Service
-          username_help: Public name that appears on your posts. With the aim of guaranteeing the anonymity, can be any name.
+          already_have_an_account?: Je, tayari una akaunti?
+          log_in: Ingia
+          newsletter: Pokea jarida la mara kwa mara lenye taarifa muhimu
+          newsletter_title: Ruhusa ya mawasiliano
+          sign_up: Fungua akaunti
+          subtitle: Fungua akaunti ili kushiriki katika jukwaa.
+          terms: masharti ya huduma
+          tos_agreement: Kwa kujisajili unakubali %{link}.
+          tos_title: Masharti ya Huduma
+          username_help: Jina la umma linaloonekana kwenye machapisho yako. Kwa lengo la kuhakikisha kutokujulikana, inaweza kuwa jina lolote.
       sessions:
         new:
-          are_you_new?: New to the platform?
-          register: Create an account
-          sign_in_disabled: You can access with an external account.
-          sign_up_disabled: Account creation is disabled, you can use an existing account to access.
+          are_you_new?: Je, mgeni kwenye jukwaa?
+          register: Fungua akaunti
+          sign_in_disabled: Unaweza kufikia ukitumia akaunti ya nje.
+          sign_up_disabled: Uundaji wa akaunti umezimwa, unaweza kutumia akaunti iliyopo kufikia.
         user:
-          timed_out: You were inactive for too long and you have been automatically logged out from the service. If you would like to continue using the service, please log in again.
+          timed_out: Hukufanya kazi kwa muda mrefu sana na umeondolewa kiotomatiki kwenye huduma. Ikiwa ungependa kuendelea kutumia huduma, tafadhali ingia tena.
       shared:
         newsletter_modal:
           buttons:
-            check: Check and continue
-            uncheck: Keep unchecked
+            check: Angalia na uendelee
+            uncheck: Weka bila kuchaguliwa
           notice: |-
-            <p>Hey, are you sure you do not want to receive a newsletter?
-            Please consider again ticking the newsletter checkbox below.
-            It is very important for us that you can receive occasional emails
-            to make important announcements, you can always change this on your
-            notifications settings page.</p>
-            <p>If you do not tick the box you might be missing relevant information
-            about new participatory opportunities within the platform.<br>
-            If you still want to avoid receiving newsletters, we perfectly
-            understand your decision.</p>
-            <p>Thanks for reading this!</p>
-          title: Newsletter notifications
+            <p>Halo, una uhakika hutaki kupokea jarida?
+            Tafadhali zingatia tena kuweka tiki kwenye kisanduku cha kuteua cha jarida hapa chini.
+            Ni muhimu sana kwetu kwamba unaweza kupokea barua pepe mara kwa mara
+            ili kufanya matangazo muhimu, unaweza kubadilisha hii kwenye yako kila wakati
+            ukurasa wa mipangilio ya arifa.</p>
+            <p>Usipoweka tiki kwenye kisanduku unaweza kukosa taarifa muhimu
+            kuhusu fursa mpya za ushirikishwaji katika jukwaa.<br>
+            Ikiwa bado unataka kuepuka kupokea majarida, sisi kikamilifu
+            kuelewa uamuzi wako.</p>
+            <p>Asante kwa kusoma hii!</p>
+          title: Arifa za jarida
         omniauth_buttons:
-          or: Or
+          or: Au
         password_fields:
-          hidden_password: Your password is hidden
-          hide_password: Hide password
-          show_password: Show password
-          shown_password: Your password is shown
+          hidden_password: Nenosiri lako limefichwa
+          hide_password: Ficha nenosiri
+          show_password: Onyesha nenosiri
+          shown_password: Nenosiri lako limeonyeshwa
         placeholder_email: hi@example.org
     doorkeeper:
       authorizations:
         new:
-          authorize: Authorize application
-          by_organization_link_html: by %{link}
-          cancel: Cancel
-          connect_your_account_html: Connect your account by logging in to %{organization}.
-          publish_content: Publish content for you
-          see_email: See your email
-          see_name: See your name
-          see_username: See your nickname
-          this_application_will_be_able_to: 'This application will be able to:'
-          this_application_will_not_be_able_to: 'This application will not be able to:'
-          update_profile: Update your profile
-          wants_to_use_your_account_html: "%{application_name} wants to use your account"
+          authorize: Idhinisha maombi
+          by_organization_link_html: na %{link}
+          cancel: Ghairi
+          connect_your_account_html: Unganisha akaunti yako kwa kuingia kwenye %{organization}.
+          publish_content: Chapisha maudhui kwa ajili yako
+          see_email: Tazama barua pepe yako
+          see_name: Tazama jina lako
+          see_username: Tazama jina lako la utani
+          this_application_will_be_able_to: 'Programu hii itaweza:'
+          this_application_will_not_be_able_to: 'Programu hii haitaweza:'
+          update_profile: Sasisha wasifu wako
+          wants_to_use_your_account_html: "%{application_name} inataka kutumia akaunti yako"
     download_your_data:
       export:
-        ready: Ready
+        ready: Tayari
       show:
-        download_data: Download the data
+        download_data: Pakua data
         download_data_description_html: |-
-          A file containing all the information associated with your account will be sent to <strong>%{user_email}</strong>.
-          This email will contain a .zip file and a password to open it.<br/><br/>To unzip the file, you will need <a href="https://www.7-zip.org/">7-Zip</a> (for Windows) or <a href="https://www.keka.io/">Keka</a> (for MacOS).
-          If you use Linux, most of the time you will have it installed by default. If not, you can use <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> or <a href="https://peazip.github.io">PeaZip</a>).
-        request_data: Request data
+          Faili iliyo na taarifa zote zinazohusiana na akaunti yako itatumwa kwa <strong>%{user_email}</strong>.
+          Barua pepe hii itakuwa na faili ya .zip na nenosiri ili kuifungua.<br/><br/>Ili kufungua faili, utahitaji <a href="https://www.7-zip.org/"> 7-Zip</a> (kwa Windows) au <a href="https://www.keka.io/">Keka</a> (kwa MacOS).
+          Ikiwa unatumia Linux, mara nyingi utaisakinisha kwa chaguo-msingi. Ikiwa sivyo, unaweza kutumia <a href="https://gitlab.gnome.org/GNOME/file-roller">Roller ya Faili</a> au <a
+          href="https://peazip.github.io">PeaZip</a>).
+        request_data: Omba data
     editor_images:
       create:
-        error: Error uploading image.
-        success: Image uploaded successfully.
-      drag_and_drop_help: Add images by dragging & dropping or pasting them.
+        error: Hitilafu katika kupakia picha.
+        success: Picha imepakiwa.
+      drag_and_drop_help: Ongeza picha kwa kuziburuta na kuzidondosha au kuzibandika.
     endorsement_buttons_cell:
-      already_endorsed: Dislike
-      endorse: Like
+      already_endorsed: Sipendi
+      endorse: Kama
     endorsements:
       identities:
-        done: Done
-        select_identity: Select identity
+        done: Imekamilika
+        select_identity: Chagua utambulisho
     endorsers_list:
-      endorsed_by: Liked by…
+      endorsed_by: Imependwa na...
     errors:
       files:
-        file_cannot_be_processed: File cannot be processed
-        file_resolution_too_large: File resolution is too large
-        not_inside_organization: The file is not attached to any organization
+        file_cannot_be_processed: Faili haiwezi kuchakatwa
+        file_resolution_too_large: Ubora wa faili ni kubwa sana
+        not_inside_organization: Faili haijaambatishwa kwa shirika lolote
       internal_server_error:
-        copied: Text copied!
+        copied: Maandishi yamenakiliwa!
         copy_error_message_clarification: Copy error message to clipboard
         copy_to_clipboard: Copy to clipboard
         date_and_time: Date and time
