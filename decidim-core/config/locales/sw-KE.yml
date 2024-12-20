@@ -682,75 +682,75 @@ sw:
         not_inside_organization: Faili haijaambatishwa kwa shirika lolote
       internal_server_error:
         copied: Maandishi yamenakiliwa!
-        copy_error_message_clarification: Copy error message to clipboard
-        copy_to_clipboard: Copy to clipboard
-        date_and_time: Date and time
-        reference: Reference
-        request_method: Request method
-        title: There was a problem with our server
-        try_later: Please try again later. If the error persists, please copy the following info and send it to platform maintainers with any other information you may want to share.
-        unknown: Unknown
+        copy_error_message_clarification: Nakili ujumbe wa hitilafu kwenye ubao wa kunakili
+        copy_to_clipboard: Nakili kwenye ubao wa kunakili
+        date_and_time: Tarehe na wakati
+        reference: Rejea
+        request_method: Mbinu ya ombi
+        title: Kulikuwa na tatizo na seva yetu
+        try_later: Tafadhali jaribu tena baadaye. Hitilafu ikiendelea, tafadhali nakili maelezo yafuatayo na uyatume kwa wasimamizi wa jukwaa pamoja na maelezo mengine yoyote ambayo ungependa kushiriki.
+        unknown: Haijulikani
         url: URL
-        user: User ID
+        user: Kitambulisho cha Mtumiaji
       not_found:
-        back_home: Back home
-        content_doesnt_exist: This address is incorrect or has been removed.
-        title: The page you are looking for cannot be found
+        back_home: Rudi nyumbani
+        content_doesnt_exist: Anwani hii si sahihi au imeondolewa.
+        title: Ukurasa unaotafuta hauwezi kupatikana
     events:
       amendments:
         amendment_accepted:
           affected_user:
-            email_intro: 'An amendment has been accepted for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are an author of %{amendable_title}.
-            email_subject: Accepted amendment for %{amendable_title} from %{emendation_author_nickname}
-            notification_title: The <a href="%{emendation_path}">amendment</a> created by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> has been accepted for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho ya %{amendable_title} yamekubaliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho yaliyokubaliwa ya %{amendable_title} kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekubaliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
           follower:
-            email_intro: 'An amendment has been accepted for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are following %{amendable_title}. You can stop receiving notifications following the previous link.
-            email_subject: Accepted amendment for %{amendable_title} from %{emendation_author_nickname}
-            notification_title: The <a href="%{emendation_path}">amendment</a> created by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> has been accepted for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho ya %{amendable_title} yamekubaliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho yaliyokubaliwa ya %{amendable_title} kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekubaliwa kwa <a href="%{amendable_path} }">%{amendable_title}</a>.
         amendment_created:
           affected_user:
-            email_intro: 'A new amendment has been created for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are an author of %{amendable_title}.
-            email_subject: New amendment for %{amendable_title}
-            notification_title: A new amendment has been created for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho mapya ya %{amendable_title} yameundwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho mapya ya %{amendable_title}
+            notification_title: Marekebisho mapya yameundwa kwa <a href="%{amendable_path}">%{amendable_title}</a>.
           follower:
-            email_intro: 'A new amendment has been created for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are following %{amendable_title}. You can stop receiving notifications following the previous link.
-            email_subject: New amendment for %{amendable_title}
-            notification_title: A new amendment has been created for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho mapya ya %{amendable_title} yameundwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho mapya ya %{amendable_title}
+            notification_title: Marekebisho mapya yameundwa kwa <a href="%{amendable_path}">%{amendable_title}</a>.
         amendment_promoted:
           affected_user:
-            email_intro: 'A rejected amendment for %{amendable_title} has been published as a new %{amendable_type}. You can see it from this page:'
-            email_outro: You have received this notification because you are an author of %{amendable_title}.
-            email_subject: An amendment from %{emendation_author_nickname} has been published as a new %{amendable_type}
-            notification_title: A <a href="%{emendation_path}">rejected amendment</a> for <a href="%{amendable_path}">%{amendable_title}</a> has been published as a new %{amendable_type} by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
+            email_intro: 'Marekebisho yaliyokataliwa ya %{amendable_title} yamechapishwa kama %{amendable_type} mpya. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho kutoka kwa %{emendation_author_nickname} yamechapishwa kama %{amendable_type} mpya
+            notification_title: <a href="%{emendation_path}">marekebisho yaliyokataliwa</a> ya <a href="%{amendable_path}">%{amendable_title}</a> yamechapishwa kama %{amendable_type} mpya na < a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
           follower:
-            email_intro: 'A rejected amendment for %{amendable_title} has been published as a new %{amendable_type}. You can see it from this page:'
-            email_outro: You have received this notification because you are following %{amendable_title}. You can stop receiving notifications following the previous link.
-            email_subject: An amendment from %{emendation_author_nickname} has been published as a new %{amendable_type}
-            notification_title: A <a href="%{emendation_path}">rejected amendment</a> for <a href="%{amendable_path}">%{amendable_title}</a> has been published as a new %{amendable_type} by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
+            email_intro: 'Marekebisho yaliyokataliwa ya %{amendable_title} yamechapishwa kama %{amendable_type} mpya. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho kutoka kwa %{emendation_author_nickname} yamechapishwa kama %{amendable_type} mpya
+            notification_title: <a href="%{emendation_path}">marekebisho yaliyokataliwa</a> ya <a href="%{amendable_path}">%{amendable_title}</a> yamechapishwa kama %{amendable_type} mpya na < a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
         amendment_rejected:
           affected_user:
-            email_intro: 'An amendment has been rejected for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are an author of %{amendable_title}.
-            email_subject: Amendment rejected for %{amendable_title} from %{emendation_author_nickname}
-            notification_title: The <a href="%{emendation_path}">amendment</a> created by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> has been rejected for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho ya %{amendable_title} yamekataliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho ya %{amendable_title} yamekataliwa kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekataliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
           follower:
-            email_intro: 'An amendment has been rejected for %{amendable_title}. You can see it from this page:'
-            email_outro: You have received this notification because you are following %{amendable_title}. You can stop receiving notifications following the previous link.
-            email_subject: Amendment rejected for %{amendable_title} from %{emendation_author_nickname}
-            notification_title: The <a href="%{emendation_path}">amendment</a> created by <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> has been rejected for <a href="%{amendable_path}">%{amendable_title}</a>.
+            email_intro: 'Marekebisho ya %{amendable_title} yamekataliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho ya %{amendable_title} yamekataliwa kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekataliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
       attachments:
         attachment_created:
-          email_intro: 'A new document has been added to %{resource_title}. You can see it from this page:'
-          email_outro: You have received this notification because you are following %{resource_title}. You can stop receiving notifications following the previous link.
-          email_subject: An update to %{resource_title}
-          notification_title: A <a href="%{resource_path}">new document</a> has been added to <a href="%{attached_to_url}">%{resource_title}</a>
+          email_intro: 'Hati mpya imeongezwa kwa %{resource_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{resource_title}
+          notification_title: <a href="%{resource_path}">hati mpya</a> imeongezwa kwenye <a href="%{attached_to_url}">%{resource_title}</a>
       components:
         component_published:
-          email_intro: 'The %{resource_title} component is now active for %{participatory_space_title}. You can see it from this page:'
+          email_intro: 'Kijenzi cha %{resource_title} sasa kinatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
           email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
           email_subject: An update to %{participatory_space_title}
           notification_title: The %{resource_title} component is now active for <a href="%{resource_path}">%{participatory_space_title}</a>
