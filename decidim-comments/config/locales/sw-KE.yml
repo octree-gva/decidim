@@ -67,77 +67,77 @@ sw:
         cancel_reply: Ghairi jibu
         comment_label: Maoni %{comment_id}
         comment_label_reply: Maoni %{comment_id} (jibu maoni %{parent_comment_id})
-        confirm_destroy: Are you sure you want to delete this comment?
-        controls_label: Comment controls
-        delete: Delete
-        deleted_at: Comment deleted on %{date}
-        deleted_user: Deleted participant
-        edit: Edit
-        edited: Edited
+        confirm_destroy: Je, una uhakika unataka kufuta maoni haya?
+        controls_label: Vidhibiti vya maoni
+        delete: Futa
+        deleted_at: Maoni yalifutwa mnamo %{date}
+        deleted_user: Mshiriki amefutwa
+        edit: Hariri
+        edited: Imehaririwa
         hide_replies:
-          one: Hide reply
-          other: Hide %{count} replies
-        moderated_at: Comment moderated on %{date}
-        reply: Reply
+          one: Ficha jibu
+          other: Ficha majibu %{count}
+        moderated_at: Maoni yalidhibitiwa mnamo %{date}
+        reply: Jibu
         report:
-          action: Report
-          already_reported: This content is already reported and it will be reviewed by an admin.
-          close: Close
-          description: Is this content inappropriate?
-          details: Additional comments
+          action: Ripoti
+          already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+          close: Funga
+          description: Je, maudhui haya hayafai?
+          details: Maoni ya ziada
           reasons:
-            does_not_belong: Contains illegal activity, suicide threats, personal information, or something else you think does not belong on %{organization_name}.
-            offensive: Contains racism, sexism, slurs, personal attacks, death threats, suicide requests or any form of hate speech.
-            spam: Contains clickbait, advertising, scams or script bots.
-          title: Report inappropriate content
+            does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+            offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+            spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+          title: Ripoti maudhui yasiyofaa
         show_replies:
-          one: Show reply
-          other: Show %{count} replies
-        single_comment_link_title: Get link
+          one: Onyesha jibu
+          other: Onyesha majibu %{count}
+        single_comment_link_title: Pata kiungo
       comment_order_selector:
         order:
-          best_rated: Best rated
-          most_discussed: Most discussed
-          older: Older
-          recent: Recent
-        title: 'Order by:'
+          best_rated: Iliyokadiriwa bora
+          most_discussed: Iliyojadiliwa zaidi
+          older: Mzee
+          recent: Hivi karibuni
+        title: 'Agiza kwa:'
       comments:
-        blocked_comments_for_unauthorized_user_warning: You need to be verified to comment at this moment, but you can read the previous ones.
-        blocked_comments_for_user_warning: You are not able to comment at this moment, but you can read the previous ones.
-        blocked_comments_warning: Comments are disabled at this time, but you can read the previous ones.
-        comment_details_title: Comment details
-        loading: Loading comments ...
-        single_comment_warning: <a href="%{url}">View all comments</a>
-        single_comment_warning_title: You are seeing a single comment
+        blocked_comments_for_unauthorized_user_warning: Unahitaji kuthibitishwa ili kutoa maoni kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        blocked_comments_for_user_warning: Huwezi kutoa maoni kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        blocked_comments_warning: Maoni yamezimwa kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        comment_details_title: Maelezo ya maoni
+        loading: Inapakia maoni...
+        single_comment_warning: <a href="%{url}">Tazama maoni yote</a>
+        single_comment_warning_title: Unaona maoni moja
         title:
-          one: "%{count} comment"
-          other: "%{count} comments"
+          one: "%{count} maoni"
+          other: "%{count} maoni"
       down_vote_button:
-        text: I disagree with this comment
+        text: Sikubaliani na maoni haya
       edit_comment_modal_form:
-        close: Close
+        close: Funga
         form:
           body:
-            label: Comment
-            placeholder: What do you think about this?
-          submit: Send
-        title: Edit your comment
+            label: Maoni
+            placeholder: Una maoni gani kuhusu hili?
+          submit: Tuma
+        title: Hariri maoni yako
       up_vote_button:
-        text: I agree with this comment
+        text: Nakubaliana na maoni haya
     events:
       comments:
         comment_by_followed_user:
-          email_intro: "%{author_name} has left a comment in %{resource_title}. You can read it in this page:"
-          email_outro: You have received this notification because you are following %{author_name}. You can unfollow this user from their profile page.
-          email_subject: There is a new comment by %{author_name} in %{resource_title}
-          notification_title: There is a new comment by <a href="%{author_path}">%{author_name} %{author_nickname}</a> in <a href="%{resource_path}">%{resource_title}</a>.
+          email_intro: "%{author_name} ameacha maoni katika %{resource_title}. Unaweza kuisoma katika ukurasa huu:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_name}. Unaweza kuacha kumfuata mtumiaji huyu kutoka kwa ukurasa wake wa wasifu.
+          email_subject: Kuna maoni mapya ya %{author_name} katika %{resource_title}
+          notification_title: Kuna maoni mapya ya <a href="%{author_path}">%{author_name} %{author_nickname}</a> katika <a href="%{resource_path}">%{resource_title}</a>.
         comment_by_followed_user_group:
-          email_intro: 'The group %{author_name} has left a comment in %{resource_title}. You can read it in this page:'
-          email_outro: You have received this notification because you are following %{author_name}. You can unfollow this group from its profile page.
-          email_subject: There is a new comment by %{author_name} in %{resource_title}
-          notification_title: There is a new comment by <a href="%{author_path}">%{author_name} %{author_nickname}</a> in <a href="%{resource_path}">%{resource_title}</a>.
+          email_intro: 'Kikundi %{author_name} kimeacha maoni katika %{resource_title}. Unaweza kuisoma katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_name}. Unaweza kuacha kufuata kikundi hiki kutoka kwa ukurasa wake wa wasifu.
+          email_subject: Kuna maoni mapya ya %{author_name} katika %{resource_title}
+          notification_title: Kuna maoni mapya ya <a href="%{author_path}">%{author_name} %{author_nickname}</a> katika <a href="%{resource_path}">%{resource_title}</a>.
         comment_created:
-          email_intro: "%{resource_title} has been commented. You can read the comment in this page:"
+          email_intro: "%{resource_title} imetolewa maoni. Unaweza kusoma maoni katika ukurasa huu:"
           email_outro: You have received this notification because you are following "%{resource_title}" or its author. You can unfollow it from the previous link.
           email_subject: There is a new comment from %{author_name} in %{resource_title}
           notification_title: There is a new comment from <a href="%{author_path}">%{author_name} %{author_nickname}</a> in <a href="%{resource_path}">%{resource_title}</a>
