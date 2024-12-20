@@ -3,64 +3,64 @@ sw:
   activemodel:
     attributes:
       account:
-        delete_reason: Reason to delete your account
+        delete_reason: Sababu ya kufuta akaunti yako
       common:
-        created_at: Created at
+        created_at: Imeundwa saa
       conversation:
-        body: Body
+        body: Mwili
       group:
-        about: About
+        about: Kuhusu
         avatar: Avatar
-        document_number: Document number
-        email: Email
-        name: Name
-        nickname: Nickname
-        phone: Phone
+        document_number: Nambari ya hati
+        email: Barua pepe
+        name: Jina
+        nickname: Jina la utani
+        phone: Simu
       message:
-        body: Body
+        body: Mwili
       report:
-        details: Additional comments
+        details: Maoni ya ziada
       user:
-        about: About
-        email: Your email
-        encrypted_password: Password
-        locale: Locale
-        name: Your name
-        nickname: Nickname
-        old_password: Current password
-        password: Password
-        password_confirmation: Confirm your password
-        personal_url: Personal URL
-        remove_avatar: Remove avatar
-        tos_agreement: Terms of service agreement
+        about: Kuhusu
+        email: Barua pepe yako
+        encrypted_password: Nenosiri
+        locale: Eneo
+        name: Jina lako
+        nickname: Jina la utani
+        old_password: Nenosiri la sasa
+        password: Nenosiri
+        password_confirmation: Thibitisha nenosiri lako
+        personal_url: URL ya kibinafsi
+        remove_avatar: Ondoa avatar
+        tos_agreement: Masharti ya makubaliano ya huduma
     models:
-      decidim/attachment_created_event: Attachment
-      decidim/component_published_event: Active component
-      decidim/demoted_membership: No longer a group admin
-      decidim/gamification/badge_earned_event: Badge earned
-      decidim/gamification/level_up_event: You have leveled up
-      decidim/invited_to_group_event: Invited to group
-      decidim/join_request_accepted_event: Join request accepted
-      decidim/join_request_rejected_event: Join request rejected
-      decidim/profile_updated_event: Profile updated
-      decidim/promote_to_admin: Promoted to group admin
-      decidim/promoted_to_admin_event: Promoted to group admin
-      decidim/removed_from_group: Removed from group
-      decidim/resource_endorsed_event: Resource endorsed
-      decidim/resource_hidden_event: Resource hidden
-      decidim/user_group_created_event: User group created
-      decidim/welcome_notification_event: Welcome message
+      decidim/attachment_created_event: Kiambatisho
+      decidim/component_published_event: Sehemu inayotumika
+      decidim/demoted_membership: Sio msimamizi wa kikundi tena
+      decidim/gamification/badge_earned_event: Nishani iliyopatikana
+      decidim/gamification/level_up_event: Umejipanga
+      decidim/invited_to_group_event: Umealikwa kwenye kikundi
+      decidim/join_request_accepted_event: Ombi la kujiunga limekubaliwa
+      decidim/join_request_rejected_event: Ombi la kujiunga limekataliwa
+      decidim/profile_updated_event: Wasifu umesasishwa
+      decidim/promote_to_admin: Imepandishwa cheo hadi msimamizi wa kikundi
+      decidim/promoted_to_admin_event: Imepandishwa cheo hadi msimamizi wa kikundi
+      decidim/removed_from_group: Imeondolewa kwenye kikundi
+      decidim/resource_endorsed_event: Nyenzo imeidhinishwa
+      decidim/resource_hidden_event: Nyenzo iliyofichwa
+      decidim/user_group_created_event: Kikundi cha watumiaji kimeundwa
+      decidim/welcome_notification_event: Ujumbe wa kukaribisha
   activerecord:
     attributes:
       decidim/action_log:
-        created_at: Time
-        with_participatory_space: Participatory space
+        created_at: Wakati
+        with_participatory_space: Nafasi shirikishi
       decidim/user:
-        current_password: Current password
-        email: Email
-        name: Nickname
-        password: Password
-        password_confirmation: Password confirmation
+        current_password: Nenosiri la sasa
+        email: Barua pepe
+        name: Jina la utani
+        password: Nenosiri
+        password_confirmation: Uthibitishaji wa nenosiri
         remember_me: Remember me
     models:
       decidim/amendment:
