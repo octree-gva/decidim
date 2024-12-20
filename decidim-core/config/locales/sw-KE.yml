@@ -751,142 +751,142 @@ sw:
       components:
         component_published:
           email_intro: 'Kijenzi cha %{resource_title} sasa kinatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: An update to %{participatory_space_title}
-          notification_title: The %{resource_title} component is now active for <a href="%{resource_path}">%{participatory_space_title}</a>
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Kijenzi cha %{resource_title} sasa kinatumika kwa <a href="%{resource_path}">%{participatory_space_title}</a>
       email_event:
-        email_greeting: Hello %{user_name},
-        email_intro: 'There has been an update to "%{resource_title}". You can see it from this page:'
-        email_outro: You have received this notification because you are following "%{resource_title}". You can unfollow it from the previous link.
-        email_subject: An update to %{resource_title}
+        email_greeting: Hujambo %{user_name},
+        email_intro: 'Kumekuwa na sasisho kwa "%{resource_title}". Unaweza kuiona kutoka kwa ukurasa huu:'
+        email_outro: Umepokea arifa hii kwa sababu unafuata "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+        email_subject: Sasisho kwa %{resource_title}
       gamification:
         badge_earned:
-          email_intro: Congratulations! You have earned the <a href="%{resource_url}">%{badge_name} badge</a> (level %{current_level}).
-          email_outro: You have received this notification because you made activity on our website.
-          email_subject: 'You have earned a new badge: %{badge_name}!'
-          notification_title: Congratulations! You have earned the <a href="%{resource_path}">%{badge_name} badge</a> (level %{current_level}).
+          email_intro: Hongera! Umejishindia <a href="%{resource_url}">%{badge_name} beji</a> (kiwango cha %{current_level}).
+          email_outro: Umepokea arifa hii kwa sababu ulifanya shughuli kwenye tovuti yetu.
+          email_subject: 'Umejishindia beji mpya: %{badge_name}!'
+          notification_title: Hongera! Umejishindia <a href="%{resource_path}">%{badge_name} beji</a> (kiwango cha %{current_level}).
         level_up:
-          email_intro: Congratulations! You have reached level %{current_level} on the <a href="%{resource_url}">%{badge_name} badge</a>!
-          email_outro: You have received this notification because you made activity on our website.
-          email_subject: You have reached level %{current_level} on the %{badge_name} badge!
-          notification_title: Congratulations! You have reached level %{current_level} on the <a href="%{resource_path}">%{badge_name} badge</a>!
+          email_intro: Hongera! Umefikia kiwango cha %{current_level} kwenye <a href="%{resource_url}">%{badge_name} beji</a>!
+          email_outro: Umepokea arifa hii kwa sababu ulifanya shughuli kwenye tovuti yetu.
+          email_subject: Umefikia kiwango cha %{current_level} kwenye beji ya %{badge_name}!
+          notification_title: Hongera! Umefikia kiwango cha %{current_level} kwenye <a href="%{resource_path}">%{badge_name} beji</a>!
       groups:
         demoted_membership:
-          email_intro: An admin of the <a href="%{resource_url}">%{user_group_name}</a> group has removed your admin rights to that group.
-          email_outro: You have received this notification because you are a member of that group.
-          email_subject: You are no longer an admin of the %{user_group_name} group!
-          notification_title: You are no longer an admin of the <a href="%{resource_path}">%{user_group_name}</a> group.
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> ameondoa haki zako za msimamizi kwa kikundi hicho.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwanachama wa kikundi hicho.
+          email_subject: Wewe si msimamizi tena wa kikundi cha %{user_group_name}!
+          notification_title: Wewe si msimamizi tena wa kikundi cha <a href="%{resource_path}">%{user_group_name}</a>.
         invited_to_group:
-          email_intro: An admin of the <a href="%{resource_url}">%{user_group_name}</a> group has invited you to join it.
-          email_outro: You have received this notification because you have been invited to an group. Please check the Groups tab in your profile to approve it.
-          email_subject: You have been invited to join the %{user_group_name} group!
-          notification_title: You have been invited to join the <a href="%{resource_path}">%{user_group_name}</a> group. Check the <a href="%{groups_profile_tab_path}">Groups page</a> in your profile to approve it!
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekualika ujiunge nacho.
+          email_outro: Umepokea arifa hii kwa sababu umealikwa kwenye kikundi. Tafadhali angalia kichupo cha Vikundi katika wasifu wako ili kuidhinisha.
+          email_subject: Umealikwa kujiunga na kikundi cha %{user_group_name}!
+          notification_title: Umealikwa kujiunga na <a href="%{resource_path}">%{user_group_name}</a> kikundi. Angalia <a href="%{groups_profile_tab_path}">Ukurasa wa Vikundi</a> katika wasifu wako ili kuidhinisha!
         join_request_accepted:
-          email_intro: Congratulations! An admin of the <a href="%{resource_url}">%{user_group_name}</a> group has accepted your request to join it.
-          email_outro: You have received this notification because your join request has been updated.
-          email_subject: You have been accepted to the %{user_group_name} group!
-          notification_title: You have been accepted to the <a href="%{resource_path}">%{user_group_name}</a> group.
+          email_intro: Hongera! Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekubali ombi lako la kujiunga nacho.
+          email_outro: Umepokea arifa hii kwa sababu ombi lako la kujiunga limesasishwa.
+          email_subject: Umekubaliwa kwenye kikundi cha %{user_group_name}!
+          notification_title: Umekubaliwa kwa <a href="%{resource_path}">%{user_group_name}</a> kikundi.
         join_request_created:
-          email_intro: Someone requested to join the %{user_group_name} group. You can accept or reject it from <a href="%{resource_url}">the group members page</a>.
-          email_outro: You have received this notification because you can manage the %{user_group_name} group.
-          email_subject: Someone requested to join the %{user_group_name} group!
-          notification_title: Someone requested to join the %{user_group_name} group. You can accept or reject it from <a href="%{resource_path}">the group members page</a>.
+          email_intro: Mtu aliomba kujiunga na kikundi cha %{user_group_name}. Unaweza kuikubali au kuikataa kutoka <a href="%{resource_url}">ukurasa wa washiriki wa kikundi</a>.
+          email_outro: Umepokea arifa hii kwa sababu unaweza kudhibiti kikundi cha %{user_group_name}.
+          email_subject: Mtu aliomba kujiunga na kikundi cha %{user_group_name}!
+          notification_title: Mtu aliomba kujiunga na kikundi cha %{user_group_name}. Unaweza kuikubali au kuikataa kutoka <a href="%{resource_path}">ukurasa wa washiriki wa kikundi</a>.
         join_request_rejected:
-          email_intro: An admin of the <a href="%{resource_url}">%{user_group_name}</a> group rejected your request to join it.
-          email_outro: You have received this notification because your join request has been updated.
-          email_subject: Your request to join the %{user_group_name} group has been rejected!
-          notification_title: Your request to join the <a href="%{resource_path}">%{user_group_name}</a> group has been rejected.
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekataa ombi lako la kujiunga nacho.
+          email_outro: Umepokea arifa hii kwa sababu ombi lako la kujiunga limesasishwa.
+          email_subject: Ombi lako la kujiunga na kikundi cha %{user_group_name} limekataliwa!
+          notification_title: Ombi lako la kujiunga na kikundi cha <a href="%{resource_path}">%{user_group_name}</a> limekataliwa.
         promoted_to_admin:
-          email_intro: An admin of the <a href="%{resource_url}">%{user_group_name}</a> group has given you admin rights to that group.
-          email_outro: You have received this notification because you are a member of that group.
-          email_subject: You are now an admin of the %{user_group_name} group!
-          notification_title: You are now an admin of the <a href="%{resource_path}">%{user_group_name}</a> group.
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekupa haki za msimamizi kwa kikundi hicho.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwanachama wa kikundi hicho.
+          email_subject: Sasa wewe ni msimamizi wa kikundi cha %{user_group_name}!
+          notification_title: Sasa wewe ni msimamizi wa kikundi cha <a href="%{resource_path}">%{user_group_name}</a>.
         removed_from_group:
-          email_intro: An admin of the <a href="%{resource_url}">%{user_group_name}</a> group has removed you from it.
-          email_outro: You have received this notification because you were a member of that group.
-          email_subject: You have been removed from the %{user_group_name} group!
-          notification_title: You have been removed from the <a href="%{resource_path}">%{user_group_name}</a> group.
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekuondoa.
+          email_outro: Umepokea arifa hii kwa sababu ulikuwa mwanachama wa kikundi hicho.
+          email_subject: Umeondolewa kutoka kwa kikundi cha %{user_group_name}!
+          notification_title: Umeondolewa kutoka kwa <a href="%{resource_path}">%{user_group_name}</a> kikundi.
         user_group_created:
-          email_intro: A new user group has been created with the name %{user_group_name}. You can now verify it in the <a href="%{groups_admin_url}">admin panel</a>.
-          email_outro: You have received this notification because you are an admin of the platform.
-          email_subject: A new user group has been created
-          notification_title: The %{user_group_name} user group has been created. You can now verify it in the <a href="%{groups_admin_path}">admin panel</a>.
+          email_intro: Kikundi kipya cha watumiaji kimeundwa kwa jina %{user_group_name}. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_url}">kidirisha cha msimamizi</a>.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kikundi kipya cha watumiaji kimeundwa
+          notification_title: Kikundi cha watumiaji %{user_group_name} kimeundwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_path}">kidirisha cha msimamizi</a>.
         user_group_updated:
-          email_intro: A user group with the name %{user_group_name} has updated its profile, leaving it unverified. You can now verify it in the <a href="%{groups_admin_url}">admin panel</a>.
-          email_outro: You have received this notification because you are an admin of the platform.
-          email_subject: A user group has updated its profile
-          notification_title: The %{user_group_name} user group has updated its profile, leaving it unverified. You can now verify it in the <a href="%{groups_admin_path}">admin panel</a>.
+          email_intro: Kikundi cha watumiaji walio na jina %{user_group_name} kimesasisha wasifu wake, na kuuacha bila kuthibitishwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_url}">kidirisha cha msimamizi</a>.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kikundi cha watumiaji kimesasisha wasifu wake
+          notification_title: Kikundi cha watumiaji %{user_group_name} kimesasisha wasifu wake, na kuuacha haujathibitishwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_path}">kidirisha cha msimamizi</a>.
       nickname_event:
-        notification_body: We have corrected the way nicknames are used so that there are no duplicates, and that is why we have removed the case-sensitive rule. <br/> Your nickname was created after another one with the same name, so we have automatically renamed it. You can change it from <a href="%{link_to_account_settings}">your account settings</a>.
+        notification_body: Tumesahihisha jinsi majina ya utani yanavyotumika ili kusiwe na nakala, na ndiyo maana tumeondoa sheria inayozingatia kesi. <br/> Jina lako la utani liliundwa baada ya lingine lenye jina sawa, kwa hivyo tumelibadilisha kiotomatiki. Unaweza kuibadilisha kutoka <a href="%{link_to_account_settings}">mipangilio ya akaunti yako</a>.
       notification_event:
-        notification_title: An event occurred to <a href="%{resource_path}">%{resource_title}</a>.
+        notification_title: Tukio lilitokea kwa <a href="%{resource_path}">%{resource_title}</a>.
       reports:
         resource_hidden:
-          email_intro: An administrator removed your %{resource_type} because it has been reported as %{report_reasons}.
-          email_outro: You have received this notification because you are an author of the removed content.
-          email_subject: Your %{resource_type} has been removed
+          email_intro: Msimamizi aliondoa %{resource_type} yako kwa sababu imeripotiwa kama %{report_reasons}.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa maudhui yaliyoondolewa.
+          email_subject: '%{resource_type} yako imeondolewa'
           notification_title: |-
-            An administrator removed your %{resource_type} because it has been reported as %{report_reasons}.</br>
+            Msimamizi aliondoa %{resource_type} yako kwa sababu imeripotiwa kama %{report_reasons}.</br>
             <i>%{resource_content}</i>
       resource_endorsed:
-        email_intro: '%{endorser_name} %{endorser_nickname}, who you are following, has just endorsed "%{resource_title}" and we think it may be interesting to you. Check it out and contribute:'
-        email_outro: You have received this notification because you are following %{endorser_nickname}. You can stop receiving notifications following the previous link.
-        email_subject: "%{endorser_nickname} has performed a new endorsement"
-        notification_title: The <a href="%{resource_path}">%{resource_title}</a> %{resource_type} has been endorsed by <a href="%{endorser_path}">%{endorser_name} %{endorser_nickname}</a>.
+        email_intro: '%{endorser_name} %{endorser_nickname}, unayemfuata, ameidhinisha hivi punde "%{resource_title}" na tunadhani inaweza kukuvutia. Iangalie na uchangie:'
+        email_outro: Umepokea arifa hii kwa sababu unafuata %{endorser_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+        email_subject: "%{endorser_nickname} ameidhinisha upya"
+        notification_title: <a href="%{resource_path}">%{resource_title}</a> %{resource_type} imeidhinishwa na <a href="%{endorser_path}">%{endorser_name} %{endorser_nickname}</a>.
       users:
         profile_updated:
-          email_intro: The <a href="%{resource_url}">profile page</a> of %{name} (%{nickname}), who you are following, has been updated.
-          email_outro: You have received this notification because you are following %{nickname}. You can stop receiving notifications following the previous link.
-          email_subject: "%{nickname} updated their profile"
-          notification_title: The <a href="%{resource_path}">profile page</a> of %{name} (%{nickname}), who you are following, has been updated.
+          email_intro: <a href="%{resource_url}">Ukurasa wa wasifu</a> kati ya %{name} (%{nickname}), unaofuata, umesasishwa.
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: "%{nickname} alisasisha wasifu wake"
+          notification_title: <a href="%{resource_path}">Ukurasa wa wasifu</a> kati ya %{name} (%{nickname}), unaofuata, umesasishwa.
         user_officialized:
-          email_intro: Participant %{name} (%{nickname}) has been officialized.
-          email_outro: You have received this notification because you are an administrator of the organization.
-          email_subject: "%{name} has been officialized"
-          notification_title: Participant %{name} (%{nickname}) has been officialized.
+          email_intro: Mshiriki %{name} (%{nickname}) amerasimishwa.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa shirika.
+          email_subject: "%{name} imerasimishwa"
+          notification_title: Mshiriki %{name} (%{nickname}) amerasimishwa.
     export_mailer:
       download_your_data_export:
-        click_button: 'Click the next link to download your data.<br/>The file will be available until %{date}.<br/>You will need <a href="https://www.7-zip.org/">7-Zip</a> (for Windows), <a href="https://www.keka.io/en/">Keka</a> (for MacOS) or <a href="https://peazip.github.io">PeaZip</a> (for Linux) to open it. Password: %{password}'
-        download: Download
+        click_button: 'Bofya kiungo kinachofuata ili kupakua data yako.<br/>Faili itapatikana hadi %{date}.<br/>Utahitaji <a href="https://www.7-zip.org/"> 7-Zip</a> (kwa Windows), <a href="https://www.keka.io/en/">Keka</a> (kwa MacOS) au <a href="https:// peazip.github.io">PeaZip</a> (kwa ajili ya Linux) kwa fungua. Nenosiri: %{password}'
+        download: Pakua
       export:
-        ready: Please find attached a zipped version of your export.
-      subject: Your export "%{name}" is ready
+        ready: Tafadhali tafuta toleo lililoambatishwa la uhamishaji wako.
+      subject: Uhamishaji wako "%{name}" uko tayari
     filters:
       linked_classes:
-        all: All
-        answer: Answer
-        collaborative_draft: Collaborative draft
-        dummy_resource: Dummy resources
-        meeting: Meetings
-        project: Projects
-        proposal: Proposals
-        result: Results
+        all: Wote
+        answer: Jibu
+        collaborative_draft: Rasimu shirikishi
+        dummy_resource: Rasilimali za dummy
+        meeting: Mikutano
+        project: Miradi
+        proposal: Mapendekezo
+        result: Matokeo
     fingerprint:
-      check: Check fingerprint
-      explanation: The piece of text below is a shortened, hashed representation of this content. It is useful to ensure the content has not been tampered with, as a single modification would result in a totally different value.
-      online_calculator_name: MD5 calculator online
-      replicate_help: This fingerprint is calculated using a SHA256 hashing algorithm. In order to replicate it yourself, you can use an %{online_calculator_link} and copy-paste the source data.
-      source: Source
-      title: Fingerprint
-      value: Value
+      check: Angalia alama za vidole
+      explanation: Kipande cha maandishi hapa chini ni uwakilishi uliofupishwa, wa haraka wa maudhui haya. Ni muhimu kuhakikisha kuwa maudhui hayajaingiliwa, kwani urekebishaji mmoja unaweza kusababisha thamani tofauti kabisa.
+      online_calculator_name: Kikokotoo cha MD5 mtandaoni
+      replicate_help: Alama hii ya vidole inakokotolewa kwa kutumia algoriti ya hashing ya SHA256. Ili kuiga mwenyewe, unaweza kutumia %{online_calculator_link} na kunakili na ubandike data chanzo.
+      source: Chanzo
+      title: Alama ya vidole
+      value: Thamani
     followers:
       followers_count:
-        one: "%{count} follower"
-        other: "%{count} followers"
-      no_followers: No followers yet.
+        one: "Mfuasi %{count}"
+        other: "Wafuasi %{count}"
+      no_followers: Bado hakuna wafuasi.
     following:
       following_count:
-        one: "%{count} follow"
-        other: "%{count} follows"
-      no_followings: Does not follow anyone or anything yet.
-      non_public_followings: Some of the resources followed are not public.
+        one: "%{count} wanafuata"
+        other: "%{count} inafuata"
+      no_followings: hafuati mtu yeyote au kitu chochote bado.
+      non_public_followings: Baadhi ya rasilimali zinazofuatwa sio za umma.
     follows:
       create:
-        button: Follow
-        error: There was a problem following this resource.
-        participatory_space: Following <span>%{resource_name}</span>
+        button: Fuata
+        error: Kulikuwa na tatizo kufuatia rasilimali hii.
+        participatory_space: Unafuata <span>%{resource_name}</span>
       destroy:
-        button: Stop following
+        button: Acha kufuata
         error: There was a problem unfollowing this resource.
     forms:
       attachment_link:
