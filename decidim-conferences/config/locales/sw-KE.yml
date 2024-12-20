@@ -3,258 +3,258 @@ sw:
   activemodel:
     attributes:
       conference:
-        assemblies_ids: Related Assemblies
-        available_slots: Available slots
-        banner_image: Banner image
-        copy_categories: Copy categories
-        copy_components: Copy components
-        copy_features: Copy features
-        decidim_scope_id: Scope
-        description: Description
-        end_date: End date
+        assemblies_ids: Makusanyiko Yanayohusiana
+        available_slots: Nafasi zinazopatikana
+        banner_image: Picha ya bango
+        copy_categories: Nakili kategoria
+        copy_components: Nakili vipengele
+        copy_features: Nakili vipengele
+        decidim_scope_id: Upeo
+        description: Maelezo
+        end_date: Tarehe ya mwisho
         hashtag: Hashtag
-        hero_image: Home image
-        location: Location
-        main_logo: Main logo
-        objectives: Objectives
-        participatory_processes_ids: Related participatory processes
-        promoted: Highlighted
-        published_at: Published at
-        registration_terms: Registration terms
-        registrations_enabled: Registrations enabled
-        scope_id: Scope
-        scopes_enabled: Scopes enabled
-        short_description: Short description
-        show_statistics: Show statistics
-        sign_date: Sign date
-        signature: Signature
-        signature_name: Signature name
-        slogan: Slogan
+        hero_image: Picha ya nyumbani
+        location: Mahali
+        main_logo: Nembo kuu
+        objectives: Malengo
+        participatory_processes_ids: Michakato shirikishi inayohusiana
+        promoted: Imeangaziwa
+        published_at: Iliyochapishwa saa
+        registration_terms: Masharti ya usajili
+        registrations_enabled: Usajili umewezeshwa
+        scope_id: Upeo
+        scopes_enabled: Upeo umewezeshwa
+        short_description: Maelezo mafupi
+        show_statistics: Onyesha takwimu
+        sign_date: Tarehe ya saini
+        signature: Sahihi
+        signature_name: Jina la saini
+        slogan: Kauli mbiu
         slug: URL slug
-        start_date: Start date
-        title: Title
-        weight: Order position
+        start_date: Tarehe ya kuanza
+        title: Kichwa
+        weight: Nafasi ya agizo
       conference_media_link:
-        date: Date
-        link: Link
-        title: Title
-        weight: Order position
+        date: Tarehe
+        link: Kiungo
+        title: Kichwa
+        weight: Nafasi ya agizo
       conference_partner:
-        link: Link
-        logo: Logo
-        name: Name
-        partner_type: Partner type
-        weight: Order position
+        link: Kiungo
+        logo: Nembo
+        name: Jina
+        partner_type: Aina ya mshirika
+        weight: Nafasi ya agizo
       conference_registration_invite:
-        email: Email
-        name: Name
-        registration_type_id: Registration type
-        user_id: User
+        email: Barua pepe
+        name: Jina
+        registration_type_id: Aina ya usajili
+        user_id: Mtumiaji
       conference_registration_type:
-        description: Description
-        price: Price
-        title: Title
-        weight: Order position
+        description: Maelezo
+        price: Bei
+        title: Kichwa
+        weight: Nafasi ya agizo
       conference_speaker:
-        affiliation: Affiliation
+        affiliation: Ushirikiano
         avatar: Avatar
-        conference_meeting_ids: Related meetings
-        full_name: Full name
-        personal_url: Personal URL
-        position: Position
-        short_bio: Short bio
+        conference_meeting_ids: Mikutano inayohusiana
+        full_name: Jina kamili
+        personal_url: URL ya kibinafsi
+        position: Nafasi
+        short_bio: Wasifu mfupi
         twitter_handle: X handle
-        user_id: User
+        user_id: Mtumiaji
       conference_user_role:
-        email: Email
-        name: Name
-        role: Role
+        email: Barua pepe
+        name: Jina
+        role: Jukumu
     errors:
       models:
         conference_registration_invite:
           attributes:
             email:
-              already_invited: This email has already been invited.
+              already_invited: Barua pepe hii tayari imealikwa.
   activerecord:
     models:
       decidim/conference:
-        one: Conference
-        other: Conferences
+        one: Mkutano
+        other: Mikutano
       decidim/conference_speaker:
-        one: Conference speaker
-        other: Conference speakers
+        one: Spika wa mkutano
+        other: Wazungumzaji wa mkutano
       decidim/conference_user_role:
-        one: Conference user role
-        other: Conference user roles
+        one: Jukumu la mtumiaji wa mkutano
+        other: Majukumu ya mtumiaji wa mkutano
   decidim:
     admin:
       actions:
-        confirm: Confirm
-        new_conference: New conference
-        new_conference_user_role: New conference admin
-        new_media_link: New media link
-        new_partner: New partner
-        new_registration_type: New registration type
-        new_speaker: New speaker
-        send_diplomas: Send certificates of attendance
+        confirm: Thibitisha
+        new_conference: Mkutano mpya
+        new_conference_user_role: Msimamizi mpya wa mkutano
+        new_media_link: Kiungo kipya cha media
+        new_partner: Mshirika mpya
+        new_registration_type: Aina mpya ya usajili
+        new_speaker: Spika mpya
+        send_diplomas: Tuma vyeti vya mahudhurio
       conference_copies:
         new:
-          copy: Copy
-          select: Select which data you would like to duplicate
-          title: Duplicate conference
+          copy: Nakili
+          select: Chagua data ambayo ungependa kurudia
+          title: Rudufu mkutano
       conference_publications:
         create:
-          error: There was a problem publishing this conference.
-          success: Conference successfully published.
+          error: Kulikuwa na tatizo la kuchapisha mkutano huu.
+          success: Mkutano umechapishwa.
         destroy:
-          error: There was a problem unpublishing this conference.
-          success: Conference successfully unpublished.
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa mkutano huu.
+          success: Mkutano umebatilishwa kuchapishwa.
       conference_registration:
         confirm:
-          error: There was a problem confirming this conference registration.
-          success: Conference registration successfully confirmed.
+          error: Kulikuwa na tatizo katika kuthibitisha usajili wa mkutano huu.
+          success: Usajili wa mkutano umethibitishwa.
       conference_speakers:
         create:
-          error: There was a problem adding a speaker to this conference.
-          success: Conference speaker successfully created.
+          error: Kulikuwa na tatizo la kuongeza mzungumzaji kwenye mkutano huu.
+          success: Spika ya mkutano imeundwa.
         destroy:
-          success: Conference speaker successfully deleted.
+          success: Spika ya mkutano imefutwa.
         edit:
-          title: Update conference speaker.
-          update: Update
+          title: Sasisha kipaza sauti cha mkutano.
+          update: Sasisha
         index:
-          conference_speakers_title: Conference speakers
+          conference_speakers_title: Wazungumzaji wa mkutano
         new:
-          create: Create
-          title: New conference speaker.
+          create: Unda
+          title: Spika mpya wa mkutano.
         publish:
-          invalid: There was a problem publishing this speaker.
-          success: Conference speaker successfully published.
+          invalid: Kulikuwa na tatizo la kuchapisha spika hii.
+          success: Spika ya mkutano imechapishwa.
         unpublish:
-          invalid: There was a problem unpublishing this speaker.
-          success: Conference speaker successfully unpublished.
+          invalid: Kulikuwa na tatizo la kubatilisha uchapishaji wa spika hii.
+          success: Spika ya kongamano imebatilisha uchapishaji.
         update:
-          error: There was a problem updating this conference speaker.
-          success: Conference speaker successfully updated.
+          error: Kulikuwa na tatizo la kusasisha spika hii ya mkutano.
+          success: Spika ya mkutano imesasishwa.
       conference_user_roles:
         create:
-          error: There was a problem adding an admin to this conference.
-          success: Conference admin successfully added.
+          error: Kulikuwa na tatizo la kuongeza msimamizi kwenye mkutano huu.
+          success: Msimamizi wa mkutano ameongezwa.
         destroy:
-          success: Conference admin successfully removed.
+          success: Msimamizi wa mkutano ameondolewa.
         edit:
-          title: Update conference admin.
-          update: Update
+          title: Sasisha msimamizi wa mkutano.
+          update: Sasisha
         index:
-          conference_admins_title: Conference admins
+          conference_admins_title: Wasimamizi wa mkutano
         new:
-          create: Create
-          title: New conference admin.
+          create: Unda
+          title: Msimamizi mpya wa mkutano.
         update:
-          error: There was a problem updating this conference admin.
-          success: Conference admin successfully updated.
+          error: Kulikuwa na tatizo la kusasisha msimamizi wa mkutano huu.
+          success: Msimamizi wa mkutano amesasishwa.
       conferences:
         create:
-          error: There was a problem creating this conference.
-          success: Conference successfully created.
+          error: Kulikuwa na tatizo kuunda mkutano huu.
+          success: Kongamano limeundwa.
         edit:
-          update: Update
+          update: Sasisha
         exports:
-          registrations: Registrations
+          registrations: Usajili
         form:
-          title: General Information
+          title: Taarifa za Jumla
         index:
-          published: Published
-          unpublished: Unpublished
+          published: Imechapishwa
+          unpublished: Haijachapishwa
         new:
-          create: Create
-          title: Conference
+          create: Unda
+          title: Mkutano
         update:
-          error: There was a problem updating this conference.
-          success: Conference successfully updated.
+          error: Kulikuwa na tatizo la kusasisha mkutano huu.
+          success: Mkutano umesasishwa.
       conferences_copies:
         create:
-          error: There was a problem duplicating this conference.
-          success: Conference successfully duplicated.
+          error: Kulikuwa na tatizo katika kunakili mkutano huu.
+          success: Kongamano limenakiliwa.
       media_links:
         create:
-          error: There was a problem creating a new media link.
-          success: Media Link successfully created.
+          error: Kulikuwa na tatizo la kuunda kiungo kipya cha midia.
+          success: Kiungo cha Media kimeundwa.
         destroy:
-          success: Media Link successfully deleted.
+          success: Kiungo cha Media kimefutwa.
         edit:
-          title: Update media link.
-          update: Update
+          title: Sasisha kiungo cha media.
+          update: Sasisha
         index:
-          media_links_title: Media Links
+          media_links_title: Viungo vya Vyombo vya Habari
         new:
-          create: Create
-          title: Media Link
+          create: Unda
+          title: Kiungo cha Media
         update:
-          error: There was a problem updating this media link.
-          success: Media Link successfully updated.
+          error: Kulikuwa na tatizo la kusasisha kiungo hiki cha media.
+          success: Kiungo cha Media kimesasishwa.
       menu:
-        conferences: Conferences
+        conferences: Mikutano
         conferences_submenu:
-          attachment_collections: Folders
-          attachment_files: Files
-          attachments: Attachments
-          categories: Categories
-          components: Components
-          conference_admins: Conference admins
-          conference_invites: Invites
-          conference_speakers: Speakers
-          diploma: Certificate of Attendance
-          info: About this conference
-          media_links: Media Links
-          moderations: Moderations
-          partners: Partners
-          registration_types: Registration Types
-          registrations: Registrations
-          see_conference: See conference
-          user_registrations: User Registrations
+          attachment_collections: Folda
+          attachment_files: Faili
+          attachments: Viambatisho
+          categories: Kategoria
+          components: Vipengele
+          conference_admins: Wasimamizi wa mkutano
+          conference_invites: Inaalika
+          conference_speakers: Wazungumzaji
+          diploma: Cheti cha Mahudhurio
+          info: Kuhusu mkutano huu
+          media_links: Viungo vya Vyombo vya Habari
+          moderations: Ukadiriaji
+          partners: Washirika
+          registration_types: Aina za Usajili
+          registrations: Usajili
+          see_conference: Tazama mkutano
+          user_registrations: Usajili wa Watumiaji
       models:
         conference:
           fields:
-            created_at: Created at
-            published: Published
-            title: Title
+            created_at: Imeundwa saa
+            published: Imechapishwa
+            title: Kichwa
         conference_speaker:
           fields:
-            affiliation: Affiliation
-            full_name: Full name
-            position: Position
-          name: Conference Speaker
+            affiliation: Ushirikiano
+            full_name: Jina kamili
+            position: Nafasi
+          name: Spika wa Mkutano
         conference_user_role:
           fields:
-            email: Email
-            name: Name
-            role: Role
-          name: Conference Admin
+            email: Barua pepe
+            name: Jina
+            role: Jukumu
+          name: Msimamizi wa Mkutano
           roles:
-            admin: Administrator
-            collaborator: Collaborator
-            moderator: Moderator
-            valuator: Valuator
+            admin: Msimamizi
+            collaborator: Mshiriki
+            moderator: Msimamizi
+            valuator: Mthamini
         media_link:
           fields:
-            date: Date
-            link: Link
-            title: Title
-          name: Media Link
+            date: Tarehe
+            link: Kiungo
+            title: Kichwa
+          name: Kiungo cha Media
         partner:
           fields:
-            link: Link
-            logo: Logo
-            name: Name
-            partner_type: Type
-          name: Partner
+            link: Kiungo
+            logo: Nembo
+            name: Jina
+            partner_type: Aina
+          name: Mshirika
           types:
-            collaborator: Collaborator
-            main_promotor: Main promotor
+            collaborator: Mshiriki
+            main_promotor: Mtangazaji mkuu
         registration_type:
           fields:
-            conference_meetings: Conference meetings
+            conference_meetings: Mikutano ya mikutano
             price: Price
             registrations_count: Registrations count
             title: Title
