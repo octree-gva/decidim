@@ -1104,71 +1104,71 @@ sw:
         latlng_text: 'latitudo: %{latitude}, longitudo: %{longitude}'
         map_service_brand: OpenStreetMap
     members:
-      no_members: This group does not have any members yet.
+      no_members: Kikundi hiki bado hakina wanachama wowote.
     menu:
-      help: Help
-      home: Home
+      help: Msaada
+      home: Nyumbani
     messaging:
       conversation_mailer:
         comanagers_new_conversation:
-          admin_in_group: You are receiving this because you are an admin in %{group}.
-          greeting: Hi, %{recipient}!
-          intro: "%{manager} has started a new conversation in the name of %{group}. Click here to see it:"
-          outro: Enjoy the platform!
-          subject: "%{manager} has started a new conversation as a %{group}"
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{manager} ameanzisha mazungumzo mapya kwa jina la %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{manager} ameanzisha mazungumzo mapya kama %{group}"
         comanagers_new_message:
-          admin_in_group: You are receiving this because you are an admin in %{group}.
-          greeting: Hi, %{recipient}!
-          intro: "%{manager} has posted new messages in a conversation in the name of %{group}. Click here to see them:"
-          outro: Enjoy the platform!
-          subject: "%{manager} has send new messages as a %{group}"
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{manager} amechapisha ujumbe mpya katika mazungumzo kwa jina la %{group}. Bofya hapa kuziona:"
+          outro: Furahia jukwaa!
+          subject: "%{manager} ametuma ujumbe mpya kama %{group}"
         new_conversation:
-          greeting: Hi, %{recipient}!
-          intro: "%{sender} has started a new conversation with you. Click here to see it:"
-          outro: Enjoy the platform!
-          subject: "%{sender} has started a conversation with you"
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} ameanza mazungumzo mapya na wewe. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{sender} ameanza mazungumzo na wewe"
         new_group_conversation:
-          admin_in_group: You are receiving this because you are an admin in %{group}.
-          greeting: Hi, %{recipient}!
-          intro: "%{sender} has started a new conversation with the group %{group}. Click here to see it:"
-          outro: Enjoy the platform!
-          subject: "%{sender} has started a conversation with %{group}"
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} ameanzisha mazungumzo mapya na kikundi %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{sender} ameanzisha mazungumzo na %{group}"
         new_group_message:
-          admin_in_group: You are receiving this because you are an admin in %{group}.
-          greeting: Hi, %{recipient}!
-          intro: "%{sender} has posted new messages in a conversation with the group %{group}. Click here to see it:"
-          outro: Enjoy the platform!
-          subject: "%{group} have new messages from %{sender}"
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} amechapisha ujumbe mpya katika mazungumzo na kikundi %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{group} wana ujumbe mpya kutoka kwa %{sender}"
         new_message:
-          greeting: Hi, %{recipient}!
-          intro: "%{sender} has posted new messages in your conversation. Click here to see them:"
-          outro: Enjoy the platform!
-          subject: You have new messages from %{sender}
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} amechapisha ujumbe mpya katika mazungumzo yako. Bofya hapa kuziona:"
+          outro: Furahia jukwaa!
+          subject: Una ujumbe mpya kutoka kwa %{sender}
       conversations:
         add_conversation_users:
-          add_max_users: 'Add users to conversation: 9 users max'
-          add_users_placeholder: Search...
-          modal_title: New conversation
-          no_results: No results
-          participant_with_disabled_message_reception: This participant does not want to receive private messages.
+          add_max_users: 'Ongeza watumiaji kwenye mazungumzo: Upeo wa watumiaji 9'
+          add_users_placeholder: Tafuta...
+          modal_title: Mazungumzo mapya
+          no_results: Hakuna matokeo
+          participant_with_disabled_message_reception: Mshiriki huyu hataki kupokea ujumbe wa faragha.
         create:
-          error: Conversation not started. Try again later.
+          error: Mazungumzo hayajaanza. Jaribu tena baadaye.
         error_modal:
-          close: Close modal
-          correct_errors: Please correct the errors and try again.
-          intro: 'There were the following errors with your message:'
-          ok: OK
+          close: Funga modali
+          correct_errors: Tafadhali sahihisha makosa na ujaribu tena.
+          intro: 'Kulikuwa na hitilafu zifuatazo na ujumbe wako:'
+          ok: Sawa
         index:
-          new_conversation: New conversation
-          next: Next
-          no_conversations: You have no conversations yet.
-          title: Conversations
+          new_conversation: Mazungumzo mapya
+          next: Inayofuata
+          no_conversations: Bado huna mazungumzo.
+          title: Mazungumzo
         reply_form:
-          placeholder: Your reply...
-          send: Send
+          placeholder: Jibu lako...
+          send: Tuma
         show:
-          back: Back to all conversations
-          chat_with: Conversation with
+          back: Rudi kwa mazungumzo yote
+          chat_with: Mazungumzo na
           deleted_accounts: You cannot have a conversation with deleted accounts.
           not_allowed: This participant does not accept direct messages.
           title: Conversation with %{usernames}
