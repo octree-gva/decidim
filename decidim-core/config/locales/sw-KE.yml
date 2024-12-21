@@ -1169,277 +1169,277 @@ sw:
         show:
           back: Rudi kwa mazungumzo yote
           chat_with: Mazungumzo na
-          deleted_accounts: You cannot have a conversation with deleted accounts.
-          not_allowed: This participant does not accept direct messages.
-          title: Conversation with %{usernames}
+          deleted_accounts: Huwezi kuwa na mazungumzo na akaunti zilizofutwa.
+          not_allowed: Mshiriki huyu hakubali ujumbe wa moja kwa moja.
+          title: Mazungumzo na %{usernames}
         start:
-          placeholder: Your message...
-          send: Send
+          placeholder: Ujumbe wako...
+          send: Tuma
         update:
-          error: Message was not sent due to an error.
+          error: Ujumbe haukutumwa kwa sababu ya hitilafu.
     metadata:
       progress:
-        active: Active
-        finished: 'Finished: %{end_date}'
-        not_started: Not started yet
-        remaining: "%{time_distance} remaining"
+        active: Inayotumika
+        finished: 'Imekamilika: %{end_date}'
+        not_started: Bado haijaanza
+        remaining: "%{time_distance} imesalia"
     metrics:
       download:
-        csv: Download data (CSV)
+        csv: Pakua data (CSV)
       followers:
-        description: Number of participants that follow this participation space
-        object: followers
-        title: Followers
+        description: Idadi ya washiriki wanaofuata nafasi hii ya ushiriki
+        object: wafuasi
+        title: Wafuasi
       participants:
-        description: Number of active participants in organization
-        object: participants
-        title: Participants
+        description: Idadi ya washiriki hai katika shirika
+        object: washiriki
+        title: Washiriki
       users:
-        description: Number of participants in organization
-        object: participants
-        title: Participants
+        description: Idadi ya washiriki katika shirika
+        object: washiriki
+        title: Washiriki
     newsletter_mailer:
       newsletter:
-        no_reply_notice: This email was sent from a notification email address that cannot accept incoming email. Please do not reply to this message.
-        note: You received this email because you are subscribed to newsletters on %{organization_name}. You can change your settings on your <a href="%{link}">notifications page</a>.
-        see_on_website: Cannot see this email correctly? View it on the <a href="%{link}" target="_blank" class="see-on-website">website</a>.
-        unsubscribe: To opt out of receiving this type of email, <a href="%{link}" target="_blank" class="unsubscribe">Unsubscribe</a>.
+        no_reply_notice: Barua pepe hii ilitumwa kutoka kwa barua pepe ya arifa ambayo haiwezi kukubali barua pepe zinazoingia. Tafadhali usijibu ujumbe huu.
+        note: Umepokea barua pepe hii kwa sababu umejiandikisha kupokea majarida kwenye %{organization_name}. Unaweza kubadilisha mipangilio yako kwenye <a href="%{link}">ukurasa wako wa arifa</a>.
+        see_on_website: Je, huoni barua pepe hii kwa usahihi? Itazame kwenye <a href="%{link}" target="_blank" class="see-on-website">tovuti</a>.
+        unsubscribe: Ili kuchagua kutopokea aina hii ya barua pepe, <a href="%{link}" target="_blank" class="unsubscribe">Jiondoe</a>.
     newsletter_templates:
       basic_only_text:
-        body_preview: 'Dummy text for body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
-        name: Basic (only text)
+        body_preview: 'Maandishi ya dummy ya mwili: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
+        name: Msingi (maandishi pekee)
       basic_only_text_settings_form:
-        body: Body
-        interpolations_hint: 'Hint: You can use "%{name}" anywhere in the body or subject and it will be replaced by the recipient''s name.'
+        body: Mwili
+        interpolations_hint: 'Kidokezo: Unaweza kutumia "%{name}" popote kwenye mwili au mada na nafasi yake itachukuliwa na jina la mpokeaji.'
       image_text_cta:
-        body_preview: 'Dummy text for body: Maecenas ac nisl vitae lectus pretium facilisis. Etiam facilisis sem nibh, sit amet rutrum mi aliquam nec. Sed id urna at nisl pretium mollis eu vel velit. Proin vitae suscipit urna, sed faucibus urna. Pellentesque id libero vulputate ipsum scelerisque suscipit. Nam aliquam sodales mi sit amet cursus. Donec mattis faucibus purus. Aenean tincidunt porta lorem ac commodo. Vestibulum in mollis mi. Morbi eros erat, cursus ut tortor sit amet, imperdiet dapibus arcu. Suspendisse id egestas enim. In eget magna sed enim efficitur elementum sit amet aliquam quam. Donec fermentum metus eget urna luctus pulvinar.'
-        cta_text_preview: Call To Action text
-        introduction_preview: 'Dummy text for introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
-        name: Image, text and Call To Action button
+        body_preview: 'Maandishi dummy kwa mwili: Maecenas ac nisl vitae lectus pretium facilisis. Etiam facilisis sem nibh, sit amet rutrum mi aliquam nec. Sed id urna at nisl pretium mollis eu vel velit. Proin vitae suscipit urna, sed faucibus urna. Pellentesque id libero vulputate ipsum scelerisque suscipit. Nam aliquam sodales mi sit amet cursus. Donec mattis faucibus purus. Aenean tincidunt porta lorem ac commodo. Vestibulum katika mollis mi. Morbi eros erat, cursus ut tortor sit amet, imperdiet dapibus arcu. Suspendisse id egestas enim. Katika eget magna sed enim efficitur elementum sit amet aliquam quam. Donec fermentum metus eget urna luctus pulvinar.'
+        cta_text_preview: Maandishi ya Wito Kufanya Hatua
+        introduction_preview: 'Maandishi ya dummy ya utangulizi: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
+        name: Picha, maandishi na kitufe cha Wito Kufanya Hatua
       image_text_cta_settings_form:
-        body: Body
-        cta_text: Call To Action button text
-        cta_url: Call To Action button URL
-        interpolations_hint: 'Hint: You can use "%{name}" anywhere in the introduction, body, CTA text or subject and it will be replaced by the recipient''s name.'
-        introduction: Introduction
-        main_image: Main image
+        body: Mwili
+        cta_text: Maandishi ya kitufe cha Wito Kufanya Hatua
+        cta_url: URL ya kitufe cha Wito Kufanya Hatua
+        interpolations_hint: 'Kidokezo: Unaweza kutumia "%{name}" popote kwenye utangulizi, mwili, maandishi ya CTA au mada na nafasi yake itachukuliwa na jina la mpokeaji.'
+        introduction: Utangulizi
+        main_image: Picha kuu
     newsletters:
       unsubscribe:
-        check_subscription: If you want to change your preferences, you can do so in the <a href="%{link}" target="_blank">configuration page</a>.
-        error: There was a problem unsubscribing.
-        success: You are unsubscribed successfully.
-        token_error: The link has expired.
-        unsubscribe: Unsubscribe
+        check_subscription: Ikiwa ungependa kubadilisha mapendeleo yako, unaweza kufanya hivyo katika <a href="%{link}" target="_blank">ukurasa wa usanidi</a>.
+        error: Kulikuwa na tatizo la kujiondoa.
+        success: Umefanikiwa kujiondoa.
+        token_error: Kiungo kimeisha muda wake.
+        unsubscribe: Jiondoe
     newsletters_opt_in:
-      unauthorized: Sorry, this link is no longer available.
+      unauthorized: Samahani, kiungo hiki hakipatikani tena.
       update:
-        error: There was a problem saving the newsletter settings.
-        success: Newsletter settings successfully updated.
+        error: Kulikuwa na tatizo katika kuhifadhi mipangilio ya jarida.
+        success: Mipangilio ya jarida imesasishwa.
     newsletters_opt_in_mailer:
       notify:
-        body_1: The processing of personal data and its protection is becoming increasingly important for all of us. With the new General Data Protection Regulation (GDPR) of May 25, 2018, individuals have better control over their personal data. For this reason we need your "OK" to continue sending relevant information about the activities of the %{organization_name}.
-        body_2: 'How can you give us your consent? Just click the following button:'
-        body_3: With this consent you will be able to continue receiving information about the services of the platform. If, on the contrary, we do not receive a positive confirmation on your part we will stop sending you our messages. If you confirm that you want to keep being informed, you will always have the option to cancel at any time.
-        button: Yes, I want to continue receiving relevant information
-        greetings: Greetings,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
-        hello: Hello,
-        subject: Do you want to keep receiving relevant information about %{organization_name}?
+        body_1: Usindikaji wa data ya kibinafsi na ulinzi wake unazidi kuwa muhimu kwa sisi sote. Kwa kutumia Kanuni mpya ya Jumla ya Ulinzi wa Data (GDPR) ya Mei 25, 2018, watu binafsi wana udhibiti bora wa data zao za kibinafsi. Kwa sababu hii tunahitaji "Sawa" yako ili kuendelea kutuma taarifa muhimu kuhusu shughuli za %{organization_name}.
+        body_2: 'Unawezaje kutupa kibali chako? Bonyeza tu kitufe kifuatacho:'
+        body_3: Kwa idhini hii utaweza kuendelea kupokea taarifa kuhusu huduma za jukwaa. Ikiwa, kinyume chake, hatutapokea uthibitisho mzuri kwa upande wako tutaacha kukutumia ujumbe wetu. Ukithibitisha kuwa ungependa kuendelea kufahamishwa, utakuwa na chaguo la kughairi wakati wowote.
+        button: Ndiyo, nataka kuendelea kupokea taarifa muhimu
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Habari,
+        subject: Je, ungependa kuendelea kupokea taarifa muhimu kuhusu %{organization_name}?
     notification_mailer:
       event_received:
-        no_translation_available: Sorry, the automated translation could not be retrieved when the email has been sent. You can check the translation of the original text on the following link %{link}.
-        original_text: 'Original text:'
-        same_language: The content has been posted in your preferred language (%{language}), this is why no automated translation is displayed in this email.
-        translated_text: 'Automatically translated text:'
+        no_translation_available: Samahani, tafsiri ya kiotomatiki haikuweza kurejeshwa wakati barua pepe imetumwa. Unaweza kuangalia tafsiri ya maandishi asilia kwenye kiungo kifuatacho %{link}.
+        original_text: 'Maandishi asilia:'
+        same_language: Maudhui yamechapishwa katika lugha unayopendelea (%{language}), ndiyo sababu hakuna tafsiri ya kiotomatiki inayoonyeshwa katika barua pepe hii.
+        translated_text: 'Maandishi yaliyotafsiriwa kiotomati:'
     notifications:
-      action_error: There was a problem updating the notifications.
-      no_notifications: No notifications yet.
+      action_error: Kulikuwa na tatizo la kusasisha arifa.
+      no_notifications: Bado hakuna arifa.
       show:
-        missing_event: Oops, this notification belongs to an item that is no longer available. You can discard it.
-        moderated: Content moderated
+        missing_event: Lo, arifa hii ni ya kipengee ambacho hakipatikani tena. Unaweza kuitupa.
+        moderated: Maudhui yamedhibitiwa
     notifications_digest_mailer:
       header:
-        daily: Daily Notification Digest
-        weekly: Weekly Notification Digest
-      hello: Hello %{name},
+        daily: Muhtasari wa Arifa za Kila Siku
+        weekly: Muhtasari wa Arifa za Kila Wiki
+      hello: Hujambo %{name},
       intro:
-        daily: 'These are the notifications from the last day based on the activity you are following:'
-        weekly: 'These are the notifications from the last week based on the activity you are following:'
-      outro: You have received these notifications because you are following this content or its authors. You can unfollow them from their respective pages.
-      see_more: See more notifications
-      subject: This is your mail digest
+        daily: 'Hizi ndizo arifa za siku ya mwisho kulingana na shughuli unayofuata:'
+        weekly: 'Hizi ndizo arifa za wiki iliyopita kulingana na shughuli unayofuata:'
+      outro: Umepokea arifa hizi kwa sababu unafuata maudhui haya au waandishi wake. Unaweza kuacha kuzifuata kutoka kwa kurasa zao husika.
+      see_more: Tazama arifa zaidi
+      subject: Huu ni muhtasari wa barua pepe yako
     notifications_settings:
       show:
-        administrators: Administrators
-        allow_public_contact: Allow anyone to send me a direct message, even if I do not follow them.
-        allow_push_notifications: Get push notifications to find out what is going on when you are not on the platform. You can turn them off anytime.
-        direct_messages: Receive direct messages from anyone
-        email_on_moderations: I want to receive an email every time something or someone is reported for moderation.
-        everything_followed: Everything I follow
-        newsletter_notifications: I want to receive newsletters
-        newsletters: Newsletters
+        administrators: Wasimamizi
+        allow_public_contact: Ruhusu mtu yeyote anitumie ujumbe wa moja kwa moja, hata kama siwafuati.
+        allow_push_notifications: Pata arifa zinazotumwa na programu hata wakati huitumii ili kujua kinachoendelea wakati haupo kwenye jukwaa. Unaweza kuzima wakati wowote.
+        direct_messages: Pokea ujumbe wa moja kwa moja kutoka kwa mtu yeyote
+        email_on_moderations: Ninataka kupokea barua pepe kila wakati kitu au mtu anaporipotiwa kukaguliwa.
+        everything_followed: Kila kitu ninafuata
+        newsletter_notifications: Ninataka kupokea majarida
+        newsletters: Vijarida
         notification_settings:
-          close_meeting_reminder: I want to receive email reminders of closed meetings unpublished reports
+          close_meeting_reminder: Ninataka kupokea vikumbusho vya barua pepe vya ripoti ambazo hazijachapishwa za mikutano iliyofungwa
         notifications_sending_frequencies:
-          daily: Daily
-          none: None
-          real_time: Real time
-          weekly: Weekly
-        notifications_sending_frequency: How often do you want to receive the notifications email?
-        own_activity: My own activity, like when someone comments in my proposal or mentions me
-        push_notifications: Push notifications
-        push_notifications_reminder: To get notifications from the platform, you will need to allow them in your browser settings first.
-        receive_notifications_about: I want to get notifications about
-        update_notifications_settings: Save changes
+          daily: Kila siku
+          none: Hakuna
+          real_time: Wakati halisi
+          weekly: Kila wiki
+        notifications_sending_frequency: Je, ungependa kupokea arifa za barua pepe mara ngapi?
+        own_activity: Shughuli yangu mwenyewe, kama vile mtu akitoa maoni katika pendekezo langu au kunitaja
+        push_notifications: Arifa za kushinikiza
+        push_notifications_reminder: Ili kupata arifa kutoka kwa jukwaa, utahitaji kuziruhusu katika mipangilio ya kivinjari chako kwanza.
+        receive_notifications_about: Ninataka kupata arifa kuhusu
+        update_notifications_settings: Hifadhi mabadiliko
       update:
-        error: There was a problem updating your notifications settings.
-        success: Your notifications settings were successfully updated.
+        error: Kulikuwa na tatizo la kusasisha mipangilio yako ya arifa.
+        success: Mipangilio yako ya arifa imesasishwa.
     offline:
-      name: Offline
+      name: Nje ya mtandao
       show:
-        message_1: It looks like you are currently offline.
-        message_2: Please, try again later.
-        retry: Retry
+        message_1: Inaonekana hauko mtandaoni kwa sasa.
+        message_2: Tafadhali, jaribu tena baadaye.
+        retry: Jaribu tena
     open_data:
-      not_available_yet: The Open Data files are not yet available, please try again in a few minutes.
+      not_available_yet: Faili za Open Data bado hazipatikani, tafadhali jaribu tena baada ya dakika chache.
     pad_iframe:
-      disclaimer: The contents of this pad are written by registered users and express their opinions. %{organization} cannot be held responsible for its contents.
-      explanation: Use this pad to collaboratively take notes during the meeting so it is easier to write down the minute afterwards.
-      pad: Pad
+      disclaimer: Yaliyomo kwenye pedi hii yameandikwa na watumiaji waliojiandikisha na kutoa maoni yao. %{organization} haiwezi kuwajibika kwa yaliyomo.
+      explanation: Tumia pedi hii kuandika madokezo kwa ushirikiano wakati wa mkutano ili iwe rahisi kuandika dakika baadaye.
+      pad: Pedi
     pages:
       home:
         extended:
-          debates: Debates
-          debates_explanation: Debate and discuss, share your views and enrich the relevant topics.
-          how_to_participate: How do I take part in a process?
-          meetings: Meetings
-          meetings_explanation: Find out where and when you can participate in public meetings.
-          more_info: More info about %{resource_name}
-          proposals: Proposals
-          proposals_explanation: Make proposals, support existing ones and promote the changes you want to see.
+          debates: Mijadala
+          debates_explanation: Jadili na jadili, shiriki maoni yako na uboresha mada husika.
+          how_to_participate: Je, ninashiriki vipi katika mchakato?
+          meetings: Mikutano
+          meetings_explanation: Jua wapi na lini unaweza kushiriki katika mikutano ya hadhara.
+          more_info: Maelezo zaidi kuhusu %{resource_name}
+          proposals: Mapendekezo
+          proposals_explanation: Toa mapendekezo, usaidie yaliyopo na uendeleze mabadiliko unayotaka kuona.
         footer_sub_hero:
-          footer_sub_hero_body_html: Let's build a more open, transparent and collaborative society.<br /> Join, participate and decide.
-          footer_sub_hero_headline: Welcome to %{organization} participatory platform.
-          register: Register
+          footer_sub_hero_body_html: Hebu tujenge jamii iliyo wazi zaidi, iliyo wazi na shirikishi.<br /> Jiunge, ushiriki na uamue.
+          footer_sub_hero_headline: Karibu kwenye jukwaa shirikishi la %{organization}.
+          register: Sajili
         hero:
-          participate: Participate
-          participate_title: Participate in the platform's processes
-          welcome: Welcome to %{organization}!
+          participate: Shiriki
+          participate_title: Shiriki katika michakato ya jukwaa
+          welcome: Karibu %{organization}!
         statistics:
-          headline: Current state of %{organization}
+          headline: Hali ya sasa ya %{organization}
         sub_hero:
-          register: Register
-          register_title: Create an account
+          register: Sajili
+          register_title: Fungua akaunti
       index:
-        standalone_pages: Pages
-        subheading: Navigate through the help pages of %{name}
-        title: Help
-        topics: Topics
+        standalone_pages: Kurasa
+        subheading: Nenda kupitia kurasa za usaidizi za %{name}
+        title: Msaada
+        topics: Mada
       participatory_space:
         metrics:
-          headline: Metrics
-          link: Show all
+          headline: Vipimo
+          link: Onyesha yote
       terms_of_service:
         accept:
-          error: There was a problem accepting the terms of service.
-          success: Great! You have accepted the terms of service.
+          error: Kulikuwa na tatizo la kukubali sheria na masharti.
+          success: Kubwa! Umekubali sheria na masharti.
         form:
-          agreement: I agree with these terms
-          legend: Agree to the terms of service
+          agreement: Nakubaliana na masharti haya
+          legend: Kubali sheria na masharti
         refuse:
-          modal_body: If you refuse, you will not be able to use the platform, you can <a href="%{download_your_data_path}">download your data</a> and/or <a href="%{delete_path}">delete your account</a>.
-          modal_btn_continue: Accept terms and continue
-          modal_btn_exit: I will review it later
-          modal_button: Refuse the terms
-          modal_title: Do you really refuse the updated terms of service?
+          modal_body: Ukikataa, hutaweza kutumia jukwaa, unaweza <a href="%{download_your_data_path}">kupakua data yako</a> na/au <a href="%{delete_path}">kufuta yako. akaunti</a>.
+          modal_btn_continue: Kubali masharti na uendelee
+          modal_btn_exit: Nitaipitia baadaye
+          modal_button: Kataa masharti
+          modal_title: Je, kweli unakataa sheria na masharti yaliyosasishwa?
         required_review:
-          alert: We have updated our Terms of Service, please review them.
-          body: Please take a moment to review updates to our Terms of Services. Otherwise you will not be able to use the platform.
-          title: 'Required: Review updates to our terms of service'
+          alert: Tumesasisha Sheria na Masharti yetu, tafadhali yapitie.
+          body: Tafadhali chukua muda kukagua masasisho ya Sheria na Masharti yetu. Vinginevyo hutaweza kutumia jukwaa.
+          title: 'Inahitajika: Kagua masasisho ya sheria na masharti yetu'
     passwords:
       update:
-        error: There was a problem updating the password.
-        success: Password successfully updated.
+        error: Kulikuwa na tatizo la kusasisha nenosiri.
+        success: Nenosiri limesasishwa.
     profile:
-      deleted: Deleted participant
-      inaccessible_message: This profile is inaccessible due to terms of service violation!
+      deleted: Mshiriki amefutwa
+      inaccessible_message: Wasifu huu haupatikani kwa sababu ya ukiukaji wa sheria na masharti!
     profiles:
-      default_officialization_text_for_user_groups: This group is publicly verified, its name has been verified to correspond with its real name.
-      default_officialization_text_for_users: This participant is publicly verified, his/her name or role has been verified to correspond with his/her real name and role.
+      default_officialization_text_for_user_groups: Kikundi hiki kimethibitishwa hadharani, jina lake limethibitishwa ili kuendana na jina lake halisi.
+      default_officialization_text_for_users: Mshiriki huyu amethibitishwa hadharani, jina au jukumu lake limethibitishwa ili kuendana na jina lake halisi na jukumu lake.
       show:
-        activity: Activity
-        badges: Badges
-        conversations: Conversations
-        followers: Followers
-        following: Follows
-        group_admins: Manage admins
-        group_members: Manage members
-        groups: Groups
-        members: Members
-        officialized: Official participant
-        send_private_message: Send private message
+        activity: Shughuli
+        badges: Beji
+        conversations: Mazungumzo
+        followers: Wafuasi
+        following: Inafuata
+        group_admins: Dhibiti wasimamizi
+        group_members: Dhibiti wanachama
+        groups: Vikundi
+        members: Wanachama
+        officialized: Mshiriki rasmi
+        send_private_message: Tuma ujumbe wa faragha
       sidebar:
         badges:
-          info: Badges are earned by performing specific activity in the platform.
-          title: Badges
+          info: Beji hupatikana kwa kufanya shughuli mahususi kwenye jukwaa.
+          title: Beji
       user:
         actions:
-          create_user_group: Create group
-          disabled_message: Message
-          edit_profile: Edit profile
-          edit_user_group: Edit group profile
-          invite_user: Invite participant
-          join_user_group: Request to join group
-          leave_user_group: Leave group
-          manage_user_group: Manage group
-          manage_user_group_admins: Manage admins
-          manage_user_group_users: Manage members
-          message: Message
-          resend_email_confirmation_instructions: Resend email confirmation instructions
-        confirmation_instructions_sent: Email confirmation instructions sent.
-        create_user_group: Create group
-        edit_profile: Edit profile
-        edit_user_group: Edit group profile
-        fill_in_email_to_confirm_it: Please, fill in your group's email to confirm it.
-        invite_user: Invite participant
-        join_user_group: Request to join group
-        leave_user_group: Leave group
-        manage_user_group_admins: Manage admins
-        manage_user_group_users: Manage members
-        resend_email_confirmation_instructions: Resend email confirmation instructions
+          create_user_group: Unda kikundi
+          disabled_message: Ujumbe
+          edit_profile: Hariri wasifu
+          edit_user_group: Badilisha wasifu wa kikundi
+          invite_user: Alika mshiriki
+          join_user_group: Ombi la kujiunga na kikundi
+          leave_user_group: Ondoka kwenye kikundi
+          manage_user_group: Dhibiti kikundi
+          manage_user_group_admins: Dhibiti wasimamizi
+          manage_user_group_users: Dhibiti wanachama
+          message: Ujumbe
+          resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
+        confirmation_instructions_sent: Maagizo ya uthibitishaji wa barua pepe yametumwa.
+        create_user_group: Unda kikundi
+        edit_profile: Hariri wasifu
+        edit_user_group: Badilisha wasifu wa kikundi
+        fill_in_email_to_confirm_it: Tafadhali, jaza barua pepe ya kikundi chako ili kuithibitisha.
+        invite_user: Alika mshiriki
+        join_user_group: Ombi la kujiunga na kikundi
+        leave_user_group: Ondoka kwenye kikundi
+        manage_user_group_admins: Dhibiti wasimamizi
+        manage_user_group_users: Dhibiti wanachama
+        resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
     reported_mailer:
       hide:
-        hello: Hello %{name},
-        manage_moderations: Manage moderations
-        report_html: <p>The following <a href="%{url}">content</a> has been hidden automatically.</p>
-        subject: A resource has been hidden automatically
+        hello: Hujambo %{name},
+        manage_moderations: Dhibiti ukadiriaji
+        report_html: <p> <a href="%{url}">yafuatayo</a> yamefichwa kiotomatiki.</p>
+        subject: Rasilimali imefichwa kiotomatiki
       report:
-        authors: Authors
-        content: Reported content
-        content_original_language: Content original language
-        date: Reported on
-        details: Details
-        hello: Hello %{name},
+        authors: Waandishi
+        content: Maudhui yaliyoripotiwa
+        content_original_language: Lugha asili ya maudhui
+        date: Imeripotiwa
+        details: Maelezo
+        hello: Hujambo %{name},
         id: ID
-        participatory_space: Participatory space
-        reason: Reason
-        report_html: <p>The following <a href="%{url}">content</a> has been reported.</p>
-        see_report: See report
-        subject: A resource has been reported
+        participatory_space: Nafasi shirikishi
+        reason: Sababu
+        report_html: <p> <a href="%{url}">yafuatayo</a> yameripotiwa.</p>
+        see_report: Tazama ripoti
+        subject: Rasilimali imeripotiwa
     reports:
       create:
-        error: An error ocurred while creating the report. Please, try it again.
-        success: The report has been created successfully and it will be reviewed by an admin.
+        error: Hitilafu ilitokea wakati wa kuunda ripoti. Tafadhali, ijaribu tena.
+        success: Ripoti imeundwa kwa ufanisi na itakaguliwa na msimamizi.
     resource_endorsements:
       create:
-        error: There was a problem during the endorsement action.
+        error: Kulikuwa na tatizo wakati wa hatua ya kuidhinisha.
     scopes:
-      global: Global scope
+      global: Upeo wa kimataifa
       picker:
-        cancel: Cancel
-        change: Change selected scope
-        choose: Select
-        currently_selected: Currently selected scope
-        title: Select %{field}
+        cancel: Ghairi
+        change: Badilisha upeo uliochaguliwa
+        choose: Chagua
+        currently_selected: Upeo uliochaguliwa kwa sasa
+        title: Chagua %{field}
       prompt: Select a scope
       scopes: Scopes
       scopes_picker_input:
