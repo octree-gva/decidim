@@ -887,148 +887,148 @@ sw:
         participatory_space: Unafuata <span>%{resource_name}</span>
       destroy:
         button: Acha kufuata
-        error: There was a problem unfollowing this resource.
+        error: Kulikuwa na tatizo la kuacha kufuata nyenzo hii.
     forms:
       attachment_link:
-        explanation: Guidance for attachment links
+        explanation: Mwongozo wa viungo vya viambatisho
         help_messages:
-          - Only correct URL formats are accepted.
-          - Please note that the links must be public so that all participants can access them.
+          - Miundo sahihi ya URL pekee ndiyo inakubaliwa.
+          - Tafadhali kumbuka kuwa viungo lazima viwe hadharani ili washiriki wote waweze kuvifikia.
       errors:
         decidim/user:
-          password: The password is too short.
-          password_confirmation: Password confirmation must match the password.
-        error: There is an error in this field.
+          password: Nenosiri ni fupi mno.
+          password_confirmation: Uthibitishaji wa nenosiri lazima ulingane na nenosiri.
+        error: Kuna hitilafu katika uga huu.
       file_help:
         file:
-          explanation: 'Guidance for file:'
-          message_1: Has to be an image or a document.
-          message_2: For images, use preferably landscape images, the service crops the image.
+          explanation: 'Mwongozo wa kushindwa:'
+          message_1: Lazima iwe picha au hati.
+          message_2: Kwa picha, tumia vyema picha za mazingira, huduma hupanda picha.
         icon:
-          explanation: 'Guidance for icon:'
-          message_1: Has to be a square image.
-          message_2: The recommended size for this image is 512x512.
+          explanation: 'Mwongozo wa ikoni:'
+          message_1: Lazima iwe picha ya mraba.
+          message_2: Ukubwa unaopendekezwa kwa picha hii ni 512x512.
         image:
-          explanation: 'Guidance for image:'
-          message_1: Preferably a landscape image that does not have any text.
-          message_2: The service crops the image.
+          explanation: 'Mwongozo wa picha:'
+          message_1: Ikiwezekana picha ya mlalo ambayo haina maandishi yoyote.
+          message_2: Huduma inapunguza picha.
       file_validation:
-        allowed_file_extensions: 'Allowed file extensions: %{extensions}'
-        max_file_dimension: 'Maximum file dimensions: %{resolution} pixels'
-        max_file_size: 'Maximum file size: %{megabytes}MB'
+        allowed_file_extensions: 'Viendelezi vya faili vinavyoruhusiwa: %{extensions}'
+        max_file_dimension: 'Upeo wa vipimo vya faili: pikseli %{resolution}'
+        max_file_size: 'Upeo wa ukubwa wa faili: %{megabytes}MB'
       files:
-        extension_allowlist: 'Accepted formats: %{extensions}'
+        extension_allowlist: 'Miundo inayokubalika: %{extensions}'
       upload:
         labels:
-          add_attachment: Add attachment
-          add_file: Add file
-          add_image: Add image
-          edit_image: Edit image
-          error: Error!
-          file_size_too_large: 'File size is too large! Maximun file size: %{megabytes}MB'
-          filename: Filename
-          remove: Remove
-          replace: Replace
-          save: Save
-          title: Title
-          title_required: Title is required!
-          uploaded: Uploaded
-          validating: Validating...
-          validation_error: Validation error! Check that the file has an allowed extension or size.
-        select_file: Select file
+          add_attachment: Ongeza kiambatisho
+          add_file: Ongeza faili
+          add_image: Ongeza picha
+          edit_image: Hariri picha
+          error: Hitilafu!
+          file_size_too_large: 'Ukubwa wa faili ni mkubwa mno! Upeo wa ukubwa wa faili: %{megabytes}MB'
+          filename: Jina la faili
+          remove: Ondoa
+          replace: Badilisha
+          save: Hifadhi
+          title: Kichwa
+          title_required: Kichwa kinahitajika!
+          uploaded: Imepakiwa
+          validating: Inathibitisha...
+          validation_error: Hitilafu ya uthibitishaji! Hakikisha kuwa faili ina kiendelezi au saizi inayoruhusiwa.
+        select_file: Chagua faili
       upload_help:
-        dropzone: Drop files here or click the button to upload
-        explanation: Guidance for %{attribute}
+        dropzone: Dondosha faili hapa au ubofye kitufe ili kupakia
+        explanation: Mwongozo wa %{attribute}
     gamification:
-      all_badges_link: See all available badges.
+      all_badges_link: Tazama beji zote zinazopatikana.
       badges:
         followers:
           conditions:
-            - Being active and following other people will surely make other people follow you.
-          description: This badge is granted when you reach a certain number of followers. %{organization_name} is a social and political network, weave your web to communicate with other people in the platform.
-          description_another: This participant has %{score} followers.
-          description_own: "%{score} people are following you."
-          name: Followers
-          next_level_in: Get %{score} more people to follow you to reach the next level!
-          unearned_another: This participant does not have any followers yet.
-          unearned_own: You have got no followers yet.
+            - Kuwa hai na kufuata watu wengine hakika kutafanya watu wengine kukufuata.
+          description: Beji hii inatolewa unapofikisha idadi fulani ya wafuasi. %{organization_name} ni mtandao wa kijamii na kisiasa, suka wavuti yako ili kuwasiliana na watu wengine kwenye jukwaa.
+          description_another: Mshiriki huyu ana wafuasi %{score}.
+          description_own: "Watu %{score} wanakufuata."
+          name: Wafuasi
+          next_level_in: Pata watu %{score} zaidi wa kukufuata ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hana wafuasi wowote.
+          unearned_own: Bado huna wafuasi.
         index:
-          badge_title: "%{name} badge"
-          how: How can you earn it
-          page_description: Badges are recognitions to participant actions and progress in the platform. As you start discovering, participating and interacting in the platform, you will earn different badges. Here is the list of badges and some ways you can earn them.
-          title: Badges
-      description: Badges are recognitions to participant actions and progress in the platform. As you start discovering, participating and interacting in the platform, you will earn different badges.
-      level: Level %{level}
-      reached_top: You have reached the top level for this badge.
-      title: What are the badges?
+          badge_title: "%{name} beji"
+          how: Unawezaje kuipata
+          page_description: Beji ni utambuzi kwa vitendo na maendeleo ya mshiriki kwenye jukwaa. Unapoanza kugundua, kushiriki na kuingiliana kwenye jukwaa, utapata beji tofauti. Hii hapa orodha ya beji na baadhi ya njia unazoweza kuzipata.
+          title: Beji
+      description: Beji ni utambuzi kwa vitendo na maendeleo ya mshiriki katika jukwaa. Unapoanza kugundua, kushiriki na kuingiliana kwenye jukwaa, utapata beji tofauti.
+      level: Kiwango cha %{level}
+      reached_top: Umefikia kiwango cha juu cha beji hii.
+      title: Ni beji gani?
     group_admins:
       actions:
-        are_you_sure: Are you sure? This will not remove the participant from the group.
-        demote_admin: Remove admin
+        are_you_sure: Je, una uhakika? Hii haitamwondoa mshiriki kwenye kikundi.
+        demote_admin: Ondoa admin
       demote:
-        error: There was a problem removing this participant from the admins list.
-        success: Participant successfully removed from admin.
+        error: Kulikuwa na tatizo la kumwondoa mshiriki huyu kutoka kwenye orodha ya wasimamizi.
+        success: Mshiriki ameondolewa kwenye msimamizi.
       index:
-        current_admins: 'Current admins:'
-        manage_admins: Manage admins
+        current_admins: 'Wasimamizi wa sasa:'
+        manage_admins: Dhibiti wasimamizi
     group_invites:
       accept:
-        error: There was a problem accepting this invitation.
-        success: Invitation successfully accepted.
-      accept_invitation: Accept
-      accept_or_reject_group_invitations: 'The following groups have invited you to join them. Accept or reject their requests:'
+        error: Kulikuwa na tatizo la kukubali mwaliko huu.
+        success: Mwaliko umekubaliwa.
+      accept_invitation: Kubali
+      accept_or_reject_group_invitations: 'Vikundi vifuatavyo vimekualika kujiunga navyo. Kubali au kataa maombi yao:'
       index:
-        invite: Invite
-        invite_user: Invite a participant
+        invite: Alika
+        invite_user: Alika mshiriki
       invite:
-        error: There was a problem inviting this participant.
-        success: Participant successfully invited.
-      pending_invitations: Pending requests
+        error: Kulikuwa na tatizo katika kumwalika mshiriki huyu.
+        success: Mshiriki amealikwa.
+      pending_invitations: Maombi yanayosubiri
       reject:
-        error: There was a problem rejecting this invitation.
-        success: Invitation successfully rejected.
-      reject_invitation: Reject
+        error: Kulikuwa na tatizo la kukataa mwaliko huu.
+        success: Mwaliko umekataliwa.
+      reject_invitation: Kataa
     group_members:
       accept:
-        error: There was a problem accepting this join request.
-        success: Join request successfully accepted.
+        error: Kulikuwa na tatizo la kukubali ombi hili la kujiunga.
+        success: Ombi la kujiunga limekubaliwa.
       actions:
-        are_you_sure: Are you sure?
-        promote_to_admin: Make admin
-        remove_from_group: Remove participant
+        are_you_sure: Je, una uhakika?
+        promote_to_admin: Fanya admin
+        remove_from_group: Ondoa mshiriki
       index:
-        current_members_without_admins: 'Current members (without admins):'
-        manage_members: Manage members
+        current_members_without_admins: 'Wanachama wa sasa (bila wasimamizi):'
+        manage_members: Dhibiti wanachama
       promote:
-        error: There was a problem promoting this participant.
-        success: Participant promoted successfully.
+        error: Kulikuwa na tatizo katika kumpandisha cheo mshiriki huyu.
+        success: Mshiriki alipandishwa cheo kwa mafanikio.
       reject:
-        error: There was a problem rejecting this join request.
-        success: Join request successfully rejected.
+        error: Kulikuwa na tatizo la kukataa ombi hili la kujiunga.
+        success: Ombi la kujiunga limekataliwa.
       remove:
-        error: There was a problem removing this participant from the group.
-        success: Participant successfully removed from the group.
+        error: Kulikuwa na tatizo la kumwondoa mshiriki huyu kwenye kikundi.
+        success: Mshiriki ameondolewa kwenye kikundi.
     groups:
       actions:
-        are_you_sure: Are you sure?
+        are_you_sure: Je, una uhakika?
       create:
-        error: There was a problem creating the group.
-        success: Group successfully created.
+        error: Kulikuwa na tatizo kuunda kikundi.
+        success: Kikundi kimeundwa.
       edit:
-        edit_user_group: Edit group
-        update_user_group: Update group
+        edit_user_group: Badilisha kikundi
+        update_user_group: Sasisha kikundi
       form:
-        document_number_help: Do not use dashes nor spaces.
-        email_help: Email of your organization, association, collective, group, etc.
-        fill_in_for_verification: 'Fill in these fields if you want your group to be verified:'
-        name_help: Name of your organization, association, collective, group, etc.
-        nickname_help: Nickname of your organization, association, collective, group, etc. Do not use spaces nor accents.
-        phone_help: Do not use dashes nor spaces.
+        document_number_help: Usitumie dashi wala nafasi.
+        email_help: Barua pepe ya shirika lako, ushirika, kikundi, kikundi, etc.
+        fill_in_for_verification: 'Jaza sehemu hizi ikiwa unataka kikundi chako kithibitishwe:'
+        name_help: Jina la shirika lako, chama, kikundi, kikundi, etc.
+        nickname_help: Jina la utani la shirika lako, ushirika, kikundi, kikundi, n.k. Usitumie nafasi wala lafudhi.
+        phone_help: Usitumie dashi wala nafasi.
       join:
-        error: There was a problem joining the group.
-        success: Join request successfully created. An admin will review your request before accepting you to the group.
+        error: Kulikuwa na tatizo la kujiunga na kikundi.
+        success: Ombi la kujiunga limeundwa. Msimamizi atakagua ombi lako kabla ya kukukubali kwenye kikundi.
       leave:
-        error: There was a problem leaving the group.
+        error: Kulikuwa na tatizo kuondoka kwenye kikundi.
         last_admin: You cannot remove yourself from this group as you are the last administrator. Make another member an administrator in order to leave the group.
         success: Group successfully abandoned.
       members:
