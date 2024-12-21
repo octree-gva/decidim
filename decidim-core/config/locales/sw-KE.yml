@@ -1651,73 +1651,73 @@ sw:
         header: Tuma mwaliko
         submit_button: Tuma mwaliko
       no_invitations_remaining: Hakuna mialiko iliyosalia
-      send_instructions: An invitation email has been sent to %{email}.
-      updated: Your password was set successfully. You are now signed in.
-      updated_not_active: Your password was set successfully.
+      send_instructions: Barua pepe ya mwaliko imetumwa kwa %{email}
+      updated: Nenosiri lako limewekwa kwa ufanisi. Sasa umeingia.
+      updated_not_active: Nenosiri lako limewekwa kwa ufanisi.
     mailer:
       confirmation_instructions:
-        action: Confirm my account
-        greeting: Welcome %{recipient}!
-        instruction: 'You can confirm your email account through the link below:'
-        subject: Confirmation instructions
+        action: Thibitisha akaunti yangu
+        greeting: Karibu %{recipient}!
+        instruction: 'Unaweza kuthibitisha akaunti yako ya barua pepe kupitia kiungo kilicho hapa chini:'
+        subject: Maagizo ya uthibitisho
       email_changed:
-        greeting: Hello %{recipient}!
-        message: We are contacting you to notify you that your email is being changed to %{email}.
-        subject: Email Changed
+        greeting: Hujambo %{recipient}!
+        message: Tunawasiliana nawe ili kukuarifu kuwa barua pepe yako inabadilishwa kuwa %{email}.
+        subject: Barua pepe Imebadilishwa
       invitation_instructions:
-        accept: Accept invitation
-        accept_until: This invitation will be due in %{due_date}.
-        decline: Decline invitation
-        hello: Hello %{email},
+        accept: Kubali mwaliko
+        accept_until: Mwaliko huu utalipwa mnamo %{due_date}.
+        decline: Kataa mwaliko
+        hello: Hujambo %{email},
         ignore: |-
-          If you do not want to accept the invitation, please ignore this email.<br />
-          Your account will not be created until you access the link above and set your nickname and password.
-        invited_you_as_admin: "%{invited_by} has invited you as an admin of %{application}. You can accept it through the link below."
-        invited_you_as_private_user: "%{invited_by} has invited you as a private participant of %{application}. You can accept it through the link below."
-        someone_invited_you: Someone has invited you to %{application}. You can accept it through the link below.
-        someone_invited_you_as_admin: Someone has invited you as an admin of %{application}, you can accept it through the link below.
-        someone_invited_you_as_private_user: Someone has invited you as private participant of %{application}, you can accept it through the link below.
-        subject: Invitation instructions
+          Ikiwa hutaki kukubali mwaliko, tafadhali puuza barua pepe hii.<br />
+          Akaunti yako haitaundwa hadi ufikie kiungo kilicho hapo juu na kuweka jina lako la utani na nenosiri.
+        invited_you_as_admin: "%{invited_by} amekualika kama msimamizi wa %{application}. Unaweza kuikubali kupitia kiungo hapa chini."
+        invited_you_as_private_user: "%{invited_by} amekualika kama mshiriki wa faragha wa %{application}. Unaweza kuikubali kupitia kiungo hapa chini."
+        someone_invited_you: Mtu fulani amekualika kwenye %{application}. Unaweza kuikubali kupitia kiungo hapa chini.
+        someone_invited_you_as_admin: Mtu fulani amekualika kama msimamizi wa %{application}, unaweza kuikubali kupitia kiungo kilicho hapa chini.
+        someone_invited_you_as_private_user: Mtu fulani amekualika kama mshiriki wa faragha wa %{application}, unaweza kuikubali kupitia kiungo kilicho hapa chini.
+        subject: Maagizo ya mwaliko
       invite_admin:
-        subject: You have been invited to manage %{organization}
+        subject: Umealikwa kudhibiti %{organization}
       invite_collaborator:
-        subject: You have been invited to collaborate on %{organization}
+        subject: Umealikwa kushirikiana kwenye %{organization}
       invite_private_user:
-        subject: You have been invited to a private participatory process on %{organization}
+        subject: Umealikwa kwa mchakato wa ushiriki wa kibinafsi kwenye %{organization}
       organization_admin_invitation_instructions:
-        subject: You have been invited to manage %{organization}
+        subject: Umealikwa kudhibiti %{organization}
       password_change:
-        greeting: Hello %{recipient}!
-        message: We are contacting you to notify you that your password has been changed.
-        subject: Password changed
+        greeting: Hujambo %{recipient}!
+        message: Tunawasiliana nawe ili kukuarifu kuwa nenosiri lako limebadilishwa.
+        subject: Nenosiri limebadilishwa
       reset_password_instructions:
-        action: Change my password
-        greeting: Hello %{recipient}!
-        instruction: Someone has requested a link to change your password, and you can do this through the link below.
-        instruction_2: If you did not request this, please ignore this email.
-        instruction_3: Your password will not change until you access the link above and create a new one.
-        subject: Reset password instructions
+        action: Badilisha nenosiri langu
+        greeting: Hujambo %{recipient}!
+        instruction: Mtu ameomba kiungo ili kubadilisha nenosiri lako, na unaweza kufanya hivyo kupitia kiungo kilicho hapa chini.
+        instruction_2: Ikiwa hukuomba hili, tafadhali puuza barua pepe hii.
+        instruction_3: Nenosiri lako halitabadilika hadi ufikie kiungo kilicho hapo juu na kuunda kipya.
+        subject: Weka upya maagizo ya nenosiri
       unlock_instructions:
-        action: Unlock my account
-        greeting: Hello %{recipient}!
-        instruction: 'Click the link below to unlock your account:'
-        message: Your account has been locked due to an excessive amount of unsuccessful log in attempts.
-        subject: Unlock instructions
+        action: Fungua akaunti yangu
+        greeting: Hujambo %{recipient}!
+        instruction: 'Bofya kiungo kilicho hapa chini ili kufungua akaunti yako:'
+        message: Akaunti yako imefungwa kwa sababu ya idadi kubwa ya majaribio ambayo hayajafaulu.
+        subject: Fungua maagizo
     omniauth_callbacks:
-      failure: Could not authenticate you from %{kind} because "%{reason}".
-      success: Successfully authenticated from %{kind} account.
+      failure: Haikuweza kukuthibitisha kutoka kwa %{kind} kwa sababu "%{reason}".
+      success: Imethibitishwa kutoka kwa akaunti %{kind}.
     passwords:
       edit:
-        change_my_password: Change my password
-        confirm_new_password: Confirm new password
-        new_password: New password
-        old_password_help: In order to confirm the changes to your account, please provide your current password.
-        password_help: "%{minimum_characters} characters minimum, must not be too common (e.g. 123456) and must be different from your nickname and your email."
-        password_help_admin: "%{minimum_characters} characters minimum, must not be too common (e.g. 123456), must be different from your nickname and your email and must be different from your old passwords."
-        title: Password change
+        change_my_password: Badilisha nenosiri langu
+        confirm_new_password: Thibitisha nenosiri jipya
+        new_password: Nenosiri mpya
+        old_password_help: Ili kuthibitisha mabadiliko kwenye akaunti yako, tafadhali toa nenosiri lako la sasa.
+        password_help: "%{minimum_characters} kima cha chini cha herufi, lazima isiwe ya kawaida sana (k.m. 123456) na lazima iwe tofauti na jina lako la utani na barua pepe yako."
+        password_help_admin: "%{minimum_characters} kima cha chini cha herufi, lazima kiwe cha kawaida sana (e.g. 123456), lazima kiwe tofauti na jina lako la utani na barua pepe yako na lazima kiwe tofauti na manenosiri yako ya zamani."
+        title: Mabadiliko ya nenosiri
       new:
-        forgot_your_password: Forgot your password?
-        send_me_reset_password_instructions: Send me reset password instructions
+        forgot_your_password: Je, umesahau nenosiri lako?
+        send_me_reset_password_instructions: Nitumie maagizo ya kuweka upya nenosiri
       no_token: You cannot access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
       send_instructions: You will receive an email with instructions on how to reset your password in a few minutes.
       send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
