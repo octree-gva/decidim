@@ -1440,217 +1440,217 @@ sw:
         choose: Chagua
         currently_selected: Upeo uliochaguliwa kwa sasa
         title: Chagua %{field}
-      prompt: Select a scope
-      scopes: Scopes
+      prompt: Chagua upeo
+      scopes: Upeo
       scopes_picker_input:
-        select_scope: 'Select a scope (currently: %{current})'
+        select_scope: 'Chagua upeo (kwa sasa: %{current})'
     search:
-      name: Search
-      results: Search results
-      results_found_for_term: '%{count} Results for the search: "%{term}"'
-      term_input_placeholder: Search
+      name: Tafuta
+      results: Matokeo ya utafutaji
+      results_found_for_term: '%{count} Matokeo ya utafutaji: "%{term}"'
+      term_input_placeholder: Tafuta
     searches:
       filters:
-        jump_to: 'Jump to:'
-        search: Search
+        jump_to: 'Rukia kwa:'
+        search: Tafuta
         state:
-          active: Active
-          all: All
-          future: Future
-          past: Past
+          active: Inayotumika
+          all: Wote
+          future: Baadaye
+          past: Zamani
       filters_small_view:
-        filter: Filter
-        filter_and_search: Filter and search
-        filter_by: Filter by
+        filter: Chuja
+        filter_and_search: Chuja na utafute
+        filter_by: Chuja kwa
       results:
-        view_all: View all (%{count})
+        view_all: Tazama zote (%{count})
     security:
       selfxss_warning:
-        description: This browser feature is meant for developers and you should not paste anything here if you were asked to do so. Pasting content in this window can compromise your privacy and give hackers access to your account.
-        title: Stop!
+        description: Kipengele hiki cha kivinjari kimekusudiwa wasanidi programu na hupaswi kubandika chochote hapa ikiwa umeombwa kufanya hivyo. Kubandika maudhui kwenye dirisha hili kunaweza kuhatarisha faragha yako na kuwapa wadukuzi idhini ya kufikia akaunti yako.
+        title: Acha!
     shared:
       confirm_modal:
-        cancel: Cancel
-        close_modal: Close modal
-        ok: OK
-        title: Confirm
+        cancel: Ghairi
+        close_modal: Funga modali
+        ok: SAWA
+        title: Thibitisha
       embed:
-        title: Embedded video content
+        title: Maudhui ya video iliyopachikwa
       extended_navigation_bar:
-        more: More
-        unfold: Unfold
+        more: Zaidi
+        unfold: Fungua
       filter_form_help:
-        help: The form below filters the search results dynamically when the search conditions are changed.
-        skip: Skip to results
+        help: Fomu iliyo hapa chini huchuja matokeo ya utafutaji kwa nguvu wakati hali ya utafutaji inabadilishwa.
+        skip: Ruka kwa matokeo
       flag_modal:
-        already_reported: This content is already reported and it will be reviewed by an admin.
-        close: Close
-        description: Is this content inappropriate?
-        does_not_belong: Contains illegal activity, suicide threats, personal information, or something else you think does not belong on %{organization_name}.
-        hide: Hide
-        hide_content: Hide this content
-        offensive: Contains racism, sexism, slurs, personal attacks, death threats, suicide requests or any form of hate speech.
-        reason: Reason
-        report: Report
-        spam: Contains clickbait, advertising, scams or script bots.
-        title: Report inappropriate content
+        already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+        close: Funga
+        description: Je, maudhui haya hayafai?
+        does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+        hide: Ficha
+        hide_content: Ficha maudhui haya
+        offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+        reason: Sababu
+        report: Ripoti
+        spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+        title: Ripoti maudhui yasiyofaa
       flag_user_modal:
-        already_reported: This content is already reported and it will be reviewed by an admin.
-        block: Block this participant
-        close: Close
-        description: What is inappropriate about the user?
-        does_not_belong: Contains illegal activity, suicide threats, personal information, or something else you think does not belong on %{organization_name}.
-        hide: Hide all their contents
-        offensive: Contains racism, sexism, slurs, personal attacks, death threats, suicide requests or any form of hate speech.
-        report: Report
-        spam: Contains clickbait, advertising, scams or script bots.
-        title: Report inappropriate User
+        already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+        block: Mzuie mshiriki huyu
+        close: Funga
+        description: Ni nini kisichofaa kwa mtumiaji?
+        does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+        hide: Ficha yaliyomo yao yote
+        offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+        report: Ripoti
+        spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+        title: Ripoti Mtumiaji asiyefaa
       floating_help:
-        help: Help
+        help: Msaada
       follow_button:
-        log_in_before_follow: Please log in before performing this action
+        log_in_before_follow: Tafadhali ingia kabla ya kutekeleza kitendo hiki
       login_modal:
-        please_log_in: Please log in
-        sign_up: Create an account
+        please_log_in: Tafadhali ingia
+        sign_up: Fungua akaunti
       mentions_modal:
-        remove_recipient: Remove recipient %{name}
+        remove_recipient: Ondoa mpokeaji %{name}
       participatory_space_filters:
         filters:
-          area: Area
-          areas: Areas
-          scope: Scope
-          select_an_area: Select an area
-      progress: Progress
+          area: Eneo
+          areas: Maeneo
+          scope: Upeo
+          select_an_area: Chagua eneo
+      progress: Maendeleo
       public_participation:
-        public_participation: Show my attendance publicly
+        public_participation: Onyesha mahudhurio yangu hadharani
       reference:
-        reference: 'Reference: %{reference}'
+        reference: 'Rejelea: %{reference}'
       represent_user_group:
-        represent_user_group: I represent a group
-        select_user_group: Select a group
+        represent_user_group: Ninawakilisha kikundi
+        select_user_group: Chagua kikundi
       results_per_page:
-        label: 'Results per page:'
-        title: Select number of results per page
+        label: 'Matokeo kwa kila ukurasa:'
+        title: Chagua idadi ya matokeo kwa kila ukurasa
       share_modal:
-        copy_share_link: Copy
-        copy_share_link_clarification: Copy share link to clipboard
-        copy_share_link_copied: Copied!
-        copy_share_link_message: The link was successfully copied to clipboard.
-        share: Share
-        share_link: Share link
-        share_to: Share to %{service}
+        copy_share_link: Nakili
+        copy_share_link_clarification: Nakili kiungo cha kushiriki kwenye ubao wa kunakili
+        copy_share_link_copied: Imenakiliwa!
+        copy_share_link_message: Kiungo kilinakiliwa kwenye ubao wa kunakili.
+        share: Shiriki
+        share_link: Shiriki kiungo
+        share_to: Shiriki kwa %{service}
     statistics:
-      comments_count: Comments
-      endorsements_count: Endorsements
-      followers_count: Followers
-      headline: Statistics
-      no_stats: There are no statistics yet.
-      pages_count: Pages
-      participants_count: Participants
-      users_count: Participants
+      comments_count: Maoni
+      endorsements_count: Ridhaa
+      followers_count: Wafuasi
+      headline: Takwimu
+      no_stats: Bado hakuna takwimu.
+      pages_count: Kurasa
+      participants_count: Washiriki
+      users_count: Washiriki
     tags:
-      filter_results_for_category: 'Filter results for category: %{resource}'
-      filter_results_for_scope: 'Filter results for scope: %{resource}'
+      filter_results_for_category: 'Chuja matokeo ya kategoria: %{resource}'
+      filter_results_for_scope: 'Chuja matokeo ya upeo: %{resource}'
     translation_bar:
-      help_text: "<strong>Warning:</strong> Content might be automatically translated and not be 100% accurate."
-      show_original: Show original text
-      show_translated: Show automatically-translated text
+      help_text: "<strong>Onyo:</strong> Maudhui yanaweza kutafsiriwa kiotomatiki na yasiwe sahihi 100%."
+      show_original: Onyesha maandishi asilia
+      show_translated: Onyesha maandishi yaliyotafsiriwa kiotomatiki
     user_activity:
       index:
-        no_activities_warning: This participant does not have any activity yet.
-    user_contact_disabled: This participant does not accept direct messages.
+        no_activities_warning: Mshiriki huyu bado hana shughuli yoyote.
+    user_contact_disabled: Mshiriki huyu hakubali ujumbe wa moja kwa moja
     user_conversations:
       create:
-        error: The message could not be created. Try again later.
-        existing_error: The message could not be created. The conversation already exists, please try again now.
-        success: Conversation started successfully!
+        error: Ujumbe haukuweza kuundwa. Jaribu tena baadaye.
+        existing_error: Ujumbe haukuweza kuundwa. Mazungumzo tayari yapo, tafadhali jaribu tena sasa.
+        success: Mazungumzo yameanza kwa mafanikio!
       index:
-        conversations_info: Conversations are private. no one else can see them. A conversation can be started with any participant or group registered on the platform.
-        no_conversations_warning: There are no conversations yet.
-        time_ago: "%{time} ago"
+        conversations_info: Mazungumzo ni ya faragha. hakuna mtu mwingine anayeweza kuwaona. Mazungumzo yanaweza kuanzishwa na mshiriki au kikundi chochote kilichosajiliwa kwenye jukwaa.
+        no_conversations_warning: Bado hakuna mazungumzo.
+        time_ago: "%{time} iliyopita"
       reply:
-        placeholder: Your reply...
-        send: Send
+        placeholder: Jibu lako...
+        send: Tuma
       update:
-        error: Message not sent. Try again later
+        error: Ujumbe haujatumwa. Jaribu tena baadaye
     user_interests:
       show:
-        my_interests: My interests
-        no_scopes: This organization does not have any scope yet!
-        select_your_interests: Select the topics you are interested in to receive events related to them in your profile Timeline tab.
-        update_my_interests: Update my interests
+        my_interests: Maslahi yangu
+        no_scopes: Shirika hili bado halina upeo wowote!
+        select_your_interests: Chagua mada unazopenda ili kupokea matukio yanayohusiana nazo katika kichupo cha Rekodi ya Maeneo Uliyotembelea wasifu wako.
+        update_my_interests: Sasisha mambo yanayonivutia
       update:
-        error: There was a problem updating your interests.
-        success: Your interests have been successfully updated.
+        error: Kulikuwa na tatizo la kusasisha akaunti yako.
+        success: Mambo yanayokuvutia yamesasishwa.
     user_report_mailer:
       notify:
-        body_1: User %{user} has been reported by %{token}
-        body_2: 'Reason: %{reason}'
-        details: User provided details
-        greetings: Greetings,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
-        hello: Hello %{admin},
-        subject: A new user has been reported in %{organization_name}
+        body_1: Mtumiaji %{user} ameripotiwa na %{token}
+        body_2: 'Sababu: %{reason}'
+        details: Mtumiaji alitoa maelezo
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Hujambo %{admin},
+        subject: Mtumiaji mpya ameripotiwa katika %{organization_name}
     user_update_mailer:
       notify:
-        body_1: We are sending you this message to inform you about an update to your account.
-        body_2: In case you have not performed such update yourself, please log in to your account to change your password. In case you cannot log in, please contact the platform support.
-        greetings: Greetings,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
-        hello: Hello %{user}
-        main_body: 'The following details have been changed: %{updates}.'
-        update_fields: "%{updates} and %{last_update}"
-      subject: Your account was updated
+        body_1: Tunakutumia ujumbe huu ili kukuarifu kuhusu sasisho la akaunti yako.
+        body_2: Iwapo hujafanya sasisho kama hilo wewe mwenyewe, tafadhali ingia kwenye akaunti yako ili kubadilisha nenosiri lako. Iwapo huwezi kuingia, tafadhali wasiliana na usaidizi wa jukwaa.
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Hujambo %{user}
+        main_body: 'Maelezo yafuatayo yamebadilishwa: %{updates}.'
+        update_fields: "%{updates} na %{last_update}"
+      subject: Akaunti yako imesasishwa
     version:
       show:
-        back_to_resource: Go back
-        changes_at_title: Changes at "%{title}"
-        number_of_versions: Versions
-        version_created_at: Version created at
+        back_to_resource: Rudi nyuma
+        changes_at_title: Mabadiliko katika "%{title}"
+        number_of_versions: Matoleo
+        version_created_at: Toleo liliundwa saa
     versions:
       resource_version:
-        of_versions: "(of %{number})"
-        see_other_versions: see other versions
-        version: Version number %{number}
+        of_versions: "(ya %{number})"
+        see_other_versions: tazama matoleo mengine
+        version: Nambari ya toleo %{number}
     versions_list_item:
       show:
-        version_index: Version %{index} of %{total}
+        version_index: Toleo la %{index} la %{total}
     welcome_notification:
-      default_body: <p>Hi {{name}}, thanks for joining {{organization}} and welcome!</p><ul><li>If you want to get a quick idea of what you can do here, have a look at the <a href="{{help_url}}">Help</a> section.</li><li>Once you have read it you will get your first badge. Here is a <a href="{{badges_url}}">list of all the badges</a> you can get as you participate in {{organization}}</li><li>Last but not least, join other people, share with them the experience of being engaged and participating in {{organization}}. Make proposals, comments, debate, think about how to contribute to the common good, provide arguments to convince, listen and read to be convinced, express your ideas in a concrete and direct way, respond with patience and decision, defend your ideas and keep an open mind to collaborate and join other people's ideas.</li></ul>
-      default_subject: Thanks for joining {{organization}}!
+      default_body: <p>Hujambo {{name}}, asante kwa kujiunga na {{organization}} na karibu!</p><ul><li>Ikiwa ungependa kupata wazo la haraka la unachoweza kufanya hapa, angalia sehemu ya <a href="{{help_url}}">Msaada</a>.</li><li>Ukishaisoma utapata beji yako ya kwanza. Hii hapa ni <a href="{{badges_url}}">orodha ya beji zote</a> unazoweza kupata unaposhiriki katika {{organization}}</li><li>Mwisho lakini sio kwa umuhimu, jiunge na zingine watu, shiriki nao uzoefu wa kujishughulisha na kushiriki katika {{shirika}}. Toa mapendekezo, maoni, mijadala, fikiria jinsi ya kuchangia manufaa ya wote, toa hoja za kushawishi, kusikiliza na kusoma ili kusadikishwa, eleza mawazo yako kwa njia thabiti na ya moja kwa moja, jibu kwa subira na uamuzi, tetea mawazo yako na utunze. nia iliyo wazi kushirikiana na kujiunga na mawazo ya watu wengine.</li></ul>
+      default_subject: Asante kwa kujiunga na {{organization}}!
     wizard_step_form:
       wizard_aside:
-        back: Back
+        back: Nyuma
       wizard_header:
-        see_steps: see steps
-        step_of: Step %{current_step} of %{total_steps}
+        see_steps: tazama hatua
+        step_of: Hatua ya %{current_step} kati ya %{total_steps}
   devise:
     confirmations:
-      confirmed: Your email address has been successfully confirmed.
+      confirmed: Barua pepe yako imethibitishwa.
       new:
-        resend_confirmation_instructions: Resend confirmation instructions
-      send_instructions: You will receive an email with instructions for how to confirm your email address in a few minutes.
-      send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes.
+        resend_confirmation_instructions: Tuma tena maagizo ya uthibitishaji
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kuthibitisha anwani yako ya barua pepe baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa anwani yako ya barua pepe ipo katika hifadhidata yetu, utapokea barua pepe yenye maelekezo ya jinsi ya kuthibitisha anwani yako ya barua pepe baada ya dakika chache.
     failure:
-      already_authenticated: You are already signed in.
-      inactive: Your account is not activated yet.
-      invalid: Invalid %{authentication_keys} or password.
-      invited: You have a pending invitation, accept it to finish creating your account.
-      last_attempt: You have one more attempt before your account is locked.
-      locked: Your account is locked.
-      not_found_in_database: Invalid %{authentication_keys} or password.
-      timeout: Your session expired. Please log in again to continue.
-      unauthenticated: You need to log in or create an account before continuing.
+      already_authenticated: Tayari umeingia.
+      inactive: Akaunti yako bado haijaamilishwa.
+      invalid: '%{authentication_keys} au nenosiri batili.'
+      invited: Una mwaliko ambao haujashughulikiwa, ukubali ili ukamilishe kuunda akaunti yako.
+      last_attempt: Una jaribio moja zaidi kabla ya akaunti yako kufungwa.
+      locked: Akaunti yako imefungwa.
+      not_found_in_database: '%{authentication_keys} au nenosiri batili.'
+      timeout: Kipindi chako kimekwisha. Tafadhali ingia tena ili kuendelea.
+      unauthenticated: Unahitaji kuingia au kuunda akaunti kabla ya kuendelea.
     invitations:
       edit:
-        header: Finish creating your account
-        nickname_help: Your nickname in %{organization}. Can only contain letters, numbers, '-' and '_'.
-        submit_button: Save
-        subtitle: If you accept the invitation please set your nickname and password.
-      invitation_removed: Your invitation was removed.
-      invitation_token_invalid: The invitation token provided is not valid!
+        header: Maliza kuunda akaunti yako
+        nickname_help: Jina lako la utani katika %{organization}. Inaweza kuwa na herufi, nambari, '-' na '_' pekee.
+        submit_button: Hifadhi
+        subtitle: Ukikubali mwaliko tafadhali weka jina lako la utani na nenosiri.
+      invitation_removed: Mwaliko wako uliondolewa.
+      invitation_token_invalid: Tokeni ya mwaliko iliyotolewa si sahihi!
       new:
-        header: Send invitation
-        submit_button: Send an invitation
-      no_invitations_remaining: No invitations remaining
+        header: Tuma mwaliko
+        submit_button: Tuma mwaliko
+      no_invitations_remaining: Hakuna mialiko iliyosalia
       send_instructions: An invitation email has been sent to %{email}.
       updated: Your password was set successfully. You are now signed in.
       updated_not_active: Your password was set successfully.
