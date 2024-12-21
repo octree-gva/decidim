@@ -1029,79 +1029,79 @@ sw:
         success: Ombi la kujiunga limeundwa. Msimamizi atakagua ombi lako kabla ya kukukubali kwenye kikundi.
       leave:
         error: Kulikuwa na tatizo kuondoka kwenye kikundi.
-        last_admin: You cannot remove yourself from this group as you are the last administrator. Make another member an administrator in order to leave the group.
-        success: Group successfully abandoned.
+        last_admin: Huwezi kujiondoa kwenye kikundi hiki kwa kuwa wewe ndiye msimamizi wa mwisho. Fanya mwanachama mwingine kuwa msimamizi ili kuondoka kwenye kikundi.
+        success: Kikundi kimetelekezwa.
       members:
-        accept_or_reject_join_requests: 'The following users have applied to join this group. Accept or reject their requests:'
-        accept_request: Accept
-        reject_request: Reject
+        accept_or_reject_join_requests: 'Watumiaji wafuatao wametuma maombi ya kujiunga na kikundi hiki. Kubali au kataa maombi yao:'
+        accept_request: Kubali
+        reject_request: Kataa
       new:
-        create_user_group: Create group
-        new_user_group: New group
-        subtitle: Create a group and invite other users to join to participate in a collective level.
-      no_user_groups: Does not belong to any group yet.
+        create_user_group: Unda kikundi
+        new_user_group: Kikundi kipya
+        subtitle: Unda kikundi na uwaalike watumiaji wengine wajiunge ili kushiriki katika kiwango cha pamoja.
+      no_user_groups: Bado hayumo katika kikundi chochote.
       roles:
-        admin: Administrator
-        creator: Administrator
-        member: Member
+        admin: Msimamizi
+        creator: Msimamizi
+        member: Mwanachama
       update:
-        error: There was a problem updating the group.
-        success: Group successfully updated.
+        error: Kulikuwa na tatizo la kusasisha kikundi.
+        success: Kikundi kimesasishwa.
     help:
       main_topic:
         default_page:
-          content: "<p>In %{organization} you can participate and decide on different topics, through the spaces you see in the top menu: Processes, Assemblies, Initiatives, Consultations.</p> <p>Within each one you will find different options to participate: make proposals - individually or with other people-, take part in debates, prioritize projects to implement, attend face-to-face meetings and other actions.</p>\n"
-          title: What can I do in %{organization}?
-        description: Read more about %{organization}.
-        title: General
+          content: "<p>Katika %{organization} unaweza kushiriki na kuamua juu ya mada tofauti, kupitia nafasi unazoziona kwenye menyu ya juu: Michakato, Mikusanyiko, Mipango, Mashauriano.</p> <p>Ndani ya kila moja utapata chaguo tofauti. kushiriki: kutoa mapendekezo - kibinafsi au na watu wengine-, kushiriki katika mijadala, kutoa kipaumbele kwa miradi ya kutekeleza, kuhudhuria mikutano ya ana kwa ana na hatua zingine.</p>"
+          title: Je, ninaweza kufanya nini katika %{organization}?
+        description: Soma zaidi kuhusu %{organization}.
+        title: Mkuu
     last_activities:
-      all: All activity types
+      all: Aina zote za shughuli
       index:
-        last_activity: Last activity
-      name: Last activities
-      no_activities_warning: There are no entries to show for this activity type.
+        last_activity: Shughuli ya mwisho
+      name: Shughuli za mwisho
+      no_activities_warning: Hakuna maingizo ya kuonyesha kwa aina hii ya shughuli.
     linked_resource_from:
-      included_in: Included in
+      included_in: Imejumuishwa katika
     links:
-      invalid_url: Invalid URL
+      invalid_url: URL batili
       warning:
-        body_1: You are about to visit an external link and we would like you to be cautious regarding the content on the external site.
-        body_2: Please check the link you are about to visit and make sure you recognize it as a safe site before proceeding.
-        cancel: Cancel
-        proceed: Proceed
-        title: Open external link
+        body_1: Unakaribia kutembelea kiungo cha nje na tungependa uwe mwangalifu kuhusu maudhui kwenye tovuti ya nje.
+        body_2: Tafadhali angalia kiungo ambacho unakaribia kutembelea na uhakikishe kuwa unakitambua kama tovuti salama kabla ya kuendelea.
+        cancel: Ghairi
+        proceed: Endelea
+        title: Fungua kiungo cha nje
     log:
       base_presenter:
-        create: "%{user_name} created %{resource_name}"
-        create_with_space: "%{user_name} created %{resource_name} in %{space_name}"
-        delete: "%{user_name} deleted %{resource_name}"
-        delete_with_space: "%{user_name} deleted %{resource_name} in %{space_name}"
-        publish_with_space: "%{user_name} published %{resource_name} in %{space_name}"
-        unknown_action: "%{user_name} performed some action on %{resource_name}"
-        unknown_action_with_space: "%{user_name} performed some action on %{resource_name} in %{space_name}"
-        unpublish_with_space: "%{user_name} unpublished %{resource_name} from %{space_name}"
-        update: "%{user_name} updated %{resource_name}"
-        update_permissions_with_space: "%{user_name} updated the permissions of %{resource_name} in %{space_name}"
-        update_with_space: "%{user_name} updated %{resource_name} in %{space_name}"
+        create: "%{user_name} imeunda %{resource_name}"
+        create_with_space: "%{user_name} imeunda %{resource_name} katika %{space_name}"
+        delete: "%{user_name} imefutwa %{resource_name}"
+        delete_with_space: "%{user_name} imefutwa %{resource_name} katika %{space_name}"
+        publish_with_space: "%{user_name} imechapisha %{resource_name} katika %{space_name}"
+        unknown_action: "%{user_name} ilifanya kitendo fulani kwenye %{resource_name}"
+        unknown_action_with_space: "%{user_name} ilifanya kitendo fulani kwenye %{resource_name} katika %{space_name}"
+        unpublish_with_space: "%{user_name} haijachapishwa %{resource_name} kutoka %{space_name}"
+        update: "%{user_name} imesasishwa %{resource_name}"
+        update_permissions_with_space: "%{user_name} alisasisha ruhusa za %{resource_name} katika %{space_name}"
+        update_with_space: "%{user_name} ilisasishwa %{resource_name} katika %{space_name}"
       value_types:
         area_presenter:
-          not_found: 'The area was not found on the database (ID: %{id})'
+          not_found: 'Eneo hilo halikupatikana kwenye hifadhidata (ID: %{id})'
         area_type_presenter:
-          not_found: 'The area type was not found on the database (ID: %{id})'
+          not_found: 'Aina ya eneo haikupatikana kwenye hifadhidata (ID: %{id})'
         scope_presenter:
-          not_found: 'The scope was not found on the database (ID: %{id})'
+          not_found: 'Upeo haukupatikana kwenye hifadhidata (ID: %{id})'
         scope_type_presenter:
-          not_found: 'The scope type was not found on the database (ID: %{id})'
+          not_found: 'Aina ya upeo haikupatikana kwenye hifadhidata (ID: %{id})'
     machine_translations:
-      automatic: automatic translation in %{locale_name}
+      automatic: tafsiri otomatiki katika %{locale_name}
     managed_users:
-      expired_session: The current administration session of a participant has expired.
+      expired_session: Kikao cha sasa cha usimamizi cha mshiriki kimeisha.
     map:
       dynamic:
-        screen_reader_explanation: The following element is a map which presents the items on this page as map points. The element can be used with a screen reader but it may be hard to understand.
-        skip_button: Skip map
+        screen_reader_explanation: Kipengele kifuatacho ni ramani inayowasilisha vipengee kwenye ukurasa huu kama pointi za ramani. Kipengele kinaweza kutumika na kisoma skrini lakini kinaweza kuwa kigumu kuelewa.
+        skip_button: Ruka ramani
       static:
-        latlng_text: 'latitude: %{latitude}, longitude: %{longitude}'
+        latlng_text: 'latitudo: %{latitude}, longitudo: %{longitude}'
         map_service_brand: OpenStreetMap
     members:
       no_members: This group does not have any members yet.
