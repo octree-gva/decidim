@@ -146,107 +146,107 @@ sw:
         typography:
           description: Mwongozo huu unatoa muhtasari wa jinsi ya kutumia uchapaji katika Decidim, na hutumika kama linda kwa wabunifu kubuni kwa uhuru wakizingatia mbinu bora za uchapaji.
           headings:
-            characters: Characters per line
-            layout: Layout cols
-            size: Size
-          title: Typography
-          typefaces_description_1: Decidim uses Source Sans Pro as primary typeface. This typeface supports 310 languages
-          typefaces_description_2: This fonts are licensed under the Open Font License
+            characters: Wahusika kwa kila mstari
+            layout: Rangi za mpangilio
+            size: Ukubwa
+          title: Uchapaji
+          typefaces_description_1: Decidim hutumia Chanzo Sans Pro kama chapa ya msingi. Aina hii ya chapa inaweza kutumia lugha 310
+          typefaces_description_2: Fonti hizi zimepewa leseni chini ya Leseni ya Fonti Huria
       helpers:
-        accountability: Accountability
-        accountability_cards_html: Used by <i>Accountability projects</i> cards. This card requires the module assets to display properly, i.e. <code>append_stylesheet_pack_tag \"decidim_accountability\"</code>
-        activity: Activity
-        address_description: Address cell receives a resource, and searches the geolocalizable attributes to render an specific markup.
-        address_description_2: Depending of the type of the content, the address could be an online url. For such cases, the displayed information is quite the same but shaped to fit.
+        accountability: Uwajibikaji
+        accountability_cards_html: Inatumiwa na kadi za <i>Miradi ya Uwajibikaji</i>. Kadi hii inahitaji vipengee vya sehemu kuonyeshwa vizuri, yaani <code>append_stylesheet_pack_tag \"decidim_accountability\"</code>
+        activity: Shughuli
+        address_description: Kisanduku cha anwani hupokea nyenzo, na hutafuta sifa zinazoweza kusawazishwa na kijiografia ili kutoa alama maalum.
+        address_description_2: Kulingana na aina ya maudhui, anwani inaweza kuwa url ya mtandaoni. Kwa hali kama hizi, habari iliyoonyeshwa ni sawa lakini imeundwa kutoshea.
         ally_link: a11y-dropdown-component
-        argument: Argument
+        argument: Hoja
         assemblies: Mikusanyiko
-        assembly_g: Assembly G
-        assembly_s: Assembly S
+        assembly_g: Bunge G
+        assembly_s: Bunge S
         avatar: Avatar
-        avatar_description: It is used when there are narrow spaces, where the author is a secondary information.
-        background: Background and borders
-        base: Base
-        block_text: Use the extra_data block
-        blog_cards_html: Used by <i>Blogs</i> cards
-        blogs: Blogs
-        budget_card_html: Used by <i>Budget projects</i> cards. This card requires the module assets to display properly, i.e. <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
+        avatar_description: Inatumika wakati kuna nafasi nyembamba, ambapo mwandishi ni habari ya sekondari.
+        background: Asili na mipaka
+        base: Msingi
+        block_text: Tumia kizuizi_cha_data
+        blog_cards_html: Inatumiwa na <i>Kadi za Blogu</i>
+        blogs: Blogu
+        budget_card_html: Inatumiwa na kadi za <i>Miradi ya Bajeti</i>. Kadi hii inahitaji vipengee vya sehemu ili vionyeshwe vizuri, yaani <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
         budgets: Bajeti
-        callout_class: Callout Class
-        callout_description: This attribute applies an status to the announcement. By default, it uses secondary color.
-        card_g: Card G
-        card_l: Card L
-        card_s: Card S
-        collaborative_draft_l: Collaborative Draft L
-        colors: Colors
+        callout_class: Darasa la Callout
+        callout_description: Sifa hii inatumika hadhi kwa tangazo. Kwa chaguo-msingi, hutumia rangi ya sekondari.
+        card_g: Kadi ya G
+        card_l: Kadi ya L
+        card_s: Kadi ya S
+        collaborative_draft_l: Rasimu ya Ushirikiano L
+        colors: Rangi
         compact: Compact
-        compact_description: This author version is the common way to identify the resource creator.
-        conference_g: Conference G
-        conference_s: Conference S
+        compact_description: Toleo hili la mwandishi ndiyo njia ya kawaida ya kutambua mtayarishaji rasilimali.
+        conference_g: Mkutano wa G
+        conference_s: Mkutano wa S
         conferences: Mikutano
-        context: Context
-        context_description: This cell display some information about a user. It a visual help to identify the resource/content creator. Hovering with the mouse displays a tooltip with further info and links to its profile.
-        context_description_2: For resources, this cell appears beneath the main heading. For other contents, it appears next to the content itself.
-        debate_l: Debate L
-        debate_s: Debate S
+        context: Muktadha
+        context_description: Kisanduku hiki kinaonyesha taarifa fulani kuhusu mtumiaji. Ni usaidizi wa kuona kutambua rasilimali/muundaji wa maudhui. Kuelea na kipanya huonyesha kidokezo chenye maelezo zaidi na viungo vya wasifu wake.
+        context_description_2: Kwa rasilimali, seli hii inaonekana chini ya kichwa kikuu. Kwa yaliyomo mengine, inaonekana karibu na yaliyomo yenyewe.
+        debate_l: Mjadala L
+        debate_s: Mjadala S
         debates: Mijadala
-        debates_cards_html: Used by <i>Debates</i> cards
-        debates_cards_text: Use different template for the image block
-        default: Default
-        default_description: Calling the cell with no extra arguments, but the user itself.
-        demo: Demo
-        demo_text: 'This cell receives a model of LastActivity items and displays the following elements:'
-        demo_text_2: Used by the last activity page, in a content block and within the dropdowns.
-        description: Description
-        disabled: Disabled
-        dropdowns: Dropdowns
-        dropdowns_demo_1_description: 'The following example will not be noticeable in desktop, but mobile:'
-        dropdowns_demo_description: The dropdowns are used along the application in order to collapse large, easy-readable menus for desktop devices, but too wordy for mobile devices.
-        dropdowns_demo_description_html: 'This javascript feature is enhanced with a small css, through the naming: the hideable content MUST HAVE an <code>id</code> starting with <i>dropdown-menu</i>.'
+        debates_cards_html: Inatumiwa na <i>Kadi za Mijadala</i>
+        debates_cards_text: Tumia kiolezo tofauti kwa kizuizi cha picha
+        default: Chaguomsingi
+        default_description: Kupigia simu kisanduku bila hoja za ziada, lakini mtumiaji mwenyewe.
+        demo: Onyesho
+        demo_text: 'Seli hii hupokea mfano wa vipengee vya LastActivity na huonyesha vipengele vifuatavyo:'
+        demo_text_2: Inatumiwa na ukurasa wa mwisho wa shughuli, katika kizuizi cha maudhui na ndani ya menyu kunjuzi.
+        description: Maelezo
+        disabled: Imezimwa
+        dropdowns: Kunjuzi
+        dropdowns_demo_1_description: 'Mfano ufuatao hautaonekana kwenye eneo-kazi, lakini simu ya rununu:'
+        dropdowns_demo_description: Menyu kunjuzi hutumika pamoja na programu ili kukunja menyu kubwa, zinazosomeka kwa urahisi kwa vifaa vya mezani, lakini ni neno sana kwa vifaa vya rununu.
+        dropdowns_demo_description_html: 'Kipengele hiki cha javascript kimeimarishwa kwa css ndogo, kupitia kutaja: maudhui yanayofichwa LAZIMA YAWE NA <code>id</code> inayoanza na <i>menu-kunjuzi</i>.'
         dropdowns_description_html: Dropdowns are a javascript feature available thanks to an external library called %{link}.
-        dropdowns_usage_1_description: 2. A hideable element, whose <code>id</code> matches the data-target value the trigger refers to.
-        dropdowns_usage_description: 'An dropdown requires two elements:'
-        dropdowns_usage_description_html: 1. A user actionable element, with the data-attributes <code>data-component="dropdown" data-target="dropdown-menu-element"</code>.
-        dummy_description: Dummy resource description
-        dummy_title: Dummy resource title
-        follow_button: Follow Button
-        follower_description_html: Make sure the partial <code>decidim/shared/login_modal</code> is present in the DOM. This partial is placed in the application layout when the user is logged in.
-        form_elements: Form elements
-        generic_cards: Generic cards
-        grid: Grid
+        dropdowns_usage_1_description: 2. Kipengele kinachoweza kufichwa, ambacho <code>id</code> inalingana na thamani ya data inayolengwa na kichochezi.
+        dropdowns_usage_description: 'Kushuka kunahitaji vitu viwili:'
+        dropdowns_usage_description_html: 1. Kipengele kinachoweza kutekelezeka na mtumiaji, chenye sifa za data <code>data-component="dropdown" data-target="dropdown-menu-element"</code>.
+        dummy_description: Maelezo ya rasilimali ya dummy
+        dummy_title: Kichwa cha rasilimali ya dummy
+        follow_button: Fuata Kitufe
+        follower_description_html: Hakikisha kuwa sehemu ya <code>decidim/shared/login_modal</code> ipo kwenye DOM. Sehemu hii huwekwa katika mpangilio wa programu wakati mtumiaji ameingia.
+        form_elements: Vipengele vya fomu
+        generic_cards: Kadi za kawaida
+        grid: Gridi
         hex_code: Hex code
-        highlight: Highlight
-        highlight_description: Used by resources who allow to highlight
-        html_tips: HTML tips
-        icons: Icons
-        image_and_description: Image and Description
-        initiative_g: initiative_g
-        initiative_s: initiative_s
-        initiatives: Initiatives
-        list: List
-        main_colors: Main Colors
-        meeting_l: Meeting L
-        meeting_s: Meeting S
-        meetings: Meetings
-        meetings_html: Used by <i>Meetings</i> cards
-        metadata_items: Metadata items
-        metadata_text: Each resource define its own metadata items
-        participatory_process_g: Participatory Process G
-        participatory_process_group_g: Participatory Process Group G
-        participatory_process_group_s: Participatory Process Group S
-        participatory_process_s: Participatory Process S
-        participatory_processes: Participatory Processes
-        plain_text: I am just plain text
-        plain_text_description: You can provide as first argument both a plain text and a hash object
-        plain_text_vs_hash: Plain Text Vs Hash
-        post_g: Post G
-        post_l: Post L
-        post_s: Post S
-        project_l: Project L
-        project_s: Project S
-        proposal_l: Proposal L
-        proposal_s: Proposal S
-        proposals: Proposals
+        highlight: Angazia
+        highlight_description: Inatumiwa na rasilimali zinazoruhusu kuangazia
+        html_tips: Vidokezo vya HTML
+        icons: Aikoni
+        image_and_description: Picha na Maelezo
+        initiative_g: mpango_g
+        initiative_s: mpango_s
+        initiatives: Mipango
+        list: Orodha
+        main_colors: Rangi Kuu
+        meeting_l: Mkutano wa L
+        meeting_s: Mkutano wa S
+        meetings: Mikutano
+        meetings_html: Inatumiwa na kadi za <i>Mikutano</i>
+        metadata_items: Vipengee vya metadata
+        metadata_text: Kila rasilimali inafafanua vipengee vyake vya metadata
+        participatory_process_g: Mchakato Shirikishi G
+        participatory_process_group_g: Mchakato Shirikishi Kikundi G
+        participatory_process_group_s: Mchakato Shirikishi Kikundi S
+        participatory_process_s: Mchakato Shirikishi S
+        participatory_processes: Taratibu Shirikishi
+        plain_text: Mimi ni maandishi tu
+        plain_text_description: Unaweza kutoa kama hoja ya kwanza maandishi wazi na kitu cha hashi
+        plain_text_vs_hash: Maandishi Sahihi Vs Hash
+        post_g: Chapisho la G
+        post_l: Chapisho la L
+        post_s: Chapisho la S
+        project_l: Mradi wa L
+        project_s: Mradi wa S
+        proposal_l: Pendekezo L
+        proposal_s: Pendekezo S
+        proposals: Mapendekezo
         report_button: Report button
         report_usage_description: Report button launches a modal window to flag the current resource.
         result_l: Result L
