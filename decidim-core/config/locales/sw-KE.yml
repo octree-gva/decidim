@@ -1718,323 +1718,323 @@ sw:
       new:
         forgot_your_password: Je, umesahau nenosiri lako?
         send_me_reset_password_instructions: Nitumie maagizo ya kuweka upya nenosiri
-      no_token: You cannot access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
-      send_instructions: You will receive an email with instructions on how to reset your password in a few minutes.
-      send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
-      updated: Your password has been successfully changed. You are now signed in.
-      updated_not_active: Your password has been successfully changed.
+      no_token: Huwezi kufikia ukurasa huu bila kuja kutoka kwa barua pepe ya kuweka upya nenosiri. Ikiwa umetoka kwa barua pepe ya kuweka upya nenosiri, tafadhali hakikisha kuwa umetumia URL kamili iliyotolewa.
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kuweka upya nenosiri lako baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa anwani yako ya barua pepe ipo katika hifadhidata yetu, utapokea kiungo cha kurejesha nenosiri kwenye anwani yako ya barua pepe baada ya dakika chache.
+      updated: Nenosiri lako limebadilishwa. Sasa umeingia.
+      updated_not_active: Nenosiri lako limebadilishwa.
     registrations:
-      destroyed: Your account has been successfully cancelled. We hope to see you again soon.
+      destroyed: Akaunti yako imeghairiwa. Tunatumai kukuona tena hivi karibuni.
       new:
-        sign_up: Create an account
-      signed_up: Welcome! You have signed up successfully.
-      signed_up_but_inactive: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
-      signed_up_but_locked: You have signed up successfully. However, we could not sign you in because your account is locked.
-      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.
-      update_needs_confirmation: You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address.
-      updated: Your account has been successfully updated.
+        sign_up: Fungua akaunti
+      signed_up: Karibu! Umefaulu kujiandikisha.
+      signed_up_but_inactive: Umefaulu kujiandikisha. Hata hivyo, hatukuweza kukuingiza kwa sababu akaunti yako bado haijaamilishwa.
+      signed_up_but_locked: Umefaulu kujiandikisha. Hata hivyo, hatukuweza kukuingiza kwa sababu akaunti yako imefungwa.
+      signed_up_but_unconfirmed: Ujumbe ulio na kiungo cha uthibitishaji umetumwa kwa anwani yako ya barua pepe. Tafadhali fuata kiungo ili kuwezesha akaunti yako.
+      update_needs_confirmation: Ulisasisha akaunti yako kwa mafanikio, lakini tunahitaji kuthibitisha anwani yako mpya ya barua pepe. Tafadhali angalia barua pepe yako na ufuate kiungo cha kuthibitisha ili kuthibitisha anwani yako mpya ya barua pepe.
+      updated: Akaunti yako imesasishwa.
     sessions:
-      already_signed_out: Logged out successfully.
+      already_signed_out: Umetoka nje kwa mafanikio.
       new:
-        log_in: Log in
-      signed_in: Logged in successfully.
-      signed_out: Logged out successfully.
+        log_in: Ingia
+      signed_in: Imefanikiwa kuingia.
+      signed_out: Umetoka nje kwa mafanikio.
     shared:
       links:
-        back: Back
-        didn_t_receive_confirmation_instructions: Did not receive confirmation instructions?
-        didn_t_receive_unlock_instructions: Did not receive unlock instructions?
-        forgot_your_password: Forgot your password?
+        back: Nyuma
+        didn_t_receive_confirmation_instructions: Hukupokea maagizo ya uthibitishaji?
+        didn_t_receive_unlock_instructions: Hukupokea maagizo ya kufungua?
+        forgot_your_password: Je, umesahau nenosiri lako?
         log_in: Ingia
-        log_in_with_provider: Log in with %{provider}
+        log_in_with_provider: Ingia kwa %{provider}
         sign_up: Fungua akaunti
       minimum_password_length:
-        one: "(%{count} character minimum)"
-        other: "(%{count} characters minimum)"
+        one: "(Kima cha chini cha herufi %{count})"
+        other: "(Kima cha chini cha herufi %{count})"
     unlocks:
       new:
-        resend_unlock_instructions: Resend unlock instructions
-      send_instructions: You will receive an email with instructions for how to unlock your account in a few minutes.
-      send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
-      unlocked: Your account has been successfully unlocked. Please log in to continue.
+        resend_unlock_instructions: Tuma maagizo ya kufungua tena
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kufungua akaunti yako baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa akaunti yako ipo, utapokea barua pepe yenye maelekezo ya jinsi ya kuifungua baada ya dakika chache.
+      unlocked: Akaunti yako imefunguliwa. Tafadhali ingia ili kuendelea.
   doorkeeper:
     scopes:
-      public: Your public information.
+      public: Taarifa zako za umma.
   editor:
     extensions:
       image:
-        altLabel: Alternative text for the image
+        altLabel: Maandishi mbadala ya picha
         nodeView:
           resizer:
             control:
-              resize: Resize image (%position%)
+              resize: Badilisha ukubwa wa picha (%position%)
             position:
-              bottomLeft: bottom left corner
-              bottomRight: bottom right corner
-              topLeft: top left corner
-              topRight: top right corner
-        uploadError: Uploading the file failed.
+              bottomLeft: kona ya chini kushoto
+              bottomRight: kona ya chini kulia
+              topLeft: kona ya juu kushoto
+              topRight: kona ya juu kulia
+        uploadError: Imeshindwa kupakia faili.
       link:
         bubbleMenu:
-          edit: Edit
-          remove: Remove
+          edit: Hariri
+          remove: Ondoa
           url: URL
-        hrefLabel: Link URL
-        targetLabel: Target
+        hrefLabel: URL ya kiungo
+        targetLabel: Lengo
         targets:
-          blank: New tab
-          default: Default (same tab)
+          blank: Kichupo kipya
+          default: Chaguomsingi (kichupo sawa)
       videoEmbed:
-        titleLabel: Title
-        urlLabel: Video URL
+        titleLabel: Kichwa
+        urlLabel: URL ya video
     inputDialog:
       buttons:
-        cancel: Cancel
-        remove: Remove
-        save: Save
-      close: Close modal
+        cancel: Ghairi
+        remove: Ondoa
+        save: Hifadhi
+      close: Funga modali
     toolbar:
       control:
-        blockquote: Blockquote
-        bold: Bold
-        bulletList: Unordered list
-        codeBlock: Code block
+        blockquote: Nukuu ya kuzuia
+        bold: Ujasiri
+        bulletList: Orodha ambayo haijaagizwa
+        codeBlock: Kizuizi cha kanuni
         common:
-          eraseStyles: Erase styles
-        hardBreak: Line break
-        heading: Text style
-        image: Image
+          eraseStyles: Futa mitindo
+        hardBreak: Kuvunja mstari
+        heading: Mtindo wa maandishi
+        image: Picha
         indent:
-          indent: Indent
-          outdent: Outdent
+          indent: Pendekeza ndani
+          outdent: Nje
         italic: Italic
-        link: Link
-        orderedList: Ordered list
-        underline: Underline
-        videoEmbed: Video embed
+        link: Kiungo
+        orderedList: Orodha iliyoagizwa
+        underline: Piga mstari
+        videoEmbed: Upachikaji wa video
       textStyle:
-        heading: Heading %level%
-        normal: Normal
+        heading: Kichwa %level%
+        normal: Kawaida
     upload:
-      uploadedFile: Uploaded file
+      uploadedFile: Faili iliyopakiwa
   emojis:
-    add_custom: Add custom emoji
-    button: Add emoji
+    add_custom: Ongeza emoji maalum
+    button: Ongeza emoji
     categories:
-      activity: Activity
-      custom: Custom
-      flags: Flags
-      foods: Food & Drink
-      frequent: Frequently used
-      nature: Animals & Nature
-      objects: Objects
-      people: Smileys & People
-      places: Travel & Places
-      search: Search Results
-      symbols: Symbols
-    pick: Pick an emoji…
-    search: Search
-    search_no_results_1: Oh no!
-    search_no_results_2: That emoji could not be found
+      activity: Shughuli
+      custom: Desturi
+      flags: Bendera
+      foods: Chakula na Vinywaji
+      frequent: Inatumika mara kwa mara
+      nature: Wanyama na Asili
+      objects: Vitu
+      people: Smileys & Watu
+      places: Safari na Maeneo
+      search: Matokeo ya Utafutaji
+      symbols: Alama
+    pick: Chagua emoji...
+    search: Tafuta
+    search_no_results_1: La!
+    search_no_results_2: Emoji hiyo haikupatikana
     skins:
-      '1': Default
-      '2': Light
-      '3': Medium-Light
-      '4': Medium
-      '5': Medium-Dark
-      '6': Dark
-      choose: Choose default skin tone
+      '1': Chaguomsingi
+      '2': Mwanga
+      '3': Mwanga-Wastani
+      '4': Kati
+      '5': Kati-Giza
+      '6': Giza
+      choose: Chagua toni chaguomsingi ya ngozi
   errors:
     messages:
-      allowed_file_content_types: 'only files with the following extensions are allowed: %{types}'
-      already_confirmed: was already confirmed, please try logging in
-      blank: cannot be blank
-      cannot_be_blank: cannot be blank
-      confirmation: does not match %{attribute}
-      confirmation_period_expired: needs to be confirmed within %{period}, please request a new one
-      content_type_allowlist_error: the file type is not valid
-      cycle_detected: a scope's parent cannot be one of its descendants
-      empty: cannot be empty
-      expired: has expired, please request a new one
-      file_size_is_less_than_or_equal_to: file size must be less than or equal to %{count}
-      invalid_time_zone: is not a valid time zone
-      long_words: contains words that are too long (over 35 characters)
-      must_start_with_caps: must start with a capital letter
-      nesting_too_deep: cannot be inside of a subcategory
-      not_found: could not be found. Have you created an account previously?
-      not_locked: was not locked
+      allowed_file_content_types: 'faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
+      already_confirmed: tayari imethibitishwa, tafadhali jaribu kuingia
+      blank: haiwezi kuwa tupu
+      cannot_be_blank: haiwezi kuwa tupu
+      confirmation: hailingani na %{attribute}
+      confirmation_period_expired: inahitaji kuthibitishwa ndani ya %{period}, tafadhali omba mpya
+      content_type_allowlist_error: aina ya faili si halali
+      cycle_detected: mzazi wa upeo hawezi kuwa mmoja wa vizazi vyake
+      empty: haiwezi kuwa tupu
+      expired: muda wake umeisha, tafadhali omba mpya
+      file_size_is_less_than_or_equal_to: saizi ya faili lazima iwe chini ya au sawa na %{count}
+      invalid_time_zone: si saa za eneo halali
+      long_words: ina maneno ambayo ni marefu sana (zaidi ya herufi 35)
+      must_start_with_caps: lazima uanze na herufi kubwa
+      nesting_too_deep: haiwezi kuwa ndani ya kategoria ndogo
+      not_found: haikuweza kupatikana. Je, umefungua akaunti hapo awali?
+      not_locked: haikuwa imefungwa
       not_saved:
-        one: 'There''s been an error processing your request:'
-        other: 'There were multiple errors when processing your request:'
-      too_many_marks: is using too many consecutive punctuation marks (e.g. ! and ?)
-      too_much_caps: is using too many capital letters (over 25% of the text)
-      too_short: is too short (under %{count} characters)
-      url_format: This URL is in the incorrect format
+        one: 'Kumekuwa na hitilafu katika kuchakata ombi lako:'
+        other: 'Kulikuwa na makosa mengi wakati wa kuchakata ombi lako:'
+      too_many_marks: anatumia alama nyingi za uakifishaji zinazofuatana (e.g. ! na?)
+      too_much_caps: inatumia herufi kubwa nyingi (zaidi ya 25% ya maandishi)
+      too_short: ni fupi mno (chini ya vibambo %{count})
+      url_format: URL hii iko katika umbizo lisilo sahihi
   forms:
-    correct_errors: There are errors on the form, please correct them to continue.
+    correct_errors: Kuna hitilafu kwenye fomu, tafadhali zirekebishe ili kuendelea.
     length_validator:
       minimum:
-        one: At least %{count} character
-        other: At least %{count} characters
-    required: Required field
-    required_explanation: "* Required fields are marked with an asterisk"
+        one: Angalau herufi %{count}
+        other: Angalau vibambo %{count}
+    required: Sehemu inayohitajika
+    required_explanation: "* Sehemu zinazohitajika zimetiwa alama ya nyota"
   invisible_captcha:
-    sentence_for_humans: If you are human, ignore this field
-    timestamp_error_message: Sorry, that was too quick! Please resubmit.
+    sentence_for_humans: Ikiwa wewe ni mwanadamu, puuza uwanja huu
+    timestamp_error_message: Samahani, hiyo ilikuwa haraka sana! Tafadhali wasilisha upya.
   layouts:
     decidim:
       announcements:
-        view_less: Show less
-        view_more: More information
+        view_less: Onyesha kidogo
+        view_more: Taarifa zaidi
       data_consent:
         details:
           columns:
-            description: Description
-            name: Name
-            service: Service
-            type: Type
+            description: Maelezo
+            name: Jina
+            service: Huduma
+            type: Aina
           items:
             _session_id:
-              description: Allows websites to remember user within a website when they move between web pages.
-              service: This website
+              description: Huruhusu tovuti kukumbuka mtumiaji ndani ya tovuti wakati zinasogea kati ya kurasa za wavuti.
+              service: Tovuti hii
             decidim-consent:
-              description: Stores information about the cookies allowed by the user on this website.
-              service: This website
+              description: Huhifadhi maelezo kuhusu vidakuzi vinavyoruhusiwa na mtumiaji kwenye tovuti hii.
+              service: Tovuti hii
             pwaInstallPromptSeen:
-              description: Stores status if the progressive web application (PWA) install notification has been already seen by the user.
-              service: This website
+              description: Huhifadhi hali ikiwa arifa ya usakinishaji wa programu inayoendelea (PWA) tayari imeonekana na mtumiaji.
+              service: Tovuti hii
           types:
-            cookie: Cookie
-            local_storage: Local storage
+            cookie: Kuki
+            local_storage: Hifadhi ya ndani
         dialog:
-          accept_all: Accept all
-          accept_only_essential: Accept only essential
-          description: We use cookies on our website to improve the performance and content of the site. The cookies enable us to provide a more individual user experience and social media channels.
-          settings: Settings
-          title: Information about the cookies used on the website
+          accept_all: Kubali yote
+          accept_only_essential: Kubali muhimu tu
+          description: Tunatumia vidakuzi kwenye tovuti yetu ili kuboresha utendaji na maudhui ya tovuti. Vidakuzi hutuwezesha kutoa matumizi ya kibinafsi zaidi na chaneli za media za kijamii.
+          settings: Mipangilio
+          title: Taarifa kuhusu vidakuzi vinavyotumiwa kwenye tovuti
         modal:
-          accept_all: Accept all
-          accept_only_essential: Accept only essential
+          accept_all: Kubali yote
+          accept_only_essential: Kubali muhimu tu
           analytics:
-            description: These cookies are used to measure and analyse the website audience to help improve the website.
-            title: Analytics and statistics
-          description: We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can configure and accept the use of the cookies, and modify your consent options, at any time.
+            description: Vidakuzi hivi hutumika kupima na kuchanganua hadhira ya tovuti ili kusaidia kuboresha tovuti.
+            title: Uchanganuzi na takwimu
+          description: Tunatumia vidakuzi ili kuhakikisha utendakazi msingi wa tovuti na kuboresha matumizi yako ya mtandaoni. Unaweza kusanidi na kukubali matumizi ya vidakuzi, na kurekebisha chaguo zako za idhini, wakati wowote.
           essential:
-            description: These cookies enable key functionality of the website and help to keep its users secured. They are automatically saved in the browser and cannot be disabled.
-            title: Essential
+            description: Vidakuzi hivi huwezesha utendakazi muhimu wa tovuti na kusaidia kuweka watumiaji wake salama. Zinahifadhiwa kiotomatiki kwenye kivinjari na haziwezi kuzimwa.
+            title: Muhimu
           marketing:
-            description: These cookies collect information about how you use the website and they can be utilized to provide you more personalized marketing across the different websites you use.
-            title: Marketing
+            description: Vidakuzi hivi hukusanya maelezo kuhusu jinsi unavyotumia tovuti na vinaweza kutumika kukupa uuzaji unaobinafsishwa zaidi kwenye tovuti mbalimbali unazotumia.
+            title: Masoko
           preferences:
-            description: These cookies allow the website to remember the choices you have made in the past on this website to provide a more personalized experience for the website users.
-            title: Preferences
-          save_settings: Save settings
-          title: Cookie settings
-          toggle: Toggle %{consent_category}
+            description: Vidakuzi hivi huruhusu tovuti kukumbuka chaguo ulizofanya hapo awali kwenye tovuti hii ili kutoa hali ya utumiaji iliyobinafsishwa zaidi kwa watumiaji wa tovuti.
+            title: Mapendeleo
+          save_settings: Hifadhi mipangilio
+          title: Mipangilio ya kuki
+          toggle: Geuza %{consent_category}
         warning:
-          all_categories: all cookies
-          change_settings: Change cookie settings
-          consent_required: You need to enable %{categories} in order to see this content.
+          all_categories: vidakuzi vyote
+          change_settings: Badilisha mipangilio ya vidakuzi
+          consent_required: Unahitaji kuwezesha %{categories} ili kuona maudhui haya.
       edit_link:
-        edit: Edit
+        edit: Hariri
       footer:
-        cc_by_license: Creative Commons License
-        data_consent_settings: Cookie settings
-        decidim_logo: Decidim Logo
+        cc_by_license: Leseni ya Creative Commons
+        data_consent_settings: Mipangilio ya kuki
+        decidim_logo: Nembo ya Decidim
         decidim_title: Decidim
-        download_open_data: Download Open Data files
-        log_in: Log in
-        made_with_open_source: Website made with <a target="_blank" href="https://github.com/decidim/decidim">free software</a>.
-        resources: Resources
-        sign_up: Create an account
-        terms_of_service: Terms of Service
+        download_open_data: Pakua faili za Fungua Data
+        log_in: Ingia
+        made_with_open_source: Tovuti iliyotengenezwa kwa <a target="_blank" href="https://github.com/decidim/decidim">programu isiyolipishwa</a>.
+        resources: Rasilimali
+        sign_up: Fungua akaunti
+        terms_of_service: Masharti ya Huduma
       header:
-        log_in: Log in
-        main_menu: Main menu
-        user_menu: User menu
+        log_in: Ingia
+        main_menu: Menyu kuu
+        user_menu: Menyu ya mtumiaji
       impersonation_warning:
-        close_session: Close session
-        description_html: You are managing the participant <b>%{user_name}</b>.
-        expire_time_html: Your session will expire in <b><span class="minutes">%{minutes}</span> minutes</b>.
+        close_session: Funga kipindi
+        description_html: Unasimamia mshiriki <b>%{user_name}</b>.
+        expire_time_html: Muda wa kipindi chako utaisha baada ya dakika <b><span class="minutes">%{minutes}</span></b>.
       language_chooser:
-        choose_language: Choose language
+        choose_language: Chagua lugha
       notifications_dashboard:
-        mark_all_as_read: Mark all as read
-        mark_as_read: Mark as read
+        mark_all_as_read: Weka alama zote kama zimesomwa
+        mark_as_read: Weka alama kama imesomwa
       offline_banner:
-        cache_version_page: Oooops! Your network is offline. This is a previously cached version of the page you are visiting, perhaps the content is not up to date.
+        cache_version_page: Lo! Mtandao wako haupo mtandaoni. Hili ni toleo lililoakibishwa awali la ukurasa unaotembelea, labda maudhui hayajasasishwa.
       social_media_links:
-        facebook: "%{organization} at Facebook"
-        github: "%{organization} at GitHub"
-        instagram: "%{organization} at Instagram"
-        x: "%{organization} at X"
-        youtube: "%{organization} at YouTube"
+        facebook: "%{organization} kwenye Facebook"
+        github: "%{organization} katika GitHub"
+        instagram: "%{organization} kwenye Instagram"
+        x: "%{organization} katika X"
+        youtube: "%{organization} kwenye YouTube"
       timeout_modal:
-        body: You have been inactive for %{minutes} minutes. If you continue being inactive, you will be automatically signed out for your own security.
-        continue_session: Continue session
-        log_out: Log out
-        title: Would you like to continue your session?
+        body: Umekuwa bila amilifu kwa dakika %{minutes}. Ukiendelea kutotumika, utaondolewa kiotomatiki kwa usalama wako mwenyewe.
+        continue_session: Endelea kikao
+        log_out: Toka nje
+        title: Je, ungependa kuendelea na kipindi chako?
       user_menu:
-        account: 'User account: %{name}'
-        admin_dashboard: Admin dashboard
-        configuration: Configuration
-        conversations: Conversations
-        log_out: Log out
-        notifications: Notifications
-        profile: My account
-        public_profile: My public profile
-        title: Profile links
+        account: 'Akaunti ya mtumiaji: %{name}'
+        admin_dashboard: Dashibodi ya msimamizi
+        configuration: Usanidi
+        conversations: Mazungumzo
+        log_out: Toka nje
+        notifications: Arifa
+        profile: Akaunti yangu
+        public_profile: Wasifu wangu wa umma
+        title: Viungo vya wasifu
       user_profile:
-        account: Account
-        authorizations: Authorizations
-        delete_my_account: Delete my account
-        my_data: My data
-        my_interests: My interests
-        notifications_settings: Notifications settings
-        profile: Profile
-        title: Participant settings
-        user_groups: Groups
+        account: Akaunti
+        authorizations: Uidhinishaji
+        delete_my_account: Futa akaunti yangu
+        my_data: Data yangu
+        my_interests: Maslahi yangu
+        notifications_settings: Mipangilio ya arifa
+        profile: Wasifu
+        title: Mipangilio ya mshiriki
+        user_groups: Vikundi
   locale:
     name: Swahili
-    name_with_error: English (error!)
+    name_with_error: Kiingereza (kosa!)
   password_validator:
-    denied: is denied
-    domain_included_in_password: is too similar to this domain name
-    email_included_in_password: is too similar to your email
-    fallback: is not valid
-    name_included_in_password: is too similar to your name
-    nickname_included_in_password: is too similar to your nickname
-    not_enough_unique_characters: does not have enough unique characters
-    password_not_allowed: is not allowed
-    password_repeated: cannot reuse old password
-    password_too_common: is too common
-    password_too_long: is too long
-    password_too_short: is too short
+    denied: inakataliwa
+    domain_included_in_password: inafanana sana na jina la kikoa hiki
+    email_included_in_password: inafanana sana na barua pepe yako
+    fallback: sio halali
+    name_included_in_password: inafanana sana na jina lako
+    nickname_included_in_password: inafanana sana na jina lako la utani
+    not_enough_unique_characters: haina herufi za kipekee za kutosha
+    password_not_allowed: hairuhusiwi
+    password_repeated: haiwezi kutumia tena nenosiri la zamani
+    password_too_common: ni ya kawaida sana
+    password_too_long: ni ndefu sana
+    password_too_short: ni mfupi sana
   ransack:
     predicates:
-      dtgt: after
-      dtgteq: after or equal to
-      dtlt: before
-      dtlteq: before or equal to
+      dtgt: baada ya
+      dtgteq: baada au sawa na
+      dtlt: kabla
+      dtlteq: kabla au sawa na
   social_share_button:
-    delicious: Delicious
+    delicious: Ladha
     douban: Douban
-    email: Email
+    email: Barua pepe
     facebook: Facebook
-    google_bookmark: Google Bookmark
+    google_bookmark: Alamisho ya Google
     google_plus: Google+
-    hacker_news: Hacker News
+    hacker_news: Habari za Wadukuzi
     linkedin: Linkedin
     pinterest: Pinterest
     qq: Qzone
     reddit: Reddit
-    share_to: Share to %{name}
+    share_to: Shiriki kwa %{name}
     telegram: Telegram
     tumblr: Tumblr
     twitter: Twitter
     vkontakte: Vkontakte
     wechat: WeChat
-    wechat_footer: Open your WeChat, click "Discover" button then click the "Scan QR Code" menu.
+    wechat_footer: Fungua WeChat yako, bofya kitufe cha "Gundua" kisha ubofye menyu ya "Changanua Msimbo wa QR".
     weibo: Sina Weibo
     whatsapp_app: WhatsApp
     whatsapp_web: WhatsApp
@@ -2042,9 +2042,9 @@ sw:
     xing: Xing
   time:
     buttons:
-      close: Close
-      reset: Reset
-      select: Select
+      close: Funga
+      reset: Weka upya
+      select: Chagua
     formats:
       day_of_month: "%b %d"
       day_of_week: "%a"
@@ -2054,37 +2054,37 @@ sw:
       ddmmyyyy: "%d.%m.%Y"
       decidim_day_of_year: "%d %B %Y"
       decidim_short: "%d/%m/%Y %H:%M"
-      default: "%a, %d %b %Y %H:%M:%S %z"
+      default: "%a %d %b %Y %H:%M:%S %z"
       devise:
         mailer:
           invitation_instructions:
             accept_until_format: "%B %d, %Y %I:%M %p"
       help:
-        time_format: 'Format: hh:mm'
-      long: "%B %d, %Y %H:%M"
+        time_format: 'Umbizo: hh:mm'
+      long: "%B %d %Y %H:%M"
       long_dashed: "%Y-%m-%d %H:%M:%S"
-      long_with_particles: "%B %d, %Y at %H:%M"
+      long_with_particles: "%B %d, %Y kwa %H:%M"
       short: "%d/%m/%Y %H:%M"
       time_of_day: "%H:%M"
-      tooltip: "%d-%m-%Y %H:%M %p %Z (GMT %:z)"
+      tooltip: "%d-%m-%Y %H:%M %p %Z  (GMT %:z)"
   versions:
     directions:
-      left: Deletions
-      right: Additions
+      left: Ufutaji
+      right: Nyongeza
     dropdown:
-      choose_diff_view_html: 'HTML view mode:'
-      choose_diff_view_mode: 'Compare view mode:'
-      option_escaped: Escaped
-      option_split: Side-by-side
-      option_unescaped: Unescaped
-      option_unified: Unified
-      toggle: Toggle view
+      choose_diff_view_html: 'Mwonekano wa HTML:'
+      choose_diff_view_mode: 'Linganisha hali ya kutazama:'
+      option_escaped: Ametoroka
+      option_split: Upande kwa upande
+      option_unescaped: Umetoroka
+      option_unified: Umoja
+      toggle: Geuza mwonekano
   views:
     pagination:
-      next: Next
-      next_title: Link to the next page
+      next: Inayofuata
+      next_title: Unganisha kwa ukurasa unaofuata
       pagination: Pagination
-      previous: Prev
-      previous_title: Link to the previous page
-      title: 'Page number: '
+      previous: Iliyotangulia
+      previous_title: Unganisha kwa ukurasa uliopita
+      title: 'Nambari ya ukurasa:'
       truncate: "&hellip;"
