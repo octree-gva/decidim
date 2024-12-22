@@ -183,42 +183,42 @@ sw:
             email_subject: Mjadala mpya "%{resource_title}" wa %{author_nickname}
             notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> iliunda mjadala wa <a href="%{resource_path}">%{resource_title}</a>.
         creation_disabled:
-          email_intro: 'Debate creation is no longer active in %{participatory_space_title}. You can still participate in open debates from this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: Debate creation disabled in %{participatory_space_title}
-          notification_title: Debate creation is now disabled in <a href="%{participatory_space_url}">%{participatory_space_title}</a>
+          email_intro: 'Uundaji wa mjadala haufanyiki tena katika %{participatory_space_title}. Bado unaweza kushiriki katika mijadala ya wazi kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Uundaji wa mjadala umezimwa katika %{participatory_space_title}
+          notification_title: Uundaji wa mijadala sasa umezimwa katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>
         creation_enabled:
-          email_intro: 'You can now start new debates in %{participatory_space_title}! Start participating in this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: Debates now available in %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">new debates</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          email_intro: 'Sasa unaweza kuanzisha mijadala mipya katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mijadala sasa inapatikana katika %{participatory_space_title}
+          notification_title: Sasa unaweza kuanzisha <a href="%{resource_path}">mijadala mipya</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         debate_closed:
           affected_user:
-            email_intro: 'The "%{resource_title}" debate was closed. You can read the conclusions from its page:'
-            email_outro: You have received this notification because you are following the "%{resource_title}" debate. You can unfollow it from the previous link.
-            email_subject: The "%{resource_title}" debate was closed
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> debate was closed.
+            email_intro: 'Mjadala wa "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata mjadala wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Mjadala wa "%{resource_title}" ulifungwa
+            notification_title: Mjadala wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
           follower:
-            email_intro: 'The "%{resource_title}" debate was closed. You can read the conclusions from its page:'
-            email_outro: You have received this notification because you are following the "%{resource_title}" debate. You can unfollow it from the previous link.
-            email_subject: The "%{resource_title}" debate was closed
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> debate was closed.
+            email_intro: 'Mjadala wa "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata mjadala wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Mjadala wa "%{resource_title}" ulifungwa
+            notification_title: Mjadala wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
     gamification:
       badges:
         commented_debates:
           conditions:
-            - Choose an open debate to take part in
-          description: This badge is granted when you actively participate in the different debates by leaving your comments.
-          description_another: This participant has taken part in %{score} debates.
-          description_own: You have participated in %{score} debates.
-          name: Debates
-          next_level_in: Participate in %{score} more debates to reach the next level!
-          unearned_another: This participant has not yet taken part in any debate.
-          unearned_own: You have not participated in any debates yet.
+            - Chagua mjadala wa wazi wa kushiriki
+          description: Beji hii inatolewa unaposhiriki kikamilifu katika mijadala tofauti kwa kuacha maoni yako.
+          description_another: Mshiriki huyu ameshiriki katika mijadala %{score}.
+          description_own: Umeshiriki katika mijadala %{score}.
+          name: Mijadala
+          next_level_in: Shiriki katika mijadala %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajashiriki katika mjadala wowote.
+          unearned_own: Bado hujashiriki katika mijadala yoyote.
     metrics:
       debates:
-        description: Number of debates created
-        object: debates
-        title: Debates
+        description: Idadi ya mijadala iliyoundwa
+        object: mijadala
+        title: Mijadala
     statistics:
-      debates_count: Debates
+      debates_count: Mijadala
