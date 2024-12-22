@@ -4,147 +4,147 @@ sw:
     design:
       components:
         accordions:
-          content_panel: Content of the panel
-          demo: Demo
-          demo_description: Throughout the application the accordions are used, mainly, to show/hide content in tabs or fold/unfold visible texts.
-          description_accordions_html: Accordions are a javascript feature available thanks to an external library called %{link_code} a11y-accordion-component.
-          github_source_html: Source code on GitHub %{github_link}
-          panel: Panel
+          content_panel: Maudhui ya paneli
+          demo: Onyesho
+          demo_description: Katika programu nzima accordions hutumiwa, hasa, kuonyesha/kuficha maudhui kwenye vichupo au kukunja/kufunua maandishi yanayoonekana.
+          description_accordions_html: Accordions ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo %{link_code} a11y-accordion-component.
+          github_source_html: Msimbo wa chanzo kwenye GitHub %{github_link}
+          panel: Paneli
           title: Accordions
-          trigger: Trigger
-          usage: Usage
-          usage_p: An accordion requires at least three elements
-          usage_p_1_html: 1. A wrapper <code>div</code>, with the data-attribute <code>data-component="accordion"</code>, over all the available triggers and panels.
-          usage_p_2_html: 2. A trigger element, user actionable (as a button), pointing to the collapsable element through <code>data-controls="panel"</code>, where <i>panel</i> is the <code>id</code> of the panel.
-          usage_p_3_html: 3. A hideable element, whose <code>id</code> matches the data-controls value the trigger refers to.
+          trigger: Anzisha
+          usage: Matumizi
+          usage_p: Accordion inahitaji angalau vipengele vitatu
+          usage_p_1_html: 1. Karatasi <code>div</code>, yenye sifa ya data <code>data-component="accordion"</code>, juu ya vichochezi na paneli zote zinazopatikana.
+          usage_p_2_html: 2. Kipengele cha kufyatua, kinachoweza kutekelezeka kwa mtumiaji (kama kitufe), kinachoelekeza kwenye kipengele kinachoweza kukunjwa kupitia <code>data-controls="panel"</code>, ambapo <i>paneli</i> ni <code>id </code> ya kidirisha.
+          usage_p_3_html: 3. Kipengele kinachoweza kufichwa, ambacho <code>id</code> kinalingana na thamani ya vidhibiti vya data ambayo kichochezi kinarejelea.
         activities:
-          activities: Activities
+          activities: Shughuli
         address:
-          title: Address
+          title: Anwani
         announcement:
-          iam_an_announcement: I am an announcement
-          this_is_the_body: This is the body
-          this_is_the_title: This is the title
-          title: Announcement
+          iam_an_announcement: Mimi ni tangazo
+          this_is_the_body: Huu ni mwili
+          this_is_the_title: Hiki ndicho kichwa
+          title: Tangazo
         author:
-          title: Author
+          title: Mwandishi
         buttons:
-          description_html: 'Buttons are built using different combinations of CSS classes: the <code>button</code> class, a size and a color.'
-          title: Buttons
+          description_html: 'Vifungo hutengenezwa kwa kutumia michanganyiko tofauti ya madarasa ya CSS: darasa la <code>kitufe</code>, saizi na rangi.'
+          title: Vifungo
         cards:
-          title: Cards
+          title: Kadi
         dialogs:
-          dialog_demo_description_html: The dialogs, or modal components, are implemented through the rails helper <code>decidim_modal</code>.
-          dialogs_description_html: Dialogs are a javascript feature available thanks to an external library called <a href="https://github.com/jonathanlevaillant/a11y-dialog-component" target="_blank" rel="noopener noreferrer">a11y-dialog-component</a>.
-          tips_description: 'In order to display a complex modal, matching up the styles, do the following markup:'
-          tips_description_html: Pay attention to the <i>data-attributes</i> and the <i>ids</i>. For instance, the <code>[data-dialog-title]</code>'s id starts with <i>dialog-title</i> plus the <i>modal id</i>.
-          title: Dialogs
-          usage_description: An dialog requires two elements
-          usage_description_2_html: 2. A modal element, whose <code>id</code> matches the data-target value the trigger refers to.
-          usage_description_html: 1. A user actionable element, with the data-attribute <code>data-dialog-open="example"</code>, where example is the <code>id</code> of the modal.
+          dialog_demo_description_html: Maongezi, au vijenzi vya modali, hutekelezwa kupitia msaidizi wa reli <code>decidim_modal</code>.
+          dialogs_description_html: Dialogs ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo <a href="https://github.com/jonathanlevaillant/a11y-dialog-component" target="_blank" rel="noopener noreferrer">a11y-dialog-component </a>.
+          tips_description: 'Ili kuonyesha moduli changamano, inayolingana na mitindo, fanya ghafi ifuatayo:'
+          tips_description_html: Zingatia <i>sifa-data</i> na <i>vitambulisho</i>. Kwa mfano, kitambulisho cha <code>[data-dialog-title]</code> huanza na <i>kichwa cha mazungumzo</i> pamoja na <i>kitambulisho cha moduli</i>.
+          title: Maongezi
+          usage_description: Kidadisi kinahitaji vipengele viwili
+          usage_description_2_html: 2. Kipengele cha modali, ambacho <code>id</code> kinalingana na thamani ya data inayolengwa ambayo kichochezi kinarejelea.
+          usage_description_html: 1. Kipengele kinachoweza kutekelezeka na mtumiaji, chenye sifa ya data <code>data-dialog-open="example"</code>, ambapo mfano ni <code>id</code> ya modali.
         follow:
-          title: Follow
+          title: Fuata
         forms:
-          disabled: Disabled
-          emojis: Emojis
-          emojis_description: Only works for textarea
-          errors: Errors
-          errors_description: Does not apply for select
-          header_alert: This page comes from a legacy view. Content is outdated.
-          help_texts: Help texts
-          html_regular_inputs: HTML regular inputs
-          min_max_length: Min/Max length
-          min_max_length_description: Only works for input type='text' and textarea
-          multiselect: Multiselect
-          multiselect_description_html: Multiselects are a javascript feature available thanks to an external library called <a href="https://tom-select.js.org/" target="_blank" rel="noopener noreferrer">Tom Select</a>.
-          regular_inputs_description: 'Only displays common types, full available list: date, datetime-local, email, month, number, password, search, tel, text, time, url, week'
-          textarea_required: textarea required
-          title: Forms
+          disabled: Imezimwa
+          emojis: Emoji
+          emojis_description: Inafanya kazi kwa textarea pekee
+          errors: Makosa
+          errors_description: Haitumiki kwa chaguo
+          header_alert: Ukurasa huu unatoka kwa mwonekano wa urithi. Maudhui yamepitwa na wakati.
+          help_texts: Nakala za msaada
+          html_regular_inputs: Ingizo za kawaida za HTML
+          min_max_length: Urefu wa chini/Upeo
+          min_max_length_description: Inafanya kazi kwa input type='text' na textarea pekee
+          multiselect: Chaguo nyingi
+          multiselect_description_html: Chaguo nyingi ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo <a href="https://tom-select.js.org/" target="_blank" rel="noopener noreferrer">Tom Select</a>.
+          regular_inputs_description: 'Huonyesha tu aina za kawaida, orodha kamili inayopatikana: tarehe, tarehe, saa-ndani, barua pepe, mwezi, nambari, nenosiri, tafuta, simu, maandishi, saa, url, wiki.'
+          textarea_required: textarea inahitajika
+          title: Fomu
         report:
-          title: Report
+          title: Ripoti
         share:
-          title: Share
+          title: Shiriki
         tab_panels:
-          title: Tab Panels
+          title: Paneli za Kichupo
         tooltips:
-          demo: Demo
-          demo_description: For this component to work a participant need to hover on the element.
-          description: A tooltip is a component that users can hover their mouse to have extra information about it.
-          github_source_html: Source code on GitHub %{github_link}
-          title: Tooltips
-          usage: Usage
-          usage_p: 'A tooltip requires the usage of the `with_tooltip` helper, with three arguments:'
-          usage_p_1_html: 1. A string with the value of the tooltip. In the example of this page is "Hello world".
-          usage_p_2_html: 2. An optional class with a symbol on where the tooltip will be displayed. Possible values are <code>:top</code>, <code>:bottom</code>, <code>:right</code>, or <code>:left</code>.
-          usage_p_3_html: 3. A block with the string that the user needs to hover to be displayed.
+          demo: Onyesho
+          demo_description: Ili kipengele hiki kifanye kazi mshiriki anahitaji kuelea juu ya kipengele.
+          description: Kidokezo ni sehemu ambayo watumiaji wanaweza kuelea juu ya kipanya chao ili kupata maelezo ya ziada kuihusu.
+          github_source_html: Msimbo wa chanzo kwenye GitHub %{github_link}
+          title: Vidokezo vya zana
+          usage: Matumizi
+          usage_p: 'Kidokezo kinahitaji matumizi ya msaidizi wa `with_tooltip`, yenye hoja tatu:'
+          usage_p_1_html: 1. Mfuatano wenye thamani ya ncha ya zana. Katika mfano wa ukurasa huu ni "Hello world".
+          usage_p_2_html: 2. Darasa la hiari lenye ishara ambapo kidokezo kitaonyeshwa. Thamani zinazowezekana ni <code>:top</code>, <code>:bottom</code>, <code>:kulia</code>, au <code>:left</code>.
+          usage_p_3_html: 3. Kizuizi chenye mfuatano ambao mtumiaji anahitaji kuelea ili kuonyeshwa.
       foundations:
         accessibility:
-          accessibility_labels: Accessibility labels
-          accessibility_labels_paragraph: When defining elements, always make sure they make sense for screen reader users.
-          accessibility_title: Accessibility
-          adjacent_links: Adjacent links
-          adjacent_links_header: Adjacent links for the same resource
-          adjacent_links_paragraph: If the same resource has multiple adjacent links pointing to it, it makes it difficult for such users to glance through the page because they might need to go through multiple links to get to the next resource.
-          color_contrast: Color contrast
-          color_contrast_paragraph: When creating user interfaces or modifying the colors, always make sure that you are not breaking accessibility with your changes. You can use the Color contrast checker to ensure that your colors have enough contrast against the background color where they are displayed at.
-          decidim_follows_html: Decidim follows the <u>Web Content Accessibility Guidelines (WCAG) 2.1</u>
-          dynamic_changes_header: Dynamic functionality changes the page context unintuitively
-          dynamic_changes_paragraph: Changes in the form inputs should not change the context of the page automatically.
-          elements_hidden: Elements hidden
-          elements_hidden_header: Elements hidden from the accessibility API
-          elements_hidden_paragraph: To hide an element from assistive technologies, use the aria-hidden="true" attribute on it.
-          heading_on: Heading on important sections
-          here_link: here
-          illogical_heading_order: Illogical heading order
-          illogical_heading_paragraph: Every page should have a logical heading order when using the <h1>, <h2>, <h3>, <h4>, <h5> and <h6> heading elements.
-          important_sections_heading: Heading on important sections
-          important_sections_paragraph: It is highly important that each important section of the page has a heading to make it easier to understand what important sections are on the page just by browsing through its headings.
-          links_and_buttons: Links and Buttons
-          links_and_buttons_paragraph: The anchor elements (i.e. links) are meant to link to different pages or to anchor positions within the page. If the element is supposed to e.g. open some hidden item on that page, you should use the <button> element instead.
-          see_further_info_html: See further info %{link}
-          unique_h1: Unique H1
-          unique_h1_paragraph: Every page should have a unique H1 heading on it
-          use_aria: Use ARIA
-          use_aria_header: Use ARIA attributes where possible
-          use_aria_paragraph: Many elements that provide interactive functionality on the website require ARIA attributes on them to make them accessible.
+          accessibility_labels: Lebo za ufikivu
+          accessibility_labels_paragraph: Unapofafanua vipengele, hakikisha kila mara vinaleta maana kwa watumiaji wa kisomaji skrini.
+          accessibility_title: Ufikivu
+          adjacent_links: Viungo vya karibu
+          adjacent_links_header: Viungo vya karibu vya rasilimali sawa
+          adjacent_links_paragraph: Iwapo rasilimali hiyo hiyo ina viungo vingi vilivyo karibu vinavyoielekeza, inakuwa vigumu kwa watumiaji kama hao kutazama ukurasa kwa sababu wanaweza kuhitaji kupitia viungo vingi ili kufikia rasilimali inayofuata.
+          color_contrast: Tofauti ya rangi
+          color_contrast_paragraph: Unapounda violesura vya watumiaji au kurekebisha rangi, hakikisha kila mara hauvunji ufikivu kwa mabadiliko yako. Unaweza kutumia kikagua utofautishaji wa Rangi ili kuhakikisha kuwa rangi zako zina utofautishaji wa kutosha dhidi ya rangi ya mandharinyuma ambapo zinaonyeshwa.
+          decidim_follows_html: Decidim inafuata <u>Miongozo ya Ufikiaji wa Maudhui ya Wavuti (WCAG) 2.1</u>
+          dynamic_changes_header: Utendaji mahiri hubadilisha muktadha wa ukurasa bila kueleweka
+          dynamic_changes_paragraph: Mabadiliko katika pembejeo za fomu haipaswi kubadilisha muktadha wa ukurasa kiotomatiki.
+          elements_hidden: Vipengele vimefichwa
+          elements_hidden_header: Vipengele vilivyofichwa kutoka kwa API ya ufikivu
+          elements_hidden_paragraph: Ili kuficha kipengele kutoka kwa teknolojia za usaidizi, tumia sifa ya aria-hidden="true" juu yake.
+          heading_on: Kuelekea sehemu muhimu
+          here_link: hapa
+          illogical_heading_order: Agizo la kichwa lisilo na mantiki
+          illogical_heading_paragraph: Kila ukurasa unapaswa kuwa na mpangilio mzuri wa kichwa unapotumia vipengele vya vichwa vya <h1>, <h2>, <h3>, <h4>, <h5> na <h6>.
+          important_sections_heading: Kuelekea sehemu muhimu
+          important_sections_paragraph: Ni muhimu sana kwamba kila sehemu muhimu ya ukurasa iwe na kichwa ili kurahisisha kuelewa ni sehemu gani muhimu ziko kwenye ukurasa kwa kuvinjari tu vichwa vyake.
+          links_and_buttons: Viungo na Vifungo
+          links_and_buttons_paragraph: Vipengee vya nanga (yaani viungo) vinakusudiwa kuunganisha kwa kurasa tofauti au kutia nanga nafasi ndani ya ukurasa. Ikiwa kipengele kinatakiwa k.m. fungua kipengee fulani kilichofichwa kwenye ukurasa huo, unapaswa kutumia <button> kipengele badala yake.
+          see_further_info_html: Angalia maelezo zaidi %{link}
+          unique_h1: H1 ya kipekee
+          unique_h1_paragraph: Kila ukurasa unapaswa kuwa na kichwa cha kipekee cha H1 juu yake
+          use_aria: Tumia ARIA
+          use_aria_header: Tumia sifa za ARIA inapowezekana
+          use_aria_paragraph: Vipengele vingi vinavyotoa utendakazi shirikishi kwenye tovuti vinahitaji sifa za ARIA ili kuvifanya kufikiwa.
         color:
-          color_header: Color
-          description_p1: We provide a Base palette with few colors so simple customizations are easy. You can modify the Base palette either in the Administration area or in the Tailwind configuration file if you need more advanced customization.
-          description_p2_html: When customizing your colors, have in mind the %{contrast_link}. You can check the contrast of your choosing with %{checker_link} or other similar tools.
-          wcag_compliant_rations: WCAG 2.1 AA compliant contrast ratio
-          wcag_contrast_checker: WebAIM Contrast Checker
+          color_header: Rangi
+          description_p1: Tunatoa palette ya Msingi yenye rangi chache ili ubinafsishaji rahisi uwe rahisi. Unaweza kurekebisha paji la Msingi ama katika eneo la Utawala au katika faili ya usanidi ya Tailwind ikiwa unahitaji ubinafsishaji wa hali ya juu zaidi.
+          description_p2_html: Unapoweka mapendeleo ya rangi zako, kumbuka %{contrast_link}. Unaweza kuangalia utofauti wa chaguo lako kwa %{checker_link} au zana zingine zinazofanana.
+          wcag_compliant_rations: Uwiano wa utofautishaji unaotii WCAG 2.1 AA
+          wcag_contrast_checker: Kikagua Utofautishaji cha WebAIM
         iconography:
-          description_iconography: We use icons to reinforce the meaning of actions, titles, etc
-          description_iconography_html: 'We use the Remixicon open source library: %{iconography_link}'
-          title: Iconography
+          description_iconography: Tunatumia aikoni ili kusisitiza maana ya vitendo, mada n.k
+          description_iconography_html: 'Tunatumia maktaba ya chanzo huria ya Remixicon: %{iconography_link}'
+          title: Iconografia
         layout:
-          breakpoint: Breakpoint
-          breakpoints: Breakpoints
-          centered: Centered
-          code: Code
-          columns: Being the number of columns 10, 8 or 6.
-          description_layout_p1: For desktop, Decidim uses a 12 column grid with limited number of templates (grid configurations) for different types of content. The objective is that a given type of content (homepage, list of elements, individual item) has a distinctive layout, so users can understand in which kind of content they are just by the general look of the page.
-          description_layout_p2: These simple rules should be followed when creating new modules or customizing existing ones, so a Decidim site can maintain its consistency.
+          breakpoint: Sehemu ya mapumziko
+          breakpoints: Vizuizi
+          centered: Imewekwa katikati
+          code: Kanuni
+          columns: Kwa kuwa idadi ya safu wima 10, 8 au 6.
+          description_layout_p1: Kwa eneo-kazi, Decidim hutumia gridi ya safu wima 12 yenye idadi ndogo ya violezo (mipangilio ya gridi) kwa aina tofauti za maudhui. Kusudi ni kwamba aina fulani ya yaliyomo (ukurasa wa nyumbani, orodha ya vipengee, kipengee mahususi) ina mpangilio tofauti, kwa hivyo watumiaji wanaweza kuelewa ni aina gani ya yaliyomo kulingana na mwonekano wa jumla wa ukurasa.
+          description_layout_p2: Sheria hizi rahisi zinapaswa kufuatwa wakati wa kuunda moduli mpya au kubinafsisha zilizopo, ili tovuti ya Decidim iweze kudumisha uthabiti wake.
           desktop: Desktop
-          full_width: Full width
-          layout_list_1: 'Homepage (of the site, of an space): full width'
-          layout_list_2: 'List of elements (of spaces, of items inside a space, etc): left aside'
-          layout_list_3: 'Individual item (proposal, blog post): centered, optionally with a right aside'
-          left_aside: Left aside
-          mobile: Mobile
-          not_required: Not required
-          properties: Properties
-          right_aside: Right Aside
-          section_p_breakpoints: 'To manage the responsive max-width of elements we rely on the default `container` Tailwind class, which states the following breakpoints:'
-          section_p_code: When implementing new modules you have some helpers that automatically provides you with the code needed to setup the HTML structure. You should use these helpers instead of directly using div elements with classes, so you maintain consistency.
-          section_p_code_html: You can find the basic layouts in %{link_section_code}
-          section_p_desktop: Desktop grid system is composed of 12 flexible columns with a gutter between columns of 16px and left and right margins of 48px
-          section_p_mobile: Mobile grid system is composed of 4 flexible columns with a gutter between columns of 16px and left and right margins of 16px. For sizes below 320px this margins are set to 8px
-          section_p_tablet: Tablet grid system is composed of 8 flexible columns with a gutter between columns of 16px and left and right margins of 24px
-          tablet: Tablet
-          title: Layout
+          full_width: Upana kamili
+          layout_list_1: 'Ukurasa wa nyumbani (wa tovuti, wa nafasi): upana kamili'
+          layout_list_2: 'Orodha ya vipengele (ya nafasi, ya vitu ndani ya nafasi, nk): kushoto kando'
+          layout_list_3: 'Kipengee cha kibinafsi (pendekezo, chapisho la blogi): iliyowekwa katikati, kwa hiari na kando ya kulia'
+          left_aside: Kushoto kando
+          mobile: Simu ya Mkononi
+          not_required: Haihitajiki
+          properties: Mali
+          right_aside: Kando ya Haki
+          section_p_breakpoints: 'Ili kudhibiti upana wa juu wa vipengele vinavyoitikia tunategemea darasa chaguo-msingi la `kontena` la Tailwind, ambalo linasema vizuizi vifuatavyo:'
+          section_p_code: Wakati wa kutekeleza moduli mpya una baadhi ya wasaidizi ambao hukupa kiotomatiki msimbo unaohitajika ili kusanidi muundo wa HTML. Unapaswa kutumia wasaidizi hawa badala ya kutumia moja kwa moja vipengele vya div na madarasa, kwa hivyo unadumisha uthabiti.
+          section_p_code_html: Unaweza kupata miundo msingi katika %{link_section_code}
+          section_p_desktop: Mfumo wa gridi ya eneo-kazi unajumuisha safu wima 12 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 48px.
+          section_p_mobile: Mfumo wa gridi ya simu unajumuisha safu wima 4 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 16px. Kwa ukubwa ulio chini ya 320px pambizo hizi zimewekwa kuwa 8px
+          section_p_tablet: Mfumo wa gridi ya kompyuta kibao unajumuisha safu wima 8 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 24px.
+          tablet: Kompyuta kibao
+          title: Mpangilio
         typography:
-          description: These guidelines summarize how use typography at Decidim, and serve as guardrails for designers to design freely with best typographic practices in mind.
+          description: Mwongozo huu unatoa muhtasari wa jinsi ya kutumia uchapaji katika Decidim, na hutumika kama linda kwa wabunifu kubuni kwa uhuru wakizingatia mbinu bora za uchapaji.
           headings:
             characters: Characters per line
             layout: Layout cols
@@ -160,7 +160,7 @@ sw:
         address_description_2: Depending of the type of the content, the address could be an online url. For such cases, the displayed information is quite the same but shaped to fit.
         ally_link: a11y-dropdown-component
         argument: Argument
-        assemblies: Assemblies
+        assemblies: Mikusanyiko
         assembly_g: Assembly G
         assembly_s: Assembly S
         avatar: Avatar
@@ -171,7 +171,7 @@ sw:
         blog_cards_html: Used by <i>Blogs</i> cards
         blogs: Blogs
         budget_card_html: Used by <i>Budget projects</i> cards. This card requires the module assets to display properly, i.e. <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
-        budgets: Budgets
+        budgets: Bajeti
         callout_class: Callout Class
         callout_description: This attribute applies an status to the announcement. By default, it uses secondary color.
         card_g: Card G
@@ -183,13 +183,13 @@ sw:
         compact_description: This author version is the common way to identify the resource creator.
         conference_g: Conference G
         conference_s: Conference S
-        conferences: Conferences
+        conferences: Mikutano
         context: Context
         context_description: This cell display some information about a user. It a visual help to identify the resource/content creator. Hovering with the mouse displays a tooltip with further info and links to its profile.
         context_description_2: For resources, this cell appears beneath the main heading. For other contents, it appears next to the content itself.
         debate_l: Debate L
         debate_s: Debate S
-        debates: Debates
+        debates: Mijadala
         debates_cards_html: Used by <i>Debates</i> cards
         debates_cards_text: Use different template for the image block
         default: Default
