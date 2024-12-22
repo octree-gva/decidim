@@ -1745,9 +1745,9 @@ sw:
         didn_t_receive_confirmation_instructions: Did not receive confirmation instructions?
         didn_t_receive_unlock_instructions: Did not receive unlock instructions?
         forgot_your_password: Forgot your password?
-        log_in: Log in
+        log_in: Ingia
         log_in_with_provider: Log in with %{provider}
-        sign_up: Create an account
+        sign_up: Fungua akaunti
       minimum_password_length:
         one: "(%{count} character minimum)"
         other: "(%{count} characters minimum)"
