@@ -51,160 +51,160 @@ sw:
         participatory_process_ids: Related processes
         participatory_scope: What is decided
         participatory_structure: How is it decided
-        target: Who participates
-        title: Title
+        target: Nani anashiriki
+        title: Kichwa
       participatory_process_step:
-        cta_path: Call to Action path
-        cta_text: Call to Action text
-        description: Description
-        end_date: End date
-        short_description: Short description
-        start_date: Start date
-        title: Title
+        cta_path: Wito kwa Njia ya Kitendo
+        cta_text: Maandishi ya Wito kwa Hatua
+        description: Maelezo
+        end_date: Tarehe ya mwisho
+        short_description: Maelezo mafupi
+        start_date: Tarehe ya kuanza
+        title: Kichwa
       participatory_process_type:
-        title: Title
+        title: Kichwa
       participatory_process_user_role:
-        email: Email
-        name: Name
-        role: Role
+        email: Barua pepe
+        name: Jina
+        role: Jukumu
     errors:
       models:
         participatory_process:
           attributes:
             document:
-              allowed_file_content_types: 'Invalid document type. Only files with the following extensions are allowed: %{types}'
+              allowed_file_content_types: 'Aina batili ya hati. Faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
     models:
-      decidim/participatory_process_step_activated_event: Phase activated
-      decidim/participatory_process_step_changed_event: Phase changed
+      decidim/participatory_process_step_activated_event: Awamu imeamilishwa
+      decidim/participatory_process_step_changed_event: Awamu imebadilika
   activerecord:
     models:
       decidim/participatory_process:
-        one: Participatory process
-        other: Participatory processes
+        one: Mchakato shirikishi
+        other: Michakato shirikishi
       decidim/participatory_process_group:
-        one: Participatory process group
-        other: Participatory process groups
+        one: Kikundi cha mchakato shirikishi
+        other: Vikundi vya mchakato shirikishi
       decidim/participatory_process_step:
-        one: Phase
-        other: Phases
+        one: Awamu
+        other: Awamu
   decidim:
     admin:
       actions:
-        activate: Activate
-        configure: Configure
-        confirm_destroy: Confirm delete
-        destroy: Delete
-        duplicate: Duplicate
-        edit: Edit
-        import_process: Import
-        moderate: Moderate
-        new_process: New process
-        new_process_group: New process group
-        new_process_step: New phase
-        new_process_type: New process type
-        new_process_user_role: New process admin
-        preview: Preview
-        publish: Publish
-        resend_invitation: Resend invitation
-        see_process: See process
-        unpublish: Unpublish
+        activate: Amilisha
+        configure: Sanidi
+        confirm_destroy: Thibitisha kufuta
+        destroy: Futa
+        duplicate: Nakala
+        edit: Hariri
+        import_process: Ingiza
+        moderate: Wastani
+        new_process: Mchakato mpya
+        new_process_group: Kikundi kipya cha mchakato
+        new_process_step: Awamu mpya
+        new_process_type: Aina mpya ya mchakato
+        new_process_user_role: Msimamizi mpya wa mchakato
+        preview: Hakiki
+        publish: Chapisha
+        resend_invitation: Tuma tena mwaliko
+        see_process: Angalia mchakato
+        unpublish: Batilisha uchapishaji
       filters:
         decidim_participatory_process_group_id_eq:
-          label: By process group
+          label: Kwa kikundi cha mchakato
       menu:
-        participatory_process_groups: Process groups
+        participatory_process_groups: Vikundi vya mchakato
         participatory_process_groups_submenu:
-          info: Info
-          landing_page: Landing page
-        participatory_process_types: Process types
-        participatory_processes: Processes
+          info: Habari
+          landing_page: Ukurasa wa kutua
+        participatory_process_types: Aina za mchakato
+        participatory_processes: Michakato
         participatory_processes_submenu:
-          attachment_collections: Folders
-          attachment_files: Files
-          attachments: Attachments
-          categories: Categories
-          components: Components
-          info: About this process
-          landing_page: Landing page
-          moderations: Moderations
-          private_users: Private participants
-          process_admins: Process admins
-          steps: Phases
+          attachment_collections: Folda
+          attachment_files: Faili
+          attachments: Viambatisho
+          categories: Kategoria
+          components: Vipengele
+          info: Kuhusu mchakato huu
+          landing_page: Ukurasa wa kutua
+          moderations: Ukadiriaji
+          private_users: Washiriki wa kibinafsi
+          process_admins: Wasimamizi wa mchakato
+          steps: Awamu
       models:
         participatory_process:
           fields:
-            actions: Actions
-            created_at: Created at
-            private: Private
-            published: Published
-            title: Title
-          name: Participatory process
+            actions: Vitendo
+            created_at: Imeundwa saa
+            private: Privat
+            published: Imechapishwa
+            title: Kichwa
+          name: Mchakato shirikishi
         participatory_process_group:
           fields:
-            title: Title
-          name: Process group
+            title: Kichwa
+          name: Kikundi cha mchakato
         participatory_process_step:
           fields:
-            end_date: End date
-            start_date: Start date
-            title: Title
-          name: Participatory process phase
+            end_date: Tarehe ya mwisho
+            start_date: Tarehe ya kuanza
+            title: Kichwa
+          name: Awamu ya mchakato shirikishi
         participatory_process_type:
           fields:
-            created_at: Created at
-            title: Title
-          name: Process type
+            created_at: Imeundwa saa
+            title: Kichwa
+          name: Aina ya mchakato
         participatory_process_user_role:
           fields:
-            email: Email
-            name: Name
-            role: Role
-          name: Participatory process admin
+            email: Barua pepe
+            name: Jina
+            role: Jukumu
+          name: Msimamizi wa mchakato shirikishi
           roles:
-            admin: Administrator
-            collaborator: Collaborator
-            moderator: Moderator
-            valuator: Valuator
+            admin: Msimamizi
+            collaborator: Mshiriki
+            moderator: Msimamizi
+            valuator: Mthamini
         user:
           fields:
-            invitation_accepted_at: Invitation accepted at
-            invitation_sent_at: Invitation sent at
+            invitation_accepted_at: Mwaliko umekubaliwa saa
+            invitation_sent_at: Mwaliko umetumwa kwa
       participatory_process_copies:
         new:
-          copy: Copy
-          select: Select which data you would like to duplicate
-          title: Duplicate participatory process
+          copy: Nakili
+          select: Chagua data ambayo ungependa kurudia
+          title: Rudufu mchakato shirikishi
       participatory_process_groups:
         destroy:
-          error: There was an error while destroying the Participatory process group.
-          success: Participatory process group successfully deleted.
+          error: Kulikuwa na hitilafu wakati wa kuharibu kikundi cha mchakato Shirikishi.
+          success: Kikundi cha mchakato shirikishi kimefutwa.
         edit:
-          title: Edit process group
-          update: Update
+          title: Badilisha kikundi cha mchakato
+          update: Sasisha
         new:
-          create: Create
-          title: New process group
+          create: Unda
+          title: Kikundi kipya cha mchakato
         update:
-          error: There was a problem updating this participatory process group.
-          success: Participatory process group successfully updated.
+          error: Kulikuwa na tatizo la kusasisha kikundi hiki cha mchakato shirikishi.
+          success: Kikundi cha mchakato shirikishi kimesasishwa.
       participatory_process_imports:
         create:
-          error: There was a problem importing this participatory process.
-          success: Participatory process successfully imported.
+          error: Kulikuwa na tatizo katika kuleta mchakato huu shirikishi.
+          success: Mchakato shirikishi umefaulu kuletwa.
         new:
-          import: Import
-          select: Select which data you would like to import
-          title: Import participatory process
+          import: Ingiza
+          select: Chagua data ambayo ungependa kuleta
+          title: Ingiza mchakato shirikishi
       participatory_process_publications:
         create:
-          error: There was a problem publishing this participatory process.
-          success: Participatory process successfully published.
+          error: Kulikuwa na tatizo la kuchapisha mchakato huu shirikishi.
+          success: Mchakato shirikishi umechapishwa.
         destroy:
-          error: There was a problem unpublishing this participatory process.
-          success: Participatory process successfully unpublished.
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa mchakato huu shirikishi.
+          success: Mchakato shirikishi umebatilishwa.
       participatory_process_step_activations:
         create:
-          error: There was a problem activating this participatory process phase.
+          error: Kulikuwa na tatizo katika kuwezesha awamu hii ya mchakato shirikishi.
           success: Participatory process phase successfully activated.
       participatory_process_steps:
         create:
