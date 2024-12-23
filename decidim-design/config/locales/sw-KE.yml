@@ -247,63 +247,63 @@ sw:
         proposal_l: Pendekezo L
         proposal_s: Pendekezo S
         proposals: Mapendekezo
-        report_button: Report button
-        report_usage_description: Report button launches a modal window to flag the current resource.
-        result_l: Result L
-        rgba_code: RGBA code
-        search: Search
-        send: Send
-        share_button: Share Button
-        share_usage_description_html: Make sure the partial <code>decidim/shared/share_modal</code> is present in the DOM. This partial is placed in the application layout.
-        sizes: Sizes
-        sortition_l: sortition_l
-        sortitions: Sortitions
-        source_code: Source Code
-        state: State
-        tab_panels_context_description: This tab-panel component gathers all the related contents or another resources of the main element displayed, in order to save vertical space. Clicking on the tab will activate the created panel to show the content.
-        tab_panels_context_description_html: Mainly is used within the <i>layout_item</i> or the <i>layout_center</i>, after the main content of the resource.
-        tab_panels_usage_description: 'This component receives an array of hashes, and rearrange the output of each item into a tab-panel structure. Available properties for each panel:'
-        tab_panels_usage_description_arguments_html: "<strong>args</strong>: <i>Array</i>. Arguments for the previous method"
-        tab_panels_usage_description_html: "<strong>enabled</strong>: <i>Boolean</i>. Conditionally render the tab"
-        tab_panels_usage_description_id_html: "<strong>id</strong>: <i>String</i>. Unique id"
-        tab_panels_usage_description_rails_html: "<strong>method</strong>: <i>Symbol</i>. Any function rails understands"
-        tab_panels_usage_description_remixicon_html: "<strong>icon</strong>: <i>String</i>. Remixicon key"
-        tab_panels_usage_description_tab_html: "<strong>text</strong>: <i>String</i>. Tab title"
-        tailwind: Tailwind name
-        text: Text
-        transparent: Transparent
-        transparent_description: 'In case of a darker background:'
-        types: Types
-        typography_texts: Typography and texts
-        usage: Usage
-        usage_background_1: Aside background
-        usage_background_2: Selected sidebar filter background
-        usage_background_3: Default icon color
-        usage_background_4: Lines and separators
-        usage_background_5: Footer background
-        usage_background_6: Admin layout background
-        usage_base_1: Main nav component background\nNav menus in homepage and space home
-        usage_base_2: Main color for links and buttons
-        usage_base_3: Graphic ornaments and accent color\nCards and list items hover state border
-        usage_formelements_1: Input elements default background
-        usage_formelements_2: Input elements disabled state background
-        usage_state_1: Success notice border\nAlert notice icon fill\nButton background on success message
-        usage_state_2: Warning notice border
-        usage_state_3: Alert notice border\nAlert notice icon fill
-        usage_typography_1: Headings and section titles
-        usage_typography_2: Inline text
-        usage_typography_3: Text over dark background
-        usage_typography_4: Links and buttons
-        value: Value
-        variations: Variations
-        variations_cards_description: Each card will look like different regarding the properties of the resource displayed. You can override such behaviour in the specific cell.
-        variations_description: There are three different versions of this cell. Each one fits better regarding the context it is being displayed.
-        variations_text: Regarding the type of activity, the cell could show different content, reporting the distinct resources, whether belong to a participatory space or not, has an author or not.
+        report_button: Kitufe cha ripoti
+        report_usage_description: Kitufe cha kuripoti huzindua dirisha la modal ili kuripoti rasilimali ya sasa.
+        result_l: Matokeo L
+        rgba_code: Nambari ya RGBA
+        search: Tafuta
+        send: Tuma
+        share_button: Kitufe cha Shiriki
+        share_usage_description_html: Hakikisha kuwa sehemu ya <code>decidim/shared/share_modal</code> ipo kwenye DOM. Sehemu hii imewekwa katika mpangilio wa programu.
+        sizes: Ukubwa
+        sortition_l: mpangilio_l
+        sortitions: Upangaji
+        source_code: Msimbo wa Chanzo
+        state: Jimbo
+        tab_panels_context_description: Kipengele hiki cha paneli ya kichupo hukusanya maudhui yote yanayohusiana au rasilimali nyingine ya kipengele kikuu kinachoonyeshwa, ili kuhifadhi nafasi wima. Kubofya kichupo kutawasha kidirisha kilichoundwa ili kuonyesha maudhui.
+        tab_panels_context_description_html: Hutumika sana ndani ya <i>layout_item</i> au <i>layout_center</i>, baada ya maudhui kuu ya rasilimali.
+        tab_panels_usage_description: 'Kipengele hiki hupokea safu ya heshi, na kupanga upya matokeo ya kila kipengee katika muundo wa kidirisha cha kichupo. Sifa zinazopatikana kwa kila paneli:'
+        tab_panels_usage_description_arguments_html: "<strong>args</strong>: <i>Array</i>. Hoja za mbinu iliyotangulia"
+        tab_panels_usage_description_html: "<strong>imewezeshwa</strong>: <i>Boolean</i>. Toa kichupo kwa masharti"
+        tab_panels_usage_description_id_html: "<strong>id</strong>: <i>Mfuatano</i>. Kitambulisho cha kipekee"
+        tab_panels_usage_description_rails_html: "<strong>mbinu</strong>: <i>Alama</i>. Rails yoyote ya kazi inaelewa"
+        tab_panels_usage_description_remixicon_html: "<strong>ikoni</strong>: <i>Mfuatano</i>. Kitufe cha Remixicon"
+        tab_panels_usage_description_tab_html: "<strong>maandishi</strong>: <i>Mfuatano</i>. Kichwa cha kichupo"
+        tailwind: Jina la Tailwind
+        text: Maandishi
+        transparent: Uwazi
+        transparent_description: 'Katika kesi ya mandharinyuma nyeusi:'
+        types: Aina
+        typography_texts: Uchapaji na maandishi
+        usage: Matumizi
+        usage_background_1: Kando ya usuli
+        usage_background_2: Umechagua usuli wa kichujio cha utepe
+        usage_background_3: Rangi ya ikoni chaguomsingi
+        usage_background_4: Mistari na watenganishaji
+        usage_background_5: Mandharinyuma ya kijachini
+        usage_background_6: Mandharinyuma ya mpangilio wa msimamizi
+        usage_base_1: Mandharinyuma ya kipengele kikuu cha nav\nMenyu za Nav katika ukurasa wa nyumbani na nafasi ya kwanza
+        usage_base_2: Rangi kuu ya viungo na vifungo
+        usage_base_3: Mapambo ya picha na rangi ya lafudhi\nKadi na vitu vya orodha huelea mpaka wa serikali
+        usage_formelements_1: Mandhari-msingi ya vipengee vya ingizo
+        usage_formelements_2: Vipengele vya ingizo vimezimwa usuli wa hali
+        usage_state_1: Mpaka wa ilani ya mafanikio\nJaza aikoni ya arifa\nMandharinyuma ya kitufe kwenye ujumbe wa mafanikio
+        usage_state_2: Mpaka wa ilani ya onyo
+        usage_state_3: Mpaka wa arifa ya arifa\nJaza aikoni ya arifa
+        usage_typography_1: Vichwa na vichwa vya sehemu
+        usage_typography_2: Maandishi ya ndani
+        usage_typography_3: Maandishi juu ya mandharinyuma meusi
+        usage_typography_4: Viungo na vifungo
+        value: Thamani
+        variations: Tofauti
+        variations_cards_description: Kila kadi itaonekana tofauti kuhusu sifa za rasilimali inayoonyeshwa. Unaweza kubatilisha tabia kama hiyo katika seli maalum.
+        variations_description: Kuna matoleo matatu tofauti ya seli hii. Kila moja inafaa zaidi kuhusu muktadha unaoonyeshwa.
+        variations_text: Kuhusu aina ya shughuli, seli inaweza kuonyesha maudhui tofauti, ikiripoti rasilimali mahususi, iwe ya nafasi shirikishi au la, ina mwandishi au la.
       home:
         index:
-          by_sharing_principles: By sharing the principles, philosophy, and rationale behind design decisions we want to empower the community to contribute with consistency so we reach the best participant experience.
-          decidim_guide: The guide to design all things Decidim
-          different_ui_components: At the same time, we document the different UI components and patterns in use, that should be reused or extended.
-          github_source: Source code on GitHub
-          home_header: Decidim Design Guide
-          welcome_sentence: Welcome to the Decidim Design Guide (DDG). This guide is the resource for designers and developers who need to customize, develop new modules, and integrate new features.
+          by_sharing_principles: Kwa kushiriki kanuni, falsafa na mantiki ya maamuzi ya muundo tunataka kuipa jumuiya uwezo wa kuchangia kwa uthabiti ili tufikie matumizi bora zaidi ya mshiriki.
+          decidim_guide: Mwongozo wa kubuni vitu vyote Decidim
+          different_ui_components: Wakati huo huo, tunaandika vipengele tofauti vya UI na mifumo inayotumika, ambayo inapaswa kutumika tena au kupanuliwa.
+          github_source: Nambari ya chanzo kwenye GitHub
+          home_header: Mwongozo wa Ubunifu wa Decidim
+          welcome_sentence: Karibu kwenye Mwongozo wa Ubunifu wa Decidim (DDG). Mwongozo huu ndio nyenzo ya wabunifu na wasanidi wanaohitaji kubinafsisha, kuunda moduli mpya, na kuunganisha vipengele vipya.
