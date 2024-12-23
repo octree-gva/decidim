@@ -178,377 +178,377 @@ sw:
             email_subject: Hatua mpya imekamilika!
             notification_title: Mpango wako wa <a href="%{resource_path}">%{resource_title}</a> umefanikisha %{percentage}% ya sahihi.
           follower:
-            email_intro: The initiative %{resource_title} has achieved the %{percentage}% of signatures!
-            email_outro: You have received this notification because you are following %{resource_title}. You can stop receiving notifications following the previous link.
-            email_subject: New milestone completed!
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> initiative has achieved the %{percentage}% of signatures.
+            email_intro: Mpango %{resource_title} umefanikisha %{percentage}% ya sahihi!
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Hatua mpya imekamilika!
+            notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> umefanikisha %{percentage}% ya sahihi.
         support_threshold_reached:
-          email_intro: The initiative %{resource_title} has reached the signatures threshold
-          email_outro: You have received this notification because you are an admin of the platform.
-          email_subject: Signatures threshold reached
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> initiative has reached the signatures threshold
+          email_intro: Mpango %{resource_title} umefikia kikomo cha sahihi
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kiwango cha juu cha sahihi kimefikiwa
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> umefikia kikomo cha sahihi
     gamification:
       badges:
         initiatives:
           conditions:
-            - Go to the participation space of Intiatives
-            - Follow the steps to create a new initiative
-          description: This badge is granted when you launch new initiatives, partnering with others to carry them out.
-          description_another: This participant has gotten %{score} initiatives published.
-          description_own: You have got %{score} initiatives published.
-          name: Published initiatives
-          next_level_in: Get %{score} more initiatives published to reach the next level!
-          unearned_another: This participant has not gotten any initiatives published yet.
-          unearned_own: You got no initiatives published yet.
+            - Nenda kwenye nafasi ya ushiriki ya Mipango
+            - Fuata hatua ili kuunda mpango mpya
+          description: Beji hii hutolewa unapozindua mipango mipya, kwa kushirikiana na wengine ili kuitekeleza.
+          description_another: Mshiriki huyu amepata juhudi %{score} zilizochapishwa.
+          description_own: Umechapisha mipango %{score}.
+          name: Mipango iliyochapishwa
+          next_level_in: Pata mipango %{score} zaidi iliyochapishwa ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajapata juhudi zozote zilizochapishwa.
+          unearned_own: Bado huna mipango iliyochapishwa.
     help:
       participatory_spaces:
         initiatives:
-          contextual: "<p>An <strong>initiative</strong> is a proposal that can be promoted by anyone on their own initiative (independently of other channels or participation spaces) through the collection of (digital) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).</p> <p>The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting points where signatures can be collected from the attendees or debates open to other participants.</p> <p>Examples: An initiative can collect signatures to convene a consultation among all the people of an organization, or to create or convene an assembly, or to initiate a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.</p>\n"
-          page: "<p>An <strong>initiative</strong> is a proposal that can be promoted by anyone on their own initiative (independently of other channels or participation spaces) through the collection of (digital) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).</p> <p>The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting points where signatures can be collected from the attendees or debates open to other participants.</p> <p>Examples: An initiative can collect signatures to convene a consultation among all the people of an organization, or to create or convene an assembly, or to initiate a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.</p>\n"
-          title: What are initiatives?
+          contextual: "<p>Mpango</strong> ni pendekezo ambalo linaweza kukuzwa na mtu yeyote kwa hiari yake mwenyewe (bila kutegemea vituo vingine au nafasi za ushiriki) kupitia ukusanyaji wa sahihi (za kidijitali) ili shirika litekeleze shughuli mahususi. hatua (rekebisha kanuni, anzisha mradi, badilisha jina la idara au mtaa, n.k.).</p> <p>Waendelezaji wa mpango huo wanaweza kufafanua mpango wake. malengo, kukusanya usaidizi, mjadala, kuisambaza na kufafanua pointi za mkutano ambapo saini zinaweza kukusanywa kutoka kwa waliohudhuria au mijadala iliyo wazi kwa washiriki wengine.</p> <p>Mifano: Mpango unaweza kukusanya saini ili kuitisha mashauriano kati ya watu wote. ya shirika, au kuunda au kuitisha mkutano, au kuanzisha mchakato wa kuongeza bajeti kwa eneo au eneo la shirika. Wakati wa mchakato wa kukusanya saini, watu zaidi wanaweza kuongeza mahitaji haya na kuyapeleka mbele katika shirika.</p>"
+          page: "<p>Mpango</strong> ni pendekezo ambalo linaweza kukuzwa na mtu yeyote kwa hiari yake mwenyewe (bila kutegemea vituo vingine au nafasi za ushiriki) kupitia ukusanyaji wa sahihi (za kidijitali) ili shirika litekeleze shughuli mahususi. hatua (rekebisha kanuni, anzisha mradi, badilisha jina la idara au mtaa, n.k.).</p> <p>Waendelezaji wa mpango huo wanaweza kufafanua mpango wake. malengo, kukusanya usaidizi, mjadala, kuisambaza na kufafanua pointi za mkutano ambapo saini zinaweza kukusanywa kutoka kwa waliohudhuria au mijadala iliyo wazi kwa washiriki wengine.</p> <p>Mifano: Mpango unaweza kukusanya saini ili kuitisha mashauriano kati ya watu wote. ya shirika, au kuunda au kuitisha mkutano, au kuanzisha mchakato wa kuongeza bajeti kwa eneo au eneo la shirika. Wakati wa mchakato wa kukusanya saini, watu zaidi wanaweza kuongeza mahitaji haya na kuyapeleka mbele katika shirika.</p>"
+          title: Mipango ni nini?
     initiatives:
       actions:
-        answer: Answer
+        answer: Jibu
       admin:
         answers:
           edit:
-            answer: Answer
-            title: Answer for %{title}
+            answer: Jibu
+            title: Jibu la %{title}
           info_initiative:
-            created_at: Created at
-            description: Description
-            initiative_votes_count: Votes count
-            initiatives: Initiatives
-            state: State
+            created_at: Imeundwa saa
+            description: Maelezo
+            initiative_votes_count: Idadi ya kura
+            initiatives: Mipango
+            state: Jimbo
         committee_requests:
           index:
-            approve: Approve
-            confirm_revoke: Are you sure?
-            invite_to_committee_help: Share this link to invite other participants to the promoter committee.
-            no_members_yet: There are no members in the promoter committee.
-            revoke: Revoke
-            title: Committee members
+            approve: Idhinisha
+            confirm_revoke: Je, una uhakika?
+            invite_to_committee_help: Shiriki kiungo hiki ili kuwaalika washiriki wengine kwenye kamati ya waendelezaji.
+            no_members_yet: Hakuna wajumbe katika kamati ya waendelezaji.
+            revoke: Batilisha
+            title: Wajumbe wa kamati
         content_blocks:
           highlighted_initiatives:
-            max_results: Maximum amount of elements to show
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
             order:
-              default: Default (Least recent)
-              label: 'Order element by:'
-              most_recent: Most recent
+              default: Chaguomsingi (Angalau hivi karibuni)
+              label: 'Agiza kipengele kwa:'
+              most_recent: Hivi karibuni
         exports:
-          initiatives: Initiatives
+          initiatives: Mipango
         index:
           initiatives_types:
-            alert_html: "<p>You must create at least one initiative type so participants can start creating initiatives.</p><p> %{link}</p>"
-            button: New initiative type
+            alert_html: "<p>Lazima uunde angalau aina moja ya mpango ili washiriki waanze kuunda mipango.</p><p> %{link}</p>"
+            button: Aina mpya ya mpango
         initiatives:
           accept:
-            success: The initiative has been successfully accepted.
+            success: Mpango huo umekubaliwa kwa mafanikio.
           discard:
-            success: The initiative has been successfully discarded.
+            success: Mpango huo umetupiliwa mbali.
           edit:
-            accept: Accept initiative
-            confirm: Are you sure?
-            confirm_send_to_technical_validation: Are you sure?
-            discard: Discard the initiative
-            export_pdf_signatures: Export PDF of signatures
-            export_votes: Export signatures
-            reject: Reject initiative
-            send_to_technical_validation: Send to technical validation
-            success: The initiative has been sent to technical validation.
-            update: Update
+            accept: Kubali mpango
+            confirm: Je, una uhakika?
+            confirm_send_to_technical_validation: Je, una uhakika?
+            discard: Tupa mpango huo
+            export_pdf_signatures: Hamisha PDF ya sahihi
+            export_votes: Hamisha saini
+            reject: Kataa mpango
+            send_to_technical_validation: Tuma kwa uthibitishaji wa kiufundi
+            success: Mpango huo umetumwa kwa uthibitishaji wa kiufundi
+            update: Sasisha
           form:
-            settings: Settings
-            title: General information
+            settings: Mipangilio
+            title: Habari ya jumla
           index:
-            actions_title: Action
-            preview: Preview
-            print: Print
+            actions_title: Kitendo
+            preview: Hakiki
+            print: Chapisha
           initiative_attachments:
-            documents: Documents
-            edit: Edit
-            new: New
-            photos: Photos
+            documents: Nyaraka
+            edit: Hariri
+            new: Mpya
+            photos: Picha
           publish:
-            success: The initiative has been successfully published.
+            success: Mpango huo umechapishwa kwa ufanisi.
           reject:
-            success: The initiative has been successfully rejected.
+            success: Mpango huo umekataliwa.
           unpublish:
-            success: The initiative has been successfully unpublished.
+            success: Mpango huo umebatilishwa.
           update:
-            error: An error has occurred.
-            success: The initiative has been successfully updated.
+            error: Hitilafu imetokea.
+            success: Mpango huo umesasishwa.
         initiatives_settings:
           edit:
-            update: Update
+            update: Sasisha
           form:
-            comments: Most commented
-            date: Most recent
-            publication_date: Most recently published
-            random: Random
-            signatures: Most signed
-            title: Settings for initiatives
+            comments: Wengi walitoa maoni
+            date: Hivi karibuni
+            publication_date: Iliyochapishwa hivi karibuni
+            random: Nasibu
+            signatures: Wengi waliosainiwa
+            title: Mipangilio ya mipango
         initiatives_type_scopes:
           create:
-            error: An error has occurred.
-            success: A new scope for the given initiative type has been created.
+            error: Hitilafu imetokea.
+            success: Upeo mpya wa aina ya mpango uliotolewa umeundwa
           destroy:
-            success: The scope has been successfully removed.
+            success: Upeo umeondolewa kwa ufanisi.
           edit:
-            title: Edit initiative type scope
-            update: Update
+            title: Hariri wigo wa aina ya mpango
+            update: Sasisha
           new:
-            create: Create
-            title: Create initiative type scope
+            create: Unda
+            title: Unda wigo wa aina ya mpango
           update:
-            error: An error has occurred.
-            success: The scope has been successfully updated.
+            error: Hitilafu imetokea.
+            success: Upeo umesasishwa kwa ufanisi.
         initiatives_types:
           create:
-            error: An error has occurred.
-            success: A new initiative type has been successfully created. You need to define at least one scope for this initiative type so it can be used.
+            error: Hitilafu imetokea.
+            success: Aina mpya ya mpango imeundwa kwa ufanisi. Unahitaji kufafanua angalau upeo mmoja wa aina hii ya mpango ili iweze kutumika.
           destroy:
-            success: The initiative type has been successfully removed.
+            success: Aina ya mpango imeondolewa kwa ufanisi.
           edit:
-            update: Update
+            update: Sasisha
           form:
-            authorizations: Authorization settings
-            child_scope_threshold_enabled_help_html: 'This config flag doesn''t support offline votes. It enables sub-scopes and works with an authorization handler that associates a scope to the user. Make sure you select that authorization, below in authorization settings. For it to work, scopes need to be configured in a hierarchical way: 1 Parent - N Child. For more info on how this configuration works, see <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">initiatives'' admin documentation page</a>.'
-            only_global_scope_enabled_help_html: Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, initiative type selection will be skipped in the initiative creation wizard. For more info on how this configuration works, see this <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
-            options: Options
+            authorizations: Mipangilio ya idhini
+            child_scope_threshold_enabled_help_html: 'Alama hii ya usanidi haiauni kura za nje ya mtandao. Huwasha upeo mdogo na kufanya kazi na kidhibiti cha uidhinishaji kinachohusisha wigo kwa mtumiaji. Hakikisha umechagua idhini hiyo, hapa chini katika mipangilio ya uidhinishaji. Ili ifanye kazi, mawanda yanahitaji kusanidiwa kwa njia ya daraja: 1 Mzazi - N Mtoto. Kwa maelezo zaidi kuhusu jinsi usanidi huu unavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">ukurasa wa hati za usimamizi wa mipango</a>.'
+            only_global_scope_enabled_help_html: Weka alama kwenye alama hii ikiwa umewasha "Sahihi ya upeo wa mtoto" na kusanidi upeo wa kimataifa kama upeo wa mzazi wako. Kwa kuwezesha hili, uteuzi wa aina ya mpango utarukwa katika kichawi cha uundaji mpango. Kwa maelezo zaidi kuhusu jinsi usanidi huu unavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">kiungo</a> hiki.
+            options: Chaguo
           initiative_type_scopes:
-            title: Scopes for the initiative type
+            title: Upeo wa aina ya mpango
           new:
-            create: Create
-            title: New initiative type
+            create: Unda
+            title: Aina mpya ya mpango
           update:
-            error: An error has occurred.
-            success: The initiative type has been successfully updated.
+            error: Hitilafu imetokea.
+            success: Aina ya mpango imesasishwa kwa ufanisi.
       admin_log:
         initiative:
-          publish: "%{user_name} published the %{resource_name} initiative"
-          send_to_technical_validation: "%{user_name} sent the %{resource_name} initiative to technical validation"
-          unpublish: "%{user_name} discarded the %{resource_name} initiative"
-          update: "%{user_name} updated the %{resource_name} initiative"
+          publish: "%{user_name} alichapisha mpango wa %{resource_name}"
+          send_to_technical_validation: "%{user_name} alituma %{resource_name} mpango kwa uthibitishaji wa kiufundi"
+          unpublish: "%{user_name} alitupilia mbali mpango wa %{resource_name}"
+          update: "%{user_name} alisasisha mpango wa %{resource_name}"
         initiatives_settings:
-          update: "%{user_name} updated the initiatives settings"
+          update: "%{user_name} alisasisha mipangilio ya mipango"
         initiatives_type:
-          create: "%{user_name} created the %{resource_name} initiatives type"
-          delete: "%{user_name} deleted the %{resource_name} initiatives type"
-          update: "%{user_name} updated the %{resource_name} initiatives type"
+          create: "%{user_name} aliunda aina ya %{resource_name} ya mipango"
+          delete: "%{user_name} alifuta aina ya %{resource_name}"
+          update: "%{user_name} alisasisha aina ya %{resource_name} ya mipango"
       admin_states:
-        accepted: Enough signatures
-        created: Created
-        discarded: Discarded
-        published: Published
-        rejected: Not enough signatures
-        validating: Technical validation
+        accepted: Saini za kutosha
+        created: Imeundwa
+        discarded: Imetupwa
+        published: Imechapishwa
+        rejected: Hakuna sahihi za kutosha
+        validating: Uthibitishaji wa kiufundi
       application_helper:
         filter_state_values:
-          accepted: Enough signatures
-          all: All
-          answered: Answered
-          closed: Closed
-          open: Open
-          rejected: Not enough signatures
+          accepted: Saini za kutosha
+          all: Wote
+          answered: Akajibu
+          closed: Imefungwa
+          open: Fungua
+          rejected: Hakuna sahihi za kutosha
         filter_type_values:
-          all: All
+          all: Wote
       committee_requests:
         approve:
-          success: Request has been approved.
+          success: Ombi limeidhinishwa.
         new:
-          continue: Continue
-          help_text: You are about to request becoming a member of the promoter committee of this initiative.
+          continue: Endelea
+          help_text: Unakaribia kuomba kuwa mwanachama wa kamati ya waendelezaji wa mpango huu.
         revoke:
-          success: Request has been revoked.
+          success: Ombi limebatilishwa.
         spawn:
-          success: Your request has been sent to the initiative author.
+          success: Ombi lako limetumwa kwa mwandishi wa mpango.
       content_blocks:
         highlighted_initiatives:
-          name: Highlighted initiatives
+          name: Mipango iliyoangaziwa
       create_initiative:
         fill_data:
-          back: Back
-          continue: Continue
-          fill_data_help: "<ul> <li>Review the content of your initiative. Is your title easy to understand? Is the objective of your initiative clear?</li> <li>You have to choose the type of signature. In-person, online or a combination of both</li> <li>Which is the geographic scope of the initiative?</li> </ul>"
-          more_information: "(More information)"
-          select_area: Select an area
-          select_scope: Select a scope
+          back: Nyuma
+          continue: Endelea
+          fill_data_help: "<ul> <li>Kagua maudhui ya mpango wako. Je, kichwa chako ni rahisi kuelewa? Je, lengo la mpango wako liko wazi?</li> <li>Unapaswa kuchagua aina ya sahihi. Ana kwa ana, mtandaoni au muunganisho wa zote mbili</li> <li>Je, mpango huu una upeo gani wa kijiografia?</li> </ul>"
+          more_information: "(Taarifa zaidi)"
+          select_area: Chagua eneo
+          select_scope: Chagua upeo
         finish:
-          back: Back
-          back_to_initiatives: Back to initiatives
-          callout_text: Congratulations! Your initiative has been successfully created.
-          confirm: You are going to send the initiative for an admin to review it and publish it. Once published you will not be able to edit it. Are you sure?
-          edit_my_initiative: Edit my initiative
-          go_to_my_initiatives: Go to my initiatives
-          more_information: "(More information)"
-          send_my_initiative: Send my initiative to technical validation
+          back: Nyuma
+          back_to_initiatives: Rudi kwa mipango
+          callout_text: Hongera! Mpango wako umeundwa kwa ufanisi.
+          confirm: Utatuma hatua kwa msimamizi kuikagua na kuichapisha. Baada ya kuchapishwa hutaweza kuhariri. Je, una uhakika?
+          edit_my_initiative: Hariri mpango wangu
+          go_to_my_initiatives: Nenda kwa mipango yangu
+          more_information: "(Taarifa zaidi)"
+          send_my_initiative: Tuma mpango wangu kwa uthibitishaji wa kiufundi
         finish_help:
-          publish_helper_text: Remember that for your initiative to be published you must complete the required information and <strong>send it to technical validation</strong> for an administrator to review it.
+          publish_helper_text: Kumbuka kwamba ili mpango wako uweze kuchapishwa ni lazima ukamilishe maelezo yanayohitajika na <strong>utume kwa uthibitisho wa kiufundi</strong> ili msimamizi aikague.
         previous_form:
-          back: Back
-          continue: Continue
+          back: Nyuma
+          continue: Endelea
         promotal_committee:
-          individual_help_text: This kind of initiative requires a Promoting Commission consisting of at least %{committee_size} people (attestors). You must share the following link with the other people that are part of this initiative. When your contacts receive this link they will have to follow the indicated steps.
-          more_information: "(More information)"
+          individual_help_text: Mpango wa aina hii unahitaji Tume ya Ukuzaji inayojumuisha angalau watu %{committee_size} (washahidi). Ni lazima ushiriki kiungo kifuatacho na watu wengine ambao ni sehemu ya mpango huu. Wawasiliani wako wanapopokea kiungo hiki watalazimika kufuata hatua zilizoonyeshwa.
+          more_information: "(Taarifa zaidi)"
         select_initiative_type:
-          back: Back
-          choose_html: I want to create a <strong>%{title}</strong>
-          more_information: More information
-          new: Create a new initiative
-          select: I want to promote this initiative
-          select_initiative_type_help: Initiatives are a means by which the participants can intervene so that the organization can undertake actions in defence of the general interest. Which initiative do you want to launch?
-          verification_required: Verify your account to promote this initiative
+          back: Nyuma
+          choose_html: Ninataka kuunda <strong>%{title}</strong>
+          more_information: Taarifa zaidi
+          new: Unda mpango mpya
+          select: Ninataka kukuza mpango huu
+          select_initiative_type_help: Mipango ni njia ambayo washiriki wanaweza kuingilia kati ili shirika liweze kuchukua hatua katika kutetea maslahi ya jumla. Je, ungependa kuzindua mpango gani?
+          verification_required: Thibitisha akaunti yako ili kukuza mpango huu
         share_committee_link:
-          invite_to_committee_help: Link to invite people that will be part of the promoter committee
+          invite_to_committee_help: Kiungo cha kualika watu ambao watakuwa sehemu ya kamati ya waendelezaji
       edit:
-        accept: Accept the initiative
-        back: Back
-        confirm: Are you sure?
-        discard: Discard the initiative
-        export_pdf_signatures: Export PDF of signatures
-        export_votes: Export signatures
-        reject: Reject initiative
-        title: Edit Initiative
-        update: Update
+        accept: Kubali mpango huo
+        back: Nyuma
+        confirm: Je, una uhakika?
+        discard: Tupa mpango huo
+        export_pdf_signatures: Hamisha PDF ya sahihi
+        export_votes: Hamisha saini
+        reject: Kataa mpango
+        title: Hariri Initiative
+        update: Sasisha
       events:
         approve_membership_request:
-          email_intro: "%{author_nickname} accepted your application to be part of the promoter committee for the initiative %{resource_title}."
-          email_outro: 'You received this notification because you applied to this initiative: %{resource_title}'
-          email_subject: "%{author_nickname} accepted your application to the promoter committee"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> accepted your application to be part of the promoter committee for the following initiative <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: "%{author_nickname} alikubali ombi lako la kuwa sehemu ya kamati ya waendelezaji wa mpango wa %{resource_title}."
+          email_outro: 'Umepokea arifa hii kwa sababu ulituma ombi kwa mpango huu: %{resource_title}'
+          email_subject: "%{author_nickname} alikubali ombi lako kwa kamati ya waendelezaji"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> amekubali ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao <a href="%{resource_url}">%{resource_title}</a> a>.
         create_initiative_event:
-          email_intro: "%{author_name} %{author_nickname}, who you are following, has created a new initiative, check it out and contribute:"
-          email_outro: You have received this notification because you are following %{author_nickname}. You can stop receiving notifications following the previous link.
-          email_subject: New initiative by %{author_nickname}
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> initiative was created by <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+          email_intro: "%{author_name} %{author_nickname}, unayemfuata, ameunda mpango mpya, uangalie na uchangie:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mpango mpya wa %{author_nickname}
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> uliundwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
         endorse_initiative_event:
-          email_intro: "%{author_name} %{author_nickname}, who you are following, has endorsed the following initiative, maybe you want to contribute to the conversation:"
-          email_outro: You have received this notification because you are following %{author_nickname}. You can stop receiving notifications following the previous link.
-          email_subject: Initiative endorsed by %{author_nickname}
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> initiative was endorsed by <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+          email_intro: "%{author_name} %{author_nickname}, unayemfuata, ameidhinisha mpango ufuatao, labda ungependa kuchangia kwenye mazungumzo:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mpango ulioidhinishwa na %{author_nickname}
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> uliidhinishwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
         revoke_membership_request:
-          email_intro: "%{author_nickname} rejected your application to be part of the promoter committee for the following initiative %{resource_title}."
-          email_outro: 'You received this notification because you applied to this initiative: %{resource_title}.'
-          email_subject: "%{author_nickname} rejected your application to the promoter committee"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> rejected your application to be part of the promoter committee for the following initiative <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: "%{author_nickname} amekataa ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao %{resource_title}."
+          email_outro: 'Umepokea arifa hii kwa sababu ulituma ombi kwa mpango huu: %{resource_title}.'
+          email_subject: "%{author_nickname} amekataa ombi lako kwa kamati ya waendelezaji"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> amekataa ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao <a href="%{resource_url}">%{resource_title}</a> a>.
         spawn_committee_request_event:
-          email_intro: "%{applicant_nickname} applied for the promoter committee of your initiative %{resource_title}. To accept or reject the application, go to the edit form of your initiative."
-          email_outro: 'You received this notification because you are the author of this initiative: %{resource_title}'
-          email_subject: "%{applicant_nickname} wants to join your initiative"
-          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> applied for the promoter committee of your initiative <a href="%{resource_url}">%{resource_title}</a>. To accept or reject click <a href="%{resource_url}/edit">here</a>.
+          email_intro: "%{applicant_nickname} alituma maombi kwa kamati ya mtangazaji wa mpango wako %{resource_title}. Ili kukubali au kukataa ombi, nenda kwenye fomu ya kuhariri ya mpango wako."
+          email_outro: 'Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa mpango huu: %{resource_title}'
+          email_subject: "%{applicant_nickname} anataka kujiunga na mpango wako"
+          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> alituma maombi kwa kamati ya mtangazaji wa mpango wako <a href="%{resource_url}">%{resource_title}</a>. Ili kukubali au kukataa bofya <a href="%{resource_url}/edit">hapa</a>.
       form:
-        add_documents: Add documents
-        add_image: Add image
-        attachment_legend: "(Optional) Add an attachment"
-        edit_documents: Edit documents
-        edit_image: Edit image
-        image_legend: "(Optional) Add an image"
+        add_documents: Ongeza hati
+        add_image: Ongeza picha
+        attachment_legend: "(Si lazima) Ongeza kiambatisho"
+        edit_documents: Hariri hati
+        edit_image: Hariri picha
+        image_legend: "(Si lazima) Ongeza picha"
       index:
-        uninitialized: Initiatives are not yet configured by an administrator.
+        uninitialized: Mipango bado haijawekwa na msimamizi
       initiative_signatures:
         fill_personal_data:
-          continue: Continue
-          help: Please, fill the following fields with your personal data to sign the initiative.
+          continue: Endelea
+          help: Tafadhali, jaza sehemu zifuatazo na data yako ya kibinafsi ili kutia saini mpango huo.
         finish:
-          back_to_initiative: Back to initiative
+          back_to_initiative: Rudi kwenye mpango
         sms_code:
-          continue: Check code and continue
-          help: Check the SMS received at your phone
+          continue: Angalia msimbo na uendelee
+          help: Angalia SMS iliyopokelewa kwenye simu yako
         sms_phone_number:
-          continue: Send me an SMS
-          help: Fill the form with your verified phone number to request your verification code.
+          continue: Nitumie SMS
+          help: Jaza fomu na nambari yako ya simu iliyothibitishwa ili kuomba nambari yako ya uthibitishaji.
       initiative_votes:
         create:
-          error: There was a problem signing the initiative.
-          invalid: The data provided to sign the initiative is not valid.
-          success_html: Congratulations! The <strong> %{title}</strong> initiative has been successfully signed.
+          error: Kulikuwa na tatizo wakati wa kusaini mpango.
+          invalid: Data iliyotolewa ili kutia saini mpango huo si sahihi.
+          success_html: Hongera! Mpango wa <strong> %{title}</strong> umetiwa saini kwa ufanisi.
         personal_data:
-          invalid: Personal data is not consistent with data provided for authorization.
+          invalid: Data ya kibinafsi haiendani na data iliyotolewa kwa idhini.
         sms_code:
-          invalid: Your verification code does not match ours. Please double-check the SMS we sent you.
+          invalid: Nambari yako ya uthibitishaji hailingani na yetu. Tafadhali angalia tena SMS tuliyokutumia.
         sms_phone:
-          invalid: The phone number is invalid or pending of authorization. Please, check your authorizations.
+          invalid: Nambari ya simu ni batili au inasubiri kuidhinishwa. Tafadhali, angalia uidhinishaji wako.
       initiatives:
         author_list:
           hidden_authors_count:
-            one: and 1 more person
-            other: and %{count} more people
+            one: na mtu 1 zaidi
+            other: na watu %{count} zaidi
         committee_members:
-          approve: Approve
-          confirm_approve: Are you sure you want to approve this member?
-          confirm_revoke: Are you sure you want to revoke this member?
-          invite_to_committee_help: Share this link to invite other participants to the promoter committee.
-          link: Link
-          no_members_yet: There are no members in the promoter committee.
-          revoke: Revoke
-          title: Committee members
+          approve: Idhinisha
+          confirm_approve: Je, una uhakika unataka kuidhinisha mwanachama huyu?
+          confirm_revoke: Je, una uhakika unataka kughairi mwanachama huyu?
+          invite_to_committee_help: Shiriki kiungo hiki ili kuwaalika washiriki wengine kwenye kamati ya waendelezaji.
+          link: Kiungo
+          no_members_yet: Hakuna wajumbe katika kamati ya waendelezaji.
+          revoke: Batilisha
+          title: Wajumbe wa kamati
         count:
           title:
-            one: "%{count} initiative"
-            other: "%{count} initiatives"
+            one: "%{count} mpango"
+            other: "%{count} mipango"
         filters:
-          any: Any
-          area: Area
-          author: Author
-          myself: My initiatives
-          scope: Scope
-          state: Status
-          type: Type
+          any: Yoyote
+          area: Eneo
+          author: Mwandishi
+          myself: Mipango yangu
+          scope: Upeo
+          state: Hali
+          type: Aina
         index_header:
-          new_initiative: New initiative
+          new_initiative: Mpango mpya
         initiatives:
-          closed_initiatives_warning: Currently, there are no open initiatives, but here you can find all the closed initiatives listed.
-          no_initiatives_warning: No initiatives match your search criteria.
+          closed_initiatives_warning: Hivi sasa, hakuna mipango iliyo wazi, lakini hapa unaweza kupata mipango yote iliyofungwa iliyoorodheshwa.
+          no_initiatives_warning: Hakuna mipango inayolingana na vigezo vya utafutaji wako.
         interactions:
           comments_count:
             count:
-              one: Comment
-              other: Comments
+              one: Maoni
+              other: Maoni
         orders:
-          label: 'Sort initiatives by:'
-          most_commented: Most commented
-          most_voted: Most signed
-          random: Random
-          recent: Most recent
-          recently_published: Most recently published
+          label: 'Panga mipango kwa:'
+          most_commented: Wengi walitoa maoni
+          most_voted: Wengi waliosainiwa
+          random: Nasibu
+          recent: Hivi karibuni
+          recently_published: Iliyochapishwa hivi karibuni
         print:
-          address: Address
-          author_title: Author of the initiative
-          city: City
-          email: Email
-          full_name: Full Name
-          general_title: Application for admission of an initiative
-          id_number: ID Number
+          address: Anwani
+          author_title: Mwandishi wa mpango huo
+          city: Jiji
+          email: Barua pepe
+          full_name: Jina kamili
+          general_title: Maombi ya kuandikishwa kwa mpango
+          id_number: Nambari ya kitambulisho
           initiative:
-            attachments: Attached documentation (please write the name of each document below)
-            description: 'Description:'
-            title: 'Title:'
-            type: Type of initiative
-          legal_text: The personal data collected will be incorporated and treated confidentially by the organization, according to current legislation.
-          members_header: Members of the initiative's promoter committee
-          phone_number: Phone Number
-          place_date: Place, Date
-          postal_code: Postal Code/ZIP
-          print: Print
-          province: Province/State
-          section: 'If requested by the organization, please print and fill out this form to submit where indicated:'
-          signature: Signature
+            attachments: Nyaraka zilizoambatishwa (tafadhali andika jina la kila hati hapa chini)
+            description: 'Maelezo:'
+            title: 'Kichwa:'
+            type: Aina ya mpango
+          legal_text: Data ya kibinafsi iliyokusanywa itajumuishwa na kutibiwa kwa siri na shirika, kulingana na sheria ya sasa.
+          members_header: Wajumbe wa kamati ya waendelezaji wa mpango huo
+          phone_number: Nambari ya Simu
+          place_date: Mahali, Tarehe
+          postal_code: Msimbo wa Posta/ZIP
+          print: Chapisha
+          province: Mkoa/Jimbo
+          section: 'Ikiombwa na shirika, tafadhali chapisha na ujaze fomu hii ili kuwasilisha inapoonyeshwa:'
+          signature: Sahihi
         result:
-          answer_title: This initiative has been answered.
-          initiative_rejected_reason: This initiative has been rejected due to its lack of signatures.
+          answer_title: Mpango huu umejibiwa.
+          initiative_rejected_reason: Mpango huu umekataliwa kutokana na ukosefu wake wa saini.
         show:
-          area: Area
-          before_send_to_technical_validation_announcement: 'Before sending your initiative for technical validation, you need to add %{count} more members to the promoter committee.<br/><br/>Share this link with the people you want to be part of your committee: %{href}'
+          area: Eneo
+          before_send_to_technical_validation_announcement: 'Kabla ya kutuma mpango wako wa uthibitisho wa kiufundi, unahitaji kuongeza wanachama %{count} zaidi kwenye kamati ya waendelezaji.<br/><br/>Shiriki kiungo hiki na watu unaotaka kuwa sehemu ya kamati yako: %{href}'
           confirm: You are going to send the initiative for an admin to review it and publish it. Once published you will not be able to edit it. Are you sure?
-          edit: Edit
+          edit: Hariri
           initiative_data: Initiative data
-          scope: Scope
+          scope: Upeo
           send_to_technical_validation: Send to technical validation
           send_to_technical_validation_announcement: If everything looks ok, click on "Send to technical validation" for an administrator to review and publish your initiative
           signature_collection: Signature collection
-          state: State
-          type: Type
+          state: Jimbo
+          type: Aina
         signatures_count:
           one: " signature"
           other: " signatures"
