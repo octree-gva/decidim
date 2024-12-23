@@ -32,13 +32,13 @@ sw:
           comment: Maoni
           create: Unda
           endorse: Thibitisha
-        name: Debates
+        name: Mijadala
         settings:
           global:
-            announcement: Announcement
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
-            scope_id: Scope
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            scope_id: Upeo
             scopes_enabled: Scopes enabled
           step:
             announcement: Announcement
