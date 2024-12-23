@@ -118,18 +118,18 @@ sw:
               participants: Mshiriki
               user_group: Vikundi vya Watumiaji
           with_any_type:
-            label: Type of meeting
+            label: Aina ya mkutano
             values:
-              hybrid: Hybrid
-              in_person: In Person
+              hybrid: Mseto
+              in_person: Katika Mtu
               online: Mtandaoni
         rejected_at_not_null:
           label: Imekataliwa
           values:
-            'false': Not rejected
+            'false': Haijakataliwa
             'true': Imekataliwa
         search_placeholder:
-          user_name_or_user_email_cont: Search by name or email
+          user_name_or_user_email_cont: Tafuta kwa jina au barua pepe
         sent_at_not_null:
           label: Imetumwa
           values:
@@ -137,284 +137,284 @@ sw:
             'true': Imetumwa
       meeting_copies:
         create:
-          error: There was a problem duplicating this meeting.
-          success: Meeting successfully duplicated.
+          error: Kulikuwa na tatizo katika kunakili mkutano huu.
+          success: Mkutano umenakiliwa.
         new:
           copy: Nakili
-          title: Duplicate meeting
+          title: Rudufu mkutano
     components:
       meetings:
         actions:
           comment: Maoni
-          join: Join
-          reply_poll: Reply poll
+          join: Jiunge
+          reply_poll: Kura ya kujibu
         name: Mikutano
         settings:
           global:
             announcement: Tangazo
             comments_enabled: Maoni yamewezeshwa
             comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
-            creation_enabled_for_participants: Participants can create meetings
-            default_registration_terms: Default registration terms
-            enable_pads_creation: Enable pads creation
-            maps_enabled: Maps enabled
-            registration_code_enabled: Registration code enabled
-            resources_permissions_enabled: Actions permissions can be set for each meeting
+            creation_enabled_for_participants: Washiriki wanaweza kuunda mikutano
+            default_registration_terms: Masharti chaguomsingi ya usajili
+            enable_pads_creation: Washa uundaji wa pedi
+            maps_enabled: Ramani zimewashwa
+            registration_code_enabled: Msimbo wa usajili umewezeshwa
+            resources_permissions_enabled: Ruhusa za vitendo zinaweza kuwekwa kwa kila mkutano
             scope_id: Upeo
             scopes_enabled: Upeo umewezeshwa
-            terms_and_conditions_url_for_meeting_creators: Terms and conditions URL for meeting creators
+            terms_and_conditions_url_for_meeting_creators: URL ya Sheria na Masharti ya watayarishi wanaokutana
           step:
             announcement: Tangazo
-            comments_blocked: Comments blocked
-            creation_enabled_for_participants: Meeting creation by participants enabled
-            creation_enabled_for_user_groups: Meeting creation by user groups enabled
+            comments_blocked: Maoni yamezuiwa
+            creation_enabled_for_participants: Uundaji wa mkutano na washiriki umewezeshwa
+            creation_enabled_for_user_groups: Uundaji wa mikutano kwa vikundi vya watumiaji umewezeshwa
     events:
       meetings:
         meeting_closed:
           affected_user:
-            email_intro: 'Your meeting "%{resource_title}" was closed. You can read the conclusions from its page:'
-            email_outro: You have received this notification because you organized the "%{resource_title}" meeting.
-            email_subject: The "%{resource_title}" meeting was closed
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> meeting was closed.
+            email_intro: 'Mkutano wako "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu ulipanga mkutano wa "%{resource_title}".
+            email_subject: Mkutano wa "%{resource_title}" ulifungwa
+            notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
           follower:
-            email_intro: 'The "%{resource_title}" meeting was closed. You can read the conclusions from its page:'
-            email_outro: You have received this notification because you are following the "%{resource_title}" meeting. You can unfollow it from the previous link.
-            email_subject: The "%{resource_title}" meeting was closed
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> meeting was closed.
+            email_intro: 'Mkutano wa "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Mkutano wa "%{resource_title}" ulifungwa
+            notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
         meeting_created:
-          button_text: Register to the meeting
-          email_intro: The meeting "%{resource_title}" has been added to "%{participatory_space_title}" that you are following.
-          email_outro: You have received this notification because you are following "%{participatory_space_title}". You can unfollow it from the previous link.
-          email_subject: New meeting added to %{participatory_space_title}
-          notification_title: The meeting <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title}
+          button_text: Jiandikishe kwenye mkutano
+          email_intro: Mkutano "%{resource_title}" umeongezwa kwenye "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano mpya umeongezwa kwa %{participatory_space_title}
+          notification_title: Mkutano <a href="%{resource_path}">%{resource_title}</a> umeongezwa kwenye %{participatory_space_title}
         meeting_registration_confirmed:
-          notification_title: Your registration for the meeting <a href="%{resource_url}">%{resource_title}</a> has been confirmed. Your registration code is %{registration_code}.
+          notification_title: Usajili wako kwa mkutano <a href="%{resource_url}">%{resource_title}</a> umethibitishwa. Nambari yako ya usajili ni %{registration_code}.
         meeting_registrations_over_percentage:
-          email_intro: The allocated slots for the "%{resource_title}" meeting are over %{percentage}%.
-          email_outro: You have received this notification because you are an admin of the meeting's participatory space.
-          email_subject: The allocated slots for the "%{resource_title}" meeting are over %{percentage}%
-          notification_title: The allocated slots for the <a href="%{resource_path}">%{resource_title}</a> meeting are over %{percentage}%.
+          email_intro: Nafasi zilizotengwa za mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa nafasi shirikishi ya mkutano.
+          email_subject: Nafasi zilizotengwa za mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%
+          notification_title: Nafasi zilizotengwa za mkutano wa <a href="%{resource_path}">%{resource_title}</a> ni zaidi ya %{percentage}%.
         meeting_updated:
-          email_intro: 'The "%{resource_title}" meeting was updated. You can read the new version from its page:'
-          email_outro: You have received this notification because you are following the "%{resource_title}" meeting. You can unfollow it from the previous link.
-          email_subject: The "%{resource_title}" meeting was updated
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> meeting was updated.
+          email_intro: 'Mkutano wa "%{resource_title}" ulisasishwa. Unaweza kusoma toleo jipya kutoka kwa ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" ulisasishwa
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulisasishwa.
         registration_code_validated:
-          email_intro: Your registration code "%{registration_code}" for the "%{resource_title}" meeting has been validated.
-          email_outro: You have received this notification because your registration code for the "%{resource_title}" meeting has been validated.
-          email_subject: Your registration code "%{registration_code}" for the "%{resource_title}" meeting has been validated
-          notification_title: Your registration code "%{registration_code}" for the <a href="%{resource_path}">%{resource_title}</a> meeting has been validated.
+          email_intro: Msimbo wako wa usajili "%{registration_code}" wa mkutano wa "%{resource_title}" umeidhinishwa.
+          email_outro: Umepokea arifa hii kwa sababu nambari yako ya usajili ya mkutano wa "%{resource_title}" imeidhinishwa.
+          email_subject: Nambari yako ya usajili "%{registration_code}" ya mkutano wa "%{resource_title}" imethibitishwa.
+          notification_title: Nambari yako ya usajili "%{registration_code}" ya mkutano wa <a href="%{resource_path}">%{resource_title}</a> imethibitishwa.
         registrations_enabled:
-          email_intro: 'The "%{resource_title}" meeting has enabled registrations. You can register yourself on its page:'
-          email_outro: You have received this notification because you are following the "%{resource_title}" meeting. You can unfollow it from the previous link.
-          email_subject: The "%{resource_title}" meeting has enabled registrations.
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> meeting has enabled registrations.
+          email_intro: 'Mkutano wa "%{resource_title}" umewezesha usajili. Unaweza kujiandikisha kwenye ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" umewezesha usajili.
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> umewezesha usajili.
         upcoming_meeting:
-          email_intro: The "%{resource_title}" meeting will start in less than 48h.
-          email_outro: You have received this notification because you are following the "%{resource_title}" meeting. You can unfollow it from the previous link.
-          email_subject: The "%{resource_title}" meeting will start in less than 48h.
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> meeting will start in less than 48h.
+          email_intro: Mkutano wa "%{resource_title}" utaanza chini ya 48h
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" utaanza chini ya 48h.
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> utaanza chini ya 48h.
     forms:
       meetings:
-        attendees_count_help_text: Do not forget to include the total number of attendees at your meeting, whether in person, online or hybrid.
+        attendees_count_help_text: Usisahau kujumuisha jumla ya idadi ya waliohudhuria kwenye mkutano wako, iwe ana kwa ana, mtandaoni au mseto.
     gamification:
       badges:
         attended_meetings:
           conditions:
-            - Register for the meetings you want to attend
-          description: This badge is granted when you attend several face-to-face meetings.
-          description_another: This participant has attended %{score} meetings.
-          description_own: You have attended %{score} meetings.
-          name: Attended meetings
-          next_level_in: Attend %{score} more meetings to reach the next level!
-          unearned_another: This participant has not attended any meeting yet.
-          unearned_own: You have not attended any meeting yet.
+            - Jiandikishe kwa mikutano unayotaka kuhudhuria
+          description: Beji hii inatolewa unapohudhuria mikutano kadhaa ya ana kwa ana.
+          description_another: Mshiriki huyu amehudhuria mikutano %{score}.
+          description_own: Umehudhuria mikutano %{score}.
+          name: Walihudhuria mikutano
+          next_level_in: Hudhuria mikutano %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajahudhuria mkutano wowote.
+          unearned_own: Bado hujahudhuria mkutano wowote.
     meetings:
       actions:
-        agenda: Agenda
-        attachment_collections: Folders
-        attachments: Attachments
-        close: Close
-        confirm_destroy: Are you sure you want to delete this meeting?
-        destroy: Delete
-        edit: Edit
+        agenda: Ajenda
+        attachment_collections: Folda
+        attachments: Viambatisho
+        close: Funga
+        confirm_destroy: Je, una uhakika unataka kufuta mkutano huu?
+        destroy: Futa
+        edit: Hariri
         invalid_destroy:
           proposals_count:
-            one: 'The meeting cannot be destroyed because it has %{count} proposal associated to it:'
-            other: 'The meeting cannot be destroyed because it has %{count} proposals associated to it:'
-        manage_poll: Manage poll
-        new_meeting: New meeting
-        preview: Preview
-        registrations: Registrations
-        title: Actions
+            one: 'Mkutano hauwezi kuharibiwa kwa sababu una pendekezo %{count} linalohusishwa nao:'
+            other: 'Mkutano hauwezi kuharibiwa kwa sababu una mapendekezo %{count} yanayohusiana nao:'
+        manage_poll: Dhibiti kura ya maoni
+        new_meeting: Mkutano mpya
+        preview: Hakiki
+        registrations: Usajili
+        title: Vitendo
       admin:
         agenda:
           agenda_item:
-            add_agenda_item_child: Add agenda sub-item
-            agenda_item: Agenda Item
-            agenda_item_children: Agenda sub-items
-            down: Down
-            remove: Remove
-            up: Up
+            add_agenda_item_child: Ongeza kipengee kidogo cha ajenda
+            agenda_item: Kipengee cha Ajenda
+            agenda_item_children: Vipengee vidogo vya ajenda
+            down: Chini
+            remove: Ondoa
+            up: Juu
           agenda_item_child:
-            agenda_item_child: Agenda sub-item
-            down: Down
-            remove: Remove
-            up: Up
+            agenda_item_child: Kipengele kidogo cha ajenda
+            down: Chini
+            remove: Ondoa
+            up: Juu
           create:
-            invalid: There was a problem creating this agenda.
-            success: Agenda successfully created.
+            invalid: Kulikuwa na tatizo katika kuunda ajenda hii.
+            success: Agenda imeundwa.
           edit:
-            title: Edit agenda
-            update: Update
+            title: Hariri ajenda
+            update: Sasisha
           form:
-            add_agenda_item: Add agenda item
-            agenda_items: Agenda items
-            end_date: End date
-            start_date: Start date
+            add_agenda_item: Ongeza kipengee cha ajenda
+            agenda_items: Vipengee vya ajenda
+            end_date: Tarehe ya mwisho
+            start_date: Tarehe ya kuanza
           new:
-            create: Create
-            title: New agenda
+            create: Unda
+            title: Ajenda mpya
           update:
-            invalid: There was a problem updating this agenda.
-            success: Agenda successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha ajenda hii.
+            success: Agenda imesasishwa.
         exports:
-          answers: Answers
-          meeting_comments: Comments
-          meetings: Meetings
-          registrations: Registrations
+          answers: Majibu
+          meeting_comments: Maoni
+          meetings: Mikutano
+          registrations: Usajili
         invite_join_meeting_mailer:
           invite:
-            decline: Decline invitation
-            invited_you_to_join_a_meeting: "%{invited_by} has invited you to join a meeting at %{application}. You can decline or accept it through the links below."
-            join: Join meeting '%{meeting_title}'
+            decline: Kataa mwaliko
+            invited_you_to_join_a_meeting: "%{invited_by} amekualika kujiunga na mkutano katika %{application}. Unaweza kuikataa au kuikubali kupitia viungo vilivyo hapa chini."
+            join: Jiunge na mkutano '%{meeting_title}'
         invites:
           create:
-            error: There was a problem inviting the participant to join the meeting.
-            success: Participant successfully invited to join the meeting.
+            error: Kulikuwa na tatizo katika kumwalika mshiriki kujiunga kwenye mkutano.
+            success: Mshiriki amealikwa kujiunga na mkutano.
           form:
-            attendee_type: Attendee type
-            existing_user: Existing participant
-            invite: Invite
-            invite_explanation: The participant will be invited to join the meeting and to the organization as well.
-            non_user: Non existing participant
-            select_user: Select participant
+            attendee_type: Aina ya mshiriki
+            existing_user: Mshiriki aliyepo
+            invite: Alika
+            invite_explanation: Mshiriki ataalikwa kujiunga na mkutano na kwa shirika pia.
+            non_user: Asiyekuwa mshiriki
+            select_user: Chagua mshiriki
           index:
-            invite_attendee: Invite attendee
-            invites: Invites
-            registrations_disabled: You cannot invite an attendee because the registrations are disabled.
+            invite_attendee: Alika mshiriki
+            invites: Inaalika
+            registrations_disabled: Huwezi kumwalika mhudhuriaji kwa sababu usajili umezimwa.
         meeting_closes:
           edit:
-            close: Close
-            title: Close meeting
+            close: Funga
+            title: Funga mkutano
         meetings:
           close:
-            invalid: There was a problem closing this meeting.
-            success: Meeting successfully closed.
+            invalid: Kulikuwa na tatizo wakati wa kufunga mkutano huu.
+            success: Mkutano umefungwa.
           create:
-            invalid: There was a problem creating this meeting.
-            success: Meeting successfully created. Notice this is unpublished yet, you need to manually publish it.
+            invalid: Kulikuwa na tatizo kuunda mkutano huu.
+            success: Mkutano umeundwa. Kumbuka kuwa hii bado haijachapishwa, unahitaji kuichapisha wewe mwenyewe.
           destroy:
             invalid:
               proposals_count:
-                one: The meeting cannot be destroyed because it has %{count} proposal associated to it.
-                other: The meeting cannot be destroyed because it has %{count} proposals associated to it.
-            success: Meeting successfully deleted
+                one: Mkutano hauwezi kuharibiwa kwa sababu una pendekezo %{count} linalohusishwa nao.
+                other: Mkutano hauwezi kuharibiwa kwa sababu una mapendekezo %{count} yanayohusiana nao.
+            success: Mkutano umefutwa
           edit:
-            title: Edit meeting
-            update: Update
+            title: Hariri mkutano
+            update: Sasisha
           form:
-            address_help: 'Address: used by Geocoder to find the location'
-            disclaimer: 'Disclaimer: By using an external registration system, you are aware that the organizers of %{organization} are not responsible for the data provided by the users to the external service.'
-            iframe_embed_type_html: 'Only a few services allow embedding in meeting or live event from the following domains: %{domains}'
-            location_help: 'Location: message directed to the users implying the spot to meet at'
-            location_hints_help: 'Location hints: additional info. Example: the floor of the building if it is an in-person meeting, or the meeting password if it is an online meeting with restricted access.'
-            online_meeting_url_help: 'Link: allow participants to connect directly to your meeting'
-            registration_url_help: 'Link: allow participants to go on the external service you are using for registrations'
-            select_a_meeting_type: Please select a meeting type
-            select_a_registration_type: Please select a registration type
-            select_an_iframe_access_level: Please select an iframe access level
+            address_help: 'Anwani: inayotumiwa na Geocoder kupata eneo'
+            disclaimer: 'Kanusho: Kwa kutumia mfumo wa usajili wa nje, unafahamu kuwa waandaaji wa %{organization} hawawajibikii data iliyotolewa na watumiaji kwa huduma ya nje.'
+            iframe_embed_type_html: 'Ni huduma chache tu zinazoruhusu kupachika katika mkutano au tukio la moja kwa moja kutoka kwa vikoa vifuatavyo: %{domains}'
+            location_help: 'Mahali: ujumbe unaoelekezwa kwa watumiaji unaoashiria mahali pa kukutana'
+            location_hints_help: 'Vidokezo vya eneo: maelezo ya ziada. Mfano: sakafu ya jengo ikiwa ni mkutano wa ana kwa ana, au nenosiri la mkutano ikiwa ni mkutano wa mtandaoni ambao ufikiaji umezuiwa.'
+            online_meeting_url_help: 'Kiungo: waruhusu washiriki kuunganishwa moja kwa moja kwenye mkutano wako'
+            registration_url_help: 'Kiungo: waruhusu washiriki kuendelea na huduma ya nje unayotumia kwa usajili'
+            select_a_meeting_type: Tafadhali chagua aina ya mkutano
+            select_a_registration_type: Tafadhali chagua aina ya usajili
+            select_an_iframe_access_level: Tafadhali chagua kiwango cha ufikiaji wa iframe
           index:
-            title: Meetings
+            title: Mikutano
           new:
-            create: Create
-            title: Create meeting
+            create: Unda
+            title: Unda mkutano
           publish:
-            invalid: There was a problem publishing this meeting.
-            success: Meeting successfully published.
+            invalid: Kulikuwa na tatizo la kuchapisha mkutano huu.
+            success: Mkutano umechapishwa.
           service:
-            description: Description
-            down: Down
-            remove: Remove
-            service: Service
-            title: Title
-            up: Up
+            description: Maelezo
+            down: Chini
+            remove: Ondoa
+            service: Huduma
+            title: Kichwa
+            up: Juu
           services:
-            add_service: Add service
-            services: Services
+            add_service: Ongeza huduma
+            services: Huduma
           unpublish:
-            invalid: There was a problem unpublishing this meeting.
-            success: Meeting successfully unpublished.
+            invalid: Kulikuwa na tatizo la kubatilisha uchapishaji wa mkutano huu.
+            success: Mkutano umebatilishwa kuchapishwa.
           update:
-            invalid: There was a problem updating this meeting.
-            success: Meeting successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha mkutano huu.
+            success: Mkutano umesasishwa.
         meetings_poll:
           form:
-            title: Edit poll questionnaire for %{questionnaire_for}
+            title: Hariri dodoso la kura ya %{questionnaire_for}
           update:
-            invalid: There was a problem updating this meeting poll.
-            success: Meeting poll successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha kura hii ya mkutano.
+            success: Kura ya mkutano imesasishwa.
         poll:
           form:
             announcement_html:
-              - When a question receives answers or is published/closed, it can no longer be edited.
-              - You can add a question at any time.
-              - The poll will be closed when the results of all created questions have been published.
-              - Visit the <a href='%{admin_link}'>poll administration page</a> to send questions and publish results.
+              - Swali linapopokea majibu au kuchapishwa/kufungwa, haliwezi kuhaririwa tena.
+              - Unaweza kuongeza swali wakati wowote.
+              - Kura ya maoni itafungwa wakati matokeo ya maswali yote yaliyoundwa yatakapochapishwa.
+              - Tembelea <a href='%{admin_link}'>ukurasa wa usimamizi wa kura</a> ili kutuma maswali na kuchapisha matokeo.
         registrations:
           edit:
-            save: Save
-            validate: Validate
-            validate_registration_code: Validate registration code
+            save: Hifadhi
+            validate: Thibitisha
+            validate_registration_code: Thibitisha nambari ya usajili
           form:
-            available_slots_help: Leave it to 0 if you have unlimited slots available.
-            invites: Invitations
-            recommendation_message: For privacy reasons we recommend that you delete this inscription form when you no longer need it. By default this is 3 months after the meeting has ended.
-            registration_email_help: This text will appear in the middle of the registration confirmation email. Just after the registration code.
-            registration_form: Registration form
+            available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana.
+            invites: Mialiko
+            recommendation_message: Kwa sababu za faragha tunapendekeza kwamba ufute fomu hii ya usajili wakati huhitaji tena. Kwa chaguo-msingi hii ni miezi 3 baada ya mkutano kumalizika.
+            registration_email_help: Maandishi haya yataonekana katikati ya barua pepe ya uthibitishaji wa usajili. Mara tu baada ya nambari ya usajili.
+            registration_form: Fomu ya usajili
             registrations_count:
-              one: There has been %{count} registration.
-              other: There has been %{count} registrations.
-            reserved_slots_help: Leave it to 0 if you do not have reserved slots.
-            reserved_slots_less_than: Must be less than or equal to %{count}
-            title: Registrations
+              one: Kumekuwa na usajili %{count}.
+              other: Kumekuwa na usajili %{count}.
+            reserved_slots_help: Iache hadi 0 ikiwa huna nafasi zilizohifadhiwa.
+            reserved_slots_less_than: Lazima iwe chini ya au sawa na %{count}
+            title: Usajili
           update:
-            invalid: There was a problem saving the registration settings.
-            success: Meeting registrations settings successfully saved.
+            invalid: Kulikuwa na tatizo katika kuhifadhi mipangilio ya usajili.
+            success: Mipangilio ya usajili wa mkutano imehifadhiwa.
           validate_registration_code:
-            invalid: This registration code is invalid.
-            success: Registration code successfully validated.
+            invalid: Msimbo huu wa usajili si sahihi.
+            success: Msimbo wa usajili umethibitishwa.
       admin_log:
         invite:
-          create: "%{user_name} invited %{attendee_name} to join %{resource_name} meeting on the %{space_name} space"
-          deleted: "%{user_name} uninvited %{attendee_name} from joining %{resource_name} meeting on the %{space_name} space"
-          update: "%{user_name} invited %{attendee_name} to join %{resource_name} meeting on the %{space_name} space"
+          create: "%{user_name} alimwalika %{attendee_name} kujiunga na mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          deleted: "%{user_name} hajaalikwa %{attendee_name} kutoka kwenye mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alimwalika %{attendee_name} kujiunga na mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
         meeting:
-          close: "%{user_name} closed the %{resource_name} meeting on the %{space_name} space"
-          create: "%{user_name} created the %{resource_name} meeting on the %{space_name} space"
-          delete: "%{user_name} deleted the %{resource_name} meeting on the %{space_name} space"
-          export_registrations: "%{user_name} exported the registrations of the %{resource_name} meeting on the %{space_name} space"
-          update: "%{user_name} updated the %{resource_name} meeting on the %{space_name} space"
+          close: "%{user_name} alifunga mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          create: "%{user_name} aliunda mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          delete: "%{user_name} alifuta mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          export_registrations: "%{user_name} alihamisha usajili wa mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
           value_types:
             organizer_presenter:
-              not_found: 'The organizer was not found on the database (ID: %{id})'
+              not_found: 'Mratibu hakupatikana kwenye hifadhidata (ID: %{id})'
         questionnaire:
           update: "%{user_name} updated the questionnaire for the %{meeting_name} meeting"
       application_helper:
         filter_category_values:
-          all: All
+          all: Wote
         filter_meeting_space_values:
-          all: All
+          all: Wote
       calendar:
         meeting_to_event:
           read_more: Read more about this meeting
@@ -456,7 +456,7 @@ sw:
         new_meeting: 'New meeting:'
       layouts:
         live_event:
-          close: close
+          close: funga
       mailer:
         invite_join_meeting_mailer:
           invite:
@@ -468,7 +468,7 @@ sw:
         not_allowed: You are not allowed to view this meeting.
       meeting_closes:
         edit:
-          back: Back
+          back: Nyuma
           close: Close meeting
           title: Close meeting
       meetings:
