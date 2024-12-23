@@ -3,95 +3,95 @@ sw:
   activemodel:
     attributes:
       answer:
-        body: Answer
-        choices: Choices
-        selected_choices: Selected choices
+        body: Jibu
+        choices: Chaguo
+        selected_choices: Chaguo zilizochaguliwa
       question:
-        max_choices: Maximum number of choices
-        question_type: Type
+        max_choices: Idadi ya juu zaidi ya chaguo
+        question_type: Aina
       questionnaire_question:
-        mandatory: Mandatory
-        max_characters: Character limit (leave to 0 if no limit)
+        mandatory: Lazima
+        max_characters: Kikomo cha herufi (acha hadi 0 ikiwa hakuna kikomo)
     errors:
       models:
         answer:
           attributes:
             add_documents:
-              needs_to_be_reattached: Needs to be reattached
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
             body:
-              too_long: is too long
+              too_long: ni ndefu sana
             choices:
-              missing: are not complete
-              too_many: You can choose a maximum of %{count}.
+              missing: hazijakamilika
+              too_many: Unaweza kuchagua upeo wa %{count}.
         questionnaire:
-          request_invalid: There was an error handling the request. Please try again.
+          request_invalid: Kulikuwa na hitilafu katika kushughulikia ombi. Tafadhali jaribu tena
   decidim:
     forms:
       admin:
         models:
           components:
-            description: Description
-            tos: Terms of service
+            description: Maelezo
+            tos: Masharti ya huduma
         questionnaires:
           actions:
-            back: Back to questions
-            show: Show responses
+            back: Rudi kwa maswali
+            show: Onyesha majibu
           answer_option:
-            answer_option: Answer option
-            free_text: Free text
-            remove: Remove
-            statement: Statement
+            answer_option: Chaguo la kujibu
+            free_text: Maandishi ya bure
+            remove: Ondoa
+            statement: Taarifa
           answers:
             actions:
-              back: Back to responses
-              export: Export
-              next: Next &rsaquo;
-              previous: "&lsaquo; Prev"
-              show: Show answers
-            empty: No answers yet
+              back: Rudi kwa majibu
+              export: Hamisha
+              next: Inayofuata &rsaquo;
+              previous: "&lsaquo; Iliyotangulia"
+              show: Onyesha majibu
+            empty: Hakuna majibu bado
             export:
               answer:
-                title: 'Response #%{number}'
+                title: 'Jibu #%{number}'
             export_response:
               title: survey_user_answers_%{token}
             index:
-              title: "%{total} total responses"
+              title: "%{total} jumla ya majibu"
             show:
-              title: 'Answer #%{number}'
+              title: 'Jibu #%{number}'
           display_condition:
-            answer_option: Answer option
-            condition_question: Question
-            condition_type: Condition
+            answer_option: Chaguo la kujibu
+            condition_question: Swali
+            condition_type: Hali
             condition_types:
-              answered: Answered
-              equal: Equal
-              match: Includes text
-              not_answered: Not answered
-              not_equal: Not equal
-            condition_value: Included text
-            display_condition: Display condition
-            mandatory: This condition needs to be satisfied always regardless the status of other conditions
-            remove: Remove
-            save_warning: Remember to save the form before configuring display conditions
-            select_answer_option: Select answer option
-            select_condition_question: Select a question
-            select_condition_type: Select a condition type
+              answered: Akajibu
+              equal: Sawa
+              match: Inajumuisha maandishi
+              not_answered: Haijajibiwa
+              not_equal: Sio sawa
+            condition_value: Maandishi yaliyojumuishwa
+            display_condition: Hali ya kuonyesha
+            mandatory: Hali hii inahitaji kuridhika kila wakati bila kujali hali ya hali zingine
+            remove: Ondoa
+            save_warning: Kumbuka kuhifadhi fomu kabla ya kusanidi hali ya onyesho
+            select_answer_option: Chagua chaguo la jibu
+            select_condition_question: Chagua swali
+            select_condition_type: Chagua aina ya hali
           edit:
-            save: Save
-            title: Edit questionnaire
+            save: Hifadhi
+            title: Hariri dodoso
           form:
-            add_question: Add question
-            add_separator: Add separator
-            add_title_and_description: Add title and description
-            already_answered_warning: The form is already answered by some users so you cannot modify its questions.
-            collapse: Collapse all questions
-            expand: Expand all questions
-            preview: Preview
-            title: Edit form for %{questionnaire_for}
-            unpublished_warning: The form is not published. You may modify its questions, but doing so will delete current answers.
+            add_question: Ongeza swali
+            add_separator: Ongeza kitenganishi
+            add_title_and_description: Ongeza kichwa na maelezo
+            already_answered_warning: Fomu tayari imejibiwa na baadhi ya watumiaji kwa hivyo huwezi kurekebisha maswali yake.
+            collapse: Kunja maswali yote
+            expand: Panua maswali yote
+            preview: Hakiki
+            title: Badilisha fomu ya %{questionnaire_for}
+            unpublished_warning: Fomu haijachapishwa. Unaweza kurekebisha maswali yake, lakini kufanya hivyo kutafuta majibu ya sasa.
           matrix_row:
-            matrix_row: Row
-            remove: Remove
+            matrix_row: Safu
+            remove: Ondoa
             statement: Statement
           question:
             add_answer_option: Add answer option
@@ -159,40 +159,40 @@ sw:
             already_have_an_account?: Already have an account?
             are_you_new?: New user?
             sign_in_description: Log in to take the survey
-            sign_up_description: Create a participant account to take the survey
-            title: Answer the form
-          current_step: Step %{step}
-          empty: No questions configured for this form yet.
-          of_total_steps: of %{total_steps}
+            sign_up_description: Unda akaunti ya mshiriki ili kufanya utafiti
+            title: Jibu fomu
+          current_step: Hatua %{step}
+          empty: Bado hakuna maswali yaliyosanidiwa kwa fomu hii
+          of_total_steps: kati ya %{total_steps}
           questionnaire_answered:
-            body: You have already answered this form.
-            title: Already answered
+            body: Tayari umejibu fomu hii.
+            title: Tayari imejibu
           questionnaire_closed:
-            body: The form is closed and cannot be answered.
-            title: Form closed
+            body: Fomu imefungwa na haiwezi kujibiwa.
+            title: Fomu imefungwa
           questionnaire_for_private_users:
-            body: The form is available only for private users
-            title: Form closed
+            body: Fomu hiyo inapatikana tu kwa watumiaji wa kibinafsi
+            title: Fomu imefungwa
           questionnaire_js_disabled:
-            body: Some of this form's features will be disabled. To improve your experience, please enable JavaScript in your browser.
-            title: JavaScript is disabled
+            body: Baadhi ya vipengele vya fomu hii vitazimwa. Ili kuboresha matumizi yako, tafadhali wezesha JavaScript kwenye kivinjari chako.
+            title: JavaScript imezimwa
           questionnaire_not_published:
-            body: This form is not published yet.
-          tos_agreement: By participating you accept its Terms of Service
+            body: Fomu hii bado haijachapishwa.
+          tos_agreement: Kwa kushiriki unakubali Sheria na Masharti yake
       step_navigation:
         show:
-          are_you_sure: This action cannot be undone and you will not be able to edit your answers. Are you sure?
-          back: Back
-          continue: Continue
-          submit: Submit
+          are_you_sure: Kitendo hiki hakiwezi kutenduliwa na hutaweza kuhariri majibu yako. Je, una uhakika?
+          back: Nyuma
+          continue: Endelea
+          submit: Wasilisha
       user_answers_serializer:
-        body: Answer
-        completion: Completion
-        created_at: Answered on
-        id: Answer ID
+        body: Jibu
+        completion: Kukamilika
+        created_at: Akajibu
+        id: Jibu ID
         ip_hash: IP Hash
-        question: Question
-        registered: Registered
-        session_token: User identifier
-        unregistered: Unregistered
-        user_status: User status
+        question: Swali
+        registered: Imesajiliwa
+        session_token: Kitambulisho cha mtumiaji
+        unregistered: Haijasajiliwa
+        user_status: Hali ya mtumiaji
