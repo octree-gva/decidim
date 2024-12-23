@@ -3,29 +3,29 @@ sw:
   activerecord:
     models:
       decidim/pages/page:
-        one: Page
-        other: Pages
+        one: Ukurasa
+        other: Kurasa
   decidim:
     admin_log:
       page:
-        update: "%{user_name} updated the %{resource_name} page in %{space_name}"
+        update: "%{user_name} alisasisha ukurasa wa %{resource_name} katika %{space_name}"
     components:
       pages:
-        name: Page
+        name: Ukurasa
         settings:
           global:
-            announcement: Announcement
+            announcement: Tangazo
           step:
-            announcement: Announcement
+            announcement: Tangazo
     pages:
       admin:
         models:
           components:
-            body: Body
+            body: Mwili
         pages:
           edit:
-            save: Update
-            title: Edit page
+            save: Sasisha
+            title: Badilisha ukurasa
           update:
             invalid: There was a problem saving the page.
             success: Page successfully saved.
