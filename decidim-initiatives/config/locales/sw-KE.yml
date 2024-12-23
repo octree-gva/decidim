@@ -3,110 +3,110 @@ sw:
   activemodel:
     attributes:
       initiative:
-        answer: Answer
-        answer_url: Answer URL
-        area_id: Area
-        decidim_scope_id: Scope
-        decidim_user_group_id: Author
-        description: Description
+        answer: Jibu
+        answer_url: Jibu URL
+        area_id: Eneo
+        decidim_scope_id: Upeo
+        decidim_user_group_id: Mwandishi
+        description: Maelezo
         hashtag: Hashtag
-        offline_votes: In-person signatures
-        offline_votes_for_scope: In-person signatures for %{scope_name}
-        scope_id: Scope
-        signature_end_date: End of signature collection period
-        signature_start_date: Start of signature collection period
-        signature_type: Signature collection type
+        offline_votes: Sahihi za kibinafsi
+        offline_votes_for_scope: Saini za kibinafsi za %{scope_name}
+        scope_id: Upeo
+        signature_end_date: Mwisho wa kipindi cha kukusanya sahihi
+        signature_start_date: Kuanza kwa kipindi cha kukusanya sahihi
+        signature_type: Aina ya mkusanyiko wa saini
         signature_type_values:
-          any: Mixed
-          offline: In-person
-          online: Online
-        state: Status
-        title: Title
-        type_id: Type
+          any: Imechanganywa
+          offline: Ana kwa ana
+          online: Mtandaoni
+        state: Hali
+        title: Kichwa
+        type_id: Aina
       initiatives_committee_member:
-        user: Committee member
+        user: Mjumbe wa kamati
       initiatives_settings:
-        initiatives_order: Order
+        initiatives_order: Agizo
       initiatives_type:
-        area_enabled: Enable authors to choose the area for their initiative
-        attachments_enabled: Enable attachments
-        banner_image: Banner image
-        child_scope_threshold_enabled: Enable child scope signatures
-        collect_user_extra_fields: Collect participant personal data on signature
-        comments_enabled: Enable comments
-        custom_signature_end_date_enabled: Enable authors to choose the end of signature collection period
-        description: Description
-        document_number_authorization_handler: Authorization to verify document number on signatures
-        extra_fields_legal_information: Legal information about the collection of personal data
-        minimum_committee_members: Minimum of committee members
-        online_signature_enabled: Online signature enabled
-        only_global_scope_enabled: Only allow global scope initiatives creation
-        promoting_committee_enabled: Enable promoting committee
-        signature_type: Signature type
-        title: Title
-        undo_online_signatures_enabled: Enable participants to undo their online signatures
-        validate_sms_code_on_votes: Add SMS code validation step to signature process
+        area_enabled: Wawezesha waandishi kuchagua eneo kwa ajili ya mpango wao
+        attachments_enabled: Washa viambatisho
+        banner_image: Picha ya bango
+        child_scope_threshold_enabled: Washa sahihi za upeo wa watoto
+        collect_user_extra_fields: Kusanya data ya kibinafsi ya mshiriki kwenye sahihi
+        comments_enabled: Washa maoni
+        custom_signature_end_date_enabled: Waruhusu waandishi kuchagua mwisho wa kipindi cha kukusanya sahihi
+        description: Maelezo
+        document_number_authorization_handler: Uidhinishaji wa kuthibitisha nambari ya hati kwenye sahihi
+        extra_fields_legal_information: Taarifa za kisheria kuhusu ukusanyaji wa data binafsi
+        minimum_committee_members: Wachache wa wajumbe wa kamati
+        online_signature_enabled: Sahihi ya mtandaoni imewezeshwa
+        only_global_scope_enabled: Ruhusu uundaji wa mipango ya kimataifa pekee
+        promoting_committee_enabled: Washa kamati ya ukuzaji
+        signature_type: Aina ya saini
+        title: Kichwa
+        undo_online_signatures_enabled: Waruhusu washiriki kutendua sahihi zao mtandaoni
+        validate_sms_code_on_votes: Ongeza hatua ya uthibitishaji wa nambari ya SMS kwenye mchakato wa kusaini
       initiatives_type_scope:
-        decidim_scopes_id: Scopes
-        supports_required: Supports required
+        decidim_scopes_id: Upeo
+        supports_required: Inasaidia inahitajika
       initiatives_vote:
-        date_of_birth: Date of birth
-        document_number: Document number
-        name_and_surname: Name and surname
-        postal_code: Postal code
+        date_of_birth: Tarehe ya kuzaliwa
+        document_number: Nambari ya hati
+        name_and_surname: Jina kamili
+        postal_code: Msimbo wa posta
       organization_data:
-        address: Address
-        id_document: ID document
-        name: Complete name
+        address: Anwani
+        id_document: Hati
+        name: Jina kamili
     errors:
       models:
         initiative:
           attributes:
             attachment:
-              file: File is invalid
-              needs_to_be_reattached: Needs to be reattached
-              title: Title should not be empty
+              file: Faili ni batili
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
+              title: Kichwa haipaswi kuwa tupu
   activerecord:
     models:
       decidim/initiative:
-        one: Initiative
-        other: Initiatives
+        one: Mpango
+        other: Mipango
       decidim/initiative_comittee:
-        one: Comittee
-        other: Comittees
+        one: Kamati
+        other: Kamati
       decidim/initiative_vote:
-        one: Signature
-        other: Signatures
+        one: Sahihi
+        other: Sahihi
   decidim:
     admin:
       actions:
-        new_initiative_type: New initiative type
-        new_initiative_type_scope: New initiative type scope
+        new_initiative_type: Aina mpya ya mpango
+        new_initiative_type_scope: Wigo mpya wa aina ya mpango
       filters:
         initiatives:
           decidim_area_id_eq:
-            label: Area
+            label: Eneo
           state_eq:
-            label: State
+            label: Jimbo
             values:
-              accepted: Enough signatures
-              created: Created
-              discarded: Discarded
-              published: Published
-              rejected: Not enough signatures
-              validating: Technical validation
+              accepted: Saini za kutosha
+              created: Imeundwa
+              discarded: Imetupwa
+              published: Imechapishwa
+              rejected: Hakuna sahihi za kutosha
+              validating: Uthibitishaji wa kiufundi
           type_id_eq:
-            label: Type
+            label: Aina
         search_placeholder:
-          title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Search %{collection} by title, description, ID or author name.
+          title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Tafuta %{collection} kwa kichwa, maelezo, kitambulisho au jina la mwandishi.
       initiatives_settings:
         update:
-          error: An error has occurred.
-          success: The initiatives settings have been successfully updated.
+          error: Hitilafu imetokea.
+          success: Mipangilio ya mipango imesasishwa kwa ufanisi.
       menu:
-        attachments: Attachments
-        committee_members: Committee members
-        information: Information
+        attachments: Viambatisho
+        committee_members: Wajumbe wa kamati
+        information: Habari
         initiative_type_scopes: Initiative type scopes
         initiatives: Initiatives
         initiatives_menu:
