@@ -409,7 +409,7 @@ sw:
             organizer_presenter:
               not_found: 'Mratibu hakupatikana kwenye hifadhidata (ID: %{id})'
         questionnaire:
-          update: "%{user_name} updated the questionnaire for the %{meeting_name} meeting"
+          update: "%{user_name} alisasisha dodoso la mkutano wa %{meeting_name}"
       application_helper:
         filter_category_values:
           all: Wote
@@ -417,82 +417,82 @@ sw:
           all: Wote
       calendar:
         meeting_to_event:
-          read_more: Read more about this meeting
+          read_more: Soma zaidi kuhusu mkutano huu
       calendar_modal:
-        calendar_url: Calendar URL
-        copy_calendar_url: Copy
-        copy_calendar_url_clarification: Copy calendar URL to clipboard
-        copy_calendar_url_copied: Copied!
-        copy_calendar_url_description: You can see all the published meetings in your calendar application or provider. Copy and paste this URL in your calendar using the "Add new calendar from an URL" option.
-        copy_calendar_url_explanation: Please note that you are exporting a selection of meetings, as there are active filters. If you wish to export them all, reset all filters first.
-        copy_calendar_url_message: The URL was successfully copied to clipboard.
-        export_calendar: Export calendar
+        calendar_url: URL ya Kalenda
+        copy_calendar_url: Nakili
+        copy_calendar_url_clarification: Nakili URL ya kalenda kwenye ubao wa kunakili
+        copy_calendar_url_copied: Imenakiliwa!
+        copy_calendar_url_description: Unaweza kuona mikutano yote iliyochapishwa katika programu yako ya kalenda au mtoaji huduma. Nakili na ubandike URL hii kwenye kalenda yako kwa kutumia chaguo la "Ongeza kalenda mpya kutoka kwa URL".
+        copy_calendar_url_explanation: Tafadhali kumbuka kuwa unasafirisha uteuzi wa mikutano, kwa kuwa kuna vichujio vinavyotumika. Ikiwa ungependa kuzihamisha zote, weka upya vichujio vyote kwanza.
+        copy_calendar_url_message: URL ilinakiliwa kwenye ubao wa kunakili.
+        export_calendar: Hamisha kalenda
       close_meeting_reminder_mailer:
         close_meeting_reminder:
-          body: The meeting <a href="%{meeting_path}">"%{meeting_title}"</a> is pending to be closed. Please add a report of the meeting using the "Close meeting" button.
-          greetings: Greetings,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
-          hello: Hello %{username},
-          subject: You can now close the meeting "%{meeting_title}" with a report
-      conference_venues: Conference Venues
+          body: Mkutano <a href="%{meeting_path}">"%{meeting_title}"</a> unasubiri kufungwa. Tafadhali ongeza ripoti ya mkutano kwa kutumia kitufe cha "Funga mkutano".
+          greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+          hello: Hujambo %{username},
+          subject: Sasa unaweza kufunga mkutano "%{meeting_title}" kwa ripoti
+      conference_venues: Maeneo ya Mikutano
       content_blocks:
         upcoming_meetings:
-          name: Upcoming meetings
+          name: Mikutano ijayo
       directory:
         meetings:
           index:
-            meetings: Meetings
-            space_type: Participatory space
+            meetings: Mikutano
+            space_type: Nafasi shirikishi
       iframe_access_level:
-        all: All visitors
-        registered: Registered participants to this meeting
-        signed_in: Only signed-in participants
+        all: Wageni wote
+        registered: Washiriki waliojiandikisha kwenye mkutano huu
+        signed_in: Washiriki walioingia pekee
       iframe_embed_type:
-        embed_in_meeting_page: Embed in meeting page
-        none: None
-        open_in_live_event_page: Open in live event page
-        open_in_new_tab: Open URL in a new tab
+        embed_in_meeting_page: Pachika katika ukurasa wa mkutano
+        none: Hakuna
+        open_in_live_event_page: Fungua katika ukurasa wa tukio la moja kwa moja
+        open_in_new_tab: Fungua URL kwenye kichupo kipya
       last_activity:
-        meeting_updated: 'Meeting updated:'
-        new_meeting: 'New meeting:'
+        meeting_updated: 'Mkutano umesasishwa:'
+        new_meeting: 'Mkutano mpya:'
       layouts:
         live_event:
           close: funga
       mailer:
         invite_join_meeting_mailer:
           invite:
-            subject: Invitation to join a meeting
+            subject: Mwaliko wa kujiunga na mkutano
         registration_mailer:
           confirmation:
-            subject: Your meeting's registration has been confirmed
+            subject: Usajili wa mkutano wako umethibitishwa
       meeting:
-        not_allowed: You are not allowed to view this meeting.
+        not_allowed: Huruhusiwi kutazama mkutano huu.
       meeting_closes:
         edit:
           back: Nyuma
-          close: Close meeting
-          title: Close meeting
+          close: Funga mkutano
+          title: Funga mkutano
       meetings:
         calendar_modal:
-          add_to_calendar: Add to calendar
-          apple: Add to Apple calendar
-          full_details_html: For full details go to %{link}
-          google: Add to Google calendar
-          outlook: Add to Outlook calendar
+          add_to_calendar: Ongeza kwenye kalenda
+          apple: Ongeza kwenye kalenda ya Apple
+          full_details_html: Kwa maelezo kamili nenda kwa %{link}
+          google: Ongeza kwenye kalenda ya Google
+          outlook: Ongeza kwenye kalenda ya Outlook
         count:
           meetings_count:
-            one: "%{count} meeting"
-            other: "%{count} meetings"
+            one: "%{count} mkutano"
+            other: "%{count} mikutano"
         create:
-          invalid: There was a problem creating this meeting.
-          success: You have created the meeting successfully.
+          invalid: Kulikuwa na tatizo kuunda mkutano huu.
+          success: Umeanzisha mkutano.
         edit:
-          back: Back
-          title: Edit Your Meeting
-          update: Update
+          back: Nyuma
+          title: Hariri Mkutano Wako
+          update: Sasisha
         filters:
-          activity: My activity
-          all: All
-          category: Category
+          activity: Shughuli yangu
+          all: Wote
+          category: Kategoria
           date: Date
           date_values:
             all: All
@@ -553,139 +553,139 @@ sw:
           attendees: Attendees count
           contributions: Contributions count
           join: Register
-          leave: Cancel your registration
-          leave_confirmation: Are you sure you want to cancel your registration for this meeting?
-          link_available_soon: Link available soon
-          link_closed: The link to join the meeting will be available a few minutes before it starts
-          live_event: This meeting is happening right now
-          meeting_minutes: Meeting Minutes
-          micro_camera_permissions_warning: When you click on the button below, you will be asked for microphone and/or camera permissions, and you will join the videoconference
-          no_slots_available: No slots available
-          organizations: Attending organizations
-          registration_code_help_text: Your registration code
+          leave: Ghairi usajili wako
+          leave_confirmation: Je, una uhakika ungependa kughairi usajili wako wa mkutano huu?
+          link_available_soon: Kiungo kinapatikana hivi karibuni
+          link_closed: Kiungo cha kujiunga na mkutano kitapatikana dakika chache kabla ya kuanza
+          live_event: Mkutano huu unafanyika hivi sasa
+          meeting_minutes: Dakika za Mkutano
+          micro_camera_permissions_warning: Unapobofya kitufe kilicho hapa chini, utaombwa ruhusa za maikrofoni na/au kamera, na utajiunga na kongamano la video.
+          no_slots_available: Hakuna nafasi zinazopatikana
+          organizations: Kuhudhuria mashirika
+          registration_code_help_text: Nambari yako ya usajili
           registration_state:
-            validated: VALIDATED
-            validation_pending: VALIDATION PENDING
+            validated: IMETHIBITISHWA
+            validation_pending: UTHIBITISHO UNASUBIRI
           remaining_slots:
-            one: "%{count} slot remaining"
-            other: "%{count} slots remaining"
-          visit_finished: View past meeting
-          withdraw_btn_hint: You can withdraw your meeting if you change your mind. The meeting is not deleted, it will appear in the list of withdrawn meetings.
-          withdraw_confirmation_html: Are you sure you want to withdraw this meeting?<br><br><strong>This action cannot be cancelled!</strong>
-          withdraw_meeting: Withdraw meeting
+            one: "Nafasi %{count} imesalia"
+            other: "Nafasi %{count} zimesalia"
+          visit_finished: Tazama mkutano uliopita
+          withdraw_btn_hint: Unaweza kuondoa mkutano wako ikiwa utabadilisha nia yako. Mkutano haujafutwa, utaonekana kwenye orodha ya mikutano iliyoondolewa.
+          withdraw_confirmation_html: Je, una uhakika unataka kuondoa mkutano huu?<br><br><strong>Hatua hii haiwezi kughairiwa!</strong>
+          withdraw_meeting: Ondoa mkutano
         update:
-          invalid: There was a problem updating the meeting.
-          success: You have updated the meeting successfully.
+          invalid: Kulikuwa na tatizo la kusasisha mkutano.
+          success: Umesasisha mkutano kwa ufanisi
       models:
         invite:
           fields:
-            email: Email
-            name: Name
-            sent_at: Sent at
-            status: Status
+            email: Barua pepe
+            name: Jina
+            sent_at: Imetumwa saa
+            status: Hali
           status:
-            accepted: Accepted (%{at})
-            rejected: Rejected (%{at})
-            sent: Sent
+            accepted: Imekubaliwa (%{at})
+            rejected: Imekataliwa (%{at})
+            sent: Imetumwa
         meeting:
           fields:
-            closed: Closed
-            end_time: End date
+            closed: Imefungwa
+            end_time: Tarehe ya mwisho
             id: ID
-            map: Map
-            official_meeting: Official meeting
-            start_time: Start date
-            title: Title
+            map: Ramani
+            official_meeting: Mkutano rasmi
+            start_time: Tarehe ya kuanza
+            title: Kichwa
       polls:
         answers:
           index:
-            administrate: Administrate
-            title: Poll
+            administrate: Simamia
+            title: Kura ya maoni
           index_admin:
-            back_to_meeting: Back to meeting
-            title: Administrate poll
-            view_poll: View poll
+            back_to_meeting: Rudi kwenye mkutano
+            title: Simamia kura ya maoni
+            view_poll: Tazama kura
         questions:
           closed_question:
-            announcement: The replies for this question have been closed.
-            question: Question
-            question_results: Results
+            announcement: Majibu ya swali hili yamefungwa.
+            question: Swali
+            question_results: Matokeo
           index:
-            empty_questions: Throughout this meeting, some questions will be sent and you will be able to answer them. They will be displayed here.
+            empty_questions: Katika mkutano huu wote, baadhi ya maswali yatatumwa na utaweza kuyajibu. Zitaonyeshwa hapa.
           index_admin:
-            edit: Edit in the admin panel
-            question: Question
-            received_answer: received answer
-            received_answers: received answers
-            results: Results
-            send: Send
-            sent: Sent
+            edit: Hariri kwenye paneli ya msimamizi
+            question: Swali
+            received_answer: alipokea jibu
+            received_answers: kupokea majibu
+            results: Matokeo
+            send: Tuma
+            sent: Imetumwa
             statuses:
-              closed: Results sent (closed)
-              published: Sent (open)
-              unpublished: Pending to be sent
+              closed: Matokeo yametumwa (yamefungwa)
+              published: Imetumwa (imefunguliwa)
+              unpublished: Inasubiri kutumwa
           published_question:
-            max_choices_alert: There are too many choices selected
-            question: Question
-            question_replied: Question replied
-            reply_question: Reply question
+            max_choices_alert: Kuna chaguo nyingi sana zilizochaguliwa
+            question: Swali
+            question_replied: Swali lilijibu
+            reply_question: Jibu swali
       public_participants_list:
-        attending_organizations: Organizations
-        attending_participants: Participants
+        attending_organizations: Mashirika
+        attending_participants: Washiriki
         hidden_participants_count:
-          one: and %{count} more person
-          other: and %{count} more people
-      read_more: "(read more)"
+          one: na %{count} mtu zaidi
+          other: na watu %{count} zaidi
+      read_more: "(soma zaidi)"
       registration_mailer:
         confirmation:
-          confirmed_html: Your registration for the meeting <a href="%{url}">%{title}</a> has been confirmed.
-          details: You will find the meeting's details in the attachment.
-          registration_code: Your registration code is %{code}.
+          confirmed_html: Usajili wako kwa mkutano <a href="%{url}">%{title}</a> umethibitishwa.
+          details: Utapata maelezo ya mkutano katika kiambatisho.
+          registration_code: Msimbo wako wa usajili ni %{code}.
       registration_type:
-        on_different_platform: On a different platform
-        on_this_platform: On this platform
-        registration_disabled: Registration disabled
+        on_different_platform: Kwenye jukwaa tofauti
+        on_this_platform: Kwenye jukwaa hili
+        registration_disabled: Usajili umezimwa
       registrations:
         create:
-          invalid: There was a problem joining this meeting.
-          success: You have joined the meeting successfully. Because you have registered for this meeting, you will be notified if there are updates on it.
+          invalid: Kulikuwa na tatizo la kujiunga kwenye mkutano huu.
+          success: Umejiunga kwenye mkutano kwa mafanikio. Kwa sababu umejiandikisha kwa mkutano huu, utaarifiwa ikiwa kuna masasisho juu yake.
         decline_invitation:
-          invalid: There was a problem declining the invitation.
-          success: You have declined the invitation successfully.
+          invalid: Kulikuwa na tatizo la kukataa mwaliko.
+          success: Umefaulu kukataa mwaliko.
         destroy:
-          invalid: There was a problem leaving this meeting.
-          success: You have left the meeting successfully.
+          invalid: Kulikuwa na tatizo kuondoka kwenye mkutano huu.
+          success: Umeondoka kwenye mkutano kwa mafanikio.
       type_of_meeting:
-        hybrid: Hybrid
-        in_person: In person
-        online: Online
+        hybrid: Mseto
+        in_person: Kwa kibinafsi
+        online: Mtandaoni
       types:
-        private_meeting: Private meeting
-        transparent: Transparent
-        withdraw: Withdrawn
+        private_meeting: Mkutano wa kibinafsi
+        transparent: Uwazi
+        withdraw: Imetolewa
       withdraw:
-        error: An error ocurred while withdrawing the meeting.
-        success: The meeting has been withdrawn successfully.
+        error: Hitilafu ilitokea wakati wa kuondoa mkutano.
+        success: Mkutano umeondolewa kwa mafanikio.
     metrics:
       meetings:
-        description: Number of meetings created
-        object: meetings
-        title: Meetings
+        description: Idadi ya mikutano iliyoundwa
+        object: mikutano
+        title: Mikutano
     participatory_spaces:
       highlighted_meetings:
-        past_meetings: Past meetings
-        see_all: See all meetings
-        upcoming_meetings: Upcoming meetings
+        past_meetings: Mikutano iliyopita
+        see_all: Tazama mikutano yote
+        upcoming_meetings: Mikutano ijayo
     resource_links:
       meetings_through_proposals:
-        meeting_result: 'Related results:'
-        result_meeting: 'Related meetings:'
+        meeting_result: 'Matokeo yanayohusiana:'
+        result_meeting: 'Mikutano inayohusiana:'
       proposals_from_meeting:
-        meeting_proposal: 'Related proposals:'
-        proposal_meeting: 'Related meetings:'
+        meeting_proposal: 'Mapendekezo yanayohusiana:'
+        proposal_meeting: 'Mikutano inayohusiana:'
     statistics:
-      meetings_count: Meetings
+      meetings_count: Mikutano
   devise:
     mailer:
       join_meeting:
-        subject: Invitation to join a meeting
+        subject: Mwaliko wa kujiunga na mkutano
