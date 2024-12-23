@@ -39,78 +39,78 @@ sw:
             comments_enabled: Maoni yamewezeshwa
             comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
             scope_id: Upeo
-            scopes_enabled: Scopes enabled
+            scopes_enabled: Upeo umewezeshwa
           step:
-            announcement: Announcement
+            announcement: Tangazo
             comments_blocked: Comments blocked
-            creation_enabled: Participants can create debates
-            endorsements_blocked: Endorsements blocked
-            endorsements_enabled: Endorsements enabled
+            creation_enabled: Washiriki wanaweza kuunda mijadala
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
     debates:
       actions:
-        close: Close
-        confirm_destroy: Are you sure?
-        destroy: Delete
-        edit: Edit
-        new: New debate
-        title: Actions
+        close: Funga
+        confirm_destroy: Je, una uhakika?
+        destroy: Futa
+        edit: Hariri
+        new: Mjadala mpya
+        title: Vitendo
       admin:
         debate_closes:
           edit:
-            close: Close
-            title: Close debate
+            close: Funga
+            title: Funga mjadala
         debates:
           create:
-            invalid: There was a problem creating the debate.
-            success: Debate successfully created.
+            invalid: Kulikuwa na tatizo kuunda mjadala.
+            success: Mjadala umeundwa.
           destroy:
-            success: Debate successfully deleted.
+            success: Mjadala umefaulu kufutwa.
           edit:
-            title: Edit debate
-            update: Update debate
+            title: Hariri mjadala
+            update: Sasisha mjadala
           form:
-            debate_type: Debate type
-            finite: Finite (With start and end times)
-            open: Open (No start or end times)
+            debate_type: Aina ya mjadala
+            finite: Finite (Pamoja na nyakati za kuanza na mwisho)
+            open: Fungua (Hakuna saa za kuanza au za mwisho)
           index:
-            title: Debates
+            title: Mijadala
           new:
-            create: Create debate
-            title: New debate
+            create: Unda mjadala
+            title: Mjadala mpya
           update:
-            invalid: There was a problem updating this debate.
-            success: Debate successfully updated.
+            invalid: Kulikuwa na tatizo la kusasisha mjadala huu.
+            success: Mjadala umefaulu kusasishwa.
         exports:
-          comments: Comments
+          comments: Maoni
       admin_log:
         debate:
-          close: "%{user_name} closed the %{resource_name} debate on the %{space_name} space"
-          create: "%{user_name} created the %{resource_name} debate on the %{space_name} space"
-          update: "%{user_name} updated the %{resource_name} debate on the %{space_name} space"
+          close: "%{user_name} alifunga mjadala wa %{resource_name} kwenye nafasi ya %{space_name}"
+          create: "%{user_name} aliunda mjadala wa %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha mjadala wa %{resource_name} kwenye nafasi ya %{space_name}"
       debate_m:
-        commented_time_ago: Commented %{time} ago
+        commented_time_ago: Alitoa maoni %{time} iliyopita
       debates:
         close:
-          invalid: There was a problem closing the debate.
-          success: Debate successfully closed.
+          invalid: Kulikuwa na tatizo katika kufunga mjadala.
+          success: Mjadala umefungwa.
         close_debate_modal:
-          cancel: Cancel
-          description: What is the summary or conclusion of this debate?
-          send: Close debate
+          cancel: Ghairi
+          description: Nini muhtasari au hitimisho la mjadala huu?
+          send: Funga mjadala
         count:
           debates_count:
-            one: "%{count} debate"
-            other: "%{count} debates"
+            one: "Mjadala %{count}"
+            other: "%{count} mijadala"
         create:
-          invalid: There was a problem creating the debate.
-          success: Debate successfully created.
+          invalid: Kulikuwa na tatizo kuunda mjadala.
+          success: Mjadala umeundwa.
         debates:
-          empty: There are no debates yet.
-          empty_filters: There are no debates with this criteria.
+          empty: Bado hakuna mijadala.
+          empty_filters: Hakuna mijadala na vigezo hivi.
         edit:
-          back: Back
-          save: Save changes
-          title: Edit debate
+          back: Nyuma
+          save: Hifadhi mabadiliko
+          title: Hariri mjadala
         filters:
           activity: Shughuli yangu
           all: Wote
