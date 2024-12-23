@@ -540,89 +540,89 @@ sw:
         show:
           area: Eneo
           before_send_to_technical_validation_announcement: 'Kabla ya kutuma mpango wako wa uthibitisho wa kiufundi, unahitaji kuongeza wanachama %{count} zaidi kwenye kamati ya waendelezaji.<br/><br/>Shiriki kiungo hiki na watu unaotaka kuwa sehemu ya kamati yako: %{href}'
-          confirm: You are going to send the initiative for an admin to review it and publish it. Once published you will not be able to edit it. Are you sure?
+          confirm: Utatuma hatua kwa msimamizi kuikagua na kuichapisha. Baada ya kuchapishwa hutaweza kuhariri. Je, una uhakika?
           edit: Hariri
-          initiative_data: Initiative data
+          initiative_data: Data ya mpango
           scope: Upeo
-          send_to_technical_validation: Send to technical validation
-          send_to_technical_validation_announcement: If everything looks ok, click on "Send to technical validation" for an administrator to review and publish your initiative
-          signature_collection: Signature collection
+          send_to_technical_validation: Tuma kwa uthibitishaji wa kiufundi
+          send_to_technical_validation_announcement: Ikiwa kila kitu kiko sawa, bofya "Tuma kwa uthibitishaji wa kiufundi" ili msimamizi akague na kuchapisha mpango wako.
+          signature_collection: Mkusanyiko wa saini
           state: Jimbo
           type: Aina
         signatures_count:
-          one: " signature"
-          other: " signatures"
+          one: "sahihi"
+          other: "sahihi"
         vote_cabin:
-          already_voted: Already signed
-          verification_required: Verify your account to sign the initiative
-          vote: Sign
-          votes_blocked: Signing disabled
+          already_voted: Tayari umesaini
+          verification_required: Thibitisha akaunti yako ili kutia saini mpango huo
+          vote: Ishara
+          votes_blocked: Kusaini kumezimwa
         votes_count:
           count:
-            one: Signature
-            other: Signatures
+            one: Sahihi
+            other: Sahihi
       initiatives_mailer:
-        creation_subject: Your initiative '%{title}' has been created
+        creation_subject: Mpango wako '%{title}' umeundwa
         initiative_link:
-          check_initiative_details: You can see the initiative details
-          here: here
-        more_information: Here you have more information about the initiative creation process.
-        progress_report_body_for: The initiative %{title} has reached the %{percentage}% of required signatures.
-        progress_report_for: 'Summary about the initiative: %{title}'
-        promotal_committee_help: Remember that you must invite at least %{member_count} people to promoter committee. Forward the following link to invite people to the promoter committee
-        status_change_body_for: 'The initiative %{title} has changed its status to: %{state}'
-        status_change_for: The initiative %{title} has changed its status
+          check_initiative_details: Unaweza kuona maelezo ya mpango
+          here: hapa
+        more_information: Hapa una habari zaidi kuhusu mchakato wa kuunda mpango.
+        progress_report_body_for: Mpango %{title} umefikia %{percentage}% ya sahihi zinazohitajika.
+        progress_report_for: 'Muhtasari kuhusu mpango huo: %{title}'
+        promotal_committee_help: Kumbuka kwamba lazima ualike angalau watu %{member_count} kwenye kamati ya waendelezaji. Sambaza kiungo kifuatacho ili kuwaalika watu kwenye kamati ya waendelezaji
+        status_change_body_for: 'Mpango %{title} umebadilisha hali yake kuwa: %{state}'
+        status_change_for: Mpango %{title} umebadilisha hali yake
       last_activity:
-        new_initiative: 'New initiative:'
+        new_initiative: 'Mpango mpya:'
       modal:
         not_authorized:
-          authorizations_page: View authorizations
-          explanation: You need to be verified in order to create a new initiative.
-          title: Authorization required
+          authorizations_page: Tazama uidhinishaji
+          explanation: Unahitaji kuthibitishwa ili kuunda mpango mpya.
+          title: Uidhinishaji unahitajika
       pages:
         home:
           highlighted_initiatives:
-            active_spaces: Active initiatives
-            see_all_spaces: See all initiatives
+            active_spaces: Mipango hai
+            see_all_spaces: Tazama mipango yote
       show:
         badge_name:
-          accepted: Enough signatures
-          created: Created
-          discarded: Discarded
-          published: Published
-          rejected: Not enough signatures
-          validating: Technical validation
+          accepted: Saini za kutosha
+          created: Imeundwa
+          discarded: Imetupwa
+          published: Imechapishwa
+          rejected: Hakuna sahihi za kutosha
+          validating: Uthibitishaji wa kiufundi
       states:
-        accepted: Accepted
-        expired: Expired
-      unavailable_scope: Unavailable scope
+        accepted: Imekubaliwa
+        expired: Muda wake umeisha
+      unavailable_scope: Upeo haupatikani
       update:
-        error: An error has occurred.
-        success: The initiative has been successfully updated.
+        error: Hitilafu imetokea.
+        success: Mpango huo umesasishwa.
     menu:
-      initiatives: Initiatives
+      initiatives: Mipango
     resources:
       initiative:
         actions:
-          comment: Comment
+          comment: Maoni
       initiatives_type:
         actions:
-          create: Create
-          title: Actions
-          vote: Sign
+          create: Unda
+          title: Vitendo
+          vote: Ishara
   layouts:
     decidim:
       initiative_creation_header:
-        fill_data: Create
-        finish: Finish
-        promotal_committee: Promoter committee
-        select_initiative_type: Choose
+        fill_data: Unda
+        finish: Maliza
+        promotal_committee: Kamati ya wakuzaji
+        select_initiative_type: Chagua
       initiative_signature_creation_header:
-        fill_personal_data: Complete your data
-        finish: Finish
-        sms_code: SMS code verification
-        sms_phone_number: Mobile phone number
-        title: Sign %{initiative_title}
+        fill_personal_data: Kamilisha data yako
+        finish: Maliza
+        sms_code: Uthibitishaji wa nambari ya SMS
+        sms_phone_number: Nambari ya simu ya rununu
+        title: Saini %{initiative_title}
       initiatives:
         no_initiatives_yet:
-          no_initiatives_yet: No initiatives yet!
+          no_initiatives_yet: Bado hakuna mipango!
