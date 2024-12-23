@@ -107,76 +107,76 @@ sw:
         attachments: Viambatisho
         committee_members: Wajumbe wa kamati
         information: Habari
-        initiative_type_scopes: Initiative type scopes
-        initiatives: Initiatives
+        initiative_type_scopes: Mawanda ya aina ya mpango
+        initiatives: Mipango
         initiatives_menu:
-          see_initiative: See initiative
-        initiatives_settings: Settings
+          see_initiative: Tazama mpango
+        initiatives_settings: Mipangilio
         initiatives_submenu:
-          info: About this initiative
-        initiatives_types: Initiative types
-        moderations: Moderations
+          info: Kuhusu mpango huu
+        initiatives_types: Aina za uanzishaji
+        moderations: Ukadiriaji
       models:
         initiatives:
           fields:
-            created_at: Created at
+            created_at: Imeundwa saa
             id: ID
-            published_at: Published at
-            state: Status
-            supports_count: Signatures
-            title: Initiatives
+            published_at: Iliyochapishwa saa
+            state: Hali
+            supports_count: Sahihi
+            title: Mipango
         initiatives_type_scope:
           fields:
-            scope: Scope
-            supports_required: Signatures required
-          name: Initiative type scope
+            scope: Upeo
+            supports_required: Saini zinahitajika
+          name: Upeo wa aina ya mpango
         initiatives_types:
           fields:
-            created_at: Created at
-            title: Initiative types
-          name: Initiative type
+            created_at: Imeundwa saa
+            title: Aina za uanzishaji
+          name: Aina ya mpango
         initiatives_votes:
           fields:
-            date_of_birth: Date of birth
-            document_number: Document number
+            date_of_birth: Tarehe ya kuzaliwa
+            document_number: Nambari ya hati
             hash: Hash
-            initiative_end_date: End date
-            initiative_id: Initiative ID
-            initiative_signatures_count: Number of signatures
-            initiative_start_date: Start date
-            initiative_title: Initiative title
-            name_and_surname: Name and surname
-            postal_code: Postal code
-            scope: Scope
-            time_and_date: Time and date
-            timestamp: Timestamp
+            initiative_end_date: Tarehe ya mwisho
+            initiative_id: ID ya Mpango
+            initiative_signatures_count: Idadi ya saini
+            initiative_start_date: Tarehe ya kuanza
+            initiative_title: Kichwa cha mpango
+            name_and_surname: Jina kamili
+            postal_code: Msimbo wa posta
+            scope: Upeo
+            time_and_date: Wakati na tarehe
+            timestamp: Muhuri wa saa
       titles:
-        initiatives: Initiatives
-        initiatives_types: Initiative types
+        initiatives: Mipango
+        initiatives_types: Aina za uanzishaji
     events:
       initiatives:
         admin:
           initiative_sent_to_technical_validation:
-            email_intro: The initiative "%{resource_title}" has been sent to technical validation. Check it out at <a href="%{admin_initiative_url}">the admin panel</a>
-            email_outro: You have received this notification because you are an admin of the platform.
-            email_subject: Initiative "%{resource_title}" was sent to technical validation.
-            notification_title: The initiative "%{resource_title}" has been sent to technical validation. Check it out at <a href="%{admin_initiative_path}">the admin panel</a>
+            email_intro: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_url}">paneli ya msimamizi</a>
+            email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+            email_subject: Mpango "%{resource_title}" ulitumwa kwa uthibitishaji wa kiufundi.
+            notification_title: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_path}">paneli ya msimamizi</a>
         initiative_extended:
-          email_intro: The signatures end date for the initiative %{resource_title} have been extended!
-          email_outro: You have received this notification because you are following %{resource_title}. You can stop receiving notifications following the previous link.
-          email_subject: Initiative signatures end date extended!
-          notification_title: The signatures end date for the <a href="%{resource_path}">%{resource_title}</a> initiative have been extended.
+          email_intro: Tarehe ya mwisho ya sahihi kwa mpango %{resource_title} imeongezwa!
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Tarehe ya mwisho ya saini za mpango imeongezwa!
+          notification_title: Tarehe ya mwisho ya kutia sahihi kwa mpango wa <a href="%{resource_path}">%{resource_title}</a> imeongezwa.
         initiative_sent_to_technical_validation:
-          email_intro: The initiative "%{resource_title}" has been sent to technical validation. Check it out at <a href="%{admin_initiative_url}">the admin panel</a>
-          email_outro: You have received this notification because you are an admin of the platform.
-          email_subject: Initiative "%{resource_title}" was sent to technical validation.
-          notification_title: The initiative "%{resource_title}" has been sent to technical validation. Check it out at <a href="%{admin_initiative_path}">the admin panel</a>
+          email_intro: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_url}">paneli ya msimamizi</a>
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Mpango "%{resource_title}" ulitumwa kwa uthibitishaji wa kiufundi.
+          notification_title: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_path}">paneli ya msimamizi</a>
         milestone_completed:
           affected_user:
-            email_intro: Your initiative %{resource_title} has achieved the %{percentage}% of signatures!
-            email_outro: You have received this notification because you are the author of the initiative %{resource_title}.
-            email_subject: New milestone completed!
-            notification_title: Your <a href="%{resource_path}">%{resource_title}</a> initiative has achieved the %{percentage}% of signatures.
+            email_intro: Mpango wako %{resource_title} umefanikisha %{percentage}% ya sahihi!
+            email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa mpango %{resource_title}.
+            email_subject: Hatua mpya imekamilika!
+            notification_title: Mpango wako wa <a href="%{resource_path}">%{resource_title}</a> umefanikisha %{percentage}% ya sahihi.
           follower:
             email_intro: The initiative %{resource_title} has achieved the %{percentage}% of signatures!
             email_outro: You have received this notification because you are following %{resource_title}. You can stop receiving notifications following the previous link.
