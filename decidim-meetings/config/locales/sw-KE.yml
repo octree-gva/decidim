@@ -3,168 +3,168 @@ sw:
   activemodel:
     attributes:
       close_meeting:
-        attendees_count: Number of attendees
-        attending_organizations: List of organizations that attended
-        audio_url: Audio URL
-        closing_report: Minutes
-        closing_visible: Is visible
-        contributions_count: Number of contributions
-        proposal_ids: Proposals created in the meeting
-        video_url: Video URL
+        attendees_count: Idadi ya waliohudhuria
+        attending_organizations: Orodha ya mashirika yaliyohudhuria
+        audio_url: URL ya sauti
+        closing_report: Dakika
+        closing_visible: Inaonekana
+        contributions_count: Idadi ya michango
+        proposal_ids: Mapendekezo yaliyoundwa katika mkutano
+        video_url: URL ya video
       meeting:
-        address: Address
-        available_slots: Available slots for this meeting
-        customize_registration_email: Customize registration email
-        decidim_category_id: Category
-        decidim_scope_id: Scope
-        decidim_user_group_id: User group
-        description: Description
-        end_time: End time
+        address: Anwani
+        available_slots: Nafasi zinazopatikana za mkutano huu
+        customize_registration_email: Badilisha barua pepe ya usajili kukufaa
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        decidim_user_group_id: Kikundi cha watumiaji
+        description: Maelezo
+        end_time: Wakati wa mwisho
         id: ID
-        iframe_access_level: Iframe access level
-        iframe_embed_type: Iframe embed type
-        iframe_embed_type_html: Only a few services allow the "Embed in meeting page" or "Open in live event page". Note that with the "Embed in the meeting page" option on mobiles, as the screen inherits different dimensions, it will actually work as an "Open in live event page".
-        location: Location
-        location_hints: Location hints
-        online_meeting_url: Online meeting URL
-        organizer_gid: Create as
-        organizer_id: Organizer
-        private_meeting: Private meeting
-        registration_email_custom_content: Registration email custom content
-        registration_form_enabled: Registration form enabled
-        registration_terms: Registration terms
-        registration_type: Registration type
-        registration_url: Registration URL
-        registrations_enabled: Registrations enabled
-        reserved_slots: Reserved slots for this meeting
-        start_time: Start time
-        title: Title
-        transparent: Transparent
-        type_of_meeting: Type
+        iframe_access_level: Kiwango cha ufikiaji wa Iframe
+        iframe_embed_type: Aina ya kupachika Iframe
+        iframe_embed_type_html: Ni huduma chache tu zinazoruhusu "Pachika katika ukurasa wa mkutano" au "Fungua katika ukurasa wa tukio la moja kwa moja". Kumbuka kuwa kwa chaguo la "Pachika katika ukurasa wa mkutano" kwenye rununu, kwa kuwa skrini inarithi vipimo tofauti, itafanya kazi kama "Fungua ukurasa wa tukio la moja kwa moja".
+        location: Mahali
+        location_hints: Vidokezo vya eneo
+        online_meeting_url: URL ya mkutano mtandaoni
+        organizer_gid: Unda kama
+        organizer_id: Mratibu
+        private_meeting: Mkutano wa kibinafsi
+        registration_email_custom_content: Usajili wa barua pepe ya maudhui maalum
+        registration_form_enabled: Fomu ya usajili imewezeshwa
+        registration_terms: Masharti ya usajili
+        registration_type: Aina ya usajili
+        registration_url: URL ya Usajili
+        registrations_enabled: Usajili umewezeshwa
+        reserved_slots: Nafasi zilizohifadhiwa za mkutano huu
+        start_time: Wakati wa kuanza
+        title: Kichwa
+        transparent: Uwazi
+        type_of_meeting: Aina
       meeting_agenda:
-        title: Title
-        visible: Visible
+        title: Kichwa
+        visible: Inaonekana
       meeting_agenda_items:
-        description: Description
-        duration: Duration
-        title: Title
+        description: Maelezo
+        duration: Muda
+        title: Kichwa
       meeting_registration_invite:
-        email: Email
-        name: Name
+        email: Barua pepe
+        name: Jina
       validate_registration_code:
-        code: Code
+        code: Kanuni
     errors:
       models:
         meeting:
           attributes:
             iframe_embed_type:
-              not_embeddable: This URL cannot be embedded in meeting or live event page.
+              not_embeddable: URL hii haiwezi kupachikwa katika ukurasa wa mkutano au wa tukio la moja kwa moja.
             online_meeting_url:
-              url_format: Must be valid URL
+              url_format: Lazima iwe URL halali
         meeting_agenda:
           attributes:
             base:
-              too_many_minutes: The duration of the items exceed the meeting duration by %{count} minutes.
-              too_many_minutes_child: The duration of the item childs exceed the agenda item "%{parent_title}" parent duration by %{count} minutes.
+              too_many_minutes: Muda wa vipengee unazidi muda wa mkutano kwa dakika %{count}.
+              too_many_minutes_child: Muda wa kipengee ambacho mtoto hupokea huzidi muda wa mzazi wa kipengee cha ajenda "%{parent_title}" kwa dakika %{count}.
         meeting_registration_invite:
           attributes:
             email:
-              already_invited: This email account has already been invited.
+              already_invited: Akaunti hii ya barua pepe tayari imealikwa.
     models:
-      decidim/meetings/close_meeting_event: Meeting closed
-      decidim/meetings/create_meeting_event: Meeting
-      decidim/meetings/meeting_registrations_enabled_event: Registrations enabled
-      decidim/meetings/meeting_registrations_over_percentage_event: Registrations over limit
-      decidim/meetings/upcoming_meeting_event: Upcoming meeting
-      decidim/meetings/update_meeting_event: Meeting updated
+      decidim/meetings/close_meeting_event: Mkutano umefungwa
+      decidim/meetings/create_meeting_event: Mkutano
+      decidim/meetings/meeting_registrations_enabled_event: Usajili umewezeshwa
+      decidim/meetings/meeting_registrations_over_percentage_event: Usajili uliozidi kikomo
+      decidim/meetings/upcoming_meeting_event: Mkutano ujao
+      decidim/meetings/update_meeting_event: Mkutano umesasishwa
   activerecord:
     models:
       decidim/meetings/meeting:
-        one: Meeting
-        other: Meetings
+        one: Mkutano
+        other: Mikutano
       decidim/meetings/minutes:
-        one: Minutes
-        other: Minutes
+        one: Dakika
+        other: Dakika
       decidim/meetings/registration:
-        one: Registration
-        other: Registrations
+        one: Usajili
+        other: Usajili
   decidim:
     admin:
       filters:
         accepted_at_not_null:
-          label: Accepted
+          label: Imekubaliwa
           values:
-            'false': Not accepted
-            'true': Accepted
+            'false': Haikubaliki
+            'true': Imekubaliwa
         meetings:
           category_id_eq:
-            label: Category
+            label: Kategoria
           closed_at_present:
-            label: State
+            label: Jimbo
             values:
-              'false': Open
-              'true': Closed
+              'false': Fungua
+              'true': Imefungwa
           is_upcoming_true:
-            label: Date
+            label: Tarehe
             values:
-              'false': Past
-              'true': Upcoming
+              'false': Zamani
+              'true': Ijayo
           scope_id_eq:
-            label: Scope
+            label: Upeo
           with_any_origin:
-            label: Origin
+            label: Asili
             values:
-              official: Official
-              participants: Participant
-              user_group: User Groups
+              official: Rasmi
+              participants: Mshiriki
+              user_group: Vikundi vya Watumiaji
           with_any_type:
             label: Type of meeting
             values:
               hybrid: Hybrid
               in_person: In Person
-              online: Online
+              online: Mtandaoni
         rejected_at_not_null:
-          label: Rejected
+          label: Imekataliwa
           values:
             'false': Not rejected
-            'true': Rejected
+            'true': Imekataliwa
         search_placeholder:
           user_name_or_user_email_cont: Search by name or email
         sent_at_not_null:
-          label: Sent
+          label: Imetumwa
           values:
-            'false': Not sent
-            'true': Sent
+            'false': Haijatumwa
+            'true': Imetumwa
       meeting_copies:
         create:
           error: There was a problem duplicating this meeting.
           success: Meeting successfully duplicated.
         new:
-          copy: Copy
+          copy: Nakili
           title: Duplicate meeting
     components:
       meetings:
         actions:
-          comment: Comment
+          comment: Maoni
           join: Join
           reply_poll: Reply poll
-        name: Meetings
+        name: Mikutano
         settings:
           global:
-            announcement: Announcement
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
             creation_enabled_for_participants: Participants can create meetings
             default_registration_terms: Default registration terms
             enable_pads_creation: Enable pads creation
             maps_enabled: Maps enabled
             registration_code_enabled: Registration code enabled
             resources_permissions_enabled: Actions permissions can be set for each meeting
-            scope_id: Scope
-            scopes_enabled: Scopes enabled
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
             terms_and_conditions_url_for_meeting_creators: Terms and conditions URL for meeting creators
           step:
-            announcement: Announcement
+            announcement: Tangazo
             comments_blocked: Comments blocked
             creation_enabled_for_participants: Meeting creation by participants enabled
             creation_enabled_for_user_groups: Meeting creation by user groups enabled
