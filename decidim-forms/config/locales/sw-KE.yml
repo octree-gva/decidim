@@ -92,73 +92,73 @@ sw:
           matrix_row:
             matrix_row: Safu
             remove: Ondoa
-            statement: Statement
+            statement: Taarifa
           question:
-            add_answer_option: Add answer option
-            add_display_condition: Add display condition
-            add_display_condition_info: Save the form to configure display conditions
-            add_matrix_row: Add row
-            any: Any
-            collapse: Collapse
-            description: Description
-            down: Down
-            expand: Expand
-            question: Question
-            remove: Remove
-            statement: Statement
-            up: Up
+            add_answer_option: Ongeza chaguo la jibu
+            add_display_condition: Ongeza hali ya kuonyesha
+            add_display_condition_info: Hifadhi fomu ili kusanidi hali ya kuonyesha
+            add_matrix_row: Ongeza safu
+            any: Yoyote
+            collapse: Kunja
+            description: Maelezo
+            down: Chini
+            expand: Panua
+            question: Swali
+            remove: Ondoa
+            statement: Taarifa
+            up: Juu
           separator:
-            down: Down
-            remove: Remove
-            separator: Separator
-            up: Up
+            down: Chini
+            remove: Ondoa
+            separator: Kitenganishi
+            up: Juu
           title_and_description:
-            collapse: Collapse
-            description: Description
-            down: Down
-            expand: Expand
-            remove: Remove
-            title: Title
-            title_and_description: Title and description
-            up: Up
+            collapse: Kunja
+            description: Maelezo
+            down: Chini
+            expand: Panua
+            remove: Ondoa
+            title: Kichwa
+            title_and_description: Kichwa na maelezo
+            up: Juu
           update:
-            invalid: There was a problem saving the form.
-            success: Form successfully saved.
+            invalid: Kulikuwa na tatizo katika kuhifadhi fomu.
+            success: Fomu imehifadhiwa.
       admin_log:
         questionnaire:
-          update: "%{user_name} updated the %{resource_name} questionnaire"
+          update: "%{user_name} alisasisha dodoso la %{resource_name}"
       errors:
         answer:
-          body: Body cannot be blank
+          body: Mwili hauwezi kuwa tupu
       images:
         dimensions: "%{width} x %{height} px"
         processors:
-          resize_and_pad: This image will be resized and padded to %{dimensions}.
-          resize_to_fit: This image will be resized to fit %{dimensions}.
+          resize_and_pad: Picha hii itabadilishwa ukubwa na kuongezwa hadi %{dimensions}
+          resize_to_fit: Picha hii itabadilishwa ukubwa ili kutoshea %{dimensions}
       question_types:
-        files: Files
-        long_answer: Long answer
-        matrix_multiple: Matrix (Multiple option)
-        matrix_single: Matrix (Single option)
-        multiple_option: Multiple option
-        short_answer: Short answer
-        single_option: Single option
-        sorting: Sorting
-        title_and_description: Title and description
+        files: Faili
+        long_answer: Jibu refu
+        matrix_multiple: Matrix (Chaguo nyingi)
+        matrix_single: Matrix (Chaguo Moja)
+        multiple_option: Chaguo nyingi
+        short_answer: Jibu fupi
+        single_option: Chaguo moja
+        sorting: Inapanga
+        title_and_description: Kichwa na maelezo
       questionnaire_answer_presenter:
-        download_attachment: Download attachment
+        download_attachment: Pakua kiambatisho
       questionnaires:
         answer:
-          invalid: There was a problem answering the form.
-          max_choices_alert: There are too many choices selected
-          success: Form successfully answered.
+          invalid: Kulikuwa na tatizo la kujibu fomu.
+          max_choices_alert: Kuna chaguo nyingi sana zilizochaguliwa
+          success: Fomu imejibu kwa ufanisi.
         question:
-          max_choices: 'Max choices: %{n}'
+          max_choices: 'Chaguo za juu zaidi: %{n}'
         show:
           answer_questionnaire:
-            already_have_an_account?: Already have an account?
-            are_you_new?: New user?
-            sign_in_description: Log in to take the survey
+            already_have_an_account?: Je, tayari una akaunti?
+            are_you_new?: Mtumiaji mpya?
+            sign_in_description: Ingia ili kuchukua uchunguzi
             sign_up_description: Unda akaunti ya mshiriki ili kufanya utafiti
             title: Jibu fomu
           current_step: Hatua %{step}
