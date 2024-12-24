@@ -498,7 +498,7 @@ sw:
             all: Wote
             past: Zamani
             upcoming: Ijayo
-          my_meetings: My meetings
+          my_meetings: Mikutano yangu
           origin: Asili
           origin_values:
             all: Wote
@@ -513,46 +513,46 @@ sw:
             in_person: Ana kwa ana
             online: Mtandaoni
         form:
-          address_help: 'Address: used by Geocoder to find the location'
+          address_help: 'Anwani: inayotumiwa na Geocoder kupata eneo'
           available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana
-          create_as: Create meeting as
-          disclaimer: 'Disclaimer: By using an external registration system, you are aware that the organizers of %{organization} are not responsible for the data provided by the users to the external service.'
-          iframe_embed_type_html: 'Only a few services allow embedding in meeting or live event from the following domains: %{domains}'
-          location_help: 'Location: message directed to the users implying the spot to meet at'
-          location_hints_help: 'Location hints: additional info. Example: the floor of the building if it is an in-person meeting, or the meeting password if it is an online meeting with restricted access.'
-          online_meeting_url_help: 'Link: allow participants to connect directly to your meeting'
-          registration_url_help: 'Link: allow participants to go on the external service you are using for registrations'
-          select_a_category: Please select a category
-          select_a_meeting_type: Please select a meeting type
-          select_a_registration_type: Please select a registration type
-          select_an_iframe_access_level: Please select an iframe access level
+          create_as: Unda mkutano kama
+          disclaimer: 'Kanusho: Kwa kutumia mfumo wa usajili wa nje, unafahamu kuwa waandaaji wa %{organization} hawawajibikii data iliyotolewa na watumiaji kwa huduma ya nje.'
+          iframe_embed_type_html: 'Ni huduma chache tu zinazoruhusu kupachika katika mkutano au tukio la moja kwa moja kutoka kwa vikoa vifuatavyo: %{domains}'
+          location_help: 'Mahali: ujumbe unaoelekezwa kwa watumiaji unaoashiria mahali pa kukutana'
+          location_hints_help: 'Vidokezo vya eneo: maelezo ya ziada. Mfano: sakafu ya jengo ikiwa ni mkutano wa ana kwa ana, au nenosiri la mkutano ikiwa ni mkutano wa mtandaoni ambao ufikiaji umezuiwa.'
+          online_meeting_url_help: 'Kiungo: waruhusu washiriki kuunganishwa moja kwa moja kwenye mkutano wako'
+          registration_url_help: 'Kiungo: waruhusu washiriki kuendelea na huduma ya nje unayotumia kwa usajili'
+          select_a_category: Tafadhali chagua aina
+          select_a_meeting_type: Tafadhali chagua aina ya mkutano
+          select_a_registration_type: Tafadhali chagua aina ya usajili
+          select_an_iframe_access_level: Tafadhali chagua kiwango cha ufikiaji wa iframe
         index:
-          click_here: See all meetings
-          new_meeting: New meeting
-          see_all: See all meetings
-          see_all_withdrawn: See all withdrawn meetings
-          text_banner: You are viewing the list of meetings withdrawn by their authors. %{go_back_link}.
+          click_here: Tazama mikutano yote
+          new_meeting: Mkutano mpya
+          see_all: Tazama mikutano yote
+          see_all_withdrawn: Tazama mikutano yote iliyoondolewa
+          text_banner: Unatazama orodha ya mikutano iliyoondolewa na waandishi wake. %{go_back_link}.
         meeting:
-          close_meeting: Close meeting
-          edit_close_meeting: Edit meeting report
-          edit_meeting: Edit meeting
-          join_meeting: Join meeting
-          reply_poll: Reply poll
-          view_poll: View poll
+          close_meeting: Funga mkutano
+          edit_close_meeting: Badilisha ripoti ya mkutano
+          edit_meeting: Hariri mkutano
+          join_meeting: Jiunge na mkutano
+          reply_poll: Kura ya kujibu
+          view_poll: Tazama kura
         meetings:
-          no_meetings_warning: No meetings match your search criteria or there is not any meeting scheduled.
-          upcoming_meetings_warning: Currently, there are no scheduled meetings, but here you can find all the past meetings listed.
+          no_meetings_warning: Hakuna mikutano inayolingana na vigezo vyako vya utafutaji au hakuna mkutano wowote ulioratibiwa.
+          upcoming_meetings_warning: Hivi sasa, hakuna mikutano iliyoratibiwa, lakini hapa unaweza kupata mikutano yote iliyopita iliyoorodheshwa.
         new:
-          back: Back
-          create: Create
-          title: Create Your Meeting
+          back: Nyuma
+          create: Unda
+          title: Tengeneza Mkutano Wako
         registration_confirm:
-          cancel: Cancel
-          confirm: Confirm
+          cancel: Ghairi
+          confirm: Thibitisha
         show:
-          attendees: Attendees count
-          contributions: Contributions count
-          join: Register
+          attendees: Wahudhuriaji wanahesabu
+          contributions: Idadi ya michango
+          join: Sajili
           leave: Ghairi usajili wako
           leave_confirmation: Je, una uhakika ungependa kughairi usajili wako wa mkutano huu?
           link_available_soon: Kiungo kinapatikana hivi karibuni
