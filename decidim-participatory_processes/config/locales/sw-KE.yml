@@ -205,262 +205,262 @@ sw:
       participatory_process_step_activations:
         create:
           error: Kulikuwa na tatizo katika kuwezesha awamu hii ya mchakato shirikishi.
-          success: Participatory process phase successfully activated.
+          success: Awamu ya mchakato shirikishi imewezeshwa kuwezesha.
       participatory_process_steps:
         create:
-          error: There was a problem creating a new participatory process phase.
-          success: Participatory process phase successfully created.
-        default_title: Introduction
+          error: Kulikuwa na tatizo kuunda awamu mpya ya mchakato shirikishi.
+          success: Awamu ya mchakato shirikishi imeundwa.
+        default_title: Utangulizi
         destroy:
           error:
-            active_step: Cannot delete the active phase.
-            last_step: Cannot delete the last phase of a process.
-          success: Participatory process phase successfully deleted.
+            active_step: Haiwezi kufuta awamu inayotumika.
+            last_step: Haiwezi kufuta awamu ya mwisho ya mchakato.
+          success: Awamu ya mchakato shirikishi imefutwa.
         edit:
           cta_deprecated:
             body_html: |-
-              Configuring the CTA through the Phase of the participatory process is deprecated with the new design.
-              Now this is done in the <b>Landing Page</b>, using the <b>Hero and image</b> content block.
-              We have left it here for you to migrate the CTAs that you need. The fields <i>Call to action path</i> and
-              <i>Call to action text</i> will be removed in the next version.
-            title: CTA deprecated
-          title: Edit participatory process phase
-          update: Update
+              Usanidi wa CTA kupitia Awamu ya mchakato shirikishi umeacha kutumika na muundo mpya.
+              Sasa hii inafanywa katika <b>Ukurasa wa Kutua</b>, kwa kutumia <b>Shujaa na picha</b> kuzuia maudhui.
+              Tumeiacha hapa ili uhamishe CTA unazohitaji. Sehemu za <i>Wito kwa njia ya kitendo</i> na
+              <i>Maandishi ya mwito wa kuchukua hatua</i> yataondolewa katika toleo linalofuata.
+            title: CTA imeacha kutumika
+          title: Hariri awamu ya mchakato shirikishi
+          update: Sasisha
         index:
-          steps_title: Phases
+          steps_title: Awamu
         new:
-          create: Create
-          title: New participatory process phase
+          create: Unda
+          title: Awamu mpya ya mchakato shirikishi
         ordering:
-          error: There was a problem in reordering these phases of the participatory process.
+          error: Kulikuwa na tatizo katika kupanga upya awamu hizi za mchakato shirikishi.
         update:
-          error: There was a problem updating this phase of the participatory process.
-          success: Participatory phase successfully updated.
+          error: Kulikuwa na tatizo la kusasisha awamu hii ya mchakato shirikishi.
+          success: Awamu shirikishi imesasishwa.
       participatory_process_types:
         create:
-          error: There was a problem creating a new process type.
-          success: Process type successfully created.
+          error: Kulikuwa na tatizo la kuunda aina mpya ya mchakato
+          success: Aina ya mchakato imeundwa.
         destroy:
-          success: Process type successfully deleted.
+          success: Aina ya mchakato imefutwa.
         edit:
-          title: Edit process type
-          update: Update
+          title: Badilisha aina ya mchakato
+          update: Sasisha
         new:
-          create: Create
-          title: New process type
+          create: Unda
+          title: Aina mpya ya mchakato
         update:
-          error: There was a problem updating this process type.
-          success: Process type successfully updated.
+          error: Kulikuwa na tatizo la kusasisha aina hii ya mchakato.
+          success: Aina ya mchakato imesasishwa.
       participatory_process_user_roles:
         create:
-          error: There was a problem adding a participant for this participatory process.
-          success: Admin successfully added to this participatory process.
+          error: Kulikuwa na tatizo la kuongeza mshiriki kwa mchakato huu shirikishi.
+          success: Msimamizi aliongeza kwa mchakato huu shirikishi.
         destroy:
-          success: Admin successfully removed from this participatory process.
+          success: Msimamizi amefaulu kuondolewa kwenye mchakato huu shirikishi.
         edit:
-          title: Update participatory process admin
-          update: Update
+          title: Sasisha msimamizi wa mchakato shirikishi
+          update: Sasisha
         index:
-          process_admins_title: Participatory process admins
+          process_admins_title: Wasimamizi wa mchakato shirikishi
         new:
-          create: Create
-          title: New participatory process admin
+          create: Unda
+          title: Msimamizi mpya wa mchakato shirikishi
         update:
-          error: There was a problem updating an admin for this participatory process.
-          success: Admin successfully updated for this participatory process.
+          error: Kulikuwa na tatizo la kusasisha msimamizi kwa mchakato huu shirikishi.
+          success: Msimamizi amesasisha kwa mchakato huu shirikishi.
       participatory_processes:
         create:
-          error: There was a problem creating a new participatory process.
-          success: Participatory process successfully created. Configure now its phases.
+          error: Kulikuwa na tatizo katika kuunda mchakato mpya shirikishi.
+          success: Mchakato shirikishi umeundwa. Sanidi sasa awamu zake.
         edit:
-          update: Update
+          update: Sasisha
         index:
-          private: Private
-          public: Public
-          published: Published
-          unpublished: Unpublished
+          private: Privat
+          public: Hadharani
+          published: Imechapishwa
+          unpublished: Haijachapishwa
         new:
-          create: Create
-          title: New participatory process
+          create: Unda
+          title: Mchakato mpya shirikishi
         update:
-          error: There was a problem updating this participatory process.
-          success: Participatory process successfully updated.
+          error: Kulikuwa na tatizo la kusasisha mchakato huu shirikishi.
+          success: Mchakato shirikishi umesasishwa.
       participatory_processes_copies:
         create:
-          error: There was a problem duplicating this participatory process.
-          success: Participatory process successfully duplicated.
+          error: Kulikuwa na tatizo katika kunakili mchakato huu shirikishi.
+          success: Mchakato shirikishi umefaulu kunakiliwa.
       participatory_processes_group:
         create:
-          error: There was a problem creating a new participatory process group.
-          success: Participatory process group successfully created.
+          error: Kulikuwa na tatizo la kuunda kikundi kipya cha mchakato shirikishi.
+          success: Kikundi cha mchakato shirikishi kimeundwa.
       titles:
-        participatory_process_groups: Participatory process groups
-        participatory_process_types: Participatory process types
-        participatory_processes: Participatory processes
+        participatory_process_groups: Vikundi vya mchakato shirikishi
+        participatory_process_types: Aina za mchakato shirikishi
+        participatory_processes: Michakato shirikishi
       users:
         resend_invitation:
-          error: There was a problem resending the invitation.
-          success: Invitation successfully resent.
+          error: Kulikuwa na tatizo la kutuma mwaliko tena.
+          success: Mwaliko umetumwa tena.
     admin_log:
       participatory_process:
-        create: "%{user_name} created the %{resource_name} participatory process"
-        duplicate: "%{user_name} duplicated the %{resource_name} participatory process"
-        export: "%{user_name} exported the %{resource_name} participatory process"
-        import: "%{user_name} imported the %{resource_name} participatory process"
-        publish: "%{user_name} published the %{resource_name} participatory process"
-        unpublish: "%{user_name} unpublished the %{resource_name} participatory process"
-        update: "%{user_name} updated the %{resource_name} participatory process"
+        create: "%{user_name} aliunda mchakato shirikishi wa %{resource_name}"
+        duplicate: "%{user_name} alinakili mchakato shirikishi wa %{resource_name}"
+        export: "%{user_name} alihamisha mchakato shirikishi wa %{resource_name}"
+        import: "%{user_name} aliingiza %{resource_name} mchakato shirikishi"
+        publish: "%{user_name} alichapisha mchakato shirikishi wa %{resource_name}"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa mchakato shirikishi wa %{resource_name}"
+        update: "%{user_name} alisasisha mchakato shirikishi wa %{resource_name}"
       participatory_process_group:
-        create: "%{user_name} created the %{resource_name} participatory process group"
-        update: "%{user_name} updated the %{resource_name} participatory process group"
+        create: "%{user_name} aliunda %{resource_name} kikundi cha mchakato shirikishi"
+        update: "%{user_name} alisasisha kikundi cha mchakato shirikishi %{resource_name}"
       participatory_process_step:
-        activate: "%{user_name} activated the %{resource_name} phase in the %{space_name} participatory process"
-        create: "%{user_name} created the %{resource_name} phase in the %{space_name} participatory process"
-        delete: "%{user_name} deleted the %{resource_name} phase in the %{space_name} participatory process"
-        update: "%{user_name} updated the %{resource_name} phase in the %{space_name} participatory process"
+        activate: "%{user_name} aliwezesha awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        create: "%{user_name} aliunda awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        delete: "%{user_name} alifuta awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        update: "%{user_name} alisasisha awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
       participatory_process_type:
-        create: "%{user_name} created the %{resource_name} participatory process type"
-        delete: "%{user_name} deleted the %{resource_name} participatory process type"
-        update: "%{user_name} updated the %{resource_name} participatory process type"
+        create: "%{user_name} aliunda %{resource_name} aina ya mchakato shirikishi"
+        delete: "%{user_name} alifuta %{resource_name} aina ya mchakato shirikishi"
+        update: "%{user_name} alisasisha aina ya mchakato shirikishi %{resource_name}"
       participatory_process_user_role:
-        create: "%{user_name} invited the participant %{resource_name} to the %{space_name} participatory process"
-        delete: "%{user_name} removed the participant %{resource_name} from the %{space_name} participatory process"
-        update: "%{user_name} changed the role of the participant %{resource_name} in the %{space_name} participatory process"
+        create: "%{user_name} alimwalika mshiriki %{resource_name} kwenye mchakato shirikishi wa %{space_name}"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kutoka kwa mchakato shirikishi wa %{space_name}"
+        update: "%{user_name} alibadilisha jukumu la mshiriki %{resource_name} katika mchakato shirikishi wa %{space_name}"
     events:
       participatory_process:
         role_assigned:
-          email_intro: You have been assigned as %{role} for participatory process "%{resource_title}".
-          email_outro: You have received this notification because you are %{role} of the "%{resource_title}" participatory process.
-          email_subject: You have been assigned as %{role} for "%{resource_title}".
-          notification_title: You have been assigned as %{role} for participatory process <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: Umepewa kama %{role} kwa mchakato shirikishi "%{resource_title}".
+          email_outro: Umepokea arifa hii kwa sababu wewe ni %{role} wa mchakato shirikishi wa "%{resource_title}".
+          email_subject: Umepewa kama %{role} ya "%{resource_title}".
+          notification_title: Umepewa kama %{role} kwa mchakato shirikishi <a href="%{resource_url}">%{resource_title}</a>.
         step_activated:
-          email_intro: 'The %{resource_title} phase is now active for %{participatory_space_title}. You can see it from this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: An update to %{participatory_space_title}
-          notification_title: The %{resource_title} phase is now active for <a href="%{resource_path}">%{participatory_space_title}</a>
+          email_intro: 'Awamu ya %{resource_title} sasa inatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Awamu ya %{resource_title} sasa inatumika kwa <a href="%{resource_path}">%{participatory_space_title}</a>
         step_changed:
-          email_intro: 'The dates for the %{resource_title} phase at %{participatory_space_title} have been updated. You can see it from this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: An update to %{participatory_space_title}
-          notification_title: The dates for the <a href="%{resource_path}">%{resource_title}</a> phase at <a href="%{participatory_space_url}">%{participatory_space_title}</a> have been updated.
+          email_intro: 'Tarehe za awamu ya %{resource_title} katika %{participatory_space_title} zimesasishwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Tarehe za awamu ya <a href="%{resource_path}">%{resource_title}</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a> zimesasishwa.
     help:
       participatory_spaces:
         participatory_processes:
-          contextual: "<p>A <strong>participatory process</strong> is a sequence of participatory activities (e.g. first filling out a survey, then making proposals, discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.</p> <p>Examples of participatory processes are: a process of electing committee members (where candidatures are first presented, then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm, the design of an urban space or the production of a public policy plan.</p>\n"
-          page: "<p>A <strong>participatory process</strong> is a sequence of participatory activities (e.g. first filling out a survey, then making proposals, discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.</p> <p>Examples of participatory processes are: a process of electing committee members (where candidatures are first presented, then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm, the design of an urban space or the production of a public policy plan.</p>\n"
-          title: What is a participatory process?
+          contextual: "<p>Mchakato shirikishi</strong> ni mfuatano wa shughuli shirikishi (k.m. kwanza kujaza utafiti, kisha kutoa mapendekezo, kuyajadili ana kwa ana au mikutano ya mtandaoni, na hatimaye kuyapa kipaumbele) na lengo la kufafanua na kufanya uamuzi juu ya mada maalum.</p> <p>Mifano ya michakato shirikishi ni: mchakato wa kuchagua wajumbe wa kamati (ambapo wagombea huwasilishwa kwanza, kisha kujadiliwa na hatimaye mgombea kuchaguliwa), bajeti shirikishi (ambapo mapendekezo yanatolewa, yanathaminiwa kiuchumi na kupigiwa kura kwa fedha zilizopo), mchakato wa kupanga mikakati, utayarishaji shirikishi wa kanuni au kanuni, muundo wa eneo la mijini au utengenezaji wa mpango wa sera ya umma.</p>"
+          page: "<p>Mchakato shirikishi</strong> ni mfuatano wa shughuli shirikishi (k.m. kwanza kujaza utafiti, kisha kutoa mapendekezo, kuyajadili ana kwa ana au mikutano ya mtandaoni, na hatimaye kuyapa kipaumbele) na lengo la kufafanua na kufanya uamuzi juu ya mada maalum.</p> <p>Mifano ya michakato shirikishi ni: mchakato wa kuchagua wajumbe wa kamati (ambapo wagombea huwasilishwa kwanza, kisha kujadiliwa na hatimaye mgombea kuchaguliwa), bajeti shirikishi (ambapo mapendekezo yanatolewa, yanathaminiwa kiuchumi na kupigiwa kura kwa fedha zilizopo), mchakato wa kupanga mikakati, utayarishaji shirikishi wa kanuni au kanuni, muundo wa eneo la mijini au utengenezaji wa mpango wa sera ya umma.</p>"
+          title: Mchakato shirikishi ni upi?
     log:
       value_types:
         participatory_process_type_presenter:
-          not_found: 'The process type was not found on the database (ID: %{id}).'
+          not_found: 'Aina ya mchakato haikupatikana kwenye hifadhidata (ID: %{id}).'
     menu:
-      processes: Processes
+      processes: Michakato
     metrics:
       participatory_processes:
-        description: Number of participatory processes in this organization
-        object: participatory processes
-        title: Participatory processes
+        description: Idadi ya michakato shirikishi katika shirika hili
+        object: michakato shirikishi
+        title: Michakato shirikishi
     participatory_process_groups:
       content_blocks:
         extra_data:
-          developer_group: Promoted by
+          developer_group: Imekuzwa na
           name: Metadata
-          participatory_scope: What is decided
-          participatory_structure: How is it decided
-          target: Who participates
+          participatory_scope: Nini kinaamuliwa
+          participatory_structure: Inaamuliwa vipi
+          target: Nani anashiriki
         html:
-          name: HTML block
+          name: Kizuizi cha HTML
         html_1:
-          name: First HTML block
+          name: Kizuizi cha kwanza cha HTML
         html_2:
-          name: Second HTML block
+          name: Kizuizi cha pili cha HTML
         html_3:
-          name: Third HTML block
+          name: Kizuizi cha tatu cha HTML
         main_data:
-          name: Title and description
+          name: Kichwa na maelezo
         participatory_processes:
-          active: Active participatory processes
-          name: Participatory processes
+          active: Michakato shirikishi hai
+          name: Michakato shirikishi
         stats:
-          name: Statistics
+          name: Takwimu
         title:
-          meta_scope: Scope
+          meta_scope: Upeo
           participatory_processes:
-            one: 1 process
-            other: "%{count} processes"
+            one: '%{count} michakato'
+            other: "%{count} michakato"
       show:
-        title: Participatory process groups
+        title: Vikundi vya mchakato shirikishi
     participatory_process_steps:
       index:
-        process_steps: Process phases
+        process_steps: Awamu za mchakato
     participatory_processes:
       admin:
         content_blocks:
           highlighted_processes:
-            active: Active
-            all: All
-            max_results: Maximum amount of elements to show
-            selection_criteria: Selection criteria
+            active: Inayotumika
+            all: Wote
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
+            selection_criteria: Vigezo vya uteuzi
         new_import:
           accepted_types:
             json: JSON
         participatory_process_copies:
           form:
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
         participatory_process_groups:
           form:
             metadata: Metadata
-            title: About this process
-            visibility: Visibility
+            title: Kuhusu mchakato huu
+            visibility: Mwonekano
         participatory_process_imports:
           form:
-            document_legend: Add a document
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            document_legend: Ongeza hati
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
         participatory_process_steps:
           form:
-            cta_path_help_html: 'Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. If not set, the button will not be shown. Example: %{url}'
-            cta_text_help: If not set, the button will not be shown.
+            cta_path_help_html: 'Tumia njia zisizo kamili, sio URL kamili hapa. Inakubali herufi, nambari, deshi na mikwaruzo, na lazima ianze na herufi. Ikiwa haijawekwa, kitufe hakitaonyeshwa. Mfano: %{url}'
+            cta_text_help: Ikiwa haijawekwa, kitufe hakitaonyeshwa.
         participatory_processes:
           form:
-            announcement_help: The text you enter here will be shown to the user right below the process information.
-            duration: Duration
-            filters: Filters
-            images: Images
+            announcement_help: Maandishi utakayoingiza hapa yataonyeshwa kwa mtumiaji chini ya maelezo ya mchakato.
+            duration: Muda
+            filters: Vichujio
+            images: Picha
             metadata: Metadata
-            other: Other
-            related_processes: Related processes
-            scope_type_max_depth_help: Restrict the scope filter depth; The filter will show from general to the selected scope type.
-            select_an_area: Select an Area
-            select_participatory_process_type: Select a process type
-            select_process_group: Select a process group
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
-            title: General Information
-            visibility: Visibility
+            other: Nyingine
+            related_processes: Michakato inayohusiana
+            scope_type_max_depth_help: Zuia kina cha kichujio cha upeo; Kichujio kitaonyesha kutoka kwa jumla hadi aina iliyochaguliwa ya upeo.
+            select_an_area: Chagua Eneo
+            select_participatory_process_type: Chagua aina ya mchakato
+            select_process_group: Chagua kikundi cha mchakato
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+            title: Taarifa za Jumla
+            visibility: Mwonekano
       content_blocks:
         extra_data:
-          name: Phase & duration
+          name: Awamu na muda
         hero:
-          name: Hero image and CTA
+          name: Picha ya shujaa na CTA
         highlighted_processes:
-          name: Highlighted processes
+          name: Michakato iliyoangaziwa
         related_processes:
-          name: Related processes
+          name: Michakato inayohusiana
       index:
-        title: Participatory processes
+        title: Michakato shirikishi
       last_activity:
-        new_participatory_process: 'New participatory process:'
+        new_participatory_process: 'Mchakato mpya shirikishi:'
       pages:
         home:
           highlighted_processes:
-            active_spaces: Active processes
-            see_all_spaces: See all processes
+            active_spaces: Michakato inayofanya kazi
+            see_all_spaces: Tazama michakato yote
       participatory_process_steps:
         index:
-          back_to_process: Back to the process page
+          back_to_process: Rudi kwenye ukurasa wa mchakato
       participatory_processes:
         description:
-          area_name: Area
-          data: Process data
+          area_name: Eneo
+          data: Mchakato wa data
           developer_group: Promoter group
           local_area: Organization Area
           meta_scope: Scope
