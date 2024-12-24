@@ -493,28 +493,28 @@ sw:
           activity: Shughuli yangu
           all: Wote
           category: Kategoria
-          date: Date
+          date: Tarehe
           date_values:
-            all: All
-            past: Past
-            upcoming: Upcoming
+            all: Wote
+            past: Zamani
+            upcoming: Ijayo
           my_meetings: My meetings
-          origin: Origin
+          origin: Asili
           origin_values:
-            all: All
-            official: Official
-            participants: Participants
-            user_group: Groups
-          search: Search
-          type: Type
+            all: Wote
+            official: Rasmi
+            participants: Washiriki
+            user_group: Vikundi
+          search: Tafuta
+          type: Aina
           type_values:
-            all: All
-            hybrid: Hybrid
-            in_person: In-person
-            online: Online
+            all: Wote
+            hybrid: Mseto
+            in_person: Ana kwa ana
+            online: Mtandaoni
         form:
           address_help: 'Address: used by Geocoder to find the location'
-          available_slots_help: Leave it to 0 if you have unlimited slots available
+          available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana
           create_as: Create meeting as
           disclaimer: 'Disclaimer: By using an external registration system, you are aware that the organizers of %{organization} are not responsible for the data provided by the users to the external service.'
           iframe_embed_type_html: 'Only a few services allow embedding in meeting or live event from the following domains: %{domains}'
