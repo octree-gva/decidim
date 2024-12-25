@@ -3,83 +3,83 @@ sw:
   activemodel:
     attributes:
       sortition:
-        additional_info: Sortition information
-        decidim_category_id: Categories of the set of proposals in which you want to apply the draw
-        decidim_proposals_component_id: Proposals set
-        dice: Result of die roll. Roll a 6-sided die, or look for another random way to generate a number from 1 to 6, and enter here the resulting number in front of some witnesses. This contributes to the quality and guarantees of the randomness of the result
-        target_items: Number of proposals to be selected (indicates the number of proposals you want to be selected by drawing lots of the group of proposals you have previously chosen)
-        title: Title
-        witnesses: Witnesses
+        additional_info: Maelezo ya kupanga
+        decidim_category_id: Kategoria za seti ya mapendekezo ambayo ungependa kutumia droo
+        decidim_proposals_component_id: Mapendekezo yamewekwa
+        dice: Matokeo ya roll ya kufa. Pindua kificho chenye pande 6, au utafute njia nyingine nasibu ya kutengeneza nambari kutoka 1 hadi 6, na uweke hapa nambari inayotokana mbele ya baadhi ya mashahidi. Hii inachangia ubora na dhamana ya bahati nasibu ya matokeo
+        target_items: Idadi ya mapendekezo ya kuchaguliwa (inaonyesha idadi ya mapendekezo unayotaka kuchaguliwa kwa kuchora kura ya kundi la mapendekezo uliyochagua hapo awali)
+        title: Kichwa
+        witnesses: Mashahidi
     models:
-      decidim/sortitions/create_sortition_event: Sortition
+      decidim/sortitions/create_sortition_event: Upangaji
   activerecord:
     models:
       decidim/sortitions/sortition:
-        one: Sortition
-        other: Sortitions
+        one: Upangaji
+        other: Upangaji
   decidim:
     components:
       sortitions:
         actions:
-          comment: Comment
-        name: Sortitions
+          comment: Maoni
+        name: Upangaji
         settings:
           global:
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
     events:
       sortitions:
         sortition_created:
-          email_intro: The sortition "%{resource_title}" has been added to "%{participatory_space_title}" that you are following.
-          email_outro: You have received this notification because you are following "%{participatory_space_title}". You can unfollow it from the previous link.
-          email_subject: New sortition added to %{participatory_space_title}
-          notification_title: The sortition <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title}
+          email_intro: Upangaji "%{resource_title}" umeongezwa kwa "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Upangaji mpya umeongezwa kwa %{participatory_space_title}
+          notification_title: Upangaji <a href="%{resource_path}">%{resource_title}</a> umeongezwa kwa %{participatory_space_title}
     sortitions:
       admin:
         actions:
-          destroy: Cancel the sortition
-          edit: Edit
-          new_sortition: New sortition
-          show: Sortition details
+          destroy: Ghairi upangaji
+          edit: Hariri
+          new_sortition: Upangaji mpya
+          show: Maelezo ya upangaji
         models:
           sortition:
             fields:
-              category: Category
-              created_at: Creation date
-              decidim_proposals_component: Proposals component
-              dice: Dice
-              reference: Reference
-              request_timestamp: Draw time
-              seed: Seed
-              target_items: Items to select
-              title: Title
+              category: Kategoria
+              created_at: Tarehe ya kuundwa
+              decidim_proposals_component: Sehemu ya mapendekezo
+              dice: Kete
+              reference: Rejea
+              request_timestamp: Wakati wa kuchora
+              seed: Mbegu
+              target_items: Vipengee vya kuchagua
+              title: Kichwa
         sortitions:
           confirm_destroy:
-            confirm_destroy: Are you sure you want to cancel this sortition?
-            destroy: Cancel sortition
-            title: Cancellation of the sortition
+            confirm_destroy: Je, una uhakika unataka kughairi upangaji huu?
+            destroy: Ghairi upangaji
+            title: Kughairi upangaji
           create:
-            error: There was a problem creating a new sortition.
-            success: Sortition successfully created.
+            error: Kulikuwa na tatizo la kuunda upangaji mpya.
+            success: Upangaji umefanikiwa.
           destroy:
-            error: Cannot cancel the sortition.
-            success: Sortition successfully cancelled.
+            error: Haiwezi kughairi upangaji.
+            success: Upangaji umeghairiwa.
           edit:
-            title: Update the information about the sortition
-            update: Update
+            title: Sasisha maelezo kuhusu upangaji
+            update: Sasisha
           form:
-            all_categories: All categories
-            select_proposal_component: Select the proposals set
+            all_categories: Kategoria zote
+            select_proposal_component: Chagua seti ya mapendekezo
           index:
-            title: Sortitions
+            title: Upangaji
           new:
-            confirm: By pressing the next button the platform will record the date and time (with precision of seconds) and together with the dice roll, this information will be used to generate a random selection. The action will be irreversible, once the button is clicked the result of this draw will be published, together with the data entered in this form and cannot be modified, please check the content carefully.
-            create: Create
-            title: New sortition
+            confirm: Kwa kubofya kitufe kifuatacho jukwaa litarekodi tarehe na saa (kwa usahihi wa sekunde) na pamoja na kukunja kete, maelezo haya yatatumika kutengeneza uteuzi nasibu. Kitendo hakitaweza kutenduliwa, mara tu kitufe kitakapobofya, matokeo ya droo hii yatachapishwa, pamoja na data iliyoingizwa katika fomu hii na haiwezi kurekebishwa, tafadhali angalia maudhui kwa makini.
+            create: Unda
+            title: Upangaji mpya
           show:
-            selected_proposals: Proposals selected for draw
+            selected_proposals: Mapendekezo yaliyochaguliwa kwa kuchora
           update:
-            error: There was a problem updating the sortition.
+            error: Kulikuwa na tatizo la kusasisha upangaji.
             success: Sortition successfully updated.
       admin_log:
         sortition:
@@ -92,19 +92,19 @@ sw:
             one: 1 proposal
             other: "%{count} proposals"
         filters:
-          active: Active
-          all: All
+          active: Inayotumika
+          all: Wote
           cancelled: Cancelled
-          category: Category
-          state: Status
+          category: Kategoria
+          state: Hali
         index:
           empty: There are no sortitions yet.
         linked_sortitions:
           selected_proposals: Selected proposals
         orders:
           label: 'Order sortitions by:'
-          random: Random
-          recent: Recent
+          random: Nasibu
+          recent: Hivi karibuni
         results_count:
           count:
             one: Selected proposal
