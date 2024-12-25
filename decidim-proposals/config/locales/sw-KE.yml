@@ -519,66 +519,66 @@ sw:
             cancel: Ghairi
             change_category: Badilisha kategoria
             change_scope: Badilisha upeo
-            merge: Merge into a new one
-            merge_button: Merge
-            publish: Publish
-            publish_answers: Publish answers
-            select_component: Select a component
-            select_valuators: Select one or more valuators
-            selected: selected
-            split: Split proposals
-            split_button: Split
-            statuses: Statuses
-            title: Proposals
-            unassign_from_valuator: Unassign from valuator
-            unassign_from_valuator_button: Unassign
-            update: Update
-            update_scope_button: Update Scope
+            merge: Unganisha katika mpya
+            merge_button: Unganisha
+            publish: Chapisha
+            publish_answers: Chapisha majibu
+            select_component: Chagua sehemu
+            select_valuators: Chagua wakadiriaji mmoja au zaidi
+            selected: iliyochaguliwa
+            split: Pendekeza mapendekezo
+            split_button: Gawanya
+            statuses: Hadhi
+            title: Mapendekezo
+            unassign_from_valuator: Batilisha ugawaji kutoka kwa mthamini
+            unassign_from_valuator_button: Batilisha kukabidhiwa
+            update: Sasisha
+            update_scope_button: Sasisha Upeo
           new:
-            create: Create
-            title: Create proposal
+            create: Unda
+            title: Tengeneza pendekezo
           publish_answers:
-            number_of_proposals: Answers for %{number} proposal's will be published?
-            select_a_proposal: Please select a proposal.
+            number_of_proposals: Majibu ya mapendekezo %{number} yatachapishwa?
+            select_a_proposal: Tafadhali chagua pendekezo.
           show:
-            amendments_count: Amendments count
-            assigned_valuators: Assigned valuators
-            body: Body
-            comments_count: Comments count
-            documents: Documents
-            endorsements_count: Endorsements count
-            endorsers: Endorsers
-            link: See proposal
+            amendments_count: Idadi ya marekebisho
+            assigned_valuators: Wakadiriaji waliokabidhiwa
+            body: Mwili
+            comments_count: Idadi ya maoni
+            documents: Nyaraka
+            endorsements_count: Idadi ya uidhinishaji
+            endorsers: Waidhinishaji
+            link: Tazama pendekezo
             n_more_endorsers:
-              one: and 1 more
-              other: and %{count} more
-            photos: Photos
-            ranking: "%{ranking} of %{total}"
-            related_meetings: Related meetings
-            remove_assignment: Remove assignment
-            remove_assignment_confirmation: Are you sure you want to remove the valuator from this proposal?
-            valuators: Valuators
-            votes_count: Votes count
+              one: na 1 zaidi
+              other: na %{count} zaidi
+            photos: Picha
+            ranking: "%{ranking} ya %{total}"
+            related_meetings: Mikutano inayohusiana
+            remove_assignment: Ondoa mgawo
+            remove_assignment_confirmation: Je, una uhakika unataka kumwondoa mthamini kutoka kwa pendekezo hili?
+            valuators: Wathamini
+            votes_count: Idadi ya kura
           update_category:
-            invalid: 'These proposals already had the %{subject_name} category: %{proposals}.'
-            select_a_category: Please select a category.
-            select_a_proposal: Please select a proposal.
-            success: 'Proposals successfully updated to the %{subject_name} category: %{proposals}.'
+            invalid: 'Mapendekezo haya tayari yalikuwa na aina ya %{subject_name}: %{proposals}.'
+            select_a_category: Tafadhali chagua aina.
+            select_a_proposal: Tafadhali chagua pendekezo.
+            success: 'Mapendekezo yamesasishwa hadi kategoria ya %{subject_name}: %{proposals}.'
           update_scope:
-            invalid: 'These proposals already had the %{subject_name} scope: %{proposals}.'
-            select_a_proposal: Please select a proposal.
-            select_a_scope: Please select a scope.
-            success: 'Proposals successfully updated to the %{subject_name} scope: %{proposals}.'
+            invalid: 'Mapendekezo haya tayari yalikuwa na upeo wa %{subject_name}: %{proposals}.'
+            select_a_proposal: Tafadhali chagua pendekezo.
+            select_a_scope: Tafadhali chagua upeo.
+            success: 'Mapendekezo yalisasishwa hadi kufikia upeo wa %{subject_name}: %{proposals}.'
         proposals_imports:
           create:
-            invalid: There was a problem importing the proposals.
-            success: "%{number} proposals successfully imported."
+            invalid: Kulikuwa na tatizo katika kuleta mapendekezo.
+            success: "%{number} mapendekezo yameletwa kwa ufanisi."
           new:
-            create: Import proposals
-            no_components: There are no other proposal components in this participatory space to import the proposals from.
-            select_component: Please select a component
-            select_states: Check the status of the proposals to import
-            title: Import proposals from another component
+            create: Mapendekezo ya kuagiza
+            no_components: Hakuna vipengele vingine vya pendekezo katika nafasi hii shirikishi ya kuagiza kutoka.
+            select_component: Tafadhali chagua kijenzi
+            select_states: Angalia hali ya mapendekezo ya kuagiza
+            title: Ingiza mapendekezo kutoka kwa sehemu nyingine
         proposals_merges:
           create:
             invalid: 'Kumekuwa na tatizo la kuunganisha mapendekezo yaliyochaguliwa kwa sababu baadhi yao:'
@@ -781,73 +781,73 @@ sw:
         edit_draft:
           discard: Tupa rasimu hii
           discard_confirmation: Je, una uhakika unataka kutupa rasimu hii ya pendekezo?
-          send: Preview
-          title: Edit proposal draft
+          send: Hakiki
+          title: Badilisha rasimu ya pendekezo
         edit_form_fields:
-          marker_added: Marker added to the map.
+          marker_added: Alama imeongezwa kwenye ramani.
         filters:
-          activity: My activity
-          all: All
-          amendment_type: Type
-          category: Category
-          my_proposals: My proposals
-          origin: Origin
-          related_to: Related to
-          scope: Scope
-          search: Search
-          state: Status
-          type: Type
-          voted: Voted
+          activity: Shughuli yangu
+          all: Wote
+          amendment_type: Aina
+          category: Kategoria
+          my_proposals: Mapendekezo yangu
+          origin: Asili
+          related_to: Kuhusiana na
+          scope: Upeo
+          search: Tafuta
+          state: Hali
+          type: Aina
+          voted: Imepiga kura
         index:
-          click_here: See all proposals
-          collaborative_drafts_list: Access collaborative drafts
+          click_here: Tazama mapendekezo yote
+          collaborative_drafts_list: Fikia rasimu shirikishi
           count:
-            one: "%{count} proposal"
-            other: "%{count} proposals"
-          grid_mode: Grid mode
-          list_mode: List mode
-          new_proposal: New proposal
-          see_all: See all proposals
-          see_all_withdrawn: See all withdrawn proposals
-          text_banner: You are viewing the list of proposals withdrawn by their authors. %{go_back_link}.
+            one: "%{count} pendekezo"
+            other: "%{count} mapendekezo"
+          grid_mode: Hali ya gridi
+          list_mode: Hali ya orodha
+          new_proposal: Pendekezo jipya
+          see_all: Tazama mapendekezo yote
+          see_all_withdrawn: Tazama mapendekezo yote yaliyoondolewa
+          text_banner: Unatazama orodha ya mapendekezo yaliyotolewa na waandishi wao. %{go_back_link}.
         new:
-          send: Continue
-          title: Create your proposal
+          send: Endelea
+          title: Unda pendekezo lako
         orders:
-          label: 'Order proposals by:'
-          most_commented: Most commented
-          most_endorsed: Most endorsed
-          most_followed: Most followed
-          most_voted: Most voted
-          random: Random
-          recent: Recent
-          with_more_authors: With more authors
+          label: 'Agiza mapendekezo na:'
+          most_commented: Wengi walitoa maoni
+          most_endorsed: Imeidhinishwa zaidi
+          most_followed: Wengi walifuata
+          most_voted: Wengi walipiga kura
+          random: Nasibu
+          recent: Hivi karibuni
+          with_more_authors: Na waandishi zaidi
         participatory_texts:
           view_index:
-            document_index: Document index
+            document_index: Kielezo cha hati
         placeholder:
           address: 37 Homewood Drive Brownsburg, IN 46112
         preview:
-          announcement_body: Your proposal has been saved as a draft. It needs to be published for it to appear on the site.
-          announcement_title: Your proposal has not yet been published
-          modify: Modify the proposal
+          announcement_body: Pendekezo lako limehifadhiwa kama rasimu. Inahitaji kuchapishwa ili ionekane kwenye tovuti.
+          announcement_title: Pendekezo lako bado halijachapishwa
+          modify: Rekebisha pendekezo
           proposal_edit_before_minutes:
-            one: You will be able to edit this proposal during the first minute after the proposal is published. Once this time window passes, you will not be able to edit the proposal.
-            other: You will be able to edit this proposal during the first %{count} minutes after the proposal is published. Once this time window passes, you will not be able to edit the proposal.
-          publish: Publish
-          title: Publish your proposal
+            one: Utaweza kuhariri pendekezo hili katika dakika ya kwanza baada ya pendekezo kuchapishwa. Mara dirisha la wakati huu likipita, hutaweza kuhariri pendekezo.
+            other: Utaweza kuhariri pendekezo hili katika dakika %{count} za kwanza baada ya pendekezo kuchapishwa. Mara dirisha la wakati huu likipita, hutaweza kuhariri pendekezo.
+          publish: Chapisha
+          title: Chapisha pendekezo lako
         proposals:
-          empty: There are no proposals yet.
-          empty_filters: There are no proposals with this criteria.
+          empty: Bado hakuna mapendekezo.
+          empty_filters: Hakuna mapendekezo na vigezo hivi.
         show:
-          answer: Answer
-          changes_at_title: Amendment to "%{title}"
-          edit_proposal: Edit proposal
-          estimated_cost: Estimated cost
+          answer: Jibu
+          changes_at_title: Marekebisho ya "%{title}"
+          edit_proposal: Badilisha pendekezo
+          estimated_cost: Gharama iliyokadiriwa
           hidden_endorsers_count:
-            one: and %{count} more person
-            other: and %{count} more people
-          link_to_collaborative_draft_help_text: This proposal is the result of a collaborative draft. Review the history
+            one: na %{count} mtu zaidi
+            other: na watu %{count} zaidi
+          link_to_collaborative_draft_help_text: Pendekezo hili ni matokeo ya rasimu shirikishi. Kagua historia
           link_to_collaborative_draft_text: See the collaborative draft
           link_to_promoted_emendation_help_text: This proposal is a promoted emendation
           link_to_promoted_emendation_text: See the rejected emendation.
