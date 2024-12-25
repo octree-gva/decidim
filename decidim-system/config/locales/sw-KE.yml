@@ -45,8 +45,8 @@ sw:
         new_admin: Msimamizi mpya
         new_oauth_application: New OAUTH application
         new_organization: New organization
-        save: Save
-        title: Actions
+        save: Hifadhi
+        title: Vitendo
       admins:
         create:
           error: There was a problem creating a new admin.
@@ -55,12 +55,12 @@ sw:
           success: Admin successfully deleted.
         edit:
           title: Edit admin
-          update: Update
+          update: Sasisha
         index:
-          title: Admins
+          title: Wasimamizi
         new:
-          create: Create
-          title: New admin
+          create: Unda
+          title: Msimamizi mpya
         update:
           error: There was a problem updating this admin.
           success: Admin successfully updated.
