@@ -722,65 +722,65 @@ sw:
           error: Kulikuwa na tatizo katika kuhifadhi rasimu shirikishi.
           success: Rasimu shirikishi imesasishwa.
         wizard_aside:
-          back_from_collaborative_draft: Back to collaborative drafts
+          back_from_collaborative_draft: Rudi kwa rasimu shirikishi
         wizard_header:
-          title: Create your collaborative draft
+          title: Unda rasimu yako ya ushirikiano
       content_blocks:
         highlighted_proposals:
-          name: Proposals
+          name: Mapendekezo
       create:
-        error: There was a problem saving the proposal.
-        success: Proposal successfully created. Saved as a Draft.
+        error: Kulikuwa na tatizo katika kuhifadhi pendekezo.
+        success: Pendekezo limeundwa kwa ufanisi. Imehifadhiwa kama Rasimu.
       destroy_draft:
-        error: There was a problem deleting the collaborative draft.
-        success: Proposal draft was successfully deleted.
+        error: Kulikuwa na tatizo katika kufuta rasimu shirikishi.
+        success: Rasimu ya pendekezo imefutwa.
       last_activity:
-        new_proposal: 'New proposal:'
-        proposal_updated: 'Proposal updated:'
+        new_proposal: 'Pendekezo jipya:'
+        proposal_updated: 'Pendekezo limesasishwa:'
       models:
         proposal:
           fields:
-            category: Category
-            comments: Comments
+            category: Kategoria
+            comments: Maoni
             id: ID
-            notes: Notes
-            official_proposal: Official proposal
-            published_answer: Published answer
-            published_at: Published at
-            scope: Scope
-            state: Status
-            title: Title
-            valuator: Valuator
-            valuators: Valuators
-            votes: Votes
+            notes: Vidokezo
+            official_proposal: Pendekezo rasmi
+            published_answer: Jibu lililochapishwa
+            published_at: Iliyochapishwa saa
+            scope: Upeo
+            state: Hali
+            title: Kichwa
+            valuator: Mthamini
+            valuators: Wathamini
+            votes: Kura
         proposal_state:
-          css_class: CSS class
-          title: Status
+          css_class: darasa la CSS
+          title: Hali
       new:
-        limit_reached: You cannot create new proposals since you have exceeded the limit.
+        limit_reached: Huwezi kuunda mapendekezo mapya kwa kuwa umevuka kikomo.
       participatory_text_proposal:
-        alternative_title: There are no participatory texts at the moment
+        alternative_title: Hakuna maandishi shirikishi kwa sasa
         buttons:
-          amend: Amend
-          comment: Comment
+          amend: Rekebisha
+          comment: Maoni
       proposal_votes:
         create:
-          error: There was a problem voting the proposal.
+          error: Kulikuwa na tatizo la kupiga kura pendekezo.
       proposals:
         dynamic_map_instructions:
-          description: The coordinates will be updated when clicking on 'preview' button. However, the address does not change.
-          instructions: You can move the point on the map.
+          description: Viwianishi vitasasishwa unapobofya kitufe cha 'hakiki'. Walakini, anwani haibadilika.
+          instructions: Unaweza kusogeza hatua kwenye ramani.
         edit:
-          add_documents: Add documents
-          attachment_legend: "(Optional) Add an attachment"
-          back: Back
-          edit_documents: Edit documents
-          select_a_category: Please select a category
-          send: Send
-          title: Edit proposal
+          add_documents: Ongeza hati
+          attachment_legend: "(Si lazima) Ongeza kiambatisho"
+          back: Nyuma
+          edit_documents: Hariri hati
+          select_a_category: Tafadhali chagua aina
+          send: Tuma
+          title: Badilisha pendekezo
         edit_draft:
-          discard: Discard this draft
-          discard_confirmation: Are you sure you want to discard this proposal draft?
+          discard: Tupa rasimu hii
+          discard_confirmation: Je, una uhakika unataka kutupa rasimu hii ya pendekezo?
           send: Preview
           title: Edit proposal draft
         edit_form_fields:
