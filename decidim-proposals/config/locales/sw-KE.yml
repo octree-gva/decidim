@@ -17,162 +17,162 @@ sw:
         answer: Answer
         answered_at: Answered at
         automatic_hashtags: Hashtags automatically added
-        body: Body
-        category_id: Category
-        decidim_proposals_proposal_state_id: State
-        decidim_scope_id: Scope
-        has_address: Has address
-        scope_id: Scope
-        state: State
-        suggested_hashtags: Suggested hashtags
-        title: Title
-        user_group_id: Create proposal as
+        body: Mwili
+        category_id: Kategoria
+        decidim_proposals_proposal_state_id: Jimbo
+        decidim_scope_id: Upeo
+        has_address: Ina anwani
+        scope_id: Upeo
+        state: Jimbo
+        suggested_hashtags: Alama za reli zilizopendekezwa
+        title: Kichwa
+        user_group_id: Tengeneza pendekezo kama
       proposal_answer:
-        answer: Answer
-        cost: Cost
-        cost_report: Cost report
-        execution_period: Execution period
+        answer: Jibu
+        cost: Gharama
+        cost_report: Ripoti ya gharama
+        execution_period: Kipindi cha utekelezaji
       proposal_state:
-        announcement_title: Answer heading
-        bg_color: Background color
+        announcement_title: Jibu kichwa
+        bg_color: Rangi ya usuli
         colors:
-          blue: Blue
-          gray: Gray
-          green: Green
-          orange: Orange
+          blue: Bluu
+          gray: Kijivu
+          green: Kijani
+          orange: Chungwa
           pink: Pink
-          purple: Purple
-          red: Red
-          yellow: Yellow
-        text_color: Text color
+          purple: Zambarau
+          red: Nyekundu
+          yellow: Njano
+        text_color: Rangi ya maandishi
       proposals_copy:
-        copy_proposals: I understand that this will import all proposals from the selected component to the current one and that this action cannot be reversed.
-        origin_component_id: Component to copy the proposals from
+        copy_proposals: Ninaelewa kuwa hii italeta mapendekezo yote kutoka sehemu iliyochaguliwa hadi ya sasa na kwamba kitendo hiki hakiwezi kutenduliwa.
+        origin_component_id: Sehemu ya kunakili mapendekezo kutoka
       proposals_import:
-        import_proposals: Import proposals
-        keep_answers: Keep state and answers
-        keep_authors: Keep original authors
+        import_proposals: Mapendekezo ya kuagiza
+        keep_answers: Weka hali na majibu
+        keep_authors: Weka waandishi asili
       valuation_assignment:
         admin_log:
-          valuator_role_id: Valuator name
+          valuator_role_id: Jina la mthamini
     errors:
       models:
         participatory_text:
           attributes:
             document:
-              allowed_file_content_types: 'Invalid document type. Only files with the following extensions are allowed: %{types}'
+              allowed_file_content_types: 'Aina batili ya hati. Faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
         proposal:
           attributes:
             add_documents:
-              needs_to_be_reattached: Needs to be reattached
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
             add_photos:
-              needs_to_be_reattached: Needs to be reattached
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
             body:
-              cant_be_equal_to_template: cannot be equal to the template
-              identical: AND title cannot be identical
+              cant_be_equal_to_template: haiwezi kuwa sawa na kiolezo
+              identical: NA kichwa hakiwezi kufanana
             title:
-              identical: AND body cannot be identical
+              identical: NA mwili hauwezi kufanana
         proposals_merge:
           attributes:
             base:
-              not_official: Are not official
-              voted: Have received votes or endorsements
+              not_official: Sio rasmi
+              voted: Umepokea kura au ridhaa
         proposals_split:
           attributes:
             base:
-              not_official: Are not official
-              voted: Have received votes or endorsements
+              not_official: Sio rasmi
+              voted: Umepokea kura au ridhaa
     models:
-      decidim/proposals/admin/update_proposal_category_event: Proposal category changed
-      decidim/proposals/admin/update_proposal_scope_event: Proposal scope changed
-      decidim/proposals/creation_enabled_event: Proposal creation enabled
-      decidim/proposals/endorsing_enabled_event: Proposal endorsing enabled
-      decidim/proposals/proposal_mentioned_event: Proposal mentioned
-      decidim/proposals/publish_proposal_event: Proposal published
-      decidim/proposals/voting_enabled_event: Proposal voting enabled
+      decidim/proposals/admin/update_proposal_category_event: Kategoria ya pendekezo imebadilishwa
+      decidim/proposals/admin/update_proposal_scope_event: Upeo wa pendekezo umebadilishwa
+      decidim/proposals/creation_enabled_event: Uundaji wa pendekezo umewezeshwa
+      decidim/proposals/endorsing_enabled_event: Uidhinishaji wa pendekezo umewashwa
+      decidim/proposals/proposal_mentioned_event: Pendekezo limetajwa
+      decidim/proposals/publish_proposal_event: Pendekezo limechapishwa
+      decidim/proposals/voting_enabled_event: Upigaji kura wa mapendekezo umewezeshwa
   activerecord:
     models:
       decidim/proposals/collaborative_draft:
-        one: Collaborative draft
-        other: Collaborative drafts
+        one: Rasimu shirikishi
+        other: Rasimu shirikishi
       decidim/proposals/proposal:
-        one: Proposal
-        other: Proposals
+        one: Pendekezo
+        other: Pendekezo
       decidim/proposals/proposal_note:
-        one: Note
-        other: Notes
+        one: Kumbuka
+        other: Vidokezo
       decidim/proposals/proposal_vote:
-        one: Vote
-        other: Votes
+        one: Kura
+        other: Kura
   decidim:
     admin:
       filters:
         proposals:
           category_id_eq:
-            label: Category
+            label: Kategoria
           is_emendation_true:
-            label: Type
+            label: Aina
             values:
-              'false': Proposals
-              'true': Amendments
+              'false': Pendekezo
+              'true': Marekebisho
           proposal_state_id_eq:
-            label: State
+            label: Jimbo
           scope_id_eq:
-            label: Scope
+            label: Upeo
           state_eq:
-            label: State
+            label: Jimbo
             values:
-              accepted: Accepted
-              evaluating: Evaluating
-              not_answered: Not answered
-              published: Published
-              rejected: Rejected
-              validating: Technical validation
-              withdrawn: Withdrawn
+              accepted: Imekubaliwa
+              evaluating: Kutathmini
+              not_answered: Haijajibiwa
+              published: Imechapishwa
+              rejected: Imekataliwa
+              validating: Uthibitishaji wa kiufundi
+              withdrawn: Imetolewa
           valuator_role_ids_has:
-            label: Assigned to valuator
+            label: Imetolewa kwa mthamini
           with_any_state:
-            label: Answered
+            label: Akajibu
             values:
-              state_not_published: Not answered
-              state_published: Answered
+              state_not_published: Haijajibiwa
+              state_published: Akajibu
         search_placeholder:
-          id_string_or_title_cont: Search %{collection} by ID or title.
+          id_string_or_title_cont: Tafuta %{collection} kwa ID au kichwa.
     components:
       proposals:
         actions:
-          amend: Amend
-          comment: Comment
-          create: Create
-          endorse: Endorse
-          vote: Vote
-          vote_comment: Vote comment
-          withdraw: Withdraw
-        name: Proposals
+          amend: Rekebisha
+          comment: Maoni
+          create: Unda
+          endorse: Thibitisha
+          vote: Piga kura
+          vote_comment: Piga maoni
+          withdraw: Ondoa
+        name: Pendekezo
         settings:
           global:
-            amendments_enabled: Amendments enabled
-            amendments_enabled_help: If active, configure Amendment features for each step.
-            amendments_wizard_help_text: Amendments Wizard help text
-            announcement: Announcement
-            attachments_allowed: Allow attachments
-            attachments_allowed_help: By enabling this option, proposals will default to grid mode, and the first image will appear on the card.
-            can_accumulate_votes_beyond_threshold: Can accumulate votes beyond threshold
-            collaborative_drafts_enabled: Collaborative drafts enabled
-            comments_enabled: Comments enabled
-            comments_max_length: Comments max length (Leave 0 for default value)
-            default_sort_order: Default proposal sorting
-            default_sort_order_help: Automatic means that if the votes are enabled, the proposals will be shown sorted by random, and if the votes are blocked, then they will be sorted by the most voted.
+            amendments_enabled: Marekebisho yamewashwa
+            amendments_enabled_help: Ikiwa hai, sanidi vipengele vya Marekebisho kwa kila hatua.
+            amendments_wizard_help_text: Maandishi ya usaidizi wa Mchawi wa Marekebisho
+            announcement: Tangazo
+            attachments_allowed: Ruhusu viambatisho
+            attachments_allowed_help: Kwa kuwezesha chaguo hili, mapendekezo yatakuwa chaguomsingi kwa hali ya gridi, na picha ya kwanza itaonekana kwenye kadi.
+            can_accumulate_votes_beyond_threshold: Inaweza kukusanya kura zaidi ya kizingiti
+            collaborative_drafts_enabled: Rasimu shirikishi zimewashwa
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            default_sort_order: Upangaji wa pendekezo chaguomsingi
+            default_sort_order_help: Kiotomatiki inamaanisha kuwa kura zikiwashwa, mapendekezo yataonyeshwa yakiwa yamepangwa nasibu, na ikiwa kura zimezuiwa, basi zitapangwa kwa waliopiga kura nyingi zaidi.
             default_sort_order_options:
-              automatic: Automatic
-              most_commented: Most commented
-              most_endorsed: Most endorsed
-              most_followed: Most followed
-              most_voted: Most voted
-              random: Random
-              recent: Recent
-              with_more_authors: With more authors
-            geocoding_enabled: Geocoding enabled
+              automatic: Otomatiki
+              most_commented: Wengi walitoa maoni
+              most_endorsed: Imeidhinishwa zaidi
+              most_followed: Wengi walifuata
+              most_voted: Wengi walipiga kura
+              random: Nasibu
+              recent: Hivi karibuni
+              with_more_authors: Na waandishi zaidi
+            geocoding_enabled: Uwekaji msimbo umewezeshwa
             minimum_votes_per_user: Minimum votes per user
             new_proposal_body_template: New proposal body template
             new_proposal_body_template_help: You can define prefilled text that the new Proposals will have
@@ -191,8 +191,8 @@ sw:
             proposal_wizard_step_1_help_text: Proposal wizard "Create" step help text
             proposal_wizard_step_2_help_text: Proposal wizard "Publish" step help text
             resources_permissions_enabled: Actions permissions can be set for each proposal
-            scope_id: Scope
-            scopes_enabled: Scopes enabled
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
             threshold_per_proposal: Threshold per proposal
             vote_limit: Vote limit per participant
           step:
@@ -200,14 +200,14 @@ sw:
             amendment_creation_enabled_help: Participant can amend proposals.
             amendment_promotion_enabled: Amendment promotion enabled
             amendment_promotion_enabled_help: Emandation authors will be able to promote to Proposal the rejected emendation.
-            amendment_reaction_enabled: Amendment reaction enabled
+            amendment_reaction_enabled: Maoni ya marekebisho yamewashwa
             amendment_reaction_enabled_help: Proposal's authors will be able to accept or reject Participant's emendations.
             amendments_visibility: Amendments visibility
             amendments_visibility_choices:
               all: Amendments are visible to all
               participants: Amendments are visible only to their authors
             amendments_visibility_help: If the option "Amendments are visible only to their authors" is selected, participant must be logged in to see the amendments made.
-            announcement: Announcement
+            announcement: Tangazo
             answers_with_costs: Enable costs on proposal answers
             automatic_hashtags: Hashtags added to all proposals
             comments_blocked: Comments blocked
@@ -216,9 +216,9 @@ sw:
             default_sort_order: Default proposal sorting
             default_sort_order_help: Automatic means that if the votes are enabled, the proposals will be shown sorted by random, and if the votes are blocked, then they will be sorted by the most voted.
             default_sort_order_options:
-              automatic: Automatic
-              most_commented: Most commented
-              most_endorsed: Most endorsed
+              automatic: Otomatiki
+              most_commented: Wengi walitoa maoni
+              most_endorsed: Imeidhinishwa zaidi
               most_followed: Most followed
               most_voted: Most voted
               random: Random
