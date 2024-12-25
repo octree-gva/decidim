@@ -27,7 +27,7 @@ sw:
             save: Sasisha
             title: Badilisha ukurasa
           update:
-            invalid: There was a problem saving the page.
-            success: Page successfully saved.
+            invalid: Kulikuwa na tatizo katika kuhifadhi ukurasa.
+            success: Ukurasa umehifadhiwa.
       show:
-        empty: There are no contents in this page yet.
+        empty: Bado hakuna yaliyomo kwenye ukurasa huu.
