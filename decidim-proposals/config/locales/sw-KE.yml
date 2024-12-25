@@ -3,20 +3,20 @@ sw:
   activemodel:
     attributes:
       collaborative_draft:
-        address: Address
-        body: Body
-        category_id: Category
-        decidim_scope_id: Scope
-        has_address: Has address
-        scope_id: Scope
-        state: State
-        title: Title
-        user_group_id: Create collaborative draft as
+        address: Anwani
+        body: Mwili
+        category_id: Kategoria
+        decidim_scope_id: Upeo
+        has_address: Ina anwani
+        scope_id: Upeo
+        state: Jimbo
+        title: Kichwa
+        user_group_id: Unda rasimu shirikishi kama
       proposal:
-        address: Address
-        answer: Answer
-        answered_at: Answered at
-        automatic_hashtags: Hashtags automatically added
+        address: Anwani
+        answer: Jibu
+        answered_at: Alijibu saa
+        automatic_hashtags: Hashtag zimeongezwa kiotomatiki
         body: Mwili
         category_id: Kategoria
         decidim_proposals_proposal_state_id: Jimbo
