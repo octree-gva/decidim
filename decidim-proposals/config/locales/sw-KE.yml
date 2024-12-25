@@ -196,7 +196,7 @@ sw:
             threshold_per_proposal: Kizingiti kwa pendekezo
             vote_limit: Kikomo cha kura kwa kila mshiriki
           step:
-            amendment_creation_enabled: Amendment creation enabled
+            amendment_creation_enabled: Uundaji wa marekebisho umewashwa
             amendment_creation_enabled_help: Mshiriki anaweza kurekebisha mapendekezo.
             amendment_promotion_enabled: Utangazaji wa marekebisho umewashwa
             amendment_promotion_enabled_help: Waandishi wa idhini wataweza kukuza hadi Pendekezo urekebishaji uliokataliwa.
@@ -226,70 +226,70 @@ sw:
               with_more_authors: Na waandishi zaidi
             endorsements_blocked: Mapendekezo yamezuiwa
             endorsements_enabled: Mapendekezo yamewashwa
-            proposal_answering_enabled: Proposal answering enabled
-            publish_answers_immediately: Publish proposal answers immediately
-            publish_answers_immediately_help_html: 'Mind that if you answer any proposal without this enabled, you will need to publish them manually by selecting them and using the action for publication. For more info on how this works, see <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposals'' answers documentation page</a>.'
-            suggested_hashtags: Hashtags suggested to participants for new proposals
-            votes_blocked: Votes blocked
-            votes_enabled: Votes enabled
-            votes_hidden: Votes hidden (if votes are enabled, checking this will hide the number of votes)
+            proposal_answering_enabled: Jibu la pendekezo limewezeshwa
+            publish_answers_immediately: Chapisha majibu ya pendekezo mara moja
+            publish_answers_immediately_help_html: 'Kumbuka kwamba ukijibu pendekezo lolote bila kuwezeshwa hili, utahitaji kuyachapisha wewe mwenyewe kwa kuyachagua na kutumia kitendo cha kuchapishwa. Kwa maelezo zaidi kuhusu jinsi hii inavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">ukurasa wa hati ya majibu ya mapendekezo</a>.'
+            suggested_hashtags: Lebo za reli zilipendekezwa kwa washiriki kwa mapendekezo mapya
+            votes_blocked: Kura zimezuiwa
+            votes_enabled: Kura zimewashwa
+            votes_hidden: Kura zimefichwa (ikiwa kura zimewezeshwa, kuangalia hii kutaficha idadi ya kura)
     events:
       proposals:
         admin:
           proposal_note_created:
-            email_intro: Someone has left a note on the proposal "%{resource_title}". Check it out at <a href="%{admin_proposal_info_url}">the admin panel</a>.
-            email_outro: You have received this notification because you can valuate the proposal.
-            email_subject: Someone left a note on proposal %{resource_title}.
-            notification_title: Someone has left a note on the proposal <a href="%{resource_path}">%{resource_title}</a>. Check it out at <a href="%{admin_proposal_info_path}">the admin panel</a>.
+            email_intro: Mtu ameacha dokezo kwenye pendekezo "%{resource_title}". Iangalie kwenye <a href="%{admin_proposal_info_url}">paneli ya msimamizi</a>.
+            email_outro: Umepokea arifa hii kwa sababu unaweza kuthamini pendekezo.
+            email_subject: Mtu aliacha dokezo kuhusu pendekezo %{resource_title}.
+            notification_title: Mtu ameacha dokezo kwenye pendekezo <a href="%{resource_path}">%{resource_title}</a>. Iangalie katika <a href="%{admin_proposal_info_path}">paneli ya msimamizi</a>.
         collaborative_draft_access_accepted:
-          email_intro: '%{requester_name} has been accepted to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: "%{requester_name} has been accepted to access as a contributor of the %{resource_title}."
-          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> has been <strong>accepted to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
-        collaborative_draft_access_rejected:
-          email_intro: '%{requester_name} has been rejected to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.'
+          email_intro: '%{requester_name} amekubaliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.'
           email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: "%{requester_name} has been rejected to access as a contributor of the %{resource_title} collaborative draft."
-          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> has been <strong>rejected to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
+          email_subject: "%{requester_name} imekubaliwa kufikia kama mchangiaji wa %{resource_title}."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> <strong>amekubaliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}" >%{resource_title}</a> rasimu shirikishi.
+        collaborative_draft_access_rejected:
+          email_intro: '%{requester_name} amekataliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.'
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{requester_name} imekataliwa kufikia kama mchangiaji wa %{resource_title} rasimu shirikishi."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> <strong>amekataliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}" >%{resource_title}</a> rasimu shirikishi.
         collaborative_draft_access_requested:
-          email_intro: '%{requester_name} requested access as a contributor. You can <strong>accept or reject the request</strong> from the <a href="%{resource_url}">%{resource_title}</a> collaborative draft page.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: "%{requester_name} requested access to contribute to %{resource_title}."
-          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> requested access to contribute to the <a href="%{resource_path}">%{resource_title}</a> collaborative draft. Please <strong>accept or reject the request</strong>.
+          email_intro: '%{requester_name} aliomba ufikiaji kama mchangiaji. Unaweza <strong>kukubali au kukataa ombi</strong> kutoka <a href="%{resource_url}">%{resource_title}</a> ukurasa wa rasimu ya ushirikiano.'
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{requester_name} aliomba idhini ya kufikia ili kuchangia %{resource_title}."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> aliomba idhini ya kufikia ili kuchangia <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi . Tafadhali <strong>kubali au kataa ombi</strong>.
         collaborative_draft_access_requester_accepted:
-          email_intro: You have been accepted to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you requested to become a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: You have been accepted as a contributor of %{resource_title}.
-          notification_title: You have been <strong>accepted to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
+          email_intro: Umekubaliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.
+          email_outro: Umepokea arifa hii kwa sababu uliomba kuwa mshiriki wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: Umekubaliwa kama mchangiaji wa %{resource_title}.
+          notification_title: <strong>Umekubaliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi.
         collaborative_draft_access_requester_rejected:
-          email_intro: You have been rejected to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you requested to become a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: You have been rejected as a contributor of %{resource_title}.
-          notification_title: You have been <strong>rejected to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
+          email_intro: Umekataliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.
+          email_outro: Umepokea arifa hii kwa sababu uliomba kuwa mshiriki wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: Umekataliwa kama mchangiaji wa %{resource_title}.
+          notification_title: <strong>Umekataliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi.
         collaborative_draft_withdrawn:
-          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> withdrawn the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
-          email_subject: "%{author_name} %{author_nickname} withdrawn the %{resource_title} collaborative draft."
-          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> <strong>withdrawn</strong> the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
+          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> wameondoa <a href="%{resource_url}">%{resource_title}</a> rasimu ya ushirikiano.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{author_name} %{author_nickname} ameondoa %{resource_title} rasimu ya ushirikiano."
+          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> <strong>imeondoa</strong> <a href="%{resource_path}">%{resource_title}</a > rasimu shirikishi.
         creation_enabled:
-          email_intro: 'You can now create new proposals in %{participatory_space_title}! Start participating in this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: Proposals now available in %{participatory_space_title}
-          notification_title: You can now put forward <a href="%{resource_path}">new proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          email_intro: 'Sasa unaweza kuunda mapendekezo mapya katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mapendekezo sasa yanapatikana katika %{participatory_space_title}
+          notification_title: Sasa unaweza kuweka mbele <a href="%{resource_path}">mapendekezo mapya</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         endorsing_enabled:
-          email_intro: 'You can endorse proposals in %{participatory_space_title}! Start participating in this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: Proposals endorsing has started for %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">endorsing proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          email_intro: 'Unaweza kuidhinisha mapendekezo katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Uidhinishaji wa mapendekezo umeanza kwa %{participatory_space_title}
+          notification_title: Sasa unaweza kuanza <a href="%{resource_path}">kuidhinisha mapendekezo</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         proposal_mentioned:
-          email_intro: Your proposal "%{mentioned_proposal_title}" has been mentioned <a href="%{resource_url}">in this space</a> in the comments.
-          email_outro: You have received this notification because you are an author of "%{resource_title}".
-          email_subject: Your proposal "%{mentioned_proposal_title}" has been mentioned
-          notification_title: Your proposal "%{mentioned_proposal_title}" has been mentioned <a href="%{resource_path}">in this space</a> in the comments.
+          email_intro: Pendekezo lako "%{mentioned_proposal_title}" limetajwa <a href="%{resource_url}">katika nafasi hii</a> kwenye maoni.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa "%{resource_title}".
+          email_subject: Pendekezo lako "%{mentioned_proposal_title}" limetajwa
+          notification_title: Pendekezo lako "%{mentioned_proposal_title}" limetajwa <a href="%{resource_path}">katika nafasi hii</a> kwenye maoni.
         proposal_published:
-          email_intro: '%{author_name} %{author_nickname}, who you are following, has published a new proposal called "%{resource_title}". Check it out and contribute:'
-          email_outro: You have received this notification because you are following %{author_nickname}. You can stop receiving notifications following the previous link.
-          email_subject: New proposal "%{resource_title}" by %{author_nickname}
+          email_intro: '%{author_name} %{author_nickname}, unayemfuata, amechapisha pendekezo jipya linaloitwa "%{resource_title}". Iangalie na uchangie:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Pendekezo jipya "%{resource_title}" na %{author_nickname}
           notification_title: Pendekezo la <a href="%{resource_path}">%{resource_title}</a> lilichapishwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
         proposal_published_for_space:
           email_intro: Pendekezo "%{resource_title}" limeongezwa kwa "%{participatory_space_title}" unayofuata.
@@ -355,170 +355,170 @@ sw:
           description_another: Mshiriki huyu ameunda mapendekezo %{score}.
           description_own: Umeunda mapendekezo %{score}.
           name: Mapendekezo
-          next_level_in: Create %{score} more proposals to reach the next level!
-          unearned_another: This participant has not created any proposals yet.
-          unearned_own: You have created no proposals yet.
+          next_level_in: Unda mapendekezo %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajaunda mapendekezo yoyote.
+          unearned_own: Bado hujaunda mapendekezo.
     metrics:
       accepted_proposals:
-        description: Number of proposals accepted
-        object: proposals
-        title: Accepted proposals
+        description: Idadi ya mapendekezo yaliyokubaliwa
+        object: pendekezo
+        title: Mapendekezo yaliyokubaliwa
       endorsements:
-        description: Number of endorsements to proposals
-        object: endorsements
-        title: Endorsements
+        description: Idadi ya ridhaa kwa mapendekezo
+        object: ridhaa
+        title: Ridhaa
       proposals:
-        description: Number of proposals
-        object: proposals
-        title: Proposals
+        description: Idadi ya mapendekezo
+        object: pendekezo
+        title: Pendekezo
       votes:
-        description: Number of votes to proposals
-        object: votes
-        title: Votes
+        description: Idadi ya kura kwa mapendekezo
+        object: kura
+        title: Kura
     participatory_spaces:
       highlighted_proposals:
-        last: Last proposals
-        see_all: See all proposals
+        last: Mapendekezo ya mwisho
+        see_all: Tazama mapendekezo yote
     proposals:
       actions:
-        answer_proposal: Answer proposal
-        delete_proposal_state_confirm: Are you sure you want to delete this state?
-        destroy: Delete state
-        edit_proposal: Edit proposal
-        edit_proposal_state: Edit state
-        import: Import proposals from another component
-        new: New proposal
-        new_proposal_state: New status
-        participatory_texts: Participatory texts
-        show: Show proposal
-        title: Actions
+        answer_proposal: Jibu pendekezo
+        delete_proposal_state_confirm: Je, una uhakika unataka kufuta hali hii?
+        destroy: Futa hali
+        edit_proposal: Badilisha pendekezo
+        edit_proposal_state: Badilisha hali
+        import: Ingiza mapendekezo kutoka kwa sehemu nyingine
+        new: Pendekezo jipya
+        new_proposal_state: Hali mpya
+        participatory_texts: Maandishi shirikishi
+        show: Onyesha pendekezo
+        title: Vitendo
       admin:
         actions:
-          preview: Preview
+          preview: Hakiki
         exports:
-          proposal_comments: Comments
-          proposals: Proposals
+          proposal_comments: Maoni
+          proposals: Mapendekezo
         imports:
           help:
             answers: |
-              The import document should contain the following column names in case of CSV or Excel files, or key names in case of JSON files:
+              Hati ya kuleta inapaswa kuwa na majina ya safu wima yafuatayo ikiwa ni faili za CSV au Excel, au majina muhimu ikiwa ni faili za JSON:
               <ul>
-              <li><b>id:</b> ID of the proposal to answer</li>
-              <li><b>state:</b> One of "accepted", "evaluating", or "rejected"</li>
-              <li><b>answer/en:</b> Answer on English language. This will depend on your platform language configuration.</li>
+              <li><b>id:</b> ID ya pendekezo la kujibu</li>
+              <li><b>sema:</b> Moja ya "kukubaliwa", "kutathmini", au "kukataliwa"</li>
+              <li><b>jibu/sw:</b> Jibu kwa lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
               </ul>
             proposals: |
-              The file must have the following column names in case of CSV or Excel files, or key names in case of JSON files:
+              Faili lazima iwe na majina ya safu wima yafuatayo ikiwa ni faili za CSV au Excel, au majina muhimu ikiwa ni faili za JSON:
               <ul>
-              <li><b>title/en:</b> Title on English language. This will depend on your platform language configuration.</li>
-              <li><b>body/en:</b> Body on English language. This will depend on your platform language configuration.</li>
-              <li><b>scope/id:</b> ID for the Scope</li>
-              <li><b>category/id:</b> ID for the Category</li>
+              <li><b>kichwa/sw:</b> Kichwa kwenye lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+              <li><b>mwili/sw:</b> Mwili kuhusu lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+              <li><b>wigo/id:</b> ID ya Wigo</li>
+              <li><b>kitengo/id:</b> ID ya Kitengo</li>
               </ul>
           label:
-            answers: Import answers from a file
-            proposals: Import proposals from a file
+            answers: Ingiza majibu kutoka kwa faili
+            proposals: Ingiza mapendekezo kutoka kwa faili
           resources:
             answers:
-              one: proposal answer
-              other: proposal answers
+              one: jibu la pendekezo
+              other: majibu ya pendekezo
             proposals:
-              one: proposal
-              other: proposals
+              one: pendekezo
+              other: pendekezo
           title:
-            answers: Import proposal answers from a file
-            proposals: Import proposals from a file
+            answers: Ingiza majibu ya pendekezo kutoka kwa faili
+            proposals: Ingiza mapendekezo kutoka kwa faili
         models:
           proposal:
-            name: Proposal
+            name: Pendekezo
         participatory_texts:
           bulk-actions:
-            are_you_sure: Are you sure to discard the whole participatory text draft?
-            discard_all: Discard all
-            import_doc: Import document
+            are_you_sure: Je, una uhakika wa kutupa rasimu nzima ya maandishi shirikishi?
+            discard_all: Tupa yote
+            import_doc: Ingiza hati
           discard:
-            success: All participatory text drafts have been discarded.
+            success: Rasimu zote za maandishi shirikishi zimetupwa.
           import:
-            invalid: The form is invalid!
-            invalid_file: The file contains some error, please try to edit the content of the file and re-upload it again.
-            success: Congratulations, the following sections have been converted to proposals. Now you can review and adjust them before publishing.
+            invalid: Fomu si sahihi!
+            invalid_file: Faili ina hitilafu fulani, tafadhali jaribu kuhariri maudhui ya faili na uipakie tena.
+            success: Hongera, sehemu zifuatazo zimegeuzwa kuwa mapendekezo. Sasa unaweza kuzipitia na kuzirekebisha kabla ya kuzichapisha.
           index:
-            info_1: The following sections have been converted to proposals. Now you can review and adjust them before publishing.
-            publish_document: Publish document
-            save_draft: Save draft
-            title: Preview participatory text
+            info_1: Sehemu zifuatazo zimebadilishwa kuwa mapendekezo. Sasa unaweza kuzipitia na kuzirekebisha kabla ya kuzichapisha.
+            publish_document: Chapisha hati
+            save_draft: Hifadhi rasimu
+            title: Hakiki maandishi shirikishi
           new_import:
             accepted_mime_types:
-              md: Markdown
+              md: Alama
               odt: ODT
-            bottom_hint: "(You will be able to preview and sort document sections)"
-            document_legend: 'Add a document lesser than 2MB, each section until 3 levels deep will be parsed into proposals. Supported formats are: %{valid_mime_types}'
-            title: Add document
-            upload_document: Upload document
+            bottom_hint: "(Utaweza kuhakiki na kupanga sehemu za hati)"
+            document_legend: 'Ongeza hati isiyozidi 2MB, kila sehemu hadi viwango 3 vya kina vitachanganuliwa kuwa mapendekezo. Miundo inayotumika ni: %{valid_mime_types}'
+            title: Ongeza hati
+            upload_document: Pakia hati
           publish:
-            invalid: There was a problem publishing proposals.
-            success: All proposals have been published.
+            invalid: Kulikuwa na tatizo la kuchapisha mapendekezo.
+            success: Mapendekezo yote yamechapishwa.
           sections:
-            article: "<em>Article</em>"
-            section: "<em>Section:</em> <strong>%{title}</strong>"
-            sub-section: "<em>Subsection:</em> %{title}"
+            article: "<em>Kifungu</em>"
+            section: "<em>Sehemu:</em> <strong>%{title}</strong>"
+            sub-section: "<em>Kifungu kidogo:</em> %{title}"
           update:
-            success: Participatory text successfully updated.
+            success: Maandishi shirikishi yamesasishwa.
         proposal_answers:
           form:
-            answer_proposal: Answer
-            title: Answer for proposal %{title}
+            answer_proposal: Jibu
+            title: Jibu la pendekezo %{title}
         proposal_notes:
           create:
-            error: There was a problem creating this proposal note.
-            success: Proposal note successfully created.
+            error: Kulikuwa na tatizo la kuunda dokezo hili la pendekezo.
+            success: Dokezo la pendekezo limeundwa.
           form:
-            note: Note
-            submit: Submit
-          leave_your_note: Leave your note
-          title: Private notes
+            note: Kumbuka
+            submit: Wasilisha
+          leave_your_note: Acha dokezo lako
+          title: Vidokezo vya faragha
         proposal_states:
           create:
-            error: Error creating state
-            success: Status created successfully
+            error: Hitilafu katika kuunda hali
+            success: Hali imeundwa
           destroy:
-            success: Status deleted successfully
+            success: Hali imefutwa
           edit:
-            title: Edit status
-            update: Update
+            title: Badilisha hali
+            update: Sasisha
           form:
-            preview: Preview
+            preview: Hakiki
           index:
-            title: Statuses
+            title: Hadhi
           new:
-            create: Create
-            title: New status
+            create: Unda
+            title: Hali mpya
           update:
-            error: Error updating status
-            success: Status updated successfully
+            error: Hitilafu katika kusasisha hali
+            success: Hali imesasishwa
         proposals:
           answer:
-            invalid: There has been a problem answering this proposal.
-            success: Proposal successfully answered.
+            invalid: Kumekuwa na tatizo kujibu pendekezo hili.
+            success: Pendekezo limejibu kwa ufanisi.
           create:
-            invalid: There has been a problem creating this proposal.
-            success: Proposal successfully created.
+            invalid: Kumekuwa na tatizo kuunda pendekezo hili.
+            success: Pendekezo limeundwa.
           edit:
-            title: Update proposal
-            update: Update
+            title: Sasisha pendekezo
+            update: Sasisha
           form:
-            attachment_legend: "(Optional) Add an attachment"
-            created_in_meeting: This proposal comes from a meeting
-            delete_attachment: Delete attachment
-            select_a_category: Select a category
-            select_a_meeting: Select a meeting
+            attachment_legend: "(Si lazima) Ongeza kiambatisho"
+            created_in_meeting: Pendekezo hili linatokana na mkutano
+            delete_attachment: Futa kiambatisho
+            select_a_category: Chagua kategoria
+            select_a_meeting: Chagua mkutano
           index:
-            actions: Actions
-            assign_to_valuator: Assign to valuator
-            assign_to_valuator_button: Assign
-            cancel: Cancel
-            change_category: Change category
-            change_scope: Change scope
+            actions: Vitendo
+            assign_to_valuator: Mkabidhi mthamini
+            assign_to_valuator_button: Kabidhi
+            cancel: Ghairi
+            change_category: Badilisha kategoria
+            change_scope: Badilisha upeo
             merge: Merge into a new one
             merge_button: Merge
             publish: Publish
@@ -581,146 +581,146 @@ sw:
             title: Import proposals from another component
         proposals_merges:
           create:
-            invalid: 'There has been a problem merging the selected proposals because some of them:'
-            success: Successfully merged the proposals into a new one.
+            invalid: 'Kumekuwa na tatizo la kuunganisha mapendekezo yaliyochaguliwa kwa sababu baadhi yao:'
+            success: Imefanikiwa kuunganisha mapendekezo na kuwa mapya.
         proposals_splits:
           create:
-            invalid: 'There has been a problem splitting the selected proposals because some of them:'
-            success: Successfully splitted the proposals into new ones.
+            invalid: 'Kumekuwa na tatizo katika kugawanya mapendekezo yaliyochaguliwa kwa sababu baadhi yao:'
+            success: Imefaulu kugawanya mapendekezo kuwa mapya.
         valuation_assignments:
           create:
-            invalid: There was an error assigning proposals to a valuator.
-            success: Proposals assigned to a valuator successfully.
+            invalid: Kulikuwa na hitilafu katika kukabidhi mapendekezo kwa mthamini.
+            success: Mapendekezo yaliyokabidhiwa kwa mthamini kwa mafanikio.
           delete:
-            invalid: There was an error unassigning proposals from a valuator.
-            success: Valuator unassigned from proposals successfully.
+            invalid: Kulikuwa na hitilafu katika kubatilisha mapendekezo kutoka kwa mthamini.
+            success: Mthamini ameondolewa kwenye mapendekezo.
       admin_log:
         proposal:
-          answer: "%{user_name} answered the %{resource_name} proposal on the %{space_name} space"
-          create: "%{user_name} created the %{resource_name} proposal on the %{space_name} space as an official proposal"
-          publish_answer: "%{user_name} published the answer to %{resource_name} proposal on the %{space_name} space"
-          update: "%{user_name} updated the %{resource_name} official proposal on the %{space_name} space"
+          answer: "%{user_name} alijibu pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
+          create: "%{user_name} aliunda pendekezo la %{resource_name} kwenye nafasi ya %{space_name} kama pendekezo rasmi."
+          publish_answer: "%{user_name} alichapisha jibu la pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha pendekezo rasmi la %{resource_name} kwenye nafasi ya %{space_name}"
         proposal_note:
-          create: "%{user_name} left a private note on the %{resource_name} proposal on the %{space_name} space"
+          create: "%{user_name} aliacha dokezo la faragha kwenye pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
         valuation_assignment:
-          create: "%{user_name} assigned the %{resource_name} proposal to a valuator"
-          delete: "%{user_name} unassigned a valuator from the %{proposal_title} proposal"
+          create: "%{user_name} alikabidhi pendekezo la %{resource_name} kwa mthamini"
+          delete: "%{user_name} ameondoa mthamini kutoka kwa pendekezo la %{proposal_title}"
       answers:
-        accepted: Accepted
-        evaluating: Evaluating
-        not_answered: Not answered
-        rejected: Rejected
-        withdrawn: Withdrawn
+        accepted: Imekubaliwa
+        evaluating: Kutathmini
+        not_answered: Haijajibiwa
+        rejected: Imekataliwa
+        withdrawn: Imetolewa
       application_helper:
         filter_origin_values:
-          all: All
-          meetings: Meetings
-          official: Official
-          participants: Participants
-          user_groups: Groups
+          all: Wote
+          meetings: Mikutano
+          official: Rasmi
+          participants: Washiriki
+          user_groups: Vikundi
         filter_state_values:
-          all: All
-          not_answered: Not answered
+          all: Wote
+          not_answered: Haijajibiwa
         filter_type_values:
-          all: All
-          amendments: Amendments
-          proposals: Proposals
+          all: Wote
+          amendments: Marekebisho
+          proposals: Mapendekezo
       collaborative_drafts:
         collaborative_draft:
           publish:
-            error: There was a problem publishing the collaborative draft.
+            error: Kulikuwa na tatizo la kuchapisha rasimu shirikishi.
             irreversible_action_modal:
-              body: After publishing the draft as a proposal, it will not be editable anymore. The proposal will not accept new authors or contributions.
-              cancel: Cancel
-              ok: Publish as a Proposal
-              title: The following action is irreversible
-            success: Collaborative draft published successfully as a proposal.
+              body: Baada ya kuchapisha rasimu kama pendekezo, haitaweza kuhaririwa tena. Pendekezo halitakubali waandishi wapya au michango.
+              cancel: Ghairi
+              ok: Chapisha kama Pendekezo
+              title: Kitendo kifuatacho hakiwezi kutenduliwa
+            success: Rasimu shirikishi imechapishwa kama pendekezo.
           withdraw:
-            error: There was a problem closing the collaborative draft.
+            error: Kulikuwa na tatizo wakati wa kufunga rasimu shirikishi.
             irreversible_action_modal:
-              body: After closing the draft, it will not be editable anymore. The draft will not accept new authors or contributions.
-              cancel: Cancel
-              ok: Withdraw the collaborative draft
-              title: The following action is irreversible
-            success: Collaborative draft withdrawn successfully.
+              body: Baada ya kufunga rasimu, haitaweza kuhaririwa tena. Rasimu haitakubali waandishi wapya au michango.
+              cancel: Ghairi
+              ok: Ondoa rasimu ya ushirikiano
+              title: Kitendo kifuatacho hakiwezi kutenduliwa
+            success: Rasimu shirikishi imeondolewa.
         create:
-          error: There was a problem creating this collaborative draft.
-          success: Collaborative draft successfully created.
+          error: Kulikuwa na tatizo kuunda rasimu hii shirikishi.
+          success: Rasimu shirikishi imeundwa.
         edit:
-          attachment_legend: "(Optional) Add an attachment"
-          back: Back
-          select_a_category: Please select a category
-          send: Send
-          title: Edit collaborative draft
-        empty: There are no collaborative drafts yet
-        empty_filters: There is no collaborative draft with this criteria
+          attachment_legend: "(Si lazima) Ongeza kiambatisho"
+          back: Nyuma
+          select_a_category: Tafadhali chagua aina
+          send: Tuma
+          title: Hariri rasimu shirikishi
+        empty: Bado hakuna rasimu shirikishi
+        empty_filters: Hakuna rasimu shirikishi yenye vigezo hivi
         filters:
-          all: All
-          amendment: Amendments
-          category: Category
-          open: Open
-          published: Published
-          related_to: Related to
-          scope: Scope
-          search: Search
-          state: Status
-          withdrawn: Withdrawn
+          all: Wote
+          amendment: Marekebisho
+          category: Kategoria
+          open: Fungua
+          published: Imechapishwa
+          related_to: Kuhusiana na
+          scope: Upeo
+          search: Tafuta
+          state: Hali
+          withdrawn: Imetolewa
         filters_small_view:
-          close_modal: Close modal
-          filter: Filter
-          filter_by: Filter by
-          unfold: Unfold
+          close_modal: Funga modali
+          filter: Chuja
+          filter_by: Chuja kwa
+          unfold: Fungua
         index:
           count:
-            one: "%{count} collaborative draft"
-            other: "%{count} collaborative drafts"
-        name: Collaborative drafts
+            one: "%{count} rasimu ya ushirikiano"
+            other: "%{count} rasimu shirikishi"
+        name: Rasimu shirikishi
         new:
-          add_file: Add file
-          edit_file: Edit file
-          send: Continue
+          add_file: Ongeza faili
+          edit_file: Badilisha faili
+          send: Endelea
         new_collaborative_draft_button:
-          new_collaborative_draft: New collaborative draft
+          new_collaborative_draft: Rasimu mpya ya ushirikiano
         orders:
-          label: 'Order drafts by:'
-          most_contributed: Most contributed
-          random: Random
-          recent: Recent
+          label: 'Agiza rasimu kwa:'
+          most_contributed: Wengi walichangia
+          random: Nasibu
+          recent: Hivi karibuni
         requests:
           accepted_request:
-            error: Could not be accepted as a collaborator, please try again later.
-            success: "@%{user} has been accepted as a collaborator successfully."
+            error: Haikuweza kukubaliwa kama mshiriki, tafadhali jaribu tena baadaye.
+            success: "@%{user} amekubaliwa kama mshirika kwa mafanikio."
           access_requested:
-            error: Your request could not be completed, please try again later.
-            success: Your request to collaborate has been successfully sent.
+            error: Ombi lako halijakamilika, tafadhali jaribu tena baadaye.
+            success: Ombi lako la kushirikiana limetumwa kwa ufanisi.
           collaboration_requests:
-            accept_request: Accept
-            reject_request: Reject
-            title: Collaboration requests
+            accept_request: Kubali
+            reject_request: Kataa
+            title: Maombi ya ushirikiano
           rejected_request:
-            error: Could not be rejected as a collaborator, please try again later.
-            success: "@%{user} has been successfully rejected as a collaborator."
+            error: Haikuweza kukataliwa kama mshirika, tafadhali jaribu tena baadaye.
+            success: "@%{user} amefaulu kukataliwa kama mshirika."
         show:
-          edit: Edit collaborative draft
-          final_proposal: Final proposal
-          final_proposal_help_text: This draft is finished. Check out the final proposal
+          edit: Hariri rasimu shirikishi
+          final_proposal: Pendekezo la mwisho
+          final_proposal_help_text: Rasimu hii imekamilika. Angalia pendekezo la mwisho
           hidden_authors_count:
-            one: and %{count} more person
-            other: and %{count} more people
-          info-message: This is a <strong>collaborative draft</strong> for a proposal. This means that you can help their authors to shape the proposal using the comment section below or improve it directly by requesting access to edit it. Once the authors grant you access, you will be able to make changes to this draft.
-          publish: Publish
-          publish_info: Publish this version of the draft or
-          published_proposal: Published proposal
-          request_access: Request access
-          requested_access: Access requested
-          withdraw: withdraw the draft
+            one: na %{count} mtu zaidi
+            other: na watu %{count} zaidi
+          info-message: Hii ni <strong>rasimu shirikishi</strong> ya pendekezo. Hii ina maana kwamba unaweza kuwasaidia waandishi wao kuunda pendekezo kwa kutumia sehemu ya maoni iliyo hapa chini au kuiboresha moja kwa moja kwa kuomba idhini ya kulihariri. Waandishi wakishakupa ufikiaji, utaweza kufanya mabadiliko kwenye rasimu hii.
+          publish: Chapisha
+          publish_info: Chapisha toleo hili la rasimu au
+          published_proposal: Pendekezo lililochapishwa
+          request_access: Omba ufikiaji
+          requested_access: Ufikiaji umeombwa
+          withdraw: kuondoa rasimu
         states:
-          open: Open
-          published: Published
-          withdrawn: Withdrawn
+          open: Fungua
+          published: Imechapishwa
+          withdrawn: Imetolewa
         update:
-          error: There was a problem saving the collaborative draft.
-          success: Collaborative draft successfully updated.
+          error: Kulikuwa na tatizo katika kuhifadhi rasimu shirikishi.
+          success: Rasimu shirikishi imesasishwa.
         wizard_aside:
           back_from_collaborative_draft: Back to collaborative drafts
         wizard_header:
