@@ -21,94 +21,94 @@ sw:
           error: Kulikuwa na tatizo katika kunakili kiolezo hiki.
           success: Kiolezo kimenakiliwa.
         create:
-          error: There was a problem creating this template.
-          success: Template created successfully.
+          error: Kulikuwa na tatizo la kuunda kiolezo hiki.
+          success: Kiolezo kimeundwa kwa ufanisi.
         destroy:
-          success: Template deleted successfully.
-        empty: There are no templates yet.
+          success: Kiolezo kimefutwa.
+        empty: Bado hakuna violezo.
         fetch:
-          error: Could not find this template. Please reload the page.
-        missing_resource: "(missing resource)"
+          error: Haikuweza kupata kiolezo hiki. Tafadhali pakia upya ukurasa.
+        missing_resource: "(rasilimali inayokosekana)"
         update:
-          error: There was a problem updating this template.
-          success: Template updated successfully.
+          error: Kulikuwa na tatizo la kusasisha kiolezo hiki.
+          success: Kiolezo kimesasishwa.
       titles:
         template_types:
-          questionnaires: Questionnaire templates
+          questionnaires: Violezo vya dodoso
         templates: Violezo
     models:
       questionnaire_template:
         fields:
-          questions: Number of questions
-          title: Questionnaire Title
+          questions: Idadi ya maswali
+          title: Kichwa cha Hojaji
       template:
         fields:
           created_at: Imeundwa saa
-        name: Template
+        name: Kiolezo
     templates:
       admin:
         block_user_templates:
           edit:
-            title: Edit block user message template
+            title: Badilisha kiolezo cha ujumbe wa mtumiaji wa kuzuia
           form:
             save: Hifadhi
           index:
-            confirm_delete: Are you sure you want to delete this template?
-            title: Block user messages
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            title: Zuia ujumbe wa mtumiaji
           new:
-            title: New block user message template
+            title: Kiolezo kipya cha ujumbe wa mtumiaji wa kizuizi
           template_chooser:
-            select_template: Select a template answer
+            select_template: Chagua jibu la kiolezo
         proposal_answer_templates:
           edit:
-            title: Edit proposal answer template
+            title: Hariri kiolezo cha jibu la pendekezo
           form:
-            component_constraint_help: Note that only participatory spaces having components of the type "proposals" will be listed.
-            hint1_html: "<strong>%{organization}</strong> will be replaced by the organization's name"
-            hint2_html: "<strong>%{name}</strong> will be replaced by the author's name"
-            hint3_html: "<strong>%{admin}</strong> will be replaced by the admin's name (the one answering the proposal)"
-            hint_html: "<strong>Hint:</strong> You can use these variables anywhere on the answer template that will be replaced when using the template"
+            component_constraint_help: Kumbuka kuwa nafasi shirikishi pekee zenye vipengele vya aina ya "mapendekezo" ndizo zitaorodheshwa.
+            hint1_html: "<strong>%{organization}</strong> itabadilishwa na jina la shirika"
+            hint2_html: "<strong>%{name}</strong> itabadilishwa na jina la mwandishi"
+            hint3_html: "<strong>%{admin}</strong> itabadilishwa na jina la msimamizi (yule anayejibu pendekezo)"
+            hint_html: "<strong>Kidokezo:</strong> Unaweza kutumia vigeu hivi popote kwenye kiolezo cha jibu ambacho kitabadilishwa unapotumia kiolezo."
             save: Hifadhi
           index:
-            component_constraint: Add constraint
-            confirm_delete: Are you sure you want to delete this template?
-            missing_state: Missing state
-            proposal_state_id: Internal state
-            title: Proposal answers
+            component_constraint: Ongeza kizuizi
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            missing_state: Hali haipo
+            proposal_state_id: Hali ya ndani
+            title: Majibu ya pendekezo
           new:
-            title: New proposal answer template
+            title: Kiolezo kipya cha jibu la pendekezo
           template_chooser:
-            select_template: Select a template answer
+            select_template: Chagua jibu la kiolezo
         questionnaire_templates:
           choose:
-            create_from_template: Create from template
-            description: You are about to create a new questionnaire. You may choose a predefined template and modify it afterwards.
-            label: Choose template
-            placeholder: Choose template
-            skip_template: Skip
+            create_from_template: Unda kutoka kwa kiolezo
+            description: Unakaribia kuunda dodoso mpya. Unaweza kuchagua kiolezo kilichofafanuliwa awali na kukirekebisha baadaye.
+            label: Chagua kiolezo
+            placeholder: Chagua kiolezo
+            skip_template: Ruka
           edit:
-            edit: Edit
-            empty: There are no questions yet.
-            questionnaire: Questionnaire
-            title: Edit questionnaire template
+            edit: Hariri
+            empty: Bado hakuna maswali.
+            questionnaire: Hojaji
+            title: Badilisha kiolezo cha dodoso
           form:
-            title: Questionnaire template %{questionnaire_for}
+            title: Kiolezo cha dodoso %{questionnaire_for}
           index:
-            confirm_delete: Are you sure you want to delete this template?
-            title: Questionnaire templates
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            title: Violezo vya dodoso
           new:
-            title: New questionnaire template
+            title: Kiolezo kipya cha dodoso
           preview:
-            current_step: Step %{step}
-            of_total_steps: of %{total_steps}
-            tos_agreement: By participating you accept its Terms of Service
+            current_step: Hatua %{step}
+            of_total_steps: kati ya %{total_steps}
+            tos_agreement: Kwa kushiriki unakubali Sheria na Masharti yake
       admin_log:
         template:
-          create: "%{user_name} created the %{resource_name} questionnaire template"
-          delete: "%{user_name} deleted the %{resource_name} questionnaire template"
-          duplicate: "%{user_name} duplicated the %{resource_name} questionnaire template"
-          update: "%{user_name} updated the %{resource_name} questionnaire template"
+          create: "%{user_name} aliunda %{resource_name} kiolezo cha dodoso"
+          delete: "%{user_name} alifuta kiolezo cha %{resource_name} hojaji"
+          duplicate: "%{user_name} amerudufisha kiolezo cha %{resource_name} dodoso"
+          update: "%{user_name} alisasisha %{resource_name} kiolezo cha dodoso"
       template_types:
-        block_user: Block user messages
-        proposal_answer_templates: Proposal answers
-        questionnaires: Questionnaires
+        block_user: Zuia ujumbe wa mtumiaji
+        proposal_answer_templates: Majibu ya pendekezo
+        questionnaires: Hojaji
