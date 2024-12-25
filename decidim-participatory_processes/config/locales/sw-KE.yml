@@ -461,62 +461,62 @@ sw:
         description:
           area_name: Eneo
           data: Mchakato wa data
-          developer_group: Promoter group
-          local_area: Organization Area
-          meta_scope: Scope
-          participatory_scope: What is decided
-          participatory_structure: How is it decided
-          target: Who participates
-          title: About this process
+          developer_group: Kikundi cha wakuzaji
+          local_area: Eneo la Shirika
+          meta_scope: Upeo
+          participatory_scope: Nini kinaamuliwa
+          participatory_structure: Inaamuliwa vipi
+          target: Nani anashiriki
+          title: Kuhusu mchakato huu
         filters:
-          all_types: All types
+          all_types: Aina zote
           counters:
             active:
-              one: 1 active process
-              other: "%{count} active processes"
+              one: '%{count} michakato inayotumika'
+              other: "%{count} michakato inayotumika"
             all:
               one: 1 process
               other: "%{count} processes"
             past:
-              one: 1 past process
-              other: "%{count} past processes"
+              one: 1 mchakato
+              other: "%{count} michakato iliyopita"
             upcoming:
-              one: 1 upcoming process
-              other: "%{count} upcoming processes"
-          date: Date
+              one: Mchakato 1 ujao
+              other: "%{count} michakato ijayo"
+          date: Tarehe
           explanations:
-            no_active: No active processes.
-            no_active_nor_upcoming: No active nor upcoming processes.
-            no_active_nor_upcoming_callout: There are no active nor upcoming processes. Here is a list of the past ones.
-          filter_by: Show
+            no_active: Hakuna michakato inayotumika.
+            no_active_nor_upcoming: Hakuna michakato inayoendelea au inayokuja.
+            no_active_nor_upcoming_callout: Hakuna michakato inayoendelea au inayokuja. Hapa kuna orodha ya zamani.
+          filter_by: Onyesha
           names:
-            active: Active
-            all: All
-            past: Past
-            upcoming: Upcoming
-          see: See
-          type: Type
+            active: Inayotumika
+            all: Wote
+            past: Zamani
+            upcoming: Ijayo
+          see: Tazama
+          type: Aina
         show:
-          title: About this process
+          title: Kuhusu mchakato huu
       show:
-        belongs_to_group: This process belongs to
-        private_space: This is a private process
-        related_processes: Related processes
+        belongs_to_group: Utaratibu huu ni wa
+        private_space: Huu ni mchakato wa kibinafsi
+        related_processes: Michakato inayohusiana
     statistics:
-      processes_count: Processes
+      processes_count: Michakato
   layouts:
     decidim:
       participatory_process_groups:
         participatory_process_group:
-          browse: Browse
-          browse_resource: Browse process group %{resource_name}
-          processes_count: 'Processes:'
+          browse: Vinjari
+          browse_resource: Vinjari kikundi cha mchakato %{resource_name}
+          processes_count: 'Michakato:'
       participatory_processes:
         index:
-          promoted_processes: Highlighted processes
+          promoted_processes: Michakato iliyoangaziwa
         participatory_process:
-          active_step: Current phase
-          more_info: More info
-          more_info_about: More info about process %{resource_name}
-          take_part: Take part
-          take_part_in: Take part in process %{resource_name}
+          active_step: Awamu ya sasa
+          more_info: Maelezo zaidi
+          more_info_about: Maelezo zaidi kuhusu mchakato %{resource_name}
+          take_part: Shiriki
+          take_part_in: Shiriki katika mchakato %{resource_name}
