@@ -173,59 +173,59 @@ sw:
               recent: Hivi karibuni
               with_more_authors: Na waandishi zaidi
             geocoding_enabled: Uwekaji msimbo umewezeshwa
-            minimum_votes_per_user: Minimum votes per user
-            new_proposal_body_template: New proposal body template
-            new_proposal_body_template_help: You can define prefilled text that the new Proposals will have
-            new_proposal_help_text: New proposal help text
-            official_proposals_enabled: Official proposals enabled
-            participatory_texts_enabled: Participatory texts enabled
-            participatory_texts_enabled_readonly: Cannot interact with this setting if there are existing proposals. Please, create a new `Proposals component` if you want to enable this feature or discard all imported proposals in the `Participatory Texts` menu if you want to disable it.
-            proposal_answering_enabled: Proposal answering enabled
-            proposal_edit_before_minutes: Proposals can be edited by authors before this many minutes passes
-            proposal_edit_time: Proposal editing
+            minimum_votes_per_user: Kiwango cha chini cha kura kwa kila mtumiaji
+            new_proposal_body_template: Kiolezo kipya cha pendekezo
+            new_proposal_body_template_help: Unaweza kufafanua maandishi yaliyojazwa awali ambayo Mapendekezo mapya yatakuwa nayo
+            new_proposal_help_text: Nakala ya usaidizi wa pendekezo jipya
+            official_proposals_enabled: Mapendekezo rasmi yamewezeshwa
+            participatory_texts_enabled: Maandishi shirikishi yamewezeshwa
+            participatory_texts_enabled_readonly: Haiwezi kuingiliana na mpangilio huu ikiwa kuna mapendekezo yaliyopo. Tafadhali, unda `kijenzi kipya cha Mapendekezo` ikiwa unataka kuwezesha kipengele hiki au kutupa mapendekezo yote yaliyoletwa kwenye menyu ya `Maandiko Shirikishi` ikiwa ungependa kukizima.
+            proposal_answering_enabled: Kujibu pendekezo kumewashwa
+            proposal_edit_before_minutes: Mapendekezo yanaweza kuhaririwa na waandishi kabla ya dakika hizi nyingi kupita
+            proposal_edit_time: Uhariri wa pendekezo
             proposal_edit_time_choices:
-              infinite: Allow editing proposals for an infinite amount of time
-              limited: Allow editing of proposals within a specific timeframe
-            proposal_length: Maximum proposal body length
-            proposal_limit: Proposal limit per participant
-            proposal_wizard_step_1_help_text: Proposal wizard "Create" step help text
-            proposal_wizard_step_2_help_text: Proposal wizard "Publish" step help text
-            resources_permissions_enabled: Actions permissions can be set for each proposal
+              infinite: Ruhusu mapendekezo ya kuhariri kwa muda usio na kipimo
+              limited: Ruhusu uhariri wa mapendekezo ndani ya muda maalum
+            proposal_length: Upeo wa urefu wa mwili wa pendekezo
+            proposal_limit: Kikomo cha pendekezo kwa kila mshiriki
+            proposal_wizard_step_1_help_text: Mchawi wa pendekezo "Unda" maandishi ya usaidizi wa hatua
+            proposal_wizard_step_2_help_text: Mchawi wa pendekezo "Chapisha" maandishi ya usaidizi wa hatua
+            resources_permissions_enabled: Ruhusa za vitendo zinaweza kuwekwa kwa kila pendekezo
             scope_id: Upeo
             scopes_enabled: Upeo umewezeshwa
-            threshold_per_proposal: Threshold per proposal
-            vote_limit: Vote limit per participant
+            threshold_per_proposal: Kizingiti kwa pendekezo
+            vote_limit: Kikomo cha kura kwa kila mshiriki
           step:
             amendment_creation_enabled: Amendment creation enabled
-            amendment_creation_enabled_help: Participant can amend proposals.
-            amendment_promotion_enabled: Amendment promotion enabled
-            amendment_promotion_enabled_help: Emandation authors will be able to promote to Proposal the rejected emendation.
+            amendment_creation_enabled_help: Mshiriki anaweza kurekebisha mapendekezo.
+            amendment_promotion_enabled: Utangazaji wa marekebisho umewashwa
+            amendment_promotion_enabled_help: Waandishi wa idhini wataweza kukuza hadi Pendekezo urekebishaji uliokataliwa.
             amendment_reaction_enabled: Maoni ya marekebisho yamewashwa
-            amendment_reaction_enabled_help: Proposal's authors will be able to accept or reject Participant's emendations.
-            amendments_visibility: Amendments visibility
+            amendment_reaction_enabled_help: Waandishi wa Pendekezo wataweza kukubali au kukataa marekebisho ya Mshiriki.
+            amendments_visibility: Mwonekano wa marekebisho
             amendments_visibility_choices:
-              all: Amendments are visible to all
-              participants: Amendments are visible only to their authors
-            amendments_visibility_help: If the option "Amendments are visible only to their authors" is selected, participant must be logged in to see the amendments made.
+              all: Marekebisho yanaonekana kwa wote
+              participants: Marekebisho yanaonekana kwa waandishi wao pekee
+            amendments_visibility_help: Ikiwa chaguo "Marekebisho yanaonekana kwa waandishi wao pekee" yamechaguliwa, mshiriki lazima aingie ili kuona marekebisho yaliyofanywa.
             announcement: Tangazo
-            answers_with_costs: Enable costs on proposal answers
-            automatic_hashtags: Hashtags added to all proposals
-            comments_blocked: Comments blocked
-            creation_enabled: Participants can create proposals
-            creation_enabled_readonly: This setting is disabled when you activate the Participatory Texts functionality. To upload proposals as participatory text click on the Participatory Texts button and follow the instructions.
-            default_sort_order: Default proposal sorting
-            default_sort_order_help: Automatic means that if the votes are enabled, the proposals will be shown sorted by random, and if the votes are blocked, then they will be sorted by the most voted.
+            answers_with_costs: Washa gharama kwenye majibu ya pendekezo
+            automatic_hashtags: Hashtag zimeongezwa kwa mapendekezo yote
+            comments_blocked: Maoni yamezuiwa
+            creation_enabled: Washiriki wanaweza kuunda mapendekezo
+            creation_enabled_readonly: Mpangilio huu umezimwa unapowezesha utendakazi wa Maandishi Shirikishi. Ili kupakia mapendekezo kama maandishi shirikishi bofya kitufe cha Maandishi Shirikishi na ufuate maagizo.
+            default_sort_order: Upangaji wa pendekezo chaguomsingi
+            default_sort_order_help: Kiotomatiki inamaanisha kuwa kura zikiwashwa, mapendekezo yataonyeshwa yakiwa yamepangwa nasibu, na ikiwa kura zimezuiwa, basi zitapangwa kwa waliopiga kura nyingi zaidi.
             default_sort_order_options:
               automatic: Otomatiki
               most_commented: Wengi walitoa maoni
               most_endorsed: Imeidhinishwa zaidi
-              most_followed: Most followed
-              most_voted: Most voted
-              random: Random
-              recent: Recent
-              with_more_authors: With more authors
-            endorsements_blocked: Endorsements blocked
-            endorsements_enabled: Endorsements enabled
+              most_followed: Wengi walifuata
+              most_voted: Wengi walipiga kura
+              random: Nasibu
+              recent: Hivi karibuni
+              with_more_authors: Na waandishi zaidi
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
             proposal_answering_enabled: Proposal answering enabled
             publish_answers_immediately: Publish proposal answers immediately
             publish_answers_immediately_help_html: 'Mind that if you answer any proposal without this enabled, you will need to publish them manually by selecting them and using the action for publication. For more info on how this works, see <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposals'' answers documentation page</a>.'
@@ -248,7 +248,7 @@ sw:
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> has been <strong>accepted to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
         collaborative_draft_access_rejected:
           email_intro: '%{requester_name} has been rejected to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: "%{requester_name} has been rejected to access as a contributor of the %{resource_title} collaborative draft."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> has been <strong>rejected to access as a contributor</strong> of the <a href="%{resource_path}">%{resource_title}</a> collaborative draft.
         collaborative_draft_access_requested:
@@ -290,71 +290,71 @@ sw:
           email_intro: '%{author_name} %{author_nickname}, who you are following, has published a new proposal called "%{resource_title}". Check it out and contribute:'
           email_outro: You have received this notification because you are following %{author_nickname}. You can stop receiving notifications following the previous link.
           email_subject: New proposal "%{resource_title}" by %{author_nickname}
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal was published by <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+          notification_title: Pendekezo la <a href="%{resource_path}">%{resource_title}</a> lilichapishwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
         proposal_published_for_space:
-          email_intro: The proposal "%{resource_title}" has been added to "%{participatory_space_title}" that you are following.
-          email_outro: You have received this notification because you are following "%{participatory_space_title}". You can stop receiving notifications following the previous link.
-          email_subject: New proposal "%{resource_title}" added to %{participatory_space_title}
-          notification_title: The proposal <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title} by %{author}.
-          notification_title_official: The official proposal <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title}.
+          email_intro: Pendekezo "%{resource_title}" limeongezwa kwa "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Pendekezo jipya "%{resource_title}" limeongezwa kwa %{participatory_space_title}
+          notification_title: Pendekezo <a href="%{resource_path}">%{resource_title}</a> limeongezwa kwa %{participatory_space_title} na %{author}.
+          notification_title_official: Pendekezo rasmi <a href="%{resource_path}">%{resource_title}</a> limeongezwa kwa %{participatory_space_title}.
         proposal_state_changed:
           affected_user:
-            email_intro: 'The proposal "%{resource_title}" has changed its state to "%{state}". You can read the answer in this page:'
-            email_outro: You have received this notification because you are an author of "%{resource_title}".
-            email_subject: Your proposal has changed its state (%{state})
-            notification_title: Your proposal <a href="%{resource_path}">%{resource_title}</a> has changed its state to "%{state}".
+            email_intro: 'Pendekezo "%{resource_title}" limebadilisha hali yake kuwa "%{state}". Unaweza kusoma jibu katika ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa "%{resource_title}".
+            email_subject: Pendekezo lako limebadilisha hali yake (%{state})
+            notification_title: Pendekezo lako <a href="%{resource_path}">%{resource_title}</a> limebadilisha hali yake kuwa "%{state}".
           follower:
-            email_intro: 'The proposal "%{resource_title}" has changed its state to "%{state}". You can read the answer in this page:'
-            email_outro: You have received this notification because you are following "%{resource_title}". You can unfollow it from the previous link.
-            email_subject: A proposal you are following has changed its state (%{state})
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal has changed its state to "%{state}".
+            email_intro: 'Pendekezo "%{resource_title}" limebadilisha hali yake kuwa "%{state}". Unaweza kusoma jibu katika ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Pendekezo unalofuata limebadilisha hali yake (%{state})
+            notification_title: Pendekezo la <a href="%{resource_path}">%{resource_title}</a> limebadilisha hali yake kuwa "%{state}".
         proposal_update_category:
-          email_intro: 'An admin has updated the category of your proposal "%{resource_title}", check it out in this page:'
-          email_outro: You have received this notification because you are the author of the proposal.
-          email_subject: The %{resource_title} proposal category has been updated
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal category has been updated by an admin.
+          email_intro: 'Msimamizi amesasisha aina ya pendekezo lako "%{resource_title}", liangalie katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa pendekezo.
+          email_subject: Kategoria ya pendekezo la %{resource_title} imesasishwa
+          notification_title: <a href="%{resource_path}">%{resource_title}</a> kategoria ya pendekezo imesasishwa na msimamizi.
         proposal_update_scope:
-          email_intro: 'An admin has updated the scope of your proposal "%{resource_title}", check it out in this page:'
-          email_outro: You have received this notification because you are the author of the proposal.
-          email_subject: The %{resource_title} proposal scope has been updated
-          notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal scope has been updated by an admin.
+          email_intro: 'Msimamizi amesasisha upeo wa pendekezo lako "%{resource_title}", liangalie katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa pendekezo.
+          email_subject: Upeo wa pendekezo la %{resource_title} umesasishwa
+          notification_title: <a href="%{resource_path}">%{resource_title}</a> upeo wa pendekezo umesasishwa na msimamizi.
         voting_enabled:
-          email_intro: 'You can vote proposals in %{participatory_space_title}! Start participating in this page:'
-          email_outro: You have received this notification because you are following %{participatory_space_title}. You can stop receiving notifications following the previous link.
-          email_subject: Proposal voting has started for %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">voting proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>
+          email_intro: 'Unaweza kupiga kura mapendekezo katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Upigaji kura wa mapendekezo umeanza kwa %{participatory_space_title}
+          notification_title: Sasa unaweza kuanzisha <a href="%{resource_path}">mapendekezo ya kupiga kura</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>
     gamification:
       badges:
         accepted_proposals:
           conditions:
-            - Choose the participation space of your interest with submission for proposals enabled
-            - Try to make proposals that can be carried out. This way they are more likely to be accepted.
-          description: This badge is granted when you actively participate with new proposals and these are accepted.
-          description_another: This participant had %{score} accepted proposals.
-          description_own: You got %{score} proposals accepted.
-          name: Accepted proposals
-          next_level_in: Get %{score} more proposals accepted to reach the next level!
-          unearned_another: This participant has not yet had any accepted proposals.
-          unearned_own: You got no proposals accepted yet.
+            - Chagua nafasi ya ushiriki inayokuvutia huku uwasilishaji wa mapendekezo ukiwashwa
+            - Jaribu kutoa mapendekezo ambayo yanaweza kutekelezwa. Kwa njia hii wana uwezekano mkubwa wa kukubalika.
+          description: Beji hii inatolewa unaposhiriki kikamilifu na mapendekezo mapya na haya yanakubaliwa.
+          description_another: Mshiriki huyu alikuwa na mapendekezo %{score} yaliyokubaliwa.
+          description_own: Umekubali mapendekezo %{score}.
+          name: Mapendekezo yaliyokubaliwa
+          next_level_in: Pata mapendekezo %{score} zaidi ili ufikie kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajawa na mapendekezo yoyote yaliyokubaliwa.
+          unearned_own: Bado hujapokea mapendekezo yoyote.
         proposal_votes:
           conditions:
-            - Browse and spend some time reading other people's proposals
-            - Vote to the proposals you like or find interesting
-          description: This badge is granted when you vote other people's proposals.
-          description_another: This participant has voted to %{score} proposals.
-          description_own: You have voted to %{score} proposals.
-          name: Proposal votes
-          next_level_in: Vote to %{score} more proposals to reach the next level!
-          unearned_another: This participant has not voted to any proposals yet.
-          unearned_own: You have voted to no proposals yet.
+            - Vinjari na utumie muda kusoma mapendekezo ya watu wengine
+            - Piga kura kwa mapendekezo unayopenda au ya kuvutia
+          description: Beji hii inatolewa unapopiga kura mapendekezo ya watu wengine.
+          description_another: Mshiriki huyu amepigia kura mapendekezo %{score}.
+          description_own: Umepigia kura mapendekezo %{score}.
+          name: Kura za mapendekezo
+          next_level_in: Pigia kura mapendekezo %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajapigia kura mapendekezo yoyote.
+          unearned_own: Bado umepigia kura hakuna mapendekezo.
         proposals:
           conditions:
-            - Choose the participation space of your interest with submission for proposals enabled
-            - Create a new proposal
-          description: This badge is granted when you actively participate with new proposals.
-          description_another: This participant has created %{score} proposals.
-          description_own: You have created %{score} proposals.
-          name: Proposals
+            - Chagua nafasi ya ushiriki inayokuvutia huku uwasilishaji wa mapendekezo ukiwashwa
+            - Unda pendekezo jipya
+          description: Beji hii inatolewa unaposhiriki kikamilifu na mapendekezo mapya.
+          description_another: Mshiriki huyu ameunda mapendekezo %{score}.
+          description_own: Umeunda mapendekezo %{score}.
+          name: Mapendekezo
           next_level_in: Create %{score} more proposals to reach the next level!
           unearned_another: This participant has not created any proposals yet.
           unearned_own: You have created no proposals yet.
