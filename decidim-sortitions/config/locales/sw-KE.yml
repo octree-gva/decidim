@@ -80,61 +80,61 @@ sw:
             selected_proposals: Mapendekezo yaliyochaguliwa kwa kuchora
           update:
             error: Kulikuwa na tatizo la kusasisha upangaji.
-            success: Sortition successfully updated.
+            success: Upangaji umesasishwa.
       admin_log:
         sortition:
-          create: "%{user_name} created the %{resource_name} sortition in %{space_name}"
-          delete: "%{user_name} cancelled the %{resource_name} sortition in %{space_name}"
-          update: "%{user_name} updated the %{resource_name} sortition in %{space_name}"
+          create: "%{user_name} aliunda upangaji %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alighairi upangaji %{resource_name} katika %{space_name}"
+          update: "%{user_name} alisasisha upangaji %{resource_name} katika %{space_name}"
       sortitions:
         count:
           proposals_count:
-            one: 1 proposal
-            other: "%{count} proposals"
+            one: 1 pendekezo
+            other: "%{count} mapendekezo"
         filters:
           active: Inayotumika
           all: Wote
-          cancelled: Cancelled
+          cancelled: Imeghairiwa
           category: Kategoria
           state: Hali
         index:
-          empty: There are no sortitions yet.
+          empty: Bado hakuna upangaji.
         linked_sortitions:
-          selected_proposals: Selected proposals
+          selected_proposals: Mapendekezo yaliyochaguliwa
         orders:
-          label: 'Order sortitions by:'
+          label: 'Agiza upangaji kwa:'
           random: Nasibu
           recent: Hivi karibuni
         results_count:
           count:
-            one: Selected proposal
-            other: Selected proposals
+            one: Pendekezo lililochaguliwa
+            other: Mapendekezo yaliyochaguliwa
         show:
-          algorithm: Sortition's algorithm code
-          any_category: from all categories
-          cancelled: Cancelled sortition
-          candidate_proposal_ids: Sortition proposals order and IDs
-          candidate_proposals_info: 'The sortition was carried out among the following proposals (%{category_label}), with the following IDs (in bold the selected proposals)  '
-          category: from the %{category} category
-          dice_result: Dice result
-          introduction: 'This page contains the results of the sortition %{reference}. By means of this sortition, %{target_items} number of results have been selected randomly and with an equal probability distribution from the set of proposals displayed bellow. Together with the results, the information displayed on this page provides all the information required to maximize guarantees and to reproduce the results. The key to the quality of this sortition is the double randomness provided by a the rolling of a dice(verified by witnesses) and the precise time of the sortition that provides input for an algorithm that generates a random selection. The time-seed for the sortition is so accurate (seconds) that it is impossible to control by humans thus providing a double "uncontrollable" input to guarantee a fair result.  '
-          mathematical_result: Result (Dice x Seed)
-          proposals_selected_by_sortition: Proposals selected by sortition
-          sortition_reproducibility_details: Sortition reproducibility
-          time_seed: Time seed
-          witnesses: Witnesses
+          algorithm: Msimbo wa algoriti ya Upangaji
+          any_category: kutoka kategoria zote
+          cancelled: Upangaji ulioghairiwa
+          candidate_proposal_ids: Agizo la mapendekezo ya kupanga na IDs
+          candidate_proposals_info: 'Upangaji ulifanywa kati ya mapendekezo yafuatayo (%{category_label}), pamoja na vitambulisho vifuatavyo (kwa herufi nzito mapendekezo yaliyochaguliwa)'
+          category: kutoka kategoria ya %{category}
+          dice_result: Matokeo ya kete
+          introduction: 'Ukurasa huu una matokeo ya upangaji %{reference}. Kupitia upangaji huu, %{target_items} idadi ya matokeo imechaguliwa kwa nasibu na kwa uwezekano sawa wa usambazaji kutoka kwa seti ya mapendekezo iliyoonyeshwa hapa chini. Pamoja na matokeo, maelezo yanayoonyeshwa kwenye ukurasa huu hutoa taarifa zote zinazohitajika ili kuongeza dhamana na kutoa matokeo. Ufunguo wa ubora wa upangaji huu ni unasibu maradufu unaotolewa na kukunja kete (zilizothibitishwa na mashahidi) na wakati mahususi wa upangaji ambao hutoa ingizo la algoriti ambayo hutoa uteuzi nasibu. Mbegu za wakati wa upangaji ni sahihi (sekunde) hivi kwamba haiwezekani kudhibitiwa na wanadamu kwa hivyo kutoa pembejeo "isiyodhibitiwa" mara mbili ili kuhakikisha matokeo ya haki.'
+          mathematical_result: Matokeo (Dice x Mbegu)
+          proposals_selected_by_sortition: Mapendekezo yaliyochaguliwa kwa kupanga
+          sortition_reproducibility_details: Uzalishaji wa upangaji
+          time_seed: Mbegu ya wakati
+          witnesses: Mashahidi
         sortition:
-          random_seed: Random seed
+          random_seed: Mbegu za nasibu
           selected_proposals:
-            one: proposal selected
-            other: proposals selected
+            one: pendekezo lililochaguliwa
+            other: mapendekezo yaliyochaguliwa
         sortition_author:
-          deleted: Deleted participant
+          deleted: Mshiriki amefutwa
         sortition_cancel_author:
-          deleted: Deleted participant
+          deleted: Mshiriki amefutwa
         sortitions_count:
           count:
-            one: 1 sortition
-            other: "%{count} sortitions"
+            one: 1 upangaji
+            other: "Mipangilio %{count}"
     statistics:
-      sortitions_count: Sortitions
+      sortitions_count: Upangaji
