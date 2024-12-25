@@ -475,8 +475,8 @@ sw:
               one: '%{count} michakato inayotumika'
               other: "%{count} michakato inayotumika"
             all:
-              one: 1 process
-              other: "%{count} processes"
+              one: 1 mchakato
+              other: "%{count} michakato"
             past:
               one: 1 mchakato
               other: "%{count} michakato iliyopita"
