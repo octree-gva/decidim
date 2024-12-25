@@ -43,18 +43,18 @@ sw:
         destroy: Futa
         edit: Hariri
         new_admin: Msimamizi mpya
-        new_oauth_application: New OAUTH application
-        new_organization: New organization
+        new_oauth_application: Programu mpya ya OAUTH
+        new_organization: Shirika jipya
         save: Hifadhi
         title: Vitendo
       admins:
         create:
-          error: There was a problem creating a new admin.
-          success: Admin successfully created.
+          error: Kulikuwa na tatizo la kuunda msimamizi mpya.
+          success: Msimamizi amefaulu kuunda.
         destroy:
-          success: Admin successfully deleted.
+          success: Msimamizi amefaulu kufutwa.
         edit:
-          title: Edit admin
+          title: Badilisha msimamizi
           update: Sasisha
         index:
           title: Wasimamizi
@@ -62,67 +62,67 @@ sw:
           create: Unda
           title: Msimamizi mpya
         update:
-          error: There was a problem updating this admin.
-          success: Admin successfully updated.
+          error: Kulikuwa na tatizo la kusasisha msimamizi huyu.
+          success: Msimamizi amesasishwa.
       dashboard:
         show:
-          admins: Admins
-          current_organizations: Current organizations
-          system_checks: System checks
+          admins: Wasimamizi
+          current_organizations: Mashirika ya sasa
+          system_checks: Ukaguzi wa mfumo
       default_pages:
         placeholders:
-          content: Please add meaningful content to the %{page} static page on the admin dashboard.
-          summary: Please add meaningful summary to the %{page} static page on the admin dashboard.
-          title: Default title for %{page}
-        terms-of-service: Terms of service
+          content: Tafadhali ongeza maudhui yenye maana kwa %{page} ukurasa tuli kwenye dashibodi ya msimamizi.
+          summary: Tafadhali ongeza muhtasari wa maana kwa %{page} ukurasa tuli kwenye dashibodi ya msimamizi.
+          title: Kichwa chaguomsingi cha %{page}
+        terms-of-service: Masharti ya huduma
       devise:
         passwords:
           edit:
-            change_your_password: Change your password
-            minimum_characters: "(%{minimum} characters minimum)"
+            change_your_password: Badilisha nenosiri lako
+            minimum_characters: "(chini ya herufi %{minimum})"
           new:
-            forgot_your_password: Forgot your password
-            send_me_reset_password_instructions: Send me reset password instructions
+            forgot_your_password: Umesahau nenosiri lako
+            send_me_reset_password_instructions: Nitumie maagizo ya kuweka upya nenosiri
         shared:
           links:
-            did_not_receive_confirmation_instructions?: Did not receive confirmation instructions?
-            did_not_receive_unlock_instructions?: Did not receive unlock instructions?
-            forgot_your_password?: Forgot your password?
-            log_in: Log in
-            sign_up: Create an account
+            did_not_receive_confirmation_instructions?: Hukupokea maagizo ya uthibitishaji?
+            did_not_receive_unlock_instructions?: Hukupokea maagizo ya kufungua?
+            forgot_your_password?: Je, umesahau nenosiri lako?
+            log_in: Ingia
+            sign_up: Fungua akaunti
       menu:
-        admins: Admins
-        dashboard: Dashboard
-        oauth_applications: OAuth applications
-        organizations: Organizations
+        admins: Wasimamizi
+        dashboard: Dashibodi
+        oauth_applications: Maombi ya OAuth
+        organizations: Mashirika
       models:
         admin:
           fields:
-            created_at: Created at
-            email: Email
+            created_at: Imeundwa saa
+            email: Barua pepe
           validations:
-            email_uniqueness: another admin with the same email already exists
+            email_uniqueness: msimamizi mwingine aliye na barua pepe sawa tayari yupo
         oauth_application:
           fields:
-            created_at: Created at
-            name: OAuth application name
-            organization_name: Organization
+            created_at: Imeundwa saa
+            name: Jina la programu ya OAuth
+            organization_name: Shirika
         organization:
           actions:
-            save_and_invite: Create organization & invite admin
+            save_and_invite: Unda shirika na mwalike msimamizi
           fields:
-            content_security_policy: Content security policy
-            created_at: Created at
-            file_upload_settings: File upload settings
-            name: Name
-            omniauth_settings: Omniauth settings
-            smtp_settings: SMTP settings
+            content_security_policy: Sera ya usalama wa maudhui
+            created_at: Imeundwa saa
+            file_upload_settings: Mipangilio ya upakiaji wa faili
+            name: Jina
+            omniauth_settings: Mipangilio ya Omniauth
+            smtp_settings: Mipangilio ya SMTP
       oauth_applications:
         create:
-          error: There was a problem creating this application.
-          success: Application created successfully.
+          error: Kulikuwa na tatizo la kuunda programu hii.
+          success: Programu imeundwa kwa ufanisi.
         destroy:
-          error: There was a problem destroying this application.
+          error: Kulikuwa na tatizo la kuharibu programu hii.
           success: Programu imeharibiwa.
         edit:
           save: Hifadhi
