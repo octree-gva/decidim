@@ -848,83 +848,83 @@ sw:
             one: na %{count} mtu zaidi
             other: na watu %{count} zaidi
           link_to_collaborative_draft_help_text: Pendekezo hili ni matokeo ya rasimu shirikishi. Kagua historia
-          link_to_collaborative_draft_text: See the collaborative draft
-          link_to_promoted_emendation_help_text: This proposal is a promoted emendation
-          link_to_promoted_emendation_text: See the rejected emendation.
-          link_to_proposal_from_emendation_help_text: This is a rejected emendation
-          link_to_proposal_from_emendation_text: See the Proposal
-          proposal_accepted_reason: 'This proposal has been accepted because:'
-          proposal_in_evaluation_reason: This proposal is being evaluated
-          proposal_rejected_reason: 'This proposal has been rejected because:'
-          withdraw_btn_hint: You can withdraw your proposal if you change your mind, as long as you have not received any vote. The proposal is not deleted, it will appear in the list of withdrawn proposals.
-          withdraw_confirmation_html: Are you sure you want to withdraw this proposal?<br><br><strong>This action cannot be cancelled!</strong>
-          withdraw_proposal: Withdraw proposal
+          link_to_collaborative_draft_text: Tazama rasimu ya ushirikiano
+          link_to_promoted_emendation_help_text: Pendekezo hili ni marekebisho yaliyokuzwa
+          link_to_promoted_emendation_text: Tazama marekebisho yaliyokataliwa.
+          link_to_proposal_from_emendation_help_text: Hili ni marekebisho yaliyokataliwa
+          link_to_proposal_from_emendation_text: Tazama Pendekezo
+          proposal_accepted_reason: 'Pendekezo hili limekubaliwa kwa sababu:'
+          proposal_in_evaluation_reason: Pendekezo hili linatathminiwa
+          proposal_rejected_reason: 'Pendekezo hili limekataliwa kwa sababu:'
+          withdraw_btn_hint: Unaweza kuondoa pendekezo lako ikiwa utabadilisha mawazo yako, mradi tu hujapata kura yoyote. Pendekezo halijafutwa, litaonekana kwenye orodha ya mapendekezo yaliyoondolewa.
+          withdraw_confirmation_html: Je, una uhakika unataka kuondoa pendekezo hili?<br><br><strong>Hatua hii haiwezi kughairiwa!</strong>
+          withdraw_proposal: Ondoa pendekezo
         update:
-          title: Update proposal
+          title: Sasisha pendekezo
         vote_button:
-          already_voted: Already voted
-          already_voted_hover: Withdraw vote
-          maximum_votes_reached: Vote limit reached
-          no_votes_remaining: No votes remaining
-          vote: Vote
-          votes_blocked: Voting disabled
+          already_voted: Tayari amepiga kura
+          already_voted_hover: Ondoa kura
+          maximum_votes_reached: Kikomo cha kura kimefikiwa
+          no_votes_remaining: Hakuna kura zilizosalia
+          vote: Kura
+          votes_blocked: Upigaji kura umezimwa
         votes_count:
           count:
-            one: Vote
-            other: Votes
+            one: Kura
+            other: Kura
         voting_rules:
           can_accumulate_votes_beyond_threshold:
-            description: Each proposal can accumulate more than %{limit} votes
+            description: Kila pendekezo linaweza kukusanya zaidi ya kura %{limit}
           minimum_votes_per_user:
-            description: You must distribute a minimum of %{votes} votes among different proposals.
-            given_enough_votes: You have given enough votes.
-            votes_remaining: You have to vote %{remaining_votes} more proposals for your votes to be taken into account.
+            description: Ni lazima usambaze angalau kura %{votes} kati ya mapendekezo tofauti.
+            given_enough_votes: Umetoa kura za kutosha.
+            votes_remaining: Inabidi upige kura %{remaining_votes} mapendekezo zaidi ili kura zako zizingatiwe.
           proposal_limit:
-            description: You can create up to %{limit} proposals.
+            description: Unaweza kuunda hadi mapendekezo %{limit}.
           threshold_per_proposal:
-            description: In order to be validated proposals need to reach %{limit} votes.
-          title: 'Votes are subject to the following rules:'
+            description: Ili kuthibitishwa mapendekezo yanahitajika kufikia kura %{limit}.
+          title: 'Kura iko chini ya sheria zifuatazo:'
           vote_limit:
-            description: You can vote up to %{limit} proposals.
-            votes: Remaining %{number} votes
+            description: Unaweza kupiga kura hadi mapendekezo %{limit}.
+            votes: kura %{number} zilizosalia
         wizard_aside:
-          back: Back
-          back_from_step_1: Back to proposals
-          back_from_step_2: Back to edit
+          back: Nyuma
+          back_from_step_1: Rudi kwa mapendekezo
+          back_from_step_2: Rudi kuhariri
         wizard_steps:
-          current_step: Current step
-          step_1: Create your proposal
-          step_2: Publish your proposal
-          title: Proposal creation steps
+          current_step: Hatua ya sasa
+          step_1: Unda pendekezo lako
+          step_2: Chapisha pendekezo lako
+          title: Hatua za kuunda pendekezo
       proposals_picker:
-        choose_proposals: Choose proposals
-        no_proposals: No proposals match your search criteria or there is not any proposals.
+        choose_proposals: Chagua mapendekezo
+        no_proposals: Hakuna mapendekezo yanayolingana na vigezo vyako vya utafutaji au hakuna mapendekezo yoyote.
       publish:
-        error: There was a problem publishing the proposal.
-        success: Proposal successfully published.
+        error: Kulikuwa na tatizo la kuchapisha pendekezo.
+        success: Pendekezo limechapishwa.
       publish_answers:
-        success: Proposals answers successfully published.
+        success: Majibu ya mapendekezo yamechapishwa.
       update:
-        error: There was a problem saving the proposal.
-        success: Proposal successfully updated.
+        error: Kulikuwa na tatizo katika kuhifadhi pendekezo.
+        success: Pendekezo limesasishwa.
       update_draft:
-        error: There was a problem saving the collaborative draft.
-        success: Proposal draft successfully updated.
+        error: Kulikuwa na tatizo katika kuhifadhi rasimu shirikishi.
+        success: Rasimu ya pendekezo imesasishwa.
       versions:
         index:
-          title: Versions
+          title: Matoleo
       withdraw:
         errors:
-          has_votes: This proposal cannot be withdrawn because it already has votes.
+          has_votes: Pendekezo hili haliwezi kuondolewa kwa sababu tayari lina kura.
     resource_links:
       copied_from_component:
-        proposal_proposal: Related proposals
+        proposal_proposal: Mapendekezo yanayohusiana
       included_projects:
-        project_result: 'Results appearing in this project:'
+        project_result: 'Matokeo yanayoonekana katika mradi huu:'
       included_proposals:
-        proposal_project: 'Proposal appearing in these projects:'
-        proposal_result: 'Proposal appearing in these results:'
+        proposal_project: 'Pendekezo linalojitokeza katika miradi hii:'
+        proposal_result: 'Pendekezo linaloonekana katika matokeo haya:'
     statistics:
-      proposals_accepted: Accepted Proposals
-      proposals_count: Proposals
-      votes_count: Votes
+      proposals_accepted: Mapendekezo Yanayokubaliwa
+      proposals_count: Mapendekezo
+      votes_count: Kura
