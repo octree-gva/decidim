@@ -1,0 +1,65 @@
+---
+fr-CH:
+  activemodel:
+    attributes:
+      dummy_resource:
+        created_at: crwdns8810:0crwdne8810:0
+        decidim_scope_id: crwdns8812:0crwdne8812:0
+        field: crwdns8814:0crwdne8814:0
+        start_date: crwdns8816:0crwdne8816:0
+        title: crwdns8818:0crwdne8818:0
+        translatable_text: crwdns8820:0crwdne8820:0
+        updated_at: crwdns8822:0crwdne8822:0
+  decidim:
+    components:
+      dummy:
+        settings:
+          global:
+            guided: crwdns8824:0crwdne8824:0
+            guided_help: crwdns8826:0crwdne8826:0
+            guided_readonly: crwdns8828:0crwdne8828:0
+            guided_rich: crwdns8830:0crwdne8830:0
+            guided_rich_help_html: crwdns8832:0crwdne8832:0
+            guided_rich_readonly_html: crwdns8834:0crwdne8834:0
+            readonly_attribute: crwdns8836:0crwdne8836:0
+            test: crwdns8838:0crwdne8838:0
+            test_choices:
+              a: crwdns8840:0crwdne8840:0
+              b: crwdns8842:0crwdne8842:0
+              c: crwdns8844:0crwdne8844:0
+            test_options:
+              bar: crwdns8846:0crwdne8846:0
+              baz: crwdns8848:0crwdne8848:0
+              foo: crwdns8850:0crwdne8850:0
+          step:
+            endorsements_blocked: crwdns8852:0crwdne8852:0
+            endorsements_enabled: crwdns8854:0crwdne8854:0
+            readonly_step_attribute: crwdns8856:0crwdne8856:0
+            test_options:
+              bar: crwdns8858:0crwdne8858:0
+              baz: crwdns8860:0crwdne8860:0
+              foo: crwdns8862:0crwdne8862:0
+    dummy:
+      admin:
+        exports:
+          dummies: crwdns8864:0crwdne8864:0
+    gamification:
+      badges:
+        test:
+          conditions:
+            - crwdns8866:0crwdne8866:0
+          description: crwdns8868:0crwdne8868:0
+          description_another: crwdns8870:0%{score}crwdne8870:0
+          description_own: crwdns8872:0%{score}crwdne8872:0
+          name: crwdns8874:0crwdne8874:0
+          next_level_in: crwdns8876:0%{score}crwdne8876:0
+          unearned_another: crwdns8878:0crwdne8878:0
+          unearned_own: crwdns8880:0crwdne8880:0
+    resource_links:
+      test_link:
+        dummy_resource_dummy: crwdns8882:0crwdne8882:0
+    statistics:
+      bar: crwdns8884:0crwdne8884:0
+      dummies_count_high: crwdns8886:0crwdne8886:0
+      dummies_count_medium: crwdns8888:0crwdne8888:0
+      foo: crwdns8890:0crwdne8890:0
