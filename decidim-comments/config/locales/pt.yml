@@ -4,7 +4,7 @@ pt:
     models:
       decidim/comments/comment_by_followed_user_event: Comentar
       decidim/comments/comment_created_event: Comente
-      decidim/comments/comment_upvoted_event: Comment upvoted
+      decidim/comments/comment_upvoted_event: Comentário votado positivamente
       decidim/comments/reply_created_event: Comentário resposta
       decidim/comments/user_group_mentioned_event: Menção
       decidim/comments/user_mentioned_event: Menção
@@ -28,10 +28,10 @@ pt:
         create:
           error: Ocorreu um problema ao criar o comentário
         delete:
-          error: The comment could not be deleted.
+          error: O comentário não pode ser excluído.
         update:
           error: Ocorreu um problema ao actualizar a comentário.
-      comments_title: Comment
+      comments_title: Comentário
       last_activity:
         new_comment: 'Novo comentário:'
       votes:
@@ -173,4 +173,4 @@ pt:
         title: Comentários
   errors:
     messages:
-      cannot_have_comments: cannot have comments
+      cannot_have_comments: não pode ter comentários
