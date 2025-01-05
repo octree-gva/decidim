@@ -33,7 +33,7 @@ pt:
           error: Ocorreu um problema ao actualizar a comentário.
       comments_title: Comment
       last_activity:
-        new_comment: 'New comment:'
+        new_comment: 'Novo comentário:'
       votes:
         create:
           error: Houve erros na votação do comentário.
