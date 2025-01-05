@@ -448,7 +448,7 @@ pt:
       index:
         title: Processos participativos
       last_activity:
-        new_participatory_process: 'New participatory process:'
+        new_participatory_process: 'Novo processo participativo:'
       pages:
         home:
           highlighted_processes:
