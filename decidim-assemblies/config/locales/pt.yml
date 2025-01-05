@@ -3,9 +3,9 @@ pt:
   activemodel:
     attributes:
       assemblies_type:
-        title: Title
+        title: Título
       assembly:
-        announcement: Announcement
+        announcement: Anúncio
         area_id: Área
         assembly_type: Tipo de reunião
         assembly_type_other: Outro tipo de reunião
@@ -24,15 +24,15 @@ pt:
         decidim_scope_id: Âmbito
         description: Descrição
         developer_group: Grupo promotor
-        document: Document
+        document: Documentos
         domain: Domínio
         duration: Duração
         facebook: Facebook
         github: GitHub
         hashtag: Hashtag
         hero_image: Imagem inicial
-        import_attachments: Import attachments
-        import_categories: Import categories
+        import_attachments: Importar anexos
+        import_categories: Importar categorias
         import_components: Importar funcionalidades
         included_at: Incluído em
         instagram: Instagram
@@ -69,7 +69,7 @@ pt:
         non_user_avatar: Avatar
         position: Posição
         user_id: Utilizador ou grupo
-        weight: Order position
+        weight: Posição de ordenamento
       assembly_user_role:
         email: E-mail
         name: Nome
@@ -79,7 +79,7 @@ pt:
         assembly:
           attributes:
             document:
-              allowed_file_content_types: 'Invalid document type. Only files with the following extensions are allowed: %{types}.'
+              allowed_file_content_types: 'Tipo de documento inválido. Apenas arquivos com as seguintes extensões são permitidos: %{types}.'
   activerecord:
     models:
       decidim/assembly:
