@@ -72,10 +72,10 @@ pt:
       blogs:
         actions:
           comment: Comentar
-          create: Create
-          destroy: Delete
+          create: Criar
+          destroy: Eliminar
           endorse: Apoiar
-          update: Update
+          update: Atualizar
         name: Blog
         settings:
           global:
