@@ -354,7 +354,7 @@ pt:
         participatory_process_type_presenter:
           not_found: 'The process type was not found on the database (ID: %{id}).'
     menu:
-      processes: Processos
+      processes: Processos Participativos
     metrics:
       participatory_processes:
         description: Número de processos participativos nesta organização
