@@ -15,35 +15,35 @@ pt:
         description: Descrição
         file: Arquivo
         title: Anexo ou nome da imagem
-        weight: Order position
+        weight: Posição de ordenamento
       attachment_collection:
         description: Descrição
         name: Nome
-        weight: Order position
+        weight: Posição de ordenamento
       category:
         description: Descrição
         name: Nome
         parent_id: Superior
-        weight: Order position
+        weight: Posição de ordenamento
       component:
         name: Nome
         published_at: Publicado em
         weight: Posição do pedido
       external_domain:
-        value: Value
+        value: Valor
       help_section:
-        content: Content
+        content: Conteúdo
       id: ID
       import:
         user_group_id: Criar importações como
       newsletter:
         body: Corpo
-        send_to_all_users: Send to all users
-        send_to_followers: Send to followers
-        send_to_participants: Send to participants
+        send_to_all_users: Enviar a todos os usuários
+        send_to_followers: Enviar aos seguidores
+        send_to_participants: Enviar aos participantes
         subject: Assunto
       organization:
-        admin_terms_of_service_body: Body for the admin terms of service
+        admin_terms_of_service_body: Termos de serviço do usuário
         alert_color: Alerta
         available_authorizations: Autorizações disponíveis
         badges_enabled: Ativar distintivos
@@ -93,7 +93,7 @@ pt:
         secondary_hosts: Anfitriões secundários
         send_welcome_notification: Enviar notificação de boas-vindas
         success_color: Sucesso
-        tertiary_color: Tertiary
+        tertiary_color: Terciária
         time_zone: Fuso Horário
         tos_version: Versão dos termos de serviço
         twitter_handler: X handler
@@ -104,8 +104,8 @@ pt:
         welcome_notification_subject: Assunto da notificação de boas-vindas
         youtube_handler: Manipulador do YouTube
       participatory_space_private_user:
-        email: Email
-        name: Name
+        email: E-mail
+        name: Nome
       scope:
         code: Código
         name: Nome
@@ -127,11 +127,11 @@ pt:
         show_in_footer: Mostrar no rodapé
         slug: Texto curto de URL
         title: Título
-        topic_id: Topic
+        topic_id: Tópico
         weight: Posição do pedido
       static_page_topic:
         description: Descrição
-        name: Topic name
+        name: Nome do tópico
         show_in_footer: Mostrar no rodapé
         title: Título
         weight: Posição do pedido
@@ -142,7 +142,7 @@ pt:
         newsletter:
           attributes:
             base:
-              at_least_one_space: Select at least one participatory space.
+              at_least_one_space: Selecione pelo menos um espaço participativo.
         organization:
           attributes:
             official_img_footer:
@@ -150,16 +150,16 @@ pt:
         participatory_space_private_user_csv_import:
           attributes:
             file:
-              malformed: Malformed import file, please read through the instructions carefully and make sure the file is UTF-8 encoded.
+              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
         user_group_csv_verification:
           attributes:
             file:
-              malformed: Malformed import file, please read through the instructions carefully and make sure the file is UTF-8 encoded.
+              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
       new_import:
         attributes:
           file:
-            invalid_file: Invalid file provided, please check that the file is correctly formatted.
-            invalid_mime_type: Invalid MIME type.
+            invalid_file: Arquivo inválido fornecido, por favor, verifique se o arquivo está formatado corretamente.
+            invalid_mime_type: Tipo MIME inválido.
   activerecord:
     attributes:
       decidim/static_page:
@@ -181,7 +181,7 @@ pt:
         attachment:
           new: Novo anexo
         attachment_collection:
-          new: New attachment folder
+          new: Nova pasta de anexos
         browse: Explorar
         category:
           new: Nova categoria
@@ -196,31 +196,31 @@ pt:
         per_page: Por página
         permissions: Permissões
         reject: Rejeitar
-        send_me_a_test_email: Send me a test email
+        send_me_a_test_email: Envie-me um e-mail de teste
         share: Partilhar
         user:
-          new: New admin
+          new: Novo administrador
         verify: Verificar
       admin_terms_of_service:
         accept:
-          error: There was an error while accepting the admin terms of service.
-          success: Great! You have accepted the admin terms of service.
+          error: Ocorreu um erro ao aceitar os termos do serviço para administração.
+          success: Ótimo! Aceitou os termos de serviço do administrador.
         actions:
-          accept: I agree with the terms
-          are_you_sure: Are you sure you want to refuse the admin terms of service?
-          refuse: Refuse the admin terms
-          title: Agree to the terms of service
+          accept: Concordo com os termos
+          are_you_sure: Tem certeza que deseja recusar os termos de serviço do administrador?
+          refuse: Recusar os termos do admin
+          title: Concordar com os termos de serviço
         required_review:
-          alert: 'Required: Review our admin terms of service'
-          callout: Please take a moment to review the admin terms of service. Otherwise you will not be able to manage the platform.
-          cta: Review them now.
-        title: Admin terms of service
+          alert: 'Obrigatório: Revise nossos termos de serviço de administração'
+          callout: Por favor, reserve um momento para rever os termos de serviço do administrador. Caso contrário, você não será capaz de gerenciar a plataforma.
+          cta: Reveja eles agora.
+        title: Termos de serviço do administrador
       area_types:
         create:
           error: Ocorreu um problema ao criar um novo tipo de área.
           success: Tipo de área criado corretamente.
         destroy:
-          success: Area type successfully destroyed.
+          success: Tipo de escopo eliminado com sucesso.
         edit:
           title: Editar tipo de área
           update: Atualizar
@@ -229,14 +229,14 @@ pt:
           title: Novo tipo de área
         update:
           error: Ocorreu um problema ao atualizar este tipo de área.
-          success: Area type updated successfully.
+          success: Tipo de área atualizado corretamente.
       areas:
         create:
           error: Ocorreu um problema ao criar uma nova área.
           success: Área criada corretamente.
         destroy:
           has_spaces: Está area tem espaços dependentes. For favor certifique-se que nenhum Espaço Participativo faz referência a esta área antes de a apagar.
-          success: Area successfully destroyed.
+          success: Área eliminada corretamente.
         edit:
           title: Editar área
           update: Atualizar
@@ -246,7 +246,7 @@ pt:
         no_areas: Nenhuma Área
         update:
           error: Ocorreu um problema ao atualizar esta área.
-          success: Area updated successfully.
+          success: Área atualizada corretamente.
       attachment_collections:
         create:
           error: Ocorreu um problema ao criar uma nova pasta.
@@ -282,14 +282,14 @@ pt:
           error: Ocorreu um problema ao atualizar este anexo.
           success: Anexo atualizado com sucesso.
       attachments_privacy_warning:
-        message: Be careful when working with attachments in a private space. Any participant could share this document to others.
+        message: Tenha cuidado ao trabalhar com anexos em um espaço privado. Qualquer participante pode compartilhar este documento com outros.
       autocomplete:
         no_results: Nenhum resultado encontrado
-        search_prompt: Type at least three characters to search.
+        search_prompt: Digite pelo menos três caracteres para pesquisar.
       block_user:
         new:
           action: Bloquear conta e enviar justificação
-          already_reported_html: Continuing with this action you will also hide all the participants contents.
+          already_reported_html: Caso prossiga com essa ação também ocultará o conteúdo de todos os participantes.
           description: Bloquear um utilizador torna a sua conta inutilizável. Pode dar na sua justificação orientações sobre o que poderia levar a considerar desbloquear o utilizador.
           justification: Justificação
           title: Bloquear utilizador %{name}
@@ -319,7 +319,7 @@ pt:
         create:
           error: Ocorreu um problema ao criar este componente.
           success: Componente criado corretamente.
-          success_landing_page: Component created successfully. You can add a content block for this component in the home of the space. Go to <a href="%{landing_page_path}">Landing page</a> to configure it.
+          success_landing_page: Funcionalidade criada com sucesso. Pode adicionar um bloco de conteúdo para este componente na página inicial do espaço. Acesse <a href="%{landing_page_path}">Página inicial</a> para configurá-la.
         destroy:
           error: Ocorreu um problema ao destruir este componente.
           success: Componente eliminado corretamente.
@@ -352,7 +352,7 @@ pt:
         attempts: Tentativas
         'false': 'Não'
         index:
-          text: Search by current user email, name or nickname.
+          text: Pesquisar por e-mail, nome ou alcunha.
         managed_user_name: Utilizador gerido
         solved: Resolvido
         title: Conflitos de verificação
@@ -550,15 +550,15 @@ pt:
           download_example_format: Example as %{name}
           file_legend: Adicionar ficheiro para importar a analisar.
           import: Importar
-        notice: "%{count} %{resource_name} successfully imported."
+        notice: "%{count} %{resource_name} importado com sucesso."
       logs:
         filters:
-          participatory_space: Find participatory space
-          text: Search by user email, name or nickname.
-          user: User
+          participatory_space: Pesquisar espaço participativo
+          text: Pesquisar por e-mail, nome ou alcunha.
+          user: Utilizador
         logs_list:
-          no_logs_yet: There are no logs yet.
-          no_matching_logs: There are no logs with the provided search filters. Try to change them and retry.
+          no_logs_yet: Ainda não há registros.
+          no_matching_logs: Não há nenhum registro com os filtros de pesquisa fornecidos. Tente alterá-los e tente novamente.
       managed_users:
         promotion:
           error: Ocorreu um problema ao promover o participante gerido.
@@ -574,10 +574,10 @@ pt:
         appearance: Aparência
         area_types: Tipos de área
         areas: Áreas
-        components: Components
+        components: Funcionalidades
         configuration: Configuração
-        content: Reported content
-        external_domain_allowlist: Allowed external domains
+        content: Conteúdo reportado
+        external_domain_allowlist: Domínios externos permitidos
         help_sections: Secções de ajuda
         homepage: Página inicial
         impersonations: Personificações
@@ -585,12 +585,12 @@ pt:
         moderation: Moderações globais
         newsletters: Boletins informativos
         participants: Participantes
-        reported_users: Reported participants
+        reported_users: Participantes reportados
         scope_types: Tipos de âmbito
         scopes: Âmbitos
-        see_site: See site
+        see_site: Ver site
         settings: Configurações
-        static_page_topics: Topics
+        static_page_topics: Tópicos
         static_pages: Páginas
         user_groups: Grupos
         users: Utilizadores
@@ -659,7 +659,7 @@ pt:
           fields:
             created_at: Data de criação
             email: E-mail
-            last_sign_in_at: Last log in date
+            last_sign_in_at: Data do último início de sessão
             name: Nome
             role: Função
             roles:
@@ -672,7 +672,7 @@ pt:
             created_at: Criado em
             document_number: Número do documento
             name: Nome
-            nickname: Nickname
+            nickname: Alcunha
             phone: Telefone
             state: Estado
             users_count: Contagem de participantes
@@ -687,7 +687,7 @@ pt:
           nickname: Alcunha
           reason: Motivo
           reports: Contagem de denúncias
-          title: Reported participants
+          title: Participantes reportados
         report:
           reasons:
             does_not_belong: Não pertence
@@ -698,11 +698,11 @@ pt:
           unblocked: Não bloqueado
       moderations:
         index:
-          title: Reported content
+          title: Conteúdo reportado
         report:
           reasons:
             does_not_belong: Não pertence
-            hidden_during_block: Hidden while blocking user
+            hidden_during_block: Oculto ao bloquear usuário
             offensive: Ofensiva
             spam: Spam
         reports:
@@ -773,23 +773,23 @@ pt:
           title: Selecione os destinatários
           warning: "<strong>Atenção:</strong> Este boletim informativo apenas será enviado para utilizadores que tenham ativado a opção <em>Pretendo receber boletins informativo</em> nas suas definições de notificações."
         send:
-          no_recipients: No recipients for this selection.
+          no_recipients: Nenhum destinatário para esta seleção.
         send_to_user:
-          sent_successfully: Newsletter has been sent successfully to %{email}
+          sent_successfully: Newsletter enviada com sucesso para %{email}
         show:
           preview: Pré-visualização
           select_recipients_to_deliver: Selecione os destinatários
-          send_me_a_test_email: Send me a test email
+          send_me_a_test_email: Envie-me um e-mail de teste
           subject: Assunto
         update:
           error: Ocorreu um problema ao atualizar este boletim informativo.
           success: Boletim informativo atualizado corretamente. Por favor, reveja-o antes de enviar.
       officializations:
         block:
-          error: There was an error blocking the participant.
-          success: Participant successfully blocked.
+          error: Ocorreu um erro ao bloquear o participante.
+          success: Participante bloqueado corretamente.
         create:
-          success: Participant successfully officialized.
+          success: Participante oficializado com sucesso.
         destroy:
           success: Participant successfully unofficialized.
         index:
@@ -1020,7 +1020,7 @@ pt:
           error: Ocorreu um problema ao atualizar esta página.
           success: Page updated successfully.
       titles:
-        admin_log: Registo de administrador
+        admin_log: Registo administrador
         area_types: Tipos de área
         areas: Áreas
         authorization_workflows: Métodos de verificação
