@@ -150,7 +150,7 @@ pt:
             default_budget: Default budget
             import_all_accepted_proposals: Import all accepted proposals
             no_components: Não há outros componentes da proposta neste espaço participativo para importar as propostas em projetos.
-            origin_component_id: Origin component
+            origin_component_id: Funcionalidade de origem
             select_component: Por favor selecione um componente
             title: Import proposals to projects
         reminders:
@@ -327,9 +327,9 @@ pt:
             comments_max_length: Comprimento máximo dos comentários (Deixar 0 para o valor predefinido)
             form:
               errors:
-                budget_voting_rule_only_one: Only one voting rule must be enabled.
-                budget_voting_rule_required: One voting rule is required.
-            geocoding_enabled: Geocoding enabled
+                budget_voting_rule_only_one: Só deve ser habilitada uma regra de voto.
+                budget_voting_rule_required: É necessária uma regra de votação.
+            geocoding_enabled: Geoencodagem ativado
             landing_page_content: Página de entrada dos orçamentos
             more_information_modal: Mais informações modal
             projects_per_page: Projetos por página
@@ -340,7 +340,7 @@ pt:
             total_budget: Orçamento total
             vote_minimum_budget_projects_number: Número mínimo de projetos a votar
             vote_rule_minimum_budget_projects_enabled: 'Ativar regra: Número mínimo de projetos a voto'
-            vote_rule_selected_projects_enabled: 'Enable rule: Minimum and maximum number of projects to be voted on'
+            vote_rule_selected_projects_enabled: 'Ativar regra: Número mínimo e máximo de projetos a voto'
             vote_rule_threshold_percent_enabled: 'Ativar regra: Percentagem mínima do orçamento'
             vote_selected_projects_maximum: Montante máximo dos projectos a seleccionar
             vote_selected_projects_minimum: Montante mínimo de projectos a seleccionar
