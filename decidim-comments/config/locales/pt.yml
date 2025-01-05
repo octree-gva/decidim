@@ -39,14 +39,14 @@ pt:
           error: Houve erros na votação do comentário.
     components:
       add_comment_form:
-        account_message: <a href="%{sign_in_url}">Log in</a> or <a href="%{sign_up_url}">create an account</a> to add your comment.
+        account_message: <a href="%{sign_in_url}">Inicia Sessão</a> ou <a href="%{sign_up_url}">regista-se</a> para adicionar o seu comentário.
         form:
           body:
             label: Comente
             placeholder: O que você pensa sobre isso?
-          form_error: The text is required and it cannot be longer than %{length} characters.
-          submit_reply: Publish reply
-          submit_root_comment: Publish comment
+          form_error: O texto é obrigatório e não pode ser maior que %{length} caracteres.
+          submit_reply: Publicar resposta
+          submit_root_comment: Publicar comentário
           user_group_id:
             label: Comente como
         opinion:
@@ -64,20 +64,20 @@ pt:
         alignment:
           against: Contra
           in_favor: A favor
-        cancel_reply: Cancel reply
-        comment_label: Comment %{comment_id}
-        comment_label_reply: Comment %{comment_id} (reply to comment %{parent_comment_id})
+        cancel_reply: Cancelar a resposta
+        comment_label: Comentário %{comment_id}
+        comment_label_reply: Comentário %{comment_id} (responder ao comentário %{parent_comment_id})
         confirm_destroy: Tem a certeza que quer eliminar este comentário?
-        controls_label: Comment controls
+        controls_label: Controles de comentários
         delete: Eliminar
         deleted_at: Comentário eliminado em %{date}
         deleted_user: Participante eliminado
         edit: Editar
         edited: Editado
         hide_replies:
-          one: Hide reply
+          one: Ocultar resposta
           other: Hide %{count} replies
-        moderated_at: Comment moderated on %{date}
+        moderated_at: Comentário moderado em %{date}
         reply: Responder
         report:
           action: Reportar
@@ -86,13 +86,13 @@ pt:
           description: Este conteúdo é impróprio?
           details: Comentários adicionais
           reasons:
-            does_not_belong: Contains illegal activity, suicide threats, personal information, or something else you think does not belong on %{organization_name}.
+            does_not_belong: Contém atividades ilegais, ameaças suicidas, informações pessoais ou outra coisa que você acha que não pertence ao %{organization_name}.
             offensive: Contém racismo, sexismo, insultos, ataques pessoais, ameaças de morte, pedidos de suicídio ou qualquer tipo de discurso de ódio.
             spam: Contém clickbait, publicidade, fraudes ou robots de scripts.
           title: Reportar conteúdo impróprio
         show_replies:
-          one: Show reply
-          other: Show %{count} replies
+          one: Exibir resposta
+          other: Exibir respostas %{count}
         single_comment_link_title: Obter ligação
       comment_order_selector:
         order:
