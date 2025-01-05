@@ -871,8 +871,8 @@ pt:
           remove: Excluir
           up: Acima
         form:
-          add: Add to allowed list
-          title: Allowed list of external domains
+          add: Adicionar à lista permitida
+          title: Domínios externos permitidos
       participatory_space_private_users:
         create:
           error: Ocorreu um problema ao adicionar um participante privado neste espaço participativo.
@@ -888,32 +888,32 @@ pt:
           title: Novo participante privado do Espaço Participativo.
       participatory_space_private_users_csv_imports:
         create:
-          invalid: There was a problem reading the CSV file. Please make sure you have followed the instructions.
-          success: CSV file uploaded successfully, we are sending an invitation email to participants. This might take a while.
+          invalid: Houve um problema ao ler o arquivo CSV. Por favor, certifique-se de ter seguido as instruções.
+          success: Arquivo CSV carregado com sucesso, estamos a enviar um e-mail de convite para os participantes. Isso pode demorar um pouco.
         new:
           csv_upload:
-            title: Upload your CSV file
+            title: Carregue seu arquivo CSV
           destroy:
-            button: Delete all private participants
-            confirm: Are you sure you want to delete all private participants? This action cannot be undone, you will not be able to recover them.
-            empty: You have no private participants.
-            explanation: You have %{count} private participants.
-            title: Delete private participants
-          example_file: 'Example file:'
-          explanation: 'Upload your CSV file. It must have two columns with email in the first column of the file and name in the last column of the file of the users that you want to add to the participatory space, without headers. Avoid using invalid chars like `<>?%&^*#@()[]=+:;"{}\|` in user name.'
+            button: Excluir todos os participantes privados
+            confirm: Tem certeza que deseja excluir todos os participantes privados? Esta ação não pode ser desfeita. Não será possível recuperá-los.
+            empty: Não há participantes privados.
+            explanation: Há %{count} participantes privados.
+            title: Excluir participantes privados
+          example_file: 'Arquivo de exemplo:'
+          explanation: 'Carrega o teu ficheiro CSV. Deve ter duas colunas: o e-mail na primeira coluna e o nome na última coluna dos utilizadores que queres adicionar ao espaço participativo, sem cabeçalhos. Evita usar caracteres inválidos como ’<>?%&^*#@()[]=+: {}\|'' no nome dos participantes.'
           explanation_example: |
-            john.doe@example.org%{csv_col_sep}John Doe
-            jane.doe@example.org%{csv_col_sep}Jane Doe
-          title: Import private participants via CSV
+            jao.dasilva@example.org%{csv_col_sep}João da Silva
+            maria.dinis@example.org%{csv_col_sep}Maria Dinis
+          title: Importar participantes privados via CSV
           upload: Carregar
       reminders:
         create:
-          error: There was a problem creating reminders.
+          error: Houve um problema ao criar lembretes.
           success:
-            one: "%{count} user will be reminded."
-            other: "%{count} users will be reminded."
+            one: "%{count} participante receberá lembrete."
+            other: "%{count} participantes receberão lembrete."
         new:
-          submit: Send
+          submit: Enviar
       resource_permissions:
         edit:
           submit: Submeter
@@ -944,7 +944,7 @@ pt:
           error: Ocorreu um problema ao criar um novo âmbito.
           success: Âmbito criado com sucesso.
         destroy:
-          success: Scope successfully destroyed.
+          success: Escopo eliminado com sucesso.
         edit:
           title: Editar o âmbito
           update: Atualizar
@@ -964,25 +964,25 @@ pt:
           error: Houve um problema ao destruir o identificador
           success: Identificador destruído com sucesso.
         share_tokens:
-          empty: There are no active tokens.
+          empty: Não há tokens ativos.
           help: Estes identificadores são usados para partilhar publicamente para qualquer utilizador este recurso não publicado. Estarão escondidos quando o recurso estiver publicado. Clique no icone de partilha do identificador para visitar o URL parltilhável.
           title: Compartilhar identificadores
       shared:
         adjacent_navigation:
-          next: Next
-          next_title: Next item
-          previous: Previous
-          previous_title: Previous item
+          next: Seguinte
+          next_title: Item seguinte
+          previous: Anterior
+          previous_title: Item anterior
         gallery:
           add_images: Adicionar imagens
-          edit_images: Edit images
+          edit_images: Editar imagens
           gallery_legend: Adicionar uma galeria de imagens (Opcional)
       static_page_topics:
         create:
           error: Ocorreu um problema ao criar um novo tópico.
           success: Tópico criado corretamente.
         destroy:
-          success: Topic successfully destroyed.
+          success: Tópico eliminado com sucesso.
         edit:
           title: Editar tópico
           update: Atualizar tópico
@@ -1001,56 +1001,56 @@ pt:
         destroy:
           success: Página destruída corretamente
         edit:
-          changed_notably_help: If checked, participants will be notified to accept the new terms of service.
-          last_notable_change: 'Last notable change: %{tos_version_formatted}'
+          changed_notably_help: Se marcado, os participantes serão notificados para aceitar os novos termos de serviço.
+          last_notable_change: 'Última alteração notável: %{tos_version_formatted}'
           title: Editar Página
           update: Atualizar
         form:
           none: Nenhum
-          slug_help_html: 'Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. Example: %{url}'
+          slug_help_html: 'Use caminhos parciais, não URL completas aqui. Aceita letras, números, traços e barras e deve começar com uma letra. Exemplo: %{url}'
         index:
           last_notable_change: Última alteração notável
         new:
           create: Criar página
           title: Nova página
         topic:
-          empty: There are no pages under this topic.
+          empty: Não há páginas sob este tópico.
           without_topic: Páginas sem tópico
         update:
           error: Ocorreu um problema ao atualizar esta página.
-          success: Page updated successfully.
+          success: Página criada corretamente.
       titles:
         admin_log: Registo administrador
         area_types: Tipos de área
         areas: Áreas
         authorization_workflows: Métodos de verificação
         dashboard: Painel de Controlo
-        edit_external_domains: Allowed list of external domains
-        edit_landing_page: Page contents
-        edit_organization_appearance: Edit homepage appearance
+        edit_external_domains: Domínios externos permitidos
+        edit_landing_page: Conteúdo da página
+        edit_organization_appearance: Editar a aparência da página inicial
         impersonatable_users: Participantes geríveis
         impersonations: Gestão de participantes
         menu: Menu
         metrics: Métricas
-        page_topics: Topics
-        pages: Pages
+        page_topics: Tópicos
+        pages: Páginas
         panel: Administrador
         participants: Participantes
         scope_types: Tipos de âmbito
         scopes: Âmbitos
         statistics: Atividade
         user_groups: Grupos
-        users: Administrators
+        users: Administradores
       user_group:
         csv_verify:
           invalid: Ocorreu um problema ao ler o ficheiro CSV.
-          success: CSV file uploaded successfully, we are verifying the groups matching the criteria. This might take a while.
+          success: Arquivo CSV carregado com sucesso, estamos a verificar os grupos que correspondem aos critérios. Isso pode demorar um pouco.
         reject:
           invalid: Ocorreu um problema ao rejeitar este grupo.
-          success: Group successfully rejected.
+          success: Grupo rejeitado corretamente.
         verify:
           invalid: Ocorreu um problema ao verificar este grupo.
-          success: Group successfully verified.
+          success: Grupo verificado.
       user_groups:
         index:
           state:
@@ -1060,7 +1060,7 @@ pt:
           verify_via_csv: Verificar via CSV
       user_groups_csv_verifications:
         new:
-          example_file: 'Example file:'
+          example_file: 'Arquivo de exemplo:'
           explanation: Envie o seu ficheiro CSV. Deve ter os e-mails oficiais dos grupos na sua organização na primeira coluna do ficheiro, sem cabeçalhos. Somente grupos que confirmaram os seus e-mails e que tenham um e-mail a aparecer no arquivo CSV serão validados.
           explanation_example: |
             acme@example.org
@@ -1080,19 +1080,19 @@ pt:
           role: Função
         new:
           create: Convidar
-          title: Invite new administrator
+          title: Convidar novo administrador
       users_statistics:
         users_count:
           admins: Administradores
           last_day: Último dia
           last_month: Último mês
           last_week: Última semana
-          no_users_count_statistics_yet: There are no users count statistics yet.
+          no_users_count_statistics_yet: Ainda não há estatísticas sobre números de participantes.
           participants: Participantes
     forms:
       errors:
         impersonate_user:
-          reason: You need to provide a reason when managing a non-managed participant.
+          reason: Tens de fornecer um motivo ao gerir um participante não gerido.
     metrics:
       blocked_users:
         object: utilizadores bloqueados
@@ -1111,7 +1111,7 @@ pt:
         not_hidden: Não oculto
         title: Ações
         unhide: Mostrar
-        unreport: Unreport
+        unreport: Remover denúncia
       admin:
         reportable:
           hide:
@@ -1126,11 +1126,11 @@ pt:
       models:
         moderation:
           fields:
-            created_at: Reported at
-            deleted_resource: Deleted resource
+            created_at: Denúnciado em
+            deleted_resource: Recurso excluído
             hidden_at: Escondido em
             participatory_space: Espaço participativo
-            report_count: Reports count
+            report_count: Contagem de denúncias
             reportable_id: ID
             reportable_type: Tipo
             reported_content_url: URL de conteúdo reportado
