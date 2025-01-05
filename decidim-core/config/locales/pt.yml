@@ -28,7 +28,7 @@ pt:
         name: O seu nome
         nickname: Alcunha
         old_password: Current password
-        password: Palavra-passe
+        password: Senha
         password_confirmation: Confirme a sua palavra-passe
         personal_url: URL pessoal
         remove_avatar: Remover avatar
@@ -80,8 +80,8 @@ pt:
     'true': 'Sim'
   date:
     buttons:
-      close: Close
-      select: Select
+      close: Fechar
+      select: Selecionar
     formats:
       decidim_short: "%d/%m/%Y"
       decidim_short_dashed: "%d-%m-%Y"
@@ -96,8 +96,8 @@ pt:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
       about_x_months:
         one: about 1 month
         other: about %{count} months
@@ -142,10 +142,10 @@ pt:
         other: "%{count} seconds"
   decidim:
     accessibility:
-      external_link: Hiperligação externa
-      front_page_link: Go to front page
+      external_link: Ligação externa
+      front_page_link: Ir para a página inicial
       logo: "Logótipo oficial de %{organization}"
-      opens_in_new_tab: Opens in new tab
+      opens_in_new_tab: Abrir em uma nova aba
       skip_button: Avançar para o conteúdo principal
     account:
       blocked: This account has been blocked due to terms of service violation
@@ -183,7 +183,7 @@ pt:
         success: A sua conta foi atualizada corretamente.
         success_with_email_confirmation: Your account was successfully updated. You will receive an email to confirm your new email address.
     activity:
-      time_ago: "%{time} ago"
+      time_ago: "Há %{time}"
     admin:
       actions:
         cancel: Cancelar
@@ -367,7 +367,7 @@ pt:
         documents: Documents
         related_documents: Documentos relacionados
       photo:
-        alt: Media picture
+        alt: Imagem de mídia
         title: Image
       photos:
         photos: Images
@@ -576,7 +576,7 @@ pt:
         filter_category_values:
           all: Todos
         filter_scope_values:
-          all: All
+          all: Todos
     devise:
       omniauth_registrations:
         create:
@@ -629,11 +629,11 @@ pt:
         omniauth_buttons:
           or: Ou
         password_fields:
-          hidden_password: Your password is hidden
-          hide_password: Hide password
-          show_password: Show password
-          shown_password: Your password is shown
-        placeholder_email: hi@example.org
+          hidden_password: Sua senha está oculta
+          hide_password: Ocultar senha
+          show_password: Nova palavra-passe
+          shown_password: Sua senha é exibida
+        placeholder_email: oi@exemplo.org
     doorkeeper:
       authorizations:
         new:
@@ -1315,7 +1315,7 @@ pt:
           proposals: Propostas
           proposals_explanation: Faça propostas, suporte as existentes e promova as mudanças que deseja ver.
         footer_sub_hero:
-          footer_sub_hero_body_html: Let's build a more open, transparent and collaborative society.<br /> Join, participate and decide.
+          footer_sub_hero_body_html: Vamos construir uma sociedade mais aberta, transparente e colaborativa.<br /> Junta-se, participe e decida.
           footer_sub_hero_headline: Bem-vindo à plataforma participativa %{organization}.
           register: Registar
         hero:
@@ -1431,7 +1431,7 @@ pt:
       create:
         error: Ocorreu um problema durante a ação de endossamento.
     scopes:
-      global: Âmbito global
+      global: Escopo geral
       picker:
         cancel: Cancelar
         change: Alterar o âmbito seleccionado
@@ -1506,17 +1506,17 @@ pt:
       floating_help:
         help: Ajuda
       follow_button:
-        log_in_before_follow: Please log in before performing this action
+        log_in_before_follow: Inicia sessão antes de executar esta ação
       login_modal:
-        please_log_in: Please log in
-        sign_up: Create an account
+        please_log_in: Por favor, faça login
+        sign_up: Criar uma conta
       mentions_modal:
-        remove_recipient: Remove recipient %{name}
+        remove_recipient: Remover destinatário %{name}
       participatory_space_filters:
         filters:
-          area: Area
+          area: Área
           areas: Áreas
-          scope: Âmbito
+          scope: Escopo
           select_an_area: Selecione uma área
       progress: Progress
       public_participation:
@@ -1536,7 +1536,7 @@ pt:
         copy_share_link_message: A ligação foi  copiada para o clipboard com êxito.
         share: Partilhar
         share_link: Partilhar link
-        share_to: Share to %{service}
+        share_to: Compartilhar com %{service}
     statistics:
       comments_count: Comentários
       endorsements_count: Apoios
@@ -1734,7 +1734,7 @@ pt:
     sessions:
       already_signed_out: Logged out successfully.
       new:
-        log_in: Entrar
+        log_in: Iniciar sessão
       signed_in: Logged in successfully.
       signed_out: Logged out successfully.
     shared:
@@ -1761,17 +1761,17 @@ pt:
   editor:
     extensions:
       image:
-        altLabel: Alternative text for the image
+        altLabel: Texto alternativo para a imagem
         nodeView:
           resizer:
             control:
-              resize: Resize image (%position%)
+              resize: Redimensionar imagem (%position%)
             position:
-              bottomLeft: bottom left corner
-              bottomRight: bottom right corner
-              topLeft: top left corner
-              topRight: top right corner
-        uploadError: Uploading the file failed.
+              bottomLeft: canto inferior esquerdo
+              bottomRight: canto inferior esquerdo
+              topLeft: canto inferior esquerdo
+              topRight: canto inferior esquerdo
+        uploadError: O upload do arquivo falhou.
       link:
         bubbleMenu:
           edit: Edit
@@ -1887,67 +1887,67 @@ pt:
       data_consent:
         details:
           columns:
-            description: Description
-            name: Name
-            service: Service
+            description: Descrição
+            name: Nome
+            service: Serviço
             type: Tipo
           items:
             _session_id:
-              description: Allows websites to remember user within a website when they move between web pages.
-              service: This website
+              description: Permite que os sites lembrem o usuário dentro de um site quando se movem entre as páginas da web.
+              service: Este site
             decidim-consent:
-              description: Stores information about the cookies allowed by the user on this website.
-              service: This website
+              description: Armazena informações sobre os cookies permitidos pelo usuário neste site.
+              service: Este site
             pwaInstallPromptSeen:
-              description: Stores status if the progressive web application (PWA) install notification has been already seen by the user.
-              service: This website
+              description: Armazena o status se a notificação de instalação progressiva do aplicativo web (PWA) já foi vista pelo usuário.
+              service: Este site
           types:
             cookie: Cookie
-            local_storage: Local storage
+            local_storage: Armazenamento local
         dialog:
-          accept_all: Accept all
-          accept_only_essential: Accept only essential
-          description: We use cookies on our website to improve the performance and content of the site. The cookies enable us to provide a more individual user experience and social media channels.
-          settings: Settings
-          title: Information about the cookies used on the website
+          accept_all: Aceitar todos
+          accept_only_essential: Aceitar apenas essenciais
+          description: Usamos cookies em nosso site para melhorar o desempenho e o conteúdo do site. Os cookies nos permitem fornecer mais canais de experiência individual de usuário e mídias sociais.
+          settings: Definições
+          title: Informações sobre os cookies usados no site
         modal:
-          accept_all: Accept all
-          accept_only_essential: Accept only essential
+          accept_all: Aceitar todos
+          accept_only_essential: Aceitar apenas essenciais
           analytics:
-            description: These cookies are used to measure and analyse the website audience to help improve the website.
-            title: Analytics and statistics
-          description: We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can configure and accept the use of the cookies, and modify your consent options, at any time.
+            description: Esses cookies são usados para medir e analisar o público do site para ajudar a melhorar o site.
+            title: Análises e estatísticas
+          description: Usamos cookies para garantir as funcionalidades básicas do site e melhorar a sua experiência on-line. Você pode configurar e aceitar o uso dos cookies e modificar suas opções de consentimento, a qualquer momento.
           essential:
-            description: These cookies enable key functionality of the website and help to keep its users secured. They are automatically saved in the browser and cannot be disabled.
-            title: Essential
+            description: Esses cookies ativam a funcionalidade chave do site e ajudam a manter seus usuários protegidos. Eles são salvos automaticamente no navegador e não podem ser desativados.
+            title: Essencial
           marketing:
-            description: These cookies collect information about how you use the website and they can be utilized to provide you more personalized marketing across the different websites you use.
+            description: Esses cookies coletam informações sobre como você usa o site e eles podem ser utilizados para fornecer a você marketing mais personalizado em diferentes sites que você usa.
             title: Marketing
           preferences:
-            description: These cookies allow the website to remember the choices you have made in the past on this website to provide a more personalized experience for the website users.
-            title: Preferences
-          save_settings: Save settings
-          title: Cookie settings
-          toggle: Toggle %{consent_category}
+            description: Esses cookies permitem que o site lembre as escolhas que você fez no passado neste site para fornecer uma experiência mais personalizada para os usuários do site.
+            title: Preferências
+          save_settings: Guardar definições
+          title: Definições de cookie
+          toggle: Alternar %{consent_category}
         warning:
-          all_categories: all cookies
-          change_settings: Change cookie settings
-          consent_required: You need to enable %{categories} in order to see this content.
+          all_categories: todos os cookies
+          change_settings: Alterar definições de cookies
+          consent_required: Você precisa habilitar %{categories} para ver este conteúdo.
       edit_link:
         edit: Editar
       footer:
         cc_by_license: Licença Creative Commons
-        data_consent_settings: Cookie settings
+        data_consent_settings: Definições de cookie
         decidim_logo: Logótipo do Decidim
         decidim_title: Decidim
         download_open_data: Transferir ficheiros Open Data
         log_in: Entrar
         made_with_open_source: Site criado com <a target="_blank" href="https://github.com/decidim/decidim"> software livre</a>.
-        resources: Resources
-        sign_up: Create an account
-        terms_of_service: Terms of Service
+        resources: Recursos
+        sign_up: Criar uma conta
+        terms_of_service: Termos de Serviço
       header:
-        log_in: Entrar
+        log_in: Iniciar sessão
         main_menu: Menu principal
         user_menu: Menu de utilizador
       impersonation_warning:
@@ -1960,7 +1960,7 @@ pt:
         mark_all_as_read: Marcar tudo como lido
         mark_as_read: Marcar como lida
       offline_banner:
-        cache_version_page: Oooops! Your network is offline. This is a previously cached version of the page you are visiting, perhaps the content is not up to date.
+        cache_version_page: Oooops! Sua rede está off-line. Esta é uma versão em cache da página, talvez o conteúdo não esteja atualizado.
       social_media_links:
         facebook: "%{organization} no Facebook"
         github: "%{organization} no GitHub"
