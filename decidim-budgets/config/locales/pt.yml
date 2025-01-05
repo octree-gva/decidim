@@ -99,19 +99,19 @@ pt:
             change_budget: Change budget
             change_category: Change category
             change_scope: Change scope
-            change_selected: Change selected state
-            deselect_implementation: Unselect from implementation
+            change_selected: Alterar o estatuto selecionado
+            deselect_implementation: Desmarcar para implementação
             finished_orders: Votações concluídas
             pending_orders: Votações pendentes
-            select_for_implementation: Select for implementation
+            select_for_implementation: Selecionar para implementação
             selected: Seleccionado
             selected_options:
-              'no': 'No'
-              'yes': 'Yes'
+              'no': 'Não'
+              'yes': 'Sim'
             title: Projetos
-            update: Update
-            update_budget_button: Update project's budget
-            update_scope_button: Update scope
+            update: Atualizar
+            update_budget_button: Atualizar o orçamento do projeto
+            update_scope_button: Atualizar escopo
           new:
             create: Criar
             title: Novo projeto
