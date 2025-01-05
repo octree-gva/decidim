@@ -388,8 +388,8 @@ pt:
       pages:
         home:
           highlighted_assemblies:
-            active_spaces: Active assemblies
-            see_all_spaces: See all assemblies
+            active_spaces: Assembléias ativas
+            see_all_spaces: Ver todas as assembleias
         user_profile:
           member_of:
             member_of: Membro de
@@ -429,7 +429,7 @@ pt:
         assembly_type_presenter:
           not_found: 'O tipo de reunião não foi encontrado na base de dados (ID: %{id})'
     menu:
-      assemblies: Reuniões
+      assemblies: Assembleias
     metrics:
       assemblies:
         description: Número de reuniões criadas
