@@ -23,16 +23,16 @@ pt:
       user:
         about: Sobre
         email: O seu e-mail
-        encrypted_password: Password
-        locale: Locale
+        encrypted_password: Senha
+        locale: Idioma
         name: O seu nome
         nickname: Alcunha
-        old_password: Current password
+        old_password: Senha atual
         password: Senha
         password_confirmation: Confirme a sua palavra-passe
         personal_url: URL pessoal
         remove_avatar: Remover avatar
-        tos_agreement: Terms of service agreement
+        tos_agreement: Termos e Condições de Uso
     models:
       decidim/attachment_created_event: Anexo
       decidim/component_published_event: Componente ativo
@@ -170,47 +170,47 @@ pt:
         cancel: cancel
         cancel_error: Could not cancel the email change.
         cancel_successfully: Email change cancelled successfully.
-        resend_error: Could not resend confirmation email.
-        resend_successfully: Confirmation email resent successfully to %{unconfirmed_email}.
-        send_again: Send again
-        title: Email change verification
+        resend_error: Não foi possível reenviar o e-mail de confirmação.
+        resend_successfully: E-mail de confirmação reenviado com sucesso para %{unconfirmed_email}.
+        send_again: Enviar novamente
+        title: Verificação de mudança de e-mail
       show:
-        available_locales_helper: Choose the language you want to use to browse and receive notifications on the platform.
+        available_locales_helper: Escolha o idioma que você deseja usar para navegar e receber notificações na plataforma.
         change_password: Mudar senha
         update_account: Atualizar conta
       update:
         error: Ocorreu um problema ao atualizar a sua conta.
         success: A sua conta foi atualizada corretamente.
-        success_with_email_confirmation: Your account was successfully updated. You will receive an email to confirm your new email address.
+        success_with_email_confirmation: A sua conta foi atualizada com sucesso. Um e-mail de confirmação do seu novo endereço de e-mail será enviado em breve.
     activity:
       time_ago: "Há %{time}"
     admin:
       actions:
         cancel: Cancelar
       password_change:
-        alert: You need to change your password in order to proceed further.
-        notification: Admin users need to change their password every %{days} days.
+        alert: É necessário alterar a sua senha para prosseguir.
+        notification: Os administradores precisam alterar senha a cada %{days} dias.
     admin_log:
       area:
         create: "%{user_name} criou a área %{resource_name}"
         delete: "%{user_name} eliminou a área %{resource_name}"
         update: "%{user_name} atualizou a área %{resource_name}"
       area_type:
-        create: "%{user_name} created the %{resource_name} area type"
-        delete: "%{user_name} deleted the %{resource_name} area type"
-        update: "%{user_name} updated the %{resource_name} area type"
+        create: "%{user_name} criou o tipo de área %{resource_name}"
+        delete: "%{user_name} eliminou o tipo de área %{resource_name}"
+        update: "%{user_name} atualizou a área %{resource_name}"
       attachment:
-        create: "%{user_name} created the %{resource_name} attachment"
-        delete: "%{user_name} deleted the %{resource_name} attachment"
-        update: "%{user_name} updated the %{resource_name} attachment"
+        create: "%{user_name} criou o anexo %{resource_name}"
+        delete: "%{user_name} eliminou o anexo %{resource_name}"
+        update: "%{user_name} atualizou o anexo %{resource_name}"
       attachment_collection:
-        create: "%{user_name} created the %{resource_name} attachment collection"
-        delete: "%{user_name} deleted the %{resource_name} attachment collection"
-        update: "%{user_name} updated the %{resource_name} attachment collection"
+        create: "%{user_name} criou a coleção de anexos %{resource_name}"
+        delete: "%{user_name} eliminou a coleção de anexos %{resource_name}"
+        update: "%{user_name} atualizou a coleção de anexos %{resource_name}"
       category:
-        create: "%{user_name} added the %{resource_name} category to the %{space_name} space"
-        delete: "%{user_name} deleted the %{resource_name} category from the %{space_name} space"
-        update: "%{user_name} updated the %{resource_name} category in the %{space_name} space"
+        create: "%{user_name} adicionou a categoria %{resource_name} ao espaço %{space_name}"
+        delete: "%{user_name} eliminou a categoria %{resource_name} do espaço %{space_name}"
+        update: "%{user_name} atualizou a categoria %{resource_name} do espaço %{space_name}"
       component:
         create: "%{user_name} adicionou o componente %{resource_name} ao espaço %{space_name}"
         delete: "%{user_name} removeu o componente %{resource_name} do espaço %{space_name}"
@@ -219,12 +219,12 @@ pt:
         unpublish: "%{user_name} removeu a publicação do componente %{resource_name} do espaço %{space_name}"
         update_permissions_with_space: "%{user_name} atualizou o resultado %{resource_name} em %{space_name}"
       contextual_help_section:
-        update: "%{user_name} updated the %{resource_name} help section"
+        update: "%{user_name} actualizou o tópico de página %{resource_name}"
       helpers:
-        answers: answers
-        comments: comments
-        projects: projects
-        results: results
+        answers: respostas
+        comments: comentários
+        projects: projectos
+        results: resultados
       impersonation_log:
         manage: "%{user_name} geriu %{resource_name} porque %{reason}"
       moderation:
@@ -241,7 +241,7 @@ pt:
         update: "%{user_name} atualizou a aplicação OAuth %{resource_name}"
       organization:
         update: "%{user_name} atualizou as configurações da organização"
-        update_external_domain: "%{user_name} updated the organization external domains"
+        update_external_domain: "%{user_name} atualizou os domínios externos da organização"
       participatory_space_private_user:
         create: "%{user_name} convidou %{resource_name} para ser um participante privado"
         create_via_csv: "%{user_name} convidou %{resource_name} via CSV para ser participante privado"
@@ -254,9 +254,9 @@ pt:
         update: "%{user_name} atualizou o âmbito %{resource_name}"
         update_with_parent: "%{user_name} atualizou o âmbito %{resource_name} dentro do âmbito %{parent_scope}"
       scope_type:
-        create: "%{user_name} created the %{resource_name} scope type"
-        delete: "%{user_name} deleted the %{resource_name} scope type"
-        update: "%{user_name} updated the %{resource_name} scope type"
+        create: "%{user_name} criou o tipo de escopo %{resource_name}"
+        delete: "%{user_name} eliminou o tipo de escopo %{resource_name}"
+        update: "%{user_name} atualizou o tipo de escopo %{resource_name}"
       static_page:
         create: "%{user_name} criou a página estática %{resource_name}"
         delete: "%{user_name} eliminou a página estática %{resource_name}"
@@ -272,15 +272,15 @@ pt:
         unblock: "%{user_name} desbloqueou o utilizador %{resource_name}"
         unofficialize: "%{user_name} remoção a oficialização do participante %{resource_name}"
       user_group:
-        block: "%{user_name} blocked user group %{resource_name}"
+        block: "%{user_name} bloqueiou o participante %{resource_name}"
         reject: "%{user_name} rejeitou a verificação de grupo %{resource_name}"
-        unblock: "%{user_name} unblocked user group %{resource_name}"
+        unblock: "%{user_name} disbloqueiou o grupo %{resource_name}"
         verify: "%{user_name} verificou o grupo %{resource_name}"
         verify_via_csv: "%{user_name} verificou o grupo %{resource_name} através de um ficheiro CSV"
       user_moderation:
         unreport: "%{user_name} retirou denuncia a %{resource_type} - %{unreported_user_name}"
     admin_terms_of_service:
-      default_body: "<h2>ADMIN TERMS OF SERVICE</h2><p>We trust you have received the usual lecture from the local System Administrator. It usually boils down to these three things:</p><ol><li>Respect the privacy of others.</li><li>Think before you click.</li><li>With great power comes great responsibility.</li></ol>"
+      default_body: "<h2>TERMOS DE SERVIÇO DO ADMINISTRADOR</h2>\n<p>Confiamos que já recebeu as habituais recomendações do Administrador de Sistemas local. Normalmente, resumem-se a três pontos:</p>\n<ol>\n <li>Respeite a privacidade dos outros.</li>\n <li>Pense antes de clicar.</li>\n <li>Com grande poder vem grande responsabilidade.</li>\n</ol>"
     alert:
       dismiss: Descartar notificação
     amendments:
@@ -292,11 +292,11 @@ pt:
         error: Ocorreu um erro ao modificar este recurso.
         promote_button: Promover a %{model_name}
         promote_confirm_text: Tem a certeza de que deseja promover esta retificação?
-        promote_help_text: You can promote this emendation and publish it as an independent %{model_name}.
+        promote_help_text: Pode promover esta emenda e publicá-la como um(a) %{model_name} independente.
       amendments:
         title:
-          one: "%{count} amendment"
-          other: "%{count} amendments"
+          one: "%{count} emenda"
+          other: "%{count} emendas"
       created:
         error: Ocorreu um erro ao criar o rascunho da modificação.
         success: O rascunho da modificação foi criado corretamente.
@@ -323,7 +323,7 @@ pt:
           withdrawn: |-
             Esta modificação de %{amendable_type} %{proposal_link}
             foi retirada pelo autor.
-      name: Amendment
+      name: Emenda
       new:
         amendment_author: Autor da modificação
         send: Criar
@@ -333,14 +333,14 @@ pt:
         publish: Publicar
         title: Publicar Rascunho da Modificação
       promoted:
-        error: There was a problem publishing the amendment as a new proposal.
-        success: The amendment has been successfully published as a new proposal.
+        error: Houve um problema a publicar a emenda como uma nova proposta.
+        success: A emenda foi publicada com sucesso como uma nova proposta.
       publish_draft:
         error: Ocorreu um problema a publicar a modificação.
         success: Modificação publicada corretamente.
       rejected:
-        error: There was a problem rejecting this amendment, please try again later.
-        success: The amendment has been successfully rejected.
+        error: Ocorreu um erro ao rejeitar esta emenda, por favor, tente novamente mais tarde.
+        success: A emenda foi rejeitada com sucesso.
       review:
         back: Retroceder
         heading: Rever a modificação
@@ -349,28 +349,28 @@ pt:
         error: Ocorreu um problema ao atualizar o rascunho da modificação.
         success: Rascunho da modificação atualizado corretamente.
       withdraw:
-        error: An error ocurred while withdrawing the amendment.
-        success: The amendment has been withdrawn successfully.
+        error: Houve um erro ao retirar a emenda.
+        success: A emenda foi retirada com sucesso.
       wizard_step_form:
         steps:
           '1': Criar a sua modificação
-          '2': Publish your amendment
+          '2': Publicar sua emenda
     anonymous_user: Anônimo
     application:
       document:
         download: Transferir ficheiro
-        visit_link: Visit link
+        visit_link: Visitar o link
       documents:
         component_documents:
           dummy: Documentos fictícios doa funcionalidade
           meetings: Documentos de reuniões
-        documents: Documents
+        documents: Anexos
         related_documents: Documentos relacionados
       photo:
         alt: Imagem de mídia
-        title: Image
+        title: Imagem
       photos:
-        photos: Images
+        photos: Imagens
         related_photos: Imagens relacionadas
     author:
       avatar: 'Avatar: %{name}'
@@ -380,16 +380,16 @@ pt:
       endorsements:
         one: endosso
         other: endossos
-      official_author: Official
+      official_author: Oficial
     authorization_handlers:
       another_dummy_authorization_handler:
-        explanation: Get verified by introducing a passport number starting with "A".
+        explanation: Seja verificado a introduzir um número de passaporte começando com "A".
         fields:
           passport_number: Número do passaporte
           postal_code: Código postal
         name: Outro exemplo de autorização
       dummy_authorization_handler:
-        explanation: Get verified by introducing a document number ending with "X".
+        explanation: Seja verificado a introduzir um número de passaporte começando com "X".
         fields:
           allowed_postal_codes: Códigos postais permitidos (separados por vírgula)
           allowed_scope_id: Âmbito permitido
@@ -421,7 +421,7 @@ pt:
           title: A autorização expirou
         incomplete:
           cancel: Cancelar
-          explanation: 'Even though you are currently authorized with "%{authorization}", we need you to reauthorize because we lack the following data:'
+          explanation: 'Embora esteja atualmente autorizado com "%{authorization}", necessitamos que reautorize, pois faltam os seguintes dados:'
           invalid_field: "%{field}"
           reauthorize: Reautorizar
           title: Por favor reautorize
@@ -430,18 +430,18 @@ pt:
           explanation: Para executar esta ação, você precisa ser autorizado com "%{authorization}".
           title: Autorização necessária
         ok:
-          title: You have been authorized while in this page. Please, reload the page to perform your action.
+          title: Foste autorizado enquanto estavas nesta página. Por favor, recarrega a página para realizar a tua ação.
         pending:
-          explanation: In order to perform this action, you need to be authorized with "%{authorization}", but your authorization is still in progress.
-          resume: Check your "%{authorization}" authorization progress.
+          explanation: Para realizar esta ação, precisas de estar autorizado com "%{authorization}", mas a tua autorização ainda está em curso.
+          resume: Verifica o progresso da tua autorização "%{authorization}".
           title: A autorização ainda está em progresso
         unauthorized:
-          explanation: Sorry, you cannot perform this action as some of your authorization data does not match.
-          invalid_field: "%{field} value %{value} is not valid."
-          ok: Ok
+          explanation: Desculpa, não podes realizar esta ação porque alguns dos teus dados de autorização não coincidem.
+          invalid_field: "O valor %{field} %{value} é inválido."
+          ok: OK
           title: Não autorizado
         unconfirmed:
-          confirmation_instructions: 'If you have not received the confirmation instructions you can request them again:'
+          confirmation_instructions: 'Se não recebeste as instruções de confirmação, podes solicitá-las novamente:'
           explanation_html: De forma a executar esta ação precisa de estar autorizado, antes de fazer isso precisa de confirmar o seu e-mail <strong>%{email}</strong>.
           request_confirmation_instructions: Solicitar instruções de confirmação
           title: Confirmar o seu e-mail
@@ -501,7 +501,7 @@ pt:
     contact: Contacto
     content_blocks:
       announcement:
-        name: Announcement
+        name: Anúncio
       cta:
         name: Imagem, texto, botão de convite a acção
       cta_settings_form:
@@ -512,9 +512,9 @@ pt:
       footer_sub_hero:
         name: Faixa sub hero do rodapé
       global_menu:
-        name: Global menu
+        name: Menu global
       hero:
-        name: Hero image and CTA
+        name: Imagem principal e CTA (Chamada para ação)
       hero_settings_form:
         background_image: Imagem de fundo
         welcome_text: Texto de boas-vindas
@@ -538,38 +538,38 @@ pt:
         title: Última atividade
         view_all: Ver tudo
       last_activity_settings_form:
-        max_last_activity_users: Maximum number of user avatars with recent activity to show
+        max_last_activity_users: Número máximo de avatares de utilizadores com atividade recente a exibir
       main_data:
-        name: Main data
+        name: Dados principais
       metadata:
-        name: Metadata
+        name: Metadados
       metrics:
         name: Métricas da organização
       participatory_space_metrics:
-        name: Metrics
+        name: Métricas
       participatory_space_stats:
-        name: Statistics
+        name: Estatísticas
       social_networks_metadata:
-        name: Social networks
+        name: Redes sociais
       static_page:
         section:
-          name: Section
-          section_content: Content
+          name: Seção
+          section_content: Conteúdo
         summary:
-          name: Summary
-          summary_content: Content
+          name: Resumo
+          summary_content: Conteúdo
         two_pane_section:
-          left_column: Left column
-          name: Two-column section
-          right_column: Right column
+          left_column: Coluna esquerda
+          name: Seção de duas colunas
+          right_column: Coluna direita
       stats:
         name: Estatísticas da organização
       sub_hero:
         name: Faixa de sub hero
     core:
       actions:
-        login_before_access: Please, log in with your account before access.
-        unauthorized: You are not authorized to perform this action.
+        login_before_access: Por favor, inicia sessão com a tua conta antes de aceder.
+        unauthorized: Não estás autorizado a realizar esta ação.
       application_helper:
         filter_area_values:
           all: Todas
@@ -580,24 +580,24 @@ pt:
     devise:
       omniauth_registrations:
         create:
-          email_already_exists: Another account is using the same email address.
+          email_already_exists: Outra conta está usando o mesmo endereço de e-mail.
         new:
           complete_profile: Complete o seu perfil
           nickname_help: A sua alcunha em %{organization}. Só pode conter letras, números, “-”, e “_”
           sign_up: Por favor, complete o seu perfil
-          subtitle: Please fill in the following form in order to complete the account creation
+          subtitle: Por favor, preenche o formulário seguinte para completar a criação da conta
           username_help: Nome público que aparece nas suas publicações. Com o objetivo de garantir o anonimato, pode ser qualquer nome.
       registrations:
         create:
-          error: There was a problem creating your account.
+          error: Houve um problema ao criar a tua conta.
         new:
           already_have_an_account?: Já tem uma conta?
           log_in: Entrar
           newsletter: Receber um boletim informativo ocasional com informações relevantes
           newsletter_title: Permissão de contacto
-          sign_up: Create an account
-          subtitle: Create an account to participate in the platform.
-          terms: the terms of service
+          sign_up: Registra-te
+          subtitle: Regista-te para participar na plataforma.
+          terms: termos de serviço
           tos_agreement: Ao se inscrever, aceita %{link}.
           tos_title: Termos de Serviço
           username_help: Nome público que aparece nas suas publicações. Com o objetivo de garantir o anonimato, pode ser qualquer nome.
@@ -605,26 +605,22 @@ pt:
         new:
           are_you_new?: Novo na plataforma?
           register: Criar uma conta
-          sign_in_disabled: You can access with an external account.
-          sign_up_disabled: Account creation is disabled, you can use an existing account to access.
+          sign_in_disabled: Você pode acessar com uma conta externa.
+          sign_up_disabled: A criação de contas está desativada. Podes usar uma conta existente para aceder.
         user:
-          timed_out: You were inactive for too long and you have been automatically logged out from the service. If you would like to continue using the service, please log in again.
+          timed_out: Estiveste inativo durante demasiado tempo e foste automaticamente desconectado do serviço. Se desejares continuar a usar o serviço, por favor, inicia sessão novamente.
       shared:
         newsletter_modal:
           buttons:
             check: Verificar e continuar
             uncheck: Manter não verificado
           notice: |-
-            <p>Hey, are you sure you do not want to receive a newsletter?
-            Please consider again ticking the newsletter checkbox below.
-            It is very important for us that you can receive occasional emails
-            to make important announcements, you can always change this on your
-            notifications settings page.</p>
-            <p>If you do not tick the box you might be missing relevant information
-            about new participatory opportunities within the platform.<br>
-            If you still want to avoid receiving newsletters, we perfectly
-            understand your decision.</p>
-            <p>Thanks for reading this!</p>
+            <p>Olá, tens a certeza de que não queres receber a newsletter? 
+            Por favor, considera novamente marcar a caixa de seleção da newsletter abaixo. 
+            É muito importante para nós que possas receber emails ocasionais com anúncios importantes. Podes sempre alterar isso na página das tuas definições de notificações.</p> 
+            <p>Se não marcares a caixa, poderás perder informações relevantes sobre novas oportunidades de participação na plataforma.<br> 
+            Se ainda assim preferires não receber newsletters, compreendemos perfeitamente a tua decisão.</p> 
+            <p>Obrigado por leres esta mensagem!</p>
           title: Notificações do boletim informativo
         omniauth_buttons:
           or: Ou
@@ -640,7 +636,7 @@ pt:
           authorize: Autorizar aplicação
           by_organization_link_html: <small class="heading-small">por %{link}</small>
           cancel: Cancelar
-          connect_your_account_html: Connect your account by logging in to %{organization}.
+          connect_your_account_html: Conecta a tua conta iniciando sessão em %{organization}.
           publish_content: Publicar conteúdo para si
           see_email: Ver o seu e-mail
           see_name: Ver o seu nome
@@ -655,31 +651,31 @@ pt:
       show:
         download_data: Transferir os dados
         download_data_description_html: |-
-          A file containing all the information associated with your account will be sent to <strong>%{user_email}</strong>.
-          This email will contain a .zip file and a password to open it.<br/><br/>To unzip the file, you will need <a href="https://www.7-zip.org/">7-Zip</a> (for Windows) or <a href="https://www.keka.io/">Keka</a> (for MacOS).
-          If you use Linux, most of the time you will have it installed by default. If not, you can use <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> or <a href="https://peazip.github.io">PeaZip</a>).
+          Um ficheiro contendo todas as informações associadas à tua conta será enviado para <strong>%{user_email}</strong>. 
+          Este email incluirá um ficheiro .zip e uma palavra-passe para o abrir.<br/><br/>Para descompactar o ficheiro, precisarás do <a href="https://www.7-zip.org/">7-Zip</a> (para Windows) ou do <a href="https://www.keka.io/">Keka</a> (para MacOS). 
+          Se utilizares Linux, na maioria dos casos já terás um programa instalado por defeito. Caso contrário, podes usar o <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> ou o <a href="https://peazip.github.io">PeaZip</a>.
         request_data: Solicitar dados
     editor_images:
       create:
-        error: Error uploading image.
-        success: Image uploaded successfully.
-      drag_and_drop_help: Add images by dragging & dropping or pasting them.
+        error: Erro ao carregar imagem.
+        success: Imagem carregada com sucesso.
+      drag_and_drop_help: Adiciona imagens arrastando e largando ou colando-as.
     endorsement_buttons_cell:
-      already_endorsed: Dislike
-      endorse: Like
+      already_endorsed: Não gostar
+      endorse: Gostar
     endorsements:
       identities:
         done: Concluído
         select_identity: Selecione a identidade
     endorsers_list:
-      endorsed_by: Liked by…
+      endorsed_by: Gostado por…
     errors:
       files:
-        file_cannot_be_processed: File cannot be processed
-        file_resolution_too_large: File resolution is too large
-        not_inside_organization: The file is not attached to any organization
+        file_cannot_be_processed: O arquivo não pode ser processado
+        file_resolution_too_large: A resolução do ficheiro é demasiado grande
+        not_inside_organization: O arquivo não está anexado a nenhuma organização
       internal_server_error:
-        copied: Text copied!
+        copied: Texto copiado!
         copy_error_message_clarification: Copy error message to clipboard
         copy_to_clipboard: Copy to clipboard
         date_and_time: Date and time
@@ -929,14 +925,14 @@ pt:
           replace: Replace
           save: Save
           title: Title
-          title_required: Title is required!
-          uploaded: Uploaded
-          validating: Validating...
-          validation_error: Validation error! Check that the file has an allowed extension or size.
-        select_file: Select file
+          title_required: O título é obrigatório
+          uploaded: Carregado
+          validating: A validar...
+          validation_error: Erro de validação! Verifique se o arquivo tem uma extensão ou tamanho permitido.
+        select_file: Selecionar arquivo
       upload_help:
-        dropzone: Drop files here or click the button to upload
-        explanation: Guidance for %{attribute}
+        dropzone: Arrasta os ficheiros para aqui ou clica no botão para carregar
+        explanation: Orientação para %{attribute}
     gamification:
       all_badges_link: Ver todos os distintivos disponíveis.
       badges:
@@ -948,7 +944,7 @@ pt:
           description_own: "%{score} pessoas seguem-no(a)."
           name: Seguidores
           next_level_in: Obtenha mais %{score} pessoas para segui-lo(a) para alcançar o próximo nível!
-          unearned_another: This participant does not have any followers yet.
+          unearned_another: Este usuário ainda não possui seguidores.
           unearned_own: You have got no followers yet.
         index:
           badge_title: "Distintivo %{name}"
