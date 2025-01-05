@@ -4,18 +4,18 @@ pt:
     design:
       components:
         accordions:
-          content_panel: Content of the panel
-          demo: Demo
-          demo_description: Throughout the application the accordions are used, mainly, to show/hide content in tabs or fold/unfold visible texts.
-          description_accordions_html: Accordions are a javascript feature available thanks to an external library called %{link_code} a11y-accordion-component.
-          github_source_html: Source code on GitHub %{github_link}
-          panel: Panel
-          title: Accordions
-          trigger: Trigger
-          usage: Usage
-          usage_p: An accordion requires at least three elements
-          usage_p_1_html: 1. A wrapper <code>div</code>, with the data-attribute <code>data-component="accordion"</code>, over all the available triggers and panels.
-          usage_p_2_html: 2. A trigger element, user actionable (as a button), pointing to the collapsable element through <code>data-controls="panel"</code>, where <i>panel</i> is the <code>id</code> of the panel.
+          content_panel: Conteúdo do painel
+          demo: Demonstração
+          demo_description: Em toda a aplicação os acordos são utilizados, principalmente, para exibir/ocultar conteúdo em abas ou dobrar/desdobrar textos visíveis.
+          description_accordions_html: Os Acordeões são um recurso de javascript disponível graças a uma biblioteca externa chamada %{link_code} a11y-accordion-componente.
+          github_source_html: Código-fonte no GitHub %{github_link}
+          panel: Painel
+          title: Acordeões
+          trigger: Gatilho
+          usage: Utilização
+          usage_p: Um accordion requer pelo menos três elementos
+          usage_p_1_html: 1. Um wrapper <code>div</code>, com o atributo de dados <code>data-component="accordion"</code>, sobre todos os gatilhos e painéis disponíveis.
+          usage_p_2_html: 2. Um elemento acionador, acionável pelo usuário (como um botão), apontando para o elemento recolhido através do <code>data-controls="painel"</code>, onde o painel <i></i> é a Ajuda <code></code> do painel.
           usage_p_3_html: 3. A hideable element, whose <code>id</code> matches the data-controls value the trigger refers to.
         activities:
           activities: Activities
@@ -206,7 +206,7 @@ pt:
         dropdowns_description_html: Dropdowns are a javascript feature available thanks to an external library called %{link}.
         dropdowns_usage_1_description: 2. A hideable element, whose <code>id</code> matches the data-target value the trigger refers to.
         dropdowns_usage_description: 'An dropdown requires two elements:'
-        dropdowns_usage_description_html: 1. A user actionable element, with the data-attributes <code>data-component="dropdown" data-target="dropdown-menu-element"</code>.
+        dropdowns_usage_description_html: 1. Um elemento acionável pelo usuário, com os atributos de dados <code>data-component="dropdown" data-├dropdown-menu-element"</code>.
         dummy_description: Dummy resource description
         dummy_title: Dummy resource title
         follow_button: Follow Button
@@ -260,9 +260,9 @@ pt:
         sortitions: Sortitions
         source_code: Source Code
         state: State
-        tab_panels_context_description: This tab-panel component gathers all the related contents or another resources of the main element displayed, in order to save vertical space. Clicking on the tab will activate the created panel to show the content.
+        tab_panels_context_description: Este componente do painel de guias reúne todo o conteúdo relacionado ou outros recursos do elemento principal exibido, a fim de economizar espaço vertical. Clicar na aba irá ativar o painel criado para mostrar o conteúdo.
         tab_panels_context_description_html: Mainly is used within the <i>layout_item</i> or the <i>layout_center</i>, after the main content of the resource.
-        tab_panels_usage_description: 'This component receives an array of hashes, and rearrange the output of each item into a tab-panel structure. Available properties for each panel:'
+        tab_panels_usage_description: 'Este componente recebe uma matriz de hashes, e reorganiza a saída de cada item em uma estrutura de painel de abas. Propriedades disponíveis para cada painel:'
         tab_panels_usage_description_arguments_html: "<strong>args</strong>: <i>Array</i>. Arguments for the previous method"
         tab_panels_usage_description_html: "<strong>enabled</strong>: <i>Boolean</i>. Conditionally render the tab"
         tab_panels_usage_description_id_html: "<strong>id</strong>: <i>String</i>. Unique id"
