@@ -126,8 +126,8 @@ pt:
         x_seconds: "%{count}s"
         x_years: "%{count}y"
       x_days:
-        one: 1 day
-        other: "%{count} days"
+        one: 1 dia
+        other: "%{count} dias"
       x_hours:
         one: 1 hour
         other: "%{count} hours"
@@ -214,10 +214,10 @@ pt:
       component:
         create: "%{user_name} adicionou o componente %{resource_name} ao espaço %{space_name}"
         delete: "%{user_name} removeu o componente %{resource_name} do espaço %{space_name}"
-        export_component: "%{user_name} exported the %{resource_name} %{component_name} in %{space_name} as %{format_name}"
+        export_component: "%{user_name} exportou %{resource_name} %{component_name} em %{space_name} como %{format_name}"
         publish: "%{user_name} publicou o componente %{resource_name} no espaço %{space_name}"
         unpublish: "%{user_name} removeu a publicação do componente %{resource_name} do espaço %{space_name}"
-        update_permissions_with_space: "%{user_name} updated the permissions of %{resource_name} in %{space_name}"
+        update_permissions_with_space: "%{user_name} atualizou o resultado %{resource_name} em %{space_name}"
       contextual_help_section:
         update: "%{user_name} updated the %{resource_name} help section"
       helpers:
@@ -362,8 +362,8 @@ pt:
         visit_link: Visit link
       documents:
         component_documents:
-          dummy: Dummy component documents
-          meetings: Meetings documents
+          dummy: Documentos fictícios doa funcionalidade
+          meetings: Documentos de reuniões
         documents: Documents
         related_documents: Documentos relacionados
       photo:
@@ -459,7 +459,7 @@ pt:
       see_less: "(ver menos)"
     components:
       component_order_selector:
-        no_content: We could not find any content with this criteria.
+        no_content: Não conseguimos encontrar nenhum conteúdo com estes critérios.
         order:
           all_types: Todos os tipos
           collaborative_draft: Rascunho Colaborativo
@@ -467,7 +467,7 @@ pt:
           debate: Debate
           initiative: Iniciativa
           meeting: Reunião
-          order: Budgeting vote
+          order: Votação orçamental
           post: Publicação
           proposal: Proposta
           question: Pergunta
@@ -522,8 +522,8 @@ pt:
         name: Faixa de conteúdo realçado
       highlighted_elements_settings_form:
         components:
-          all: All
-          label: 'Select component:'
+          all: Todas
+          label: 'Selecione uma funcionalidade:'
         orders:
           label: 'Ordenar elementos por:'
           random: Aleatório
@@ -572,7 +572,7 @@ pt:
         unauthorized: You are not authorized to perform this action.
       application_helper:
         filter_area_values:
-          all: All
+          all: Todas
         filter_category_values:
           all: Todos
         filter_scope_values:
@@ -751,7 +751,7 @@ pt:
           email_intro: 'O componente %{resource_title} está agora ativo para %{participatory_space_title}. Pode vê-lo a partir desta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: Uma atualização a %{participatory_space_title}
-          notification_title: O componente %{resource_title} está agora ativo para <a href="%{resource_path}">%{participatory_space_title}</a>
+          notification_title: A funcionalidade %{resource_title} está agora ativa para <a href="%{resource_path}">%{participatory_space_title}</a>
       email_event:
         email_greeting: Olá %{user_name},
         email_intro: 'Ocorreu uma atualização a "%{resource_title}". Pode vê-la a partir desta página:'
@@ -762,7 +762,7 @@ pt:
           email_intro: Congratulations! You have earned the <a href="%{resource_url}">%{badge_name} badge</a> (level %{current_level}).
           email_outro: Recebeu esta notificação porque realizou uma atividade no nosso sítio.
           email_subject: 'You have earned a new badge: %{badge_name}!'
-          notification_title: Congratulations! You have earned the <a href="%{resource_path}">%{badge_name} badge</a> (level %{current_level}).
+          notification_title: Parabéns! Ganhastes o distintivo <a href="%{resource_path}">%{badge_name}</a> (nível %{current_level}).
         level_up:
           email_intro: Congratulations! You have reached level %{current_level} on the <a href="%{resource_url}">%{badge_name} badge</a>!
           email_outro: Recebeu esta notificação porque realizou uma atividade no nosso sítio.
@@ -1381,9 +1381,9 @@ pt:
           title: Distintivos
       user:
         actions:
-          create_user_group: Create group
+          create_user_group: Criar um grupo
           disabled_message: Message
-          edit_profile: Edit profile
+          edit_profile: Editar perfil
           edit_user_group: Edit group profile
           invite_user: Invite participant
           join_user_group: Request to join group
@@ -1957,7 +1957,7 @@ pt:
       language_chooser:
         choose_language: Escolher idioma
       notifications_dashboard:
-        mark_all_as_read: Marcar tudo como lido
+        mark_all_as_read: Marcar tudo como lida
         mark_as_read: Marcar como lida
       offline_banner:
         cache_version_page: Oooops! Sua rede está off-line. Esta é uma versão em cache da página, talvez o conteúdo não esteja atualizado.
@@ -1970,17 +1970,17 @@ pt:
       timeout_modal:
         body: Está inactivo há %{minutes}. Se continuar inactivo será automaticamente desligado para a sua própria segurança.
         continue_session: Continuar sessão
-        log_out: Log out
+        log_out: Encerrar sessão
         title: Gostaria de continuar a sua sessão?
       user_menu:
         account: 'Conta de utilizador: %{name}'
-        admin_dashboard: Painel de administração
-        configuration: Configuration
-        conversations: Conversas
-        log_out: Log out
+        admin_dashboard: Painel de controlo
+        configuration: Definição
+        conversations: Mensagem
+        log_out: Encerrar sessão
         notifications: Notificações
-        profile: A minha conta
-        public_profile: O meu perfil público
+        profile: Minha conta
+        public_profile: Meu perfil público
         title: Ligações de perfil
       user_profile:
         account: Conta
@@ -1989,7 +1989,7 @@ pt:
         my_data: Os meus dados
         my_interests: Os meus interesses
         notifications_settings: Configurações de notificações
-        profile: Profile
+        profile: Perfil
         title: Configurações do participante
         user_groups: Grupos
   locale:
