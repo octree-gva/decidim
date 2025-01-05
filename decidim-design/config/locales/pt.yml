@@ -282,7 +282,7 @@ pt:
         usage_background_4: Lines and separators
         usage_background_5: Footer background
         usage_background_6: Admin layout background
-        usage_base_1: Main nav component background\nNav menus in homepage and space home
+        usage_base_1: Fundo principal de componente nav\nMenu Nav na página inicial e espaço inicial
         usage_base_2: Main color for links and buttons
         usage_base_3: Graphic ornaments and accent color\nCards and list items hover state border
         usage_formelements_1: Input elements default background
