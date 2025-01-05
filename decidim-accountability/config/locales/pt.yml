@@ -13,7 +13,7 @@ pt:
         project_ids: Projetos incluídos
         proposals: Propostas incluídas
         start_date: Data de início
-        subresults: Subresults
+        subresults: Subresultados
         title: Título
         updated_at: Atualizado em
       status:
@@ -45,7 +45,7 @@ pt:
         import_csv: Importar resultados de um CSV
         new_result: Novo resultado
         new_status: Novo estado
-        new_timeline_entry: New timeline entry
+        new_timeline_entry: Nova entrada do cronograma
         preview: Pré-visualizar
         timeline_entries: Evolução do projeto
         title: Ações
@@ -55,34 +55,34 @@ pt:
           results: Resultados
         import_results:
           new:
-            download_export: Download the Export with CSV format
+            download_export: Baixe a exportação com formato CSV
             import: Importar
             info: |
-              <p>We recommend that you follow these steps:</p>
+              <p>Recomendamos que siga estes passos:</p>
               <ol>
-              <li><a href='%{link_new_status}' target='_blank'>Create the Statuses for the Results</a> that you want to add</li>
-              <li><a href='%{link_new_result}' target='_blank'>Create at least one Result manually</a> through this Admin panel before using Import, for having a better understanding of the format and what you will need to fill out.</li>
-              <li>%{link_export_csv}</li>
-              <li>Make the changes locally. You can only change the following columns of the CSV:
-                <ul>
-                <li><b>category/id:</b> ID for the Category</li>
-                <li><b>scope/id:</b> ID for the Scope</li>
-                <li><b>parent/id:</b> ID of the parent (for related Results). Optional</li>
-                <li><b>title/en:</b> Title on English language. This will depend on your platform language configuration.</li>
-                <li><b>description/en:</b> Description on English language. This will depend on your platform language configuration.</li>
-                <li><b>start_date:</b> date when the result starts execution (format YYYY-MM-DD)</li>
-                <li><b>end_date:</b> date when the result ends execution (format YYYY-MM-DD)</li>
-                <li><b>status/id:</b> ID of the Status for this result</li>
-                <li><b>progress:</b> Percentage (from 0 to 100) of the execution</li>
-                <li><b>proposals_ids:</b> internal ID of the related proposals (separated with a comma). It gets automatically converted to <span class='attribute-name'>proposal_url</span></li>
-                </ul>
-              </li>
+                <li><a href='%{link_new_status}' target='_blank'>Crie os estados para os resultados</a> que pretende adicionar.</li>
+                <li><a href='%{link_new_result}' target='_blank'>Crie pelo menos um resultado manualmente</a> através deste painel de administração antes de utilizar a importação, para compreender melhor o formato e os campos necessários.</li>
+                <li>%{link_export_csv}</li>
+                <li>Faça as alterações localmente. Pode modificar apenas as seguintes colunas do ficheiro CSV:
+                  <ul>
+                    <li><b>category/id:</b> ID da categoria.</li>
+                    <li><b>scope/id:</b> ID do âmbito.</li>
+                    <li><b>parent/id:</b> ID do pai (para resultados relacionados). Opcional.</li>
+                    <li><b>title/en:</b> Título em inglês. Este campo depende da configuração de idiomas da sua plataforma.</li>
+                    <li><b>description/en:</b> Descrição em inglês. Este campo depende da configuração de idiomas da sua plataforma.</li>
+                    <li><b>start_date:</b> Data de início da execução do resultado (formato YYYY-MM-DD).</li>
+                    <li><b>end_date:</b> Data de término da execução do resultado (formato YYYY-MM-DD).</li>
+                    <li><b>status/id:</b> ID do estado atribuído a este resultado.</li>
+                    <li><b>progress:</b> Percentagem (de 0 a 100) da execução.</li>
+                    <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separados por vírgulas). Este campo é automaticamente convertido para <span class='attribute-name'>proposal_url</span>.</li>
+                  </ul>
+                </li>
               </ol>
-            title: Import results from CSV file
+            title: Importar resultados de um CSV
         imports:
           create:
-            invalid: There was a problem importing the results.
-            success: The file has begun importing. You will receive an email in the next few minutes with the result of the import.
+            invalid: Ocorreu um problema na importação dos resultados.
+            success: O arquivo começou a importar. Você receberá um e-mail nos próximos minutos com o resultado da importação.
         models:
           result:
             name: Resultado
@@ -90,26 +90,26 @@ pt:
             name: Estado
         projects_import:
           create:
-            invalid: There was a problem importing the projects into results, please follow the instructions carefully and make sure you have selected projects for implementation.
+            invalid: Houve um problema ao importar os projetos para os resultados, por favor, siga as instruções cuidadosamente e verifique se você selecionou projetos para implementação.
           new:
-            create: Import
-            import_all_selected_projects: Import all projects selected for implementation
+            create: Importar
+            import_all_selected_projects: Importar todos os projetos selecionados para implementação
             new_items:
-              one: 1 selected project will be imported
+              one: 1 projeto selecionado será importado
               other: "%{count} selected projects will be imported"
-            no_components: There are no budgets components in this participatory space to import the projects into results.
-            origin_component_id: Origin component
-            select_component: Select a component
+            no_components: Não há outras, funcionalidade de orçamento neste espaço participativo para importar os projetos em resultados.
+            origin_component_id: Funcionalidade de origem
+            select_component: Selecione uma funcionalidade
             success:
-              one: 1 project queued to be imported. You will be notified by email, once completed.
-              other: "%{count} projects queued to be imported. You will be notified by email, once completed."
-            title: Import projects from another component
+              one: 1 projeto na fila para ser importado. Você será notificado por e-mail, assim que concluído.
+              other: "Projetos %{count} na fila para serem importados. Você será notificado por e-mail, assim que concluído."
+            title: Importar projetos de outra funcionalidade
         results:
           create:
-            invalid: There was a problem creating this result.
-            success: Result successfully created.
+            invalid: Houve um problema ao criar este resultado.
+            success: Resultado criado corretamente.
           destroy:
-            success: Result successfully deleted.
+            success: Resultado criado corretamente.
           edit:
             title: Editar resultado
             update: Atualizar resultado
@@ -119,17 +119,17 @@ pt:
             create: Criar resultado
             title: Novo resultado
           update:
-            invalid: There was a problem updating this result.
-            success: Result successfully updated.
+            invalid: Houve um problema ao criar este resultado.
+            success: Resultado criado corretamente.
         shared:
           subnav:
             statuses: Estados
         statuses:
           create:
-            invalid: There was a problem creating this status.
-            success: Status successfully created.
+            invalid: Houve um problema ao criar este estatuto.
+            success: Estatuto criado com sucesso.
           destroy:
-            success: Status successfully deleted.
+            success: Estatuto elimidado com sucesso.
           edit:
             title: Editar estado
             update: Atualizar estado
@@ -139,14 +139,14 @@ pt:
             create: Criar estado
             title: Novo estado
           update:
-            invalid: There was a problem updating this status.
-            success: Status successfully updated.
+            invalid: Houve um problema ao criar este estatuto.
+            success: Estatuto criado com sucesso.
         timeline_entries:
           create:
-            invalid: There was a problem creating this entry.
-            success: Entry successfully created.
+            invalid: Ocorreu um problema ao criar este elemento.
+            success: Elemento criado com sucesso.
           destroy:
-            success: Entry successfully deleted.
+            success: Elemento eliminado com sucesso.
           edit:
             title: Editar entrada
             update: Atualizar entrada
@@ -156,21 +156,21 @@ pt:
             create: Criar entrada
             title: Nova entrada
           update:
-            invalid: There was a problem updating this entry.
-            success: Entry successfully updated.
+            invalid: Ocorreu um problema ao criar este elemento.
+            success: Elemento criado com sucesso.
       admin_log:
         result:
           create: "%{user_name} criou o resultado %{resource_name} em %{space_name}"
           delete: "%{user_name} eliminou o resultado %{resource_name} em %{space_name}"
           update: "%{user_name} atualizou o resultado %{resource_name} em %{space_name}"
         status:
-          create: "%{user_name} created the %{resource_name} status"
-          delete: "%{user_name} deleted the %{resource_name} status"
-          update: "%{user_name} updated the %{resource_name} status"
+          create: "%{user_name} criou o estatuto %{resource_name}"
+          delete: "%{user_name} eliminou o estatuto %{resource_name}"
+          update: "%{user_name} atualizou o estatuto %{resource_name}"
         timeline_entry:
-          create: "%{user_name} created the %{resource_name} timeline entry"
-          delete: "%{user_name} deleted the %{resource_name} timeline entry"
-          update: "%{user_name} updated the %{resource_name} timeline entry"
+          create: "%{user_name} criou o elemento de linha do tempo %{resource_name}"
+          delete: "%{user_name} eliminou o elemento de linha do tempo %{resource_name}"
+          update: "%{user_name} atualizou o elemento de linha do tempo %{resource_name}"
         value_types:
           parent_presenter:
             not_found: 'O pai não foi encontrado na base de dados (ID: %{id})'
@@ -180,19 +180,19 @@ pt:
       import_mailer:
         import:
           errors: Erros
-          errors_present: There was a problem importing results.
+          errors_present: Houve um problema na importação dos resultados.
           row_number: Linha
           subject: Importação dos resultados bem-sucedida
           success: Importação dos resultados bem-sucedida. Poderá rever os resultados na interface de administração.
       import_projects_mailer:
         import:
           added_projects:
-            one: One result was imported from projects.
-            other: "%{count} results were imported from projects."
-          subject: Successful import of projects
-          success: Successful imported projects to results in the %{component_name} component. You can review the results in the administration interface.
+            one: Um resultado foi importado de projetos.
+            other: "%{count} resultados foram importados de projetos."
+          subject: Importação dos resultados bem-sucedida
+          success: Projetos importados com sucesso para resultados na funcionalidade %{component_name}. Podes rever os resultados no painel de controlo.
       last_activity:
-        new_result: 'New result:'
+        new_result: 'Novo resultado:'
       models:
         result:
           fields:
@@ -214,7 +214,7 @@ pt:
         timeline_entry:
           fields:
             entry_date: Data
-            title: Title
+            title: Título
       results:
         count:
           results_count:
@@ -223,15 +223,15 @@ pt:
         filters:
           all: Todos
         home:
-          categories_label: Categories
-          empty: There are no results yet.
-          empty_filters: There are no results with this criteria.
-          subcategories_label: Subcategories
+          categories_label: Categorias
+          empty: Ainda não há resultados.
+          empty_filters: Não há resultados com estes critérios.
+          subcategories_label: Subcategorias
         home_header:
           global_status: Estado de execução global
         nav_breadcrumb:
           global: Execução global
-        no_results: There are no projects
+        no_results: Não há projetos
         search:
           search: Pesquisa por ações
         show:
