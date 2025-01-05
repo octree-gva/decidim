@@ -1134,7 +1134,7 @@ pt:
             reportable_id: ID
             reportable_type: Tipo
             reported_content_url: URL de conteúdo reportado
-            reports: Reason
+            reports: Motivo
             visit_url: URL de visita
         report:
           fields:
