@@ -33,7 +33,7 @@ pt:
         hero_image: Imagem inicial
         import_attachments: Import attachments
         import_categories: Import categories
-        import_components: Import components
+        import_components: Importar funcionalidades
         included_at: Incluído em
         instagram: Instagram
         internal_organisation: Organização interna
@@ -384,7 +384,7 @@ pt:
       index:
         title: Reuniões
       last_activity:
-        new_assembly: 'New assembly:'
+        new_assembly: 'Nova assembléia:'
       pages:
         home:
           highlighted_assemblies:
