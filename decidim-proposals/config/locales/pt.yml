@@ -295,7 +295,7 @@ pt:
           email_intro: A proposta "%{resource_title}" foi adicionada a "%{participatory_space_title}" que você segue.
           email_outro: Recebeu esta notificação porque segue "%{participatory_space_title}". Pode deixar de receber notificações seguindo a hiperligação anterior.
           email_subject: Nova proposta "%{resource_title}" adicionada a %{participatory_space_title}
-          notification_title: The proposal <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title} by %{author}.
+          notification_title: A proposta <a href="%{resource_path}">%{resource_title}</a> foi adicionada a "%{participatory_space_title}" por %{author}.
           notification_title_official: The official proposal <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title}.
         proposal_state_changed:
           affected_user:
@@ -736,7 +736,7 @@ pt:
         success: O rascunho da proposta foi eliminado corretamente.
       last_activity:
         new_proposal: 'Nova proposta:'
-        proposal_updated: 'Proposal updated:'
+        proposal_updated: 'Proposta atualizada:'
       models:
         proposal:
           fields:
