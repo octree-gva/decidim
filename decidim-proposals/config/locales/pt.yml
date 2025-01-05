@@ -735,7 +735,7 @@ pt:
         error: Ocorreu um problema ao eliminar o rascunho colaborativo.
         success: O rascunho da proposta foi eliminado corretamente.
       last_activity:
-        new_proposal: 'New proposal:'
+        new_proposal: 'Nova proposta:'
         proposal_updated: 'Proposal updated:'
       models:
         proposal:
