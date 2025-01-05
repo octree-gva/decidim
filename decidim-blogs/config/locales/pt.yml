@@ -3,10 +3,10 @@ pt:
   activemodel:
     attributes:
       post:
-        body: Body
-        decidim_author_id: Author
-        published_at: Publish time
-        title: Title
+        body: Conteúdo
+        decidim_author_id: Autor
+        published_at: Hora da publicação
+        title: Título
     models:
       decidim/blogs/create_post_event: Nova publicação no blog
   activerecord:
@@ -18,55 +18,55 @@ pt:
     blogs:
       actions:
         author_id: Criar publicação como
-        confirm_destroy: Are you sure you want to delete this post?
-        destroy: Delete
+        confirm_destroy: Tens a certeza de que queres eliminar esta publicação?
+        destroy: Eliminar
         edit: Editar
         new: Nova publicação
         title: Ações
       admin:
         posts:
           create:
-            invalid: There was a problem creating this post.
-            success: Post successfully created.
+            invalid: Houve um problema ao criar esta publicação.
+            success: Publicação criada corretamente.
           destroy:
-            success: Post successfully deleted.
+            success: Publicação eliminada com sucesso.
           edit:
             save: Actualizar
             title: Editar publicação
           index:
-            not_published_yet: Not published yet.
+            not_published_yet: Ainda não publicado.
             title: Publicações
           new:
             create: Criar
             title: Criar publicação
           update:
             invalid: Ocorreu um problema ao guardar a publicação.
-            success: Post successfully saved.
+            success: Publicação salva com sucesso.
       admin_log:
         post:
-          create: "%{user_name} created the %{resource_name} blog post in %{space_name}"
-          delete: "%{user_name} deleted the %{resource_name} blog post from %{space_name}"
-          update: "%{user_name} updated the %{resource_name} blog post in %{space_name}"
+          create: "%{user_name} criou %{resource_name} publicação no espaço %{space_name}"
+          delete: "%{user_name} eliminou %{resource_name} publicação no espaço %{space_name}"
+          update: "%{user_name} atualizou %{resource_name} publicação no espaço %{space_name}"
       content_blocks:
         highlighted_posts:
-          last_published: Last published
-          name: Posts
-          see_all: See all posts
+          last_published: Última publicação
+          name: Publicações
+          see_all: Ver todas as publicações
       last_activity:
-        new_post: 'New post:'
+        new_post: 'Nova publicação:'
       models:
         post:
           fields:
             author: Autor
             body: Corpo
-            official_blog_post: Official post
-            published_at: Publish time
-            title: Title
+            official_blog_post: Publicação oficial
+            published_at: Hora da publicação
+            title: Título
       posts:
         index:
           count:
-            one: "%{count} post"
-            other: "%{count} posts"
+            one: "%{count} publicação"
+            other: "%{count} publicações"
           empty: There are no posts yet.
     components:
       blogs:
