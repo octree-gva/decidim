@@ -46,7 +46,7 @@ pt:
             fields:
               category: Categoria
               created_at: Data de criação
-              decidim_proposals_component: Componente de propostas
+              decidim_proposals_component: Funcionalidade de propostas
               dice: Dados
               reference: Referência
               request_timestamp: Data do sorteio
