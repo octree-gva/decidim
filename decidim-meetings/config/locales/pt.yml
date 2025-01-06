@@ -19,11 +19,11 @@ pt:
         decidim_scope_id: Âmbito
         decidim_user_group_id: Grupo de utilizadores
         description: Descrição
-        end_time: End time
+        end_time: Hora de término
         id: IDENTIFICAÇÃO
-        iframe_access_level: Iframe access level
-        iframe_embed_type: Iframe embed type
-        iframe_embed_type_html: Only a few services allow the "Embed in meeting page" or "Open in live event page". Note that with the "Embed in the meeting page" option on mobiles, as the screen inherits different dimensions, it will actually work as an "Open in live event page".
+        iframe_access_level: Nível de acesso do iframe
+        iframe_embed_type: Tipo de incorporação do iframe
+        iframe_embed_type_html: Apenas alguns serviços permitem "Incorporar na página da reunião" ou "Abrir na página de evento ao vivo". Nota que, com a opção "Incorporar na página da reunião" em dispositivos móveis, como o ecrã herda dimensões diferentes, irá funcionar como "Abrir na página de evento ao vivo".
         location: Localização
         location_hints: Dicas de localização
         online_meeting_url: URL de reunião on-line
@@ -33,43 +33,43 @@ pt:
         registration_email_custom_content: Conteúdo personalizado do e-mail de registo
         registration_form_enabled: Formulário de registo ativado
         registration_terms: Termos de registo
-        registration_type: Registration type
+        registration_type: Tipo de registo
         registration_url: URL de registo
         registrations_enabled: Registos ativados
-        reserved_slots: Reserved slots for this meeting
-        start_time: Start time
+        reserved_slots: Vagas reservadas para esta reunião
+        start_time: Hora de início
         title: Título
         transparent: Transparente
         type_of_meeting: Tipo
       meeting_agenda:
-        title: Title
-        visible: Visible
+        title: Título
+        visible: Visível
       meeting_agenda_items:
-        description: Description
-        duration: Duration
-        title: Title
+        description: Descrição
+        duration: Duração
+        title: Título
       meeting_registration_invite:
         email: Email
-        name: Name
+        name: Nome
       validate_registration_code:
-        code: Code
+        code: Código
     errors:
       models:
         meeting:
           attributes:
             iframe_embed_type:
-              not_embeddable: This URL cannot be embedded in meeting or live event page.
+              not_embeddable: Este URL não pode ser incorporado na página da reunião ou do evento ao vivo.
             online_meeting_url:
-              url_format: Must be valid URL
+              url_format: Deve ser um URL válido
         meeting_agenda:
           attributes:
             base:
-              too_many_minutes: The duration of the items exceed the meeting duration by %{count} minutes.
-              too_many_minutes_child: The duration of the item childs exceed the agenda item "%{parent_title}" parent duration by %{count} minutes.
+              too_many_minutes: A duração dos itens excede a duração da reunião em %{count} minutos.
+              too_many_minutes_child: A duração dos itens filhos excede a duração do item de agenda "%{parent_title}" em %{count} minutos.
         meeting_registration_invite:
           attributes:
             email:
-              already_invited: This email account has already been invited.
+              already_invited: Esta conta de email já foi convidada.
     models:
       decidim/meetings/close_meeting_event: Reunião encerrada
       decidim/meetings/create_meeting_event: Reunião
@@ -92,10 +92,10 @@ pt:
     admin:
       filters:
         accepted_at_not_null:
-          label: Accepted
+          label: Aceite
           values:
-            'false': Not accepted
-            'true': Accepted
+            'false': Não aceite
+            'true': Aceite
         meetings:
           category_id_eq:
             label: Categoria
@@ -112,29 +112,29 @@ pt:
           scope_id_eq:
             label: Âmbito
           with_any_origin:
-            label: Origin
+            label: Origem
             values:
-              official: Official
-              participants: Participant
+              official: Oficial
+              participants: Participante
               user_group: Grupos de utilizadores
           with_any_type:
             label: Tipo de reunião
             values:
-              hybrid: Hybrid
+              hybrid: Híbrido
               in_person: Presencialmente
               online: Online
         rejected_at_not_null:
-          label: Rejected
+          label: Rejeitado
           values:
-            'false': Not rejected
-            'true': Rejected
+            'false': Não rejeitado
+            'true': Rejeitado
         search_placeholder:
-          user_name_or_user_email_cont: Search by name or email
+          user_name_or_user_email_cont: Pesquisar por nome ou email
         sent_at_not_null:
-          label: Sent
+          label: Enviado
           values:
-            'false': Not sent
-            'true': Sent
+            'false': Não enviado
+            'true': Enviado
       meeting_copies:
         create:
           error: Ocorreu um problema ao duplicar esta reunião.
@@ -147,7 +147,7 @@ pt:
         actions:
           comment: Comentários
           join: Adira
-          reply_poll: Reply poll
+          reply_poll: Responder à sondagem
         name: Reuniões
         settings:
           global:
@@ -216,7 +216,7 @@ pt:
           notification_title: A reunião <a href="%{resource_path}">%{resource_title}</a> começará em menos de 48h.
     forms:
       meetings:
-        attendees_count_help_text: Do not forget to include the total number of attendees at your meeting, whether in person, online or hybrid.
+        attendees_count_help_text: Não te esqueças de incluir o número total de participantes na tua reunião, seja presencial, online ou híbrida.
     gamification:
       badges:
         attended_meetings:
@@ -227,8 +227,8 @@ pt:
           description_own: Participou em %{score} reuniões.
           name: Reuniões participadas
           next_level_in: Participe em mais %{score} reuniões para alcançar o próximo nível!
-          unearned_another: This participant has not attended any meeting yet.
-          unearned_own: You have not attended any meeting yet.
+          unearned_another: Este participante ainda não participou em nenhuma reunião.
+          unearned_own: Ainda não participaste em nenhuma reunião.
     meetings:
       actions:
         agenda: Agenda
@@ -465,7 +465,7 @@ pt:
           confirmation:
             subject: O seu registo da reunião foi confirmado
       meeting:
-        not_allowed: You are not allowed to view this meeting.
+        not_allowed: Não tens permissão para visualizar esta reunião.
       meeting_closes:
         edit:
           back: Recuar
@@ -503,21 +503,21 @@ pt:
           origin_values:
             all: Todos
             official: Oficial
-            participants: Participants
-            user_group: Groups
+            participants: Participantes
+            user_group: Grupos
           search: Pesquisar
           type: Tipo
           type_values:
             all: Todos
-            hybrid: Hybrid
+            hybrid: Híbrido
             in_person: Presencial
             online: On-line
         form:
           address_help: 'Endereço: utilizado pelo Geocoder para encontrar a localização'
           available_slots_help: Deixar em 0 se tiver número ilimitado de intervalos de tempo disponíveis
           create_as: Criar reunião como
-          disclaimer: 'Disclaimer: By using an external registration system, you are aware that the organizers of %{organization} are not responsible for the data provided by the users to the external service.'
-          iframe_embed_type_html: 'Only a few services allow embedding in meeting or live event from the following domains: %{domains}'
+          disclaimer: 'Aviso: Ao usar um sistema de registo externo, estás ciente de que os organizadores de %{organization} não são responsáveis pelos dados fornecidos pelos utilizadores ao serviço externo.'
+          iframe_embed_type_html: 'Apenas alguns serviços permitem incorporação em reuniões ou eventos ao vivo dos seguintes domínios: %{domains}'
           location_help: 'Localização: mensagem direcionada aos utilizadores sugerindo o local onde se encontrarem'
           location_hints_help: 'Sugestões de localização: informação adicional. Exemplo: o piso do edifício se for uma reunião presencial, ou a palavra-chave se for uma reunião on-line de acesso restrito.'
           online_meeting_url_help: 'Ligação: permitir aos participantes ligarem-se directamente à sua reunião'
@@ -525,22 +525,22 @@ pt:
           select_a_category: Por favor selecione uma categoria
           select_a_meeting_type: Por favor seleccione um tipo de reunião
           select_a_registration_type: Por favor seleccione um tipo de registo
-          select_an_iframe_access_level: Please select an iframe access level
+          select_an_iframe_access_level: Por favor, seleciona um nível de acesso do iframe
         index:
-          click_here: See all meetings
+          click_here: Ver todas as reuniões
           new_meeting: Nova reunião
-          see_all: See all meetings
-          see_all_withdrawn: See all withdrawn meetings
-          text_banner: You are viewing the list of meetings withdrawn by their authors. %{go_back_link}.
+          see_all: Ver todas as reuniões
+          see_all_withdrawn: Ver todas as reuniões retiradas
+          text_banner: Estás a visualizar a lista de reuniões retiradas pelos seus autores. %{go_back_link}.
         meeting:
           close_meeting: Encerrar reunião
-          edit_close_meeting: Edit meeting report
+          edit_close_meeting: Editar relatório da reunião
           edit_meeting: Editar reunião
-          join_meeting: Join meeting
-          reply_poll: Reply poll
-          view_poll: View poll
+          join_meeting: Participar na reunião
+          reply_poll: Responder à sondagem
+          view_poll: Ver sondagem
         meetings:
-          no_meetings_warning: No meetings match your search criteria or there is not any meeting scheduled.
+          no_meetings_warning: Nenhuma reunião corresponde aos teus critérios de pesquisa ou não há nenhuma reunião agendada.
           upcoming_meetings_warning: Atualmente, não há reuniões agendadas, mas aqui pode encontrar listadas todas as reuniões passadas.
         new:
           back: Retroceder
@@ -570,9 +570,9 @@ pt:
             one: "%{count} intervalo de tempo restante"
             other: "%{count} intervalos de tempo restantes"
           visit_finished: Ver reunião passada
-          withdraw_btn_hint: You can withdraw your meeting if you change your mind. The meeting is not deleted, it will appear in the list of withdrawn meetings.
-          withdraw_confirmation_html: Are you sure you want to withdraw this meeting?<br><br><strong>This action cannot be cancelled!</strong>
-          withdraw_meeting: Withdraw meeting
+          withdraw_btn_hint: Podes retirar a tua reunião se mudares de ideia. A reunião não será eliminada, aparecerá na lista de reuniões retiradas.
+          withdraw_confirmation_html: Tens a certeza de que queres retirar esta reunião?<br><br><strong>Esta ação não pode ser cancelada!</strong>
+          withdraw_meeting: Retirar reunião
         update:
           invalid: Ocorreu um problema ao atualizar a reunião.
           success: Atualizou a reunião corretamente.
@@ -599,21 +599,21 @@ pt:
       polls:
         answers:
           index:
-            administrate: Administrate
-            title: Poll
+            administrate: Administrar
+            title: Sondagem
           index_admin:
-            back_to_meeting: Back to meeting
-            title: Administrate poll
-            view_poll: View poll
+            back_to_meeting: Voltar à reunião
+            title: Administrar sondagem
+            view_poll: Ver sondagem
         questions:
           closed_question:
-            announcement: The replies for this question have been closed.
-            question: Question
-            question_results: Results
+            announcement: As respostas para esta pergunta foram encerradas.
+            question: Pergunta
+            question_results: Resultados
           index:
             empty_questions: Durante esta reunião irão ser-lhe enviadas algumas questões e poderá responder-lhes. Serão exibidas aqui.
           index_admin:
-            edit: Edit in the admin panel
+            edit: Editar no painel de administração
             question: Questão
             received_answer: resposta recebida
             received_answers: respostas recebidas
@@ -621,16 +621,16 @@ pt:
             send: Enviar
             sent: Enviado
             statuses:
-              closed: Results sent (closed)
-              published: Sent (open)
-              unpublished: Pending to be sent
+              closed: Resultados enviados (fechados)
+              published: Enviado (aberto)
+              unpublished: Pendente de envio
           published_question:
             max_choices_alert: Estão selecionadas demasiadas opções
             question: Questão
             question_replied: Questão respondida
             reply_question: Responder à questão
       public_participants_list:
-        attending_organizations: Organizations
+        attending_organizations: Organizações
         attending_participants: Participantes assistentes
         hidden_participants_count:
           one: e mais %{count} pessoa
@@ -648,7 +648,7 @@ pt:
       registrations:
         create:
           invalid: Ocorreu um problema ao aderir a esta reunião.
-          success: You have joined the meeting successfully. Because you have registered for this meeting, you will be notified if there are updates on it.
+          success: Adesão à reunião efetuada com sucesso. Como te registaste nesta reunião, serás notificado caso existam atualizações.
         decline_invitation:
           invalid: Ocorreu um problema ao recusar o convite.
           success: Recusou o convite corretamente.
@@ -656,16 +656,16 @@ pt:
           invalid: Ocorreu um problema ao sair desta reunião.
           success: Saiu da reunião corretamente.
       type_of_meeting:
-        hybrid: Hybrid
+        hybrid: Híbrido
         in_person: Presencial
         online: On-line
       types:
         private_meeting: Reunião privada
         transparent: Transparente
-        withdraw: Withdrawn
+        withdraw: Retirada
       withdraw:
-        error: An error ocurred while withdrawing the meeting.
-        success: The meeting has been withdrawn successfully.
+        error: Ocorreu um erro ao retirar a reunião.
+        success: A reunião foi retirada com sucesso.
     metrics:
       meetings:
         description: Número de reuniões criadas
