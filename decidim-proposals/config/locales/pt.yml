@@ -168,12 +168,12 @@ pt:
               most_commented: Mais comentada
               most_endorsed: Mais apoiada
               most_followed: Mais seguida
-              most_voted: Most voted
+              most_voted: Mais votadas
               random: Aleatório
               recent: Mais recentes
               with_more_authors: Com mais autores
             geocoding_enabled: Geocoding ativado
-            minimum_votes_per_user: Minimum votes per user
+            minimum_votes_per_user: Mínimo de votos por participante
             new_proposal_body_template: Novo modelo de corpo de proposta
             new_proposal_body_template_help: Pode definir o texto pré-preenchido que as novas Propostas terão
             new_proposal_help_text: Novo texto de ajuda da proposta
@@ -189,12 +189,12 @@ pt:
             proposal_length: Comprimento máximo do corpo da proposta
             proposal_limit: Limite de propostas por utilizador
             proposal_wizard_step_1_help_text: Texto de ajuda do passo "Criar" do Assistente de Propostas
-            proposal_wizard_step_2_help_text: Proposal wizard "Publish" step help text
+            proposal_wizard_step_2_help_text: Texto de ajuda do passo "Publicar" do assistente de propostas
             resources_permissions_enabled: As permissões de ações podem ser definidas para cada proposta
             scope_id: Âmbito
             scopes_enabled: Âmbitos activados
             threshold_per_proposal: Limiar por proposta
-            vote_limit: Vote limit per participant
+            vote_limit: Limite de votos por participante
           step:
             amendment_creation_enabled: Criação de modificação ativada
             amendment_creation_enabled_help: O participante pode modificar propostas.
@@ -211,16 +211,16 @@ pt:
             answers_with_costs: Ativar custos nas respostas a propostas
             automatic_hashtags: Hashtags adicionados a todas as propostas
             comments_blocked: Comentários bloqueados
-            creation_enabled: Participants can create proposals
-            creation_enabled_readonly: This setting is disabled when you activate the Participatory Texts functionality. To upload proposals as participatory text click on the Participatory Texts button and follow the instructions.
+            creation_enabled: Participantes podem criar propostas
+            creation_enabled_readonly: Esta configuração é desativada quando ativas a funcionalidade de Textos Participativos. Para carregar propostas como texto participativo, clica no botão Textos Participativos e segue as instruções.
             default_sort_order: Ordenamento por defeitos das propostas
-            default_sort_order_help: Automatic means that if the votes are enabled, the proposals will be shown sorted by random, and if the votes are blocked, then they will be sorted by the most voted.
+            default_sort_order_help: Automático significa que, se os votos estiverem ativados, as propostas serão exibidas em ordem aleatória, e se os votos estiverem bloqueados, serão ordenadas pelas mais votadas.
             default_sort_order_options:
-              automatic: Automatic
+              automatic: Automático
               most_commented: Mais comentada
               most_endorsed: Mais apoiada
               most_followed: Mais seguida
-              most_voted: Most voted
+              most_voted: Mais votadas
               random: Aleatório
               recent: Mais recentes
               with_more_authors: Com mais autores
@@ -228,59 +228,59 @@ pt:
             endorsements_enabled: Endossamentos ativados
             proposal_answering_enabled: Resposta de proposta ativada
             publish_answers_immediately: Publicar as respostas às propostas imediatamente
-            publish_answers_immediately_help_html: 'Mind that if you answer any proposal without this enabled, you will need to publish them manually by selecting them and using the action for publication. For more info on how this works, see <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposals'' answers documentation page</a>.'
+            publish_answers_immediately_help_html: 'Tenha em mente que, se responderes a qualquer proposta sem isto ativado, precisarás publicá-las manualmente selecionando-as e usando a ação para publicação. Para mais informações sobre como isso funciona, consulta a <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">página de documentação das respostas das propostas</a>.'
             suggested_hashtags: Hashtags sugeridos aos participantes para novas propostas
             votes_blocked: Votos bloqueados
             votes_enabled: Votos ativados
-            votes_hidden: Votes hidden (if votes are enabled, checking this will hide the number of votes)
+            votes_hidden: Votos ocultos (se os votos estiverem ativados, marcar isto irá ocultar o número de votos)
     events:
       proposals:
         admin:
           proposal_note_created:
-            email_intro: Someone has left a note on the proposal "%{resource_title}". Check it out at <a href="%{admin_proposal_info_url}">the admin panel</a>.
+            email_intro: Alguém deixou uma nota na proposta "%{resource_title}". Verifica no <a href="%{admin_proposal_info_url}">painel de administração</a>.
             email_outro: Recebeu esta notificação pois pode avaliar a proposta.
             email_subject: Alguém deixou uma nota na proposta %{resource_title}.
-            notification_title: Someone has left a note on the proposal <a href="%{resource_path}">%{resource_title}</a>. Check it out at <a href="%{admin_proposal_info_path}">the admin panel</a>.
+            notification_title: Alguém deixou uma nota na proposta <a href="%{resource_path}">%{resource_title}</a>. Verifica no <a href="%{admin_proposal_info_path}">painel de administração</a>.
         collaborative_draft_access_accepted:
-          email_intro: '%{requester_name} has been accepted to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: '%{requester_name} foi aceite para aceder como colaborador do rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Recebeste esta notificação porque és um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: "%{requester_name} foi aceite para aceder como contribuidor de %{resource_title}."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> foi aceite <strong>para aceder como colaborador</strong> do projeto colaborativo <a href="%{resource_path}">%{resource_title}</a>.
         collaborative_draft_access_rejected:
-          email_intro: '%{requester_name} has been rejected to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: '%{requester_name} foi rejeitado para aceder como colaborador do rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Recebeste esta notificação porque és um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: "%{requester_name} foi rejeitado para aceder como colaborador do rascunho colaborativo %{resource_title}."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> foi <strong>rejeitado para aceder como colaborador</strong> do rascunho colaborativo <a href="%{resource_path}">%{resource_title}</a>.
         collaborative_draft_access_requested:
-          email_intro: '%{requester_name} requested access as a contributor. You can <strong>accept or reject the request</strong> from the <a href="%{resource_url}">%{resource_title}</a> collaborative draft page.'
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: '%{requester_name} solicitou acesso como colaborador. Podes <strong>aceitar ou rejeitar o pedido</strong> na página do rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Recebeste esta notificação porque és um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: "%{requester_name} solicitou acesso para contribuir em %{resource_title}."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> solicitou acesso para contribuir no rascunho colaborativo <a href="%{resource_path}">%{resource_title}</a>. Por favor, <strong>aceite ou rejeite o pedido</strong>.
         collaborative_draft_access_requester_accepted:
-          email_intro: You have been accepted to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you requested to become a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: Foste aceite para aceder como colaborador do rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Recebeste esta notificação porque solicitaste tornar-te colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: Foi aceite como colaborador de %{resource_title}.
           notification_title: Foi <strong>aceite para aceder como colaborador</strong> do rascunho colaborativo <a href="%{resource_path}">%{resource_title}</a>.
         collaborative_draft_access_requester_rejected:
-          email_intro: You have been rejected to access as a contributor of the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you requested to become a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: Foste rejeitado para aceder como colaborador do rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Recebeste esta notificação porque solicitaste tornar-te colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: Foi rejeitado como colaborador de %{resource_title}.
           notification_title: Foi <strong>rejeitado para aceder como colaborador</strong> do rascunho colaborativo <a href="%{resource_path}">%{resource_title}</a>.
         collaborative_draft_withdrawn:
-          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> withdrawn the <a href="%{resource_url}">%{resource_title}</a> collaborative draft.
-          email_outro: You have received this notification because you are a collaborator of <a href="%{resource_url}">%{resource_title}</a>.
+          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> retirou o rascunho colaborativo <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Recebeste esta notificação porque és um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
           email_subject: "%{author_name} %{author_nickname} retirou o %{resource_title} rascunho colaborativo."
           notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> <strong>retirou</strong> o rascunho colaborativo <a href="%{resource_path}">%{resource_title}</a>.
         creation_enabled:
           email_intro: 'Agora pode criar novas propostas em %{participatory_space_title}! Comece a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: Propostas agora disponíveis em %{participatory_space_title}
-          notification_title: You can now put forward <a href="%{resource_path}">new proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          notification_title: Agora podes apresentar <a href="%{resource_path}">novas propostas</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         endorsing_enabled:
           email_intro: 'Pode endossar propostas em %{participatory_space_title}! Comece a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: As propostas de endosso começaram para %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">endorsing proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          notification_title: Agora podes começar a <a href="%{resource_path}">apoiar propostas</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         proposal_mentioned:
           email_intro: A sua proposta "%{mentioned_proposal_title}" foi mencionada <a href="%{resource_url}">neste espaço</a> nos comentários.
           email_outro: Recebeu esta notificação porque é um autor de "%{resource_title}".
@@ -296,15 +296,15 @@ pt:
           email_outro: Recebeu esta notificação porque segue "%{participatory_space_title}". Pode deixar de receber notificações seguindo a hiperligação anterior.
           email_subject: Nova proposta "%{resource_title}" adicionada a %{participatory_space_title}
           notification_title: A proposta <a href="%{resource_path}">%{resource_title}</a> foi adicionada a %{participatory_space_title} por %{author}.
-          notification_title_official: The official proposal <a href="%{resource_path}">%{resource_title}</a> has been added to %{participatory_space_title}.
+          notification_title_official: A proposta oficial <a href="%{resource_path}">%{resource_title}</a> foi adicionada a %{participatory_space_title}.
         proposal_state_changed:
           affected_user:
-            email_intro: 'The proposal "%{resource_title}" has changed its state to "%{state}". You can read the answer in this page:'
-            email_outro: You have received this notification because you are an author of "%{resource_title}".
+            email_intro: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
+            email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
             email_subject: Your proposal has changed its state (%{state})
-            notification_title: Your proposal <a href="%{resource_path}">%{resource_title}</a> has changed its state to "%{state}".
+            notification_title: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
           follower:
-            email_intro: 'The proposal "%{resource_title}" has changed its state to "%{state}". You can read the answer in this page:'
+            email_intro: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
             email_outro: You have received this notification because you are following "%{resource_title}". You can unfollow it from the previous link.
             email_subject: A proposal you are following has changed its state (%{state})
             notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal has changed its state to "%{state}".
@@ -344,7 +344,7 @@ pt:
           description_another: This participant has voted to %{score} proposals.
           description_own: You have voted to %{score} proposals.
           name: Proposal votes
-          next_level_in: Vote to %{score} more proposals to reach the next level!
+          next_level_in: 'Usa caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras, e deve começar com uma letra. Se não definido, o botão não será exibido. Exemplo: %{url}'
           unearned_another: Este participante ainda não votou em nenhuma proposta.
           unearned_own: Ainda não votaste em nenhuma proposta.
         proposals:
@@ -652,8 +652,8 @@ pt:
           select_a_category: Por favor, selecione uma categoria
           send: Enviar
           title: Editar rascunho colaborativo
-        empty: There are no collaborative drafts yet
-        empty_filters: There is no collaborative draft with this criteria
+        empty: Ainda não há rascunhos colaborativos.
+        empty_filters: Não há rascunhos colaborativos com este critério.
         filters:
           all: Todos
           amendment: Modificações
