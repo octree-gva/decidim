@@ -30,4 +30,4 @@ pt:
             invalid: Ocorreu um problema ao guardar a página.
             success: Pagina guardada com êxito.
       show:
-        empty: There are no contents in this page yet.
+        empty: Ainda não há conteúdos nesta página.
