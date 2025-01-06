@@ -22,9 +22,9 @@ pt:
               too_long: é demasiado longo
             choices:
               missing: não estão completos
-              too_many: You can choose a maximum of %{count}.
+              too_many: Podes escolher no máximo %{count}.
         questionnaire:
-          request_invalid: There was an error handling the request. Please try again.
+          request_invalid: Houve um erro ao processar o pedido. Por favor, tenta novamente.
   decidim:
     forms:
       admin:
@@ -45,8 +45,8 @@ pt:
             actions:
               back: Retroceder às respostas
               export: Exportar
-              next: Next &rsaquo;
-              previous: "&lsaquo; Prev"
+              next: Próximo &rsaquo;
+              previous: "&lsaquo; Anterior"
               show: Mostrar respostas
             empty: Ainda não há respostas
             export:
@@ -82,7 +82,7 @@ pt:
           form:
             add_question: Adicionar questão
             add_separator: Adicionar separador
-            add_title_and_description: Add title and description
+            add_title_and_description: Adicionar título e descrição
             already_answered_warning: O questionário já foi respondido por alguns utilizadores por isso não pode modificar as suas questões.
             collapse: Colapsar todas as questões
             expand: Expandir todas as questões
@@ -113,8 +113,8 @@ pt:
             separator: Separador
             up: Acima
           title_and_description:
-            collapse: Collapse
-            description: Description
+            collapse: Recolher
+            description: Descrição
             down: Down
             expand: Expand
             remove: Remover
