@@ -8,7 +8,7 @@ pt:
         offline_explanation: Instruções para verificação off-line
         online: On-line
       confirmation:
-        verification_code: Verification code
+        verification_code: Código de verificação
       id_document_information:
         document_number: Número do documento (com letra)
         document_type: Tipo do documento
@@ -18,7 +18,7 @@ pt:
         user: Participante
         verification_attachment: Cópia digitalizada do seu documento
       mobile_phone:
-        mobile_phone_number: Mobile phone number
+        mobile_phone_number: Número de telemóvel
       offline_confirmation:
         email: E-mail do participante
       postal_letter_address:
@@ -33,7 +33,7 @@ pt:
         census_data:
           attributes:
             file:
-              malformed: Malformed import file, please read through the instructions carefully and make sure the file is UTF-8 encoded.
+              malformed: Ficheiro de importação malformado. Por favor, lê as instruções com atenção e garante que o ficheiro está codificado em UTF-8.
   decidim:
     admin:
       menu:
@@ -42,12 +42,12 @@ pt:
           button: Revogar tudo
           button_before: Revogar antes de data
           destroy:
-            confirm: Revoke before date authorizations cannot be undone. Are you sure you want to continue?
-            confirm_all: Revoke all the authorizations cannot be undone. Are you sure you want to continue?
-          destroy_nok: There has been a problem while revoking authorizations.
+            confirm: Revogar autorizações anteriores a uma data não pode ser desfeito. Tens a certeza de que queres continuar?
+            confirm_all: Revogar todas as autorizações não pode ser desfeito. Tens a certeza de que queres continuar?
+          destroy_nok: Houve um problema ao revogar autorizações.
           destroy_ok: Todas as autorizações correspondentes foram revogadas com êxito.
           info: Existe um total de %{count} participantes verificados.
-          no_data: No verified participants.
+          no_data: Sem participantes verificados.
           title: Revogação de autorizações
         authorization_workflows: Autorizações
     admin_log:
@@ -59,28 +59,28 @@ pt:
       admin:
         another_dummy_authorization_handler:
           help:
-            - An example authorization handler so developers can understand how a simple verification works.
-            - It is aimed for developers so they can understand how to implement their own verification system.
-            - Get verified by introducing a passport number starting with "A".
+            - Um exemplo de manipulador de autorizações para que os desenvolvedores compreendam como funciona uma verificação simples.
+            - Destina-se a desenvolvedores para que possam entender como implementar o seu próprio sistema de verificação.
+            - Obter verificação introduzindo um número de passaporte começando com "A".
         csv_census:
           help:
-            - Admins upload a CSV with the emails of the accepted participants.
-            - Only participants with an email in that CSV file can get verified.
+            - Os administradores carregam um CSV com os emails dos participantes aceites.
+            - Apenas participantes com um email nesse ficheiro CSV podem ser verificados.
         default:
           help:
-            - The authorization handler help is not defined.
-            - A developer needs to define the help in the translation (i18n) key "%{authorization_handler}"
+            - A ajuda do manipulador de autorizações não está definida.
+            - Um desenvolvedor precisa de definir a ajuda na chave de tradução (i18n) "%{authorization_handler}"
         dummy_authorization_handler:
           help:
-            - An example authorization handler so developers can understand how a simple verification works.
-            - It is aimed for developers so they can understand how to implement their own verification system.
-            - Get verified by introducing a document number ending with "X".
+            - Um exemplo de manipulador de autorizações para que os desenvolvedores compreendam como funciona uma verificação simples.
+            - Destina-se a desenvolvedores para que possam entender como implementar o seu próprio sistema de verificação.
+            - Obter verificação introduzindo um número de documento terminado com "X".
         id_documents:
           help:
             - Os participantes preenchem as suas informações de identidade e enviam uma cópia do seu documento.
             - Preencha as informações presentes na imagem enviada.
             - A informação deve corresponder ao que o utilizador preencheu.
-            - If you cannot clearly see the information or you cannot get it verified, you can reject the request and the user will be able to fix it.
+            - Se não conseguires visualizar claramente a informação ou se não conseguires verificar, podes rejeitar o pedido, e o participante poderá corrigir.
         postal_letter:
           help:
             - Os participantes solicitam que um código de verificação seja enviado para o seu endereço.
@@ -89,29 +89,29 @@ pt:
             - Depois de marcar a carta como enviada, o participante poderá introduzir o código e ser verificado.
         sms:
           help:
-            - Participants request a verification code to be sent to their phone.
-            - They need to introduce the code to get verified.
-            - If they do not receive the code, they can request it again.
+            - Os participantes solicitam um código de verificação que será enviado para o telemóvel.
+            - Eles precisam de introduzir o código para serem verificados.
+            - Se não receberem o código, podem solicitá-lo novamente.
       csv_census:
-        explanation: Get verified using the organization's census.
+        explanation: Obter verificação usando o censo da organização.
         name: Recenseamento da organização
       direct: Direto
       help: Ajuda
       id_documents:
-        explanation: Upload your identity documents so we can check your identity.
+        explanation: Carrega os teus documentos de identidade para verificarmos a tua identidade.
         name: Documentos de identidade
       multistep: Múltiplos Passos
       name: Nome
       postal_letter:
-        explanation: We will send you a postal letter with a code that you will have to enter so we can verify your address.
+        explanation: Enviar-te-emos uma carta postal com um código que terás de introduzir para verificarmos o teu endereço.
         name: Código por carta postal
     events:
       verifications:
         verify_with_managed_user:
-          email_intro: The participant <a href="%{resource_url}">%{resource_title}</a> has tried to verify themselves with the data of another participant (<a href="%{managed_user_url}">%{managed_user_name}</a>).
-          email_outro: Check the <a href="%{conflicts_url}">Verifications's conflicts list</a> and contact the participant to verify their details and solve the issue.
-          email_subject: Failed verification attempt against another participant
-          notification_title: The participant <a href="%{resource_path}">%{resource_title}</a> has tried to verify themselves with the data of another participant (<a href="%{managed_user_path}">%{managed_user_name}</a>).
+          email_intro: O participante <a href="%{resource_url}">%{resource_title}</a> tentou verificar-se com os dados de outro participante (<a href="%{managed_user_url}">%{managed_user_name}</a>).
+          email_outro: Verifica a <a href="%{conflicts_url}">lista de conflitos de verificações</a> e contacta o participante para confirmar os detalhes e resolver o problema.
+          email_subject: Tentativa de verificação falhada contra outro participante
+          notification_title: O participante <a href="%{resource_path}">%{resource_title}</a> tentou verificar-se com os dados de outro participante (<a href="%{managed_user_path}">%{managed_user_name}</a>).
     verifications:
       authorizations:
         authorization_metadata:
@@ -119,12 +119,12 @@ pt:
           no_data_stored: Não há dados armazenados.
         create:
           error: Ocorreu um problema ao criar a autorização.
-          success: You have been successfully authorized.
-          transferred: 'We have recovered the following participation data based on your authorization:'
+          success: Foste autorizado com sucesso.
+          transferred: 'Recuperámos os seguintes dados de participação com base na tua autorização:'
           unconfirmed: Precisa de confirmar o seu e-mail para se poder autorizar.
         destroy:
           error: Ocorreu um problema ao eliminar a autorização.
-          success: You have successfully deleted the authorization.
+          success: Eliminaste a autorização com sucesso.
         first_login:
           actions:
             another_dummy_authorization_handler: Verificar contra outro exemplo de manipulador de autorização
