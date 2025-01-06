@@ -538,11 +538,11 @@ pt:
           answer_title: This initiative has been answered.
           initiative_rejected_reason: Esta iniciativa foi rejeitada devido à falta de assinaturas.
         show:
-          area: Area
-          before_send_to_technical_validation_announcement: 'Before sending your initiative for technical validation, you need to add %{count} more members to the promoter committee.<br/><br/>Share this link with the people you want to be part of your committee: %{href}'
+          area: Área
+          before_send_to_technical_validation_announcement: 'Antes de enviar a tua iniciativa para validação técnica, precisas de adicionar mais %{count} membros ao comité promotor.<br/><br/>Partilha este link com as pessoas que queres incluir no teu comité: %{href}'
           confirm: Vai enviar esta iniciativa para que um administrador a possa rever e publicar. Assim que esteja publicada não a poderá editar. Tem a certeza?
           edit: Editar
-          initiative_data: Initiative data
+          initiative_data: Dados da iniciativa
           scope: Escopo
           send_to_technical_validation: Enviar para validação técnica
           send_to_technical_validation_announcement: Se tudo estiver correto, clica em "Enviar para validação técnica" para que um administrador reveja e publique a tua iniciativa
