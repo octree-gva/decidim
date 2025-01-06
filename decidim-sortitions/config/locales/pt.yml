@@ -39,7 +39,7 @@ pt:
         actions:
           destroy: Cancelar o sorteio
           edit: Editar
-          new_sortition: New sortition
+          new_sortition: Novo sorteio
           show: Detalhes do sorteio
         models:
           sortition:
@@ -60,10 +60,10 @@ pt:
             title: Cancelamento do sorteio
           create:
             error: Ocorreu um problema ao criar um novo sorteio.
-            success: Sortition successfully created.
+            success: Sorteio criado com sucesso.
           destroy:
-            error: Cannot cancel the sortition.
-            success: Sortition successfully cancelled.
+            error: Não é possível cancelar o sorteio.
+            success: Sorteio cancelado com sucesso.
           edit:
             title: Atualizar as informações sobre o sorteio
             update: Atualizar
@@ -73,14 +73,14 @@ pt:
           index:
             title: Sorteios
           new:
-            confirm: By pressing the next button the platform will record the date and time (with precision of seconds) and together with the dice roll, this information will be used to generate a random selection. The action will be irreversible, once the button is clicked the result of this draw will be published, together with the data entered in this form and cannot be modified, please check the content carefully.
+            confirm: Ao pressionar o botão seguinte, a plataforma registará a data e hora (com precisão de segundos) e, juntamente com o lançamento do dado, esta informação será usada para gerar uma seleção aleatória. A ação será irreversível. Assim que o botão for clicado, o resultado deste sorteio será publicado, juntamente com os dados inseridos neste formulário, e não poderá ser modificado. Por favor, verifica o conteúdo cuidadosamente.
             create: Criar
             title: Novo sorteio
           show:
             selected_proposals: Propostas selecionadas para sorteio
           update:
             error: Ocorreu um problema ao atualizar o sorteio.
-            success: Sortition successfully updated.
+            success: Sorteio atualizado com sucesso.
       admin_log:
         sortition:
           create: "%{user_name} criou o sorteio %{resource_name} em %{space_name}"
@@ -98,7 +98,7 @@ pt:
           category: Categoria
           state: Estado
         index:
-          empty: There are no sortitions yet.
+          empty: Ainda não há sorteios.
         linked_sortitions:
           selected_proposals: Propostas selecionadas
         orders:
