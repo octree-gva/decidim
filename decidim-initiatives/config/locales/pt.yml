@@ -276,16 +276,16 @@ pt:
           unpublish:
             success: A iniciativa foi despublicada com sucesso.
           update:
-            error: An error has occurred.
-            success: The initiative has been successfully updated.
+            error: Ocorreu um erro.
+            success: A iniciativa foi atualizada com sucesso.
         initiatives_settings:
           edit:
-            update: Update
+            update: Atualizar
           form:
-            comments: Most commented
-            date: Most recent
-            publication_date: Most recently published
-            random: Random
+            comments: Mais comentadas
+            date: Mais recentes
+            publication_date: Mais recentemente publicadas
+            random: Aleatórias
             signatures: Most signed
             title: Settings for initiatives
         initiatives_type_scopes:
