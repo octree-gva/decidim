@@ -96,7 +96,7 @@ pt:
             import_all_selected_projects: Importar todos os projetos selecionados para implementação
             new_items:
               one: 1 projeto selecionado será importado
-              other: "%{count} selected projects will be imported"
+              other: "%{count} projetos selecionados serão importados"
             no_components: Não há outras, funcionalidade de orçamento neste espaço participativo para importar os projetos em resultados.
             origin_component_id: Funcionalidade de origem
             select_component: Selecione uma funcionalidade
