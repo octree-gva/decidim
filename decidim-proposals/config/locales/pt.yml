@@ -345,8 +345,8 @@ pt:
           description_own: You have voted to %{score} proposals.
           name: Proposal votes
           next_level_in: Vote to %{score} more proposals to reach the next level!
-          unearned_another: This participant has not voted to any proposals yet.
-          unearned_own: You have voted to no proposals yet.
+          unearned_another: Este participante ainda não votou em nenhuma proposta.
+          unearned_own: Ainda não votaste em nenhuma proposta.
         proposals:
           conditions:
             - Escolha o espaço de participação do seu interesse com o envio de propostas ativado
@@ -356,7 +356,7 @@ pt:
           description_own: Criou %{score} propostas.
           name: Propostas
           next_level_in: Criar mais %{score} propostas para alcançar o próximo nível!
-          unearned_another: This participant has not created any proposals yet.
+          unearned_another: Este participante ainda não criou nenhuma proposta.
           unearned_own: Ainda não criou alguma proposta.
     metrics:
       accepted_proposals:
@@ -589,11 +589,11 @@ pt:
             success: Dividiu corretamente as propostas em novas.
         valuation_assignments:
           create:
-            invalid: There was an error assigning proposals to a valuator.
-            success: Proposals assigned to a valuator successfully.
+            invalid: Houve um erro ao atribuir propostas a um avaliador.
+            success: Propostas atribuídas a um avaliador com sucesso.
           delete:
-            invalid: There was an error unassigning proposals from a valuator.
-            success: Valuator unassigned from proposals successfully.
+            invalid: Houve um erro ao desatribuir propostas de um avaliador.
+            success: Avaliador desatribuído das propostas com sucesso.
       admin_log:
         proposal:
           answer: "%{user_name} respondeu à proposta %{resource_name} no espaço %{space_name}"
@@ -616,7 +616,7 @@ pt:
           all: Todos
           meetings: Reuniões
           official: Oficial
-          participants: Participants
+          participants: Participantes
           user_groups: Grupos
         filter_state_values:
           all: Todos
@@ -630,7 +630,7 @@ pt:
           publish:
             error: Ocorreu um problema ao publicar o rascunho colaborativo.
             irreversible_action_modal:
-              body: After publishing the draft as a proposal, it will not be editable anymore. The proposal will not accept new authors or contributions.
+              body: Após publicar o rascunho como proposta, ele não será mais editável. A proposta não aceitará novos autores ou contribuições.
               cancel: Cancelar
               ok: Publicar como uma Proposta
               title: A ação seguinte é irreversível
@@ -638,13 +638,13 @@ pt:
           withdraw:
             error: Ocorreu um problema ao fechar o rascunho colaborativo.
             irreversible_action_modal:
-              body: After closing the draft, it will not be editable anymore. The draft will not accept new authors or contributions.
+              body: Após encerrar o rascunho, ele não será mais editável. O rascunho não aceitará novos autores ou contribuições.
               cancel: Cancelar
               ok: Retirar o rascunho colaborativo
               title: A ação seguinte é irreversível
             success: Rascunho colaborativo retirado corretamente.
         create:
-          error: There was a problem creating this collaborative draft.
+          error: Houve um problema ao criar este rascunho colaborativo.
           success: Rascunho colaborativo criado corretamente.
         edit:
           attachment_legend: "(Opcional) Adicione um anexo"
@@ -674,10 +674,10 @@ pt:
           count:
             one: "%{count} rascunho colaborativo"
             other: "%{count} rascunhos colaborativos"
-        name: Collaborative drafts
+        name: Rascunhos colaborativos
         new:
-          add_file: Add file
-          edit_file: Edit file
+          add_file: Adicionar ficheiro
+          edit_file: Editar ficheiro
           send: Continuar
         new_collaborative_draft_button:
           new_collaborative_draft: Novo rascunho colaborativo
@@ -689,17 +689,17 @@ pt:
         requests:
           accepted_request:
             error: Não foi possível ser aceite como colaborador, por favor tente novamente mais tarde.
-            success: "@%{user} has been accepted as a collaborator successfully."
+            success: "@%{user} foi aceito como colaborador com sucesso."
           access_requested:
             error: O seu pedido não pode ser concluído, por favor tente novamente mais tarde.
-            success: Your request to collaborate has been successfully sent.
+            success: O teu pedido para colaborar foi enviado com sucesso.
           collaboration_requests:
             accept_request: Aceitar
             reject_request: Rejeitar
             title: Pedidos de colaboração
           rejected_request:
             error: Não foi possível rejeitá-lo como colaborador, por favor tente novamente mais tarde.
-            success: "@%{user} has been successfully rejected as a collaborator."
+            success: "@%{user} foi rejeitado como colaborador com sucesso."
         show:
           edit: Editar rascunho colaborativo
           final_proposal: proposta final
@@ -707,7 +707,7 @@ pt:
           hidden_authors_count:
             one: e mais %{count} pessoa
             other: e mais %{count} pessoas
-          info-message: This is a <strong>collaborative draft</strong> for a proposal. This means that you can help their authors to shape the proposal using the comment section below or improve it directly by requesting access to edit it. Once the authors grant you access, you will be able to make changes to this draft.
+          info-message: Este é um <strong>rascunho colaborativo</strong> para uma proposta. Isso significa que podes ajudar os autores a moldar a proposta usando a seção de comentários abaixo ou melhorá-la diretamente solicitando acesso para editá-la. Assim que os autores te concederem acesso, poderás fazer alterações neste rascunho.
           publish: Publicar
           publish_info: Publicar esta versão do rascunho ou
           published_proposal: proposta publicada
@@ -727,7 +727,7 @@ pt:
           title: Criar o seu rascunho colaborativo
       content_blocks:
         highlighted_proposals:
-          name: Proposals
+          name: Propostas
       create:
         error: Ocorreu um problema ao guardar a proposta.
         success: Proposta criada corretamente. Guardado como Rascunho.
@@ -754,10 +754,10 @@ pt:
             valuators: Avaliadores
             votes: Votos
         proposal_state:
-          css_class: CSS class
-          title: Status
+          css_class: Classe CSS
+          title: Estatuto
       new:
-        limit_reached: You cannot create new proposals since you have exceeded the limit.
+        limit_reached: Não podes criar novas propostas, pois excedeste o limite.
       participatory_text_proposal:
         alternative_title: Não há textos participativos neste momento
         buttons:
@@ -765,16 +765,16 @@ pt:
           comment: Comentar
       proposal_votes:
         create:
-          error: There was a problem voting the proposal.
+          error: Houve um problema ao votar na proposta.
       proposals:
         dynamic_map_instructions:
           description: As coordenadas serão actualizadas quando clicar no botão ‘pré-visualização’. No entanto, o endereço não será alterado.
           instructions: Pode mover o ponto no mapa.
         edit:
-          add_documents: Add documents
+          add_documents: Adicionar documentos
           attachment_legend: "(Opcional) Adicione um anexo"
           back: Voltar
-          edit_documents: Edit documents
+          edit_documents: Editar documentos
           select_a_category: Por favor selecione uma categoria
           send: Enviar
           title: Editar proposta
@@ -782,9 +782,9 @@ pt:
           discard: Descartar este rascunho
           discard_confirmation: Tem a certeza de que deseja descartar este rascunho da proposta?
           send: Pré-visualizar
-          title: Edit proposal draft
+          title: Editar rascunho da proposta
         edit_form_fields:
-          marker_added: Marker added to the map.
+          marker_added: Marcador adicionado ao mapa.
         filters:
           activity: A minha atividade
           all: Todos
@@ -797,34 +797,34 @@ pt:
           search: Pesquisar
           state: Estado
           type: Tipo
-          voted: Voted
+          voted: Votado
         index:
           click_here: Ver todas as propostas
           collaborative_drafts_list: Aceder a rascunhos colaborativos
           count:
             one: "%{count} proposta"
             other: "%{count} propostas"
-          grid_mode: Grid mode
-          list_mode: List mode
+          grid_mode: Modo de grelha
+          list_mode: Modo de lista
           new_proposal: Nova proposta
           see_all: Ver todas as propostas
           see_all_withdrawn: Ver todas as propostas retiradas
           text_banner: Está a ver a lista de propostas retiradas pelos seus próprios autores. %{go_back_link}
         new:
           send: Continuar
-          title: Create your proposal
+          title: Cria a tua proposta
         orders:
           label: 'Ordenar propostas por:'
           most_commented: Mais comentadas
           most_endorsed: Mais endossadas
           most_followed: Mais seguidas
-          most_voted: Most voted
+          most_voted: Mais votadas
           random: Aleatória
           recent: Recente
           with_more_authors: Com mais autores
         participatory_texts:
           view_index:
-            document_index: Document index
+            document_index: Índice de documentos
         placeholder:
           address: 37 Homewood Drive Brownsburg, IN 46112
         preview:
@@ -837,8 +837,8 @@ pt:
           publish: Publicar
           title: Publicar a sua proposta
         proposals:
-          empty: There are no proposals yet.
-          empty_filters: There are no proposals with this criteria.
+          empty: Ainda não há propostas.
+          empty_filters: Não há propostas com este critério.
         show:
           answer: Responder
           changes_at_title: Modificação a "%{title}"
@@ -856,28 +856,28 @@ pt:
           proposal_accepted_reason: 'Esta proposta foi aceite porque:'
           proposal_in_evaluation_reason: Esta proposta está sob avaliação
           proposal_rejected_reason: 'Esta proposta foi rejeitada porque:'
-          withdraw_btn_hint: You can withdraw your proposal if you change your mind, as long as you have not received any vote. The proposal is not deleted, it will appear in the list of withdrawn proposals.
+          withdraw_btn_hint: Podes retirar a tua proposta se mudares de ideia, desde que ela não tenha recebido nenhum voto. A proposta não será eliminada e aparecerá na lista de propostas retiradas.
           withdraw_confirmation_html: Tem a certeza de que deseja retirar esta proposta?<br><br><strong>Esta ação não pode ser cancelada!</strong>
           withdraw_proposal: Retirar proposta
         update:
           title: Atualizar proposta
         vote_button:
-          already_voted: Already voted
-          already_voted_hover: Withdraw vote
-          maximum_votes_reached: Vote limit reached
-          no_votes_remaining: No votes remaining
-          vote: Vote
-          votes_blocked: Voting disabled
+          already_voted: Já votaste
+          already_voted_hover: Retirar voto
+          maximum_votes_reached: Limite de votos atingido
+          no_votes_remaining: Sem votos restantes
+          vote: Votar
+          votes_blocked: Votação desativada
         votes_count:
           count:
-            one: Vote
-            other: Votes
+            one: Voto
+            other: Votos
         voting_rules:
           can_accumulate_votes_beyond_threshold:
-            description: Each proposal can accumulate more than %{limit} votes
+            description: Cada proposta pode acumular mais de %{limit} votos
           minimum_votes_per_user:
-            description: You must distribute a minimum of %{votes} votes among different proposals.
-            given_enough_votes: You have given enough votes.
+            description: Deves distribuir um mínimo de %{votes} votos entre diferentes propostas.
+            given_enough_votes: Já deste votos suficientes.
             votes_remaining: You have to vote %{remaining_votes} more proposals for your votes to be taken into account.
           proposal_limit:
             description: Pode criar até %{limit} propostas.
