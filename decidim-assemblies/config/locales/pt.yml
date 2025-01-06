@@ -14,7 +14,7 @@ pt:
         closing_date_reason: Razão da data de encerramento
         composition: Composição
         copy_categories: Copiar categorias
-        copy_components: Copiar componentes
+        copy_components: Copiar funcionalidades
         copy_features: Características da cópia
         created_by: Criado por
         created_by_other: Criado por outro
@@ -205,7 +205,7 @@ pt:
           attachment_files: Ficheiros
           attachments: Anexos
           categories: Categorias
-          components: Componentes
+          components: Funcionalidades
           info: Sobre esta assembleia
           landing_page: Página de destino
           moderations: Moderação
@@ -388,7 +388,7 @@ pt:
       pages:
         home:
           highlighted_assemblies:
-            active_spaces: Assembléias ativas
+            active_spaces: Assembleias ativas
             see_all_spaces: Ver todas as assembleias
         user_profile:
           member_of:
