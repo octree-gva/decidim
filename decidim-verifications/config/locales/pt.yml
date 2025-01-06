@@ -138,19 +138,19 @@ pt:
           verify_with_these_options: 'Estas são as opções disponíveis para verificar a sua identidade:'
         index:
           expired_verification: Verificação expirada
-          granted_verification: Granted verification
-          introduce_code: Introduce code
+          granted_verification: Verificação concedida
+          introduce_code: Introduzir código
           pending_verification: Verificação pendente
           show_renew_info: Clique para renovar a verificação
-          subscribe: Subscribe
-          unauthorized_methods: Verification methods
+          subscribe: Subscrever
+          unauthorized_methods: Métodos de verificação
         new:
           authorize: Enviar
           authorize_with: Verificar com %{authorizer}
         renew_modal:
           cancel: Cancelar
           continue: Continuar
-          info_renew: If you want to update the data, continue with the renewal.
+          info_renew: Se desejares atualizar os dados, continua com a renovação.
           title: Renovar Verificação
         skip_verification: Pode ignorar isto por agora e %{link}
         start_exploring: comece a explorar
@@ -159,14 +159,14 @@ pt:
           census:
             create:
               error: Ocorreu um erro ao importar o censo.
-              success: Successfully imported %{count} items (%{errors} errors).
+              success: '%{count} itens importados com sucesso (%{errors} erros).'
             destroy_all:
-              success: All census data have been deleted.
+              success: Todos os dados do censo foram eliminados.
           destroy:
-            confirm: Delete all the census cannot be undone. Are you sure you want to continue?
+            confirm: Eliminar todos os dados do censo não pode ser desfeito. Tens a certeza de que queres continuar?
             title: Eliminar todos os dados do censo
           index:
-            data: There are %{count} records loaded in total. Last upload date was on %{due_date}.
+            data: Existem %{count} registos carregados no total. A última data de carregamento foi em %{due_date}.
             empty: Não há dados do censo. Use o formulário abaixo para importá-los usando um ficheiro CSV.
             title: Dados do censo atual
           instructions:
@@ -202,32 +202,32 @@ pt:
               update: Actualizar
             update:
               error: Ocorreu um problema ao atualizar a configuração.
-              success: Configuration successfully updated.
+              success: Configuração atualizada com sucesso.
           confirmations:
             create:
-              error: Verification does not match. Please try again or reject the verification so the participant can amend it.
-              success: Participant successfully verified.
+              error: A verificação não corresponde. Por favor, tenta novamente ou rejeita a verificação para que o participante possa corrigi-la.
+              success: Participante verificado com sucesso.
             new:
               introduce_user_data: Introduza os dados na fotografia
               reject: Rejeitar
               verify: Verificar
           offline_confirmations:
             create:
-              error: Verification does not match. Please try again or tell the participant to amend it.
-              success: Participant successfully verified.
+              error: A verificação não corresponde. Por favor, tenta novamente ou pede ao participante para corrigi-la.
+              success: Participante verificado com sucesso.
             new:
               cancel: Cancelar
               introduce_user_data: Introduzir o e-mail do participante e os dados do documento
               verify: Verificar
           pending_authorizations:
             index:
-              config: Config
+              config: Configuração
               offline_verification: Verificação off-line
               title: Verificações on-line pendentes
               verification_number: 'Verificação # %{n}'
           rejections:
             create:
-              success: Verification rejected. Participant will be prompted to amend their documents.
+              success: Verificação rejeitada. O participante será solicitado a corrigir os seus documentos.
         authorizations:
           choose:
             choose_a_type: 'Por favor, selecione como deseja ser verificado:'
@@ -235,23 +235,23 @@ pt:
             online: On-line
             title: Verifique-se a si próprio utilizando o seu documento de identidade
           create:
-            error: There was a problem uploading your document.
-            success: Document successfully uploaded.
+            error: Houve um problema ao carregar o teu documento.
+            success: Documento carregado com sucesso.
           edit:
-            being_reviewed: We are reviewing your documents. You will be verified shortly.
+            being_reviewed: Estamos a rever os teus documentos. Serás verificado em breve.
             offline: Use a verificação off-line
             online: Use a verificação on-line
-            rejection_clarity: Make sure the information is clearly visible in the uploaded image.
-            rejection_correctness: Make sure the information entered is correct.
-            rejection_notice: There was a problem with your verification. Please try again.
+            rejection_clarity: Certifica-te de que a informação está claramente visível na imagem carregada.
+            rejection_correctness: Certifica-te de que a informação introduzida está correta.
+            rejection_notice: Houve um problema com a tua verificação. Por favor, tenta novamente.
             send: Solicitar verificação novamente
           new:
             send: Solicitar verificação
             title: Envie o seu documento de identidade
           update:
-            error: There was a problem reuploading your document.
-            success: Document successfully reuploaded.
-        identification_number: Identification number
+            error: Houve um problema ao recarregar o teu documento.
+            success: Documento recarregado com sucesso.
+        identification_number: Número de identificação
         passport: Passaporte
       postal_letter:
         admin:
@@ -266,41 +266,41 @@ pt:
               verification_code: Código de verificação
           postages:
             create:
-              error: Error marking letter as sent.
-              success: Letter successfully marked as sent.
+              error: Erro ao marcar a carta como enviada.
+              success: Carta marcada como enviada com sucesso.
         authorizations:
           create:
-            error: There was a problem with your request.
-            success: Thanks! We will send a verification code to your address.
+            error: Houve um problema com o teu pedido.
+            success: Obrigado! Enviaremos um código de verificação para o teu endereço.
           edit:
             send: Confirmar
-            title: Introduce the verification code you received.
-            waiting_for_letter: We will send a letter to your address with your verification code soon.
+            title: Introduz o código de verificação que recebeste.
+            waiting_for_letter: Enviaremos uma carta para o teu endereço com o teu código de verificação em breve.
           new:
             send: Enviar-me uma carta
             title: Solicitar o seu código de verificação
           update:
-            error: Your verification code does not match ours. Please double-check the letter we sent to you.
-            success: Congratulations. You have been successfully verified.
+            error: O teu código de verificação não corresponde ao nosso. Por favor, verifica a carta que te enviámos.
+            success: Parabéns. Foste verificado com sucesso.
       sms:
         authorizations:
           create:
-            error: There was a problem with your request.
-            success: Thanks! We have sent an SMS to your phone.
+            error: Houve um problema com o teu pedido.
+            success: Obrigado! Enviámos um SMS para o teu telemóvel.
           destroy:
-            success: Verification code successfully reset. Please re-enter your phone number.
+            success: O código de verificação foi redefinido com sucesso. Por favor, introduz novamente o teu número de telemóvel.
           edit:
             confirm_destroy: Tem a certeza de que deseja repor o código de verificação?
             destroy: Repor código de verificação
-            resend: Did not receive the verification code?
+            resend: Não recebeste o código de verificação?
             send: Confirmar
             title: Introduza o código de verificação que recebeu
           new:
             send: Enviar-me um SMS
             title: Solicite o seu código de verificação
           update:
-            error: Your verification code does not match ours. Please double-check the SMS we sent you.
-            success: Congratulations. You have been successfully verified.
+            error: O teu código de verificação não corresponde ao nosso. Por favor, verifica o SMS que te enviámos.
+            success: Parabéns. Foste verificado com sucesso.
   errors:
     messages:
       uppercase_only_letters_numbers: devem ser todas maiúsculas e conter apenas letras e / ou números
