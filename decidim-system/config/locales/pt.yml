@@ -175,29 +175,29 @@ pt:
             A plataforma adicionará 'self', mas permite que adiciones mais. Deixa em branco se não tiveres certeza.
           frame_src: Frame src
           frame_src_hint: |
-            The frame-src directive restricts the URLs which can be loaded using <frame>, <iframe> and <object> elements.
-            The platform will add 'self', but allows you to add more. leave it blank if you are unsure.
+            A diretiva frame-src restringe os URLs que podem ser carregados usando elementos <frame>, <iframe> e <object>. 
+            A plataforma adicionará 'self', mas permite adicionar mais. Deixa em branco se não tens certeza.
           img_src: Img src
           img_src_hint: |
-            The img-src directive restricts the URLs which can be loaded using <img>, <image>, <picture> and <svg> elements.
-            The platform will add 'self', but allows you to add more. leave it blank if you are unsure.
+            A diretiva img-src restringe os URLs que podem ser carregados usando elementos <img>, <image>, <picture> e <svg>. 
+            A plataforma adicionará 'self', mas permite adicionar mais. Deixa em branco se não tens certeza.
           media_src: Media src
           media_src_hint: |
-            The media-src directive restricts the URLs which can be loaded using the <video>, <audio> and <source> elements.
-            The platform will add 'self', but allows you to add more. leave it blank if you are unsure.
+            A diretiva media-src restringe os URLs que podem ser carregados usando os elementos <video>, <audio> e <source>. 
+            A plataforma adicionará 'self', mas permite adicionar mais. Deixa em branco se não tens certeza.
           script_src: Script src
           script_src_hint: |
-            The script-src directive restricts the URLs which can be loaded using <script> elements.
-            The platform will add "'self' 'unsafe-inline' 'unsafe-eval'", but allows you to add more. leave it blank if you are unsure.
+            A diretiva script-src restringe os URLs que podem ser carregados usando elementos <script>. 
+            A plataforma adicionará "'self' 'unsafe-inline' 'unsafe-eval'", mas permite adicionar mais. Deixa em branco se não tens certeza.
           style_src: Style src
           style_src_hint: |
-            The style-src directive restricts the URLs which can be loaded using <style> elements.
-            The platform will add "'self' 'unsafe-inline'", but allows you to add more. leave it blank if you are unsure.
+            A diretiva style-src restringe os URLs que podem ser carregados usando elementos <style>. 
+            A plataforma adicionará "'self' 'unsafe-inline'", mas permite adicionar mais. Deixa em branco se não tens certeza.
         edit:
-          confirm_resend_invitation: Are you sure you want to resend the invitation?
-          resend_invitation: Resend invitation
+          confirm_resend_invitation: Tens a certeza de que queres reenviar o convite?
+          resend_invitation: Reenviar convite
           secondary_hosts_hint: Insira cada um deles em uma nova linha
-          title: Edit organization
+          title: Editar organização
         file_upload_settings:
           content_types:
             admin_hint: Estes tipos MIME são autorizados para a secção de envio dos administradores. Os utilizadores administradores devem estar ao corrente dos riscos ao enviarem alguns formatos de documentos, por isso pode esperar deles serem mais cautelosos com o envio de ficheiros.
@@ -218,12 +218,12 @@ pt:
         index:
           title: Organizações
         new:
-          default: Default?
-          enabled: Enabled
-          locale: Locale
-          organization_admin_email_hint: We will send an email to this address so you can confirm it and set up your password.
-          reference_prefix_hint: The reference prefix is used to uniquely identify resources across all organization.
-          secondary_hosts_hint: Enter each one of them in a new line.
+          default: Padrão?
+          enabled: Ativado
+          locale: Localidade
+          organization_admin_email_hint: Enviaremos um email para este endereço para que possas confirmá-lo e configurar a tua palavra-passe.
+          reference_prefix_hint: O prefixo de referência é usado para identificar recursos exclusivamente em toda a organização.
+          secondary_hosts_hint: Insere cada um deles numa nova linha.
           title: Nova organização
         omniauth_settings:
           decidim:
@@ -244,13 +244,13 @@ pt:
             api_key: Chave de API
             api_secret: Segredo de API
         resend_invitation:
-          error: There was a problem sending the invitation.
-          success: Invitation successfully sent.
+          error: Houve um problema ao enviar o convite.
+          success: Convite enviado com sucesso.
         smtp_settings:
           fieldsets:
             sender: Remetente
           instructions:
-            from_label: 'Email sender will be: "your-organization-name <your-organization@example.org>". Leave blank to use the same name as the defined for the organization.'
+            from_label: 'O remetente do email será: "nome-da-tua-organização <tua-organização@example.org>". Deixa em branco para usar o mesmo nome definido para a organização.'
           placeholder:
             from_email: sua-organizacao@exemplo.org
             from_label: nome-da-sua-organização
@@ -259,23 +259,23 @@ pt:
           success: Organização atualizada corretamente.
         users_registration_mode:
           disabled: O acesso só pode ser feito com contas externas
-          enabled: Allow participants to create an account and log in
-          existing: Do not allow participants to create an account, but allow existing participants to log in
+          enabled: Permitir que participantes criem uma conta e iniciem sessão
+          existing: Não permitir que participantes criem uma conta, mas permitir que participantes existentes iniciem sessão
       shared:
         notices:
           no_organization_warning_html: Você deve criar uma organização para começar. Certifique-se de ler %{guide} antes de prosseguir.
           our_getting_started_guide: o nosso guia inicial
         organizations_list:
-          confirm_resend_invitation: Are you sure you want to resend the invitation?
-          resend_invitation: Resend invitation
+          confirm_resend_invitation: Tens a certeza de que queres reenviar o convite?
+          resend_invitation: Reenviar convite
       system_checks:
         active_job_queue:
-          decidim_documentation: Decidim Documentation
-          error: The ActiveJob queue is not configured. This is not a recommended setup for production. Read more at %{error_extra}.
-          success: The ActiveJob queue is configured correctly.
+          decidim_documentation: Documentação Decidim
+          error: A fila ActiveJob não está configurada. Esta não é uma configuração recomendada para produção. Lê mais em %{error_extra}.
+          success: A fila ActiveJob está configurada corretamente.
         secret_key:
-          error: 'The secret key is not defined correctly. Please save to the SECRET_KEY_BASE environment variable and restart the server: %{error_extra}'
-          success: The secret key is configured correctly.
+          error: 'A chave secreta não está definida corretamente. Por favor, guarda-a na variável de ambiente SECRET_KEY_BASE e reinicia o servidor: %{error_extra}'
+          success: A chave secreta está configurada corretamente.
       titles:
         dashboard: Painel de controlo
         decidim: Decidim
@@ -283,4 +283,4 @@ pt:
     decidim:
       system:
         login_items:
-          logout: Logout
+          logout: Terminar sessão
