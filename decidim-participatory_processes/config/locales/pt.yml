@@ -11,22 +11,22 @@ pt:
         decidim_area_id: Área
         description: Descrição
         developer_group: Grupo promotor
-        document: Document
+        document: Documento
         domain: Domínio
         end_date: Data final
         hashtag: Hashtag
         hero_image: Imagem inicial
-        import_attachments: Import attachments
-        import_categories: Import categories
-        import_components: Import components
-        import_steps: Import steps
+        import_attachments: Importar anexos
+        import_categories: Importar categorias
+        import_components: Importar funcionalidades
+        import_steps: Importar etapas
         local_area: Área de organização
         meta_scope: Metadados do âmbito
         participatory_process_group_id: Grupo de processos
-        participatory_process_type_id: Processes type
+        participatory_process_type_id: Tipos de processos
         participatory_scope: O que é decidido
         participatory_structure: Como é decidido
-        private_space: Private process
+        private_space: Processo privado
         promoted: Destacado
         published_at: Publicado em
         related_process_ids: Processos relacionados
@@ -62,7 +62,7 @@ pt:
         start_date: Data de início
         title: Título
       participatory_process_type:
-        title: Title
+        title: Título
       participatory_process_user_role:
         email: E-mail
         name: Nome
@@ -72,7 +72,7 @@ pt:
         participatory_process:
           attributes:
             document:
-              allowed_file_content_types: 'Invalid document type. Only files with the following extensions are allowed: %{types}'
+              allowed_file_content_types: 'Tipo de documento inválido. Apenas ficheiros com as seguintes extensões são permitidos: %{types}'
     models:
       decidim/participatory_process_step_activated_event: Fase ativada
       decidim/participatory_process_step_changed_event: Fase modificada
@@ -433,18 +433,18 @@ pt:
             select_an_area: Selecione uma Área
             select_participatory_process_type: Select a process type
             select_process_group: Selecione um grupo do processo
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceitam apenas letras, números e traços, e devem começar com uma letra. Exemplo: %{url}'
             title: Informação geral
-            visibility: Visibility
+            visibility: Visibilidade
       content_blocks:
         extra_data:
-          name: Phase & duration
+          name: Fase e duração
         hero:
-          name: Hero image and CTA
+          name: Imagem principal e CTA
         highlighted_processes:
           name: Processos realçados
         related_processes:
-          name: Related processes
+          name: Processos relacionados
       index:
         title: Processos participativos
       last_activity:
@@ -452,24 +452,24 @@ pt:
       pages:
         home:
           highlighted_processes:
-            active_spaces: Active processes
-            see_all_spaces: See all processes
+            active_spaces: Processos ativos
+            see_all_spaces: Ver todos os processos
       participatory_process_steps:
         index:
           back_to_process: Retroceder à página do processo
       participatory_processes:
         description:
-          area_name: Area
-          data: Process data
-          developer_group: Promoter group
-          local_area: Organization Area
-          meta_scope: Scope
-          participatory_scope: What is decided
-          participatory_structure: How is it decided
-          target: Who participates
-          title: About this process
+          area_name: Área
+          data: Dados do processo
+          developer_group: Grupo promotor
+          local_area: Área da organização
+          meta_scope: Escopo
+          participatory_scope: O que é decidido
+          participatory_structure: Como é decidido
+          target: Quem participa
+          title: Sobre este processo
         filters:
-          all_types: All types
+          all_types: Todos os tipos
           counters:
             active:
               one: 1 processo ativo
@@ -483,21 +483,21 @@ pt:
             upcoming:
               one: 1 processo futuro
               other: "%{count} processos futuros"
-          date: Date
+          date: Data
           explanations:
-            no_active: No active processes.
-            no_active_nor_upcoming: No active nor upcoming processes.
+            no_active: Sem processos ativos.
+            no_active_nor_upcoming: Sem processos ativos ou futuros.
             no_active_nor_upcoming_callout: Não há processos ativos nem futuros. Aqui está uma lista dos últimos.
-          filter_by: Show
+          filter_by: Mostrar
           names:
             active: Ativo
             all: Todos
             past: Passado
             upcoming: Próximos
           see: Ver
-          type: Type
+          type: Tipo
         show:
-          title: About this process
+          title: Sobre este processo
       show:
         belongs_to_group: Este processo pertence a
         private_space: Este é um processo privado
