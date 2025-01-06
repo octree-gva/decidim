@@ -59,64 +59,64 @@ pt:
           multiselect_description_html: Multiselects são uma funcionalidade de javascript disponível graças a uma biblioteca externa chamada <a href="https://tom-select.js.org/" target="_blank" rel="noopener noreferrer">Tom Select</a>.
           regular_inputs_description: 'Exibe apenas tipos comuns, lista completa disponível: date, datetime-local, email, month, number, password, search, tel, text, time, url, week'
           textarea_required: textarea obrigatório
-          title: Forms
+          title: Formulários
         report:
-          title: Report
+          title: Denunciar
         share:
-          title: Share
+          title: Partilhar
         tab_panels:
-          title: Tab Panels
+          title: Painéis de separadores
         tooltips:
-          demo: Demo
-          demo_description: For this component to work a participant need to hover on the element.
-          description: A tooltip is a component that users can hover their mouse to have extra information about it.
-          github_source_html: Source code on GitHub %{github_link}
+          demo: Demonstração
+          demo_description: Para esta funcionalidade funcionar, um participante precisa de passar o cursor sobre o elemento.
+          description: Uma tooltip é um componente que os utilizadores podem passar o cursor para obter informações adicionais sobre ele.
+          github_source_html: Código-fonte no GitHub %{github_link}
           title: Tooltips
-          usage: Usage
-          usage_p: 'A tooltip requires the usage of the `with_tooltip` helper, with three arguments:'
-          usage_p_1_html: 1. A string with the value of the tooltip. In the example of this page is "Hello world".
-          usage_p_2_html: 2. An optional class with a symbol on where the tooltip will be displayed. Possible values are <code>:top</code>, <code>:bottom</code>, <code>:right</code>, or <code>:left</code>.
-          usage_p_3_html: 3. A block with the string that the user needs to hover to be displayed.
+          usage: Uso
+          usage_p: 'Uma tooltip requer o uso do helper `with_tooltip`, com três argumentos:'
+          usage_p_1_html: 1. Uma string com o valor da tooltip. No exemplo desta página é "Olá mundo".
+          usage_p_2_html: 2. Uma classe opcional com um símbolo que indica onde a tooltip será exibida. Os valores possíveis são <code>:top</code>, <code>:bottom</code>, <code>:right</code> ou <code>:left</code>.
+          usage_p_3_html: 3. Um bloco com a string que o utilizador precisa passar o cursor para ser exibida.
       foundations:
         accessibility:
-          accessibility_labels: Accessibility labels
-          accessibility_labels_paragraph: When defining elements, always make sure they make sense for screen reader users.
-          accessibility_title: Accessibility
-          adjacent_links: Adjacent links
-          adjacent_links_header: Adjacent links for the same resource
-          adjacent_links_paragraph: If the same resource has multiple adjacent links pointing to it, it makes it difficult for such users to glance through the page because they might need to go through multiple links to get to the next resource.
-          color_contrast: Color contrast
-          color_contrast_paragraph: When creating user interfaces or modifying the colors, always make sure that you are not breaking accessibility with your changes. You can use the Color contrast checker to ensure that your colors have enough contrast against the background color where they are displayed at.
-          decidim_follows_html: Decidim follows the <u>Web Content Accessibility Guidelines (WCAG) 2.1</u>
-          dynamic_changes_header: Dynamic functionality changes the page context unintuitively
-          dynamic_changes_paragraph: Changes in the form inputs should not change the context of the page automatically.
-          elements_hidden: Elements hidden
-          elements_hidden_header: Elements hidden from the accessibility API
-          elements_hidden_paragraph: To hide an element from assistive technologies, use the aria-hidden="true" attribute on it.
-          heading_on: Heading on important sections
-          here_link: here
-          illogical_heading_order: Illogical heading order
-          illogical_heading_paragraph: Every page should have a logical heading order when using the <h1>, <h2>, <h3>, <h4>, <h5> and <h6> heading elements.
-          important_sections_heading: Heading on important sections
-          important_sections_paragraph: It is highly important that each important section of the page has a heading to make it easier to understand what important sections are on the page just by browsing through its headings.
-          links_and_buttons: Links and Buttons
-          links_and_buttons_paragraph: The anchor elements (i.e. links) are meant to link to different pages or to anchor positions within the page. If the element is supposed to e.g. open some hidden item on that page, you should use the <button> element instead.
-          see_further_info_html: See further info %{link}
-          unique_h1: Unique H1
-          unique_h1_paragraph: Every page should have a unique H1 heading on it
-          use_aria: Use ARIA
-          use_aria_header: Use ARIA attributes where possible
-          use_aria_paragraph: Many elements that provide interactive functionality on the website require ARIA attributes on them to make them accessible.
+          accessibility_labels: Etiquetas de acessibilidade
+          accessibility_labels_paragraph: Ao definir elementos, garante sempre que fazem sentido para utilizadores de leitores de ecrã.
+          accessibility_title: Acessibilidade
+          adjacent_links: Links adjacentes
+          adjacent_links_header: Links adjacentes para o mesmo recurso
+          adjacent_links_paragraph: Se o mesmo recurso tiver vários links adjacentes apontando para ele, dificulta para esses utilizadores percorrerem a página, pois podem precisar de passar por vários links para chegar ao próximo recurso.
+          color_contrast: Contraste de cores
+          color_contrast_paragraph: Ao criar interfaces de utilizador ou modificar as cores, garante sempre que não estás a comprometer a acessibilidade com as tuas alterações. Podes usar o Verificador de contraste de cores para assegurar que as tuas cores têm contraste suficiente contra a cor de fundo onde são exibidas.
+          decidim_follows_html: O Decidim segue as <u>Diretrizes de Acessibilidade para Conteúdo na Web (WCAG) 2.1</u>
+          dynamic_changes_header: Funcionalidade dinâmica altera o contexto da página de forma não intuitiva
+          dynamic_changes_paragraph: As alterações nos campos do formulário não devem alterar automaticamente o contexto da página.
+          elements_hidden: Elementos escondidos
+          elements_hidden_header: Elementos escondidos da API de acessibilidade
+          elements_hidden_paragraph: Para esconder um elemento de tecnologias assistivas, usa o atributo aria-hidden="true" nele.
+          heading_on: Título em seções importantes
+          here_link: aqui
+          illogical_heading_order: Ordem ilógica de títulos
+          illogical_heading_paragraph: Cada página deve ter uma ordem lógica de títulos ao usar os elementos <h1>, <h2>, <h3>, <h4>, <h5> e <h6>.
+          important_sections_heading: Título em seções importantes
+          important_sections_paragraph: É altamente importante que cada seção importante da página tenha um título para facilitar a compreensão das seções importantes da página apenas navegando pelos seus títulos.
+          links_and_buttons: Links e Botões
+          links_and_buttons_paragraph: Os elementos âncora (ou seja, links) são destinados a ligar para páginas diferentes ou para âncoras dentro da página. Se o elemento for, por exemplo, para abrir algum item escondido na página, deves usar o elemento <button> em vez disso.
+          see_further_info_html: Consulta mais informações %{link}
+          unique_h1: H1 único
+          unique_h1_paragraph: Cada página deve ter um título H1 único
+          use_aria: Usa ARIA
+          use_aria_header: Usa atributos ARIA sempre que possível
+          use_aria_paragraph: Muitos elementos que fornecem funcionalidade interativa no site requerem atributos ARIA para torná-los acessíveis.
         color:
-          color_header: Color
-          description_p1: We provide a Base palette with few colors so simple customizations are easy. You can modify the Base palette either in the Administration area or in the Tailwind configuration file if you need more advanced customization.
-          description_p2_html: When customizing your colors, have in mind the %{contrast_link}. You can check the contrast of your choosing with %{checker_link} or other similar tools.
-          wcag_compliant_rations: WCAG 2.1 AA compliant contrast ratio
-          wcag_contrast_checker: WebAIM Contrast Checker
+          color_header: Cor
+          description_p1: Fornecemos uma paleta base com poucas cores para que personalizações simples sejam fáceis. Podes modificar a paleta base na área de Administração ou no ficheiro de configuração do Tailwind, se precisares de personalizações mais avançadas.
+          description_p2_html: Ao personalizar as tuas cores, tem em mente o %{contrast_link}. Podes verificar o contraste da tua escolha com %{checker_link} ou outras ferramentas semelhantes.
+          wcag_compliant_rations: Relação de contraste compatível com WCAG 2.1 AA
+          wcag_contrast_checker: Verificador de Contraste WebAIM
         iconography:
-          description_iconography: We use icons to reinforce the meaning of actions, titles, etc
-          description_iconography_html: 'We use the Remixicon open source library: %{iconography_link}'
-          title: Iconography
+          description_iconography: Usamos ícones para reforçar o significado de ações, títulos, etc
+          description_iconography_html: 'Usamos a biblioteca open source Remixicon: %{iconography_link}'
+          title: Iconografia
         layout:
           breakpoint: Ponto de interrupção
           breakpoints: Pontos de interrupção
@@ -171,7 +171,7 @@ pt:
         blog_cards_html: Usado por cartões de <i>Blogs</i>
         blogs: Blogs
         budget_card_html: Usado por cartões de <i>Projetos de Orçamento</i>. Este cartão requer os recursos do módulo para ser exibido corretamente, ou seja, <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
-        budgets: Budgets
+        budgets: Orçamentos
         callout_class: Callout Class
         callout_description: This attribute applies an status to the announcement. By default, it uses secondary color.
         card_g: Card G
@@ -220,7 +220,7 @@ pt:
         html_tips: HTML tips
         icons: Icons
         image_and_description: Image and Description
-        initiative_g: initiative_g
+        initiative_g: Iconografia
         initiative_s: initiative_s
         initiatives: Iniciativas
         list: Lista
@@ -274,36 +274,36 @@ pt:
         transparent: Transparente
         transparent_description: 'No caso de um fundo mais escuro:'
         types: Tipos
-        typography_texts: Typography and texts
-        usage: Usage
-        usage_background_1: Aside background
-        usage_background_2: Selected sidebar filter background
-        usage_background_3: Default icon color
-        usage_background_4: Lines and separators
-        usage_background_5: Footer background
-        usage_background_6: Admin layout background
+        typography_texts: Tipografia e texto
+        usage: Uso
+        usage_background_1: Fundo do lado
+        usage_background_2: Fundo do filtro da barra lateral selecionado
+        usage_background_3: Cor padrão do ícone
+        usage_background_4: Linhas e separadores
+        usage_background_5: Fundo do rodapé
+        usage_background_6: Fundo do layout de administração
         usage_base_1: Fundo principal de componente nav\nMenu Nav na página inicial e espaço inicial
-        usage_base_2: Main color for links and buttons
-        usage_base_3: Graphic ornaments and accent color\nCards and list items hover state border
-        usage_formelements_1: Input elements default background
-        usage_formelements_2: Input elements disabled state background
-        usage_state_1: Success notice border\nAlert notice icon fill\nButton background on success message
-        usage_state_2: Warning notice border
-        usage_state_3: Alert notice border\nAlert notice icon fill
-        usage_typography_1: Headings and section titles
-        usage_typography_2: Inline text
-        usage_typography_3: Text over dark background
-        usage_typography_4: Links and buttons
-        value: Value
-        variations: Variations
-        variations_cards_description: Each card will look like different regarding the properties of the resource displayed. You can override such behaviour in the specific cell.
-        variations_description: There are three different versions of this cell. Each one fits better regarding the context it is being displayed.
-        variations_text: Regarding the type of activity, the cell could show different content, reporting the distinct resources, whether belong to a participatory space or not, has an author or not.
+        usage_base_2: Cor principal para links e botões
+        usage_base_3: Ornamentos gráficos e cor de destaque\nBorda no estado de hover de cartões e itens de lista
+        usage_formelements_1: Fundo padrão dos elementos de entrada
+        usage_formelements_2: Fundo no estado desativado dos elementos de entrada
+        usage_state_1: Borda de aviso de sucesso\nPreenchimento do ícone de aviso de sucesso\nFundo do botão na mensagem de sucesso
+        usage_state_2: Borda de aviso de alerta
+        usage_state_3: Borda de aviso de alerta\nPreenchimento do ícone de aviso de alerta
+        usage_typography_1: Títulos e subtítulos de seções
+        usage_typography_2: Texto em linha
+        usage_typography_3: Texto sobre fundo escuro
+        usage_typography_4: Links e botões
+        value: Valor
+        variations: Variações
+        variations_cards_description: Cada cartão terá uma aparência diferente dependendo das propriedades do recurso exibido. Podes substituir esse comportamento na célula específica.
+        variations_description: Existem três versões diferentes desta célula. Cada uma se adapta melhor ao contexto em que está sendo exibida.
+        variations_text: Dependendo do tipo de atividade, a célula pode exibir conteúdo diferente, relatando os distintos recursos, se pertencem ou não a um espaço participativo, se têm ou não um autor.
       home:
         index:
-          by_sharing_principles: By sharing the principles, philosophy, and rationale behind design decisions we want to empower the community to contribute with consistency so we reach the best participant experience.
-          decidim_guide: The guide to design all things Decidim
-          different_ui_components: At the same time, we document the different UI components and patterns in use, that should be reused or extended.
-          github_source: Source code on GitHub
-          home_header: Decidim Design Guide
-          welcome_sentence: Welcome to the Decidim Design Guide (DDG). This guide is the resource for designers and developers who need to customize, develop new modules, and integrate new features.
+          by_sharing_principles: Ao compartilhar os princípios, filosofia e lógica por trás das decisões de design, queremos capacitar a comunidade a contribuir com consistência para que alcancemos a melhor experiência para os participantes.
+          decidim_guide: O guia para projetar tudo no Decidim
+          different_ui_components: Ao mesmo tempo, documentamos os diferentes componentes de interface do usuário e padrões em uso, que devem ser reutilizados ou estendidos.
+          github_source: Código-fonte no GitHub
+          home_header: Guia de Design do Decidim
+          welcome_sentence: Bem-vindo ao Guia de Design do Decidim (DDG). Este guia é o recurso para designers e desenvolvedores que precisam personalizar, desenvolver novos módulos e integrar novas funcionalidades.
