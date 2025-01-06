@@ -286,14 +286,14 @@ pt:
             date: Mais recentes
             publication_date: Mais recentemente publicadas
             random: Aleatórias
-            signatures: Most signed
-            title: Settings for initiatives
+            signatures: Mais assinadas
+            title: Configurações para iniciativas
         initiatives_type_scopes:
           create:
-            error: An error has occurred.
-            success: A new scope for the given initiative type has been created.
+            error: Ocorreu um erro.
+            success: Um novo escopo para o tipo de iniciativa fornecido foi criado.
           destroy:
-            success: The scope has been successfully removed.
+            success: O escopo foi removido com sucesso.
           edit:
             title: Editar âmbito do tipo de iniciativa
             update: Atualizar
@@ -301,20 +301,20 @@ pt:
             create: Criar
             title: Criar âmbito do tipo de iniciativa
           update:
-            error: An error has occurred.
-            success: The scope has been successfully updated.
+            error: Ocorreu um erro.
+            success: O escopo foi atualizado com sucesso.
         initiatives_types:
           create:
-            error: An error has occurred.
-            success: A new initiative type has been successfully created. You need to define at least one scope for this initiative type so it can be used.
+            error: Ocorreu um erro.
+            success: Um novo tipo de iniciativa foi criado com sucesso. Precisas definir pelo menos um escopo para este tipo de iniciativa para que ele possa ser usado.
           destroy:
-            success: The initiative type has been successfully removed.
+            success: O tipo de iniciativa foi removido com sucesso.
           edit:
             update: Atualizar
           form:
             authorizations: Definições de autorização
-            child_scope_threshold_enabled_help_html: 'This config flag doesn''t support offline votes. It enables sub-scopes and works with an authorization handler that associates a scope to the user. Make sure you select that authorization, below in authorization settings. For it to work, scopes need to be configured in a hierarchical way: 1 Parent - N Child. For more info on how this configuration works, see <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">initiatives'' admin documentation page</a>.'
-            only_global_scope_enabled_help_html: Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, initiative type selection will be skipped in the initiative creation wizard. For more info on how this configuration works, see this <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
+            child_scope_threshold_enabled_help_html: 'Esta configuração não suporta votos offline. Ela habilita subescopos e funciona com um manipulador de autorização que associa um escopo ao utilizador. Certifica-te de selecionar essa autorização abaixo nas configurações de autorização. Para que funcione, os escopos precisam ser configurados de forma hierárquica: 1 Pai - N Filhos. Para mais informações sobre como esta configuração funciona, consulta a <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">página de documentação de administração de iniciativas</a>.'
+            only_global_scope_enabled_help_html: Marca esta opção se habilitaste a "Assinatura de subescopo" e configuraste o escopo global como o teu escopo pai. Ao habilitar isto, a seleção do tipo de iniciativa será ignorada no assistente de criação de iniciativas. Para mais informações sobre como esta configuração funciona, consulta este <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
             options: Opções
           initiative_type_scopes:
             title: Âmbitos para o tipo de iniciativa
@@ -322,8 +322,8 @@ pt:
             create: Criar
             title: Novo tipo de iniciativa
           update:
-            error: An error has occurred.
-            success: The initiative type has been successfully updated.
+            error: Ocorreu um erro.
+            success: O tipo de iniciativa foi atualizado com sucesso.
       admin_log:
         initiative:
           publish: "%{user_name} publicou a iniciativa %{resource_name}"
@@ -331,11 +331,11 @@ pt:
           unpublish: "%{user_name} descartou a iniciativa %{resource_name}"
           update: "%{user_name} atualizou a iniciativa %{resource_name}"
         initiatives_settings:
-          update: "%{user_name} updated the initiatives settings"
+          update: "%{user_name} atualizou as configurações de iniciativas."
         initiatives_type:
-          create: "%{user_name} created the %{resource_name} initiatives type"
-          delete: "%{user_name} deleted the %{resource_name} initiatives type"
-          update: "%{user_name} updated the %{resource_name} initiatives type"
+          create: "%{user_name} criou o tipo de iniciativa %{resource_name}"
+          delete: "%{user_name} eliminou o tipo de iniciativa %{resource_name}"
+          update: "%{user_name} atualizou o tipo de iniciativa %{resource_name}"
       admin_states:
         accepted: Assinaturas suficientes
         created: Criado
@@ -358,7 +358,7 @@ pt:
           success: O pedido foi aprovado
         new:
           continue: Continuar
-          help_text: You are about to request becoming a member of the promoter committee of this initiative.
+          help_text: Estás prestes a solicitar ser membro do comité promotor desta iniciativa
         revoke:
           success: O pedido foi revogado
         spawn:
@@ -395,10 +395,10 @@ pt:
           back: Retroceder
           choose_html: Eu quero criar um <strong>%{title}</strong>
           more_information: (Mais informações)
-          new: Create a new initiative
+          new: Criar uma nova iniciativa
           select: Eu quero promover essa iniciativa
           select_initiative_type_help: Iniciativas são meios pelos quais os participantes podem intervir no sentido de levar a organização a levar a cabo determinadas acções em defesa do interesse geral. Qual é a iniciativa que quer lançar?
-          verification_required: Verify your account to promote this initiative
+          verification_required: Verifica a tua conta para promover esta iniciativa
         share_committee_link:
           invite_to_committee_help: Hiperligação para convidar pessoas que farão parte do comité promotor
       edit:
@@ -438,18 +438,18 @@ pt:
           email_subject: "%{applicant_nickname} quer juntar-se à sua iniciativa"
           notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a>  candidatou-se para a comissão promotora da sua iniciativa <a href="%{resource_url}">%{resource_title}</a>. Para aceitar ou rejeitar clique <a href="%{resource_url}/edit">aqui</a>.
       form:
-        add_documents: Add documents
-        add_image: Add image
-        attachment_legend: "(Optional) Add an attachment"
-        edit_documents: Edit documents
-        edit_image: Edit image
-        image_legend: "(Optional) Add an image"
+        add_documents: Adicionar documentos
+        add_image: Adicionar imagem
+        attachment_legend: "(Opcional) Adicionar um anexo"
+        edit_documents: Editar documentos
+        edit_image: Editar imagem
+        image_legend: "(Opcional) Adicionar uma imagem"
       index:
-        uninitialized: Initiatives are not yet configured by an administrator.
+        uninitialized: As iniciativas ainda não foram configuradas por um administrador.
       initiative_signatures:
         fill_personal_data:
           continue: Continuar
-          help: Please, fill the following fields with your personal data to sign the initiative.
+          help: Por favor, preenche os seguintes campos com os teus dados pessoais para assinar a iniciativa.
         finish:
           back_to_initiative: Retroceder para a iniciativa
         sms_code:
@@ -457,16 +457,16 @@ pt:
           help: Verifique o SMS recebido no seu telefone
         sms_phone_number:
           continue: Enviar-me um SMS
-          help: Fill the form with your verified phone number to request your verification code.
+          help: Preenche o formulário com o teu número de telemóvel verificado para solicitar o teu código de verificação.
       initiative_votes:
         create:
           error: Ocorreu um problema ao assinar a iniciativa.
-          invalid: The data provided to sign the initiative is not valid.
-          success_html: Congratulations! The <strong> %{title}</strong> initiative has been successfully signed.
+          invalid: Os dados fornecidos para assinar a iniciativa não são válidos.
+          success_html: Parabéns! A iniciativa <strong>%{title}</strong> foi assinada com sucesso.
         personal_data:
           invalid: Os dados pessoais não são consistentes com os dados fornecidos para autorização.
         sms_code:
-          invalid: Your verification code does not match ours. Please double-check the SMS we sent you.
+          invalid: O teu código de verificação não corresponde ao nosso. Por favor, verifica o SMS que te enviámos.
         sms_phone:
           invalid: O número de telefone é inválido ou está pendente de autorização. Por favor, verifique as suas autorizações.
       initiatives:
@@ -476,11 +476,11 @@ pt:
             other: e mais %{count} pessoas
         committee_members:
           approve: Aprovar
-          confirm_approve: Are you sure you want to approve this member?
-          confirm_revoke: Are you sure you want to revoke this member?
-          invite_to_committee_help: Share this link to invite other participants to the promoter committee.
+          confirm_approve: Tens a certeza de que queres aprovar este membro?
+          confirm_revoke: Tens a certeza de que queres revogar este membro?
+          invite_to_committee_help: Partilha este link para convidar outros participantes para o comité promotor.
           link: Link
-          no_members_yet: There are no members in the promoter committee.
+          no_members_yet: Não há membros no comité promotor.
           revoke: Revogar
           title: Membros do Comité
         count:
@@ -526,7 +526,7 @@ pt:
             title: 'Título'
             type: Tipo de iniciativa
           legal_text: Os dados pessoais recolhidos serão incorporados e tratados com confidencialidade pela organização, em acordo com a legislação actual.
-          members_header: Members of the initiative's promoter committee
+          members_header: Membros do comité promotor da iniciativa
           phone_number: Número de telefone
           place_date: Local, data
           postal_code: Código postal
@@ -535,7 +535,7 @@ pt:
           section: 'Se for requerido pela organização, por favor imprima e preencha este formulário a submeter onde indicado:'
           signature: Assinatura
         result:
-          answer_title: This initiative has been answered.
+          answer_title: Esta iniciativa foi respondida.
           initiative_rejected_reason: Esta iniciativa foi rejeitada devido à falta de assinaturas.
         show:
           area: Área
