@@ -172,54 +172,54 @@ pt:
         blogs: Blogs
         budget_card_html: Usado por cartões de <i>Projetos de Orçamento</i>. Este cartão requer os recursos do módulo para ser exibido corretamente, ou seja, <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
         budgets: Orçamentos
-        callout_class: Callout Class
-        callout_description: This attribute applies an status to the announcement. By default, it uses secondary color.
-        card_g: Card G
-        card_l: Card L
-        card_s: Card S
-        collaborative_draft_l: Collaborative Draft L
-        colors: Colors
-        compact: Compact
-        compact_description: This author version is the common way to identify the resource creator.
-        conference_g: Conference G
-        conference_s: Conference S
-        conferences: Conferences
-        context: Context
-        context_description: This cell display some information about a user. It a visual help to identify the resource/content creator. Hovering with the mouse displays a tooltip with further info and links to its profile.
-        context_description_2: For resources, this cell appears beneath the main heading. For other contents, it appears next to the content itself.
+        callout_class: Classe de Destaque
+        callout_description: Este atributo aplica um estatuto ao anúncio. Por padrão, usa a cor secundária.
+        card_g: Cartão G
+        card_l: Cartão L
+        card_s: Cartão S
+        collaborative_draft_l: Rascunho Colaborativo L
+        colors: Cores
+        compact: Compacto
+        compact_description: Esta versão do autor é a forma comum de identificar o criador do recurso.
+        conference_g: Conferência G
+        conference_s: Conferência S
+        conferences: Conferências
+        context: Contexto
+        context_description: Esta célula exibe algumas informações sobre um utilizador. É uma ajuda visual para identificar o criador do recurso/conteúdo. Passar o cursor do rato exibe uma tooltip com mais informações e links para o perfil.
+        context_description_2: Para recursos, esta célula aparece abaixo do título principal. Para outros conteúdos, aparece ao lado do próprio conteúdo.
         debate_l: Debate L
         debate_s: Debate S
         debates: Debates
-        debates_cards_html: Used by <i>Debates</i> cards
-        debates_cards_text: Use different template for the image block
-        default: Default
-        default_description: Calling the cell with no extra arguments, but the user itself.
-        demo: Demo
-        demo_text: 'This cell receives a model of LastActivity items and displays the following elements:'
-        demo_text_2: Used by the last activity page, in a content block and within the dropdowns.
-        description: Description
-        disabled: Disabled
-        dropdowns: Dropdowns
-        dropdowns_demo_1_description: 'The following example will not be noticeable in desktop, but mobile:'
-        dropdowns_demo_description: The dropdowns are used along the application in order to collapse large, easy-readable menus for desktop devices, but too wordy for mobile devices.
-        dropdowns_demo_description_html: 'This javascript feature is enhanced with a small css, through the naming: the hideable content MUST HAVE an <code>id</code> starting with <i>dropdown-menu</i>.'
-        dropdowns_description_html: Dropdowns are a javascript feature available thanks to an external library called %{link}.
-        dropdowns_usage_1_description: 2. A hideable element, whose <code>id</code> matches the data-target value the trigger refers to.
-        dropdowns_usage_description: 'An dropdown requires two elements:'
+        debates_cards_html: Usado por cartões de <i>Debates</i>
+        debates_cards_text: Usar um modelo diferente para o bloco de imagem
+        default: Padrão
+        default_description: Chamar a célula sem argumentos extras, apenas o próprio utilizador.
+        demo: Demonstração
+        demo_text: 'Esta célula recebe um modelo de itens LastActivity e exibe os seguintes elementos:'
+        demo_text_2: Usado pela página de últimas atividades, num bloco de conteúdo e dentro dos menus suspensos.
+        description: Descrição
+        disabled: Desativado
+        dropdowns: Menus suspensos
+        dropdowns_demo_1_description: 'O seguinte exemplo não será perceptível em desktop, mas em dispositivos móveis:'
+        dropdowns_demo_description: Os menus suspensos são usados na aplicação para colapsar menus grandes, fáceis de ler em dispositivos desktop, mas muito extensos para dispositivos móveis.
+        dropdowns_demo_description_html: 'Esta funcionalidade em javascript é melhorada com um pequeno CSS, usando a nomeação: o conteúdo ocultável DEVE TER um <code>id</code> começando com <i>dropdown-menu</i>.'
+        dropdowns_description_html: Os menus suspensos são uma funcionalidade javascript disponível graças a uma biblioteca externa chamada %{link}.
+        dropdowns_usage_1_description: 2. Um elemento ocultável, cujo <code>id</code> corresponde ao valor data-target ao qual o gatilho se refere.
+        dropdowns_usage_description: 'Um menu suspenso requer dois elementos:'
         dropdowns_usage_description_html: 1. Um elemento acionável pelo usuário, com os atributos de dados <code>data-component="dropdown" data-├dropdown-menu-element"</code>.
-        dummy_description: Dummy resource description
-        dummy_title: Dummy resource title
-        follow_button: Follow Button
-        follower_description_html: Make sure the partial <code>decidim/shared/login_modal</code> is present in the DOM. This partial is placed in the application layout when the user is logged in.
-        form_elements: Form elements
-        generic_cards: Generic cards
-        grid: Grid
-        hex_code: Hex code
-        highlight: Highlight
-        highlight_description: Used by resources who allow to highlight
-        html_tips: HTML tips
-        icons: Icons
-        image_and_description: Image and Description
+        dummy_description: Descrição do recurso fictício
+        dummy_title: Título do recurso fictício
+        follow_button: Botão de Seguir
+        follower_description_html: Certifica-te de que o parcial <code>decidim/shared/login_modal</code> está presente no DOM. Este parcial está colocado no layout da aplicação quando o utilizador está autenticado.
+        form_elements: Elementos de formulário
+        generic_cards: Cartões genéricos
+        grid: Grelha
+        hex_code: Código Hexadecimal
+        highlight: Destaque
+        highlight_description: Usado por recursos que permitem destacar
+        html_tips: Dicas de HTML
+        icons: Ícones
+        image_and_description: Imagem e Descrição
         initiative_g: Iconografia
         initiative_s: initiative_s
         initiatives: Iniciativas
