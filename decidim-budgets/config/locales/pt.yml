@@ -14,16 +14,16 @@ pt:
         decidim_scope_id: Âmbito
         description: Descrição
         proposal_ids: Propostas relacionadas
-        proposals: Proposals
+        proposals: Propostas
         selected: Seleccionado para implementação
         title: Título
       proposals_import:
-        scope_id: Scope
+        scope_id: Escopo
   activerecord:
     models:
       decidim/budgets/budget:
-        one: Budget
-        other: Budgets
+        one: Orçamento
+        other: Orçamentos
       decidim/budgets/project:
         one: Projeto
         other: Projetos
@@ -32,36 +32,36 @@ pt:
       filters:
         projects:
           category_id_eq:
-            label: Category
+            label: Categoria
           scope_id_eq:
             label: Âmbito
           selected_at_null:
-            label: Selected
+            label: Seleccionado
             values:
-              'false': Selected for implementation
-              'true': Not selected for implementation
+              'false': Seleccionado para implementação
+              'true': Não selecionado para implementação
     budgets:
       actions:
         attachment_collections: Pastas
         attachments: Anexos
-        confirm_destroy: Are you sure you want to delete this project?
+        confirm_destroy: Tens a certeza de que queres eliminar este projeto?
         destroy: Eliminar
         edit: Editar
         edit_projects: Gerir projectos
         import: Importar propostas para projetos
-        new_budget: New budget
-        new_project: New project
+        new_budget: Novo orçamento
+        new_project: Novo projeto
         preview: Pré-visualização
-        send_voting_reminders: Send voting reminders
+        send_voting_reminders: Enviar lembretes de votação
         title: Ações
       admin:
         budgets:
           create:
-            invalid: There was a problem creating this budget.
-            success: Budget successfully created.
+            invalid: Houve um problema ao criar este orçamento.
+            success: Orçamento criado corretamente.
           destroy:
-            invalid: There was a problem deleting this budget.
-            success: Budget successfully deleted.
+            invalid: Houve um problema ao eliminar este orçamento.
+            success: Orçamento eliminado corretamente.
           edit:
             title: Editar orçamento
             update: Actualizar orçamento
@@ -75,8 +75,8 @@ pt:
             create: Criar orçamento
             title: Novo orçamento
           update:
-            invalid: There was a problem updating this budget.
-            success: Budget successfully updated.
+            invalid: Houve um problema ao atualizar este orçamento.
+            success: Orçamento atualizado corretamente.
         exports:
           projects: Projectos
         models:
@@ -86,19 +86,19 @@ pt:
             name: Projeto
         projects:
           create:
-            invalid: There was a problem creating this project.
-            success: Project successfully created.
+            invalid: Houve um problema ao criar este projeto.
+            success: Projeto criado corretamente.
           destroy:
-            success: Project successfully deleted.
+            success: Projeto eliminado corretamente.
           edit:
             title: Editar projeto
             update: Atualizar
           index:
-            actions: Actions
-            cancel: Cancel
-            change_budget: Change budget
-            change_category: Change category
-            change_scope: Change scope
+            actions: Ações
+            cancel: Cancelar
+            change_budget: Alterar orçamento
+            change_category: Alterar categoria
+            change_scope: Alterar escopo
             change_selected: Alterar o estatuto selecionado
             deselect_implementation: Desmarcar para implementação
             finished_orders: Votações concluídas
@@ -266,7 +266,7 @@ pt:
           budget: Orçamento
           dynamic_help:
             keep_adding_projects: Continuar adicionando projetos
-            minimum_reached: You have reached the minimum to be able to vote
+            minimum_reached: Atingiste o mínimo necessário para poderes votar
             start_adding_projects: Começar a adicionar projetos
           minimum: Mínimo
           minimum_projects_rule:
@@ -312,7 +312,7 @@ pt:
           email_link: Ir para continuar a votação
           email_outro: Por favor, lembra-te de concluir a votação. Para votar, deves primeiro selecionar a proposta ou as propostas que desejas votar e, em seguida, confirmar o teu voto com o botão "Votar".
           email_subject:
-            one: You have an unfinished vote in the participatory budgeting vote
+            one: Tens uma votação incompleta na votação do orçamento participativo.
             other: Tens votos incompletos na votação do orçamento participativo
     components:
       budgets:
