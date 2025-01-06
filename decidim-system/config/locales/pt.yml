@@ -9,7 +9,7 @@ pt:
         organization_url: URL da organização
         redirect_uri: URI de redireccionamento
       organization:
-        address: SMTP hostname
+        address: Hostname do SMTP
         from_email: Endereço de e-mail
         from_label: Rótulo
         password: Palavra-chave
@@ -35,24 +35,24 @@ pt:
         organization:
           attributes:
             password:
-              secret_key: You need to define the SECRET_KEY_BASE environment variable to be able to save this field
+              secret_key: Precisarás definir a variável de ambiente SECRET_KEY_BASE para poderes salvar este campo
   decidim:
     system:
       actions:
         confirm_destroy: Tem a certeza de que pretende eliminar isto?
         destroy: Eliminar
         edit: Editar
-        new_admin: New admin
-        new_oauth_application: New OAUTH application
-        new_organization: New organization
+        new_admin: Novo administrador
+        new_oauth_application: Nova aplicação OAUTH
+        new_organization: Nova organização
         save: Guardar
         title: Ações
       admins:
         create:
           error: Ocorreu um problema ao criar um novo administrador.
-          success: Admin successfully created.
+          success: Administrador criado com sucesso.
         destroy:
-          success: Admin successfully deleted.
+          success: Administrador eliminado com sucesso.
         edit:
           title: Editar administrador
           update: Atualizar
@@ -63,33 +63,33 @@ pt:
           title: Novo administrador
         update:
           error: Ocorreu um problema ao atualizar este administrador.
-          success: Admin successfully updated.
+          success: Administrador atualizado com sucesso.
       dashboard:
         show:
-          admins: Admins
+          admins: Administradores
           current_organizations: Organizações actuais
-          system_checks: System checks
+          system_checks: Verificações do sistema
       default_pages:
         placeholders:
           content: Por favor adicione conteúdo relevante à página estática %{page} no painel de administrador.
-          summary: Please add meaningful summary to the %{page} static page on the admin dashboard.
+          summary: Por favor, adiciona um resumo significativo à página estática %{page} no painel de administração.
           title: Título padrão para %{page}
-        terms-of-service: Terms of service
+        terms-of-service: Termos de serviço
       devise:
         passwords:
           edit:
-            change_your_password: Change your password
-            minimum_characters: "(%{minimum} characters minimum)"
+            change_your_password: Muda a tua palavra-passe
+            minimum_characters: "(%{minimum} caracteres no mínimo)"
           new:
-            forgot_your_password: Forgot your password
-            send_me_reset_password_instructions: Send me reset password instructions
+            forgot_your_password: Esqueceste-te da tua palavra-passe
+            send_me_reset_password_instructions: Envia-me instruções para redefinir a palavra-passe
         shared:
           links:
-            did_not_receive_confirmation_instructions?: Did not receive confirmation instructions?
-            did_not_receive_unlock_instructions?: Did not receive unlock instructions?
-            forgot_your_password?: Forgot your password?
-            log_in: Log in
-            sign_up: Create an account
+            did_not_receive_confirmation_instructions?: Não recebeste as instruções de confirmação?
+            did_not_receive_unlock_instructions?: Não recebeste as instruções de desbloqueio?
+            forgot_your_password?: Esqueceste-te da tua palavra-passe?
+            log_in: Inicia sessão
+            sign_up: Cria uma conta
       menu:
         admins: Administradores
         dashboard: Painel de controlo
@@ -111,7 +111,7 @@ pt:
           actions:
             save_and_invite: Criar organização e convidar administrador
           fields:
-            content_security_policy: Content security policy
+            content_security_policy: Política de segurança de conteúdo
             created_at: Criado em
             file_upload_settings: Definições para envio de ficheiro
             name: Nome
@@ -144,36 +144,35 @@ pt:
           show: Mostrar definições avançadas
         create:
           error: Ocorreu um problema ao criar uma nova organização.
-          error_invitation: There was a problem creating a new organization. Review your organization admin name.
+          error_invitation: Houve um problema ao criar uma nova organização. Verifica o nome do administrador da organização.
           success_html: |
             <p>
-              Organization successfully created.
+              Organização criada com sucesso.
             </p>
             <ol>
-              <li>You may need to update your application code, as to allow requests to %{host} you need to add the following to your
-              environment configuration (i.e. <code>config/environment/production.rb</code>) or your <code>config/application.rb</code>:
+              <li>Poderás precisar de atualizar o código da tua aplicação para permitir pedidos para %{host}. Adiciona o seguinte à configuração do ambiente (por exemplo, <code>config/environment/production.rb</code>) ou ao teu <code>config/application.rb</code>:
                 <p> config.hosts << "%{host}" </p>
               </li>
               <li>
-                After that is done, you will be able to access to your platform through <a href="http://%{host}">http://%{host}</a>
+                Depois disso, poderás aceder à tua plataforma através de <a href="http://%{host}">http://%{host}</a>
               </li>
               <li>
-                We have sent an email to <b>%{email}</b> that you need to confirm.
+                Enviámos um email para <b>%{email}</b> que precisas de confirmar.
               </li>
             </ol>
         csp_settings:
           connect_src: Connect src
           connect_src_hint: |
-            The connect-src directive restricts the URLs which can be loaded using <script> elements.
-            The platform will add 'self', but allows you to add more. leave it blank if you are unsure.
+            A diretiva connect-src restringe os URLs que podem ser carregados usando elementos <script>. 
+            A plataforma adicionará 'self', mas permite que adiciones mais. Deixa em branco se não tiveres certeza.
           default_src: Default src
           default_src_hint: |
-            The default-src directive is the default policy for loading content such as JavaScript, Images, CSS, Fonts, AJAX requests, Frames, HTML5 Media.
-            The platform will add "'self' 'unsafe-inline'", but allows you to add more. leave it blank if you are unsure.
+            A diretiva default-src é a política padrão para carregar conteúdo como JavaScript, Imagens, CSS, Fontes, pedidos AJAX, Frames e Media HTML5.
+            A plataforma adicionará "'self' 'unsafe-inline'", mas permite que adiciones mais. Deixa em branco se não tiveres certeza.
           font_src: Font src
           font_src_hint: |
-            The font-src directive restricts the URLs which can be loaded using @font-face.
-            The platform will add 'self', but allows you to add more. leave it blank if you are unsure.
+            A diretiva font-src restringe os URLs que podem ser carregados usando @font-face.
+            A plataforma adicionará 'self', mas permite que adiciones mais. Deixa em branco se não tiveres certeza.
           frame_src: Frame src
           frame_src_hint: |
             The frame-src directive restricts the URLs which can be loaded using <frame>, <iframe> and <object> elements.
