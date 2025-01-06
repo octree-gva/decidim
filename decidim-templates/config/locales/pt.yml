@@ -13,25 +13,25 @@ pt:
         templates: Modelos
       templates:
         actions:
-          new_template: New template
+          new_template: Novo modelo
         apply:
           error: Houve um problema ao aplicar este modelo
-          success: Template applied successfully.
+          success: Modelo aplicado com sucesso.
         copy:
           error: Houve um problema ao copiar este modelo
-          success: Template copied successfully.
+          success: Modelo copiado com sucesso.
         create:
           error: Houve um problema ao criar este modelo.
-          success: Template created successfully.
+          success: Modelo criado com sucesso.
         destroy:
-          success: Template deleted successfully.
+          success: Modelo eliminado com sucesso.
         empty: Ainda não há modelos.
         fetch:
-          error: Could not find this template. Please reload the page.
-        missing_resource: "(missing resource)"
+          error: Não foi possível encontrar este modelo. Por favor, recarrega a página.
+        missing_resource: "(recurso em falta)"
         update:
-          error: There was a problem updating this template.
-          success: Template updated successfully.
+          error: Houve um problema ao atualizar este modelo.
+          success: Modelo atualizado com sucesso.
       titles:
         template_types:
           questionnaires: Modelos de questionário
@@ -49,22 +49,22 @@ pt:
       admin:
         block_user_templates:
           edit:
-            title: Edit block user message template
+            title: Editar modelo de mensagem para bloquear utilizador
           form:
             save: Guardar
           index:
-            confirm_delete: Are you sure you want to delete this template?
-            title: Block user messages
+            confirm_delete: Tens a certeza de que queres eliminar este modelo?
+            title: Mensagens para bloquear utilizadores
           new:
             title: Já deste votos suficientes.
           template_chooser:
-            select_template: Select a template answer
+            select_template: Seleciona um modelo de resposta
         proposal_answer_templates:
           edit:
-            title: Edit proposal answer template
+            title: Editar modelo de resposta à proposta
           form:
-            component_constraint_help: Note that only participatory spaces having components of the type "proposals" will be listed.
-            hint1_html: "<strong>%{organization}</strong> will be replaced by the organization's name"
+            component_constraint_help: Nota que apenas espaços participativos com funcionalidades do tipo "propostas" serão listados.
+            hint1_html: "<strong>%{organization}</strong> será substituído pelo nome da organização"
             hint2_html: "<strong>%{name}</strong> será substituído pelo nome do autor"
             hint3_html: "<strong>%{admin}</strong> será substituído pelo nome do administrador (quem respondeu à proposta)"
             hint_html: "<strong>Dica:</strong> Podes usar estas variáveis em qualquer parte do modelo de resposta, e elas serão substituídas ao usar o modelo."
