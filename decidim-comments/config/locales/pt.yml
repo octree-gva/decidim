@@ -76,7 +76,7 @@ pt:
         edited: Editado
         hide_replies:
           one: Ocultar resposta
-          other: Hide %{count} replies
+          other: Ocultar %{count} respostas
         moderated_at: Comentário moderado em %{date}
         reply: Responder
         report:
