@@ -31,7 +31,7 @@ pt:
           step:
             allow_answers: Permitir respostas
             allow_unregistered: Permitir que utilizadores não registados respondam ao inquérito
-            allow_unregistered_help: If active, no login will be required in order to answer the survey. This may lead to poor or unreliable data and it will be more vulnerable to automated attacks. Use with caution! Mind that a participant could answer the same survey multiple times, by using different browsers or the "private browsing" feature of her web browser.
+            allow_unregistered_help: Se ativo, não será necessário iniciar sessão para responder ao questionário. Isso pode levar a dados pobres ou pouco confiáveis e torná-lo mais vulnerável a ataques automatizados. Usa com cautela! Considera que um participante pode responder ao mesmo questionário várias vezes, usando navegadores diferentes ou o modo "navegação privada" do seu navegador.
             announcement: Anúncio
     events:
       surveys:
@@ -56,7 +56,7 @@ pt:
       admin:
         component:
           actions:
-            answers_alert: If you publish the component, all results will be removed.
+            answers_alert: Se publicares o componente, todos os resultados serão removidos.
         exports:
           survey_user_answers: Respostas dos participantes aos inquéritos
         surveys:
@@ -64,14 +64,14 @@ pt:
             invalid: Ocorreu um problema ao guardar o inquérito.
             success: Inquérito guardado corretamente.
       last_activity:
-        new_survey: 'New survey:'
+        new_survey: 'Novo questionário:'
       survey_confirmation_mailer:
         confirmation:
-          body: You have successfully answered the %{questionnaire_title} survey within %{participatory_space}
-          subject: Questionnaire %{questionnaire_title} answering confirmation
-        export_name: Survey answers
+          body: Respondeste com sucesso ao questionário %{questionnaire_title} no %{participatory_space}
+          subject: Confirmação de resposta ao questionário %{questionnaire_title}
+        export_name: Respostas ao questionário
       surveys:
         answer:
           invalid: Ocorreu um problema ao responder ao inquérito.
-          spam_detected: There was a problem answering the form. Maybe you have been too quick, can you try again?
+          spam_detected: Houve um problema ao responder ao formulário. Talvez tenhas sido rápido demais. Podes tentar novamente?
           success: Inquérito respondido corretamente.
