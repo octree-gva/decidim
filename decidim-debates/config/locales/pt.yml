@@ -19,7 +19,7 @@ pt:
       decidim/debates/close_debate_event: Debate fechado
       decidim/debates/create_debate_event: Debate
       decidim/debates/creation_disabled_event: Debates desativados
-      decidim/debates/creation_enabled_event: Debates creation enabled
+      decidim/debates/creation_enabled_event: Criação de debates ativada
   activerecord:
     models:
       decidim/debates/debate:
@@ -52,7 +52,7 @@ pt:
         confirm_destroy: Tem a certeza?
         destroy: Eliminar
         edit: Editar
-        new: New debate
+        new: Novo debate
         title: Ações
       admin:
         debate_closes:
@@ -73,7 +73,7 @@ pt:
             finite: Finito (com hora de abertura e de fecho)
             open: Aberto (sem hora de abertura ou fecho)
           index:
-            title: Debates
+            title: Novo debate
           new:
             create: Criar debate
             title: Novo debate
@@ -81,7 +81,7 @@ pt:
             invalid: Ocorreu um problema ao atualizar este debate.
             success: Debate atualizado corretamente.
         exports:
-          comments: Comments
+          comments: Comentários
       admin_log:
         debate:
           close: "%{user_name} Fechou o debate %{resource_name} no espaço %{space_name}"
@@ -94,7 +94,7 @@ pt:
           invalid: Ocorreu um problema ao fechar o debate.
           success: Debate fechado com êxito
         close_debate_modal:
-          cancel: Cancel
+          cancel: Cancelar
           description: Qual é o sumário ou conclusão para este debate?
           send: Fechar debate
         count:
@@ -105,8 +105,8 @@ pt:
           invalid: Ocorreu um problema ao criar o debate.
           success: Debate criado corretamente.
         debates:
-          empty: There are no debates yet.
-          empty_filters: There are no debates with this criteria.
+          empty: Ainda não há debates.
+          empty_filters: Não há debates com este critério.
         edit:
           back: Retroceder
           save: Guardar alterações
@@ -120,13 +120,13 @@ pt:
           my_debates: Os meus debates
           official: Oficial
           origin: Origem
-          participants: Participants
+          participants: Participantes
           search: Pesquisar
           state: Estado
           state_values:
             closed: Fechar
             open: Abertas
-          user_group: Groups
+          user_group: Grupos
         form:
           select_a_category: Por favor, selecione uma categoria
         index:
@@ -154,15 +154,15 @@ pt:
           invalid: Ocorreu um problema ao atualizar o debate.
           success: Debate atualizado corretamente.
       last_activity:
-        debate_updated: 'Debate updated:'
-        new_debate: 'New debate:'
+        debate_updated: 'Debate atualizado:'
+        new_debate: 'Novo debate:'
       models:
         debate:
           fields:
-            end: End
+            end: Fim
             end_time: Data final
             official_debate: Debate oficial
-            start: Start
+            start: Início
             start_time: Data de início
             title: Título
     events:
@@ -170,11 +170,11 @@ pt:
         create_debate_event:
           space_followers:
             email_intro: |-
-              Hi,
-              A new debate "%{resource_title}" has been created on the %{participatory_space_title} participatory space, check it out and contribute:
-            email_outro: You have received this notification because you are following the %{participatory_space_title} participatory space. You can stop receiving notifications following the previous link.
-            email_subject: New debate "%{resource_title}" on %{participatory_space_title}
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> debate was created on <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+              Olá,  
+              Um novo debate "%{resource_title}" foi criado no espaço participativo %{participatory_space_title}, confere e contribui:
+            email_outro: Recebeste esta notificação porque estás a seguir o espaço participativo %{participatory_space_title}. Podes parar de receber notificações através do link anterior.
+            email_subject: Novo debate "%{resource_title}" no %{participatory_space_title}
+            notification_title: O debate <a href="%{resource_path}">%{resource_title}</a> foi criado em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
           user_followers:
             email_intro: |-
               Olá,
@@ -191,7 +191,7 @@ pt:
           email_intro: 'Agora pode iniciar novos debates em %{participatory_space_title}! Comece a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: Debates agora disponíveis em %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">new debates</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          notification_title: Agora podes iniciar <a href="%{resource_path}">novos debates</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         debate_closed:
           affected_user:
             email_intro: 'O debate "%{resource_title}" foi encerrado. Pode ler as conclusões a partir da sua página:'
@@ -214,7 +214,7 @@ pt:
           name: Debates
           next_level_in: Participe em mais %{score} debates para alcançar o próximo nível!
           unearned_another: Este participante ainda não fez parte de nenhum debate.
-          unearned_own: You have not participated in any debates yet.
+          unearned_own: Ainda não participaste em nenhum debate.
     metrics:
       debates:
         description: Número de debates criados
