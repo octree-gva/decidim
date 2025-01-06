@@ -117,24 +117,24 @@ pt:
             description: Description
             down: Down
             expand: Expand
-            remove: Remove
-            title: Title
-            title_and_description: Title and description
-            up: Up
+            remove: Remover
+            title: Título
+            title_and_description: Título e descrição
+            up: Para cima
           update:
             invalid: Ocorreu um problema ao guardar o questionário.
             success: Formulário guardado com êxito
       admin_log:
         questionnaire:
-          update: "%{user_name} updated the %{resource_name} questionnaire"
+          update: "%{user_name} atualizou o questionário %{resource_name}"
       errors:
         answer:
-          body: Body cannot be blank
+          body: O corpo não pode estar vazio
       images:
         dimensions: "%{width} x %{height} px"
         processors:
-          resize_and_pad: This image will be resized and padded to %{dimensions}.
-          resize_to_fit: This image will be resized to fit %{dimensions}.
+          resize_and_pad: Esta imagem será redimensionada e preenchida para %{dimensions}.
+          resize_to_fit: Esta imagem será redimensionada para caber em %{dimensions}.
       question_types:
         files: Ficheiros
         long_answer: Resposta longa
@@ -144,9 +144,9 @@ pt:
         short_answer: Resposta curta
         single_option: Escolha única
         sorting: Ordenação
-        title_and_description: Title and description
+        title_and_description: Título e descrição
       questionnaire_answer_presenter:
-        download_attachment: Download attachment
+        download_attachment: Descarregar anexo
       questionnaires:
         answer:
           invalid: Ocorreu um problema ao responder ao questionário.
@@ -156,13 +156,13 @@ pt:
           max_choices: 'Escolhas máximas: %{n}'
         show:
           answer_questionnaire:
-            already_have_an_account?: Already have an account?
-            are_you_new?: New user?
-            sign_in_description: Log in to take the survey
-            sign_up_description: Create a participant account to take the survey
+            already_have_an_account?: Já tens uma conta?
+            are_you_new?: Novo participante?
+            sign_in_description: Inicia sessão para responder ao questionário
+            sign_up_description: Cria uma conta de participante para responder ao questionário
             title: Responda ao questionário
           current_step: Passo %{step}
-          empty: No questions configured for this form yet.
+          empty: Ainda não há perguntas configuradas para este formulário.
           of_total_steps: de %{total_steps}
           questionnaire_answered:
             body: Já respondeu a este questionário.
@@ -190,7 +190,7 @@ pt:
         completion: Conclusão
         created_at: Respondido em
         id: ID da resposta
-        ip_hash: IP Hash
+        ip_hash: Hash do IP
         question: Questão
         registered: Registado
         session_token: Identificador do utilizador
