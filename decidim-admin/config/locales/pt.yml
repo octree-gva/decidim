@@ -313,41 +313,41 @@ pt:
           success: Categoria atualizada com sucesso.
       component_permissions:
         update:
-          error: Ocorreu um problema ao atualizar as permissões deste componente.
+          error: Houve um problema ao atualizar as permissões desta funcionalidade.
           success: Permissões atualizadas corretamente.
       components:
         create:
-          error: Ocorreu um problema ao criar este componente.
-          success: Componente criado corretamente.
-          success_landing_page: Funcionalidade criada com sucesso. Pode adicionar um bloco de conteúdo para este componente na página inicial do espaço. Acesse <a href="%{landing_page_path}">Página inicial</a> para configurá-la.
+          error: Houve um problema ao criar esta funcionalidade.
+          success: Funcionalidade criada com sucesso.
+          success_landing_page: Funcionalidade criada com sucesso. Podes adicionar um bloco de conteúdo para esta funcionalidade na página inicial do espaço. Vai para <a href="%{landing_page_path}">Página inicial</a> para configurá-la.
         destroy:
-          error: Ocorreu um problema ao destruir este componente.
-          success: Componente eliminado corretamente.
+          error: Houve um problema ao eliminar esta funcionalidade.
+          success: Funcionalidade eliminada com sucesso.
         edit:
-          title: Editar componente
+          title: Editar funcionalidade
           update: Atualizar
         form:
           default_step_settings: Configurações do passo padrão
           global_settings: Configurações globais
           step_settings: Configurações do passo
         index:
-          add: Adicionar componente
+          add: Adicionar funcionalidade
           headers:
             actions: Ações
-            name: Nome do componente
-            scope: Âmbito do componente
-            type: Tipo de componente
+            name: Nome da funcionalidade
+            scope: Escopo da funcionalidade
+            type: Tipo de funcionalidade
         new:
-          add: Adicionar componente
-          title: 'Adicionar componente: %{name}'
+          add: Adicionar funcionalidade
+          title: 'Adicionar funcionalidade: %{name}'
         publish:
-          success: O componente foi publicado corretamente.
-        title: Componentes
+          success: A funcionalidade foi publicada com sucesso.
+        title: Funcionalidades
         unpublish:
-          success: O componente deixou de estar publicado corretamente.
+          success: A funcionalidade foi despublicada com sucesso.
         update:
-          error: Ocorreu um problema ao atualizar este componente.
-          success: O componente foi atualizado corretamente.
+          error: Houve um problema ao atualizar esta funcionalidade.
+          success: A funcionalidade foi atualizada com sucesso.
       conflicts:
         attempts: Tentativas
         'false': 'Não'
@@ -357,7 +357,7 @@ pt:
         solved: Resolvido
         title: Conflitos de verificação
         transfer:
-          email: e-Mail
+          email: E-Mail
           error: Houve um problema ao transferir o participante atual para participante gerido.
           name: Nome
           reason: Motivo
@@ -428,7 +428,7 @@ pt:
           reportable_type_string_eq:
             label: Tipo
         officialized_at_null:
-          label: Estado
+          label: Estatuto
           values:
             'false': Oficializado
             'true': Não oficializado
@@ -464,7 +464,7 @@ pt:
           title_cont: Pesquisar %{collection} por título.
           user_name_or_user_nickname_or_user_email_cont: Pesquisar %{collection} por e-mail, nome ou alcunha.
         state_eq:
-          label: Estado
+          label: Estatuto
           values:
             all: Todos
             pending: Pendentes
@@ -495,7 +495,7 @@ pt:
           not_managed: Não gerido
           promote: Promover
           search: Pesquisar
-          status: Estado
+          status: Estatuto
           view_logs: Ver registos
       impersonations:
         close_session:
@@ -674,7 +674,7 @@ pt:
             name: Nome
             nickname: Alcunha
             phone: Telefone
-            state: Estado
+            state: Estatuto
             users_count: Contagem de participantes
       moderated_users:
         index:
@@ -805,7 +805,7 @@ pt:
           reofficialize: Reoficializar
           reports: Relatórios
           show_email: Mostrar endereço de e-mail
-          status: Estado
+          status: Estatuto
           unblock: Desbloquear utilizador
           unofficialize: Desoficializar
         new:
