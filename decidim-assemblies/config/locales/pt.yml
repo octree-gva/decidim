@@ -451,7 +451,7 @@ pt:
         metadata:
           children_item:
             one: "%{count} assembleia"
-            other: "%{count} assemblies"
+            other: "%{count} assembleias"
         order_by_assemblies:
           assemblies:
             one: "%{count} reunião"
