@@ -137,7 +137,7 @@ pt:
               selected: 'Estes projetos já foram marcados para a implementação: %{projects}.'
               unselected: 'Estes projetos já foram desmarcados para a implementação: %{projects}.'
             select_a_project: Selecione um projeto.
-            select_a_selection: Selecione um estado de implementação.
+            select_a_selection: Por favor, seleciona um estado de implementação.
             success:
               selected: 'Estes projetos foram marcados com sucesso para a implementação: %{projects}.'
               unselected: 'Estes projetos foram desmarcados com sucesso para a implementação: %{projects}.'
@@ -149,9 +149,9 @@ pt:
             create: Importar propostas em projetos
             default_budget: Orçamento padrão
             import_all_accepted_proposals: Importar todas as propostas aceitas
-            no_components: Não há outros componentes da proposta neste espaço participativo para importar as propostas em projetos.
+            no_components: Não há outras funcionalidades de propostas neste espaço participativo para importar as propostas em projetos.
             origin_component_id: Funcionalidade de origem
-            select_component: Por favor selecione um componente
+            select_component: Por favor, seleciona uma funcionalidade
             title: Importar propostas em projetos
         reminders:
           orders:
