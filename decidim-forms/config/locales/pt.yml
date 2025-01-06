@@ -115,7 +115,7 @@ pt:
           title_and_description:
             collapse: Recolher
             description: Descrição
-            down: Down
+            down: Baixar
             expand: Expand
             remove: Remover
             title: Título
