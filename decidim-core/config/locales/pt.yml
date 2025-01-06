@@ -35,7 +35,7 @@ pt:
         tos_agreement: Termos e Condições de Uso
     models:
       decidim/attachment_created_event: Anexo
-      decidim/component_published_event: Componente ativo
+      decidim/component_published_event: Funcionalidade ativa
       decidim/demoted_membership: Já não é um administrador de grupo
       decidim/gamification/badge_earned_event: Distintivo ganho
       decidim/gamification/level_up_event: Subiste de nível
@@ -212,11 +212,11 @@ pt:
         delete: "%{user_name} eliminou a categoria %{resource_name} do espaço %{space_name}"
         update: "%{user_name} atualizou a categoria %{resource_name} do espaço %{space_name}"
       component:
-        create: "%{user_name} adicionou o componente %{resource_name} ao espaço %{space_name}"
-        delete: "%{user_name} removeu o componente %{resource_name} do espaço %{space_name}"
+        create: "%{user_name} adicionou a funcionalidade %{resource_name} ao espaço %{space_name}"
+        delete: "%{user_name} removeu a funcionalidade %{resource_name} do espaço %{space_name}"
         export_component: "%{user_name} exportou %{resource_name} %{component_name} em %{space_name} como %{format_name}"
-        publish: "%{user_name} publicou o componente %{resource_name} no espaço %{space_name}"
-        unpublish: "%{user_name} removeu a publicação do componente %{resource_name} do espaço %{space_name}"
+        publish: "%{user_name} publicou a funcionalidade %{resource_name} no espaço %{space_name}"
+        unpublish: "%{user_name} despublicou a funcionalidade %{resource_name} do espaço %{space_name}"
         update_permissions_with_space: "%{user_name} atualizou o resultado %{resource_name} em %{space_name}"
       contextual_help_section:
         update: "%{user_name} actualizou o tópico de página %{resource_name}"
@@ -476,7 +476,7 @@ pt:
         actions:
           bar: Barra
           foo: Foo
-        name: Componente Fictício
+        name: Funcionalidade fictícia
         settings:
           global:
             amendments_enabled: Modificações ativadas
@@ -744,7 +744,7 @@ pt:
           notification_title: Um <a href="%{resource_path}">novo documento</a> foi adicionado a <a href="%{attached_to_url}">%{resource_title}</a>
       components:
         component_published:
-          email_intro: 'O componente %{resource_title} está agora ativo para %{participatory_space_title}. Pode vê-lo a partir desta página:'
+          email_intro: 'A funcionalidade %{resource_title} está agora ativa para %{participatory_space_title}. Podes vê-la nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: Uma atualização a %{participatory_space_title}
           notification_title: A funcionalidade %{resource_title} está agora ativa para <a href="%{resource_path}">%{participatory_space_title}</a>
@@ -1901,11 +1901,11 @@ pt:
             cookie: Cookie
             local_storage: Armazenamento local
         dialog:
-          accept_all: Aceitar todos
-          accept_only_essential: Aceitar apenas essenciais
-          description: Usamos cookies em nosso site para melhorar o desempenho e o conteúdo do site. Os cookies nos permitem fornecer mais canais de experiência individual de usuário e mídias sociais.
-          settings: Definições
-          title: Informações sobre os cookies usados no site
+          accept_all: Aceitar tudo
+          accept_only_essential: Aceitar apenas o essencial
+          description: Utilizamos cookies no nosso site para melhorar o desempenho e o conteúdo do mesmo. Os cookies permitem-nos proporcionar uma experiência de utilizador mais personalizada e integrar canais de redes sociais.
+          settings: Configurações
+          title: Informações sobre os cookies utilizados no site
         modal:
           accept_all: Aceitar todos
           accept_only_essential: Aceitar apenas essenciais
