@@ -46,8 +46,8 @@ pt:
           yellow: Amarelo
         text_color: Cor do texto
       proposals_copy:
-        copy_proposals: Entendo que isso irá importar todas as propostas do componente selecionado para o atual e que esta ação não pode ser revertida.
-        origin_component_id: Componente para copiar as propostas de
+        copy_proposals: Entendo que isso importará todas as propostas da funcionalidade selecionada para a atual e que essa ação não poderá ser revertida.
+        origin_component_id: Funcionalidade de onde copiar as propostas
       proposals_import:
         import_proposals: Importar propostas
         keep_answers: Guardar estado e respostas
@@ -179,7 +179,7 @@ pt:
             new_proposal_help_text: Novo texto de ajuda da proposta
             official_proposals_enabled: Propostas oficiais ativadas
             participatory_texts_enabled: Textos participativos ativados
-            participatory_texts_enabled_readonly: Não é possível interagir com esta configuração caso existam propostas. Crie um novo "Componente de propostas" caso pretenda ativar esta característica ou elimine todas as propostas importadas no menu "Textos Participativos" caso pretenda desativá-la.
+            participatory_texts_enabled_readonly: Não é possível interagir com esta configuração se existirem propostas. Por favor, cria uma nova `Funcionalidade de Propostas` se quiseres ativar esta funcionalidade ou descarta todas as propostas importadas no menu `Textos Participativos` se quiseres desativá-la.
             proposal_answering_enabled: Respostas à proposta ativadas
             proposal_edit_before_minutes: As propostas podem ser editadas pelos autores antes que estes minutos passem
             proposal_edit_time: Edição de proposta
@@ -301,28 +301,28 @@ pt:
           affected_user:
             email_intro: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
             email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
-            email_subject: Your proposal has changed its state (%{state})
+            email_subject: A tua proposta mudou o seu estatuto (%{state})
             notification_title: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
           follower:
             email_intro: 'A proposta "%{resource_title}" mudou o seu estatuto para "%{state}". Podes ler a resposta nesta página:'
-            email_outro: You have received this notification because you are following "%{resource_title}". You can unfollow it from the previous link.
-            email_subject: A proposal you are following has changed its state (%{state})
-            notification_title: The <a href="%{resource_path}">%{resource_title}</a> proposal has changed its state to "%{state}".
+            email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
+            email_subject: Uma proposta que estás a seguir mudou o seu estatuto (%{state})
+            notification_title: A proposta <a href="%{resource_path}">%{resource_title}</a> mudou o seu estatuto para "%{state}".
         proposal_update_category:
           email_intro: 'Um administrador atualizou a categoria da sua proposta "%{resource_title}", verifique nesta página:'
-          email_outro: You have received this notification because you are the author of the proposal.
+          email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
           email_subject: A categoria da proposta %{resource_title} foi atualizada
           notification_title: A categoria da proposta <a href="%{resource_path}">%{resource_title}</a> foi atualizada por um administrador.
         proposal_update_scope:
           email_intro: 'Um administrador atualizou o âmbito da sua proposta "%{resource_title}". Consulte-o nesta página:'
-          email_outro: You have received this notification because you are the author of the proposal.
+          email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
           email_subject: O âmbito da proposta %{resource_title} foi atualizado
           notification_title: O âmbito da proposta <a href="%{resource_path}">%{resource_title}</a> foi atualizado por um administrador.
         voting_enabled:
-          email_intro: 'You can vote proposals in %{participatory_space_title}! Start participating in this page:'
+          email_intro: 'Podes votar nas propostas em %{participatory_space_title}! Começa a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
-          email_subject: Proposal voting has started for %{participatory_space_title}
-          notification_title: You can now start <a href="%{resource_path}">voting proposals</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a>
+          email_subject: A votação de propostas começou para %{participatory_space_title}
+          notification_title: Agora podes começar a <a href="%{resource_path}">votar propostas</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>
     gamification:
       badges:
         accepted_proposals:
@@ -339,11 +339,11 @@ pt:
         proposal_votes:
           conditions:
             - Navegue e passe algum tempo a ler as propostas de outras pessoas
-            - Vote to the proposals you like or find interesting
-          description: This badge is granted when you vote other people's proposals.
-          description_another: This participant has voted to %{score} proposals.
-          description_own: You have voted to %{score} proposals.
-          name: Proposal votes
+            - Vota nas propostas que gostas ou achas interessantes
+          description: Este distintivo é concedido quando votas nas propostas de outras pessoas.
+          description_another: Este participante votou em %{score} propostas.
+          description_own: Votaste em %{score} propostas.
+          name: Votos de propostas
           next_level_in: 'Usa caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras, e deve começar com uma letra. Se não definido, o botão não será exibido. Exemplo: %{url}'
           unearned_another: Este participante ainda não votou em nenhuma proposta.
           unearned_own: Ainda não votaste em nenhuma proposta.
@@ -386,7 +386,7 @@ pt:
         destroy: Eliminar estado
         edit_proposal: Editar proposta
         edit_proposal_state: Editar estado
-        import: Importar de outro componente
+        import: Importar propostas de outra funcionalidade
         new: Nova proposta
         new_proposal_state: Novo estado
         participatory_texts: Textos participativos
@@ -523,7 +523,7 @@ pt:
             merge_button: Fundir
             publish: Publicar
             publish_answers: Publicar respostas
-            select_component: Selecione um componente
+            select_component: Selecionar uma funcionalidade
             select_valuators: Seleciona um ou mais avaliadores
             selected: selecionado
             split: Dividir propostas
@@ -575,8 +575,8 @@ pt:
             success: "%{number} propostas importadas com sucesso."
           new:
             create: Importar propostas
-            no_components: Não há outros componentes da proposta neste espaço participativo de onde importar as propostas.
-            select_component: Selecione um componente
+            no_components: Não há outras funcionalidades de propostas neste espaço participativo para importar as propostas.
+            select_component: Por favor, seleciona uma funcionalidade
             select_states: Verifique os estados das propostas a importar
             title: Importar propostas de outra funcionalidade
         proposals_merges:
@@ -878,12 +878,12 @@ pt:
           minimum_votes_per_user:
             description: Deves distribuir um mínimo de %{votes} votos entre diferentes propostas.
             given_enough_votes: Já deste votos suficientes.
-            votes_remaining: You have to vote %{remaining_votes} more proposals for your votes to be taken into account.
+            votes_remaining: Tens de votar em mais %{remaining_votes} propostas para que os teus votos sejam considerados.
           proposal_limit:
             description: Pode criar até %{limit} propostas.
           threshold_per_proposal:
-            description: In order to be validated proposals need to reach %{limit} votes.
-          title: 'Votes are subject to the following rules:'
+            description: Para serem validadas, as propostas precisam atingir %{limit} votos.
+          title: 'Os votos estão sujeitos às seguintes regras:'
           vote_limit:
             description: Podes votar em até %{limit} propostas.
             votes: Restam %{number} votos
