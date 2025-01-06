@@ -3,7 +3,7 @@ pt:
   activemodel:
     attributes:
       result:
-        decidim_accountability_status_id: Estado
+        decidim_accountability_status_id: Estatuto
         decidim_category_id: Categoria
         decidim_scope_id: Âmbito
         description: Descrição
@@ -41,10 +41,10 @@ pt:
         confirm_destroy: Tem certeza de que deseja eliminar este %{name}?
         destroy: Eliminar
         edit: Editar
-        import: Importar projetos de outro componente
+        import: Importar projetos de outra funcionalidade
         import_csv: Importar resultados de um CSV
         new_result: Novo resultado
-        new_status: Novo estado
+        new_status: Novo estatuto
         new_timeline_entry: Nova entrada do cronograma
         preview: Pré-visualizar
         timeline_entries: Evolução do projeto
@@ -58,25 +58,25 @@ pt:
             download_export: Baixe a exportação com formato CSV
             import: Importar
             info: |
-              <p>Recomendamos que siga estes passos:</p>
+              <p>Recomendamos que sigas estes passos:</p>
               <ol>
-                <li><a href='%{link_new_status}' target='_blank'>Crie os estados para os resultados</a> que pretende adicionar.</li>
-                <li><a href='%{link_new_result}' target='_blank'>Crie pelo menos um resultado manualmente</a> através deste painel de administração antes de utilizar a importação, para compreender melhor o formato e os campos necessários.</li>
-                <li>%{link_export_csv}</li>
-                <li>Faça as alterações localmente. Pode modificar apenas as seguintes colunas do ficheiro CSV:
-                  <ul>
-                    <li><b>category/id:</b> ID da categoria.</li>
-                    <li><b>scope/id:</b> ID do âmbito.</li>
-                    <li><b>parent/id:</b> ID do pai (para resultados relacionados). Opcional.</li>
-                    <li><b>title/en:</b> Título em inglês. Este campo depende da configuração de idiomas da sua plataforma.</li>
-                    <li><b>description/en:</b> Descrição em inglês. Este campo depende da configuração de idiomas da sua plataforma.</li>
-                    <li><b>start_date:</b> Data de início da execução do resultado (formato YYYY-MM-DD).</li>
-                    <li><b>end_date:</b> Data de término da execução do resultado (formato YYYY-MM-DD).</li>
-                    <li><b>status/id:</b> ID do estado atribuído a este resultado.</li>
-                    <li><b>progress:</b> Percentagem (de 0 a 100) da execução.</li>
-                    <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separados por vírgulas). Este campo é automaticamente convertido para <span class='attribute-name'>proposal_url</span>.</li>
-                  </ul>
-                </li>
+              <li><a href='%{link_new_status}' target='_blank'>Cria os Estatutos para os Resultados</a> que desejas adicionar</li>
+              <li><a href='%{link_new_result}' target='_blank'>Cria pelo menos um Resultado manualmente</a> através deste painel de administração antes de usar Importar, para ter uma melhor compreensão do formato e do que será necessário preencher.</li>
+              <li>%{link_export_csv}</li>
+              <li>Faz as alterações localmente. Só podes alterar as seguintes colunas do CSV:
+                <ul>
+                <li><b>category/id:</b> ID para a Categoria</li>
+                <li><b>scope/id:</b> ID para o Escopo</li>
+                <li><b>parent/id:</b> ID do pai (para Resultados relacionados). Opcional</li>
+                <li><b>title/en:</b> Título em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
+                <li><b>description/en:</b> Descrição em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
+                <li><b>start_date:</b> data de início da execução do resultado (formato YYYY-MM-DD)</li>
+                <li><b>end_date:</b> data de término da execução do resultado (formato YYYY-MM-DD)</li>
+                <li><b>status/id:</b> ID do Estatuto para este resultado</li>
+                <li><b>progress:</b> Percentagem (de 0 a 100) da execução</li>
+                <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separados por vírgula). Converte-se automaticamente para <span class='attribute-name'>proposal_url</span></li>
+                </ul>
+              </li>
               </ol>
             title: Importar resultados de um CSV
         imports:
@@ -132,12 +132,12 @@ pt:
             success: Estatuto elimidado com sucesso.
           edit:
             title: Editar estado
-            update: Atualizar estado
+            update: Atualizar estatuto
           index:
             title: Estados
           new:
-            create: Criar estado
-            title: Novo estado
+            create: Criar estatuto
+            title: Novo estatuto
           update:
             invalid: Houve um problema ao criar este estatuto.
             success: Estatuto criado com sucesso.
@@ -203,7 +203,7 @@ pt:
             progress: Progresso
             scope: Âmbito
             start_date: Data de início
-            status: Estado
+            status: Estatuto
             title: Título
         status:
           fields:
@@ -228,7 +228,7 @@ pt:
           empty_filters: Não há resultados com estes critérios.
           subcategories_label: Subcategorias
         home_header:
-          global_status: Estado de execução global
+          global_status: Estado global de execução
         nav_breadcrumb:
           global: Execução global
         no_results: Não há projetos
@@ -247,7 +247,7 @@ pt:
           scope_id_eq:
             label: Âmbito
           status_id_eq:
-            label: Estado
+            label: Estatuto
     components:
       accountability:
         actions:
