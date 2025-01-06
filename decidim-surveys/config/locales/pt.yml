@@ -56,7 +56,7 @@ pt:
       admin:
         component:
           actions:
-            answers_alert: Se publicares o componente, todos os resultados serão removidos.
+            answers_alert: Se publicares a funcionalidade, todos os resultados serão removidos.
         exports:
           survey_user_answers: Respostas dos participantes aos inquéritos
         surveys:
