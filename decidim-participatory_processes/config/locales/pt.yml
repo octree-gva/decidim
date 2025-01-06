@@ -6,7 +6,7 @@ pt:
         announcement: Anúncio
         area_id: Área
         copy_categories: Copiar categorias
-        copy_components: Copiar componentes
+        copy_components: Copiar funcionalidades
         copy_steps: Copiar passos
         decidim_area_id: Área
         description: Descrição
@@ -123,7 +123,7 @@ pt:
           attachment_files: Ficheiros
           attachments: Anexos
           categories: Categorias
-          components: Componentes
+          components: Funcionalidades
           info: Sobre este processo
           landing_page: Página de destino
           moderations: Moderações
