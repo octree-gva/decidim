@@ -7,7 +7,7 @@ pt:
         available_slots: Espaços disponíveis
         banner_image: Imagem da faixa
         copy_categories: Copiar categorias
-        copy_components: Copiar componentes
+        copy_components: Copiar funcionalidades
         copy_features: Copiar características
         decidim_scope_id: Âmbito
         description: Descrição
@@ -200,7 +200,7 @@ pt:
           attachment_files: Ficheiros
           attachments: Anexos
           categories: Categorias
-          components: Componentes
+          components: Funcionalidades
           conference_admins: Administradores da conferência
           conference_invites: Convites
           conference_speakers: Oradores
