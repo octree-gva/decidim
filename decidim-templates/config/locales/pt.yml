@@ -56,7 +56,7 @@ pt:
             confirm_delete: Are you sure you want to delete this template?
             title: Block user messages
           new:
-            title: New block user message template
+            title: Já deste votos suficientes.
           template_chooser:
             select_template: Select a template answer
         proposal_answer_templates:
