@@ -450,10 +450,10 @@ pt:
         embed_in_meeting_page: Incorporar na página da reunião
         none: Nenhum
         open_in_live_event_page: Abrir na página de evento ao vivo
-        open_in_new_tab: Open URL in a new tab
+        open_in_new_tab: Abrir URL numa nova aba
       last_activity:
-        meeting_updated: 'Meeting updated:'
-        new_meeting: 'New meeting:'
+        meeting_updated: 'Reunião atualizada:'
+        new_meeting: ":Configurar o CTA através da Fase do processo participativo está obsoleto com o novo design.\nAgora isso é feito na <b>Página Inicial</b>, usando o bloco de conteúdo <b>Hero e Imagem</b>.\nDeixámos isso aqui para que possas migrar os CTAs de que precisas. Os campos <i>Rota do call to action</i> e\n<i>Texto do call to action</i> serão removidos na próxima versão."
       layouts:
         live_event:
           close: Fechar
