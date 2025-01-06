@@ -3,10 +3,10 @@ pt:
   activemodel:
     attributes:
       initiative:
-        answer: Answer
-        answer_url: Answer URL
-        area_id: Area
-        decidim_scope_id: Scope
+        answer: Resposta
+        answer_url: URL da resposta
+        area_id: Área
+        decidim_scope_id: Âmbito
         decidim_user_group_id: Autor
         description: Descrição
         hashtag: Hashtag
@@ -22,18 +22,18 @@ pt:
           online: On-line
         state: Estado
         title: Título
-        type_id: Type
+        type_id: Tipo
       initiatives_committee_member:
         user: Membro do Comité
       initiatives_settings:
-        initiatives_order: Order
+        initiatives_order: Ordem
       initiatives_type:
         area_enabled: Permitir que os autores escolham a área da sua iniciativa
         attachments_enabled: Permitir anexos
         banner_image: Imagem da faixa
         child_scope_threshold_enabled: Activar âmbito descendente de assinaturas
         collect_user_extra_fields: Coletar dados pessoais do participante na assinatura
-        comments_enabled: Enable comments
+        comments_enabled: Permitir comentários
         custom_signature_end_date_enabled: Permitir que os autores escolham o fim do período de recolha de assinaturas
         description: Descrição
         document_number_authorization_handler: Autorização para verificar o número do documento nas assinaturas
@@ -42,13 +42,13 @@ pt:
         online_signature_enabled: Assinatura on-line ativada
         only_global_scope_enabled: Só permitir a âmbito global para a criação de iniciativas
         promoting_committee_enabled: Permitir comité promotor
-        signature_type: Signature type
+        signature_type: Tipo de assinatura
         title: Título
         undo_online_signatures_enabled: Permitir que os participantes anulem as suas assinaturas on-line
         validate_sms_code_on_votes: Adicionar etapa de validação do código SMS ao processo de assinatura
       initiatives_type_scope:
-        decidim_scopes_id: Scopes
-        supports_required: Supports required
+        decidim_scopes_id: Âmbitos
+        supports_required: Apoios necessários
       initiatives_vote:
         date_of_birth: Data de nascimento
         document_number: Número do documento
@@ -65,12 +65,12 @@ pt:
             attachment:
               file: O ficheiro é inválido
               needs_to_be_reattached: Necessita de ser recolocado
-              title: Title should not be empty
+              title: O título não deve estar vazio
   activerecord:
     models:
       decidim/initiative:
-        one: Initiative
-        other: Initiatives
+        one: Iniciativa
+        other: Iniciativas
       decidim/initiative_comittee:
         one: Comité
         other: Comités
@@ -81,7 +81,7 @@ pt:
     admin:
       actions:
         new_initiative_type: Novo tipo de iniciativa
-        new_initiative_type_scope: New initiative type scope
+        new_initiative_type_scope: Novo tipo de escopo de iniciativa
       filters:
         initiatives:
           decidim_area_id_eq:
@@ -101,19 +101,19 @@ pt:
           title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Pesquisar %{collection} por título, descrição, ID ou nome do autor.
       initiatives_settings:
         update:
-          error: An error has occurred.
-          success: The initiatives settings have been successfully updated.
+          error: Ocorreu um erro.
+          success: As definições de iniciativas foram atualizadas com sucesso.
       menu:
         attachments: Anexos
         committee_members: Membros do Comité
         information: Informação
-        initiative_type_scopes: Initiative type scopes
+        initiative_type_scopes: Escopos de tipo de iniciativa
         initiatives: Iniciativas
         initiatives_menu:
-          see_initiative: See initiative
-        initiatives_settings: Settings
+          see_initiative: Ver iniciativa
+        initiatives_settings: Definições
         initiatives_submenu:
-          info: About this initiative
+          info: Sobre esta iniciativa
         initiatives_types: Tipos de iniciativa
         moderations: Moderações
       models:
@@ -195,10 +195,10 @@ pt:
             - Siga os passos para criar uma nova iniciativa
           description: Este distintivo é concedido quando lança novas iniciativas, estabelecendo parcerias com outras pessoas para realizá-las.
           description_another: Este participante teve %{score} iniciativas publicadas.
-          description_own: You have got %{score} initiatives published.
+          description_own: Publicaste %{score} iniciativas.
           name: Iniciativas publicadas
           next_level_in: Obtenha mais %{score} iniciativas publicadas para alcançar o próximo nível!
-          unearned_another: This participant has not gotten any initiatives published yet.
+          unearned_another: Este participante ainda não publicou nenhuma iniciativa.
           unearned_own: Ainda não tem iniciativas publicadas.
     help:
       participatory_spaces:
@@ -224,8 +224,8 @@ pt:
           index:
             approve: Aprovar
             confirm_revoke: Tem a certeza?
-            invite_to_committee_help: Share this link to invite other participants to the promoter committee.
-            no_members_yet: There are no members in the promoter committee.
+            invite_to_committee_help: Partilha este link para convidar outros participantes para o comité promotor.
+            no_members_yet: Não há membros no comité promotor.
             revoke: Revogar
             title: Membros do Comité
         content_blocks:
@@ -239,13 +239,13 @@ pt:
           initiatives: Iniciativas
         index:
           initiatives_types:
-            alert_html: "<p>You must create at least one initiative type so participants can start creating initiatives.</p><p> %{link}</p>"
-            button: New initiative type
+            alert_html: "<p>Deves criar pelo menos um tipo de iniciativa para que os participantes possam começar a criar iniciativas.</p><p> %{link}</p>"
+            button: Novo tipo de iniciativa
         initiatives:
           accept:
-            success: The initiative has been successfully accepted.
+            success: A iniciativa foi aceite com sucesso.
           discard:
-            success: The initiative has been successfully discarded.
+            success: A iniciativa foi descartada com sucesso.
           edit:
             accept: Aceitar iniciativa
             confirm: Tem a certeza?
@@ -255,7 +255,7 @@ pt:
             export_votes: Exportar assinaturas
             reject: Rejeitar iniciativa
             send_to_technical_validation: Enviar para validação técnica
-            success: The initiative has been sent to technical validation.
+            success: A iniciativa foi enviada para validação técnica.
             update: Atualizar
           form:
             settings: Definições
@@ -270,11 +270,11 @@ pt:
             new: Novo
             photos: Fotos
           publish:
-            success: The initiative has been successfully published.
+            success: A iniciativa foi publicada com sucesso.
           reject:
-            success: The initiative has been successfully rejected.
+            success: A iniciativa foi rejeitada com sucesso.
           unpublish:
-            success: The initiative has been successfully unpublished.
+            success: A iniciativa foi despublicada com sucesso.
           update:
             error: An error has occurred.
             success: The initiative has been successfully updated.
@@ -543,12 +543,12 @@ pt:
           confirm: Vai enviar esta iniciativa para que um administrador a possa rever e publicar. Assim que esteja publicada não a poderá editar. Tem a certeza?
           edit: Editar
           initiative_data: Initiative data
-          scope: Scope
+          scope: Escopo
           send_to_technical_validation: Enviar para validação técnica
-          send_to_technical_validation_announcement: If everything looks ok, click on "Send to technical validation" for an administrator to review and publish your initiative
-          signature_collection: Signature collection
-          state: State
-          type: Type
+          send_to_technical_validation_announcement: Se tudo estiver correto, clica em "Enviar para validação técnica" para que um administrador reveja e publique a tua iniciativa
+          signature_collection: Coleta de assinaturas
+          state: Estado
+          type: Tipo
         signatures_count:
           one: " assinatura"
           other: " assinaturas"
@@ -573,7 +573,7 @@ pt:
         status_change_body_for: 'A iniciativa %{title} mudou o seu estado para: %{state}'
         status_change_for: A iniciativa %{title} mudou o seu estado
       last_activity:
-        new_initiative: 'New initiative:'
+        new_initiative: 'Nova iniciativa:'
       modal:
         not_authorized:
           authorizations_page: Ver autorizações
@@ -582,8 +582,8 @@ pt:
       pages:
         home:
           highlighted_initiatives:
-            active_spaces: Active initiatives
-            see_all_spaces: See all initiatives
+            active_spaces: Iniciativas ativas
+            see_all_spaces: Ver todas as iniciativas
       show:
         badge_name:
           accepted: Assinaturas suficientes
@@ -597,8 +597,8 @@ pt:
         expired: Expirado
       unavailable_scope: Âmbito não disponível
       update:
-        error: An error has occurred.
-        success: The initiative has been successfully updated.
+        error: Ocorreu um erro.
+        success: A iniciativa foi atualizada com sucesso.
     menu:
       initiatives: Iniciativas
     resources:
