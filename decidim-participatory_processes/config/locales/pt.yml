@@ -415,10 +415,10 @@ pt:
         participatory_process_imports:
           form:
             document_legend: Adicionar um documento
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceitam apenas letras, números e traços, e devem começar com uma letra. Exemplo: %{url}'
         participatory_process_steps:
           form:
-            cta_path_help_html: 'Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. If not set, the button will not be shown. Example: %{url}'
+            cta_path_help_html: 'Usa caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras, e deve começar com uma letra. Se não definido, o botão não será exibido. Exemplo: %{url}'
             cta_text_help: Se não estiver definido, o botão não será mostrado.
         participatory_processes:
           form:
@@ -431,7 +431,7 @@ pt:
             related_processes: Processos relacionados
             scope_type_max_depth_help: Restrinja a abrangência do filtro de âmbito; O filtro irá mostrar desde o tipo de âmbito geral até ao tipo de âmbito selecionado.
             select_an_area: Selecione uma Área
-            select_participatory_process_type: Select a process type
+            select_participatory_process_type: Selecionar um tipo de processo
             select_process_group: Selecione um grupo do processo
             slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceitam apenas letras, números e traços, e devem começar com uma letra. Exemplo: %{url}'
             title: Informação geral
