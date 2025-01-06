@@ -97,26 +97,26 @@ pt:
         duplicate: Duplicar
         edit: Editar
         import_process: Importar
-        moderate: Moderate
+        moderate: Moderar
         new_process: Novo processo
         new_process_group: Novo grupo de processo
         new_process_step: Nova fase
-        new_process_type: New process type
+        new_process_type: Novo tipo de processo
         new_process_user_role: Novo administrador de processo
         preview: Pré-visualização
         publish: Publicar
         resend_invitation: Reenviar convite
-        see_process: See process
+        see_process: Ver processo
         unpublish: Remover publicação
       filters:
         decidim_participatory_process_group_id_eq:
-          label: By process group
+          label: Por grupo de processo
       menu:
         participatory_process_groups: Grupos do processo
         participatory_process_groups_submenu:
           info: Informação
           landing_page: Página de entrada
-        participatory_process_types: Process types
+        participatory_process_types: Tipos de processos
         participatory_processes: Processos
         participatory_processes_submenu:
           attachment_collections: Pastas
@@ -124,8 +124,8 @@ pt:
           attachments: Anexos
           categories: Categorias
           components: Componentes
-          info: About this process
-          landing_page: Landing page
+          info: Sobre este processo
+          landing_page: Página de destino
           moderations: Moderações
           private_users: Participantes privados
           process_admins: Administradores de processo
@@ -133,7 +133,7 @@ pt:
       models:
         participatory_process:
           fields:
-            actions: Actions
+            actions: Ações
             created_at: Criado em
             private: Privado
             published: Publicado
@@ -151,9 +151,9 @@ pt:
           name: Fase do processo participativo
         participatory_process_type:
           fields:
-            created_at: Created at
-            title: Title
-          name: Process type
+            created_at: Criado em
+            title: Título
+          name: Tipo de processo
         participatory_process_user_role:
           fields:
             email: E-mail
@@ -213,17 +213,17 @@ pt:
         default_title: Introdução
         destroy:
           error:
-            active_step: Cannot delete the active phase.
-            last_step: Cannot delete the last phase of a process.
+            active_step: Não é possível eliminar a fase ativa.
+            last_step: Não é possível eliminar a última fase de um processo.
           success: Fase do processo participativo eliminada corretamente.
         edit:
           cta_deprecated:
             body_html: |-
-              Configuring the CTA through the Phase of the participatory process is deprecated with the new design.
-              Now this is done in the <b>Landing Page</b>, using the <b>Hero and image</b> content block.
-              We have left it here for you to migrate the CTAs that you need. The fields <i>Call to action path</i> and
-              <i>Call to action text</i> will be removed in the next version.
-            title: CTA deprecated
+              Configurar o CTA através da Fase do processo participativo está obsoleto com o novo design.
+              Agora isso é feito na <b>Página Inicial</b>, usando o bloco de conteúdo <b>Hero e Imagem</b>.
+              Deixámos isso aqui para que possas migrar os CTAs de que precisas. Os campos <i>Rota do call to action</i> e
+              <i>Texto do call to action</i> serão removidos na próxima versão.
+            title: CTA obsoleto
           title: Editar a fase do processo participativo
           update: Atualizar
         index:
@@ -238,19 +238,19 @@ pt:
           success: Fase participativa atualizada corretamente.
       participatory_process_types:
         create:
-          error: There was a problem creating a new process type.
-          success: Process type successfully created.
+          error: Houve um problema ao criar um novo tipo de processo.
+          success: Tipo de processo criado com sucesso.
         destroy:
-          success: Process type successfully deleted.
+          success: Tipo de processo eliminado com sucesso.
         edit:
-          title: Edit process type
-          update: Update
+          title: Editar tipo de processo
+          update: Atualizar
         new:
-          create: Create
-          title: New process type
+          create: Criar
+          title: Novo tipo de processo
         update:
-          error: There was a problem updating this process type.
-          success: Process type successfully updated.
+          error: Houve um problema ao atualizar este tipo de processo.
+          success: Tipo de processo atualizado com sucesso.
       participatory_process_user_roles:
         create:
           error: Ocorreu um problema ao adicionar um participante para este processo participativo.
@@ -278,7 +278,7 @@ pt:
           private: Privado
           public: Público
           published: Publicado
-          unpublished: Unpublished
+          unpublished: Não publicado
         new:
           create: Criar
           title: Novo processo participativo
@@ -295,7 +295,7 @@ pt:
           success: Grupo de processo participativo criado corretamente.
       titles:
         participatory_process_groups: Grupos do processo participativo
-        participatory_process_types: Participatory process types
+        participatory_process_types: Tipos de processos participativos
         participatory_processes: Processos participativos
       users:
         resend_invitation:
@@ -304,9 +304,9 @@ pt:
     admin_log:
       participatory_process:
         create: "%{user_name} criou o processo participativo %{resource_name}"
-        duplicate: "%{user_name} duplicated the %{resource_name} participatory process"
-        export: "%{user_name} exported the %{resource_name} participatory process"
-        import: "%{user_name} imported the %{resource_name} participatory process"
+        duplicate: "%{user_name} duplicou o tipo de processo participativo %{resource_name}"
+        export: "%{user_name} exportou o tipo de processo participativo %{resource_name}"
+        import: "%{user_name} importou o tipo de processo participativo %{resource_name}"
         publish: "%{user_name} publicou o processo participativo %{resource_name}"
         unpublish: "%{user_name} removeu a publicação do processo participativo %{resource_name}"
         update: "%{user_name} atualizou o processo participativo %{resource_name}"
@@ -319,9 +319,9 @@ pt:
         delete: "%{user_name} eliminou a fase %{resource_name} no processo participativo %{space_name}"
         update: "%{user_name} atualizou a fase %{resource_name} no processo participativo %{space_name}"
       participatory_process_type:
-        create: "%{user_name} created the %{resource_name} participatory process type"
-        delete: "%{user_name} deleted the %{resource_name} participatory process type"
-        update: "%{user_name} updated the %{resource_name} participatory process type"
+        create: "%{user_name} criou o tipo de processo participativo %{resource_name}"
+        delete: "%{user_name} eliminou o tipo de processo participativo %{resource_name}"
+        update: "%{user_name} atualizou o tipo de processo participativo %{resource_name}"
       participatory_process_user_role:
         create: "%{user_name} convidou o participante %{resource_name} para o processo participativo %{space_name}"
         delete: "%{user_name} removeu o participante %{resource_name} do processo participativo %{space_name}"
@@ -352,7 +352,7 @@ pt:
     log:
       value_types:
         participatory_process_type_presenter:
-          not_found: 'The process type was not found on the database (ID: %{id}).'
+          not_found: 'O tipo de processo não foi encontrado na base de dados (ID: %{id}).'
     menu:
       processes: Processos Participativos
     metrics:
@@ -363,13 +363,13 @@ pt:
     participatory_process_groups:
       content_blocks:
         extra_data:
-          developer_group: Promoted by
-          name: Metadata
-          participatory_scope: What is decided
-          participatory_structure: How is it decided
-          target: Who participates
+          developer_group: Promovido por
+          name: Metadados
+          participatory_scope: O que é decidido
+          participatory_structure: Como é decidido
+          target: Quem participa
         html:
-          name: HTML block
+          name: Bloco HTML
         html_1:
           name: Primeiro bloco HTML
         html_2:
@@ -377,9 +377,9 @@ pt:
         html_3:
           name: Terceiro bloco HTML
         main_data:
-          name: Title and description
+          name: Título e descrição
         participatory_processes:
-          active: Active participatory processes
+          active: Processos participativos ativos
           name: Processos participativos
         stats:
           name: Estatísticas
@@ -397,20 +397,20 @@ pt:
       admin:
         content_blocks:
           highlighted_processes:
-            active: Active
-            all: All
+            active: Ativo
+            all: Todos
             max_results: Quantidade máxima de elementos a mostrar
-            selection_criteria: Selection criteria
+            selection_criteria: Critérios de seleção
         new_import:
           accepted_types:
             json: JSON
         participatory_process_copies:
           form:
-            slug_help_html: 'URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}'
+            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceitam apenas letras, números e traços, e devem começar com uma letra. Exemplo: %{url}'
         participatory_process_groups:
           form:
             metadata: Meta dados
-            title: About this process
+            title: Sobre este processo
             visibility: Visibilidade
         participatory_process_imports:
           form:
