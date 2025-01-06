@@ -15,12 +15,12 @@ pt:
       dummy:
         settings:
           global:
-            guided: Guided input
-            guided_help: Help text
-            guided_readonly: Disabled input
-            guided_rich: Guided rich input
-            guided_rich_help_html: HTML <strong>help</strong> text
-            guided_rich_readonly_html: HTML <strong>help</strong> text for disabled input
+            guided: Entrada guiada
+            guided_help: Texto de ajuda
+            guided_readonly: Entrada desativada
+            guided_rich: Entrada rica guiada
+            guided_rich_help_html: Texto de <strong>ajuda</strong> em HTML
+            guided_rich_readonly_html: Texto de <strong>ajuda</strong> em HTML para entrada desativada
             readonly_attribute: Atributo só de leitura
             test: Teste A
             test_choices:
@@ -53,7 +53,7 @@ pt:
           description_own: Criou %{score} testes.
           name: Testes
           next_level_in: Crie mais %{score} testes para alcançar o próximo nível!
-          unearned_another: This participant has not created any tests yet.
+          unearned_another: Este participante ainda não criou nenhum teste.
           unearned_own: Ainda não criou qualquer teste.
     resource_links:
       test_link:
