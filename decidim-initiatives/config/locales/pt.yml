@@ -6,13 +6,13 @@ pt:
         answer: Resposta
         answer_url: URL da resposta
         area_id: Área
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         decidim_user_group_id: Autor
         description: Descrição
         hashtag: Hashtag
         offline_votes: Assinaturas presenciais
         offline_votes_for_scope: Assinaturas presenciais para %{scope_name}
-        scope_id: Âmbito
+        scope_id: Escopo
         signature_end_date: Fim do período de coleta de assinaturas
         signature_start_date: Início do período de coleta de assinaturas
         signature_type: Tipo de coleta de assinatura
@@ -31,7 +31,7 @@ pt:
         area_enabled: Permitir que os autores escolham a área da sua iniciativa
         attachments_enabled: Permitir anexos
         banner_image: Imagem da faixa
-        child_scope_threshold_enabled: Activar âmbito descendente de assinaturas
+        child_scope_threshold_enabled: Habilitar assinaturas de escopo filho
         collect_user_extra_fields: Coletar dados pessoais do participante na assinatura
         comments_enabled: Permitir comentários
         custom_signature_end_date_enabled: Permitir que os autores escolham o fim do período de recolha de assinaturas
@@ -40,14 +40,14 @@ pt:
         extra_fields_legal_information: Informação legal sobre a coleta de dados pessoais
         minimum_committee_members: Mínimo de membros do comité
         online_signature_enabled: Assinatura on-line ativada
-        only_global_scope_enabled: Só permitir a âmbito global para a criação de iniciativas
+        only_global_scope_enabled: Permitir apenas criação de iniciativas de escopo global
         promoting_committee_enabled: Permitir comité promotor
         signature_type: Tipo de assinatura
         title: Título
         undo_online_signatures_enabled: Permitir que os participantes anulem as suas assinaturas on-line
         validate_sms_code_on_votes: Adicionar etapa de validação do código SMS ao processo de assinatura
       initiatives_type_scope:
-        decidim_scopes_id: Âmbitos
+        decidim_scopes_id: Escopos
         supports_required: Apoios necessários
       initiatives_vote:
         date_of_birth: Data de nascimento
@@ -127,9 +127,9 @@ pt:
             title: Iniciativas
         initiatives_type_scope:
           fields:
-            scope: Âmbito
+            scope: Escopo
             supports_required: Assinaturas necessárias
-          name: Âmbito do tipo de iniciativa
+          name: Escopo do tipo de iniciativa
         initiatives_types:
           fields:
             created_at: Criado em
@@ -140,14 +140,14 @@ pt:
             date_of_birth: Data de nascimento
             document_number: Número do documento
             hash: Hash
-            initiative_end_date: Data final
+            initiative_end_date: Data de término
             initiative_id: ID da iniciativa
             initiative_signatures_count: Número de assinaturas
             initiative_start_date: Data de início
             initiative_title: Título da iniciativa
             name_and_surname: Nome e apelido
             postal_code: Código postal
-            scope: Âmbito
+            scope: Escopo
             time_and_date: Hora e data
             timestamp: Data e hora
       titles:
@@ -162,10 +162,10 @@ pt:
             email_subject: A iniciativa "%{resource_title}" foi enviada para validação técnica.
             notification_title: A iniciativa "%{resource_title}" foi enviada para validação técnica. Consulte-a no <a href="%{admin_initiative_path}">painel de administrador</a>
         initiative_extended:
-          email_intro: A data final das assinaturas da iniciativa %{resource_title} foi estendida!
+          email_intro: A data de término das assinaturas para a iniciativa %{resource_title} foi estendida!
           email_outro: Recebeu esta notificação porque segue %{resource_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
-          email_subject: Data final das assinaturas da iniciativa foi estendida!
-          notification_title: A data final das assinaturas da iniciativa <a href="%{resource_path}">%{resource_title}</a> foi estendida.
+          email_subject: Data de término das assinaturas da iniciativa estendida!
+          notification_title: A data de término das assinaturas para a iniciativa <a href="%{resource_path}">%{resource_title}</a> foi estendida.
         initiative_sent_to_technical_validation:
           email_intro: A iniciativa "%{resource_title}" foi enviada para validação técnica. Consulte-a no <a href="%{admin_initiative_url}">painel de administrador</a>
           email_outro: Recebeu esta notificação porque é administrador da plataforma.
@@ -295,11 +295,11 @@ pt:
           destroy:
             success: O escopo foi removido com sucesso.
           edit:
-            title: Editar âmbito do tipo de iniciativa
+            title: Editar o escopo do tipo de iniciativa
             update: Atualizar
           new:
             create: Criar
-            title: Criar âmbito do tipo de iniciativa
+            title: Criar escopo do tipo de iniciativa
           update:
             error: Ocorreu um erro.
             success: O escopo foi atualizado com sucesso.
@@ -317,7 +317,7 @@ pt:
             only_global_scope_enabled_help_html: Marca esta opção se habilitaste a "Assinatura de subescopo" e configuraste o escopo global como o teu escopo pai. Ao habilitar isto, a seleção do tipo de iniciativa será ignorada no assistente de criação de iniciativas. Para mais informações sobre como esta configuração funciona, consulta este <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
             options: Opções
           initiative_type_scopes:
-            title: Âmbitos para o tipo de iniciativa
+            title: Escopos para o tipo de iniciativa
           new:
             create: Criar
             title: Novo tipo de iniciativa
@@ -370,10 +370,10 @@ pt:
         fill_data:
           back: Retroceder
           continue: Continuar
-          fill_data_help: "<ul><li>Reveja o conteúdo da sua iniciativa. O título é fácil de entender? O objectivo da sua iniciativa é claro?</li> <li>Tem que escolher o tipo de assinatura. Presencialmente, on-line, ou uma combinação de ambos</li> <li>Qual é o âmbito geográfico da sua iniciativa?</li> </ul>"
+          fill_data_help: "<ul> <li>Revise o conteúdo da sua iniciativa. O título é fácil de entender? O objetivo da iniciativa está claro?</li> <li>Você precisa escolher o tipo de assinatura. Presencial, online ou uma combinação de ambos.</li> <li>Qual é o escopo geográfico da iniciativa?</li> </ul>"
           more_information: "(Mais informações)"
           select_area: Selecionar uma área
-          select_scope: Selecione um âmbito
+          select_scope: Seleciona um escopo
         finish:
           back: Retroceder
           back_to_initiatives: Retroceder para as iniciativas
@@ -492,7 +492,7 @@ pt:
           area: Área
           author: Autor
           myself: As minhas iniciativas
-          scope: Âmbito
+          scope: Escopo
           state: Estado
           type: Tipo
         index_header:
@@ -595,7 +595,7 @@ pt:
       states:
         accepted: Aceite
         expired: Expirado
-      unavailable_scope: Âmbito não disponível
+      unavailable_scope: Escopo indisponível
       update:
         error: Ocorreu um erro.
         success: A iniciativa foi atualizada com sucesso.
