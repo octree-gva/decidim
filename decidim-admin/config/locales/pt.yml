@@ -111,14 +111,14 @@ pt:
         name: Nome
         organization: Organização
         parent_id: Pai
-        scope_type: Tipo de âmbito
-        scope_type_id: Tipo de âmbito
+        scope_type: Tipo de escopo
+        scope_type_id: Tipo de escopo
       scope_type:
         name: Nome
         organization: Organização
         plural: Plural
       settings:
-        scope_id: Âmbito
+        scope_id: Escopo
       static_page:
         allow_public_access: Permitir acesso sem autenticação
         changed_notably: Ocorreram mudanças notáveis.
@@ -455,7 +455,7 @@ pt:
             'true': Publicação removida
         remove_all: Remover tudo
         scope_id_eq:
-          label: Âmbito
+          label: Escopo
         search_label: Pesquisa
         search_placeholder:
           name_or_nickname_or_email_cont: Pesquisar %{collection} por e-mail, nome ou alcunha.
@@ -586,8 +586,8 @@ pt:
         newsletters: Boletins informativos
         participants: Participantes
         reported_users: Participantes reportados
-        scope_types: Tipos de âmbito
-        scopes: Âmbitos
+        scope_types: Tipos de escopo
+        scopes: Escopo
         see_site: Ver site
         settings: Configurações
         static_page_topics: Tópicos
@@ -638,7 +638,7 @@ pt:
         scope:
           fields:
             name: Nome
-            scope_type: Tipo de âmbito
+            scope_type: Tipo de escopo
         scope_type:
           fields:
             name: Nome
@@ -748,7 +748,7 @@ pt:
           confirm_delete: Tem certeza de que deseja eliminar este boletim informativo?
           followers: 'seguidores '
           has_been_sent_to: 'Foi enviado para: '
-          no_scopes: Sem âmbitos
+          no_scopes: Sem escopos
           not_sent: Não enviado
           participants: 'participantes '
           segmented_to: 'Segmentado para %{subject}: '
@@ -767,7 +767,7 @@ pt:
           participants_help: Envia um boletim informativo para todos os utilizadores confirmados que tenham participado em qualquer um dos espaços participativos selecionados na lista.
           recipients_count: Este boletim informativo será enviado para <strong id='recipients_count'>%{count}</strong> utilizadores.
           scopes_help: Envia um boletim informativo aos utilizadores que tenham qualquer um dos âmbitos selecionados ativados nas definições "Os meus interesses" das suas contas.
-          select_scopes: Filtro para os utilizadores que ativaram qualquer âmbito selecionado nas definições "Os meus interesses" das suas contas.
+          select_scopes: Filtrar utilizadores que têm ativado algum escopo selecionado nas configurações de "Os Meus Interesses" da conta.
           select_spaces: Selecione os espaços para segmentar o boletim informativo
           select_users: Selecione os utilizadores para os quais pretende enviar o boletim informativo
           title: Selecione os destinatários
@@ -923,38 +923,38 @@ pt:
       resources:
         index:
           headers:
-            scope: Âmbito
+            scope: Escopo
       scope_types:
         create:
-          error: Ocorreu um problema ao criar um novo tipo de âmbito.
-          success: Tipo de âmbito criado com sucesso.
+          error: Houve um problema ao criar um novo tipo de escopo.
+          success: Tipo de escopo criado com sucesso.
         destroy:
-          success: Tipo de âmbito destruído com sucesso
+          success: Tipo de escopo removido com sucesso.
         edit:
-          title: Editar tipo de âmbito
+          title: Editar tipo de escopo
           update: Atualizar
         new:
-          create: Criar tipo de âmbito
-          title: Novo âmbito
+          create: Criar tipo de escopo
+          title: Novo tipo de escopo
         update:
-          error: Ocorreu um problema ao atualizar este tipo de âmbito.
-          success: Tipo de âmbito atualizado com sucesso
+          error: Houve um problema ao atualizar este tipo de escopo.
+          success: Tipo de escopo atualizado com sucesso
       scopes:
         create:
-          error: Ocorreu um problema ao criar um novo âmbito.
-          success: Âmbito criado com sucesso.
+          error: Houve um problema ao criar um novo escopo.
+          success: Escopo criado com sucesso.
         destroy:
           success: Escopo eliminado com sucesso.
         edit:
-          title: Editar o âmbito
+          title: Editar escopo
           update: Atualizar
         new:
-          create: Criar âmbito
-          title: Novo âmbito
-        no_scopes: Nenhum âmbito neste nível.
+          create: Criar escopo
+          title: Novo escopo
+        no_scopes: Sem escopos neste nível.
         update:
-          error: Ocorreu um problema ao atualizar este âmbito.
-          success: Âmbito atualizado com sucesso
+          error: Houve um problema ao atualizar este escopo.
+          success: Escopo atualizado com sucesso
       share_tokens:
         actions:
           confirm_destroy: Tem a certeza que quer eliminar este identificador?
@@ -1036,8 +1036,8 @@ pt:
         pages: Páginas
         panel: Administrador
         participants: Participantes
-        scope_types: Tipos de âmbito
-        scopes: Âmbitos
+        scope_types: Tipos de escopo
+        scopes: Escopos
         statistics: Atividade
         user_groups: Grupos
         users: Administradores
