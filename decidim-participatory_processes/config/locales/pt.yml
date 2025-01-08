@@ -13,7 +13,7 @@ pt:
         developer_group: Grupo promotor
         document: Documento
         domain: Domínio
-        end_date: Data final
+        end_date: Data de término
         hashtag: Hashtag
         hero_image: Imagem inicial
         import_attachments: Importar anexos
@@ -21,7 +21,7 @@ pt:
         import_components: Importar funcionalidades
         import_steps: Importar etapas
         local_area: Área de organização
-        meta_scope: Metadados do âmbito
+        meta_scope: Metadados do escopo
         participatory_process_group_id: Grupo de processos
         participatory_process_type_id: Tipos de processos
         participatory_scope: O que é decidido
@@ -30,9 +30,9 @@ pt:
         promoted: Destacado
         published_at: Publicado em
         related_process_ids: Processos relacionados
-        scope_id: Âmbito
-        scope_type_max_depth_id: Abrangência do filtro de âmbito
-        scopes_enabled: Âmbitos ativados
+        scope_id: Escopo
+        scope_type_max_depth_id: Profundidade do filtro de escopo
+        scopes_enabled: Escopos ativados
         short_description: Pequena descrição
         slug: Campo de dados dinâmicos de URL
         start_date: Data de início
@@ -47,7 +47,7 @@ pt:
         hashtag: Hashtag
         hero_image: Imagem
         local_area: Área de organização
-        meta_scope: Meta dados do âmbito
+        meta_scope: Metadados do escopo
         participatory_process_ids: Processos relacionados
         participatory_scope: O que é decidido
         participatory_structure: Como é decidido
@@ -57,7 +57,7 @@ pt:
         cta_path: Caminho de Chamada para Ação
         cta_text: Texto de Call to Action
         description: Descrição
-        end_date: Data final
+        end_date: Data de término
         short_description: Pequena descrição
         start_date: Data de início
         title: Título
@@ -145,7 +145,7 @@ pt:
           name: Grupo de processo
         participatory_process_step:
           fields:
-            end_date: Data final
+            end_date: Data de término
             start_date: Data de início
             title: Título
           name: Fase do processo participativo
@@ -384,7 +384,7 @@ pt:
         stats:
           name: Estatísticas
         title:
-          meta_scope: Âmbito
+          meta_scope: Escopo
           participatory_processes:
             one: 1 processo
             other: "%{count} processos"
@@ -429,7 +429,7 @@ pt:
             metadata: Metadados
             other: Outros
             related_processes: Processos relacionados
-            scope_type_max_depth_help: Restrinja a abrangência do filtro de âmbito; O filtro irá mostrar desde o tipo de âmbito geral até ao tipo de âmbito selecionado.
+            scope_type_max_depth_help: Restringir a profundidade do filtro de escopo; O filtro mostrará do geral ao tipo de escopo selecionado.
             select_an_area: Selecione uma Área
             select_participatory_process_type: Selecionar um tipo de processo
             select_process_group: Selecione um grupo do processo
