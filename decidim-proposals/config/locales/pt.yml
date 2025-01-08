@@ -6,9 +6,9 @@ pt:
         address: Endereço
         body: Corpo
         category_id: Categoria
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         has_address: Tem endereço
-        scope_id: Âmbito
+        scope_id: Escopo
         state: Estado
         title: Título
         user_group_id: Criar rascunho colaborativo como
@@ -20,9 +20,9 @@ pt:
         body: Corpo
         category_id: Categoria
         decidim_proposals_proposal_state_id: Estado
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         has_address: Tem endereço
-        scope_id: Âmbito
+        scope_id: Escopo
         state: Estado
         suggested_hashtags: Hashtags sugeridos
         title: Título
@@ -84,7 +84,7 @@ pt:
               voted: Receberam votos ou apoios
     models:
       decidim/proposals/admin/update_proposal_category_event: Categoria da proposta modificada
-      decidim/proposals/admin/update_proposal_scope_event: Âmbito da proposta modificado
+      decidim/proposals/admin/update_proposal_scope_event: Escopo da proposta alterado
       decidim/proposals/creation_enabled_event: Criação de proposta ativada
       decidim/proposals/endorsing_enabled_event: Endossamento de proposta ativado
       decidim/proposals/proposal_mentioned_event: Proposta mencionada
@@ -118,7 +118,7 @@ pt:
           proposal_state_id_eq:
             label: Estado
           scope_id_eq:
-            label: Âmbito
+            label: Escopo
           state_eq:
             label: Estado
             values:
@@ -191,8 +191,8 @@ pt:
             proposal_wizard_step_1_help_text: Texto de ajuda do passo "Criar" do Assistente de Propostas
             proposal_wizard_step_2_help_text: Texto de ajuda do passo "Publicar" do assistente de propostas
             resources_permissions_enabled: As permissões de ações podem ser definidas para cada proposta
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos activados
             threshold_per_proposal: Limiar por proposta
             vote_limit: Limite de votos por participante
           step:
@@ -314,10 +314,10 @@ pt:
           email_subject: A categoria da proposta %{resource_title} foi atualizada
           notification_title: A categoria da proposta <a href="%{resource_path}">%{resource_title}</a> foi atualizada por um administrador.
         proposal_update_scope:
-          email_intro: 'Um administrador atualizou o âmbito da sua proposta "%{resource_title}". Consulte-o nesta página:'
+          email_intro: 'Um administrador atualizou o escopo da sua proposta "%{resource_title}", veja mais nesta página:'
           email_outro: Recebeste esta notificação porque és um autor de "%{resource_title}".
-          email_subject: O âmbito da proposta %{resource_title} foi atualizado
-          notification_title: O âmbito da proposta <a href="%{resource_path}">%{resource_title}</a> foi atualizado por um administrador.
+          email_subject: O escopo da proposta %{resource_title} foi atualizado
+          notification_title: O escopo da proposta <a href="%{resource_path}">%{resource_title}</a> foi atualizado por um administrador.
         voting_enabled:
           email_intro: 'Podes votar nas propostas em %{participatory_space_title}! Começa a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
@@ -408,12 +408,12 @@ pt:
               <li><b>answer/en:</b> Resposta em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
               </ul>
             proposals: |
-              O ficheiro deve conter os seguintes nomes de colunas no caso de ficheiros CSV ou Excel, ou nomes de chaves no caso de ficheiros JSON:
+              O arquivo deve conter os seguintes nomes de colunas no caso de arquivos CSV ou Excel, ou nomes de chaves no caso de arquivos JSON:
               <ul>
-              <li><b>title/en:</b> Título em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
-              <li><b>body/en:</b> Corpo em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
-              <li><b>scope/id:</b> ID do Âmbito</li>
-              <li><b>category/id:</b> ID da Categoria</li>
+              <li><b>title/en:</b> Título em inglês. Isto dependerá da configuração de idioma da sua plataforma.</li>
+              <li><b>body/en:</b> Corpo em inglês. Isto dependerá da configuração de idioma da sua plataforma.</li>
+              <li><b>scope/id:</b> ID para o Escopo</li>
+              <li><b>category/id:</b> ID para a Categoria</li>
               </ul>
           label:
             answers: Importar respostas de um ficheiro
@@ -518,7 +518,7 @@ pt:
             assign_to_valuator_button: Atribuir
             cancel: Cancelar
             change_category: Modificar categoria
-            change_scope: Modificar âmbito
+            change_scope: Alterar escopo
             merge: Junte-se a um novo
             merge_button: Fundir
             publish: Publicar
@@ -565,10 +565,10 @@ pt:
             select_a_proposal: Por favor, seleciona uma proposta.
             success: 'Propostas atualizadas corretamente para a categoria %{subject_name}: %{proposals}.'
           update_scope:
-            invalid: 'Estas propostas já possuíam o âmbito %{subject_name}: %{proposals}.'
+            invalid: 'Essas propostas já possuíam o escopo %{subject_name}: %{proposals}.'
             select_a_proposal: Por favor, seleciona uma proposta.
             select_a_scope: Por favor, seleciona um escopo.
-            success: 'Propostas atualizadas corretamente para o âmbito %{subject_name}: %{proposals}.'
+            success: 'Propostas atualizadas com sucesso para o escopo %{subject_name}: %{proposals}.'
         proposals_imports:
           create:
             invalid: Houve um problema ao importar as propostas.
@@ -661,7 +661,7 @@ pt:
           open: Abrir
           published: Publicados
           related_to: Relacionado com
-          scope: Âmbito
+          scope: Escopo
           search: Pesquisar
           state: Estado
           withdrawn: Retirado
@@ -747,7 +747,7 @@ pt:
             official_proposal: Proposta oficial
             published_answer: Resposta publicada
             published_at: Publicado em
-            scope: Âmbito
+            scope: Escopo
             state: Estado
             title: Título
             valuator: Avaliador
@@ -793,7 +793,7 @@ pt:
           my_proposals: As minhas propostas
           origin: Origem
           related_to: Relacionado com
-          scope: Âmbito
+          scope: Escopo
           search: Pesquisar
           state: Estado
           type: Tipo
