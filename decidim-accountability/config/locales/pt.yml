@@ -5,9 +5,9 @@ pt:
       result:
         decidim_accountability_status_id: Estatuto
         decidim_category_id: Categoria
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         description: Descrição
-        end_date: Data final
+        end_date: Data de término
         meetings_ids: Reuniões associadas
         progress: Progresso
         project_ids: Projetos incluídos
@@ -61,9 +61,9 @@ pt:
               <p>Recomendamos que sigas estes passos:</p>
               <ol>
               <li><a href='%{link_new_status}' target='_blank'>Cria os Estatutos para os Resultados</a> que desejas adicionar</li>
-              <li><a href='%{link_new_result}' target='_blank'>Cria pelo menos um Resultado manualmente</a> através deste painel de administração antes de usar Importar, para ter uma melhor compreensão do formato e do que será necessário preencher.</li>
+              <li><a href='%{link_new_result}' target='_blank'>Cria pelo menos um Resultado manualmente</a> através deste painel de administração antes de usar a Importação, para teres uma melhor compreensão do formato e do que precisarás preencher.</li>
               <li>%{link_export_csv}</li>
-              <li>Faz as alterações localmente. Só podes alterar as seguintes colunas do CSV:
+              <li>Faz as alterações localmente. Podes alterar apenas as seguintes colunas do CSV:
                 <ul>
                 <li><b>category/id:</b> ID para a Categoria</li>
                 <li><b>scope/id:</b> ID para o Escopo</li>
@@ -74,7 +74,7 @@ pt:
                 <li><b>end_date:</b> data de término da execução do resultado (formato YYYY-MM-DD)</li>
                 <li><b>status/id:</b> ID do Estatuto para este resultado</li>
                 <li><b>progress:</b> Percentagem (de 0 a 100) da execução</li>
-                <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separados por vírgula). Converte-se automaticamente para <span class='attribute-name'>proposal_url</span></li>
+                <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separadas por vírgulas). Isto é automaticamente convertido em <span class='attribute-name'>proposal_url</span></li>
                 </ul>
               </li>
               </ol>
@@ -198,10 +198,10 @@ pt:
           fields:
             category: Categoria
             created_at: Criado em
-            end_date: Data final
+            end_date: Data de término
             id: ID
             progress: Progresso
-            scope: Âmbito
+            scope: Escopo
             start_date: Data de início
             status: Estatuto
             title: Título
@@ -245,7 +245,7 @@ pt:
           category_id_eq:
             label: Categoria
           scope_id_eq:
-            label: Âmbito
+            label: Escopo
           status_id_eq:
             label: Estatuto
     components:
@@ -259,8 +259,8 @@ pt:
             comments_max_length: Comprimento máximo dos comentários (Deixar 0 para o valor predefinido)
             display_progress_enabled: Mostrar progresso
             intro: Introdução
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos ativados
           step:
             comments_blocked: Comentários bloqueados
     events:
