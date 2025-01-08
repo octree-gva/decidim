@@ -11,7 +11,7 @@ pt:
         end_time: Termina em
         information_updates: Atualizações de informações
         instructions: Instruções para participar
-        scope_id: Âmbito
+        scope_id: Escopo
         start_time: Começa em
         title: Título
         user_group_id: Criar debate como
@@ -38,8 +38,8 @@ pt:
             announcement: Anúncio
             comments_enabled: Comentários ativados
             comments_max_length: Comprimento máximo dos comentários (Deixar 0 para o valor predefinido)
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos activados
           step:
             announcement: Anúncio
             comments_blocked: Comentários bloqueados
@@ -160,7 +160,7 @@ pt:
         debate:
           fields:
             end: Fim
-            end_time: Data final
+            end_time: Data de término
             official_debate: Debate oficial
             start: Início
             start_time: Data de início
