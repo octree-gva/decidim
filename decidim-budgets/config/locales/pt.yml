@@ -3,7 +3,7 @@ pt:
   activemodel:
     attributes:
       budget:
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         description: Descrição
         title: Título
         total_budget: Orçamento total
@@ -11,7 +11,7 @@ pt:
       project:
         budget_amount: Valor do orçamento
         decidim_category_id: Categoria
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         description: Descrição
         proposal_ids: Propostas relacionadas
         proposals: Propostas
@@ -34,7 +34,7 @@ pt:
           category_id_eq:
             label: Categoria
           scope_id_eq:
-            label: Âmbito
+            label: Escopo
           selected_at_null:
             label: Seleccionado
             values:
@@ -254,7 +254,7 @@ pt:
           title: Ainda não votaste
         filters:
           category: Categoria
-          scope: Âmbito
+          scope: Escopo
           search: Pesquisar
           status: Estado
           status_values:
@@ -334,8 +334,8 @@ pt:
             more_information_modal: Mais informações modal
             projects_per_page: Projetos por página
             resources_permissions_enabled: Permissões de acções podem ser definidas para cada projecto
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopo activados
             title: Título
             total_budget: Orçamento total
             vote_minimum_budget_projects_number: Número mínimo de projetos a votar
