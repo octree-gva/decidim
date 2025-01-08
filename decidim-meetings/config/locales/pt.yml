@@ -16,7 +16,7 @@ pt:
         available_slots: Slots disponíveis para esta reunião
         customize_registration_email: Personalizar o e-mail de registo
         decidim_category_id: Categoria
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         decidim_user_group_id: Grupo de utilizadores
         description: Descrição
         end_time: Hora de término
@@ -110,7 +110,7 @@ pt:
               'false': Passado
               'true': Seguinte
           scope_id_eq:
-            label: Âmbito
+            label: Escopo
           with_any_origin:
             label: Origem
             values:
@@ -160,8 +160,8 @@ pt:
             maps_enabled: Mapas activados
             registration_code_enabled: Código de registo activado
             resources_permissions_enabled: As permissões de ações podem ser definidas para cada reunião
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos ativados
             terms_and_conditions_url_for_meeting_creators: URL dos termos e condições para criadores de reuniões
           step:
             announcement: Anúncio
@@ -270,7 +270,7 @@ pt:
           form:
             add_agenda_item: Adicionar item da agenda
             agenda_items: Itens da agenda
-            end_date: Data final
+            end_date: Data de término
             start_date: Data de início
           new:
             create: Criar
@@ -590,7 +590,7 @@ pt:
         meeting:
           fields:
             closed: Encerradas
-            end_time: Data final
+            end_time: Data de término
             id: ID
             map: Mapa
             official_meeting: Reunião oficial
