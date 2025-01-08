@@ -9,9 +9,9 @@ pt:
         copy_categories: Copiar categorias
         copy_components: Copiar funcionalidades
         copy_features: Copiar características
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         description: Descrição
-        end_date: Data final
+        end_date: Data de término
         hashtag: Hashtag
         hero_image: Imagem inicial
         location: Localização
@@ -22,7 +22,7 @@ pt:
         published_at: Publicado em
         registration_terms: Termos de registo
         registrations_enabled: Registos ativados
-        scope_id: Âmbito
+        scope_id: Escopo
         scopes_enabled: Âmbitos ativados
         short_description: Breve descrição
         show_statistics: Mostrar estatísticas
