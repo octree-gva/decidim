@@ -248,11 +248,11 @@ pt:
         delete: "%{user_name} removeu o participante %{resource_name} como participante privado"
       scope:
         create: "%{user_name} criou o âmbito %{resource_name}"
-        create_with_parent: "%{user_name} criou o âmbito %{resource_name} dentro do âmbito %{parent_scope}"
-        delete: "%{user_name} eliminou o âmbito %{resource_name}"
-        delete_with_parent: "%{user_name} eliminou o âmbito %{resource_name} dentro do âmbito %{parent_scope}"
-        update: "%{user_name} atualizou o âmbito %{resource_name}"
-        update_with_parent: "%{user_name} atualizou o âmbito %{resource_name} dentro do âmbito %{parent_scope}"
+        create_with_parent: "%{user_name} criou o escopo %{resource_name} dentro do escopo %{parent_scope}"
+        delete: "%{user_name} excluiu o escopo %{resource_name}"
+        delete_with_parent: "%{user_name} excluiu o escopo %{resource_name} dentro do escopo %{parent_scope}"
+        update: "%{user_name} atualizou o escopo %{resource_name}"
+        update_with_parent: "%{user_name} atualizou o escopo %{resource_name} dentro do escopo %{parent_scope}"
       scope_type:
         create: "%{user_name} criou o tipo de escopo %{resource_name}"
         delete: "%{user_name} eliminou o tipo de escopo %{resource_name}"
@@ -392,10 +392,10 @@ pt:
         explanation: Seja verificado a introduzir um número de passaporte começando com "X".
         fields:
           allowed_postal_codes: Códigos postais permitidos (separados por vírgula)
-          allowed_scope_id: Âmbito permitido
+          allowed_scope_id: Escopo permitido
           document_number: Número do documento
           postal_code: Código postal
-          scope_id: Âmbito
+          scope_id: Escopo
         name: Exemplo de autorização
       dummy_authorization_workflow:
         name: Fluxo de trabalho de autorização falsa
@@ -487,8 +487,8 @@ pt:
             dummy_global_translatable_text: Texto Traduzível Fictício
             enable_pads_creation: Ativar criação de blocos
             resources_permissions_enabled: Permissões de recursos ativadas
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos ativados
           step:
             amendment_creation_enabled: Criação de modificação ativada
             amendment_promotion_enabled: Promoção de modificação ativada
@@ -592,7 +592,7 @@ pt:
           error: Houve um problema ao criar a tua conta.
         new:
           already_have_an_account?: Já tem uma conta?
-          log_in: Entrar
+          log_in: Iniciar sessão
           newsletter: Receber um boletim informativo ocasional com informações relevantes
           newsletter_title: Permissão de contacto
           sign_up: Registra-te
@@ -1083,9 +1083,9 @@ pt:
         area_type_presenter:
           not_found: 'O tipo de área não foi encontrado na base de dados (ID: %{id})'
         scope_presenter:
-          not_found: 'O âmbito não foi encontrado na base de dados (ID: %{id})'
+          not_found: 'O escopo não foi encontrado na base de dados (ID: %{id})'
         scope_type_presenter:
-          not_found: 'O tipo de âmbito não foi encontrado na base de dados (ID: %{id})'
+          not_found: 'O tipo de escopo não foi encontrado na base de dados (ID: %{id})'
     machine_translations:
       automatic: tradução automática em %{locale_name}
     managed_users:
@@ -1427,17 +1427,17 @@ pt:
       create:
         error: Ocorreu um problema durante a ação de endossamento.
     scopes:
-      global: Escopo geral
+      global: Escopo global
       picker:
         cancel: Cancelar
-        change: Alterar o âmbito seleccionado
+        change: Alterar o escopo selecionado
         choose: Selecionar
-        currently_selected: Âmbito actualmente seleccionado
+        currently_selected: Escopo selecionado atualmente
         title: Selecionar %{field}
-      prompt: Selecionar um âmbito
-      scopes: Âmbitos
+      prompt: Seleciona um escopo
+      scopes: Escopos
       scopes_picker_input:
-        select_scope: 'Seleccione um âmbito (actualmente: %{current})'
+        select_scope: 'Seleciona um escopo (atualmente: %{current})'
     search:
       name: Pesquisar
       results: Resultados da pesquisa
@@ -1544,7 +1544,7 @@ pt:
       users_count: Participantes
     tags:
       filter_results_for_category: 'Resultados do filtro para a categoria: %{resource}'
-      filter_results_for_scope: 'Resultados do filtro para o âmbito: %{resource}'
+      filter_results_for_scope: 'Filtrar resultados pelo escopo: %{resource}'
     translation_bar:
       help_text: "<strong>Aviso:</strong> O conteúdo pode ser traduzido automaticamente e não ser 100% fidedigno."
       show_original: Mostrar texto original
@@ -1739,7 +1739,7 @@ pt:
         didn_t_receive_confirmation_instructions: Não recebeste as instruções de confirmação?
         didn_t_receive_unlock_instructions: Não recebeste as instruções de desbloqueio?
         forgot_your_password: Esqueceu a sua palavra-passe?
-        log_in: Entrar
+        log_in: Iniciar sessão
         log_in_with_provider: Iniciar sessão com %{provider}
         sign_up: Criar uma conta
       minimum_password_length:
@@ -1937,7 +1937,7 @@ pt:
         decidim_logo: Logótipo do Decidim
         decidim_title: Decidim
         download_open_data: Transferir ficheiros Open Data
-        log_in: Entrar
+        log_in: Iniciar sessão
         made_with_open_source: Site criado com <a target="_blank" href="https://github.com/decidim/decidim"> software livre</a>.
         resources: Recursos
         sign_up: Criar uma conta
