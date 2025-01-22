@@ -1,1 +1,388 @@
+---
 sw:
+  activemodel:
+    attributes:
+      budget:
+        decidim_scope_id: Upeo
+        description: Maelezo
+        title: Kichwa
+        total_budget: Jumla ya bajeti
+        weight: Nafasi ya agizo
+      project:
+        budget_amount: Kiasi cha bajeti
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        description: Maelezo
+        proposal_ids: Mapendekezo yanayohusiana
+        proposals: Mapendekezo
+        selected: Imechaguliwa kwa utekelezaji
+        title: Kichwa
+      proposals_import:
+        scope_id: Upeo
+  activerecord:
+    models:
+      decidim/budgets/budget:
+        one: Bajeti
+        other: Bajeti
+      decidim/budgets/project:
+        one: Mradi
+        other: Miradi
+  decidim:
+    admin:
+      filters:
+        projects:
+          category_id_eq:
+            label: Kategoria
+          scope_id_eq:
+            label: Upeo
+          selected_at_null:
+            label: Imechaguliwa
+            values:
+              'false': Imechaguliwa kwa utekelezaji
+              'true': Haijachaguliwa kwa utekelezaji
+    budgets:
+      actions:
+        attachment_collections: Folda
+        attachments: Viambatisho
+        confirm_destroy: Je, una uhakika unataka kufuta mradi huu?
+        destroy: Futa
+        edit: Hariri
+        edit_projects: Dhibiti miradi
+        import: Mapendekezo ya kuagiza kwa miradi
+        new_budget: Bajeti mpya
+        new_project: Mradi mpya
+        preview: Hakiki
+        send_voting_reminders: Tuma vikumbusho vya kupiga kura
+        title: Vitendo
+      admin:
+        budgets:
+          create:
+            invalid: Kulikuwa na tatizo katika kuunda bajeti hii.
+            success: Bajeti imeundwa.
+          destroy:
+            invalid: Kulikuwa na tatizo katika kufuta bajeti hii.
+            success: Bajeti imefutwa.
+          edit:
+            title: Badilisha bajeti
+            update: Sasisha bajeti
+          index:
+            finished_orders: Kura zilizokamilika
+            pending_orders: Kura zinazosubiri
+            title: Bajeti
+            users_with_finished_orders: Watumiaji walio na kura zilizokamilika
+            users_with_pending_orders: Watumiaji walio na kura zinazosubiri
+          new:
+            create: Tengeneza bajeti
+            title: Bajeti mpya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha bajeti hii.
+            success: Bajeti imesasishwa.
+        exports:
+          projects: Miradi
+        models:
+          budget:
+            name: Bajeti
+          project:
+            name: Mradi
+        projects:
+          create:
+            invalid: Kulikuwa na tatizo kuunda mradi huu.
+            success: Mradi umeundwa.
+          destroy:
+            success: Mradi umefutwa.
+          edit:
+            title: Badilisha mradi
+            update: Sasisha
+          index:
+            actions: Vitendo
+            cancel: Ghairi
+            change_budget: Badilisha bajeti
+            change_category: Badilisha kategoria
+            change_scope: Badilisha upeo
+            change_selected: Badilisha hali iliyochaguliwa
+            deselect_implementation: Batilisha uteuzi kutoka kwa utekelezaji
+            finished_orders: Kura zilizokamilika
+            pending_orders: Kura zinazosubiri
+            select_for_implementation: Chagua kwa utekelezaji
+            selected: Imechaguliwa
+            selected_options:
+              'no': 'Hapana'
+              'yes': 'Ndiyo'
+            title: Miradi
+            update: Sasisha
+            update_budget_button: Sasisha bajeti ya mradi
+            update_scope_button: Sasisha wigo
+          new:
+            create: Unda
+            title: Mradi mpya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha mradi huu.
+            success: Mradi umesasishwa.
+          update_budget:
+            invalid: 'Miradi hii tayari iko katika bajeti sawa au bajeti zake ni zaidi ya kiwango cha juu kinachoruhusiwa: %{projects}.'
+            select_a_project: Tafadhali chagua mradi.
+            success: 'Miradi imesasishwa hadi bajeti ya %{subject_name}: %{projects}.'
+          update_category:
+            invalid: 'Miradi hii tayari ilikuwa na aina ya %{subject_name}: %{projects}.'
+            select_a_category: Tafadhali chagua aina.
+            select_a_project: Tafadhali chagua mradi.
+            success: 'Miradi imesasishwa hadi kategoria ya %{subject_name}: %{projects}.'
+          update_scope:
+            invalid: 'Miradi hii tayari ilikuwa na upeo wa %{subject_name}: %{projects}.'
+            select_a_project: Tafadhali chagua mradi.
+            select_a_scope: Tafadhali chagua upeo.
+            success: 'Miradi imesasishwa hadi upeo wa %{subject_name}: %{projects}.'
+          update_selected:
+            invalid:
+              selected: 'Miradi hii tayari ilichaguliwa kwa utekelezaji: %{projects}.'
+              unselected: 'Miradi hii tayari haikuchaguliwa kutekelezwa: %{projects}.'
+            select_a_project: Tafadhali chagua mradi.
+            select_a_selection: Tafadhali chagua hali ya utekelezaji.
+            success:
+              selected: 'Miradi hii ilichaguliwa kwa ufanisi ili kutekelezwa: %{projects}.'
+              unselected: 'Miradi hii iliondolewa kwa ufanisi katika utekelezaji: %{projects}.'
+        proposals_imports:
+          create:
+            invalid: Kulikuwa na tatizo la kuleta mapendekezo kwenye miradi.
+            success: "%{number} mapendekezo yaliletwa kwa mafanikio katika miradi."
+          new:
+            create: Mapendekezo ya kuagiza kwa miradi
+            default_budget: Bajeti chaguomsingi
+            import_all_accepted_proposals: Ingiza mapendekezo yote yaliyokubaliwa
+            no_components: Hakuna vipengele vingine vya pendekezo katika nafasi hii shirikishi ya kuingiza mapendekezo katika miradi.
+            origin_component_id: Sehemu ya asili
+            select_component: Tafadhali chagua kijenzi
+            title: Mapendekezo ya kuagiza kwa miradi
+        reminders:
+          orders:
+            description: Watumiaji watapokea barua pepe yenye viungo vya kuelekeza bajeti ambapo wana agizo ambalo halijashughulikiwa.
+            title:
+              one: Unakaribia kutuma kikumbusho cha barua pepe kwa mtumiaji %{count}
+              other: Unakaribia kutuma kikumbusho cha barua pepe kwa watumiaji %{count}
+      admin_log:
+        budget:
+          create: "%{user_name} aliunda bajeti ya %{resource_name} katika nafasi ya %{space_name}"
+          delete: "%{user_name} alifuta bajeti ya %{resource_name} katika nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha bajeti ya %{resource_name} katika nafasi ya %{space_name}"
+        project:
+          create: "%{user_name} aliunda mradi wa %{resource_name} katika nafasi ya %{space_name}"
+          delete: "%{user_name} alifuta mradi wa %{resource_name} katika nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha mradi wa %{resource_name} katika nafasi ya %{space_name}"
+      budget_information_modal:
+        back_to: Rudi kwa %{component_name}
+        close_modal: Funga modali
+        continue: Endelea
+        more_information: Maelezo zaidi kuhusu bajeti
+      budgets_list:
+        budgets: Bajeti
+        cancel_order:
+          more_than_one: futa kura yako kwenye %{name} na uanze upya
+          only_one: futa kura yako na uanze upya.
+        count:
+          one: "%{count} bajeti"
+          other: "%{count} bajeti"
+        empty: Bado hakuna bajeti
+        finished_message: Umemaliza mchakato wa kupiga kura. Asante kwa kushiriki!
+        highlighted_cta: Piga kura kwa %{name}
+        if_change_opinion: Ikiwa umebadilisha mawazo yako, unaweza
+        orders:
+          highest_cost: Gharama ya juu zaidi
+          label: Agiza bajeti kwa
+          lowest_cost: Gharama ya chini zaidi
+          random: Agizo la nasibu
+        progress: Maliza kupiga kura
+        remove_vote: Ondoa kura
+        show: Tazama miradi
+        vote: Piga kura
+        voted_budgets: Bajeti zilizopigwa kura
+        voted_on: Umepiga kura kwenye %{links}.
+      last_activity:
+        new_vote_at: Kura mpya ya bajeti
+      limit_announcement:
+        cant_vote: Huwezi kupigia kura bajeti hii. <a href="%{landing_path}">Jaribu bajeti nyingine</a>.
+        limit_reached: Una kura zinazoendelea katika %{links}. Ili kupigia kura bajeti hii ni lazima <a href="%{landing_path}">ufute kura yako na uanze upya</a>.
+      models:
+        budget:
+          fields:
+            name: Jina
+            projects_count: Hesabu ya miradi
+            total_budget: Jumla ya bajeti
+        project:
+          fields:
+            category: Kategoria
+            id: ID
+            map: Ramani
+            title: Kichwa
+      order_summary_mailer:
+        order_summary:
+          selected_projects: 'Miradi ambayo umechagua ni:'
+          subject: Umepigia kura nafasi shirikishi ya %{space_name}
+          voted_on_space: Umepigia kura bajeti ya %{budget_name} ya nafasi shirikishi ya %{space_name}.
+          voted_on_space_with_scope: Umepigia kura bajeti ya %{budget_name} ya nafasi shirikishi ya %{space_name} kwenye %{scope_name} (%{scope_type}).
+      projects:
+        budget_confirm:
+          are_you_sure: Ukibadilisha nia yako, unaweza kubadilisha kura yako baadaye.
+          cancel: Ghairi
+          confirm: Thibitisha
+          description: Hii ndio miradi uliyochagua kuwa sehemu ya bajeti.
+          title: Thibitisha kura
+        budget_excess:
+          budget_excess:
+            description: Mradi huu unazidi kiwango cha juu cha bajeti na hauwezi kuongezwa. Ikiwa unataka, unaweza kufuta mradi ambao tayari umechagua, ili uweze kupiga kura tena kulingana na mapendeleo yako.
+            title: Upeo wa bajeti umepitwa
+          description: Mradi huu unazidi kiwango cha juu cha bajeti na hauwezi kuongezwa. Ikiwa unataka, unaweza kufuta mradi ambao tayari umechagua, ili uweze kupiga kura tena kulingana na mapendeleo yako.
+          ok: SAWA
+          projects_excess:
+            description: Mradi huu unazidi idadi ya juu zaidi ya miradi na hauwezi kuongezwa. Ikiwa unataka, unaweza kufuta mradi ambao tayari umechagua, ili uweze kupiga kura tena kulingana na mapendeleo yako.
+            title: Upeo wa miradi umepitwa
+        budget_summary:
+          are_you_sure: Je, una uhakika unataka kughairi kura yako?
+          cancel_order: futa kura yako
+          checked_out:
+            description: Tayari umepigia kura bajeti. Ikiwa umebadilisha mawazo yako, unaweza kufuta kura yako.
+            title: Kura ya bajeti imekamilika
+          vote: Bajeti ya kura
+        count:
+          projects_count:
+            one: 1 mradi
+            other: "%{count} miradi"
+        empty: Bado hakuna miradi
+        exit_modal:
+          cancel: Rudi kwenye kupiga kura
+          exit: Ondoka kwenye kupiga kura
+          message: Kura yako haijasajiliwa kwa sababu bado hujakamilisha mchakato wa kupiga kura. Je, una uhakika ungependa kuacha kupiga kura?
+          title: Bado hujapiga kura
+        filters:
+          category: Kategoria
+          scope: Upeo
+          search: Tafuta
+          status: Hali
+          status_values:
+            all: Wote
+            not_selected: Haijachaguliwa
+            selected: Imechaguliwa
+        order_progress:
+          assigned: Imekabidhiwa
+          budget: Bajeti
+          dynamic_help:
+            keep_adding_projects: Endelea kuongeza miradi
+            minimum_reached: Umefikia kiwango cha chini zaidi kuweza kupiga kura
+            start_adding_projects: Anza kuongeza miradi
+          minimum: Kiwango cha chini
+          minimum_projects_rule:
+            description: Chagua angalau miradi %{minimum_number} unayotaka na upige kura kulingana na mapendeleo yako ili kufafanua bajeti.
+          projects_rule:
+            description: Chagua angalau %{minimum_number} na hadi miradi %{maximum_number} unayotaka na upige kura kulingana na mapendeleo yako ili kufafanua bajeti.
+          projects_rule_maximum_only:
+            description: Chagua hadi miradi %{maximum_number} unayotaka na upige kura kulingana na mapendeleo yako ili kufafanua bajeti.
+          vote_threshold_percent_rule:
+            description: Peana angalau %{minimum_budget} kwa miradi unayotaka na upige kura kulingana na mapendeleo yako ili kufafanua bajeti.
+        orders:
+          highest_cost: Gharama ya juu zaidi
+          label: Agiza miradi kwa
+          lowest_cost: Gharama ya chini zaidi
+          most_voted: Wengi walipiga kura
+          random: Agizo la nasibu
+          selected: Imechaguliwa
+        project:
+          add: Ongeza mradi %{resource_name} kwenye kura yako.
+          remove: Ondoa mradi %{resource_name} kutoka kwa kura yako.
+          selected: Imechaguliwa
+          votes:
+            one: kura
+            other: kura
+          you_voted: Ulipigia kura hii
+        project_budget_button:
+          add: Ongeza
+          add_descriptive: Ongeza mradi %{resource_name} kwenye kura yako.
+          added: Imeongezwa
+          added_descriptive: Mradi %{resource_name} umeongezwa kwenye kura yako.
+        project_filter:
+          added: Imeongezwa
+          all: Wote
+        projects_for: Miradi ya %{name}
+        select_projects: Chagua miradi
+        show:
+          budget: Bajeti
+      prompt: Chagua bajeti
+      vote_reminder_mailer:
+        vote_reminder:
+          email_budgets: 'Maeneo ambayo una kura ambayo haijakamilika:'
+          email_intro: Umeanza kura shirikishi ya bajeti, lakini hujaikamilisha.
+          email_link: Nenda ili uendelee kupiga kura
+          email_outro: Tafadhali kumbuka kukamilisha kura. Ili kupiga kura, lazima kwanza uchague pendekezo au mapendekezo unayotaka kupigia kura kisha uthibitishe kura yako kwa kitufe cha "Piga".
+          email_subject:
+            one: Una kura ambayo haijakamilika katika kura shirikishi ya bajeti
+            other: Una kura ambazo hazijakamilika katika kura shirikishi ya bajeti
+    components:
+      budgets:
+        actions:
+          comment: Maoni
+          vote: Piga kura
+        name: Bajeti
+        settings:
+          global:
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            form:
+              errors:
+                budget_voting_rule_only_one: Sheria moja pekee ya kupiga kura lazima iwezeshwe.
+                budget_voting_rule_required: Sheria moja ya kupiga kura inahitajika.
+            geocoding_enabled: Uwekaji msimbo umewezeshwa
+            landing_page_content: Ukurasa wa kutua wa bajeti
+            more_information_modal: Maelezo zaidi modal
+            projects_per_page: Miradi kwa kila ukurasa
+            resources_permissions_enabled: Ruhusa za vitendo zinaweza kuwekwa kwa kila mradi
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+            title: Kichwa
+            total_budget: Jumla ya bajeti
+            vote_minimum_budget_projects_number: Idadi ya chini ya miradi ya kupiga kura
+            vote_rule_minimum_budget_projects_enabled: 'Washa sheria: Idadi ya chini ya miradi itakayopigiwa kura'
+            vote_rule_selected_projects_enabled: 'Washa sheria: Idadi ya chini na ya juu zaidi ya miradi itakayopigiwa kura'
+            vote_rule_threshold_percent_enabled: 'Washa sheria: Kiwango cha chini cha asilimia ya bajeti'
+            vote_selected_projects_maximum: Kiwango cha juu zaidi cha miradi ya kuchaguliwa
+            vote_selected_projects_minimum: Kiasi cha chini cha miradi ya kuchaguliwa
+            vote_threshold_percent: Asilimia ya kiwango cha kura
+            workflow: Mtiririko wa kazi
+            workflow_choices:
+              all: 'Piga kura kwa wote: inaruhusu washiriki kupiga kura katika bajeti zote.'
+              one: 'Piga kura katika moja: inaruhusu washiriki kupiga kura katika bajeti yoyote, lakini katika moja pekee.'
+          step:
+            announcement: Tangazo
+            comments_blocked: Maoni yamezuiwa
+            highlighted_heading: Kichwa kilichoangaziwa
+            landing_page_content: Ukurasa wa kutua wa bajeti
+            list_heading: Kichwa cha orodha
+            more_information_modal: Maelezo zaidi modal
+            show_votes: Onyesha kura
+            title: Kichwa
+            votes: Kupiga kura
+            votes_choices:
+              disabled: Upigaji kura umezimwa
+              enabled: Upigaji kura umewezeshwa
+              finished: Upigaji kura umekamilika
+    events:
+      budgets:
+        budget_published:
+          email_intro: 'Bajeti ya %{resource_title} sasa inatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Bajeti ya %{resource_title} sasa inatumika kwa %{participatory_space_title}.
+          notification_title: Bajeti ya <a href="%{resource_path}">%{resource_title}</a> sasa inatumika kwa %{participatory_space_title}.
+    orders:
+      checkout:
+        error: Kulikuwa na tatizo kuchakata kura yako.
+        success_html: <p>Kura yako imekubaliwa kwa ufanisi.</p> <p class="text-sm font-normal">Unaweza kuchunguza <a class="text-secondary underline" href="%{rest_of_budgets_link}"> mapumziko ya bajeti</a>.</p>
+        success_no_left_budgets_html: Kura yako imekubaliwa.
+      destroy:
+        error: Kulikuwa na tatizo katika kughairi kura yako.
+        success: Kura yako imeghairiwa.
+    resource_links:
+      included_proposals:
+        project_proposal: Mapendekezo yaliyojumuishwa katika mradi huu
+    statistics:
+      orders_count: Inasaidia
+      projects_count: Miradi
+  index:
+    confirmed_orders_count: Idadi ya kura

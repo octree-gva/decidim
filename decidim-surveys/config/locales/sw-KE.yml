@@ -1,1 +1,77 @@
+---
 sw:
+  activemodel:
+    models:
+      decidim/surveys/closed_survey_event: Utafiti umeisha
+      decidim/surveys/opened_survey_event: Utafiti umeanza
+  activerecord:
+    models:
+      decidim/surveys/survey:
+        one: Utafiti
+        other: Tafiti
+      decidim/surveys/survey_answer:
+        one: Jibu
+        other: Jibu
+  decidim:
+    components:
+      surveys:
+        actions:
+          answer: Jibu
+        name: Utafiti
+        settings:
+          global:
+            announcement: Tangazo
+            clean_after_publish: Futa majibu unapochapisha utafiti
+            ends_at: Majibu yamekubaliwa hadi
+            ends_at_help: Acha wazi kwa tarehe yoyote mahususi
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+            starts_at: Majibu yamekubaliwa kutoka
+            starts_at_help: Acha wazi kwa tarehe yoyote mahususi
+          step:
+            allow_answers: Ruhusu majibu
+            allow_unregistered: Ruhusu watumiaji ambao hawajasajiliwa kujibu utafiti
+            allow_unregistered_help: Ikiwa hai, hakuna kuingia kutahitajika ili kujibu utafiti. Hii inaweza kusababisha data duni au isiyotegemewa na itakuwa hatarini zaidi kwa mashambulizi ya kiotomatiki. Tumia kwa tahadhari! Kumbuka kwamba mshiriki anaweza kujibu utafiti huo mara nyingi, kwa kutumia vivinjari tofauti au kipengele cha "kuvinjari kwa faragha" cha kivinjari chake cha wavuti.
+            announcement: Tangazo
+    events:
+      surveys:
+        survey_closed:
+          email_intro: Utafiti %{resource_title} katika %{participatory_space_title} umefungwa.
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Utafiti umekamilika katika %{participatory_space_title}
+          notification_title: Utafiti <a href="%{resource_path}">%{resource_title}</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a> umekamilika.
+        survey_opened:
+          email_intro: 'Utafiti %{resource_title} katika %{participatory_space_title} sasa umefunguliwa. Unaweza kushiriki katika hilo kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Utafiti mpya katika %{participatory_space_title}
+          notification_title: Utafiti <a href="%{resource_path}">%{resource_title}</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a> sasa umefunguliwa.
+    metrics:
+      survey_answers:
+        description: Idadi ya tafiti zilizojibiwa na washiriki
+        object: majibu ya tafiti
+        title: Majibu ya tafiti
+    statistics:
+      answers_count: Jibu
+    surveys:
+      admin:
+        component:
+          actions:
+            answers_alert: Ukichapisha kijenzi, matokeo yote yataondolewa.
+        exports:
+          survey_user_answers: Majibu ya washiriki katika utafiti
+        surveys:
+          update:
+            invalid: Kulikuwa na tatizo katika kuhifadhi utafiti.
+            success: Utafiti umehifadhiwa.
+      last_activity:
+        new_survey: 'Utafiti mpya:'
+      survey_confirmation_mailer:
+        confirmation:
+          body: Umejibu kwa ufanisi utafiti wa %{questionnaire_title} ndani ya %{participatory_space}
+          subject: Hojaji %{questionnaire_title} inajibu uthibitisho
+        export_name: Majibu ya utafiti
+      surveys:
+        answer:
+          invalid: Kulikuwa na tatizo la kujibu utafiti.
+          spam_detected: Kulikuwa na tatizo la kujibu fomu. Labda umekuwa haraka sana, unaweza kujaribu tena?
+          success: Utafiti umejibu kwa ufanisi.

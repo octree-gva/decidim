@@ -1,1 +1,176 @@
+---
 sw:
+  activemodel:
+    models:
+      decidim/comments/comment_by_followed_user_event: Maoni
+      decidim/comments/comment_created_event: Maoni
+      decidim/comments/comment_upvoted_event: Maoni yameidhinishwa
+      decidim/comments/reply_created_event: Jibu la maoni
+      decidim/comments/user_group_mentioned_event: Taja
+      decidim/comments/user_mentioned_event: Taja
+  activerecord:
+    models:
+      decidim/comments/comment:
+        one: Maoni
+        other: Maoni
+      decidim/comments/comment_vote:
+        one: Kura
+        other: Kura
+  decidim:
+    comments:
+      admin:
+        shared:
+          availability_fields:
+            enabled: Maoni yamewezeshwa
+            end_time: Maoni yamewezeshwa hadi
+            start_time: Maoni yamewezeshwa kutoka
+      comments:
+        create:
+          error: Kulikuwa na tatizo la kuunda maoni.
+        delete:
+          error: Maoni hayakuweza kufutwa.
+        update:
+          error: Kulikuwa na tatizo la kusasisha maoni.
+      comments_title: Maoni
+      last_activity:
+        new_comment: 'Maoni mapya:'
+      votes:
+        create:
+          error: Kulikuwa na tatizo la kupiga kura maoni.
+    components:
+      add_comment_form:
+        account_message: <a href="%{sign_in_url}">Ingia</a> au <a href="%{sign_up_url}">uunde akaunti</a> ili kuongeza maoni yako.
+        form:
+          body:
+            label: Maoni
+            placeholder: Una maoni gani kuhusu hili?
+          form_error: Maandishi yanahitajika na hayawezi kuwa marefu zaidi ya vibambo %{length}.
+          submit_reply: Chapisha jibu
+          submit_root_comment: Chapisha maoni
+          user_group_id:
+            label: Toa maoni kama
+        opinion:
+          label: Maoni yako kuhusu mada hii
+          negative: Hasi
+          negative_selected: Maoni yako kuhusu mada hii ni hasi
+          neutral: Si upande wowote
+          neutral_selected: Maoni yako kuhusu mada hii hayaegemei upande wowote
+          positive: Chanya
+          positive_selected: Maoni yako kuhusu mada hii ni chanya
+        remaining_characters: "%{count} wahusika kushoto"
+        remaining_characters_1: "%{count} mhusika kushoto"
+        title: Ongeza maoni yako
+      comment:
+        alignment:
+          against: Dhidi ya
+          in_favor: Katika neema
+        cancel_reply: Ghairi jibu
+        comment_label: Maoni %{comment_id}
+        comment_label_reply: Maoni %{comment_id} (jibu maoni %{parent_comment_id})
+        confirm_destroy: Je, una uhakika unataka kufuta maoni haya?
+        controls_label: Vidhibiti vya maoni
+        delete: Futa
+        deleted_at: Maoni yalifutwa mnamo %{date}
+        deleted_user: Mshiriki amefutwa
+        edit: Hariri
+        edited: Imehaririwa
+        hide_replies:
+          one: Ficha jibu
+          other: Ficha majibu %{count}
+        moderated_at: Maoni yalidhibitiwa mnamo %{date}
+        reply: Jibu
+        report:
+          action: Ripoti
+          already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+          close: Funga
+          description: Je, maudhui haya hayafai?
+          details: Maoni ya ziada
+          reasons:
+            does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+            offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+            spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+          title: Ripoti maudhui yasiyofaa
+        show_replies:
+          one: Onyesha jibu
+          other: Onyesha majibu %{count}
+        single_comment_link_title: Pata kiungo
+      comment_order_selector:
+        order:
+          best_rated: Iliyokadiriwa bora
+          most_discussed: Iliyojadiliwa zaidi
+          older: Mzee
+          recent: Hivi karibuni
+        title: 'Agiza kwa:'
+      comments:
+        blocked_comments_for_unauthorized_user_warning: Unahitaji kuthibitishwa ili kutoa maoni kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        blocked_comments_for_user_warning: Huwezi kutoa maoni kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        blocked_comments_warning: Maoni yamezimwa kwa wakati huu, lakini unaweza kusoma yaliyotangulia.
+        comment_details_title: Maelezo ya maoni
+        loading: Inapakia maoni...
+        single_comment_warning: <a href="%{url}">Tazama maoni yote</a>
+        single_comment_warning_title: Unaona maoni moja
+        title:
+          one: "%{count} maoni"
+          other: "%{count} maoni"
+      down_vote_button:
+        text: Sikubaliani na maoni haya
+      edit_comment_modal_form:
+        close: Funga
+        form:
+          body:
+            label: Maoni
+            placeholder: Una maoni gani kuhusu hili?
+          submit: Tuma
+        title: Hariri maoni yako
+      up_vote_button:
+        text: Nakubaliana na maoni haya
+    events:
+      comments:
+        comment_by_followed_user:
+          email_intro: "%{author_name} ameacha maoni katika %{resource_title}. Unaweza kuisoma katika ukurasa huu:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_name}. Unaweza kuacha kumfuata mtumiaji huyu kutoka kwa ukurasa wake wa wasifu.
+          email_subject: Kuna maoni mapya ya %{author_name} katika %{resource_title}
+          notification_title: Kuna maoni mapya ya <a href="%{author_path}">%{author_name} %{author_nickname}</a> katika <a href="%{resource_path}">%{resource_title}</a>.
+        comment_by_followed_user_group:
+          email_intro: 'Kikundi %{author_name} kimeacha maoni katika %{resource_title}. Unaweza kuisoma katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_name}. Unaweza kuacha kufuata kikundi hiki kutoka kwa ukurasa wake wa wasifu.
+          email_subject: Kuna maoni mapya ya %{author_name} katika %{resource_title}
+          notification_title: Kuna maoni mapya ya <a href="%{author_path}">%{author_name} %{author_nickname}</a> katika <a href="%{resource_path}">%{resource_title}</a>.
+        comment_created:
+          email_intro: "%{resource_title} imetolewa maoni. Unaweza kusoma maoni katika ukurasa huu:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{resource_title}" au mwandishi wake. Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Kuna maoni mapya kutoka kwa %{author_name} katika %{resource_title}
+          notification_title: Kuna maoni mapya kutoka kwa <a href="%{author_path}">%{author_name} %{author_nickname}</a> katika <a href="%{resource_path}">%{resource_title}</a>
+        comment_downvoted:
+          email_intro: Maoni yako katika "%{resource_title}" yamepunguzwa kura. Sasa ina jumla ya kura %{upvotes} na kura za chini %{downvotes}.
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa maoni haya.
+          email_subject: Maoni yako katika "%{resource_title}" yamepunguzwa kura.
+          notification_title: <a href="%{resource_path}">maoni yako</a> katika "%{resource_title}" yamepunguzwa kura. Sasa ina jumla ya kura %{upvotes} na kura za chini %{downvotes}.
+        comment_upvoted:
+          email_intro: Maoni yako katika "%{resource_title}" yamepigiwa kura. Sasa ina jumla ya kura %{upvotes} na kura za chini %{downvotes}.
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa maoni haya.
+          email_subject: Maoni yako katika "%{resource_title}" yamepigiwa kura.
+          notification_title: <a href="%{resource_path}">maoni yako</a> katika "%{resource_title}" yamepigiwa kura. Sasa ina jumla ya kura %{upvotes} na kura za chini %{downvotes}.
+        reply_created:
+          email_intro: "%{author_name} amejibu maoni yako katika %{resource_title}. Unaweza kuisoma katika ukurasa huu:"
+          email_outro: Umepokea arifa hii kwa sababu maoni yako yalijibiwa.
+          email_subject: "%{author_name} amejibu maoni yako katika %{resource_title}"
+          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> amejibu maoni yako katika <a href="%{resource_path}">%{resource_title}</a>
+        user_group_mentioned:
+          email_intro: Kikundi unachoshiriki kimetajwa
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwanachama wa kikundi %{group_name} ambacho kimetajwa katika %{resource_title}.
+          email_subject: Umetajwa katika %{resource_title} kama mwanachama wa %{group_name}
+          notification_title: Umetajwa katika <a href="%{resource_path}">%{resource_title}</a> na <a href="%{author_path}">%{author_name} %{author_nickname}</a> kama mwanachama wa <a href="%{group_path}">%{group_name} %{group_nickname}</a>
+        user_mentioned:
+          email_intro: Umetajwa
+          email_outro: Umepokea arifa hii kwa sababu umetajwa katika %{resource_title}.
+          email_subject: Umetajwa katika %{resource_title}
+          notification_title: Umetajwa katika <a href="%{resource_path}">%{resource_title}</a> na <a href="%{author_path}">%{author_name} %{author_nickname}</a>
+    metrics:
+      comments:
+        description: Idadi ya maoni yaliyotolewa na washiriki
+        object: maoni
+        title: Maoni
+  errors:
+    messages:
+      cannot_have_comments: hawezi kuwa na maoni

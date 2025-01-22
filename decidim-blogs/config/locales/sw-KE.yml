@@ -1,1 +1,98 @@
+---
 sw:
+  activemodel:
+    attributes:
+      post:
+        body: Mwili
+        decidim_author_id: Mwandishi
+        published_at: Wakati wa kuchapisha
+        title: Kichwa
+    models:
+      decidim/blogs/create_post_event: Chapisho jipya la blogi
+  activerecord:
+    models:
+      decidim/blogs/post:
+        one: Chapisha
+        other: Machapisho
+  decidim:
+    blogs:
+      actions:
+        author_id: Unda chapisho kama
+        confirm_destroy: Je, una uhakika unataka kufuta chapisho hili?
+        destroy: Futa
+        edit: Hariri
+        new: Chapisho jipya
+        title: Vitendo
+      admin:
+        posts:
+          create:
+            invalid: Kulikuwa na tatizo kuunda chapisho hili.
+            success: Chapisho limeundwa.
+          destroy:
+            success: Chapisho limefutwa.
+          edit:
+            save: Sasisha
+            title: Badilisha chapisho
+          index:
+            not_published_yet: Bado haijachapishwa.
+            title: Machapisho
+          new:
+            create: Unda
+            title: Unda chapisho
+          update:
+            invalid: Kulikuwa na tatizo katika kuhifadhi chapisho.
+            success: Chapisho limehifadhiwa.
+      admin_log:
+        post:
+          create: "%{user_name} aliunda chapisho la blogu la %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alifuta chapisho la blogu %{resource_name} kutoka %{space_name}"
+          update: "%{user_name} alisasisha %{resource_name} chapisho la blogu katika %{space_name}"
+      content_blocks:
+        highlighted_posts:
+          last_published: Ilichapishwa mwisho
+          name: Machapisho
+          see_all: Tazama machapisho yote
+      last_activity:
+        new_post: 'Chapisho jipya:'
+      models:
+        post:
+          fields:
+            author: Mwandishi
+            body: Mwili
+            official_blog_post: Chapisho rasmi
+            published_at: Wakati wa kuchapisha
+            title: Kichwa
+      posts:
+        index:
+          count:
+            one: " %{count} Chapisho"
+            other: "%{count} Machapisho "
+          empty: Bado hakuna machapisho.
+    components:
+      blogs:
+        actions:
+          comment: Maoni
+          create: Unda
+          destroy: Futa
+          endorse: Thibitisha
+          update: Sasisha
+        name: Blogu
+        settings:
+          global:
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+          step:
+            announcement: Tangazo
+            comments_blocked: Maoni yamezuiwa
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
+    events:
+      blogs:
+        post_created:
+          email_intro: Chapisho "%{resource_title}" limechapishwa katika "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Chapisho jipya lililochapishwa katika %{participatory_space_title}
+          notification_title: Chapisho <a href="%{resource_path}">%{resource_title}</a> limechapishwa katika %{participatory_space_title}
+    statistics:
+      posts_count: Machapisho

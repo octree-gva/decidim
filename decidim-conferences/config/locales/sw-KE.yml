@@ -1,1 +1,601 @@
+---
 sw:
+  activemodel:
+    attributes:
+      conference:
+        assemblies_ids: Makusanyiko Yanayohusiana
+        available_slots: Nafasi zinazopatikana
+        banner_image: Picha ya bango
+        copy_categories: Nakili kategoria
+        copy_components: Nakili vipengele
+        copy_features: Nakili vipengele
+        decidim_scope_id: Upeo
+        description: Maelezo
+        end_date: Tarehe ya mwisho
+        hashtag: Hashtag
+        hero_image: Picha ya nyumbani
+        location: Mahali
+        main_logo: Nembo kuu
+        objectives: Malengo
+        participatory_processes_ids: Michakato shirikishi inayohusiana
+        promoted: Imeangaziwa
+        published_at: Iliyochapishwa saa
+        registration_terms: Masharti ya usajili
+        registrations_enabled: Usajili umewezeshwa
+        scope_id: Upeo
+        scopes_enabled: Upeo umewezeshwa
+        short_description: Maelezo mafupi
+        show_statistics: Onyesha takwimu
+        sign_date: Tarehe ya saini
+        signature: Sahihi
+        signature_name: Jina la saini
+        slogan: Kauli mbiu
+        slug: URL slug
+        start_date: Tarehe ya kuanza
+        title: Kichwa
+        weight: Nafasi ya agizo
+      conference_media_link:
+        date: Tarehe
+        link: Kiungo
+        title: Kichwa
+        weight: Nafasi ya agizo
+      conference_partner:
+        link: Kiungo
+        logo: Nembo
+        name: Jina
+        partner_type: Aina ya mshirika
+        weight: Nafasi ya agizo
+      conference_registration_invite:
+        email: Barua pepe
+        name: Jina
+        registration_type_id: Aina ya usajili
+        user_id: Mtumiaji
+      conference_registration_type:
+        description: Maelezo
+        price: Bei
+        title: Kichwa
+        weight: Nafasi ya agizo
+      conference_speaker:
+        affiliation: Ushirikiano
+        avatar: Avatar
+        conference_meeting_ids: Mikutano inayohusiana
+        full_name: Jina kamili
+        personal_url: URL ya kibinafsi
+        position: Nafasi
+        short_bio: Wasifu mfupi
+        twitter_handle: X handle
+        user_id: Mtumiaji
+      conference_user_role:
+        email: Barua pepe
+        name: Jina
+        role: Jukumu
+    errors:
+      models:
+        conference_registration_invite:
+          attributes:
+            email:
+              already_invited: Barua pepe hii tayari imealikwa.
+  activerecord:
+    models:
+      decidim/conference:
+        one: Mkutano
+        other: Mikutano
+      decidim/conference_speaker:
+        one: Spika wa mkutano
+        other: Wazungumzaji wa mkutano
+      decidim/conference_user_role:
+        one: Jukumu la mtumiaji wa mkutano
+        other: Majukumu ya mtumiaji wa mkutano
+  decidim:
+    admin:
+      actions:
+        confirm: Thibitisha
+        new_conference: Mkutano mpya
+        new_conference_user_role: Msimamizi mpya wa mkutano
+        new_media_link: Kiungo kipya cha media
+        new_partner: Mshirika mpya
+        new_registration_type: Aina mpya ya usajili
+        new_speaker: Spika mpya
+        send_diplomas: Tuma vyeti vya mahudhurio
+      conference_copies:
+        new:
+          copy: Nakili
+          select: Chagua data ambayo ungependa kurudia
+          title: Rudufu mkutano
+      conference_publications:
+        create:
+          error: Kulikuwa na tatizo la kuchapisha mkutano huu.
+          success: Mkutano umechapishwa.
+        destroy:
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa mkutano huu.
+          success: Mkutano umebatilishwa kuchapishwa.
+      conference_registration:
+        confirm:
+          error: Kulikuwa na tatizo katika kuthibitisha usajili wa mkutano huu.
+          success: Usajili wa mkutano umethibitishwa.
+      conference_speakers:
+        create:
+          error: Kulikuwa na tatizo la kuongeza mzungumzaji kwenye mkutano huu.
+          success: Spika ya mkutano imeundwa.
+        destroy:
+          success: Spika ya mkutano imefutwa.
+        edit:
+          title: Sasisha kipaza sauti cha mkutano.
+          update: Sasisha
+        index:
+          conference_speakers_title: Wazungumzaji wa mkutano
+        new:
+          create: Unda
+          title: Spika mpya wa mkutano.
+        publish:
+          invalid: Kulikuwa na tatizo la kuchapisha spika hii.
+          success: Spika ya mkutano imechapishwa.
+        unpublish:
+          invalid: Kulikuwa na tatizo la kubatilisha uchapishaji wa spika hii.
+          success: Spika ya kongamano imebatilisha uchapishaji.
+        update:
+          error: Kulikuwa na tatizo la kusasisha spika hii ya mkutano.
+          success: Spika ya mkutano imesasishwa.
+      conference_user_roles:
+        create:
+          error: Kulikuwa na tatizo la kuongeza msimamizi kwenye mkutano huu.
+          success: Msimamizi wa mkutano ameongezwa.
+        destroy:
+          success: Msimamizi wa mkutano ameondolewa.
+        edit:
+          title: Sasisha msimamizi wa mkutano.
+          update: Sasisha
+        index:
+          conference_admins_title: Wasimamizi wa mkutano
+        new:
+          create: Unda
+          title: Msimamizi mpya wa mkutano.
+        update:
+          error: Kulikuwa na tatizo la kusasisha msimamizi wa mkutano huu.
+          success: Msimamizi wa mkutano amesasishwa.
+      conferences:
+        create:
+          error: Kulikuwa na tatizo kuunda mkutano huu.
+          success: Kongamano limeundwa.
+        edit:
+          update: Sasisha
+        exports:
+          registrations: Usajili
+        form:
+          title: Taarifa za Jumla
+        index:
+          published: Imechapishwa
+          unpublished: Haijachapishwa
+        new:
+          create: Unda
+          title: Mkutano
+        update:
+          error: Kulikuwa na tatizo la kusasisha mkutano huu.
+          success: Mkutano umesasishwa.
+      conferences_copies:
+        create:
+          error: Kulikuwa na tatizo katika kunakili mkutano huu.
+          success: Kongamano limenakiliwa.
+      media_links:
+        create:
+          error: Kulikuwa na tatizo la kuunda kiungo kipya cha midia.
+          success: Kiungo cha Media kimeundwa.
+        destroy:
+          success: Kiungo cha Media kimefutwa.
+        edit:
+          title: Sasisha kiungo cha media.
+          update: Sasisha
+        index:
+          media_links_title: Viungo vya Vyombo vya Habari
+        new:
+          create: Unda
+          title: Kiungo cha Media
+        update:
+          error: Kulikuwa na tatizo la kusasisha kiungo hiki cha media.
+          success: Kiungo cha Media kimesasishwa.
+      menu:
+        conferences: Mikutano
+        conferences_submenu:
+          attachment_collections: Folda
+          attachment_files: Faili
+          attachments: Viambatisho
+          categories: Kategoria
+          components: Vipengele
+          conference_admins: Wasimamizi wa mkutano
+          conference_invites: Inaalika
+          conference_speakers: Wazungumzaji
+          diploma: Cheti cha Mahudhurio
+          info: Kuhusu mkutano huu
+          media_links: Viungo vya Vyombo vya Habari
+          moderations: Ukadiriaji
+          partners: Washirika
+          registration_types: Aina za Usajili
+          registrations: Usajili
+          see_conference: Tazama mkutano
+          user_registrations: Usajili wa Watumiaji
+      models:
+        conference:
+          fields:
+            created_at: Imeundwa saa
+            published: Imechapishwa
+            title: Kichwa
+        conference_speaker:
+          fields:
+            affiliation: Ushirikiano
+            full_name: Jina kamili
+            position: Nafasi
+          name: Spika wa Mkutano
+        conference_user_role:
+          fields:
+            email: Barua pepe
+            name: Jina
+            role: Jukumu
+          name: Msimamizi wa Mkutano
+          roles:
+            admin: Msimamizi
+            collaborator: Mshiriki
+            moderator: Msimamizi
+            valuator: Mthamini
+        media_link:
+          fields:
+            date: Tarehe
+            link: Kiungo
+            title: Kichwa
+          name: Kiungo cha Media
+        partner:
+          fields:
+            link: Kiungo
+            logo: Nembo
+            name: Jina
+            partner_type: Aina
+          name: Mshirika
+          types:
+            collaborator: Mshiriki
+            main_promotor: Mtangazaji mkuu
+        registration_type:
+          fields:
+            conference_meetings: Mikutano ya mikutano
+            price: Bei
+            registrations_count: Idadi ya usajili
+            title: Kichwa
+            weight: Nafasi ya agizo
+          name: Aina ya usajili
+      partners:
+        create:
+          error: Kulikuwa na tatizo la kuongeza mshirika wa mkutano huu.
+          success: Mshirika wa mkutano ameongezwa.
+        destroy:
+          success: Mshirika wa mkutano ameondolewa.
+        edit:
+          title: Sasisha mshirika.
+          update: Sasisha
+        new:
+          create: Unda
+          title: Mshirika mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha mshirika wa mkutano huu.
+          success: Mshirika wa mkutano amesasishwa.
+      registration_type_publications:
+        create:
+          error: Kulikuwa na tatizo la kuchapisha aina hii ya usajili.
+          success: Aina ya usajili imechapishwa.
+        destroy:
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa aina hii ya usajili.
+          success: Aina ya usajili imebatilishwa.
+      registration_types:
+        create:
+          error: Kulikuwa na tatizo la kuongeza aina ya usajili kwa mkutano huu.
+          success: Aina ya usajili wa mkutano imeongezwa.
+        destroy:
+          success: Aina ya usajili wa mkutano imeondolewa.
+        edit:
+          title: Sasisha aina ya usajili.
+          update: Sasisha
+        new:
+          create: Unda
+          title: Aina mpya ya usajili
+        update:
+          error: Kulikuwa na tatizo la kusasisha aina ya usajili kwa mkutano huu.
+          success: Aina ya usajili wa mkutano imesasishwa.
+      titles:
+        conferences: Mikutano
+    admin_log:
+      conference:
+        create: "%{user_name} aliunda mkutano wa %{resource_name}"
+        publish: "%{user_name} alichapisha mkutano wa %{resource_name}"
+        send_conference_diplomas: "%{user_name} alituma vyeti vya kuhudhuria kwa waliohudhuria mkutano wa %{resource_name}"
+        unpublish: "%{user_name} alibatilisha uchapishaji wa mkutano wa %{resource_name}"
+        update: "%{user_name} alisasisha mkutano wa %{resource_name}"
+        update_diploma: "%{user_name} alisasisha vyeti vya usanidi wa mahudhurio ya mkutano wa %{resource_name}"
+      conference_speaker:
+        create: "%{user_name} aliunda spika %{resource_name} katika mkutano wa %{space_name}"
+        delete: "%{user_name} aliondoa spika %{resource_name} kwenye mkutano wa %{space_name}"
+        update: "%{user_name} alisasisha spika %{resource_name} katika mkutano wa %{space_name}"
+      conference_user_role:
+        create: "%{user_name} alimwalika %{resource_name} kwenye mkutano wa %{space_name}"
+        delete: "%{user_name} aliondoa msimamizi %{resource_name} kutoka kwa mkutano wa %{space_name}"
+        update: "%{user_name} alibadilisha jukumu la %{resource_name} katika mkutano wa %{space_name}"
+      conferences:
+        conference_registration:
+          confirm: "%{user_name} alithibitisha usajili wa mkutano katika mkutano wa %{resource_name}"
+        partner:
+          create: "%{user_name} aliunda mshirika %{resource_name} katika mkutano wa %{space_name}"
+          delete: "%{user_name} alimwondoa mshirika %{resource_name} kwenye mkutano wa %{space_name}"
+          update: "%{user_name} alisasisha mshirika %{resource_name} katika mkutano wa %{space_name}"
+        registration_type:
+          create: "%{user_name} aliunda aina ya usajili ya %{resource_name} katika mkutano wa %{space_name}"
+          delete: "%{user_name} aliondoa aina ya usajili %{resource_name} kwenye mkutano wa %{space_name}"
+          publish: "%{user_name} alichapisha aina ya usajili ya %{resource_name} katika mkutano wa %{space_name}"
+          unpublish: "%{user_name} amebatilisha uchapishaji wa aina ya usajili ya %{resource_name} katika mkutano wa %{space_name}"
+          update: "%{user_name} alisasisha aina ya usajili ya %{resource_name} katika mkutano wa %{space_name}"
+      media_link:
+        create: "%{user_name} aliunda kiungo cha %{resource_name} katika mkutano wa %{space_name}"
+        delete: "%{user_name} ameondoa kiungo cha %{resource_name} kwenye mkutano wa %{space_name}"
+        update: "%{user_name} alisasisha kiungo cha %{resource_name} katika mkutano wa %{space_name}"
+    conference_program:
+      index:
+        title: Mpango
+    conference_speakers:
+      index:
+        title: Spika
+    conferences:
+      admin:
+        conference_copies:
+          form:
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mkutano huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+        conference_invites:
+          create:
+            error: Kulikuwa na tatizo katika kumwalika mshiriki kujiunga na mkutano.
+            success: Mshiriki amealikwa kujiunga na mkutano huo.
+          form:
+            attendee_type: Aina ya mshiriki
+            existing_user: Mshiriki aliyepo
+            invite_explanation: Mshiriki ataalikwa kujiunga na mkutano na kwa shirika pia.
+            non_user: Asiyekuwa mshiriki
+            select_user: Chagua mshiriki
+          index:
+            invite_attendee: Alika mshiriki
+            invites: Inaalika
+          new:
+            explanation: Mshiriki ataalikwa kujiunga na mkutano. Ikiwa barua pepe zao hazijasajiliwa, wataalikwa kwenye shirika pia.
+            invite: Alika
+            new_invite: Alika mshiriki
+        conference_registrations:
+          index:
+            registrations: Usajili
+        conference_speakers:
+          form:
+            existing_user: Mshiriki aliyepo
+            non_user: Asiyeshiriki
+            select_user: Chagua mshiriki
+            user_type: Aina ya mshiriki
+          index:
+            search: Tafuta
+        conferences:
+          form:
+            available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana.
+            registrations_count:
+              one: Kumekuwa na usajili 1.
+              other: Kumekuwa na usajili %{count}.
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mkutano huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+        content_blocks:
+          highlighted_conferences:
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
+        diplomas:
+          edit:
+            save: Hifadhi
+            title: Cheti cha Mahudhurio
+        invite_join_conference_mailer:
+          invite:
+            decline: Kataa mwaliko '%{conference_title}'
+            invited_existing_user_to_join_a_conference: "%{invited_by} amekualika kujiunga na mkutano katika %{application}. Unaweza kuikataa au kuikubali kupitia viungo vilivyo hapa chini."
+            invited_user_to_join_a_conference: "%{invited_by} amekualika kujiunga na mkutano katika %{application}. Unaweza kuikubali kupitia kiungo hapa chini."
+            registration: Usajili wa '%{conference_title}'
+        partners:
+          index:
+            title: Washirika
+        registration_types:
+          form:
+            select_conference_meetings: Chagua mikutano ya kongamano
+          index:
+            title: Aina za usajili
+        send_conference_diploma_mailer:
+          diploma:
+            diploma_html: Utapata cheti cha kuhudhuria mkutano <a href="%{url}">%{title}</a> kwenye viambatisho.
+          diploma_user:
+            attendance_verified_by: Mahudhurio yamethibitishwa na
+            certificate_of_attendance: Cheti cha Mahudhurio
+            certificate_of_attendance_description: Hii ni kuthibitisha kwamba <strong>%{user}</strong> amehudhuria na kushiriki katika <strong>%{title}</strong> iliyofanyika <strong>%{location}</strong> mnamo <strong>%{start} - %{end}</strong>
+        send_diploma:
+          error: Kulikuwa na tatizo la kutuma vyeti vya mahudhurio ya kongamano.
+          success: Vyeti vya kuhudhuria mkutano vimetumwa kwa mafanikio
+      conference:
+        registration_confirm:
+          cancel: Ghairi
+          confirm: Thibitisha
+        show:
+          going: Kuhudhuria
+          no_slots_available: Hakuna nafasi zinazopatikana
+          registration: Usajili
+      conference_program:
+        show:
+          program: Mpango
+      conference_registration_mailer:
+        confirmation:
+          confirmed_html: Usajili wako kwa mkutano <a href="%{url}">%{title}</a> umethibitishwa.
+          details_1: 'Umesajiliwa kwa mkutano kwa aina ya %{registration_type}. Ina gharama ya %{price} na unaweza kuhudhuria matukio yafuatayo:'
+          details_2: Utapata maelezo ya mkutano katika kiambatisho.
+        pending_validation:
+          confirmation_pending: Utapokea uthibitisho hivi karibuni
+          details: 'Umejiandikisha kwa aina ya %{registration_type} kwa gharama ya %{price} na unaweza kuhudhuria matukio yafuatayo:'
+          pending_html: Usajili wako kwa mkutano <a href="%{url}">%{title}</a> unasubiri kuthibitishwa.
+      conference_registrations:
+        create:
+          invalid: Kulikuwa na tatizo la kujiunga na mkutano huu.
+          success: Umefanikiwa kujiunga na mkutano.
+          unauthorized: Unahitaji kuingia kabla ya kujiandikisha kwenye mkutano.
+        decline_invitation:
+          invalid: Kulikuwa na tatizo la kukataa mwaliko.
+          success: Umefaulu kukataa mwaliko.
+          unauthorized: Unahitaji kuingia kabla ya kukataa mwaliko.
+        destroy:
+          invalid: Kulikuwa na tatizo kuondoka kwenye mkutano huu.
+          success: Umeondoka kwenye mkutano kwa ufanisi.
+      conference_speaker:
+        go_to_twitter: Nenda kwa X
+        more_info: habari zaidi
+        personal_website: Tovuti ya kibinafsi
+        show:
+          more_info: habari zaidi
+          speaking_at: Akizungumza katika
+      conference_speaker_cell:
+        personal_url:
+          personal_website: Tovuti ya kibinafsi
+      conference_speakers:
+        index:
+          speakers:
+            one: Spika
+            other: Spika
+      conferences:
+        partners:
+          collaborators: Washirika
+          main_promotors: Waandaaji
+        show:
+          already_have_an_account?: Je, tayari una akaunti?
+          are_you_new?: Mshiriki mpya?
+          login_as: Umeingia kama %{name} <%{email}>
+          make_conference_registration: Jiandikishe kwa mkutano huo
+          manage_registration: Dhibiti usajili
+          register: Sajili
+          sign_in_description: Ingia ili kujiandikisha kwenye mkutano
+          sign_up_description: Unda akaunti ili kujiandikisha kwenye mkutano
+      content_blocks:
+        highlighted_conferences:
+          name: Mikutano iliyoangaziwa
+      index:
+        title: Mikutano
+      last_activity:
+        new_conference: 'Mkutano mpya:'
+      mailer:
+        conference_registration_mailer:
+          confirmation:
+            subject: Usajili wa mkutano wako umethibitishwa.
+          pending_validation:
+            subject: Usajili wa mkutano wako unasubiri kuthibitishwa.
+        invite_join_conference_mailer:
+          invite:
+            subject: Mwaliko wa kujiunga na mkutano
+        send_conference_diploma_mailer:
+          diploma:
+            subject: Cheti chako cha kuhudhuria mkutano kimetumwa
+      models:
+        conference_invite:
+          fields:
+            email: Barua pepe
+            name: Jina
+            registration_type: Aina ya usajili
+            sent_at: Imetumwa saa
+            status: Hali
+          status:
+            accepted: Imekubaliwa (%{at})
+            rejected: Imekataliwa (%{at})
+            sent: Imetumwa
+        conference_registration:
+          fields:
+            email: Barua pepe
+            name: Jina
+            registration_type: Aina ya usajili
+            state: Hali
+            states:
+              confirmed: Imethibitishwa
+              pending: Inasubiri
+      pages:
+        home:
+          highlighted_conferences:
+            active_spaces: Mikutano inayoendelea
+            see_all_spaces: Tazama mikutano yote
+      registration_types:
+        index:
+          choose_an_option: 'Chagua chaguo lako la usajili:'
+          no_registrations: Hakuna usajili
+          register: Sajili
+          title: Aina za usajili
+      show:
+        details: Maelezo
+        introduction: Utangulizi
+        objectives: Malengo
+        related_assemblies: Makusanyiko yanayohusiana
+        related_participatory_processes: Michakato shirikishi inayohusiana
+    events:
+      conferences:
+        conference_registration_confirmed:
+          notification_title: Usajili wako kwa mkutano <a href="%{resource_url}">%{resource_title}</a> umethibitishwa.
+        conference_registration_validation_pending:
+          notification_title: Usajili wako kwa mkutano <a href="%{resource_url}">%{resource_title}</a> unasubiri kuthibitishwa.
+        conference_registrations_over_percentage:
+          email_intro: Nafasi zinazoshikiliwa na mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa nafasi shirikishi ya mkutano.
+          email_subject: Nafasi zinazoshikiliwa na mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%
+          notification_title: <a href="%{resource_path}">%{resource_title}</a> nafasi zinazokaliwa na mkutano ni zaidi ya %{percentage}%.
+        conference_updated:
+          email_intro: 'Mkutano wa "%{resource_title}" ulisasishwa. Unaweza kusoma toleo jipya kutoka kwa ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" ulisasishwa
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulisasishwa.
+        registrations_enabled:
+          email_intro: 'Kongamano la "%{resource_title}" limewezesha usajili. Unaweza kujiandikisha kwenye ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Kongamano la "%{resource_title}" limewezesha usajili.
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> umewezesha usajili.
+        role_assigned:
+          email_intro: Umepewa kama %{role} kwa mkutano "%{resource_title}".
+          email_outro: Umepokea arifa hii kwa sababu wewe ni %{role} la mkutano wa "%{resource_title}".
+          email_subject: Umepewa kama %{role} ya "%{resource_title}".
+          notification_title: Umekabidhiwa kama %{role} kwa mkutano <a href="%{resource_url}">%{resource_title}</a>.
+        upcoming_conference:
+          email_intro: 'Kongamano la "%{resource_title}" linafanyika baada ya siku 2. Unaweza kusoma maelezo kutoka kwa ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Kongamano la "%{resource_title}" linakuja!
+          notification_title: Kongamano la <a href="%{resource_path}">%{resource_title}</a> linakuja baada ya siku 2.
+    help:
+      participatory_spaces:
+        conferences:
+          contextual: "<p>Mkutano wa <strong></strong> ni mkusanyiko wa mikutano iliyopangwa katika programu, na idadi ya watu walioalikwa kama wasemaji, na nyanja zingine za habari za kawaida za kongamano kubwa au hafla za kijamii (usajili, orodha ya mashirika yanayounga mkono. au kufadhili tukio, n.k.).</p> <p>Mifano: Kongamano linaweza kuwa tukio muhimu kwa shirika na wanachama wake, au kufanyika kama sehemu ya mchakato shirikishi au kufuata mashauriano.</p>"
+          page: "<p>Mkutano wa <strong></strong> ni mkusanyiko wa mikutano iliyopangwa katika programu, na idadi ya watu walioalikwa kama wasemaji, na nyanja zingine za habari za kawaida za kongamano kubwa au hafla za kijamii (usajili, orodha ya mashirika yanayounga mkono. au kufadhili tukio, n.k.).</p> <p>Mifano: Kongamano linaweza kuwa tukio muhimu kwa shirika na wanachama wake, au kufanyika kama sehemu ya mchakato shirikishi au kufuata mashauriano.</p>"
+          title: Kongamano ni nini?
+    log:
+      value_types:
+        conference_presenter:
+          not_found: 'Mkutano haukupatikana kwenye hifadhidata (ID: %{id}).'
+    media:
+      index:
+        description: Viungo kuhusu mkutano huu
+        title: Vyombo vya habari na Viungo
+    menu:
+      conferences: Mikutano
+    statistics:
+      conferences_count: Mikutano
+  devise:
+    mailer:
+      join_conference:
+        subject: Mwaliko wa kujiunga na mkutano
+  layouts:
+    decidim:
+      conference_hero:
+        manage_registration: Dhibiti usajili
+        register: Sajili
+      conferences:
+        conference:
+          more_info: Maelezo zaidi
+          take_part: Shiriki
+        index:
+          promoted_conferences: Mikutano iliyoangaziwa
+        order_by_conferences:
+          conferences:
+            one: "%{count} mkutano"
+            other: "%{count} mikutano"
+      conferences_nav:
+        conference_partners_menu_item: Washirika
+        conference_speaker_menu_item: Spika
+        media: Vyombo vya habari
+        venues: Maeneo

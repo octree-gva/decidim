@@ -1,1 +1,309 @@
+---
 pt:
+  decidim:
+    design:
+      components:
+        accordions:
+          content_panel: Conteúdo do painel
+          demo: Demonstração
+          demo_description: Em toda a aplicação os acordos são utilizados, principalmente, para exibir/ocultar conteúdo em abas ou dobrar/desdobrar textos visíveis.
+          description_accordions_html: Os Acordeões são um recurso de javascript disponível graças a uma biblioteca externa chamada %{link_code} a11y-accordion-componente.
+          github_source_html: Código-fonte no GitHub %{github_link}
+          panel: Painel
+          title: Acordeões
+          trigger: Gatilho
+          usage: Utilização
+          usage_p: Um accordion requer pelo menos três elementos
+          usage_p_1_html: 1. Um wrapper <code>div</code>, com o atributo de dados <code>data-component="accordion"</code>, sobre todos os gatilhos e painéis disponíveis.
+          usage_p_2_html: 2. Um elemento acionador, acionável pelo usuário (como um botão), apontando para o elemento recolhido através do <code>data-controls="painel"</code>, onde o painel <i></i> é a Ajuda <code></code> do painel.
+          usage_p_3_html: 3. Um elemento ocultável, cujo <code>id</code> corresponde ao valor data-controls ao qual o gatilho se refere.
+        activities:
+          activities: Atividades
+        address:
+          title: Endereço
+        announcement:
+          iam_an_announcement: Sou um anúncio
+          this_is_the_body: Este é o conteúdo
+          this_is_the_title: Este é o título
+          title: Anúncio
+        author:
+          title: Autor
+        buttons:
+          description_html: 'Os botões são criados usando diferentes combinações de classes CSS: a classe <code>button</code>, um tamanho e uma cor.'
+          title: Botões
+        cards:
+          title: Cartões
+        dialogs:
+          dialog_demo_description_html: Os diálogos, ou componentes modais, são implementados através do helper rails <code>decidim_modal</code>.
+          dialogs_description_html: Os diálogos são uma funcionalidade de javascript disponível graças a uma biblioteca externa chamada <a href="https://github.com/jonathanlevaillant/a11y-dialog-component" target="_blank" rel="noopener noreferrer">a11y-dialog-component</a>.
+          tips_description: 'Para exibir um modal complexo, alinhado aos estilos, use a seguinte marcação:'
+          tips_description_html: Preste atenção aos <i>atributos data</i> e aos <i>ids</i>. Por exemplo, o id de <code>[data-dialog-title]</code> começa com <i>dialog-title</i> seguido do <i>id do modal</i>.
+          title: Diálogos
+          usage_description: Um diálogo requer dois elementos
+          usage_description_2_html: 2. Um elemento modal, cujo <code>id</code> corresponde ao valor data-target ao qual o gatilho se refere.
+          usage_description_html: 1. Um elemento acionável pelo utilizador, com o atributo data <code>data-dialog-open="example"</code>, onde example é o <code>id</code> do modal.
+        follow:
+          title: Seguir
+        forms:
+          disabled: Desativado
+          emojis: Emojis
+          emojis_description: Funciona apenas para textarea
+          errors: Erros
+          errors_description: Não se aplica a select
+          header_alert: Esta página vem de uma visualização legada. O conteúdo está desatualizado.
+          help_texts: Textos de ajuda
+          html_regular_inputs: Entradas HTML regulares
+          min_max_length: Comprimento mínimo/máximo
+          min_max_length_description: Funciona apenas para input type='text' e textarea
+          multiselect: Multiselect
+          multiselect_description_html: Multiselects são uma funcionalidade de javascript disponível graças a uma biblioteca externa chamada <a href="https://tom-select.js.org/" target="_blank" rel="noopener noreferrer">Tom Select</a>.
+          regular_inputs_description: 'Exibe apenas tipos comuns, lista completa disponível: date, datetime-local, email, month, number, password, search, tel, text, time, url, week'
+          textarea_required: textarea obrigatório
+          title: Formulários
+        report:
+          title: Denunciar
+        share:
+          title: Partilhar
+        tab_panels:
+          title: Painéis de separadores
+        tooltips:
+          demo: Demonstração
+          demo_description: Para esta funcionalidade funcionar, um participante precisa de passar o cursor sobre o elemento.
+          description: Uma tooltip é um componente que os utilizadores podem passar o cursor para obter informações adicionais sobre ele.
+          github_source_html: Código-fonte no GitHub %{github_link}
+          title: Tooltips
+          usage: Uso
+          usage_p: 'Uma tooltip requer o uso do helper `with_tooltip`, com três argumentos:'
+          usage_p_1_html: 1. Uma string com o valor da tooltip. No exemplo desta página é "Olá mundo".
+          usage_p_2_html: 2. Uma classe opcional com um símbolo que indica onde a tooltip será exibida. Os valores possíveis são <code>:top</code>, <code>:bottom</code>, <code>:right</code> ou <code>:left</code>.
+          usage_p_3_html: 3. Um bloco com a string que o utilizador precisa passar o cursor para ser exibida.
+      foundations:
+        accessibility:
+          accessibility_labels: Etiquetas de acessibilidade
+          accessibility_labels_paragraph: Ao definir elementos, garante sempre que fazem sentido para utilizadores de leitores de ecrã.
+          accessibility_title: Acessibilidade
+          adjacent_links: Links adjacentes
+          adjacent_links_header: Links adjacentes para o mesmo recurso
+          adjacent_links_paragraph: Se o mesmo recurso tiver vários links adjacentes apontando para ele, dificulta para esses utilizadores percorrerem a página, pois podem precisar de passar por vários links para chegar ao próximo recurso.
+          color_contrast: Contraste de cores
+          color_contrast_paragraph: Ao criar interfaces de utilizador ou modificar as cores, garante sempre que não estás a comprometer a acessibilidade com as tuas alterações. Podes usar o Verificador de contraste de cores para assegurar que as tuas cores têm contraste suficiente contra a cor de fundo onde são exibidas.
+          decidim_follows_html: O Decidim segue as <u>Diretrizes de Acessibilidade para Conteúdo na Web (WCAG) 2.1</u>
+          dynamic_changes_header: Funcionalidade dinâmica altera o contexto da página de forma não intuitiva
+          dynamic_changes_paragraph: As alterações nos campos do formulário não devem alterar automaticamente o contexto da página.
+          elements_hidden: Elementos escondidos
+          elements_hidden_header: Elementos escondidos da API de acessibilidade
+          elements_hidden_paragraph: Para esconder um elemento de tecnologias assistivas, usa o atributo aria-hidden="true" nele.
+          heading_on: Título em seções importantes
+          here_link: aqui
+          illogical_heading_order: Ordem ilógica de títulos
+          illogical_heading_paragraph: Cada página deve ter uma ordem lógica de títulos ao usar os elementos <h1>, <h2>, <h3>, <h4>, <h5> e <h6>.
+          important_sections_heading: Título em seções importantes
+          important_sections_paragraph: É altamente importante que cada seção importante da página tenha um título para facilitar a compreensão das seções importantes da página apenas navegando pelos seus títulos.
+          links_and_buttons: Links e Botões
+          links_and_buttons_paragraph: Os elementos âncora (ou seja, links) são destinados a ligar para páginas diferentes ou para âncoras dentro da página. Se o elemento for, por exemplo, para abrir algum item escondido na página, deves usar o elemento <button> em vez disso.
+          see_further_info_html: Consulta mais informações %{link}
+          unique_h1: H1 único
+          unique_h1_paragraph: Cada página deve ter um título H1 único
+          use_aria: Usa ARIA
+          use_aria_header: Usa atributos ARIA sempre que possível
+          use_aria_paragraph: Muitos elementos que fornecem funcionalidade interativa no site requerem atributos ARIA para torná-los acessíveis.
+        color:
+          color_header: Cor
+          description_p1: Fornecemos uma paleta base com poucas cores para que personalizações simples sejam fáceis. Podes modificar a paleta base na área de Administração ou no ficheiro de configuração do Tailwind, se precisares de personalizações mais avançadas.
+          description_p2_html: Ao personalizar as tuas cores, tem em mente o %{contrast_link}. Podes verificar o contraste da tua escolha com %{checker_link} ou outras ferramentas semelhantes.
+          wcag_compliant_rations: Relação de contraste compatível com WCAG 2.1 AA
+          wcag_contrast_checker: Verificador de Contraste WebAIM
+        iconography:
+          description_iconography: Usamos ícones para reforçar o significado de ações, títulos, etc
+          description_iconography_html: 'Usamos a biblioteca open source Remixicon: %{iconography_link}'
+          title: Iconografia
+        layout:
+          breakpoint: Ponto de interrupção
+          breakpoints: Pontos de interrupção
+          centered: Centrado
+          code: Código
+          columns: Sendo o número de colunas 10, 8 ou 6.
+          description_layout_p1: Para desktop, o Decidim utiliza uma grelha de 12 colunas com um número limitado de modelos (configurações de grelha) para diferentes tipos de conteúdo. O objetivo é que um determinado tipo de conteúdo (página inicial, lista de elementos, item individual) tenha um layout distintivo, para que os utilizadores possam entender em que tipo de conteúdo estão apenas pelo aspeto geral da página.
+          description_layout_p2: Estas regras simples devem ser seguidas ao criar novos módulos ou personalizar os existentes, para que um site Decidim possa manter a sua consistência.
+          desktop: Desktop
+          full_width: Largura total
+          layout_list_1: 'Página inicial (do site, de um espaço): largura total'
+          layout_list_2: 'Lista de elementos (de espaços, de itens dentro de um espaço, etc.): alinhado à esquerda'
+          layout_list_3: 'Item individual (proposta, publicação de blog): centrado, opcionalmente com alinhamento à direita'
+          left_aside: Alinhado à esquerda
+          mobile: Mobile
+          not_required: Não requerido
+          properties: Propriedades
+          right_aside: Alinhado à direita
+          section_p_breakpoints: 'Para gerir a largura máxima responsiva dos elementos, usamos a classe padrão `container` do Tailwind, que define os seguintes pontos de interrupção:'
+          section_p_code: Ao implementar novos módulos, tens alguns auxiliares que te fornecem automaticamente o código necessário para configurar a estrutura HTML. Deves usar esses auxiliares em vez de usar diretamente elementos div com classes, para manter a consistência.
+          section_p_code_html: Podes encontrar os layouts básicos em %{link_section_code}
+          section_p_desktop: O sistema de grelha para desktop é composto por 12 colunas flexíveis com um espaçamento entre colunas de 16px e margens esquerda e direita de 48px
+          section_p_mobile: O sistema de grelha para mobile é composto por 4 colunas flexíveis com um espaçamento entre colunas de 16px e margens esquerda e direita de 16px. Para tamanhos abaixo de 320px, essas margens são ajustadas para 8px
+          section_p_tablet: O sistema de grelha para tablet é composto por 8 colunas flexíveis com um espaçamento entre colunas de 16px e margens esquerda e direita de 24px
+          tablet: Tablet
+          title: Layout
+        typography:
+          description: Estas diretrizes resumem como usar tipografia no Decidim e servem como orientações para que designers possam projetar livremente com as melhores práticas tipográficas em mente.
+          headings:
+            characters: Caracteres por linha
+            layout: Colunas de layout
+            size: Tamanho
+          title: Tipografia
+          typefaces_description_1: O Decidim usa a fonte Source Sans Pro como fonte principal. Esta fonte suporta 310 idiomas
+          typefaces_description_2: Estas fontes estão licenciadas sob a Open Font License
+      helpers:
+        accountability: Prestação de contas
+        accountability_cards_html: Usado por cartões de <i>Projetos de Prestação de Contas</i>. Este cartão requer os recursos do módulo para ser exibido corretamente, ou seja, <code>append_stylesheet_pack_tag \"decidim_accountability\"</code>
+        activity: Atividade
+        address_description: A célula de endereço recebe um recurso e procura os atributos geolocalizáveis para renderizar uma marcação específica.
+        address_description_2: Dependendo do tipo de conteúdo, o endereço pode ser um URL online. Para esses casos, a informação exibida é bastante semelhante, mas ajustada para se adequar.
+        ally_link: a11y-dropdown-component
+        argument: Argumento
+        assemblies: Assembleias
+        assembly_g: Assembleia G
+        assembly_s: Assembleia S
+        avatar: Avatar
+        avatar_description: É usado quando há espaços estreitos, onde o autor é uma informação secundária.
+        background: Fundo e bordas
+        base: Base
+        block_text: Usa o bloco extra_data
+        blog_cards_html: Usado por cartões de <i>Blogs</i>
+        blogs: Blogs
+        budget_card_html: Usado por cartões de <i>Projetos de Orçamento</i>. Este cartão requer os recursos do módulo para ser exibido corretamente, ou seja, <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
+        budgets: Orçamentos
+        callout_class: Classe de Destaque
+        callout_description: Este atributo aplica um estatuto ao anúncio. Por padrão, usa a cor secundária.
+        card_g: Cartão G
+        card_l: Cartão L
+        card_s: Cartão S
+        collaborative_draft_l: Rascunho Colaborativo L
+        colors: Cores
+        compact: Compacto
+        compact_description: Esta versão do autor é a forma comum de identificar o criador do recurso.
+        conference_g: Conferência G
+        conference_s: Conferência S
+        conferences: Conferências
+        context: Contexto
+        context_description: Esta célula exibe algumas informações sobre um utilizador. É uma ajuda visual para identificar o criador do recurso/conteúdo. Passar o cursor do rato exibe uma tooltip com mais informações e links para o perfil.
+        context_description_2: Para recursos, esta célula aparece abaixo do título principal. Para outros conteúdos, aparece ao lado do próprio conteúdo.
+        debate_l: Debate L
+        debate_s: Debate S
+        debates: Debates
+        debates_cards_html: Usado por cartões de <i>Debates</i>
+        debates_cards_text: Usar um modelo diferente para o bloco de imagem
+        default: Padrão
+        default_description: Chamar a célula sem argumentos extras, apenas o próprio utilizador.
+        demo: Demonstração
+        demo_text: 'Esta célula recebe um modelo de itens LastActivity e exibe os seguintes elementos:'
+        demo_text_2: Usado pela página de últimas atividades, num bloco de conteúdo e dentro dos menus suspensos.
+        description: Descrição
+        disabled: Desativado
+        dropdowns: Menus suspensos
+        dropdowns_demo_1_description: 'O seguinte exemplo não será perceptível em desktop, mas em dispositivos móveis:'
+        dropdowns_demo_description: Os menus suspensos são usados na aplicação para colapsar menus grandes, fáceis de ler em dispositivos desktop, mas muito extensos para dispositivos móveis.
+        dropdowns_demo_description_html: 'Esta funcionalidade em javascript é melhorada com um pequeno CSS, usando a nomeação: o conteúdo ocultável DEVE TER um <code>id</code> começando com <i>dropdown-menu</i>.'
+        dropdowns_description_html: Os menus suspensos são uma funcionalidade javascript disponível graças a uma biblioteca externa chamada %{link}.
+        dropdowns_usage_1_description: 2. Um elemento ocultável, cujo <code>id</code> corresponde ao valor data-target ao qual o gatilho se refere.
+        dropdowns_usage_description: 'Um menu suspenso requer dois elementos:'
+        dropdowns_usage_description_html: 1. Um elemento acionável pelo usuário, com os atributos de dados <code>data-component="dropdown" data-├dropdown-menu-element"</code>.
+        dummy_description: Descrição do recurso fictício
+        dummy_title: Título do recurso fictício
+        follow_button: Botão de Seguir
+        follower_description_html: Certifica-te de que o parcial <code>decidim/shared/login_modal</code> está presente no DOM. Este parcial está colocado no layout da aplicação quando o utilizador está autenticado.
+        form_elements: Elementos de formulário
+        generic_cards: Cartões genéricos
+        grid: Grelha
+        hex_code: Código Hexadecimal
+        highlight: Destaque
+        highlight_description: Usado por recursos que permitem destacar
+        html_tips: Dicas de HTML
+        icons: Ícones
+        image_and_description: Imagem e Descrição
+        initiative_g: initiative_g
+        initiative_s: initiative_s
+        initiatives: Iniciativas
+        list: Lista
+        main_colors: Cores principais
+        meeting_l: Reunião L
+        meeting_s: Reunião S
+        meetings: Reuniões
+        meetings_html: Usado por cartões de <i>Reuniões</i>
+        metadata_items: Itens de metadados
+        metadata_text: Cada recurso define os seus próprios itens de metadados
+        participatory_process_g: Processo Participativo G
+        participatory_process_group_g: Grupo de Processos Participativos G
+        participatory_process_group_s: Grupo de Processos Participativos S
+        participatory_process_s: Processo Participativo S
+        participatory_processes: Processos Participativos
+        plain_text: Sou apenas texto simples
+        plain_text_description: Podes fornecer como primeiro argumento tanto um texto simples quanto um objeto hash
+        plain_text_vs_hash: Texto Simples vs Hash
+        post_g: Publicação G
+        post_l: Publicação L
+        post_s: Publicação S
+        project_l: Projeto L
+        project_s: Projeto S
+        proposal_l: Proposta L
+        proposal_s: Proposta S
+        proposals: Propostas
+        report_button: Botão de denúncia
+        report_usage_description: O botão de denúncia abre uma janela modal para sinalizar o recurso atual.
+        result_l: Resultado L
+        rgba_code: Código RGBA
+        search: Pesquisar
+        send: Enviar
+        share_button: Botão de partilha
+        share_usage_description_html: Certifica-te de que o parcial <code>decidim/shared/share_modal</code> está presente no DOM. Este parcial está colocado no layout da aplicação.
+        sizes: Tamanhos
+        sortition_l: sortition_l
+        sortitions: Sorteios
+        source_code: Código Fonte
+        state: Estado
+        tab_panels_context_description: Este componente do painel de guias reúne todo o conteúdo relacionado ou outros recursos do elemento principal exibido, a fim de economizar espaço vertical. Clicar na aba irá ativar o painel criado para mostrar o conteúdo.
+        tab_panels_context_description_html: É usado principalmente dentro de <i>layout_item</i> ou <i>layout_center</i>, após o conteúdo principal do recurso.
+        tab_panels_usage_description: 'Este componente recebe uma matriz de hashes, e reorganiza a saída de cada item em uma estrutura de painel de abas. Propriedades disponíveis para cada painel:'
+        tab_panels_usage_description_arguments_html: "<strong>args</strong>: <i>Array</i>. Argumentos para o método anterior"
+        tab_panels_usage_description_html: "<strong>enabled</strong>: <i>Boolean</i>. Renderiza a aba condicionalmente"
+        tab_panels_usage_description_id_html: "<strong>id</strong>: <i>String</i>. ID único"
+        tab_panels_usage_description_rails_html: "<strong>method</strong>: <i>Symbol</i>. Qualquer função que o Rails compreenda"
+        tab_panels_usage_description_remixicon_html: "<strong>icon</strong>: <i>String</i>. Chave Remixicon"
+        tab_panels_usage_description_tab_html: "<strong>text</strong>: <i>String</i>. Título da aba"
+        tailwind: Nome Tailwind
+        text: Texto
+        transparent: Transparente
+        transparent_description: 'No caso de um fundo mais escuro:'
+        types: Tipos
+        typography_texts: Tipografia e texto
+        usage: Uso
+        usage_background_1: Fundo do lado
+        usage_background_2: Fundo do filtro da barra lateral selecionado
+        usage_background_3: Cor padrão do ícone
+        usage_background_4: Linhas e separadores
+        usage_background_5: Fundo do rodapé
+        usage_background_6: Fundo do layout de administração
+        usage_base_1: Fundo principal de componente nav\nMenu Nav na página inicial e espaço inicial
+        usage_base_2: Cor principal para links e botões
+        usage_base_3: Ornamentos gráficos e cor de destaque\nBorda no estado de hover de cartões e itens de lista
+        usage_formelements_1: Fundo padrão dos elementos de entrada
+        usage_formelements_2: Fundo no estado desativado dos elementos de entrada
+        usage_state_1: Borda de aviso de sucesso\nPreenchimento do ícone de aviso de sucesso\nFundo do botão na mensagem de sucesso
+        usage_state_2: Borda de aviso de alerta
+        usage_state_3: Borda de aviso de alerta\nPreenchimento do ícone de aviso de alerta
+        usage_typography_1: Títulos e subtítulos de seções
+        usage_typography_2: Texto em linha
+        usage_typography_3: Texto sobre fundo escuro
+        usage_typography_4: Links e botões
+        value: Valor
+        variations: Variações
+        variations_cards_description: Cada cartão terá uma aparência diferente dependendo das propriedades do recurso exibido. Podes substituir esse comportamento na célula específica.
+        variations_description: Existem três versões diferentes desta célula. Cada uma se adapta melhor ao contexto em que está sendo exibida.
+        variations_text: Dependendo do tipo de atividade, a célula pode exibir conteúdo diferente, relatando os distintos recursos, se pertencem ou não a um espaço participativo, se têm ou não um autor.
+      home:
+        index:
+          by_sharing_principles: Ao compartilhar os princípios, filosofia e lógica por trás das decisões de design, queremos capacitar a comunidade a contribuir com consistência para que alcancemos a melhor experiência para os participantes.
+          decidim_guide: O guia para projetar tudo no Decidim
+          different_ui_components: Ao mesmo tempo, documentamos os diferentes componentes de interface do usuário e padrões em uso, que devem ser reutilizados ou estendidos.
+          github_source: Código-fonte no GitHub
+          home_header: Guia de Design do Decidim
+          welcome_sentence: Bem-vindo ao Guia de Design do Decidim (DDG). Este guia é o recurso para designers e desenvolvedores que precisam personalizar, desenvolver novos módulos e integrar novas funcionalidades.

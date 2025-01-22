@@ -1,1 +1,628 @@
+---
 sw:
+  activemodel:
+    attributes:
+      initiative:
+        answer: Jibu
+        answer_url: Jibu URL
+        area_id: Eneo
+        decidim_scope_id: Upeo
+        decidim_user_group_id: Mwandishi
+        description: Maelezo
+        hashtag: Hashtag
+        offline_votes: Sahihi za kibinafsi
+        offline_votes_for_scope: Saini za kibinafsi za %{scope_name}
+        scope_id: Upeo
+        signature_end_date: Mwisho wa kipindi cha kukusanya sahihi
+        signature_start_date: Kuanza kwa kipindi cha kukusanya sahihi
+        signature_type: Aina ya mkusanyiko wa saini
+        signature_type_values:
+          any: Imechanganywa
+          offline: Ana kwa ana
+          online: Mtandaoni
+        state: Hali
+        title: Kichwa
+        type_id: Aina
+      initiatives_committee_member:
+        user: Mjumbe wa kamati
+      initiatives_settings:
+        initiatives_order: Agizo
+      initiatives_type:
+        area_enabled: Wawezesha waandishi kuchagua eneo kwa ajili ya mpango wao
+        attachments_enabled: Washa viambatisho
+        banner_image: Picha ya bango
+        child_scope_threshold_enabled: Washa sahihi za upeo wa watoto
+        collect_user_extra_fields: Kusanya data ya kibinafsi ya mshiriki kwenye sahihi
+        comments_enabled: Washa maoni
+        custom_signature_end_date_enabled: Waruhusu waandishi kuchagua mwisho wa kipindi cha kukusanya sahihi
+        description: Maelezo
+        document_number_authorization_handler: Uidhinishaji wa kuthibitisha nambari ya hati kwenye sahihi
+        extra_fields_legal_information: Taarifa za kisheria kuhusu ukusanyaji wa data binafsi
+        minimum_committee_members: Wachache wa wajumbe wa kamati
+        online_signature_enabled: Sahihi ya mtandaoni imewezeshwa
+        only_global_scope_enabled: Ruhusu uundaji wa mipango ya kimataifa pekee
+        promoting_committee_enabled: Washa kamati ya ukuzaji
+        signature_type: Aina ya saini
+        title: Kichwa
+        undo_online_signatures_enabled: Waruhusu washiriki kutendua sahihi zao mtandaoni
+        validate_sms_code_on_votes: Ongeza hatua ya uthibitishaji wa nambari ya SMS kwenye mchakato wa kusaini
+      initiatives_type_scope:
+        decidim_scopes_id: Upeo
+        supports_required: Inasaidia inahitajika
+      initiatives_vote:
+        date_of_birth: Tarehe ya kuzaliwa
+        document_number: Nambari ya hati
+        name_and_surname: Jina kamili
+        postal_code: Msimbo wa posta
+      organization_data:
+        address: Anwani
+        id_document: Hati
+        name: Jina kamili
+    errors:
+      models:
+        initiative:
+          attributes:
+            attachment:
+              file: Faili ni batili
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
+              title: Kichwa haipaswi kuwa tupu
+  activerecord:
+    models:
+      decidim/initiative:
+        one: Mpango
+        other: Mipango
+      decidim/initiative_comittee:
+        one: Kamati
+        other: Kamati
+      decidim/initiative_vote:
+        one: Sahihi
+        other: Sahihi
+  decidim:
+    admin:
+      actions:
+        new_initiative_type: Aina mpya ya mpango
+        new_initiative_type_scope: Wigo mpya wa aina ya mpango
+      filters:
+        initiatives:
+          decidim_area_id_eq:
+            label: Eneo
+          state_eq:
+            label: Jimbo
+            values:
+              accepted: Saini za kutosha
+              created: Imeundwa
+              discarded: Imetupwa
+              published: Imechapishwa
+              rejected: Hakuna sahihi za kutosha
+              validating: Uthibitishaji wa kiufundi
+          type_id_eq:
+            label: Aina
+        search_placeholder:
+          title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Tafuta %{collection} kwa kichwa, maelezo, kitambulisho au jina la mwandishi.
+      initiatives_settings:
+        update:
+          error: Hitilafu imetokea.
+          success: Mipangilio ya mipango imesasishwa kwa ufanisi.
+      menu:
+        attachments: Viambatisho
+        committee_members: Wajumbe wa kamati
+        information: Habari
+        initiative_type_scopes: Mawanda ya aina ya mpango
+        initiatives: Mipango
+        initiatives_menu:
+          see_initiative: Tazama mpango
+        initiatives_settings: Mipangilio
+        initiatives_submenu:
+          info: Kuhusu mpango huu
+        initiatives_types: Aina za uanzishaji
+        moderations: Ukadiriaji
+      models:
+        initiatives:
+          fields:
+            created_at: Imeundwa saa
+            id: ID
+            published_at: Iliyochapishwa saa
+            state: Hali
+            supports_count: Sahihi
+            title: Mipango
+        initiatives_type_scope:
+          fields:
+            scope: Upeo
+            supports_required: Saini zinahitajika
+          name: Upeo wa aina ya mpango
+        initiatives_types:
+          fields:
+            created_at: Imeundwa saa
+            title: Aina za uanzishaji
+          name: Aina ya mpango
+        initiatives_votes:
+          fields:
+            date_of_birth: Tarehe ya kuzaliwa
+            document_number: Nambari ya hati
+            hash: Hash
+            initiative_end_date: Tarehe ya mwisho
+            initiative_id: ID ya Mpango
+            initiative_signatures_count: Idadi ya saini
+            initiative_start_date: Tarehe ya kuanza
+            initiative_title: Kichwa cha mpango
+            name_and_surname: Jina kamili
+            postal_code: Msimbo wa posta
+            scope: Upeo
+            time_and_date: Wakati na tarehe
+            timestamp: Muhuri wa saa
+      titles:
+        initiatives: Mipango
+        initiatives_types: Aina za uanzishaji
+    events:
+      initiatives:
+        admin:
+          initiative_sent_to_technical_validation:
+            email_intro: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_url}">paneli ya msimamizi</a>
+            email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+            email_subject: Mpango "%{resource_title}" ulitumwa kwa uthibitishaji wa kiufundi.
+            notification_title: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_path}">paneli ya msimamizi</a>
+        initiative_extended:
+          email_intro: Tarehe ya mwisho ya sahihi kwa mpango %{resource_title} imeongezwa!
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Tarehe ya mwisho ya saini za mpango imeongezwa!
+          notification_title: Tarehe ya mwisho ya kutia sahihi kwa mpango wa <a href="%{resource_path}">%{resource_title}</a> imeongezwa.
+        initiative_sent_to_technical_validation:
+          email_intro: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_url}">paneli ya msimamizi</a>
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Mpango "%{resource_title}" ulitumwa kwa uthibitishaji wa kiufundi.
+          notification_title: Mpango "%{resource_title}" umetumwa kwa uthibitishaji wa kiufundi. Iangalie katika <a href="%{admin_initiative_path}">paneli ya msimamizi</a>
+        milestone_completed:
+          affected_user:
+            email_intro: Mpango wako %{resource_title} umefanikisha %{percentage}% ya sahihi!
+            email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa mpango %{resource_title}.
+            email_subject: Hatua mpya imekamilika!
+            notification_title: Mpango wako wa <a href="%{resource_path}">%{resource_title}</a> umefanikisha %{percentage}% ya sahihi.
+          follower:
+            email_intro: Mpango %{resource_title} umefanikisha %{percentage}% ya sahihi!
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Hatua mpya imekamilika!
+            notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> umefanikisha %{percentage}% ya sahihi.
+        support_threshold_reached:
+          email_intro: Mpango %{resource_title} umefikia kikomo cha sahihi
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kiwango cha juu cha sahihi kimefikiwa
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> umefikia kikomo cha sahihi
+    gamification:
+      badges:
+        initiatives:
+          conditions:
+            - Nenda kwenye nafasi ya ushiriki ya Mipango
+            - Fuata hatua ili kuunda mpango mpya
+          description: Beji hii hutolewa unapozindua mipango mipya, kwa kushirikiana na wengine ili kuitekeleza.
+          description_another: Mshiriki huyu amepata juhudi %{score} zilizochapishwa.
+          description_own: Umechapisha mipango %{score}.
+          name: Mipango iliyochapishwa
+          next_level_in: Pata mipango %{score} zaidi iliyochapishwa ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajapata juhudi zozote zilizochapishwa.
+          unearned_own: Bado huna mipango iliyochapishwa.
+    help:
+      participatory_spaces:
+        initiatives:
+          contextual: "<p>Mpango</strong> ni pendekezo ambalo linaweza kukuzwa na mtu yeyote kwa hiari yake mwenyewe (bila kutegemea vituo vingine au nafasi za ushiriki) kupitia ukusanyaji wa sahihi (za kidijitali) ili shirika litekeleze shughuli mahususi. hatua (rekebisha kanuni, anzisha mradi, badilisha jina la idara au mtaa, n.k.).</p> <p>Waendelezaji wa mpango huo wanaweza kufafanua mpango wake. malengo, kukusanya usaidizi, mjadala, kuisambaza na kufafanua pointi za mkutano ambapo saini zinaweza kukusanywa kutoka kwa waliohudhuria au mijadala iliyo wazi kwa washiriki wengine.</p> <p>Mifano: Mpango unaweza kukusanya saini ili kuitisha mashauriano kati ya watu wote. ya shirika, au kuunda au kuitisha mkutano, au kuanzisha mchakato wa kuongeza bajeti kwa eneo au eneo la shirika. Wakati wa mchakato wa kukusanya saini, watu zaidi wanaweza kuongeza mahitaji haya na kuyapeleka mbele katika shirika.</p>"
+          page: "<p>Mpango</strong> ni pendekezo ambalo linaweza kukuzwa na mtu yeyote kwa hiari yake mwenyewe (bila kutegemea vituo vingine au nafasi za ushiriki) kupitia ukusanyaji wa sahihi (za kidijitali) ili shirika litekeleze shughuli mahususi. hatua (rekebisha kanuni, anzisha mradi, badilisha jina la idara au mtaa, n.k.).</p> <p>Waendelezaji wa mpango huo wanaweza kufafanua mpango wake. malengo, kukusanya usaidizi, mjadala, kuisambaza na kufafanua pointi za mkutano ambapo saini zinaweza kukusanywa kutoka kwa waliohudhuria au mijadala iliyo wazi kwa washiriki wengine.</p> <p>Mifano: Mpango unaweza kukusanya saini ili kuitisha mashauriano kati ya watu wote. ya shirika, au kuunda au kuitisha mkutano, au kuanzisha mchakato wa kuongeza bajeti kwa eneo au eneo la shirika. Wakati wa mchakato wa kukusanya saini, watu zaidi wanaweza kuongeza mahitaji haya na kuyapeleka mbele katika shirika.</p>"
+          title: Mipango ni nini?
+    initiatives:
+      actions:
+        answer: Jibu
+      admin:
+        answers:
+          edit:
+            answer: Jibu
+            title: Jibu la %{title}
+          info_initiative:
+            created_at: Imeundwa saa
+            description: Maelezo
+            initiative_votes_count: Idadi ya kura
+            initiatives: Mipango
+            state: Jimbo
+        committee_requests:
+          index:
+            approve: Idhinisha
+            confirm_revoke: Je, una uhakika?
+            invite_to_committee_help: Shiriki kiungo hiki ili kuwaalika washiriki wengine kwenye kamati ya waendelezaji.
+            no_members_yet: Hakuna wajumbe katika kamati ya waendelezaji.
+            revoke: Batilisha
+            title: Wajumbe wa kamati
+        content_blocks:
+          highlighted_initiatives:
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
+            order:
+              default: Chaguomsingi (Angalau hivi karibuni)
+              label: 'Agiza kipengele kwa:'
+              most_recent: Hivi karibuni
+        exports:
+          initiatives: Mipango
+        index:
+          initiatives_types:
+            alert_html: "<p>Lazima uunde angalau aina moja ya mpango ili washiriki waanze kuunda mipango.</p><p> %{link}</p>"
+            button: Aina mpya ya mpango
+        initiatives:
+          accept:
+            success: Mpango huo umekubaliwa kwa mafanikio.
+          discard:
+            success: Mpango huo umetupiliwa mbali.
+          edit:
+            accept: Kubali mpango
+            confirm: Je, una uhakika?
+            confirm_send_to_technical_validation: Je, una uhakika?
+            discard: Tupa mpango huo
+            export_pdf_signatures: Hamisha PDF ya sahihi
+            export_votes: Hamisha saini
+            reject: Kataa mpango
+            send_to_technical_validation: Tuma kwa uthibitishaji wa kiufundi
+            success: Mpango huo umetumwa kwa uthibitishaji wa kiufundi
+            update: Sasisha
+          form:
+            settings: Mipangilio
+            title: Habari ya jumla
+          index:
+            actions_title: Kitendo
+            preview: Hakiki
+            print: Chapisha
+          initiative_attachments:
+            documents: Nyaraka
+            edit: Hariri
+            new: Mpya
+            photos: Picha
+          publish:
+            success: Mpango huo umechapishwa kwa ufanisi.
+          reject:
+            success: Mpango huo umekataliwa.
+          unpublish:
+            success: Mpango huo umebatilishwa.
+          update:
+            error: Hitilafu imetokea.
+            success: Mpango huo umesasishwa.
+        initiatives_settings:
+          edit:
+            update: Sasisha
+          form:
+            comments: Wengi walitoa maoni
+            date: Hivi karibuni
+            publication_date: Iliyochapishwa hivi karibuni
+            random: Nasibu
+            signatures: Wengi waliosainiwa
+            title: Mipangilio ya mipango
+        initiatives_type_scopes:
+          create:
+            error: Hitilafu imetokea.
+            success: Upeo mpya wa aina ya mpango uliotolewa umeundwa
+          destroy:
+            success: Upeo umeondolewa kwa ufanisi.
+          edit:
+            title: Hariri wigo wa aina ya mpango
+            update: Sasisha
+          new:
+            create: Unda
+            title: Unda wigo wa aina ya mpango
+          update:
+            error: Hitilafu imetokea.
+            success: Upeo umesasishwa kwa ufanisi.
+        initiatives_types:
+          create:
+            error: Hitilafu imetokea.
+            success: Aina mpya ya mpango imeundwa kwa ufanisi. Unahitaji kufafanua angalau upeo mmoja wa aina hii ya mpango ili iweze kutumika.
+          destroy:
+            success: Aina ya mpango imeondolewa kwa ufanisi.
+          edit:
+            update: Sasisha
+          form:
+            authorizations: Mipangilio ya idhini
+            child_scope_threshold_enabled_help_html: 'Alama hii ya usanidi haiauni kura za nje ya mtandao. Huwasha upeo mdogo na kufanya kazi na kidhibiti cha uidhinishaji kinachohusisha wigo kwa mtumiaji. Hakikisha umechagua idhini hiyo, hapa chini katika mipangilio ya uidhinishaji. Ili ifanye kazi, mawanda yanahitaji kusanidiwa kwa njia ya daraja: 1 Mzazi - N Mtoto. Kwa maelezo zaidi kuhusu jinsi usanidi huu unavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">ukurasa wa hati za usimamizi wa mipango</a>.'
+            only_global_scope_enabled_help_html: Weka alama kwenye alama hii ikiwa umewasha "Sahihi ya upeo wa mtoto" na kusanidi upeo wa kimataifa kama upeo wa mzazi wako. Kwa kuwezesha hili, uteuzi wa aina ya mpango utarukwa katika kichawi cha uundaji mpango. Kwa maelezo zaidi kuhusu jinsi usanidi huu unavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">kiungo</a> hiki.
+            options: Chaguo
+          initiative_type_scopes:
+            title: Upeo wa aina ya mpango
+          new:
+            create: Unda
+            title: Aina mpya ya mpango
+          update:
+            error: Hitilafu imetokea.
+            success: Aina ya mpango imesasishwa kwa ufanisi.
+      admin_log:
+        initiative:
+          publish: "%{user_name} alichapisha mpango wa %{resource_name}"
+          send_to_technical_validation: "%{user_name} alituma %{resource_name} mpango kwa uthibitishaji wa kiufundi"
+          unpublish: "%{user_name} alitupilia mbali mpango wa %{resource_name}"
+          update: "%{user_name} alisasisha mpango wa %{resource_name}"
+        initiatives_settings:
+          update: "%{user_name} alisasisha mipangilio ya mipango"
+        initiatives_type:
+          create: "%{user_name} aliunda aina ya %{resource_name} ya mipango"
+          delete: "%{user_name} alifuta aina ya %{resource_name}"
+          update: "%{user_name} alisasisha aina ya %{resource_name} ya mipango"
+      admin_states:
+        accepted: Saini za kutosha
+        created: Imeundwa
+        discarded: Imetupwa
+        published: Imechapishwa
+        rejected: Hakuna sahihi za kutosha
+        validating: Uthibitishaji wa kiufundi
+      application_helper:
+        filter_state_values:
+          accepted: Saini za kutosha
+          all: Wote
+          answered: Akajibu
+          closed: Imefungwa
+          open: Fungua
+          rejected: Hakuna sahihi za kutosha
+        filter_type_values:
+          all: Wote
+      committee_requests:
+        approve:
+          success: Ombi limeidhinishwa.
+        new:
+          continue: Endelea
+          help_text: Unakaribia kuomba kuwa mwanachama wa kamati ya waendelezaji wa mpango huu.
+        revoke:
+          success: Ombi limebatilishwa.
+        spawn:
+          success: Ombi lako limetumwa kwa mwandishi wa mpango.
+      content_blocks:
+        highlighted_initiatives:
+          name: Mipango iliyoangaziwa
+      create_initiative:
+        fill_data:
+          back: Nyuma
+          continue: Endelea
+          fill_data_help: "<ul> <li>Kagua maudhui ya mpango wako. Je, kichwa chako ni rahisi kuelewa? Je, lengo la mpango wako liko wazi?</li> <li>Unapaswa kuchagua aina ya sahihi. Ana kwa ana, mtandaoni au muunganisho wa zote mbili</li> <li>Je, mpango huu una upeo gani wa kijiografia?</li> </ul>"
+          more_information: "(Taarifa zaidi)"
+          select_area: Chagua eneo
+          select_scope: Chagua upeo
+        finish:
+          back: Nyuma
+          back_to_initiatives: Rudi kwa mipango
+          callout_text: Hongera! Mpango wako umeundwa kwa ufanisi.
+          confirm: Utatuma hatua kwa msimamizi kuikagua na kuichapisha. Baada ya kuchapishwa hutaweza kuhariri. Je, una uhakika?
+          edit_my_initiative: Hariri mpango wangu
+          go_to_my_initiatives: Nenda kwa mipango yangu
+          more_information: "(Taarifa zaidi)"
+          send_my_initiative: Tuma mpango wangu kwa uthibitishaji wa kiufundi
+        finish_help:
+          publish_helper_text: Kumbuka kwamba ili mpango wako uweze kuchapishwa ni lazima ukamilishe maelezo yanayohitajika na <strong>utume kwa uthibitisho wa kiufundi</strong> ili msimamizi aikague.
+        previous_form:
+          back: Nyuma
+          continue: Endelea
+        promotal_committee:
+          individual_help_text: Mpango wa aina hii unahitaji Tume ya Ukuzaji inayojumuisha angalau watu %{committee_size} (washahidi). Ni lazima ushiriki kiungo kifuatacho na watu wengine ambao ni sehemu ya mpango huu. Wawasiliani wako wanapopokea kiungo hiki watalazimika kufuata hatua zilizoonyeshwa.
+          more_information: "(Taarifa zaidi)"
+        select_initiative_type:
+          back: Nyuma
+          choose_html: Ninataka kuunda <strong>%{title}</strong>
+          more_information: Taarifa zaidi
+          new: Unda mpango mpya
+          select: Ninataka kukuza mpango huu
+          select_initiative_type_help: Mipango ni njia ambayo washiriki wanaweza kuingilia kati ili shirika liweze kuchukua hatua katika kutetea maslahi ya jumla. Je, ungependa kuzindua mpango gani?
+          verification_required: Thibitisha akaunti yako ili kukuza mpango huu
+        share_committee_link:
+          invite_to_committee_help: Kiungo cha kualika watu ambao watakuwa sehemu ya kamati ya waendelezaji
+      edit:
+        accept: Kubali mpango huo
+        back: Nyuma
+        confirm: Je, una uhakika?
+        discard: Tupa mpango huo
+        export_pdf_signatures: Hamisha PDF ya sahihi
+        export_votes: Hamisha saini
+        reject: Kataa mpango
+        title: Hariri Initiative
+        update: Sasisha
+      events:
+        approve_membership_request:
+          email_intro: "%{author_nickname} alikubali ombi lako la kuwa sehemu ya kamati ya waendelezaji wa mpango wa %{resource_title}."
+          email_outro: 'Umepokea arifa hii kwa sababu ulituma ombi kwa mpango huu: %{resource_title}'
+          email_subject: "%{author_nickname} alikubali ombi lako kwa kamati ya waendelezaji"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> amekubali ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao <a href="%{resource_url}">%{resource_title}</a> a>.
+        create_initiative_event:
+          email_intro: "%{author_name} %{author_nickname}, unayemfuata, ameunda mpango mpya, uangalie na uchangie:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mpango mpya wa %{author_nickname}
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> uliundwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+        endorse_initiative_event:
+          email_intro: "%{author_name} %{author_nickname}, unayemfuata, ameidhinisha mpango ufuatao, labda ungependa kuchangia kwenye mazungumzo:"
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mpango ulioidhinishwa na %{author_nickname}
+          notification_title: Mpango wa <a href="%{resource_path}">%{resource_title}</a> uliidhinishwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+        revoke_membership_request:
+          email_intro: "%{author_nickname} amekataa ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao %{resource_title}."
+          email_outro: 'Umepokea arifa hii kwa sababu ulituma ombi kwa mpango huu: %{resource_title}.'
+          email_subject: "%{author_nickname} amekataa ombi lako kwa kamati ya waendelezaji"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> amekataa ombi lako la kuwa sehemu ya kamati ya waendelezaji kwa mpango ufuatao <a href="%{resource_url}">%{resource_title}</a> a>.
+        spawn_committee_request_event:
+          email_intro: "%{applicant_nickname} alituma maombi kwa kamati ya mtangazaji wa mpango wako %{resource_title}. Ili kukubali au kukataa ombi, nenda kwenye fomu ya kuhariri ya mpango wako."
+          email_outro: 'Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa mpango huu: %{resource_title}'
+          email_subject: "%{applicant_nickname} anataka kujiunga na mpango wako"
+          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> alituma maombi kwa kamati ya mtangazaji wa mpango wako <a href="%{resource_url}">%{resource_title}</a>. Ili kukubali au kukataa bofya <a href="%{resource_url}/edit">hapa</a>.
+      form:
+        add_documents: Ongeza hati
+        add_image: Ongeza picha
+        attachment_legend: "(Si lazima) Ongeza kiambatisho"
+        edit_documents: Hariri hati
+        edit_image: Hariri picha
+        image_legend: "(Si lazima) Ongeza picha"
+      index:
+        uninitialized: Mipango bado haijawekwa na msimamizi
+      initiative_signatures:
+        fill_personal_data:
+          continue: Endelea
+          help: Tafadhali, jaza sehemu zifuatazo na data yako ya kibinafsi ili kutia saini mpango huo.
+        finish:
+          back_to_initiative: Rudi kwenye mpango
+        sms_code:
+          continue: Angalia msimbo na uendelee
+          help: Angalia SMS iliyopokelewa kwenye simu yako
+        sms_phone_number:
+          continue: Nitumie SMS
+          help: Jaza fomu na nambari yako ya simu iliyothibitishwa ili kuomba nambari yako ya uthibitishaji.
+      initiative_votes:
+        create:
+          error: Kulikuwa na tatizo wakati wa kusaini mpango.
+          invalid: Data iliyotolewa ili kutia saini mpango huo si sahihi.
+          success_html: Hongera! Mpango wa <strong> %{title}</strong> umetiwa saini kwa ufanisi.
+        personal_data:
+          invalid: Data ya kibinafsi haiendani na data iliyotolewa kwa idhini.
+        sms_code:
+          invalid: Nambari yako ya uthibitishaji hailingani na yetu. Tafadhali angalia tena SMS tuliyokutumia.
+        sms_phone:
+          invalid: Nambari ya simu ni batili au inasubiri kuidhinishwa. Tafadhali, angalia uidhinishaji wako.
+      initiatives:
+        author_list:
+          hidden_authors_count:
+            one: na mtu 1 zaidi
+            other: na watu %{count} zaidi
+        committee_members:
+          approve: Idhinisha
+          confirm_approve: Je, una uhakika unataka kuidhinisha mwanachama huyu?
+          confirm_revoke: Je, una uhakika unataka kughairi mwanachama huyu?
+          invite_to_committee_help: Shiriki kiungo hiki ili kuwaalika washiriki wengine kwenye kamati ya waendelezaji.
+          link: Kiungo
+          no_members_yet: Hakuna wajumbe katika kamati ya waendelezaji.
+          revoke: Batilisha
+          title: Wajumbe wa kamati
+        count:
+          title:
+            one: "%{count} mpango"
+            other: "%{count} mipango"
+        filters:
+          any: Yoyote
+          area: Eneo
+          author: Mwandishi
+          myself: Mipango yangu
+          scope: Upeo
+          state: Hali
+          type: Aina
+        index_header:
+          new_initiative: Mpango mpya
+        initiatives:
+          closed_initiatives_warning: Hivi sasa, hakuna mipango iliyo wazi, lakini hapa unaweza kupata mipango yote iliyofungwa iliyoorodheshwa.
+          no_initiatives_warning: Hakuna mipango inayolingana na vigezo vya utafutaji wako.
+        interactions:
+          comments_count:
+            count:
+              one: Maoni
+              other: Maoni
+        orders:
+          label: 'Panga mipango kwa:'
+          most_commented: Wengi walitoa maoni
+          most_voted: Wengi waliosainiwa
+          random: Nasibu
+          recent: Hivi karibuni
+          recently_published: Iliyochapishwa hivi karibuni
+        print:
+          address: Anwani
+          author_title: Mwandishi wa mpango huo
+          city: Jiji
+          email: Barua pepe
+          full_name: Jina kamili
+          general_title: Maombi ya kuandikishwa kwa mpango
+          id_number: Nambari ya kitambulisho
+          initiative:
+            attachments: Nyaraka zilizoambatishwa (tafadhali andika jina la kila hati hapa chini)
+            description: 'Maelezo:'
+            title: 'Kichwa:'
+            type: Aina ya mpango
+          legal_text: Data ya kibinafsi iliyokusanywa itajumuishwa na kutibiwa kwa siri na shirika, kulingana na sheria ya sasa.
+          members_header: Wajumbe wa kamati ya waendelezaji wa mpango huo
+          phone_number: Nambari ya Simu
+          place_date: Mahali, Tarehe
+          postal_code: Msimbo wa Posta/ZIP
+          print: Chapisha
+          province: Mkoa/Jimbo
+          section: 'Ikiombwa na shirika, tafadhali chapisha na ujaze fomu hii ili kuwasilisha inapoonyeshwa:'
+          signature: Sahihi
+        result:
+          answer_title: Mpango huu umejibiwa.
+          initiative_rejected_reason: Mpango huu umekataliwa kutokana na ukosefu wake wa saini.
+        show:
+          area: Eneo
+          before_send_to_technical_validation_announcement: 'Kabla ya kutuma mpango wako wa uthibitisho wa kiufundi, unahitaji kuongeza wanachama %{count} zaidi kwenye kamati ya waendelezaji.<br/><br/>Shiriki kiungo hiki na watu unaotaka kuwa sehemu ya kamati yako: %{href}'
+          confirm: Utatuma hatua kwa msimamizi kuikagua na kuichapisha. Baada ya kuchapishwa hutaweza kuhariri. Je, una uhakika?
+          edit: Hariri
+          initiative_data: Data ya mpango
+          scope: Upeo
+          send_to_technical_validation: Tuma kwa uthibitishaji wa kiufundi
+          send_to_technical_validation_announcement: Ikiwa kila kitu kiko sawa, bofya "Tuma kwa uthibitishaji wa kiufundi" ili msimamizi akague na kuchapisha mpango wako.
+          signature_collection: Mkusanyiko wa saini
+          state: Jimbo
+          type: Aina
+        signatures_count:
+          one: "sahihi"
+          other: "sahihi"
+        vote_cabin:
+          already_voted: Tayari umesaini
+          verification_required: Thibitisha akaunti yako ili kutia saini mpango huo
+          vote: Ishara
+          votes_blocked: Kusaini kumezimwa
+        votes_count:
+          count:
+            one: Sahihi
+            other: Sahihi
+      initiatives_mailer:
+        creation_subject: Mpango wako '%{title}' umeundwa
+        initiative_link:
+          check_initiative_details: Unaweza kuona maelezo ya mpango
+          here: hapa
+        more_information: Hapa una habari zaidi kuhusu mchakato wa kuunda mpango.
+        progress_report_body_for: Mpango %{title} umefikia %{percentage}% ya sahihi zinazohitajika.
+        progress_report_for: 'Muhtasari kuhusu mpango huo: %{title}'
+        promotal_committee_help: Kumbuka kwamba lazima ualike angalau watu %{member_count} kwenye kamati ya waendelezaji. Sambaza kiungo kifuatacho ili kuwaalika watu kwenye kamati ya waendelezaji
+        status_change_body_for: 'Mpango %{title} umebadilisha hali yake kuwa: %{state}'
+        status_change_for: Mpango %{title} umebadilisha hali yake
+      last_activity:
+        new_initiative: 'Mpango mpya:'
+      modal:
+        not_authorized:
+          authorizations_page: Tazama uidhinishaji
+          explanation: Unahitaji kuthibitishwa ili kuunda mpango mpya.
+          title: Uidhinishaji unahitajika
+      pages:
+        home:
+          highlighted_initiatives:
+            active_spaces: Mipango hai
+            see_all_spaces: Tazama mipango yote
+      show:
+        badge_name:
+          accepted: Saini za kutosha
+          created: Imeundwa
+          discarded: Imetupwa
+          published: Imechapishwa
+          rejected: Hakuna sahihi za kutosha
+          validating: Uthibitishaji wa kiufundi
+      states:
+        accepted: Imekubaliwa
+        expired: Muda wake umeisha
+      unavailable_scope: Upeo haupatikani
+      update:
+        error: Hitilafu imetokea.
+        success: Mpango huo umesasishwa.
+    menu:
+      initiatives: Mipango
+    resources:
+      initiative:
+        actions:
+          comment: Maoni
+      initiatives_type:
+        actions:
+          create: Unda
+          title: Vitendo
+          vote: Ishara
+  layouts:
+    decidim:
+      initiative_creation_header:
+        fill_data: Unda
+        finish: Maliza
+        promotal_committee: Kamati ya wakuzaji
+        select_initiative_type: Chagua
+      initiative_signature_creation_header:
+        fill_personal_data: Kamilisha data yako
+        finish: Maliza
+        sms_code: Uthibitishaji wa nambari ya SMS
+        sms_phone_number: Nambari ya simu ya rununu
+        title: Saini %{initiative_title}
+      initiatives:
+        no_initiatives_yet:
+          no_initiatives_yet: Bado hakuna mipango!

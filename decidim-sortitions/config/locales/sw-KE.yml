@@ -1,1 +1,140 @@
+---
 sw:
+  activemodel:
+    attributes:
+      sortition:
+        additional_info: Maelezo ya kupanga
+        decidim_category_id: Kategoria za seti ya mapendekezo ambayo ungependa kutumia droo
+        decidim_proposals_component_id: Mapendekezo yamewekwa
+        dice: Matokeo ya roll ya kufa. Pindua kificho chenye pande 6, au utafute njia nyingine nasibu ya kutengeneza nambari kutoka 1 hadi 6, na uweke hapa nambari inayotokana mbele ya baadhi ya mashahidi. Hii inachangia ubora na dhamana ya bahati nasibu ya matokeo
+        target_items: Idadi ya mapendekezo ya kuchaguliwa (inaonyesha idadi ya mapendekezo unayotaka kuchaguliwa kwa kuchora kura ya kundi la mapendekezo uliyochagua hapo awali)
+        title: Kichwa
+        witnesses: Mashahidi
+    models:
+      decidim/sortitions/create_sortition_event: Upangaji
+  activerecord:
+    models:
+      decidim/sortitions/sortition:
+        one: Upangaji
+        other: Upangaji
+  decidim:
+    components:
+      sortitions:
+        actions:
+          comment: Maoni
+        name: Upangaji
+        settings:
+          global:
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+    events:
+      sortitions:
+        sortition_created:
+          email_intro: Upangaji "%{resource_title}" umeongezwa kwa "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Upangaji mpya umeongezwa kwa %{participatory_space_title}
+          notification_title: Upangaji <a href="%{resource_path}">%{resource_title}</a> umeongezwa kwa %{participatory_space_title}
+    sortitions:
+      admin:
+        actions:
+          destroy: Ghairi upangaji
+          edit: Hariri
+          new_sortition: Upangaji mpya
+          show: Maelezo ya upangaji
+        models:
+          sortition:
+            fields:
+              category: Kategoria
+              created_at: Tarehe ya kuundwa
+              decidim_proposals_component: Sehemu ya mapendekezo
+              dice: Kete
+              reference: Rejea
+              request_timestamp: Wakati wa kuchora
+              seed: Mbegu
+              target_items: Vipengee vya kuchagua
+              title: Kichwa
+        sortitions:
+          confirm_destroy:
+            confirm_destroy: Je, una uhakika unataka kughairi upangaji huu?
+            destroy: Ghairi upangaji
+            title: Kughairi upangaji
+          create:
+            error: Kulikuwa na tatizo la kuunda upangaji mpya.
+            success: Upangaji umefanikiwa.
+          destroy:
+            error: Haiwezi kughairi upangaji.
+            success: Upangaji umeghairiwa.
+          edit:
+            title: Sasisha maelezo kuhusu upangaji
+            update: Sasisha
+          form:
+            all_categories: Kategoria zote
+            select_proposal_component: Chagua seti ya mapendekezo
+          index:
+            title: Upangaji
+          new:
+            confirm: Kwa kubofya kitufe kifuatacho jukwaa litarekodi tarehe na saa (kwa usahihi wa sekunde) na pamoja na kukunja kete, maelezo haya yatatumika kutengeneza uteuzi nasibu. Kitendo hakitaweza kutenduliwa, mara tu kitufe kitakapobofya, matokeo ya droo hii yatachapishwa, pamoja na data iliyoingizwa katika fomu hii na haiwezi kurekebishwa, tafadhali angalia maudhui kwa makini.
+            create: Unda
+            title: Upangaji mpya
+          show:
+            selected_proposals: Mapendekezo yaliyochaguliwa kwa kuchora
+          update:
+            error: Kulikuwa na tatizo la kusasisha upangaji.
+            success: Upangaji umesasishwa.
+      admin_log:
+        sortition:
+          create: "%{user_name} aliunda upangaji %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alighairi upangaji %{resource_name} katika %{space_name}"
+          update: "%{user_name} alisasisha upangaji %{resource_name} katika %{space_name}"
+      sortitions:
+        count:
+          proposals_count:
+            one: 1 pendekezo
+            other: "%{count} mapendekezo"
+        filters:
+          active: Inayotumika
+          all: Wote
+          cancelled: Imeghairiwa
+          category: Kategoria
+          state: Hali
+        index:
+          empty: Bado hakuna upangaji.
+        linked_sortitions:
+          selected_proposals: Mapendekezo yaliyochaguliwa
+        orders:
+          label: 'Agiza upangaji kwa:'
+          random: Nasibu
+          recent: Hivi karibuni
+        results_count:
+          count:
+            one: Pendekezo lililochaguliwa
+            other: Mapendekezo yaliyochaguliwa
+        show:
+          algorithm: Msimbo wa algoriti ya Upangaji
+          any_category: kutoka kategoria zote
+          cancelled: Upangaji ulioghairiwa
+          candidate_proposal_ids: Agizo la mapendekezo ya kupanga na IDs
+          candidate_proposals_info: 'Upangaji ulifanywa kati ya mapendekezo yafuatayo (%{category_label}), pamoja na vitambulisho vifuatavyo (kwa herufi nzito mapendekezo yaliyochaguliwa)'
+          category: kutoka kategoria ya %{category}
+          dice_result: Matokeo ya kete
+          introduction: 'Ukurasa huu una matokeo ya upangaji %{reference}. Kupitia upangaji huu, %{target_items} idadi ya matokeo imechaguliwa kwa nasibu na kwa uwezekano sawa wa usambazaji kutoka kwa seti ya mapendekezo iliyoonyeshwa hapa chini. Pamoja na matokeo, maelezo yanayoonyeshwa kwenye ukurasa huu hutoa taarifa zote zinazohitajika ili kuongeza dhamana na kutoa matokeo. Ufunguo wa ubora wa upangaji huu ni unasibu maradufu unaotolewa na kukunja kete (zilizothibitishwa na mashahidi) na wakati mahususi wa upangaji ambao hutoa ingizo la algoriti ambayo hutoa uteuzi nasibu. Mbegu za wakati wa upangaji ni sahihi (sekunde) hivi kwamba haiwezekani kudhibitiwa na wanadamu kwa hivyo kutoa pembejeo "isiyodhibitiwa" mara mbili ili kuhakikisha matokeo ya haki.'
+          mathematical_result: Matokeo (Dice x Mbegu)
+          proposals_selected_by_sortition: Mapendekezo yaliyochaguliwa kwa kupanga
+          sortition_reproducibility_details: Uzalishaji wa upangaji
+          time_seed: Mbegu ya wakati
+          witnesses: Mashahidi
+        sortition:
+          random_seed: Mbegu za nasibu
+          selected_proposals:
+            one: pendekezo lililochaguliwa
+            other: mapendekezo yaliyochaguliwa
+        sortition_author:
+          deleted: Mshiriki amefutwa
+        sortition_cancel_author:
+          deleted: Mshiriki amefutwa
+        sortitions_count:
+          count:
+            one: 1 upangaji
+            other: "Mipangilio %{count}"
+    statistics:
+      sortitions_count: Upangaji

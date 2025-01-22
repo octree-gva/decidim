@@ -4,7 +4,7 @@ pt:
     attributes:
       dummy_resource:
         created_at: Criado em
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         field: O meu campo
         start_date: Data de início
         title: Título
@@ -15,6 +15,12 @@ pt:
       dummy:
         settings:
           global:
+            guided: Entrada guiada
+            guided_help: Texto de ajuda
+            guided_readonly: Entrada desativada
+            guided_rich: Entrada rica guiada
+            guided_rich_help_html: Texto de <strong>ajuda</strong> em HTML
+            guided_rich_readonly_html: Texto de <strong>ajuda</strong> em HTML para entrada desativada
             readonly_attribute: Atributo só de leitura
             test: Teste A
             test_choices:
@@ -47,6 +53,7 @@ pt:
           description_own: Criou %{score} testes.
           name: Testes
           next_level_in: Crie mais %{score} testes para alcançar o próximo nível!
+          unearned_another: Este participante ainda não criou nenhum teste.
           unearned_own: Ainda não criou qualquer teste.
     resource_links:
       test_link:

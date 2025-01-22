@@ -12,13 +12,26 @@ pt:
       menu:
         templates: Modelos
       templates:
+        actions:
+          new_template: Novo modelo
         apply:
           error: Houve um problema ao aplicar este modelo
+          success: Modelo aplicado com sucesso.
         copy:
           error: Houve um problema ao copiar este modelo
+          success: Modelo copiado com sucesso.
         create:
           error: Houve um problema ao criar este modelo.
+          success: Modelo criado com sucesso.
+        destroy:
+          success: Modelo eliminado com sucesso.
         empty: Ainda não há modelos.
+        fetch:
+          error: Não foi possível encontrar este modelo. Por favor, recarrega a página.
+        missing_resource: "(recurso em falta)"
+        update:
+          error: Houve um problema ao atualizar este modelo.
+          success: Modelo atualizado com sucesso.
       titles:
         template_types:
           questionnaires: Modelos de questionário
@@ -35,11 +48,37 @@ pt:
     templates:
       admin:
         block_user_templates:
+          edit:
+            title: Editar modelo de mensagem para bloquear utilizador
           form:
             save: Guardar
+          index:
+            confirm_delete: Tens a certeza de que queres eliminar este modelo?
+            title: Mensagens para bloquear utilizadores
+          new:
+            title: Já deste votos suficientes.
+          template_chooser:
+            select_template: Seleciona um modelo de resposta
         proposal_answer_templates:
+          edit:
+            title: Editar modelo de resposta à proposta
           form:
+            component_constraint_help: Nota que apenas espaços participativos com funcionalidades do tipo "propostas" serão listados.
+            hint1_html: "<strong>%{organization}</strong> será substituído pelo nome da organização"
+            hint2_html: "<strong>%{name}</strong> será substituído pelo nome do autor"
+            hint3_html: "<strong>%{admin}</strong> será substituído pelo nome do administrador (quem respondeu à proposta)"
+            hint_html: "<strong>Dica:</strong> Podes usar estas variáveis em qualquer parte do modelo de resposta, e elas serão substituídas ao usar o modelo."
             save: Guardar
+          index:
+            component_constraint: Adicionar restrição
+            confirm_delete: Tens a certeza de que queres eliminar este modelo?
+            missing_state: Estatuto em falta
+            proposal_state_id: Estatuto interno
+            title: Respostas às propostas
+          new:
+            title: Novo modelo de resposta à proposta
+          template_chooser:
+            select_template: Seleciona um modelo de resposta
         questionnaire_templates:
           choose:
             create_from_template: Criar a partir do modelo
@@ -49,15 +88,27 @@ pt:
             skip_template: Saltar
           edit:
             edit: Editar
+            empty: Ainda não há perguntas.
             questionnaire: Questionário
+            title: Editar modelo de questionário
           form:
             title: Modelo de questionário %{questionnaire_for}
           index:
             confirm_delete: Tem a certeza que quer apagar este modelo?
             title: Modelos de questionário
+          new:
+            title: Novo modelo de questionário
           preview:
             current_step: Passo %{step}
             of_total_steps: de %{total_steps}
             tos_agreement: Ao participar aceita as Condições de Serviço
+      admin_log:
+        template:
+          create: "%{user_name} criou o modelo de questionário %{resource_name}"
+          delete: "%{user_name} eliminou o modelo de questionário %{resource_name}"
+          duplicate: "%{user_name} duplicou o modelo de questionário %{resource_name}"
+          update: "%{user_name} atualizou o modelo de questionário %{resource_name}"
       template_types:
+        block_user: Bloquear mensagens de utilizador
+        proposal_answer_templates: Respostas às propostas
         questionnaires: Questionários

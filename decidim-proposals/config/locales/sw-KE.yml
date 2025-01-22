@@ -1,1 +1,930 @@
+---
 sw:
+  activemodel:
+    attributes:
+      collaborative_draft:
+        address: Anwani
+        body: Mwili
+        category_id: Kategoria
+        decidim_scope_id: Upeo
+        has_address: Ina anwani
+        scope_id: Upeo
+        state: Jimbo
+        title: Kichwa
+        user_group_id: Unda rasimu shirikishi kama
+      proposal:
+        address: Anwani
+        answer: Jibu
+        answered_at: Alijibu saa
+        automatic_hashtags: Hashtag zimeongezwa kiotomatiki
+        body: Mwili
+        category_id: Kategoria
+        decidim_proposals_proposal_state_id: Jimbo
+        decidim_scope_id: Upeo
+        has_address: Ina anwani
+        scope_id: Upeo
+        state: Jimbo
+        suggested_hashtags: Alama za reli zilizopendekezwa
+        title: Kichwa
+        user_group_id: Tengeneza pendekezo kama
+      proposal_answer:
+        answer: Jibu
+        cost: Gharama
+        cost_report: Ripoti ya gharama
+        execution_period: Kipindi cha utekelezaji
+      proposal_state:
+        announcement_title: Jibu kichwa
+        bg_color: Rangi ya usuli
+        colors:
+          blue: Bluu
+          gray: Kijivu
+          green: Kijani
+          orange: Chungwa
+          pink: Pink
+          purple: Zambarau
+          red: Nyekundu
+          yellow: Njano
+        text_color: Rangi ya maandishi
+      proposals_copy:
+        copy_proposals: Ninaelewa kuwa hii italeta mapendekezo yote kutoka sehemu iliyochaguliwa hadi ya sasa na kwamba kitendo hiki hakiwezi kutenduliwa.
+        origin_component_id: Sehemu ya kunakili mapendekezo kutoka
+      proposals_import:
+        import_proposals: Mapendekezo ya kuagiza
+        keep_answers: Weka hali na majibu
+        keep_authors: Weka waandishi asili
+      valuation_assignment:
+        admin_log:
+          valuator_role_id: Jina la mthamini
+    errors:
+      models:
+        participatory_text:
+          attributes:
+            document:
+              allowed_file_content_types: 'Aina batili ya hati. Faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
+        proposal:
+          attributes:
+            add_documents:
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
+            add_photos:
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
+            body:
+              cant_be_equal_to_template: haiwezi kuwa sawa na kiolezo
+              identical: NA kichwa hakiwezi kufanana
+            title:
+              identical: NA mwili hauwezi kufanana
+        proposals_merge:
+          attributes:
+            base:
+              not_official: Sio rasmi
+              voted: Umepokea kura au ridhaa
+        proposals_split:
+          attributes:
+            base:
+              not_official: Sio rasmi
+              voted: Umepokea kura au ridhaa
+    models:
+      decidim/proposals/admin/update_proposal_category_event: Kategoria ya pendekezo imebadilishwa
+      decidim/proposals/admin/update_proposal_scope_event: Upeo wa pendekezo umebadilishwa
+      decidim/proposals/creation_enabled_event: Uundaji wa pendekezo umewezeshwa
+      decidim/proposals/endorsing_enabled_event: Uidhinishaji wa pendekezo umewashwa
+      decidim/proposals/proposal_mentioned_event: Pendekezo limetajwa
+      decidim/proposals/publish_proposal_event: Pendekezo limechapishwa
+      decidim/proposals/voting_enabled_event: Upigaji kura wa mapendekezo umewezeshwa
+  activerecord:
+    models:
+      decidim/proposals/collaborative_draft:
+        one: Rasimu shirikishi
+        other: Rasimu shirikishi
+      decidim/proposals/proposal:
+        one: Pendekezo
+        other: Pendekezo
+      decidim/proposals/proposal_note:
+        one: Kumbuka
+        other: Vidokezo
+      decidim/proposals/proposal_vote:
+        one: Kura
+        other: Kura
+  decidim:
+    admin:
+      filters:
+        proposals:
+          category_id_eq:
+            label: Kategoria
+          is_emendation_true:
+            label: Aina
+            values:
+              'false': Pendekezo
+              'true': Marekebisho
+          proposal_state_id_eq:
+            label: Jimbo
+          scope_id_eq:
+            label: Upeo
+          state_eq:
+            label: Jimbo
+            values:
+              accepted: Imekubaliwa
+              evaluating: Kutathmini
+              not_answered: Haijajibiwa
+              published: Imechapishwa
+              rejected: Imekataliwa
+              validating: Uthibitishaji wa kiufundi
+              withdrawn: Imetolewa
+          valuator_role_ids_has:
+            label: Imetolewa kwa mthamini
+          with_any_state:
+            label: Akajibu
+            values:
+              state_not_published: Haijajibiwa
+              state_published: Akajibu
+        search_placeholder:
+          id_string_or_title_cont: Tafuta %{collection} kwa ID au kichwa.
+    components:
+      proposals:
+        actions:
+          amend: Rekebisha
+          comment: Maoni
+          create: Unda
+          endorse: Thibitisha
+          vote: Piga kura
+          vote_comment: Piga maoni
+          withdraw: Ondoa
+        name: Pendekezo
+        settings:
+          global:
+            amendments_enabled: Marekebisho yamewashwa
+            amendments_enabled_help: Ikiwa hai, sanidi vipengele vya Marekebisho kwa kila hatua.
+            amendments_wizard_help_text: Maandishi ya usaidizi wa Mchawi wa Marekebisho
+            announcement: Tangazo
+            attachments_allowed: Ruhusu viambatisho
+            attachments_allowed_help: Kwa kuwezesha chaguo hili, mapendekezo yatakuwa chaguomsingi kwa hali ya gridi, na picha ya kwanza itaonekana kwenye kadi.
+            can_accumulate_votes_beyond_threshold: Inaweza kukusanya kura zaidi ya kizingiti
+            collaborative_drafts_enabled: Rasimu shirikishi zimewashwa
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            default_sort_order: Upangaji wa pendekezo chaguomsingi
+            default_sort_order_help: Kiotomatiki inamaanisha kuwa kura zikiwashwa, mapendekezo yataonyeshwa yakiwa yamepangwa nasibu, na ikiwa kura zimezuiwa, basi zitapangwa kwa waliopiga kura nyingi zaidi.
+            default_sort_order_options:
+              automatic: Otomatiki
+              most_commented: Wengi walitoa maoni
+              most_endorsed: Imeidhinishwa zaidi
+              most_followed: Wengi walifuata
+              most_voted: Wengi walipiga kura
+              random: Nasibu
+              recent: Hivi karibuni
+              with_more_authors: Na waandishi zaidi
+            geocoding_enabled: Uwekaji msimbo umewezeshwa
+            minimum_votes_per_user: Kiwango cha chini cha kura kwa kila mtumiaji
+            new_proposal_body_template: Kiolezo kipya cha pendekezo
+            new_proposal_body_template_help: Unaweza kufafanua maandishi yaliyojazwa awali ambayo Mapendekezo mapya yatakuwa nayo
+            new_proposal_help_text: Nakala ya usaidizi wa pendekezo jipya
+            official_proposals_enabled: Mapendekezo rasmi yamewezeshwa
+            participatory_texts_enabled: Maandishi shirikishi yamewezeshwa
+            participatory_texts_enabled_readonly: Haiwezi kuingiliana na mpangilio huu ikiwa kuna mapendekezo yaliyopo. Tafadhali, unda `kijenzi kipya cha Mapendekezo` ikiwa unataka kuwezesha kipengele hiki au kutupa mapendekezo yote yaliyoletwa kwenye menyu ya `Maandiko Shirikishi` ikiwa ungependa kukizima.
+            proposal_answering_enabled: Kujibu pendekezo kumewashwa
+            proposal_edit_before_minutes: Mapendekezo yanaweza kuhaririwa na waandishi kabla ya dakika hizi nyingi kupita
+            proposal_edit_time: Uhariri wa pendekezo
+            proposal_edit_time_choices:
+              infinite: Ruhusu mapendekezo ya kuhariri kwa muda usio na kipimo
+              limited: Ruhusu uhariri wa mapendekezo ndani ya muda maalum
+            proposal_length: Upeo wa urefu wa mwili wa pendekezo
+            proposal_limit: Kikomo cha pendekezo kwa kila mshiriki
+            proposal_wizard_step_1_help_text: Mchawi wa pendekezo "Unda" maandishi ya usaidizi wa hatua
+            proposal_wizard_step_2_help_text: Mchawi wa pendekezo "Chapisha" maandishi ya usaidizi wa hatua
+            resources_permissions_enabled: Ruhusa za vitendo zinaweza kuwekwa kwa kila pendekezo
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+            threshold_per_proposal: Kizingiti kwa pendekezo
+            vote_limit: Kikomo cha kura kwa kila mshiriki
+          step:
+            amendment_creation_enabled: Uundaji wa marekebisho umewashwa
+            amendment_creation_enabled_help: Mshiriki anaweza kurekebisha mapendekezo.
+            amendment_promotion_enabled: Utangazaji wa marekebisho umewashwa
+            amendment_promotion_enabled_help: Waandishi wa idhini wataweza kukuza hadi Pendekezo urekebishaji uliokataliwa.
+            amendment_reaction_enabled: Maoni ya marekebisho yamewashwa
+            amendment_reaction_enabled_help: Waandishi wa Pendekezo wataweza kukubali au kukataa marekebisho ya Mshiriki.
+            amendments_visibility: Mwonekano wa marekebisho
+            amendments_visibility_choices:
+              all: Marekebisho yanaonekana kwa wote
+              participants: Marekebisho yanaonekana kwa waandishi wao pekee
+            amendments_visibility_help: Ikiwa chaguo "Marekebisho yanaonekana kwa waandishi wao pekee" yamechaguliwa, mshiriki lazima aingie ili kuona marekebisho yaliyofanywa.
+            announcement: Tangazo
+            answers_with_costs: Washa gharama kwenye majibu ya pendekezo
+            automatic_hashtags: Hashtag zimeongezwa kwa mapendekezo yote
+            comments_blocked: Maoni yamezuiwa
+            creation_enabled: Washiriki wanaweza kuunda mapendekezo
+            creation_enabled_readonly: Mpangilio huu umezimwa unapowezesha utendakazi wa Maandishi Shirikishi. Ili kupakia mapendekezo kama maandishi shirikishi bofya kitufe cha Maandishi Shirikishi na ufuate maagizo.
+            default_sort_order: Upangaji wa pendekezo chaguomsingi
+            default_sort_order_help: Kiotomatiki inamaanisha kuwa kura zikiwashwa, mapendekezo yataonyeshwa yakiwa yamepangwa nasibu, na ikiwa kura zimezuiwa, basi zitapangwa kwa waliopiga kura nyingi zaidi.
+            default_sort_order_options:
+              automatic: Otomatiki
+              most_commented: Wengi walitoa maoni
+              most_endorsed: Imeidhinishwa zaidi
+              most_followed: Wengi walifuata
+              most_voted: Wengi walipiga kura
+              random: Nasibu
+              recent: Hivi karibuni
+              with_more_authors: Na waandishi zaidi
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
+            proposal_answering_enabled: Jibu la pendekezo limewezeshwa
+            publish_answers_immediately: Chapisha majibu ya pendekezo mara moja
+            publish_answers_immediately_help_html: 'Kumbuka kwamba ukijibu pendekezo lolote bila kuwezeshwa hili, utahitaji kuyachapisha wewe mwenyewe kwa kuyachagua na kutumia kitendo cha kuchapishwa. Kwa maelezo zaidi kuhusu jinsi hii inavyofanya kazi, angalia <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">ukurasa wa hati ya majibu ya mapendekezo</a>.'
+            suggested_hashtags: Lebo za reli zilipendekezwa kwa washiriki kwa mapendekezo mapya
+            votes_blocked: Kura zimezuiwa
+            votes_enabled: Kura zimewashwa
+            votes_hidden: Kura zimefichwa (ikiwa kura zimewezeshwa, kuangalia hii kutaficha idadi ya kura)
+    events:
+      proposals:
+        admin:
+          proposal_note_created:
+            email_intro: Mtu ameacha dokezo kwenye pendekezo "%{resource_title}". Iangalie kwenye <a href="%{admin_proposal_info_url}">paneli ya msimamizi</a>.
+            email_outro: Umepokea arifa hii kwa sababu unaweza kuthamini pendekezo.
+            email_subject: Mtu aliacha dokezo kuhusu pendekezo %{resource_title}.
+            notification_title: Mtu ameacha dokezo kwenye pendekezo <a href="%{resource_path}">%{resource_title}</a>. Iangalie katika <a href="%{admin_proposal_info_path}">paneli ya msimamizi</a>.
+        collaborative_draft_access_accepted:
+          email_intro: '%{requester_name} amekubaliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.'
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{requester_name} imekubaliwa kufikia kama mchangiaji wa %{resource_title}."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> <strong>amekubaliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}" >%{resource_title}</a> rasimu shirikishi.
+        collaborative_draft_access_rejected:
+          email_intro: '%{requester_name} amekataliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.'
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{requester_name} imekataliwa kufikia kama mchangiaji wa %{resource_title} rasimu shirikishi."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> <strong>amekataliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}" >%{resource_title}</a> rasimu shirikishi.
+        collaborative_draft_access_requested:
+          email_intro: '%{requester_name} aliomba ufikiaji kama mchangiaji. Unaweza <strong>kukubali au kukataa ombi</strong> kutoka <a href="%{resource_url}">%{resource_title}</a> ukurasa wa rasimu ya ushirikiano.'
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{requester_name} aliomba idhini ya kufikia ili kuchangia %{resource_title}."
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> aliomba idhini ya kufikia ili kuchangia <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi . Tafadhali <strong>kubali au kataa ombi</strong>.
+        collaborative_draft_access_requester_accepted:
+          email_intro: Umekubaliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.
+          email_outro: Umepokea arifa hii kwa sababu uliomba kuwa mshiriki wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: Umekubaliwa kama mchangiaji wa %{resource_title}.
+          notification_title: <strong>Umekubaliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi.
+        collaborative_draft_access_requester_rejected:
+          email_intro: Umekataliwa kufikia kama mchangiaji wa <a href="%{resource_url}">%{resource_title}</a> rasimu shirikishi.
+          email_outro: Umepokea arifa hii kwa sababu uliomba kuwa mshiriki wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: Umekataliwa kama mchangiaji wa %{resource_title}.
+          notification_title: <strong>Umekataliwa kufikia kama mchangiaji</strong> wa <a href="%{resource_path}">%{resource_title}</a> rasimu shirikishi.
+        collaborative_draft_withdrawn:
+          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> wameondoa <a href="%{resource_url}">%{resource_title}</a> rasimu ya ushirikiano.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mshirika wa <a href="%{resource_url}">%{resource_title}</a>.
+          email_subject: "%{author_name} %{author_nickname} ameondoa %{resource_title} rasimu ya ushirikiano."
+          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> <strong>imeondoa</strong> <a href="%{resource_path}">%{resource_title}</a > rasimu shirikishi.
+        creation_enabled:
+          email_intro: 'Sasa unaweza kuunda mapendekezo mapya katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Mapendekezo sasa yanapatikana katika %{participatory_space_title}
+          notification_title: Sasa unaweza kuweka mbele <a href="%{resource_path}">mapendekezo mapya</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+        endorsing_enabled:
+          email_intro: 'Unaweza kuidhinisha mapendekezo katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Uidhinishaji wa mapendekezo umeanza kwa %{participatory_space_title}
+          notification_title: Sasa unaweza kuanza <a href="%{resource_path}">kuidhinisha mapendekezo</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+        proposal_mentioned:
+          email_intro: Pendekezo lako "%{mentioned_proposal_title}" limetajwa <a href="%{resource_url}">katika nafasi hii</a> kwenye maoni.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa "%{resource_title}".
+          email_subject: Pendekezo lako "%{mentioned_proposal_title}" limetajwa
+          notification_title: Pendekezo lako "%{mentioned_proposal_title}" limetajwa <a href="%{resource_path}">katika nafasi hii</a> kwenye maoni.
+        proposal_published:
+          email_intro: '%{author_name} %{author_nickname}, unayemfuata, amechapisha pendekezo jipya linaloitwa "%{resource_title}". Iangalie na uchangie:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{author_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Pendekezo jipya "%{resource_title}" na %{author_nickname}
+          notification_title: Pendekezo la <a href="%{resource_path}">%{resource_title}</a> lilichapishwa na <a href="%{author_path}">%{author_name} %{author_nickname}</a>.
+        proposal_published_for_space:
+          email_intro: Pendekezo "%{resource_title}" limeongezwa kwa "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Pendekezo jipya "%{resource_title}" limeongezwa kwa %{participatory_space_title}
+          notification_title: Pendekezo <a href="%{resource_path}">%{resource_title}</a> limeongezwa kwa %{participatory_space_title} na %{author}.
+          notification_title_official: Pendekezo rasmi <a href="%{resource_path}">%{resource_title}</a> limeongezwa kwa %{participatory_space_title}.
+        proposal_state_changed:
+          affected_user:
+            email_intro: 'Pendekezo "%{resource_title}" limebadilisha hali yake kuwa "%{state}". Unaweza kusoma jibu katika ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa "%{resource_title}".
+            email_subject: Pendekezo lako limebadilisha hali yake (%{state})
+            notification_title: Pendekezo lako <a href="%{resource_path}">%{resource_title}</a> limebadilisha hali yake kuwa "%{state}".
+          follower:
+            email_intro: 'Pendekezo "%{resource_title}" limebadilisha hali yake kuwa "%{state}". Unaweza kusoma jibu katika ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Pendekezo unalofuata limebadilisha hali yake (%{state})
+            notification_title: Pendekezo la <a href="%{resource_path}">%{resource_title}</a> limebadilisha hali yake kuwa "%{state}".
+        proposal_update_category:
+          email_intro: 'Msimamizi amesasisha aina ya pendekezo lako "%{resource_title}", liangalie katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa pendekezo.
+          email_subject: Kategoria ya pendekezo la %{resource_title} imesasishwa
+          notification_title: <a href="%{resource_path}">%{resource_title}</a> kategoria ya pendekezo imesasishwa na msimamizi.
+        proposal_update_scope:
+          email_intro: 'Msimamizi amesasisha upeo wa pendekezo lako "%{resource_title}", liangalie katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu wewe ndiye mwandishi wa pendekezo.
+          email_subject: Upeo wa pendekezo la %{resource_title} umesasishwa
+          notification_title: <a href="%{resource_path}">%{resource_title}</a> upeo wa pendekezo umesasishwa na msimamizi.
+        voting_enabled:
+          email_intro: 'Unaweza kupiga kura mapendekezo katika %{participatory_space_title}! Anza kushiriki katika ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Upigaji kura wa mapendekezo umeanza kwa %{participatory_space_title}
+          notification_title: Sasa unaweza kuanzisha <a href="%{resource_path}">mapendekezo ya kupiga kura</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a>
+    gamification:
+      badges:
+        accepted_proposals:
+          conditions:
+            - Chagua nafasi ya ushiriki inayokuvutia huku uwasilishaji wa mapendekezo ukiwashwa
+            - Jaribu kutoa mapendekezo ambayo yanaweza kutekelezwa. Kwa njia hii wana uwezekano mkubwa wa kukubalika.
+          description: Beji hii inatolewa unaposhiriki kikamilifu na mapendekezo mapya na haya yanakubaliwa.
+          description_another: Mshiriki huyu alikuwa na mapendekezo %{score} yaliyokubaliwa.
+          description_own: Umekubali mapendekezo %{score}.
+          name: Mapendekezo yaliyokubaliwa
+          next_level_in: Pata mapendekezo %{score} zaidi ili ufikie kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajawa na mapendekezo yoyote yaliyokubaliwa.
+          unearned_own: Bado hujapokea mapendekezo yoyote.
+        proposal_votes:
+          conditions:
+            - Vinjari na utumie muda kusoma mapendekezo ya watu wengine
+            - Piga kura kwa mapendekezo unayopenda au ya kuvutia
+          description: Beji hii inatolewa unapopiga kura mapendekezo ya watu wengine.
+          description_another: Mshiriki huyu amepigia kura mapendekezo %{score}.
+          description_own: Umepigia kura mapendekezo %{score}.
+          name: Kura za mapendekezo
+          next_level_in: Pigia kura mapendekezo %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajapigia kura mapendekezo yoyote.
+          unearned_own: Bado umepigia kura hakuna mapendekezo.
+        proposals:
+          conditions:
+            - Chagua nafasi ya ushiriki inayokuvutia huku uwasilishaji wa mapendekezo ukiwashwa
+            - Unda pendekezo jipya
+          description: Beji hii inatolewa unaposhiriki kikamilifu na mapendekezo mapya.
+          description_another: Mshiriki huyu ameunda mapendekezo %{score}.
+          description_own: Umeunda mapendekezo %{score}.
+          name: Mapendekezo
+          next_level_in: Unda mapendekezo %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajaunda mapendekezo yoyote.
+          unearned_own: Bado hujaunda mapendekezo.
+    metrics:
+      accepted_proposals:
+        description: Idadi ya mapendekezo yaliyokubaliwa
+        object: pendekezo
+        title: Mapendekezo yaliyokubaliwa
+      endorsements:
+        description: Idadi ya ridhaa kwa mapendekezo
+        object: ridhaa
+        title: Ridhaa
+      proposals:
+        description: Idadi ya mapendekezo
+        object: pendekezo
+        title: Pendekezo
+      votes:
+        description: Idadi ya kura kwa mapendekezo
+        object: kura
+        title: Kura
+    participatory_spaces:
+      highlighted_proposals:
+        last: Mapendekezo ya mwisho
+        see_all: Tazama mapendekezo yote
+    proposals:
+      actions:
+        answer_proposal: Jibu pendekezo
+        delete_proposal_state_confirm: Je, una uhakika unataka kufuta hali hii?
+        destroy: Futa hali
+        edit_proposal: Badilisha pendekezo
+        edit_proposal_state: Badilisha hali
+        import: Ingiza mapendekezo kutoka kwa sehemu nyingine
+        new: Pendekezo jipya
+        new_proposal_state: Hali mpya
+        participatory_texts: Maandishi shirikishi
+        show: Onyesha pendekezo
+        title: Vitendo
+      admin:
+        actions:
+          preview: Hakiki
+        exports:
+          proposal_comments: Maoni
+          proposals: Mapendekezo
+        imports:
+          help:
+            answers: |
+              Hati ya kuleta inapaswa kuwa na majina ya safu wima yafuatayo ikiwa ni faili za CSV au Excel, au majina muhimu ikiwa ni faili za JSON:
+              <ul>
+              <li><b>id:</b> ID ya pendekezo la kujibu</li>
+              <li><b>sema:</b> Moja ya "kukubaliwa", "kutathmini", au "kukataliwa"</li>
+              <li><b>jibu/sw:</b> Jibu kwa lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+              </ul>
+            proposals: |
+              Faili lazima iwe na majina ya safu wima yafuatayo ikiwa ni faili za CSV au Excel, au majina muhimu ikiwa ni faili za JSON:
+              <ul>
+              <li><b>kichwa/sw:</b> Kichwa kwenye lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+              <li><b>mwili/sw:</b> Mwili kuhusu lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+              <li><b>wigo/id:</b> ID ya Wigo</li>
+              <li><b>kitengo/id:</b> ID ya Kitengo</li>
+              </ul>
+          label:
+            answers: Ingiza majibu kutoka kwa faili
+            proposals: Ingiza mapendekezo kutoka kwa faili
+          resources:
+            answers:
+              one: jibu la pendekezo
+              other: majibu ya pendekezo
+            proposals:
+              one: pendekezo
+              other: pendekezo
+          title:
+            answers: Ingiza majibu ya pendekezo kutoka kwa faili
+            proposals: Ingiza mapendekezo kutoka kwa faili
+        models:
+          proposal:
+            name: Pendekezo
+        participatory_texts:
+          bulk-actions:
+            are_you_sure: Je, una uhakika wa kutupa rasimu nzima ya maandishi shirikishi?
+            discard_all: Tupa yote
+            import_doc: Ingiza hati
+          discard:
+            success: Rasimu zote za maandishi shirikishi zimetupwa.
+          import:
+            invalid: Fomu si sahihi!
+            invalid_file: Faili ina hitilafu fulani, tafadhali jaribu kuhariri maudhui ya faili na uipakie tena.
+            success: Hongera, sehemu zifuatazo zimegeuzwa kuwa mapendekezo. Sasa unaweza kuzipitia na kuzirekebisha kabla ya kuzichapisha.
+          index:
+            info_1: Sehemu zifuatazo zimebadilishwa kuwa mapendekezo. Sasa unaweza kuzipitia na kuzirekebisha kabla ya kuzichapisha.
+            publish_document: Chapisha hati
+            save_draft: Hifadhi rasimu
+            title: Hakiki maandishi shirikishi
+          new_import:
+            accepted_mime_types:
+              md: Alama
+              odt: ODT
+            bottom_hint: "(Utaweza kuhakiki na kupanga sehemu za hati)"
+            document_legend: 'Ongeza hati isiyozidi 2MB, kila sehemu hadi viwango 3 vya kina vitachanganuliwa kuwa mapendekezo. Miundo inayotumika ni: %{valid_mime_types}'
+            title: Ongeza hati
+            upload_document: Pakia hati
+          publish:
+            invalid: Kulikuwa na tatizo la kuchapisha mapendekezo.
+            success: Mapendekezo yote yamechapishwa.
+          sections:
+            article: "<em>Kifungu</em>"
+            section: "<em>Sehemu:</em> <strong>%{title}</strong>"
+            sub-section: "<em>Kifungu kidogo:</em> %{title}"
+          update:
+            success: Maandishi shirikishi yamesasishwa.
+        proposal_answers:
+          form:
+            answer_proposal: Jibu
+            title: Jibu la pendekezo %{title}
+        proposal_notes:
+          create:
+            error: Kulikuwa na tatizo la kuunda dokezo hili la pendekezo.
+            success: Dokezo la pendekezo limeundwa.
+          form:
+            note: Kumbuka
+            submit: Wasilisha
+          leave_your_note: Acha dokezo lako
+          title: Vidokezo vya faragha
+        proposal_states:
+          create:
+            error: Hitilafu katika kuunda hali
+            success: Hali imeundwa
+          destroy:
+            success: Hali imefutwa
+          edit:
+            title: Badilisha hali
+            update: Sasisha
+          form:
+            preview: Hakiki
+          index:
+            title: Hadhi
+          new:
+            create: Unda
+            title: Hali mpya
+          update:
+            error: Hitilafu katika kusasisha hali
+            success: Hali imesasishwa
+        proposals:
+          answer:
+            invalid: Kumekuwa na tatizo kujibu pendekezo hili.
+            success: Pendekezo limejibu kwa ufanisi.
+          create:
+            invalid: Kumekuwa na tatizo kuunda pendekezo hili.
+            success: Pendekezo limeundwa.
+          edit:
+            title: Sasisha pendekezo
+            update: Sasisha
+          form:
+            attachment_legend: "(Si lazima) Ongeza kiambatisho"
+            created_in_meeting: Pendekezo hili linatokana na mkutano
+            delete_attachment: Futa kiambatisho
+            select_a_category: Chagua kategoria
+            select_a_meeting: Chagua mkutano
+          index:
+            actions: Vitendo
+            assign_to_valuator: Mkabidhi mthamini
+            assign_to_valuator_button: Kabidhi
+            cancel: Ghairi
+            change_category: Badilisha kategoria
+            change_scope: Badilisha upeo
+            merge: Unganisha katika mpya
+            merge_button: Unganisha
+            publish: Chapisha
+            publish_answers: Chapisha majibu
+            select_component: Chagua sehemu
+            select_valuators: Chagua wakadiriaji mmoja au zaidi
+            selected: iliyochaguliwa
+            split: Pendekeza mapendekezo
+            split_button: Gawanya
+            statuses: Hadhi
+            title: Mapendekezo
+            unassign_from_valuator: Batilisha ugawaji kutoka kwa mthamini
+            unassign_from_valuator_button: Batilisha kukabidhiwa
+            update: Sasisha
+            update_scope_button: Sasisha Upeo
+          new:
+            create: Unda
+            title: Tengeneza pendekezo
+          publish_answers:
+            number_of_proposals: Majibu ya mapendekezo %{number} yatachapishwa?
+            select_a_proposal: Tafadhali chagua pendekezo.
+          show:
+            amendments_count: Idadi ya marekebisho
+            assigned_valuators: Wakadiriaji waliokabidhiwa
+            body: Mwili
+            comments_count: Idadi ya maoni
+            documents: Nyaraka
+            endorsements_count: Idadi ya uidhinishaji
+            endorsers: Waidhinishaji
+            link: Tazama pendekezo
+            n_more_endorsers:
+              one: na 1 zaidi
+              other: na %{count} zaidi
+            photos: Picha
+            ranking: "%{ranking} ya %{total}"
+            related_meetings: Mikutano inayohusiana
+            remove_assignment: Ondoa mgawo
+            remove_assignment_confirmation: Je, una uhakika unataka kumwondoa mthamini kutoka kwa pendekezo hili?
+            valuators: Wathamini
+            votes_count: Idadi ya kura
+          update_category:
+            invalid: 'Mapendekezo haya tayari yalikuwa na aina ya %{subject_name}: %{proposals}.'
+            select_a_category: Tafadhali chagua aina.
+            select_a_proposal: Tafadhali chagua pendekezo.
+            success: 'Mapendekezo yamesasishwa hadi kategoria ya %{subject_name}: %{proposals}.'
+          update_scope:
+            invalid: 'Mapendekezo haya tayari yalikuwa na upeo wa %{subject_name}: %{proposals}.'
+            select_a_proposal: Tafadhali chagua pendekezo.
+            select_a_scope: Tafadhali chagua upeo.
+            success: 'Mapendekezo yalisasishwa hadi kufikia upeo wa %{subject_name}: %{proposals}.'
+        proposals_imports:
+          create:
+            invalid: Kulikuwa na tatizo katika kuleta mapendekezo.
+            success: "%{number} mapendekezo yameletwa kwa ufanisi."
+          new:
+            create: Mapendekezo ya kuagiza
+            no_components: Hakuna vipengele vingine vya pendekezo katika nafasi hii shirikishi ya kuagiza kutoka.
+            select_component: Tafadhali chagua kijenzi
+            select_states: Angalia hali ya mapendekezo ya kuagiza
+            title: Ingiza mapendekezo kutoka kwa sehemu nyingine
+        proposals_merges:
+          create:
+            invalid: 'Kumekuwa na tatizo la kuunganisha mapendekezo yaliyochaguliwa kwa sababu baadhi yao:'
+            success: Imefanikiwa kuunganisha mapendekezo na kuwa mapya.
+        proposals_splits:
+          create:
+            invalid: 'Kumekuwa na tatizo katika kugawanya mapendekezo yaliyochaguliwa kwa sababu baadhi yao:'
+            success: Imefaulu kugawanya mapendekezo kuwa mapya.
+        valuation_assignments:
+          create:
+            invalid: Kulikuwa na hitilafu katika kukabidhi mapendekezo kwa mthamini.
+            success: Mapendekezo yaliyokabidhiwa kwa mthamini kwa mafanikio.
+          delete:
+            invalid: Kulikuwa na hitilafu katika kubatilisha mapendekezo kutoka kwa mthamini.
+            success: Mthamini ameondolewa kwenye mapendekezo.
+      admin_log:
+        proposal:
+          answer: "%{user_name} alijibu pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
+          create: "%{user_name} aliunda pendekezo la %{resource_name} kwenye nafasi ya %{space_name} kama pendekezo rasmi."
+          publish_answer: "%{user_name} alichapisha jibu la pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha pendekezo rasmi la %{resource_name} kwenye nafasi ya %{space_name}"
+        proposal_note:
+          create: "%{user_name} aliacha dokezo la faragha kwenye pendekezo la %{resource_name} kwenye nafasi ya %{space_name}"
+        valuation_assignment:
+          create: "%{user_name} alikabidhi pendekezo la %{resource_name} kwa mthamini"
+          delete: "%{user_name} ameondoa mthamini kutoka kwa pendekezo la %{proposal_title}"
+      answers:
+        accepted: Imekubaliwa
+        evaluating: Kutathmini
+        not_answered: Haijajibiwa
+        rejected: Imekataliwa
+        withdrawn: Imetolewa
+      application_helper:
+        filter_origin_values:
+          all: Wote
+          meetings: Mikutano
+          official: Rasmi
+          participants: Washiriki
+          user_groups: Vikundi
+        filter_state_values:
+          all: Wote
+          not_answered: Haijajibiwa
+        filter_type_values:
+          all: Wote
+          amendments: Marekebisho
+          proposals: Mapendekezo
+      collaborative_drafts:
+        collaborative_draft:
+          publish:
+            error: Kulikuwa na tatizo la kuchapisha rasimu shirikishi.
+            irreversible_action_modal:
+              body: Baada ya kuchapisha rasimu kama pendekezo, haitaweza kuhaririwa tena. Pendekezo halitakubali waandishi wapya au michango.
+              cancel: Ghairi
+              ok: Chapisha kama Pendekezo
+              title: Kitendo kifuatacho hakiwezi kutenduliwa
+            success: Rasimu shirikishi imechapishwa kama pendekezo.
+          withdraw:
+            error: Kulikuwa na tatizo wakati wa kufunga rasimu shirikishi.
+            irreversible_action_modal:
+              body: Baada ya kufunga rasimu, haitaweza kuhaririwa tena. Rasimu haitakubali waandishi wapya au michango.
+              cancel: Ghairi
+              ok: Ondoa rasimu ya ushirikiano
+              title: Kitendo kifuatacho hakiwezi kutenduliwa
+            success: Rasimu shirikishi imeondolewa.
+        create:
+          error: Kulikuwa na tatizo kuunda rasimu hii shirikishi.
+          success: Rasimu shirikishi imeundwa.
+        edit:
+          attachment_legend: "(Si lazima) Ongeza kiambatisho"
+          back: Nyuma
+          select_a_category: Tafadhali chagua aina
+          send: Tuma
+          title: Hariri rasimu shirikishi
+        empty: Bado hakuna rasimu shirikishi
+        empty_filters: Hakuna rasimu shirikishi yenye vigezo hivi
+        filters:
+          all: Wote
+          amendment: Marekebisho
+          category: Kategoria
+          open: Fungua
+          published: Imechapishwa
+          related_to: Kuhusiana na
+          scope: Upeo
+          search: Tafuta
+          state: Hali
+          withdrawn: Imetolewa
+        filters_small_view:
+          close_modal: Funga modali
+          filter: Chuja
+          filter_by: Chuja kwa
+          unfold: Fungua
+        index:
+          count:
+            one: "%{count} rasimu ya ushirikiano"
+            other: "%{count} rasimu shirikishi"
+        name: Rasimu shirikishi
+        new:
+          add_file: Ongeza faili
+          edit_file: Badilisha faili
+          send: Endelea
+        new_collaborative_draft_button:
+          new_collaborative_draft: Rasimu mpya ya ushirikiano
+        orders:
+          label: 'Agiza rasimu kwa:'
+          most_contributed: Wengi walichangia
+          random: Nasibu
+          recent: Hivi karibuni
+        requests:
+          accepted_request:
+            error: Haikuweza kukubaliwa kama mshiriki, tafadhali jaribu tena baadaye.
+            success: "@%{user} amekubaliwa kama mshirika kwa mafanikio."
+          access_requested:
+            error: Ombi lako halijakamilika, tafadhali jaribu tena baadaye.
+            success: Ombi lako la kushirikiana limetumwa kwa ufanisi.
+          collaboration_requests:
+            accept_request: Kubali
+            reject_request: Kataa
+            title: Maombi ya ushirikiano
+          rejected_request:
+            error: Haikuweza kukataliwa kama mshirika, tafadhali jaribu tena baadaye.
+            success: "@%{user} amefaulu kukataliwa kama mshirika."
+        show:
+          edit: Hariri rasimu shirikishi
+          final_proposal: Pendekezo la mwisho
+          final_proposal_help_text: Rasimu hii imekamilika. Angalia pendekezo la mwisho
+          hidden_authors_count:
+            one: na %{count} mtu zaidi
+            other: na watu %{count} zaidi
+          info-message: Hii ni <strong>rasimu shirikishi</strong> ya pendekezo. Hii ina maana kwamba unaweza kuwasaidia waandishi wao kuunda pendekezo kwa kutumia sehemu ya maoni iliyo hapa chini au kuiboresha moja kwa moja kwa kuomba idhini ya kulihariri. Waandishi wakishakupa ufikiaji, utaweza kufanya mabadiliko kwenye rasimu hii.
+          publish: Chapisha
+          publish_info: Chapisha toleo hili la rasimu au
+          published_proposal: Pendekezo lililochapishwa
+          request_access: Omba ufikiaji
+          requested_access: Ufikiaji umeombwa
+          withdraw: kuondoa rasimu
+        states:
+          open: Fungua
+          published: Imechapishwa
+          withdrawn: Imetolewa
+        update:
+          error: Kulikuwa na tatizo katika kuhifadhi rasimu shirikishi.
+          success: Rasimu shirikishi imesasishwa.
+        wizard_aside:
+          back_from_collaborative_draft: Rudi kwa rasimu shirikishi
+        wizard_header:
+          title: Unda rasimu yako ya ushirikiano
+      content_blocks:
+        highlighted_proposals:
+          name: Mapendekezo
+      create:
+        error: Kulikuwa na tatizo katika kuhifadhi pendekezo.
+        success: Pendekezo limeundwa kwa ufanisi. Imehifadhiwa kama Rasimu.
+      destroy_draft:
+        error: Kulikuwa na tatizo katika kufuta rasimu shirikishi.
+        success: Rasimu ya pendekezo imefutwa.
+      last_activity:
+        new_proposal: 'Pendekezo jipya:'
+        proposal_updated: 'Pendekezo limesasishwa:'
+      models:
+        proposal:
+          fields:
+            category: Kategoria
+            comments: Maoni
+            id: ID
+            notes: Vidokezo
+            official_proposal: Pendekezo rasmi
+            published_answer: Jibu lililochapishwa
+            published_at: Iliyochapishwa saa
+            scope: Upeo
+            state: Hali
+            title: Kichwa
+            valuator: Mthamini
+            valuators: Wathamini
+            votes: Kura
+        proposal_state:
+          css_class: darasa la CSS
+          title: Hali
+      new:
+        limit_reached: Huwezi kuunda mapendekezo mapya kwa kuwa umevuka kikomo.
+      participatory_text_proposal:
+        alternative_title: Hakuna maandishi shirikishi kwa sasa
+        buttons:
+          amend: Rekebisha
+          comment: Maoni
+      proposal_votes:
+        create:
+          error: Kulikuwa na tatizo la kupiga kura pendekezo.
+      proposals:
+        dynamic_map_instructions:
+          description: Viwianishi vitasasishwa unapobofya kitufe cha 'hakiki'. Walakini, anwani haibadilika.
+          instructions: Unaweza kusogeza hatua kwenye ramani.
+        edit:
+          add_documents: Ongeza hati
+          attachment_legend: "(Si lazima) Ongeza kiambatisho"
+          back: Nyuma
+          edit_documents: Hariri hati
+          select_a_category: Tafadhali chagua aina
+          send: Tuma
+          title: Badilisha pendekezo
+        edit_draft:
+          discard: Tupa rasimu hii
+          discard_confirmation: Je, una uhakika unataka kutupa rasimu hii ya pendekezo?
+          send: Hakiki
+          title: Badilisha rasimu ya pendekezo
+        edit_form_fields:
+          marker_added: Alama imeongezwa kwenye ramani.
+        filters:
+          activity: Shughuli yangu
+          all: Wote
+          amendment_type: Aina
+          category: Kategoria
+          my_proposals: Mapendekezo yangu
+          origin: Asili
+          related_to: Kuhusiana na
+          scope: Upeo
+          search: Tafuta
+          state: Hali
+          type: Aina
+          voted: Imepiga kura
+        index:
+          click_here: Tazama mapendekezo yote
+          collaborative_drafts_list: Fikia rasimu shirikishi
+          count:
+            one: "%{count} pendekezo"
+            other: "%{count} mapendekezo"
+          grid_mode: Hali ya gridi
+          list_mode: Hali ya orodha
+          new_proposal: Pendekezo jipya
+          see_all: Tazama mapendekezo yote
+          see_all_withdrawn: Tazama mapendekezo yote yaliyoondolewa
+          text_banner: Unatazama orodha ya mapendekezo yaliyotolewa na waandishi wao. %{go_back_link}.
+        new:
+          send: Endelea
+          title: Unda pendekezo lako
+        orders:
+          label: 'Agiza mapendekezo na:'
+          most_commented: Wengi walitoa maoni
+          most_endorsed: Imeidhinishwa zaidi
+          most_followed: Wengi walifuata
+          most_voted: Wengi walipiga kura
+          random: Nasibu
+          recent: Hivi karibuni
+          with_more_authors: Na waandishi zaidi
+        participatory_texts:
+          view_index:
+            document_index: Kielezo cha hati
+        placeholder:
+          address: 37 Homewood Drive Brownsburg, IN 46112
+        preview:
+          announcement_body: Pendekezo lako limehifadhiwa kama rasimu. Inahitaji kuchapishwa ili ionekane kwenye tovuti.
+          announcement_title: Pendekezo lako bado halijachapishwa
+          modify: Rekebisha pendekezo
+          proposal_edit_before_minutes:
+            one: Utaweza kuhariri pendekezo hili katika dakika ya kwanza baada ya pendekezo kuchapishwa. Mara dirisha la wakati huu likipita, hutaweza kuhariri pendekezo.
+            other: Utaweza kuhariri pendekezo hili katika dakika %{count} za kwanza baada ya pendekezo kuchapishwa. Mara dirisha la wakati huu likipita, hutaweza kuhariri pendekezo.
+          publish: Chapisha
+          title: Chapisha pendekezo lako
+        proposals:
+          empty: Bado hakuna mapendekezo.
+          empty_filters: Hakuna mapendekezo na vigezo hivi.
+        show:
+          answer: Jibu
+          changes_at_title: Marekebisho ya "%{title}"
+          edit_proposal: Badilisha pendekezo
+          estimated_cost: Gharama iliyokadiriwa
+          hidden_endorsers_count:
+            one: na %{count} mtu zaidi
+            other: na watu %{count} zaidi
+          link_to_collaborative_draft_help_text: Pendekezo hili ni matokeo ya rasimu shirikishi. Kagua historia
+          link_to_collaborative_draft_text: Tazama rasimu ya ushirikiano
+          link_to_promoted_emendation_help_text: Pendekezo hili ni marekebisho yaliyokuzwa
+          link_to_promoted_emendation_text: Tazama marekebisho yaliyokataliwa.
+          link_to_proposal_from_emendation_help_text: Hili ni marekebisho yaliyokataliwa
+          link_to_proposal_from_emendation_text: Tazama Pendekezo
+          proposal_accepted_reason: 'Pendekezo hili limekubaliwa kwa sababu:'
+          proposal_in_evaluation_reason: Pendekezo hili linatathminiwa
+          proposal_rejected_reason: 'Pendekezo hili limekataliwa kwa sababu:'
+          withdraw_btn_hint: Unaweza kuondoa pendekezo lako ikiwa utabadilisha mawazo yako, mradi tu hujapata kura yoyote. Pendekezo halijafutwa, litaonekana kwenye orodha ya mapendekezo yaliyoondolewa.
+          withdraw_confirmation_html: Je, una uhakika unataka kuondoa pendekezo hili?<br><br><strong>Hatua hii haiwezi kughairiwa!</strong>
+          withdraw_proposal: Ondoa pendekezo
+        update:
+          title: Sasisha pendekezo
+        vote_button:
+          already_voted: Tayari amepiga kura
+          already_voted_hover: Ondoa kura
+          maximum_votes_reached: Kikomo cha kura kimefikiwa
+          no_votes_remaining: Hakuna kura zilizosalia
+          vote: Kura
+          votes_blocked: Upigaji kura umezimwa
+        votes_count:
+          count:
+            one: Kura
+            other: Kura
+        voting_rules:
+          can_accumulate_votes_beyond_threshold:
+            description: Kila pendekezo linaweza kukusanya zaidi ya kura %{limit}
+          minimum_votes_per_user:
+            description: Ni lazima usambaze angalau kura %{votes} kati ya mapendekezo tofauti.
+            given_enough_votes: Umetoa kura za kutosha.
+            votes_remaining: Inabidi upige kura %{remaining_votes} mapendekezo zaidi ili kura zako zizingatiwe.
+          proposal_limit:
+            description: Unaweza kuunda hadi mapendekezo %{limit}.
+          threshold_per_proposal:
+            description: Ili kuthibitishwa mapendekezo yanahitajika kufikia kura %{limit}.
+          title: 'Kura iko chini ya sheria zifuatazo:'
+          vote_limit:
+            description: Unaweza kupiga kura hadi mapendekezo %{limit}.
+            votes: kura %{number} zilizosalia
+        wizard_aside:
+          back: Nyuma
+          back_from_step_1: Rudi kwa mapendekezo
+          back_from_step_2: Rudi kuhariri
+        wizard_steps:
+          current_step: Hatua ya sasa
+          step_1: Unda pendekezo lako
+          step_2: Chapisha pendekezo lako
+          title: Hatua za kuunda pendekezo
+      proposals_picker:
+        choose_proposals: Chagua mapendekezo
+        no_proposals: Hakuna mapendekezo yanayolingana na vigezo vyako vya utafutaji au hakuna mapendekezo yoyote.
+      publish:
+        error: Kulikuwa na tatizo la kuchapisha pendekezo.
+        success: Pendekezo limechapishwa.
+      publish_answers:
+        success: Majibu ya mapendekezo yamechapishwa.
+      update:
+        error: Kulikuwa na tatizo katika kuhifadhi pendekezo.
+        success: Pendekezo limesasishwa.
+      update_draft:
+        error: Kulikuwa na tatizo katika kuhifadhi rasimu shirikishi.
+        success: Rasimu ya pendekezo imesasishwa.
+      versions:
+        index:
+          title: Matoleo
+      withdraw:
+        errors:
+          has_votes: Pendekezo hili haliwezi kuondolewa kwa sababu tayari lina kura.
+    resource_links:
+      copied_from_component:
+        proposal_proposal: Mapendekezo yanayohusiana
+      included_projects:
+        project_result: 'Matokeo yanayoonekana katika mradi huu:'
+      included_proposals:
+        proposal_project: 'Pendekezo linalojitokeza katika miradi hii:'
+        proposal_result: 'Pendekezo linaloonekana katika matokeo haya:'
+    statistics:
+      proposals_accepted: Mapendekezo Yanayokubaliwa
+      proposals_count: Mapendekezo
+      votes_count: Kura

@@ -1,1 +1,2092 @@
+---
 sw:
+  activemodel:
+    attributes:
+      account:
+        delete_reason: Sababu ya kufuta akaunti yako
+      common:
+        created_at: Imeundwa saa
+      conversation:
+        body: Mwili
+      group:
+        about: Kuhusu
+        avatar: Avatar
+        document_number: Nambari ya hati
+        email: Barua pepe
+        name: Jina
+        nickname: Jina la utani
+        phone: Simu
+      message:
+        body: Mwili
+      report:
+        details: Maoni ya ziada
+      user:
+        about: Kuhusu
+        email: Barua pepe yako
+        encrypted_password: Nenosiri
+        locale: Eneo
+        name: Jina lako
+        nickname: Jina la utani
+        old_password: Nenosiri la sasa
+        password: Nenosiri
+        password_confirmation: Thibitisha nenosiri lako
+        personal_url: URL ya kibinafsi
+        remove_avatar: Ondoa avatar
+        tos_agreement: Masharti ya makubaliano ya huduma
+    models:
+      decidim/attachment_created_event: Kiambatisho
+      decidim/component_published_event: Sehemu inayotumika
+      decidim/demoted_membership: Sio msimamizi wa kikundi tena
+      decidim/gamification/badge_earned_event: Nishani iliyopatikana
+      decidim/gamification/level_up_event: Umejipanga
+      decidim/invited_to_group_event: Umealikwa kwenye kikundi
+      decidim/join_request_accepted_event: Ombi la kujiunga limekubaliwa
+      decidim/join_request_rejected_event: Ombi la kujiunga limekataliwa
+      decidim/profile_updated_event: Wasifu umesasishwa
+      decidim/promote_to_admin: Imepandishwa cheo hadi msimamizi wa kikundi
+      decidim/promoted_to_admin_event: Imepandishwa cheo hadi msimamizi wa kikundi
+      decidim/removed_from_group: Imeondolewa kwenye kikundi
+      decidim/resource_endorsed_event: Nyenzo imeidhinishwa
+      decidim/resource_hidden_event: Nyenzo iliyofichwa
+      decidim/user_group_created_event: Kikundi cha watumiaji kimeundwa
+      decidim/welcome_notification_event: Ujumbe wa kukaribisha
+  activerecord:
+    attributes:
+      decidim/action_log:
+        created_at: Wakati
+        with_participatory_space: Nafasi shirikishi
+      decidim/user:
+        current_password: Nenosiri la sasa
+        email: Barua pepe
+        name: Jina la utani
+        password: Nenosiri
+        password_confirmation: Uthibitishaji wa nenosiri
+        remember_me: Nikumbuke
+    models:
+      decidim/amendment:
+        one: Marekebisho
+        other: Marekebisho
+      decidim/endorsement:
+        one: Uidhinishaji
+        other: Ridhaa
+      decidim/user:
+        one: Mshiriki
+        other: Washiriki
+      decidim/user_group:
+        one: Kikundi
+        other: Vikundi
+  booleans:
+    'false': 'Hapana'
+    'true': 'Ndiyo'
+  date:
+    buttons:
+      close: Funga
+      select: Chagua
+    formats:
+      decidim_short: "%d/%m/%Y"
+      decidim_short_dashed: "%d-%m-%Y"
+      decidim_short_with_month_name_short: "%d %b %Y"
+      decidim_with_day_and_month_name: "%A %d %b %Y"
+      decidim_with_month_name: "%d %B %Y"
+      decidim_with_month_name_short: "%d %b"
+      help:
+        date_format: 'Umbizo: dd/mm/yyyy'
+      order: d-m-y
+      separator: "/"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: karibu saa 1
+        other: takriban saa %{count}
+      about_x_months:
+        one: karibu mwezi 1
+        other: takriban miezi %{count}
+      half_a_minute: nusu dakika
+      less_than_x_minutes:
+        one: chini ya dakika moja
+        other: chini ya dakika %{count}
+      less_than_x_seconds:
+        one: chini ya sekunde 1
+        other: chini ya sekunde %{count}
+      short:
+        about_x_days: "%{count}d"
+        about_x_hours: "%{count}h"
+        about_x_minutes: "%{count}m"
+        about_x_months: "%{count} mo."
+        about_x_years: "%{count}y"
+        almost_x_years: "%{count}y"
+        half_a_minute: 1m
+        less_than_x_minutes: "%{count}m"
+        less_than_x_seconds: "%{count}s"
+        over_x_years: "%{count}y"
+        x_days: "%{count}d"
+        x_hours: "%{count}h"
+        x_minutes: "%{count}m"
+        x_months: "%{count} mo."
+        x_seconds: "%{count}s"
+        x_years: "%{count}y"
+      x_days:
+        one: siku 1
+        other: "Siku %{count}"
+      x_hours:
+        one: Saa 1
+        other: "Saa %{count}"
+      x_minutes:
+        one: Dakika 1
+        other: "Dakika %{count}"
+      x_months:
+        one: mwezi 1
+        other: "Miezi %{count}"
+      x_seconds:
+        one: Sekunde 1
+        other: "Sekunde %{count}"
+  decidim:
+    accessibility:
+      external_link: Kiungo cha nje
+      front_page_link: Nenda kwenye ukurasa wa mbele
+      logo: "Nembo rasmi ya %{organization}"
+      opens_in_new_tab: Hufungua katika kichupo kipya
+      skip_button: Ruka hadi kwa yaliyomo kuu
+    account:
+      blocked: Akaunti hii imezuiwa kwa sababu ya ukiukaji wa sheria na masharti
+      delete:
+        alert: Kitendo hiki hakiwezi kutenduliwa. Ukiifuta akaunti yako hutaweza kuingia na kitambulisho chako. Kufutwa kwa akaunti yako kutasababisha michango yako isijulikane. Bado utaweza kufungua akaunti mpya, lakini michango hii haitahusishwa nayo.
+        confirm:
+          close: Funga dirisha
+          ok: Ndiyo, ninataka kufuta akaunti yangu
+          question: Je, una uhakika unataka kufuta akaunti yako?
+          title: Futa akaunti yangu
+        explanation: Tafadhali, jaza sababu unayotaka kufuta akaunti yako (si lazima).
+        leaving_authorizations_behind: Baadhi ya data iliyoambatanishwa na uidhinishaji wako itahifadhiwa kwa usalama. Ukifungua akaunti nyingine na kuidhinisha tena, data hii itarejeshwa kwenye akaunti yako mpya.
+      destroy:
+        error: Kulikuwa na tatizo la kufuta akaunti yako.
+        success: Akaunti yako ilifutwa.
+      download_your_data_export:
+        file_no_exists: Faili haipo
+        notice: Upakuaji wa data yako unaendelea kwa sasa. Utapokea barua pepe itakapokamilika.
+      email_change:
+        body1: Tumetuma barua pepe kwa %{unconfirmed_email} ili kuthibitisha anwani yako mpya ya barua pepe.
+        body2: Je, unahitaji kutuma barua pepe ya uthibitishaji tena? %{resend_link} au %{cancel_link}.
+        cancel: ghairi
+        cancel_error: Haikuweza kughairi mabadiliko ya barua pepe.
+        cancel_successfully: Mabadiliko ya barua pepe yameghairiwa.
+        resend_error: Haikuweza kutuma tena barua pepe ya uthibitishaji.
+        resend_successfully: Barua pepe ya uthibitishaji imetumwa tena kwa %{unconfirmed_email}.
+        send_again: Tuma tena
+        title: Uthibitishaji wa mabadiliko ya barua pepe
+      show:
+        available_locales_helper: Chagua lugha unayotaka kutumia ili kuvinjari na kupokea arifa kwenye jukwaa.
+        change_password: Badilisha nenosiri
+        update_account: Sasisha akaunti
+      update:
+        error: Kulikuwa na tatizo la kusasisha akaunti yako.
+        success: Akaunti yako imesasishwa.
+        success_with_email_confirmation: Akaunti yako imesasishwa. Utapokea barua pepe ili kuthibitisha anwani yako mpya ya barua pepe.
+    activity:
+      time_ago: "%{time} iliyopita"
+    admin:
+      actions:
+        cancel: Ghairi
+      password_change:
+        alert: Unahitaji kubadilisha nenosiri lako ili kuendelea zaidi.
+        notification: Watumiaji wasimamizi wanahitaji kubadilisha nenosiri lao kila baada ya siku %{days}.
+    admin_log:
+      area:
+        create: "%{user_name} aliunda eneo la %{resource_name}"
+        delete: "%{user_name} alifuta eneo la %{resource_name}"
+        update: "%{user_name} alisasisha eneo la %{resource_name}"
+      area_type:
+        create: "%{user_name} aliunda aina ya eneo la %{resource_name}"
+        delete: "%{user_name} alifuta aina ya eneo la %{resource_name}"
+        update: "%{user_name} alisasisha aina ya eneo la %{resource_name}"
+      attachment:
+        create: "%{user_name} aliunda kiambatisho %{resource_name}"
+        delete: "%{user_name} alifuta kiambatisho %{resource_name}"
+        update: "%{user_name} alisasisha kiambatisho %{resource_name}"
+      attachment_collection:
+        create: "%{user_name} aliunda mkusanyiko wa viambatisho %{resource_name}"
+        delete: "%{user_name} alifuta mkusanyiko wa viambatisho %{resource_name}"
+        update: "%{user_name} alisasisha mkusanyiko wa viambatisho %{resource_name}"
+      category:
+        create: "%{user_name} aliongeza kategoria ya %{resource_name} kwenye nafasi ya %{space_name}"
+        delete: "%{user_name} alifuta kategoria ya %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        update: "%{user_name} alisasisha kitengo cha %{resource_name} katika nafasi ya %{space_name}"
+      component:
+        create: "%{user_name} aliongeza kijenzi %{resource_name} kwenye nafasi ya %{space_name}"
+        delete: "%{user_name} aliondoa kijenzi %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        export_component: "%{user_name} alihamisha %{resource_name} %{component_name} katika %{space_name} kama %{format_name}"
+        publish: "%{user_name} alichapisha kijenzi %{resource_name} katika nafasi ya %{space_name}"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa kijenzi %{resource_name} kutoka kwa nafasi ya %{space_name}"
+        update_permissions_with_space: "%{user_name} alisasisha ruhusa za %{resource_name} katika %{space_name}"
+      contextual_help_section:
+        update: "%{user_name} alisasisha sehemu ya usaidizi ya %{resource_name}"
+      helpers:
+        answers: majibu
+        comments: maoni
+        projects: miradi
+        results: matokeo
+      impersonation_log:
+        manage: "%{user_name} imesimamia %{resource_name} kwa sababu %{reason}"
+      moderation:
+        hide: "%{user_name} alificha rasilimali ya aina %{resource_type} kwenye nafasi ya %{space_name}"
+        unreport: "%{user_name} hakuripoti rasilimali ya aina %{resource_type} katika nafasi ya %{space_name}"
+      newsletter:
+        create: "%{user_name} aliunda jarida la %{resource_name}"
+        delete: "%{user_name} alifuta jarida la %{resource_name}"
+        deliver: "%{user_name} aliwasilisha jarida la %{resource_name}"
+        update: "%{user_name} alisasisha jarida la %{resource_name}"
+      oauth_application:
+        create: "%{user_name} aliunda programu ya %{resource_name} OAuth"
+        delete: "%{user_name} alifuta %{resource_name} OAuth programu"
+        update: "%{user_name} alisasisha %{resource_name} OAuth programu"
+      organization:
+        update: "%{user_name} alisasisha mipangilio ya shirika"
+        update_external_domain: "%{user_name} alisasisha vikoa vya nje vya shirika"
+      participatory_space_private_user:
+        create: "%{user_name} alimwalika %{resource_name} kuwa mshiriki wa faragha"
+        create_via_csv: "%{user_name} alimwalika %{resource_name} kupitia CSV kuwa mshiriki wa faragha"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kama mshiriki wa kibinafsi."
+      scope:
+        create: "%{user_name} aliunda upeo wa %{resource_name}"
+        create_with_parent: "%{user_name} aliunda upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
+        delete: "%{user_name} alifuta upeo wa %{resource_name}"
+        delete_with_parent: "%{user_name} alifuta upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
+        update: "%{user_name} alisasisha upeo wa %{resource_name}"
+        update_with_parent: "%{user_name} alisasisha upeo wa %{resource_name} ndani ya upeo wa %{parent_scope}"
+      scope_type:
+        create: "%{user_name} aliunda %{resource_name} aina ya upeo"
+        delete: "%{user_name} alifuta aina ya upeo wa %{resource_name}"
+        update: "%{user_name} alisasisha aina ya upeo wa %{resource_name}"
+      static_page:
+        create: "%{user_name} aliunda %{resource_name} ukurasa tuli"
+        delete: "%{user_name} alifuta %{resource_name} ukurasa tuli"
+        update: "%{user_name} alisasisha %{resource_name} ukurasa tuli"
+      user:
+        block: "%{user_name} mtumiaji aliyezuiwa %{resource_name}"
+        invite: "%{user_name} alimwalika mshiriki %{resource_name} mwenye jukumu: %{role}"
+        officialize: "%{user_name} alirasimisha mshiriki %{resource_name}"
+        promote: "%{user_name} amekuza %{resource_name}"
+        remove_from_admin: "%{user_name} aliondoa mshiriki %{resource_name} kwa jukumu: %{role}"
+        show_email: "%{user_name} alipata barua pepe ya mshiriki %{resource_name}"
+        transfer: "%{user_name} alihamisha mshiriki %{resource_name}"
+        unblock: "%{user_name} umemfungua mtumiaji %{resource_name}"
+        unofficialize: "%{user_name} hakuja rasmi mshiriki %{resource_name}"
+      user_group:
+        block: "%{user_name} kikundi cha watumiaji kilichozuiwa %{resource_name}"
+        reject: "%{user_name} amekataa uthibitishaji wa kikundi cha %{resource_name}"
+        unblock: "%{user_name} umeondoa kizuizi cha kikundi cha watumiaji %{resource_name}"
+        verify: "%{user_name} alithibitisha kikundi %{resource_name}"
+        verify_via_csv: "%{user_name} alithibitisha kikundi %{resource_name} kupitia faili ya CSV"
+      user_moderation:
+        unreport: "%{user_name} hajaripoti %{resource_type} - %{unreported_user_name}"
+    admin_terms_of_service:
+      default_body: "<h2>MASHARTI YA USIMAMIZI WA HUDUMA</h2><p>Tunaamini kuwa umepokea hotuba ya kawaida kutoka kwa Msimamizi wa Mfumo wa karibu nawe. Kawaida inategemea mambo haya matatu:</p><ol><li>Heshimu faragha ya wengine.</li><li>Fikiri kabla ya kubofya.</li><li>Kwa uwezo mkubwa huja wajibu mkubwa. .</li></ol>"
+    alert:
+      dismiss: Ondoa arifa
+    amendments:
+      accepted:
+        error: Hitilafu ilitokea wakati wa kukubali marekebisho.
+        success: Marekebisho yamekubaliwa kwa mafanikio.
+      amendable:
+        button: Rekebisha %{model_name}
+        error: Kumekuwa na hitilafu katika kurekebisha rasilimali hii.
+        promote_button: Pandisha cheo hadi %{model_name}
+        promote_confirm_text: Je, una uhakika unataka kutangaza marekebisho haya?
+        promote_help_text: Unaweza kutangaza toleo hili na kulichapisha kama %{model_name} inayojitegemea.
+      amendments:
+        title:
+          one: "%{count} marekebisho"
+          other: "%{count} marekebisho"
+      created:
+        error: Hitilafu ilitokea wakati wa kuunda rasimu ya marekebisho.
+        success: Rasimu ya marekebisho imeundwa.
+      destroy_draft:
+        error: Kulikuwa na tatizo katika kufuta rasimu ya marekebisho.
+        success: Rasimu ya marekebisho ilifutwa.
+      edit_draft:
+        discard: Tupa rasimu hii
+        send: Hakiki
+        title: Hariri Rasimu ya Marekebisho
+      emendation:
+        actions:
+          button_accept: Kubali
+          button_reject: Kataa
+          help_text: Kagua mabadiliko na ukubali au ukatae marekebisho haya. Arifa itatumwa kwa waandishi wake.
+        announcement:
+          accepted: |-
+            Marekebisho haya ya %{amendable_type} %{proposal_link} yamefanywa
+            ilikubaliwa mnamo <strong>%{date}</strong>.
+          evaluating: |-
+            Marekebisho haya ya %{amendable_type} %{proposal_link}
+            inatathminiwa.
+          promoted: Imepandishwa hadhi hadi %{amendable_type}.
+          rejected: Marekebisho haya ya %{amendable_type} %{proposal_link} yalikataliwa tarehe <strong>%{date}</strong>.
+          withdrawn: |-
+            Marekebisho haya ya %{amendable_type} %{proposal_link}
+            imeondolewa na mwandishi.
+      name: Marekebisho
+      new:
+        amendment_author: Mwandishi wa marekebisho
+        send: Unda
+        title: Unda Rasimu ya Marekebisho
+      preview_draft:
+        modify: Rekebisha
+        publish: Chapisha
+        title: Chapisha Rasimu ya Marekebisho
+      promoted:
+        error: Kulikuwa na tatizo la kuchapisha marekebisho kama pendekezo jipya.
+        success: Marekebisho hayo yamechapishwa kwa ufanisi kama pendekezo jipya.
+      publish_draft:
+        error: Kulikuwa na tatizo la kuchapisha marekebisho.
+        success: Marekebisho yamechapishwa.
+      rejected:
+        error: Kulikuwa na tatizo la kukataa marekebisho haya, tafadhali jaribu tena baadaye.
+        success: Marekebisho hayo yamekataliwa.
+      review:
+        back: Nyuma
+        heading: Kagua marekebisho
+        send: Kubali marekebisho
+      update_draft:
+        error: Kulikuwa na tatizo la kusasisha rasimu ya marekebisho.
+        success: Rasimu ya marekebisho imesasishwa.
+      withdraw:
+        error: Hitilafu ilitokea wakati wa kuondoa marekebisho.
+        success: Marekebisho hayo yameondolewa kwa mafanikio.
+      wizard_step_form:
+        steps:
+          '1': Tengeneza marekebisho yako
+          '2': Chapisha marekebisho yako
+    anonymous_user: Asiyejulikana
+    application:
+      document:
+        download: Pakua faili
+        visit_link: Tembelea kiungo
+      documents:
+        component_documents:
+          dummy: Nyaraka za sehemu ya dummy
+          meetings: Nyaraka za mikutano
+        documents: Nyaraka
+        related_documents: Nyaraka zinazohusiana
+      photo:
+        alt: Picha ya vyombo vya habari
+        title: Picha
+      photos:
+        photos: Picha
+        related_photos: Picha zinazohusiana
+    author:
+      avatar: 'Avatar: %{name}'
+      comments:
+        one: maoni
+        other: maoni
+      endorsements:
+        one: uidhinishaji
+        other: ridhaa
+      official_author: Rasmi
+    authorization_handlers:
+      another_dummy_authorization_handler:
+        explanation: Thibitisha kwa kutambulisha nambari ya pasipoti inayoanza na "A".
+        fields:
+          passport_number: Nambari ya pasipoti
+          postal_code: Msimbo wa posta
+        name: Mfano mwingine wa idhini
+      dummy_authorization_handler:
+        explanation: Thibitisha kwa kutambulisha nambari ya hati inayoishia na "X".
+        fields:
+          allowed_postal_codes: Misimbo ya posta inayoruhusiwa (imetenganishwa na koma)
+          allowed_scope_id: Upeo unaoruhusiwa
+          document_number: Nambari ya hati
+          postal_code: Msimbo wa posta
+          scope_id: Upeo
+        name: Uidhinishaji wa mfano
+      dummy_authorization_workflow:
+        name: Mtiririko wa uidhinishaji wa dummy
+      errors:
+        duplicate_authorization: Mshiriki tayari ameidhinishwa na data sawa. Msimamizi atawasiliana nawe ili kuthibitisha maelezo yako.
+      expired_at: Muda wake uliisha saa %{timestamp}
+      expires_at: Muda wake unaisha saa %{timestamp}
+      foo_authorization:
+        fields:
+          bar: Baa
+          foo: Foo
+        name: Uidhinishaji wa Foo
+      granted_at: Imetolewa kwa %{timestamp}
+      sms:
+        explanation: Tuma nambari yako ya simu ili tuweze kuangalia utambulisho wako.
+        name: Rekodi kwa SMS
+      started_at: Ilianza saa %{timestamp}
+    authorization_modals:
+      content:
+        expired:
+          authorize: Idhinisha upya kwa "%{authorization}"
+          explanation: Uidhinishaji wako umekwisha. Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa tena na "%{authorization}".
+          title: Uidhinishaji umekwisha
+        incomplete:
+          cancel: Ghairi
+          explanation: 'Ingawa kwa sasa umeidhinishwa na "%{authorization}", tunahitaji uidhinishe tena kwa sababu hatuna data ifuatayo:'
+          invalid_field: "%{field}"
+          reauthorize: Idhinisha upya
+          title: Tafadhali ruhusu tena
+        missing:
+          authorize: Idhinisha na "%{authorization}"
+          explanation: Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa na "%{authorization}".
+          title: Uidhinishaji unahitajika
+        ok:
+          title: Umeidhinishwa ukiwa katika ukurasa huu. Tafadhali, pakia upya ukurasa ili kutekeleza kitendo chako.
+        pending:
+          explanation: Ili kutekeleza kitendo hiki, unahitaji kuidhinishwa na "%{authorization}", lakini uidhinishaji wako bado unaendelea.
+          resume: Angalia maendeleo yako ya uidhinishaji wa "%{authorization}".
+          title: Uidhinishaji bado unaendelea
+        unauthorized:
+          explanation: Samahani, huwezi kutekeleza kitendo hiki kwa kuwa baadhi ya data yako ya uidhinishaji hailingani.
+          invalid_field: "%{field} thamani %{value} si halali."
+          ok: Sawa
+          title: Haijaidhinishwa
+        unconfirmed:
+          confirmation_instructions: 'Ikiwa haujapokea maagizo ya uthibitishaji unaweza kuyaomba tena:'
+          explanation_html: Ili kutekeleza kitendo hiki unahitaji kuidhinishwa, kabla ya kufanya hivyo unahitaji kuthibitisha barua pepe yako <strong>%{email}</strong>.
+          request_confirmation_instructions: Omba maagizo ya uthibitisho
+          title: Thibitisha barua pepe yako
+    block_user_mailer:
+      notify:
+        body_1: Akaunti yako imezuiwa.
+        body_2: 'Sababu: %{justification}'
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Habari,
+        subject: Akaunti yako ilizuiwa na %{organization_name}
+    collapsible_list:
+      hidden_elements_count:
+        one: na %{count} zaidi
+        other: na %{count} zaidi
+      see_less: "(tazama kidogo)"
+    components:
+      component_order_selector:
+        no_content: Hatukuweza kupata maudhui yoyote yenye vigezo hivi.
+        order:
+          all_types: Aina zote
+          collaborative_draft: Rasimu ya Ushirikiano
+          comment: Maoni
+          debate: Mjadala
+          initiative: Mpango
+          meeting: Mkutano
+          order: Kura ya bajeti
+          post: Chapisha
+          proposal: Pendekezo
+          question: Swali
+        title: 'Onyesha:'
+      dummy:
+        actions:
+          bar: Baa
+          foo: Foo
+        name: Sehemu ya Dummy
+        settings:
+          global:
+            amendments_enabled: Marekebisho yamewashwa
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni
+            dummy_global_attribute1: Sifa ya Dummy 1
+            dummy_global_attribute2: Sifa ya Dummy 2
+            dummy_global_translatable_text: Maandishi ya Dummy yanayoweza Kutafsirika
+            enable_pads_creation: Washa uundaji wa pedi
+            resources_permissions_enabled: Ruhusa za rasilimali zimewashwa
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+          step:
+            amendment_creation_enabled: Uundaji wa marekebisho umewashwa
+            amendment_promotion_enabled: Ukuzaji wa marekebisho umewashwa
+            amendment_reaction_enabled: Maoni ya marekebisho yamewashwa
+            amendments_visibility: Mwonekano wa marekebisho
+            comments_blocked: Maoni yamezuiwa
+            dummy_step_attribute1: Dummy Hatua Sifa 1
+            dummy_step_attribute2: Dummy Hatua Sifa 2
+            dummy_step_translatable_text: Maandishi ya Kutafsiri ya Hatua ya Dummy
+    contact: Wasiliana
+    content_blocks:
+      announcement:
+        name: Tangazo
+      cta:
+        name: Picha, maandishi na kitufe cha Wito Kufanya Hatua
+      cta_settings_form:
+        background_image: Picha ya usuli
+        button_text: Maandishi ya Wito Kufanya Hatua
+        button_url: Wito kwa Kitendo URL
+        description: Maelezo
+      footer_sub_hero:
+        name: Bango la shujaa mdogo chini ya ukurasa
+      global_menu:
+        name: Menyu ya kimataifa
+      hero:
+        name: Picha ya shujaa na CTA
+      hero_settings_form:
+        background_image: Picha ya usuli
+        welcome_text: Maandishi ya kukaribisha
+      highlighted_content_banner:
+        name: Bango la maudhui lililoangaziwa
+      highlighted_elements_settings_form:
+        components:
+          all: Wote
+          label: 'Chagua kipengele:'
+        orders:
+          label: 'Panga vipengele kwa:'
+          random: Nasibu
+          recent: Hivi karibuni
+      how_to_participate:
+        name: Jinsi ya kushiriki
+      html:
+        html_content: Maudhui ya HTML
+        name: Kizuizi cha HTML
+      last_activity:
+        name: Shughuli ya mwisho
+        title: Shughuli ya mwisho
+        view_all: Tazama zote
+      last_activity_settings_form:
+        max_last_activity_users: Idadi ya juu zaidi ya avatar za mtumiaji zilizo na shughuli za hivi majuzi za kuonyesha
+      main_data:
+        name: Data kuu
+      metadata:
+        name: Metadata
+      metrics:
+        name: Vipimo vya shirika
+      participatory_space_metrics:
+        name: Vipimo
+      participatory_space_stats:
+        name: Takwimu
+      social_networks_metadata:
+        name: Mitandao ya kijamii
+      static_page:
+        section:
+          name: Sehemu
+          section_content: Maudhui
+        summary:
+          name: Muhtasari
+          summary_content: Maudhui
+        two_pane_section:
+          left_column: Safu wima ya kushoto
+          name: Sehemu ya safu mbili
+          right_column: Safu wima ya kulia
+      stats:
+        name: Takwimu za shirika
+      sub_hero:
+        name: Bango la shujaa mdogo
+    core:
+      actions:
+        login_before_access: Tafadhali, ingia na akaunti yako kabla ya kufikia.
+        unauthorized: Hujaidhinishwa kutekeleza kitendo hiki.
+      application_helper:
+        filter_area_values:
+          all: Wote
+        filter_category_values:
+          all: Wote
+        filter_scope_values:
+          all: Wote
+    devise:
+      omniauth_registrations:
+        create:
+          email_already_exists: Akaunti nyingine inatumia barua pepe ile ile.
+        new:
+          complete_profile: Kamilisha wasifu
+          nickname_help: Lakabu yako katika %{organization}. Inaweza kuwa na herufi, nambari, '-' na '_' pekee.
+          sign_up: Tafadhali kamilisha wasifu wako
+          subtitle: Tafadhali jaza fomu ifuatayo ili kukamilisha uundaji wa akaunti
+          username_help: Jina la umma linaloonekana kwenye machapisho yako. Kwa lengo la kuhakikisha kutokujulikana, inaweza kuwa jina lolote.
+      registrations:
+        create:
+          error: Kulikuwa na tatizo la kuunda akaunti yako.
+        new:
+          already_have_an_account?: Je, tayari una akaunti?
+          log_in: Ingia
+          newsletter: Pokea jarida la mara kwa mara lenye taarifa muhimu
+          newsletter_title: Ruhusa ya mawasiliano
+          sign_up: Fungua akaunti
+          subtitle: Fungua akaunti ili kushiriki katika jukwaa.
+          terms: masharti ya huduma
+          tos_agreement: Kwa kujisajili unakubali %{link}.
+          tos_title: Masharti ya Huduma
+          username_help: Jina la umma linaloonekana kwenye machapisho yako. Kwa lengo la kuhakikisha kutokujulikana, inaweza kuwa jina lolote.
+      sessions:
+        new:
+          are_you_new?: Je, mgeni kwenye jukwaa?
+          register: Fungua akaunti
+          sign_in_disabled: Unaweza kufikia ukitumia akaunti ya nje.
+          sign_up_disabled: Uundaji wa akaunti umezimwa, unaweza kutumia akaunti iliyopo kufikia.
+        user:
+          timed_out: Hukufanya kazi kwa muda mrefu sana na umeondolewa kiotomatiki kwenye huduma. Ikiwa ungependa kuendelea kutumia huduma, tafadhali ingia tena.
+      shared:
+        newsletter_modal:
+          buttons:
+            check: Angalia na uendelee
+            uncheck: Weka bila kuchaguliwa
+          notice: |-
+            <p>Halo, una uhakika hutaki kupokea jarida?
+            Tafadhali zingatia tena kuweka tiki kwenye kisanduku cha kuteua cha jarida hapa chini.
+            Ni muhimu sana kwetu kwamba unaweza kupokea barua pepe mara kwa mara
+            ili kufanya matangazo muhimu, unaweza kubadilisha hii kwenye yako kila wakati
+            ukurasa wa mipangilio ya arifa.</p>
+            <p>Usipoweka tiki kwenye kisanduku unaweza kukosa taarifa muhimu
+            kuhusu fursa mpya za ushirikishwaji katika jukwaa.<br>
+            Ikiwa bado unataka kuepuka kupokea majarida, sisi kikamilifu
+            kuelewa uamuzi wako.</p>
+            <p>Asante kwa kusoma hii!</p>
+          title: Arifa za jarida
+        omniauth_buttons:
+          or: Au
+        password_fields:
+          hidden_password: Nenosiri lako limefichwa
+          hide_password: Ficha nenosiri
+          show_password: Onyesha nenosiri
+          shown_password: Nenosiri lako limeonyeshwa
+        placeholder_email: hi@example.org
+    doorkeeper:
+      authorizations:
+        new:
+          authorize: Idhinisha maombi
+          by_organization_link_html: na %{link}
+          cancel: Ghairi
+          connect_your_account_html: Unganisha akaunti yako kwa kuingia kwenye %{organization}.
+          publish_content: Chapisha maudhui kwa ajili yako
+          see_email: Tazama barua pepe yako
+          see_name: Tazama jina lako
+          see_username: Tazama jina lako la utani
+          this_application_will_be_able_to: 'Programu hii itaweza:'
+          this_application_will_not_be_able_to: 'Programu hii haitaweza:'
+          update_profile: Sasisha wasifu wako
+          wants_to_use_your_account_html: "%{application_name} inataka kutumia akaunti yako"
+    download_your_data:
+      export:
+        ready: Tayari
+      show:
+        download_data: Pakua data
+        download_data_description_html: |-
+          Faili iliyo na taarifa zote zinazohusiana na akaunti yako itatumwa kwa <strong>%{user_email}</strong>.
+          Barua pepe hii itakuwa na faili ya .zip na nenosiri ili kuifungua.<br/><br/>Ili kufungua faili, utahitaji <a href="https://www.7-zip.org/"> 7-Zip</a> (kwa Windows) au <a href="https://www.keka.io/">Keka</a> (kwa MacOS).
+          Ikiwa unatumia Linux, mara nyingi utaisakinisha kwa chaguo-msingi. Ikiwa sivyo, unaweza kutumia <a href="https://gitlab.gnome.org/GNOME/file-roller">Roller ya Faili</a> au <a
+          href="https://peazip.github.io">PeaZip</a>).
+        request_data: Omba data
+    editor_images:
+      create:
+        error: Hitilafu katika kupakia picha.
+        success: Picha imepakiwa.
+      drag_and_drop_help: Ongeza picha kwa kuziburuta na kuzidondosha au kuzibandika.
+    endorsement_buttons_cell:
+      already_endorsed: Sipendi
+      endorse: Kama
+    endorsements:
+      identities:
+        done: Imekamilika
+        select_identity: Chagua utambulisho
+    endorsers_list:
+      endorsed_by: Imependwa na...
+    errors:
+      files:
+        file_cannot_be_processed: Faili haiwezi kuchakatwa
+        file_resolution_too_large: Ubora wa faili ni kubwa sana
+        not_inside_organization: Faili haijaambatishwa kwa shirika lolote
+      internal_server_error:
+        copied: Maandishi yamenakiliwa!
+        copy_error_message_clarification: Nakili ujumbe wa hitilafu kwenye ubao wa kunakili
+        copy_to_clipboard: Nakili kwenye ubao wa kunakili
+        date_and_time: Tarehe na wakati
+        reference: Rejea
+        request_method: Mbinu ya ombi
+        title: Kulikuwa na tatizo na seva yetu
+        try_later: Tafadhali jaribu tena baadaye. Hitilafu ikiendelea, tafadhali nakili maelezo yafuatayo na uyatume kwa wasimamizi wa jukwaa pamoja na maelezo mengine yoyote ambayo ungependa kushiriki.
+        unknown: Haijulikani
+        url: URL
+        user: Kitambulisho cha Mtumiaji
+      not_found:
+        back_home: Rudi nyumbani
+        content_doesnt_exist: Anwani hii si sahihi au imeondolewa.
+        title: Ukurasa unaotafuta hauwezi kupatikana
+    events:
+      amendments:
+        amendment_accepted:
+          affected_user:
+            email_intro: 'Marekebisho ya %{amendable_title} yamekubaliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho yaliyokubaliwa ya %{amendable_title} kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekubaliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
+          follower:
+            email_intro: 'Marekebisho ya %{amendable_title} yamekubaliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho yaliyokubaliwa ya %{amendable_title} kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekubaliwa kwa <a href="%{amendable_path} }">%{amendable_title}</a>.
+        amendment_created:
+          affected_user:
+            email_intro: 'Marekebisho mapya ya %{amendable_title} yameundwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho mapya ya %{amendable_title}
+            notification_title: Marekebisho mapya yameundwa kwa <a href="%{amendable_path}">%{amendable_title}</a>.
+          follower:
+            email_intro: 'Marekebisho mapya ya %{amendable_title} yameundwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho mapya ya %{amendable_title}
+            notification_title: Marekebisho mapya yameundwa kwa <a href="%{amendable_path}">%{amendable_title}</a>.
+        amendment_promoted:
+          affected_user:
+            email_intro: 'Marekebisho yaliyokataliwa ya %{amendable_title} yamechapishwa kama %{amendable_type} mpya. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho kutoka kwa %{emendation_author_nickname} yamechapishwa kama %{amendable_type} mpya
+            notification_title: <a href="%{emendation_path}">marekebisho yaliyokataliwa</a> ya <a href="%{amendable_path}">%{amendable_title}</a> yamechapishwa kama %{amendable_type} mpya na < a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
+          follower:
+            email_intro: 'Marekebisho yaliyokataliwa ya %{amendable_title} yamechapishwa kama %{amendable_type} mpya. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho kutoka kwa %{emendation_author_nickname} yamechapishwa kama %{amendable_type} mpya
+            notification_title: <a href="%{emendation_path}">marekebisho yaliyokataliwa</a> ya <a href="%{amendable_path}">%{amendable_title}</a> yamechapishwa kama %{amendable_type} mpya na < a href="%{emendation_author_path}">%{emendation_author_nickname}</a>.
+        amendment_rejected:
+          affected_user:
+            email_intro: 'Marekebisho ya %{amendable_title} yamekataliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa %{amendable_title}.
+            email_subject: Marekebisho ya %{amendable_title} yamekataliwa kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekataliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
+          follower:
+            email_intro: 'Marekebisho ya %{amendable_title} yamekataliwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+            email_subject: Marekebisho ya %{amendable_title} yamekataliwa kutoka kwa %{emendation_author_nickname}
+            notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekataliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
+      attachments:
+        attachment_created:
+          email_intro: 'Hati mpya imeongezwa kwa %{resource_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{resource_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{resource_title}
+          notification_title: <a href="%{resource_path}">hati mpya</a> imeongezwa kwenye <a href="%{attached_to_url}">%{resource_title}</a>
+      components:
+        component_published:
+          email_intro: 'Kijenzi cha %{resource_title} sasa kinatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Kijenzi cha %{resource_title} sasa kinatumika kwa <a href="%{resource_path}">%{participatory_space_title}</a>
+      email_event:
+        email_greeting: Hujambo %{user_name},
+        email_intro: 'Kumekuwa na sasisho kwa "%{resource_title}". Unaweza kuiona kutoka kwa ukurasa huu:'
+        email_outro: Umepokea arifa hii kwa sababu unafuata "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+        email_subject: Sasisho kwa %{resource_title}
+      gamification:
+        badge_earned:
+          email_intro: Hongera! Umejishindia <a href="%{resource_url}">%{badge_name} beji</a> (kiwango cha %{current_level}).
+          email_outro: Umepokea arifa hii kwa sababu ulifanya shughuli kwenye tovuti yetu.
+          email_subject: 'Umejishindia beji mpya: %{badge_name}!'
+          notification_title: Hongera! Umejishindia <a href="%{resource_path}">%{badge_name} beji</a> (kiwango cha %{current_level}).
+        level_up:
+          email_intro: Hongera! Umefikia kiwango cha %{current_level} kwenye <a href="%{resource_url}">%{badge_name} beji</a>!
+          email_outro: Umepokea arifa hii kwa sababu ulifanya shughuli kwenye tovuti yetu.
+          email_subject: Umefikia kiwango cha %{current_level} kwenye beji ya %{badge_name}!
+          notification_title: Hongera! Umefikia kiwango cha %{current_level} kwenye <a href="%{resource_path}">%{badge_name} beji</a>!
+      groups:
+        demoted_membership:
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> ameondoa haki zako za msimamizi kwa kikundi hicho.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwanachama wa kikundi hicho.
+          email_subject: Wewe si msimamizi tena wa kikundi cha %{user_group_name}!
+          notification_title: Wewe si msimamizi tena wa kikundi cha <a href="%{resource_path}">%{user_group_name}</a>.
+        invited_to_group:
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekualika ujiunge nacho.
+          email_outro: Umepokea arifa hii kwa sababu umealikwa kwenye kikundi. Tafadhali angalia kichupo cha Vikundi katika wasifu wako ili kuidhinisha.
+          email_subject: Umealikwa kujiunga na kikundi cha %{user_group_name}!
+          notification_title: Umealikwa kujiunga na <a href="%{resource_path}">%{user_group_name}</a> kikundi. Angalia <a href="%{groups_profile_tab_path}">Ukurasa wa Vikundi</a> katika wasifu wako ili kuidhinisha!
+        join_request_accepted:
+          email_intro: Hongera! Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekubali ombi lako la kujiunga nacho.
+          email_outro: Umepokea arifa hii kwa sababu ombi lako la kujiunga limesasishwa.
+          email_subject: Umekubaliwa kwenye kikundi cha %{user_group_name}!
+          notification_title: Umekubaliwa kwa <a href="%{resource_path}">%{user_group_name}</a> kikundi.
+        join_request_created:
+          email_intro: Mtu aliomba kujiunga na kikundi cha %{user_group_name}. Unaweza kuikubali au kuikataa kutoka <a href="%{resource_url}">ukurasa wa washiriki wa kikundi</a>.
+          email_outro: Umepokea arifa hii kwa sababu unaweza kudhibiti kikundi cha %{user_group_name}.
+          email_subject: Mtu aliomba kujiunga na kikundi cha %{user_group_name}!
+          notification_title: Mtu aliomba kujiunga na kikundi cha %{user_group_name}. Unaweza kuikubali au kuikataa kutoka <a href="%{resource_path}">ukurasa wa washiriki wa kikundi</a>.
+        join_request_rejected:
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekataa ombi lako la kujiunga nacho.
+          email_outro: Umepokea arifa hii kwa sababu ombi lako la kujiunga limesasishwa.
+          email_subject: Ombi lako la kujiunga na kikundi cha %{user_group_name} limekataliwa!
+          notification_title: Ombi lako la kujiunga na kikundi cha <a href="%{resource_path}">%{user_group_name}</a> limekataliwa.
+        promoted_to_admin:
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekupa haki za msimamizi kwa kikundi hicho.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwanachama wa kikundi hicho.
+          email_subject: Sasa wewe ni msimamizi wa kikundi cha %{user_group_name}!
+          notification_title: Sasa wewe ni msimamizi wa kikundi cha <a href="%{resource_path}">%{user_group_name}</a>.
+        removed_from_group:
+          email_intro: Msimamizi wa kikundi cha <a href="%{resource_url}">%{user_group_name}</a> amekuondoa.
+          email_outro: Umepokea arifa hii kwa sababu ulikuwa mwanachama wa kikundi hicho.
+          email_subject: Umeondolewa kutoka kwa kikundi cha %{user_group_name}!
+          notification_title: Umeondolewa kutoka kwa <a href="%{resource_path}">%{user_group_name}</a> kikundi.
+        user_group_created:
+          email_intro: Kikundi kipya cha watumiaji kimeundwa kwa jina %{user_group_name}. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_url}">kidirisha cha msimamizi</a>.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kikundi kipya cha watumiaji kimeundwa
+          notification_title: Kikundi cha watumiaji %{user_group_name} kimeundwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_path}">kidirisha cha msimamizi</a>.
+        user_group_updated:
+          email_intro: Kikundi cha watumiaji walio na jina %{user_group_name} kimesasisha wasifu wake, na kuuacha bila kuthibitishwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_url}">kidirisha cha msimamizi</a>.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa mfumo.
+          email_subject: Kikundi cha watumiaji kimesasisha wasifu wake
+          notification_title: Kikundi cha watumiaji %{user_group_name} kimesasisha wasifu wake, na kuuacha haujathibitishwa. Sasa unaweza kuithibitisha kwenye <a href="%{groups_admin_path}">kidirisha cha msimamizi</a>.
+      nickname_event:
+        notification_body: Tumesahihisha jinsi majina ya utani yanavyotumika ili kusiwe na nakala, na ndiyo maana tumeondoa sheria inayozingatia kesi. <br/> Jina lako la utani liliundwa baada ya lingine lenye jina sawa, kwa hivyo tumelibadilisha kiotomatiki. Unaweza kuibadilisha kutoka <a href="%{link_to_account_settings}">mipangilio ya akaunti yako</a>.
+      notification_event:
+        notification_title: Tukio lilitokea kwa <a href="%{resource_path}">%{resource_title}</a>.
+      reports:
+        resource_hidden:
+          email_intro: Msimamizi aliondoa %{resource_type} yako kwa sababu imeripotiwa kama %{report_reasons}.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni mwandishi wa maudhui yaliyoondolewa.
+          email_subject: '%{resource_type} yako imeondolewa'
+          notification_title: |-
+            Msimamizi aliondoa %{resource_type} yako kwa sababu imeripotiwa kama %{report_reasons}.</br>
+            <i>%{resource_content}</i>
+      resource_endorsed:
+        email_intro: '%{endorser_name} %{endorser_nickname}, unayemfuata, ameidhinisha hivi punde "%{resource_title}" na tunadhani inaweza kukuvutia. Iangalie na uchangie:'
+        email_outro: Umepokea arifa hii kwa sababu unafuata %{endorser_nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+        email_subject: "%{endorser_nickname} ameidhinisha upya"
+        notification_title: <a href="%{resource_path}">%{resource_title}</a> %{resource_type} imeidhinishwa na <a href="%{endorser_path}">%{endorser_name} %{endorser_nickname}</a>.
+      users:
+        profile_updated:
+          email_intro: <a href="%{resource_url}">Ukurasa wa wasifu</a> kati ya %{name} (%{nickname}), unaofuata, umesasishwa.
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{nickname}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: "%{nickname} alisasisha wasifu wake"
+          notification_title: <a href="%{resource_path}">Ukurasa wa wasifu</a> kati ya %{name} (%{nickname}), unaofuata, umesasishwa.
+        user_officialized:
+          email_intro: Mshiriki %{name} (%{nickname}) amerasimishwa.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa shirika.
+          email_subject: "%{name} imerasimishwa"
+          notification_title: Mshiriki %{name} (%{nickname}) amerasimishwa.
+    export_mailer:
+      download_your_data_export:
+        click_button: 'Bofya kiungo kinachofuata ili kupakua data yako.<br/>Faili itapatikana hadi %{date}.<br/>Utahitaji <a href="https://www.7-zip.org/"> 7-Zip</a> (kwa Windows), <a href="https://www.keka.io/en/">Keka</a> (kwa MacOS) au <a href="https:// peazip.github.io">PeaZip</a> (kwa ajili ya Linux) kwa fungua. Nenosiri: %{password}'
+        download: Pakua
+      export:
+        ready: Tafadhali tafuta toleo lililoambatishwa la uhamishaji wako.
+      subject: Uhamishaji wako "%{name}" uko tayari
+    filters:
+      linked_classes:
+        all: Wote
+        answer: Jibu
+        collaborative_draft: Rasimu shirikishi
+        dummy_resource: Rasilimali za dummy
+        meeting: Mikutano
+        project: Miradi
+        proposal: Mapendekezo
+        result: Matokeo
+    fingerprint:
+      check: Angalia alama za vidole
+      explanation: Kipande cha maandishi hapa chini ni uwakilishi uliofupishwa, wa haraka wa maudhui haya. Ni muhimu kuhakikisha kuwa maudhui hayajaingiliwa, kwani urekebishaji mmoja unaweza kusababisha thamani tofauti kabisa.
+      online_calculator_name: Kikokotoo cha MD5 mtandaoni
+      replicate_help: Alama hii ya vidole inakokotolewa kwa kutumia algoriti ya hashing ya SHA256. Ili kuiga mwenyewe, unaweza kutumia %{online_calculator_link} na kunakili na ubandike data chanzo.
+      source: Chanzo
+      title: Alama ya vidole
+      value: Thamani
+    followers:
+      followers_count:
+        one: "Mfuasi %{count}"
+        other: "Wafuasi %{count}"
+      no_followers: Bado hakuna wafuasi.
+    following:
+      following_count:
+        one: "%{count} wanafuata"
+        other: "%{count} inafuata"
+      no_followings: hafuati mtu yeyote au kitu chochote bado.
+      non_public_followings: Baadhi ya rasilimali zinazofuatwa sio za umma.
+    follows:
+      create:
+        button: Fuata
+        error: Kulikuwa na tatizo kufuatia rasilimali hii.
+        participatory_space: Unafuata <span>%{resource_name}</span>
+      destroy:
+        button: Acha kufuata
+        error: Kulikuwa na tatizo la kuacha kufuata nyenzo hii.
+    forms:
+      attachment_link:
+        explanation: Mwongozo wa viungo vya viambatisho
+        help_messages:
+          - Miundo sahihi ya URL pekee ndiyo inakubaliwa.
+          - Tafadhali kumbuka kuwa viungo lazima viwe hadharani ili washiriki wote waweze kuvifikia.
+      errors:
+        decidim/user:
+          password: Nenosiri ni fupi mno.
+          password_confirmation: Uthibitishaji wa nenosiri lazima ulingane na nenosiri.
+        error: Kuna hitilafu katika uga huu.
+      file_help:
+        file:
+          explanation: 'Mwongozo wa kushindwa:'
+          message_1: Lazima iwe picha au hati.
+          message_2: Kwa picha, tumia vyema picha za mazingira, huduma hupanda picha.
+        icon:
+          explanation: 'Mwongozo wa ikoni:'
+          message_1: Lazima iwe picha ya mraba.
+          message_2: Ukubwa unaopendekezwa kwa picha hii ni 512x512.
+        image:
+          explanation: 'Mwongozo wa picha:'
+          message_1: Ikiwezekana picha ya mlalo ambayo haina maandishi yoyote.
+          message_2: Huduma inapunguza picha.
+      file_validation:
+        allowed_file_extensions: 'Viendelezi vya faili vinavyoruhusiwa: %{extensions}'
+        max_file_dimension: 'Upeo wa vipimo vya faili: pikseli %{resolution}'
+        max_file_size: 'Upeo wa ukubwa wa faili: %{megabytes}MB'
+      files:
+        extension_allowlist: 'Miundo inayokubalika: %{extensions}'
+      upload:
+        labels:
+          add_attachment: Ongeza kiambatisho
+          add_file: Ongeza faili
+          add_image: Ongeza picha
+          edit_image: Hariri picha
+          error: Hitilafu!
+          file_size_too_large: 'Ukubwa wa faili ni mkubwa mno! Upeo wa ukubwa wa faili: %{megabytes}MB'
+          filename: Jina la faili
+          remove: Ondoa
+          replace: Badilisha
+          save: Hifadhi
+          title: Kichwa
+          title_required: Kichwa kinahitajika!
+          uploaded: Imepakiwa
+          validating: Inathibitisha...
+          validation_error: Hitilafu ya uthibitishaji! Hakikisha kuwa faili ina kiendelezi au saizi inayoruhusiwa.
+        select_file: Chagua faili
+      upload_help:
+        dropzone: Dondosha faili hapa au ubofye kitufe ili kupakia
+        explanation: Mwongozo wa %{attribute}
+    gamification:
+      all_badges_link: Tazama beji zote zinazopatikana.
+      badges:
+        followers:
+          conditions:
+            - Kuwa hai na kufuata watu wengine hakika kutafanya watu wengine kukufuata.
+          description: Beji hii inatolewa unapofikisha idadi fulani ya wafuasi. %{organization_name} ni mtandao wa kijamii na kisiasa, suka wavuti yako ili kuwasiliana na watu wengine kwenye jukwaa.
+          description_another: Mshiriki huyu ana wafuasi %{score}.
+          description_own: "Watu %{score} wanakufuata."
+          name: Wafuasi
+          next_level_in: Pata watu %{score} zaidi wa kukufuata ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hana wafuasi wowote.
+          unearned_own: Bado huna wafuasi.
+        index:
+          badge_title: "%{name} beji"
+          how: Unawezaje kuipata
+          page_description: Beji ni utambuzi kwa vitendo na maendeleo ya mshiriki kwenye jukwaa. Unapoanza kugundua, kushiriki na kuingiliana kwenye jukwaa, utapata beji tofauti. Hii hapa orodha ya beji na baadhi ya njia unazoweza kuzipata.
+          title: Beji
+      description: Beji ni utambuzi kwa vitendo na maendeleo ya mshiriki katika jukwaa. Unapoanza kugundua, kushiriki na kuingiliana kwenye jukwaa, utapata beji tofauti.
+      level: Kiwango cha %{level}
+      reached_top: Umefikia kiwango cha juu cha beji hii.
+      title: Ni beji gani?
+    group_admins:
+      actions:
+        are_you_sure: Je, una uhakika? Hii haitamwondoa mshiriki kwenye kikundi.
+        demote_admin: Ondoa admin
+      demote:
+        error: Kulikuwa na tatizo la kumwondoa mshiriki huyu kutoka kwenye orodha ya wasimamizi.
+        success: Mshiriki ameondolewa kwenye msimamizi.
+      index:
+        current_admins: 'Wasimamizi wa sasa:'
+        manage_admins: Dhibiti wasimamizi
+    group_invites:
+      accept:
+        error: Kulikuwa na tatizo la kukubali mwaliko huu.
+        success: Mwaliko umekubaliwa.
+      accept_invitation: Kubali
+      accept_or_reject_group_invitations: 'Vikundi vifuatavyo vimekualika kujiunga navyo. Kubali au kataa maombi yao:'
+      index:
+        invite: Alika
+        invite_user: Alika mshiriki
+      invite:
+        error: Kulikuwa na tatizo katika kumwalika mshiriki huyu.
+        success: Mshiriki amealikwa.
+      pending_invitations: Maombi yanayosubiri
+      reject:
+        error: Kulikuwa na tatizo la kukataa mwaliko huu.
+        success: Mwaliko umekataliwa.
+      reject_invitation: Kataa
+    group_members:
+      accept:
+        error: Kulikuwa na tatizo la kukubali ombi hili la kujiunga.
+        success: Ombi la kujiunga limekubaliwa.
+      actions:
+        are_you_sure: Je, una uhakika?
+        promote_to_admin: Fanya admin
+        remove_from_group: Ondoa mshiriki
+      index:
+        current_members_without_admins: 'Wanachama wa sasa (bila wasimamizi):'
+        manage_members: Dhibiti wanachama
+      promote:
+        error: Kulikuwa na tatizo katika kumpandisha cheo mshiriki huyu.
+        success: Mshiriki alipandishwa cheo kwa mafanikio.
+      reject:
+        error: Kulikuwa na tatizo la kukataa ombi hili la kujiunga.
+        success: Ombi la kujiunga limekataliwa.
+      remove:
+        error: Kulikuwa na tatizo la kumwondoa mshiriki huyu kwenye kikundi.
+        success: Mshiriki ameondolewa kwenye kikundi.
+    groups:
+      actions:
+        are_you_sure: Je, una uhakika?
+      create:
+        error: Kulikuwa na tatizo kuunda kikundi.
+        success: Kikundi kimeundwa.
+      edit:
+        edit_user_group: Badilisha kikundi
+        update_user_group: Sasisha kikundi
+      form:
+        document_number_help: Usitumie dashi wala nafasi.
+        email_help: Barua pepe ya shirika lako, ushirika, kikundi, kikundi, etc.
+        fill_in_for_verification: 'Jaza sehemu hizi ikiwa unataka kikundi chako kithibitishwe:'
+        name_help: Jina la shirika lako, chama, kikundi, kikundi, etc.
+        nickname_help: Jina la utani la shirika lako, ushirika, kikundi, kikundi, n.k. Usitumie nafasi wala lafudhi.
+        phone_help: Usitumie dashi wala nafasi.
+      join:
+        error: Kulikuwa na tatizo la kujiunga na kikundi.
+        success: Ombi la kujiunga limeundwa. Msimamizi atakagua ombi lako kabla ya kukukubali kwenye kikundi.
+      leave:
+        error: Kulikuwa na tatizo kuondoka kwenye kikundi.
+        last_admin: Huwezi kujiondoa kwenye kikundi hiki kwa kuwa wewe ndiye msimamizi wa mwisho. Fanya mwanachama mwingine kuwa msimamizi ili kuondoka kwenye kikundi.
+        success: Kikundi kimetelekezwa.
+      members:
+        accept_or_reject_join_requests: 'Watumiaji wafuatao wametuma maombi ya kujiunga na kikundi hiki. Kubali au kataa maombi yao:'
+        accept_request: Kubali
+        reject_request: Kataa
+      new:
+        create_user_group: Unda kikundi
+        new_user_group: Kikundi kipya
+        subtitle: Unda kikundi na uwaalike watumiaji wengine wajiunge ili kushiriki katika kiwango cha pamoja.
+      no_user_groups: Bado hayumo katika kikundi chochote.
+      roles:
+        admin: Msimamizi
+        creator: Msimamizi
+        member: Mwanachama
+      update:
+        error: Kulikuwa na tatizo la kusasisha kikundi.
+        success: Kikundi kimesasishwa.
+    help:
+      main_topic:
+        default_page:
+          content: "<p>Katika %{organization} unaweza kushiriki na kuamua juu ya mada tofauti, kupitia nafasi unazoziona kwenye menyu ya juu: Michakato, Mikusanyiko, Mipango, Mashauriano.</p> <p>Ndani ya kila moja utapata chaguo tofauti. kushiriki: kutoa mapendekezo - kibinafsi au na watu wengine-, kushiriki katika mijadala, kutoa kipaumbele kwa miradi ya kutekeleza, kuhudhuria mikutano ya ana kwa ana na hatua zingine.</p>"
+          title: Je, ninaweza kufanya nini katika %{organization}?
+        description: Soma zaidi kuhusu %{organization}.
+        title: Mkuu
+    last_activities:
+      all: Aina zote za shughuli
+      index:
+        last_activity: Shughuli ya mwisho
+      name: Shughuli za mwisho
+      no_activities_warning: Hakuna maingizo ya kuonyesha kwa aina hii ya shughuli.
+    linked_resource_from:
+      included_in: Imejumuishwa katika
+    links:
+      invalid_url: URL batili
+      warning:
+        body_1: Unakaribia kutembelea kiungo cha nje na tungependa uwe mwangalifu kuhusu maudhui kwenye tovuti ya nje.
+        body_2: Tafadhali angalia kiungo ambacho unakaribia kutembelea na uhakikishe kuwa unakitambua kama tovuti salama kabla ya kuendelea.
+        cancel: Ghairi
+        proceed: Endelea
+        title: Fungua kiungo cha nje
+    log:
+      base_presenter:
+        create: "%{user_name} imeunda %{resource_name}"
+        create_with_space: "%{user_name} imeunda %{resource_name} katika %{space_name}"
+        delete: "%{user_name} imefutwa %{resource_name}"
+        delete_with_space: "%{user_name} imefutwa %{resource_name} katika %{space_name}"
+        publish_with_space: "%{user_name} imechapisha %{resource_name} katika %{space_name}"
+        unknown_action: "%{user_name} ilifanya kitendo fulani kwenye %{resource_name}"
+        unknown_action_with_space: "%{user_name} ilifanya kitendo fulani kwenye %{resource_name} katika %{space_name}"
+        unpublish_with_space: "%{user_name} haijachapishwa %{resource_name} kutoka %{space_name}"
+        update: "%{user_name} imesasishwa %{resource_name}"
+        update_permissions_with_space: "%{user_name} alisasisha ruhusa za %{resource_name} katika %{space_name}"
+        update_with_space: "%{user_name} ilisasishwa %{resource_name} katika %{space_name}"
+      value_types:
+        area_presenter:
+          not_found: 'Eneo hilo halikupatikana kwenye hifadhidata (ID: %{id})'
+        area_type_presenter:
+          not_found: 'Aina ya eneo haikupatikana kwenye hifadhidata (ID: %{id})'
+        scope_presenter:
+          not_found: 'Upeo haukupatikana kwenye hifadhidata (ID: %{id})'
+        scope_type_presenter:
+          not_found: 'Aina ya upeo haikupatikana kwenye hifadhidata (ID: %{id})'
+    machine_translations:
+      automatic: tafsiri otomatiki katika %{locale_name}
+    managed_users:
+      expired_session: Kikao cha sasa cha usimamizi cha mshiriki kimeisha.
+    map:
+      dynamic:
+        screen_reader_explanation: Kipengele kifuatacho ni ramani inayowasilisha vipengee kwenye ukurasa huu kama pointi za ramani. Kipengele kinaweza kutumika na kisoma skrini lakini kinaweza kuwa kigumu kuelewa.
+        skip_button: Ruka ramani
+      static:
+        latlng_text: 'latitudo: %{latitude}, longitudo: %{longitude}'
+        map_service_brand: OpenStreetMap
+    members:
+      no_members: Kikundi hiki bado hakina wanachama wowote.
+    menu:
+      help: Msaada
+      home: Nyumbani
+    messaging:
+      conversation_mailer:
+        comanagers_new_conversation:
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{manager} ameanzisha mazungumzo mapya kwa jina la %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{manager} ameanzisha mazungumzo mapya kama %{group}"
+        comanagers_new_message:
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{manager} amechapisha ujumbe mpya katika mazungumzo kwa jina la %{group}. Bofya hapa kuziona:"
+          outro: Furahia jukwaa!
+          subject: "%{manager} ametuma ujumbe mpya kama %{group}"
+        new_conversation:
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} ameanza mazungumzo mapya na wewe. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{sender} ameanza mazungumzo na wewe"
+        new_group_conversation:
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} ameanzisha mazungumzo mapya na kikundi %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{sender} ameanzisha mazungumzo na %{group}"
+        new_group_message:
+          admin_in_group: Unapokea hii kwa sababu wewe ni msimamizi katika %{group}.
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} amechapisha ujumbe mpya katika mazungumzo na kikundi %{group}. Bofya hapa kuiona:"
+          outro: Furahia jukwaa!
+          subject: "%{group} wana ujumbe mpya kutoka kwa %{sender}"
+        new_message:
+          greeting: Hujambo, %{recipient}!
+          intro: "%{sender} amechapisha ujumbe mpya katika mazungumzo yako. Bofya hapa kuziona:"
+          outro: Furahia jukwaa!
+          subject: Una ujumbe mpya kutoka kwa %{sender}
+      conversations:
+        add_conversation_users:
+          add_max_users: 'Ongeza watumiaji kwenye mazungumzo: Upeo wa watumiaji 9'
+          add_users_placeholder: Tafuta...
+          modal_title: Mazungumzo mapya
+          no_results: Hakuna matokeo
+          participant_with_disabled_message_reception: Mshiriki huyu hataki kupokea ujumbe wa faragha.
+        create:
+          error: Mazungumzo hayajaanza. Jaribu tena baadaye.
+        error_modal:
+          close: Funga modali
+          correct_errors: Tafadhali sahihisha makosa na ujaribu tena.
+          intro: 'Kulikuwa na hitilafu zifuatazo na ujumbe wako:'
+          ok: Sawa
+        index:
+          new_conversation: Mazungumzo mapya
+          next: Inayofuata
+          no_conversations: Bado huna mazungumzo.
+          title: Mazungumzo
+        reply_form:
+          placeholder: Jibu lako...
+          send: Tuma
+        show:
+          back: Rudi kwa mazungumzo yote
+          chat_with: Mazungumzo na
+          deleted_accounts: Huwezi kuwa na mazungumzo na akaunti zilizofutwa.
+          not_allowed: Mshiriki huyu hakubali ujumbe wa moja kwa moja.
+          title: Mazungumzo na %{usernames}
+        start:
+          placeholder: Ujumbe wako...
+          send: Tuma
+        update:
+          error: Ujumbe haukutumwa kwa sababu ya hitilafu.
+    metadata:
+      progress:
+        active: Inayotumika
+        finished: 'Imekamilika: %{end_date}'
+        not_started: Bado haijaanza
+        remaining: "%{time_distance} imesalia"
+    metrics:
+      download:
+        csv: Pakua data (CSV)
+      followers:
+        description: Idadi ya washiriki wanaofuata nafasi hii ya ushiriki
+        object: wafuasi
+        title: Wafuasi
+      participants:
+        description: Idadi ya washiriki hai katika shirika
+        object: washiriki
+        title: Washiriki
+      users:
+        description: Idadi ya washiriki katika shirika
+        object: washiriki
+        title: Washiriki
+    newsletter_mailer:
+      newsletter:
+        no_reply_notice: Barua pepe hii ilitumwa kutoka kwa barua pepe ya arifa ambayo haiwezi kukubali barua pepe zinazoingia. Tafadhali usijibu ujumbe huu.
+        note: Umepokea barua pepe hii kwa sababu umejiandikisha kupokea majarida kwenye %{organization_name}. Unaweza kubadilisha mipangilio yako kwenye <a href="%{link}">ukurasa wako wa arifa</a>.
+        see_on_website: Je, huoni barua pepe hii kwa usahihi? Itazame kwenye <a href="%{link}" target="_blank" class="see-on-website">tovuti</a>.
+        unsubscribe: Ili kuchagua kutopokea aina hii ya barua pepe, <a href="%{link}" target="_blank" class="unsubscribe">Jiondoe</a>.
+    newsletter_templates:
+      basic_only_text:
+        body_preview: 'Maandishi ya dummy ya mwili: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
+        name: Msingi (maandishi pekee)
+      basic_only_text_settings_form:
+        body: Mwili
+        interpolations_hint: 'Kidokezo: Unaweza kutumia "%{name}" popote kwenye mwili au mada na nafasi yake itachukuliwa na jina la mpokeaji.'
+      image_text_cta:
+        body_preview: 'Maandishi dummy kwa mwili: Maecenas ac nisl vitae lectus pretium facilisis. Etiam facilisis sem nibh, sit amet rutrum mi aliquam nec. Sed id urna at nisl pretium mollis eu vel velit. Proin vitae suscipit urna, sed faucibus urna. Pellentesque id libero vulputate ipsum scelerisque suscipit. Nam aliquam sodales mi sit amet cursus. Donec mattis faucibus purus. Aenean tincidunt porta lorem ac commodo. Vestibulum katika mollis mi. Morbi eros erat, cursus ut tortor sit amet, imperdiet dapibus arcu. Suspendisse id egestas enim. Katika eget magna sed enim efficitur elementum sit amet aliquam quam. Donec fermentum metus eget urna luctus pulvinar.'
+        cta_text_preview: Maandishi ya Wito Kufanya Hatua
+        introduction_preview: 'Maandishi ya dummy ya utangulizi: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla nisl tellus. Donec sed mi dui. Sed efficitur libero a felis tempor sollicitudin. Nullam vestibulum fringilla felis, id efficitur lorem sagittis et. Vivamus aliquam maximus velit vel dapibus. Mauris pellentesque, enim eu varius lacinia, risus ante rutrum ipsum, non lobortis augue lorem quis urna. Aenean et malesuada arcu.'
+        name: Picha, maandishi na kitufe cha Wito Kufanya Hatua
+      image_text_cta_settings_form:
+        body: Mwili
+        cta_text: Maandishi ya kitufe cha Wito Kufanya Hatua
+        cta_url: URL ya kitufe cha Wito Kufanya Hatua
+        interpolations_hint: 'Kidokezo: Unaweza kutumia "%{name}" popote kwenye utangulizi, mwili, maandishi ya CTA au mada na nafasi yake itachukuliwa na jina la mpokeaji.'
+        introduction: Utangulizi
+        main_image: Picha kuu
+    newsletters:
+      unsubscribe:
+        check_subscription: Ikiwa ungependa kubadilisha mapendeleo yako, unaweza kufanya hivyo katika <a href="%{link}" target="_blank">ukurasa wa usanidi</a>.
+        error: Kulikuwa na tatizo la kujiondoa.
+        success: Umefanikiwa kujiondoa.
+        token_error: Kiungo kimeisha muda wake.
+        unsubscribe: Jiondoe
+    newsletters_opt_in:
+      unauthorized: Samahani, kiungo hiki hakipatikani tena.
+      update:
+        error: Kulikuwa na tatizo katika kuhifadhi mipangilio ya jarida.
+        success: Mipangilio ya jarida imesasishwa.
+    newsletters_opt_in_mailer:
+      notify:
+        body_1: Usindikaji wa data ya kibinafsi na ulinzi wake unazidi kuwa muhimu kwa sisi sote. Kwa kutumia Kanuni mpya ya Jumla ya Ulinzi wa Data (GDPR) ya Mei 25, 2018, watu binafsi wana udhibiti bora wa data zao za kibinafsi. Kwa sababu hii tunahitaji "Sawa" yako ili kuendelea kutuma taarifa muhimu kuhusu shughuli za %{organization_name}.
+        body_2: 'Unawezaje kutupa kibali chako? Bonyeza tu kitufe kifuatacho:'
+        body_3: Kwa idhini hii utaweza kuendelea kupokea taarifa kuhusu huduma za jukwaa. Ikiwa, kinyume chake, hatutapokea uthibitisho mzuri kwa upande wako tutaacha kukutumia ujumbe wetu. Ukithibitisha kuwa ungependa kuendelea kufahamishwa, utakuwa na chaguo la kughairi wakati wowote.
+        button: Ndiyo, nataka kuendelea kupokea taarifa muhimu
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Habari,
+        subject: Je, ungependa kuendelea kupokea taarifa muhimu kuhusu %{organization_name}?
+    notification_mailer:
+      event_received:
+        no_translation_available: Samahani, tafsiri ya kiotomatiki haikuweza kurejeshwa wakati barua pepe imetumwa. Unaweza kuangalia tafsiri ya maandishi asilia kwenye kiungo kifuatacho %{link}.
+        original_text: 'Maandishi asilia:'
+        same_language: Maudhui yamechapishwa katika lugha unayopendelea (%{language}), ndiyo sababu hakuna tafsiri ya kiotomatiki inayoonyeshwa katika barua pepe hii.
+        translated_text: 'Maandishi yaliyotafsiriwa kiotomati:'
+    notifications:
+      action_error: Kulikuwa na tatizo la kusasisha arifa.
+      no_notifications: Bado hakuna arifa.
+      show:
+        missing_event: Lo, arifa hii ni ya kipengee ambacho hakipatikani tena. Unaweza kuitupa.
+        moderated: Maudhui yamedhibitiwa
+    notifications_digest_mailer:
+      header:
+        daily: Muhtasari wa Arifa za Kila Siku
+        weekly: Muhtasari wa Arifa za Kila Wiki
+      hello: Hujambo %{name},
+      intro:
+        daily: 'Hizi ndizo arifa za siku ya mwisho kulingana na shughuli unayofuata:'
+        weekly: 'Hizi ndizo arifa za wiki iliyopita kulingana na shughuli unayofuata:'
+      outro: Umepokea arifa hizi kwa sababu unafuata maudhui haya au waandishi wake. Unaweza kuacha kuzifuata kutoka kwa kurasa zao husika.
+      see_more: Tazama arifa zaidi
+      subject: Huu ni muhtasari wa barua pepe yako
+    notifications_settings:
+      show:
+        administrators: Wasimamizi
+        allow_public_contact: Ruhusu mtu yeyote anitumie ujumbe wa moja kwa moja, hata kama siwafuati.
+        allow_push_notifications: Pata arifa zinazotumwa na programu hata wakati huitumii ili kujua kinachoendelea wakati haupo kwenye jukwaa. Unaweza kuzima wakati wowote.
+        direct_messages: Pokea ujumbe wa moja kwa moja kutoka kwa mtu yeyote
+        email_on_moderations: Ninataka kupokea barua pepe kila wakati kitu au mtu anaporipotiwa kukaguliwa.
+        everything_followed: Kila kitu ninafuata
+        newsletter_notifications: Ninataka kupokea majarida
+        newsletters: Vijarida
+        notification_settings:
+          close_meeting_reminder: Ninataka kupokea vikumbusho vya barua pepe vya ripoti ambazo hazijachapishwa za mikutano iliyofungwa
+        notifications_sending_frequencies:
+          daily: Kila siku
+          none: Hakuna
+          real_time: Wakati halisi
+          weekly: Kila wiki
+        notifications_sending_frequency: Je, ungependa kupokea arifa za barua pepe mara ngapi?
+        own_activity: Shughuli yangu mwenyewe, kama vile mtu akitoa maoni katika pendekezo langu au kunitaja
+        push_notifications: Arifa za kushinikiza
+        push_notifications_reminder: Ili kupata arifa kutoka kwa jukwaa, utahitaji kuziruhusu katika mipangilio ya kivinjari chako kwanza.
+        receive_notifications_about: Ninataka kupata arifa kuhusu
+        update_notifications_settings: Hifadhi mabadiliko
+      update:
+        error: Kulikuwa na tatizo la kusasisha mipangilio yako ya arifa.
+        success: Mipangilio yako ya arifa imesasishwa.
+    offline:
+      name: Nje ya mtandao
+      show:
+        message_1: Inaonekana hauko mtandaoni kwa sasa.
+        message_2: Tafadhali, jaribu tena baadaye.
+        retry: Jaribu tena
+    open_data:
+      not_available_yet: Faili za Open Data bado hazipatikani, tafadhali jaribu tena baada ya dakika chache.
+    pad_iframe:
+      disclaimer: Yaliyomo kwenye pedi hii yameandikwa na watumiaji waliojiandikisha na kutoa maoni yao. %{organization} haiwezi kuwajibika kwa yaliyomo.
+      explanation: Tumia pedi hii kuandika madokezo kwa ushirikiano wakati wa mkutano ili iwe rahisi kuandika dakika baadaye.
+      pad: Pedi
+    pages:
+      home:
+        extended:
+          debates: Mijadala
+          debates_explanation: Jadili na jadili, shiriki maoni yako na uboresha mada husika.
+          how_to_participate: Je, ninashiriki vipi katika mchakato?
+          meetings: Mikutano
+          meetings_explanation: Jua wapi na lini unaweza kushiriki katika mikutano ya hadhara.
+          more_info: Maelezo zaidi kuhusu %{resource_name}
+          proposals: Mapendekezo
+          proposals_explanation: Toa mapendekezo, usaidie yaliyopo na uendeleze mabadiliko unayotaka kuona.
+        footer_sub_hero:
+          footer_sub_hero_body_html: Hebu tujenge jamii iliyo wazi zaidi, iliyo wazi na shirikishi.<br /> Jiunge, ushiriki na uamue.
+          footer_sub_hero_headline: Karibu kwenye jukwaa shirikishi la %{organization}.
+          register: Sajili
+        hero:
+          participate: Shiriki
+          participate_title: Shiriki katika michakato ya jukwaa
+          welcome: Karibu %{organization}!
+        statistics:
+          headline: Hali ya sasa ya %{organization}
+        sub_hero:
+          register: Sajili
+          register_title: Fungua akaunti
+      index:
+        standalone_pages: Kurasa
+        subheading: Nenda kupitia kurasa za usaidizi za %{name}
+        title: Msaada
+        topics: Mada
+      participatory_space:
+        metrics:
+          headline: Vipimo
+          link: Onyesha yote
+      terms_of_service:
+        accept:
+          error: Kulikuwa na tatizo la kukubali sheria na masharti.
+          success: Kubwa! Umekubali sheria na masharti.
+        form:
+          agreement: Nakubaliana na masharti haya
+          legend: Kubali sheria na masharti
+        refuse:
+          modal_body: Ukikataa, hutaweza kutumia jukwaa, unaweza <a href="%{download_your_data_path}">kupakua data yako</a> na/au <a href="%{delete_path}">kufuta yako. akaunti</a>.
+          modal_btn_continue: Kubali masharti na uendelee
+          modal_btn_exit: Nitaipitia baadaye
+          modal_button: Kataa masharti
+          modal_title: Je, kweli unakataa sheria na masharti yaliyosasishwa?
+        required_review:
+          alert: Tumesasisha Sheria na Masharti yetu, tafadhali yapitie.
+          body: Tafadhali chukua muda kukagua masasisho ya Sheria na Masharti yetu. Vinginevyo hutaweza kutumia jukwaa.
+          title: 'Inahitajika: Kagua masasisho ya sheria na masharti yetu'
+    passwords:
+      update:
+        error: Kulikuwa na tatizo la kusasisha nenosiri.
+        success: Nenosiri limesasishwa.
+    profile:
+      deleted: Mshiriki amefutwa
+      inaccessible_message: Wasifu huu haupatikani kwa sababu ya ukiukaji wa sheria na masharti!
+    profiles:
+      default_officialization_text_for_user_groups: Kikundi hiki kimethibitishwa hadharani, jina lake limethibitishwa ili kuendana na jina lake halisi.
+      default_officialization_text_for_users: Mshiriki huyu amethibitishwa hadharani, jina au jukumu lake limethibitishwa ili kuendana na jina lake halisi na jukumu lake.
+      show:
+        activity: Shughuli
+        badges: Beji
+        conversations: Mazungumzo
+        followers: Wafuasi
+        following: Inafuata
+        group_admins: Dhibiti wasimamizi
+        group_members: Dhibiti wanachama
+        groups: Vikundi
+        members: Wanachama
+        officialized: Mshiriki rasmi
+        send_private_message: Tuma ujumbe wa faragha
+      sidebar:
+        badges:
+          info: Beji hupatikana kwa kufanya shughuli mahususi kwenye jukwaa.
+          title: Beji
+      user:
+        actions:
+          create_user_group: Unda kikundi
+          disabled_message: Ujumbe
+          edit_profile: Hariri wasifu
+          edit_user_group: Badilisha wasifu wa kikundi
+          invite_user: Alika mshiriki
+          join_user_group: Ombi la kujiunga na kikundi
+          leave_user_group: Ondoka kwenye kikundi
+          manage_user_group: Dhibiti kikundi
+          manage_user_group_admins: Dhibiti wasimamizi
+          manage_user_group_users: Dhibiti wanachama
+          message: Ujumbe
+          resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
+        confirmation_instructions_sent: Maagizo ya uthibitishaji wa barua pepe yametumwa.
+        create_user_group: Unda kikundi
+        edit_profile: Hariri wasifu
+        edit_user_group: Badilisha wasifu wa kikundi
+        fill_in_email_to_confirm_it: Tafadhali, jaza barua pepe ya kikundi chako ili kuithibitisha.
+        invite_user: Alika mshiriki
+        join_user_group: Ombi la kujiunga na kikundi
+        leave_user_group: Ondoka kwenye kikundi
+        manage_user_group_admins: Dhibiti wasimamizi
+        manage_user_group_users: Dhibiti wanachama
+        resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
+    reported_mailer:
+      hide:
+        hello: Hujambo %{name},
+        manage_moderations: Dhibiti ukadiriaji
+        report_html: <p> <a href="%{url}">yafuatayo</a> yamefichwa kiotomatiki.</p>
+        subject: Rasilimali imefichwa kiotomatiki
+      report:
+        authors: Waandishi
+        content: Maudhui yaliyoripotiwa
+        content_original_language: Lugha asili ya maudhui
+        date: Imeripotiwa
+        details: Maelezo
+        hello: Hujambo %{name},
+        id: ID
+        participatory_space: Nafasi shirikishi
+        reason: Sababu
+        report_html: <p> <a href="%{url}">yafuatayo</a> yameripotiwa.</p>
+        see_report: Tazama ripoti
+        subject: Rasilimali imeripotiwa
+    reports:
+      create:
+        error: Hitilafu ilitokea wakati wa kuunda ripoti. Tafadhali, ijaribu tena.
+        success: Ripoti imeundwa kwa ufanisi na itakaguliwa na msimamizi.
+    resource_endorsements:
+      create:
+        error: Kulikuwa na tatizo wakati wa hatua ya kuidhinisha.
+    scopes:
+      global: Upeo wa kimataifa
+      picker:
+        cancel: Ghairi
+        change: Badilisha upeo uliochaguliwa
+        choose: Chagua
+        currently_selected: Upeo uliochaguliwa kwa sasa
+        title: Chagua %{field}
+      prompt: Chagua upeo
+      scopes: Upeo
+      scopes_picker_input:
+        select_scope: 'Chagua upeo (kwa sasa: %{current})'
+    search:
+      name: Tafuta
+      results: Matokeo ya utafutaji
+      results_found_for_term: '%{count} Matokeo ya utafutaji: "%{term}"'
+      term_input_placeholder: Tafuta
+    searches:
+      filters:
+        jump_to: 'Rukia kwa:'
+        search: Tafuta
+        state:
+          active: Inayotumika
+          all: Wote
+          future: Baadaye
+          past: Zamani
+      filters_small_view:
+        filter: Chuja
+        filter_and_search: Chuja na utafute
+        filter_by: Chuja kwa
+      results:
+        view_all: Tazama zote (%{count})
+    security:
+      selfxss_warning:
+        description: Kipengele hiki cha kivinjari kimekusudiwa wasanidi programu na hupaswi kubandika chochote hapa ikiwa umeombwa kufanya hivyo. Kubandika maudhui kwenye dirisha hili kunaweza kuhatarisha faragha yako na kuwapa wadukuzi idhini ya kufikia akaunti yako.
+        title: Acha!
+    shared:
+      confirm_modal:
+        cancel: Ghairi
+        close_modal: Funga modali
+        ok: SAWA
+        title: Thibitisha
+      embed:
+        title: Maudhui ya video iliyopachikwa
+      extended_navigation_bar:
+        more: Zaidi
+        unfold: Fungua
+      filter_form_help:
+        help: Fomu iliyo hapa chini huchuja matokeo ya utafutaji kwa nguvu wakati hali ya utafutaji inabadilishwa.
+        skip: Ruka kwa matokeo
+      flag_modal:
+        already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+        close: Funga
+        description: Je, maudhui haya hayafai?
+        does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+        hide: Ficha
+        hide_content: Ficha maudhui haya
+        offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+        reason: Sababu
+        report: Ripoti
+        spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+        title: Ripoti maudhui yasiyofaa
+      flag_user_modal:
+        already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
+        block: Mzuie mshiriki huyu
+        close: Funga
+        description: Ni nini kisichofaa kwa mtumiaji?
+        does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
+        hide: Ficha yaliyomo yao yote
+        offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
+        report: Ripoti
+        spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
+        title: Ripoti Mtumiaji asiyefaa
+      floating_help:
+        help: Msaada
+      follow_button:
+        log_in_before_follow: Tafadhali ingia kabla ya kutekeleza kitendo hiki
+      login_modal:
+        please_log_in: Tafadhali ingia
+        sign_up: Fungua akaunti
+      mentions_modal:
+        remove_recipient: Ondoa mpokeaji %{name}
+      participatory_space_filters:
+        filters:
+          area: Eneo
+          areas: Maeneo
+          scope: Upeo
+          select_an_area: Chagua eneo
+      progress: Maendeleo
+      public_participation:
+        public_participation: Onyesha mahudhurio yangu hadharani
+      reference:
+        reference: 'Rejelea: %{reference}'
+      represent_user_group:
+        represent_user_group: Ninawakilisha kikundi
+        select_user_group: Chagua kikundi
+      results_per_page:
+        label: 'Matokeo kwa kila ukurasa:'
+        title: Chagua idadi ya matokeo kwa kila ukurasa
+      share_modal:
+        copy_share_link: Nakili
+        copy_share_link_clarification: Nakili kiungo cha kushiriki kwenye ubao wa kunakili
+        copy_share_link_copied: Imenakiliwa!
+        copy_share_link_message: Kiungo kilinakiliwa kwenye ubao wa kunakili.
+        share: Shiriki
+        share_link: Shiriki kiungo
+        share_to: Shiriki kwa %{service}
+    statistics:
+      comments_count: Maoni
+      endorsements_count: Ridhaa
+      followers_count: Wafuasi
+      headline: Takwimu
+      no_stats: Bado hakuna takwimu.
+      pages_count: Kurasa
+      participants_count: Washiriki
+      users_count: Washiriki
+    tags:
+      filter_results_for_category: 'Chuja matokeo ya kategoria: %{resource}'
+      filter_results_for_scope: 'Chuja matokeo ya upeo: %{resource}'
+    translation_bar:
+      help_text: "<strong>Onyo:</strong> Maudhui yanaweza kutafsiriwa kiotomatiki na yasiwe sahihi 100%."
+      show_original: Onyesha maandishi asilia
+      show_translated: Onyesha maandishi yaliyotafsiriwa kiotomatiki
+    user_activity:
+      index:
+        no_activities_warning: Mshiriki huyu bado hana shughuli yoyote.
+    user_contact_disabled: Mshiriki huyu hakubali ujumbe wa moja kwa moja
+    user_conversations:
+      create:
+        error: Ujumbe haukuweza kuundwa. Jaribu tena baadaye.
+        existing_error: Ujumbe haukuweza kuundwa. Mazungumzo tayari yapo, tafadhali jaribu tena sasa.
+        success: Mazungumzo yameanza kwa mafanikio!
+      index:
+        conversations_info: Mazungumzo ni ya faragha. hakuna mtu mwingine anayeweza kuwaona. Mazungumzo yanaweza kuanzishwa na mshiriki au kikundi chochote kilichosajiliwa kwenye jukwaa.
+        no_conversations_warning: Bado hakuna mazungumzo.
+        time_ago: "%{time} iliyopita"
+      reply:
+        placeholder: Jibu lako...
+        send: Tuma
+      update:
+        error: Ujumbe haujatumwa. Jaribu tena baadaye
+    user_interests:
+      show:
+        my_interests: Maslahi yangu
+        no_scopes: Shirika hili bado halina upeo wowote!
+        select_your_interests: Chagua mada unazopenda ili kupokea matukio yanayohusiana nazo katika kichupo cha Rekodi ya Maeneo Uliyotembelea wasifu wako.
+        update_my_interests: Sasisha mambo yanayonivutia
+      update:
+        error: Kulikuwa na tatizo la kusasisha akaunti yako.
+        success: Mambo yanayokuvutia yamesasishwa.
+    user_report_mailer:
+      notify:
+        body_1: Mtumiaji %{user} ameripotiwa na %{token}
+        body_2: 'Sababu: %{reason}'
+        details: Mtumiaji alitoa maelezo
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Hujambo %{admin},
+        subject: Mtumiaji mpya ameripotiwa katika %{organization_name}
+    user_update_mailer:
+      notify:
+        body_1: Tunakutumia ujumbe huu ili kukuarifu kuhusu sasisho la akaunti yako.
+        body_2: Iwapo hujafanya sasisho kama hilo wewe mwenyewe, tafadhali ingia kwenye akaunti yako ili kubadilisha nenosiri lako. Iwapo huwezi kuingia, tafadhali wasiliana na usaidizi wa jukwaa.
+        greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+        hello: Hujambo %{user}
+        main_body: 'Maelezo yafuatayo yamebadilishwa: %{updates}.'
+        update_fields: "%{updates} na %{last_update}"
+      subject: Akaunti yako imesasishwa
+    version:
+      show:
+        back_to_resource: Rudi nyuma
+        changes_at_title: Mabadiliko katika "%{title}"
+        number_of_versions: Matoleo
+        version_created_at: Toleo liliundwa saa
+    versions:
+      resource_version:
+        of_versions: "(ya %{number})"
+        see_other_versions: tazama matoleo mengine
+        version: Nambari ya toleo %{number}
+    versions_list_item:
+      show:
+        version_index: Toleo la %{index} la %{total}
+    welcome_notification:
+      default_body: <p>Hujambo {{name}}, asante kwa kujiunga na {{organization}} na karibu!</p><ul><li>Ikiwa ungependa kupata wazo la haraka la unachoweza kufanya hapa, angalia sehemu ya <a href="{{help_url}}">Msaada</a>.</li><li>Ukishaisoma utapata beji yako ya kwanza. Hii hapa ni <a href="{{badges_url}}">orodha ya beji zote</a> unazoweza kupata unaposhiriki katika {{organization}}</li><li>Mwisho lakini sio kwa umuhimu, jiunge na zingine watu, shiriki nao uzoefu wa kujishughulisha na kushiriki katika {{shirika}}. Toa mapendekezo, maoni, mijadala, fikiria jinsi ya kuchangia manufaa ya wote, toa hoja za kushawishi, kusikiliza na kusoma ili kusadikishwa, eleza mawazo yako kwa njia thabiti na ya moja kwa moja, jibu kwa subira na uamuzi, tetea mawazo yako na utunze. nia iliyo wazi kushirikiana na kujiunga na mawazo ya watu wengine.</li></ul>
+      default_subject: Asante kwa kujiunga na {{organization}}!
+    wizard_step_form:
+      wizard_aside:
+        back: Nyuma
+      wizard_header:
+        see_steps: tazama hatua
+        step_of: Hatua ya %{current_step} kati ya %{total_steps}
+  devise:
+    confirmations:
+      confirmed: Barua pepe yako imethibitishwa.
+      new:
+        resend_confirmation_instructions: Tuma tena maagizo ya uthibitishaji
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kuthibitisha anwani yako ya barua pepe baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa anwani yako ya barua pepe ipo katika hifadhidata yetu, utapokea barua pepe yenye maelekezo ya jinsi ya kuthibitisha anwani yako ya barua pepe baada ya dakika chache.
+    failure:
+      already_authenticated: Tayari umeingia.
+      inactive: Akaunti yako bado haijaamilishwa.
+      invalid: '%{authentication_keys} au nenosiri batili.'
+      invited: Una mwaliko ambao haujashughulikiwa, ukubali ili ukamilishe kuunda akaunti yako.
+      last_attempt: Una jaribio moja zaidi kabla ya akaunti yako kufungwa.
+      locked: Akaunti yako imefungwa.
+      not_found_in_database: '%{authentication_keys} au nenosiri batili.'
+      timeout: Kipindi chako kimekwisha. Tafadhali ingia tena ili kuendelea.
+      unauthenticated: Unahitaji kuingia au kuunda akaunti kabla ya kuendelea.
+    invitations:
+      edit:
+        header: Maliza kuunda akaunti yako
+        nickname_help: Jina lako la utani katika %{organization}. Inaweza kuwa na herufi, nambari, '-' na '_' pekee.
+        submit_button: Hifadhi
+        subtitle: Ukikubali mwaliko tafadhali weka jina lako la utani na nenosiri.
+      invitation_removed: Mwaliko wako uliondolewa.
+      invitation_token_invalid: Tokeni ya mwaliko iliyotolewa si sahihi!
+      new:
+        header: Tuma mwaliko
+        submit_button: Tuma mwaliko
+      no_invitations_remaining: Hakuna mialiko iliyosalia
+      send_instructions: Barua pepe ya mwaliko imetumwa kwa %{email}
+      updated: Nenosiri lako limewekwa kwa ufanisi. Sasa umeingia.
+      updated_not_active: Nenosiri lako limewekwa kwa ufanisi.
+    mailer:
+      confirmation_instructions:
+        action: Thibitisha akaunti yangu
+        greeting: Karibu %{recipient}!
+        instruction: 'Unaweza kuthibitisha akaunti yako ya barua pepe kupitia kiungo kilicho hapa chini:'
+        subject: Maagizo ya uthibitisho
+      email_changed:
+        greeting: Hujambo %{recipient}!
+        message: Tunawasiliana nawe ili kukuarifu kuwa barua pepe yako inabadilishwa kuwa %{email}.
+        subject: Barua pepe Imebadilishwa
+      invitation_instructions:
+        accept: Kubali mwaliko
+        accept_until: Mwaliko huu utalipwa mnamo %{due_date}.
+        decline: Kataa mwaliko
+        hello: Hujambo %{email},
+        ignore: |-
+          Ikiwa hutaki kukubali mwaliko, tafadhali puuza barua pepe hii.<br />
+          Akaunti yako haitaundwa hadi ufikie kiungo kilicho hapo juu na kuweka jina lako la utani na nenosiri.
+        invited_you_as_admin: "%{invited_by} amekualika kama msimamizi wa %{application}. Unaweza kuikubali kupitia kiungo hapa chini."
+        invited_you_as_private_user: "%{invited_by} amekualika kama mshiriki wa faragha wa %{application}. Unaweza kuikubali kupitia kiungo hapa chini."
+        someone_invited_you: Mtu fulani amekualika kwenye %{application}. Unaweza kuikubali kupitia kiungo hapa chini.
+        someone_invited_you_as_admin: Mtu fulani amekualika kama msimamizi wa %{application}, unaweza kuikubali kupitia kiungo kilicho hapa chini.
+        someone_invited_you_as_private_user: Mtu fulani amekualika kama mshiriki wa faragha wa %{application}, unaweza kuikubali kupitia kiungo kilicho hapa chini.
+        subject: Maagizo ya mwaliko
+      invite_admin:
+        subject: Umealikwa kudhibiti %{organization}
+      invite_collaborator:
+        subject: Umealikwa kushirikiana kwenye %{organization}
+      invite_private_user:
+        subject: Umealikwa kwa mchakato wa ushiriki wa kibinafsi kwenye %{organization}
+      organization_admin_invitation_instructions:
+        subject: Umealikwa kudhibiti %{organization}
+      password_change:
+        greeting: Hujambo %{recipient}!
+        message: Tunawasiliana nawe ili kukuarifu kuwa nenosiri lako limebadilishwa.
+        subject: Nenosiri limebadilishwa
+      reset_password_instructions:
+        action: Badilisha nenosiri langu
+        greeting: Hujambo %{recipient}!
+        instruction: Mtu ameomba kiungo ili kubadilisha nenosiri lako, na unaweza kufanya hivyo kupitia kiungo kilicho hapa chini.
+        instruction_2: Ikiwa hukuomba hili, tafadhali puuza barua pepe hii.
+        instruction_3: Nenosiri lako halitabadilika hadi ufikie kiungo kilicho hapo juu na kuunda kipya.
+        subject: Weka upya maagizo ya nenosiri
+      unlock_instructions:
+        action: Fungua akaunti yangu
+        greeting: Hujambo %{recipient}!
+        instruction: 'Bofya kiungo kilicho hapa chini ili kufungua akaunti yako:'
+        message: Akaunti yako imefungwa kwa sababu ya idadi kubwa ya majaribio ambayo hayajafaulu.
+        subject: Fungua maagizo
+    omniauth_callbacks:
+      failure: Haikuweza kukuthibitisha kutoka kwa %{kind} kwa sababu "%{reason}".
+      success: Imethibitishwa kutoka kwa akaunti %{kind}.
+    passwords:
+      edit:
+        change_my_password: Badilisha nenosiri langu
+        confirm_new_password: Thibitisha nenosiri jipya
+        new_password: Nenosiri mpya
+        old_password_help: Ili kuthibitisha mabadiliko kwenye akaunti yako, tafadhali toa nenosiri lako la sasa.
+        password_help: "%{minimum_characters} kima cha chini cha herufi, lazima isiwe ya kawaida sana (k.m. 123456) na lazima iwe tofauti na jina lako la utani na barua pepe yako."
+        password_help_admin: "%{minimum_characters} kima cha chini cha herufi, lazima kiwe cha kawaida sana (e.g. 123456), lazima kiwe tofauti na jina lako la utani na barua pepe yako na lazima kiwe tofauti na manenosiri yako ya zamani."
+        title: Mabadiliko ya nenosiri
+      new:
+        forgot_your_password: Je, umesahau nenosiri lako?
+        send_me_reset_password_instructions: Nitumie maagizo ya kuweka upya nenosiri
+      no_token: Huwezi kufikia ukurasa huu bila kuja kutoka kwa barua pepe ya kuweka upya nenosiri. Ikiwa umetoka kwa barua pepe ya kuweka upya nenosiri, tafadhali hakikisha kuwa umetumia URL kamili iliyotolewa.
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kuweka upya nenosiri lako baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa anwani yako ya barua pepe ipo katika hifadhidata yetu, utapokea kiungo cha kurejesha nenosiri kwenye anwani yako ya barua pepe baada ya dakika chache.
+      updated: Nenosiri lako limebadilishwa. Sasa umeingia.
+      updated_not_active: Nenosiri lako limebadilishwa.
+    registrations:
+      destroyed: Akaunti yako imeghairiwa. Tunatumai kukuona tena hivi karibuni.
+      new:
+        sign_up: Fungua akaunti
+      signed_up: Karibu! Umefaulu kujiandikisha.
+      signed_up_but_inactive: Umefaulu kujiandikisha. Hata hivyo, hatukuweza kukuingiza kwa sababu akaunti yako bado haijaamilishwa.
+      signed_up_but_locked: Umefaulu kujiandikisha. Hata hivyo, hatukuweza kukuingiza kwa sababu akaunti yako imefungwa.
+      signed_up_but_unconfirmed: Ujumbe ulio na kiungo cha uthibitishaji umetumwa kwa anwani yako ya barua pepe. Tafadhali fuata kiungo ili kuwezesha akaunti yako.
+      update_needs_confirmation: Ulisasisha akaunti yako kwa mafanikio, lakini tunahitaji kuthibitisha anwani yako mpya ya barua pepe. Tafadhali angalia barua pepe yako na ufuate kiungo cha kuthibitisha ili kuthibitisha anwani yako mpya ya barua pepe.
+      updated: Akaunti yako imesasishwa.
+    sessions:
+      already_signed_out: Umetoka nje kwa mafanikio.
+      new:
+        log_in: Ingia
+      signed_in: Imefanikiwa kuingia.
+      signed_out: Umetoka nje kwa mafanikio.
+    shared:
+      links:
+        back: Nyuma
+        didn_t_receive_confirmation_instructions: Hukupokea maagizo ya uthibitishaji?
+        didn_t_receive_unlock_instructions: Hukupokea maagizo ya kufungua?
+        forgot_your_password: Je, umesahau nenosiri lako?
+        log_in: Ingia
+        log_in_with_provider: Ingia kwa %{provider}
+        sign_up: Fungua akaunti
+      minimum_password_length:
+        one: "(Kima cha chini cha herufi %{count})"
+        other: "(Kima cha chini cha herufi %{count})"
+    unlocks:
+      new:
+        resend_unlock_instructions: Tuma maagizo ya kufungua tena
+      send_instructions: Utapokea barua pepe yenye maagizo ya jinsi ya kufungua akaunti yako baada ya dakika chache.
+      send_paranoid_instructions: Ikiwa akaunti yako ipo, utapokea barua pepe yenye maelekezo ya jinsi ya kuifungua baada ya dakika chache.
+      unlocked: Akaunti yako imefunguliwa. Tafadhali ingia ili kuendelea.
+  doorkeeper:
+    scopes:
+      public: Taarifa zako za umma.
+  editor:
+    extensions:
+      image:
+        altLabel: Maandishi mbadala ya picha
+        nodeView:
+          resizer:
+            control:
+              resize: Badilisha ukubwa wa picha (%position%)
+            position:
+              bottomLeft: kona ya chini kushoto
+              bottomRight: kona ya chini kulia
+              topLeft: kona ya juu kushoto
+              topRight: kona ya juu kulia
+        uploadError: Imeshindwa kupakia faili.
+      link:
+        bubbleMenu:
+          edit: Hariri
+          remove: Ondoa
+          url: URL
+        hrefLabel: URL ya kiungo
+        targetLabel: Lengo
+        targets:
+          blank: Kichupo kipya
+          default: Chaguomsingi (kichupo sawa)
+      videoEmbed:
+        titleLabel: Kichwa
+        urlLabel: URL ya video
+    inputDialog:
+      buttons:
+        cancel: Ghairi
+        remove: Ondoa
+        save: Hifadhi
+      close: Funga modali
+    toolbar:
+      control:
+        blockquote: Nukuu ya kuzuia
+        bold: Ujasiri
+        bulletList: Orodha ambayo haijaagizwa
+        codeBlock: Kizuizi cha kanuni
+        common:
+          eraseStyles: Futa mitindo
+        hardBreak: Kuvunja mstari
+        heading: Mtindo wa maandishi
+        image: Picha
+        indent:
+          indent: Pendekeza ndani
+          outdent: Nje
+        italic: Italic
+        link: Kiungo
+        orderedList: Orodha iliyoagizwa
+        underline: Piga mstari
+        videoEmbed: Upachikaji wa video
+      textStyle:
+        heading: Kichwa %level%
+        normal: Kawaida
+    upload:
+      uploadedFile: Faili iliyopakiwa
+  emojis:
+    add_custom: Ongeza emoji maalum
+    button: Ongeza emoji
+    categories:
+      activity: Shughuli
+      custom: Desturi
+      flags: Bendera
+      foods: Chakula na Vinywaji
+      frequent: Inatumika mara kwa mara
+      nature: Wanyama na Asili
+      objects: Vitu
+      people: Smileys & Watu
+      places: Safari na Maeneo
+      search: Matokeo ya Utafutaji
+      symbols: Alama
+    pick: Chagua emoji...
+    search: Tafuta
+    search_no_results_1: La!
+    search_no_results_2: Emoji hiyo haikupatikana
+    skins:
+      '1': Chaguomsingi
+      '2': Mwanga
+      '3': Mwanga-Wastani
+      '4': Kati
+      '5': Kati-Giza
+      '6': Giza
+      choose: Chagua toni chaguomsingi ya ngozi
+  errors:
+    messages:
+      allowed_file_content_types: 'faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
+      already_confirmed: tayari imethibitishwa, tafadhali jaribu kuingia
+      blank: haiwezi kuwa tupu
+      cannot_be_blank: haiwezi kuwa tupu
+      confirmation: hailingani na %{attribute}
+      confirmation_period_expired: inahitaji kuthibitishwa ndani ya %{period}, tafadhali omba mpya
+      content_type_allowlist_error: aina ya faili si halali
+      cycle_detected: mzazi wa upeo hawezi kuwa mmoja wa vizazi vyake
+      empty: haiwezi kuwa tupu
+      expired: muda wake umeisha, tafadhali omba mpya
+      file_size_is_less_than_or_equal_to: saizi ya faili lazima iwe chini ya au sawa na %{count}
+      invalid_time_zone: si saa za eneo halali
+      long_words: ina maneno ambayo ni marefu sana (zaidi ya herufi 35)
+      must_start_with_caps: lazima uanze na herufi kubwa
+      nesting_too_deep: haiwezi kuwa ndani ya kategoria ndogo
+      not_found: haikuweza kupatikana. Je, umefungua akaunti hapo awali?
+      not_locked: haikuwa imefungwa
+      not_saved:
+        one: 'Kumekuwa na hitilafu katika kuchakata ombi lako:'
+        other: 'Kulikuwa na makosa mengi wakati wa kuchakata ombi lako:'
+      too_many_marks: anatumia alama nyingi za uakifishaji zinazofuatana (e.g. ! na?)
+      too_much_caps: inatumia herufi kubwa nyingi (zaidi ya 25% ya maandishi)
+      too_short: ni fupi mno (chini ya vibambo %{count})
+      url_format: URL hii iko katika umbizo lisilo sahihi
+  forms:
+    correct_errors: Kuna hitilafu kwenye fomu, tafadhali zirekebishe ili kuendelea.
+    length_validator:
+      minimum:
+        one: Angalau herufi %{count}
+        other: Angalau vibambo %{count}
+    required: Sehemu inayohitajika
+    required_explanation: "* Sehemu zinazohitajika zimetiwa alama ya nyota"
+  invisible_captcha:
+    sentence_for_humans: Ikiwa wewe ni mwanadamu, puuza uwanja huu
+    timestamp_error_message: Samahani, hiyo ilikuwa haraka sana! Tafadhali wasilisha upya.
+  layouts:
+    decidim:
+      announcements:
+        view_less: Onyesha kidogo
+        view_more: Taarifa zaidi
+      data_consent:
+        details:
+          columns:
+            description: Maelezo
+            name: Jina
+            service: Huduma
+            type: Aina
+          items:
+            _session_id:
+              description: Huruhusu tovuti kukumbuka mtumiaji ndani ya tovuti wakati zinasogea kati ya kurasa za wavuti.
+              service: Tovuti hii
+            decidim-consent:
+              description: Huhifadhi maelezo kuhusu vidakuzi vinavyoruhusiwa na mtumiaji kwenye tovuti hii.
+              service: Tovuti hii
+            pwaInstallPromptSeen:
+              description: Huhifadhi hali ikiwa arifa ya usakinishaji wa programu inayoendelea (PWA) tayari imeonekana na mtumiaji.
+              service: Tovuti hii
+          types:
+            cookie: Kuki
+            local_storage: Hifadhi ya ndani
+        dialog:
+          accept_all: Kubali yote
+          accept_only_essential: Kubali muhimu tu
+          description: Tunatumia vidakuzi kwenye tovuti yetu ili kuboresha utendaji na maudhui ya tovuti. Vidakuzi hutuwezesha kutoa matumizi ya kibinafsi zaidi na chaneli za media za kijamii.
+          settings: Mipangilio
+          title: Taarifa kuhusu vidakuzi vinavyotumiwa kwenye tovuti
+        modal:
+          accept_all: Kubali yote
+          accept_only_essential: Kubali muhimu tu
+          analytics:
+            description: Vidakuzi hivi hutumika kupima na kuchanganua hadhira ya tovuti ili kusaidia kuboresha tovuti.
+            title: Uchanganuzi na takwimu
+          description: Tunatumia vidakuzi ili kuhakikisha utendakazi msingi wa tovuti na kuboresha matumizi yako ya mtandaoni. Unaweza kusanidi na kukubali matumizi ya vidakuzi, na kurekebisha chaguo zako za idhini, wakati wowote.
+          essential:
+            description: Vidakuzi hivi huwezesha utendakazi muhimu wa tovuti na kusaidia kuweka watumiaji wake salama. Zinahifadhiwa kiotomatiki kwenye kivinjari na haziwezi kuzimwa.
+            title: Muhimu
+          marketing:
+            description: Vidakuzi hivi hukusanya maelezo kuhusu jinsi unavyotumia tovuti na vinaweza kutumika kukupa uuzaji unaobinafsishwa zaidi kwenye tovuti mbalimbali unazotumia.
+            title: Masoko
+          preferences:
+            description: Vidakuzi hivi huruhusu tovuti kukumbuka chaguo ulizofanya hapo awali kwenye tovuti hii ili kutoa hali ya utumiaji iliyobinafsishwa zaidi kwa watumiaji wa tovuti.
+            title: Mapendeleo
+          save_settings: Hifadhi mipangilio
+          title: Mipangilio ya kuki
+          toggle: Geuza %{consent_category}
+        warning:
+          all_categories: vidakuzi vyote
+          change_settings: Badilisha mipangilio ya vidakuzi
+          consent_required: Unahitaji kuwezesha %{categories} ili kuona maudhui haya.
+      edit_link:
+        edit: Hariri
+      footer:
+        cc_by_license: Leseni ya Creative Commons
+        data_consent_settings: Mipangilio ya kuki
+        decidim_logo: Nembo ya Decidim
+        decidim_title: Decidim
+        download_open_data: Pakua faili za Fungua Data
+        log_in: Ingia
+        made_with_open_source: Tovuti iliyotengenezwa kwa <a target="_blank" href="https://github.com/decidim/decidim">programu isiyolipishwa</a>.
+        resources: Rasilimali
+        sign_up: Fungua akaunti
+        terms_of_service: Masharti ya Huduma
+      header:
+        log_in: Ingia
+        main_menu: Menyu kuu
+        user_menu: Menyu ya mtumiaji
+      impersonation_warning:
+        close_session: Funga kipindi
+        description_html: Unasimamia mshiriki <b>%{user_name}</b>.
+        expire_time_html: Muda wa kipindi chako utaisha baada ya dakika <b><span class="minutes">%{minutes}</span></b>.
+      language_chooser:
+        choose_language: Chagua lugha
+      navigation:
+        aria_label: Navigation menu- %{title}
+      notifications_dashboard:
+        mark_all_as_read: Weka alama zote kama zimesomwa
+        mark_as_read: Weka alama kama imesomwa
+      offline_banner:
+        cache_version_page: Lo! Mtandao wako haupo mtandaoni. Hili ni toleo lililoakibishwa awali la ukurasa unaotembelea, labda maudhui hayajasasishwa.
+      social_media_links:
+        facebook: "%{organization} kwenye Facebook"
+        github: "%{organization} katika GitHub"
+        instagram: "%{organization} kwenye Instagram"
+        x: "%{organization} katika X"
+        youtube: "%{organization} kwenye YouTube"
+      timeout_modal:
+        body: Umekuwa bila amilifu kwa dakika %{minutes}. Ukiendelea kutotumika, utaondolewa kiotomatiki kwa usalama wako mwenyewe.
+        continue_session: Endelea kikao
+        log_out: Toka nje
+        title: Je, ungependa kuendelea na kipindi chako?
+      user_menu:
+        account: 'Akaunti ya mtumiaji: %{name}'
+        admin_dashboard: Dashibodi ya msimamizi
+        configuration: Usanidi
+        conversations: Mazungumzo
+        log_out: Toka nje
+        notifications: Arifa
+        profile: Akaunti yangu
+        public_profile: Wasifu wangu wa umma
+        title: Viungo vya wasifu
+      user_profile:
+        account: Akaunti
+        authorizations: Uidhinishaji
+        delete_my_account: Futa akaunti yangu
+        my_data: Data yangu
+        my_interests: Maslahi yangu
+        notifications_settings: Mipangilio ya arifa
+        profile: Wasifu
+        title: Mipangilio ya mshiriki
+        user_groups: Vikundi
+  locale:
+    name: Swahili
+    name_with_error: Kiingereza (kosa!)
+  password_validator:
+    denied: inakataliwa
+    domain_included_in_password: inafanana sana na jina la kikoa hiki
+    email_included_in_password: inafanana sana na barua pepe yako
+    fallback: sio halali
+    name_included_in_password: inafanana sana na jina lako
+    nickname_included_in_password: inafanana sana na jina lako la utani
+    not_enough_unique_characters: haina herufi za kipekee za kutosha
+    password_not_allowed: hairuhusiwi
+    password_repeated: haiwezi kutumia tena nenosiri la zamani
+    password_too_common: ni ya kawaida sana
+    password_too_long: ni ndefu sana
+    password_too_short: ni mfupi sana
+  ransack:
+    predicates:
+      dtgt: baada ya
+      dtgteq: baada au sawa na
+      dtlt: kabla
+      dtlteq: kabla au sawa na
+  social_share_button:
+    delicious: Ladha
+    douban: Douban
+    email: Barua pepe
+    facebook: Facebook
+    google_bookmark: Alamisho ya Google
+    google_plus: Google+
+    hacker_news: Habari za Wadukuzi
+    linkedin: Linkedin
+    pinterest: Pinterest
+    qq: Qzone
+    reddit: Reddit
+    share_to: Shiriki kwa %{name}
+    telegram: Telegram
+    tumblr: Tumblr
+    twitter: Twitter
+    vkontakte: Vkontakte
+    wechat: WeChat
+    wechat_footer: Fungua WeChat yako, bofya kitufe cha "Gundua" kisha ubofye menyu ya "Changanua Msimbo wa QR".
+    weibo: Sina Weibo
+    whatsapp_app: WhatsApp
+    whatsapp_web: WhatsApp
+    x: X
+    xing: Xing
+  time:
+    buttons:
+      close: Funga
+      reset: Weka upya
+      select: Chagua
+    formats:
+      day_of_month: "%b %d"
+      day_of_week: "%a"
+      day_of_week_long: "%a %e"
+      day_of_year: "%d.%m.%y"
+      ddmm: "%d.%m"
+      ddmmyyyy: "%d.%m.%Y"
+      decidim_day_of_year: "%d %B %Y"
+      decidim_short: "%d/%m/%Y %H:%M"
+      default: "%a %d %b %Y %H:%M:%S %z"
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: "%B %d, %Y %I:%M %p"
+      help:
+        time_format: 'Umbizo: hh:mm'
+      long: "%B %d %Y %H:%M"
+      long_dashed: "%Y-%m-%d %H:%M:%S"
+      long_with_particles: "%B %d, %Y kwa %H:%M"
+      short: "%d/%m/%Y %H:%M"
+      time_of_day: "%H:%M"
+      tooltip: "%d-%m-%Y %H:%M %p %Z  (GMT %:z)"
+  versions:
+    directions:
+      left: Ufutaji
+      right: Nyongeza
+    dropdown:
+      choose_diff_view_html: 'Mwonekano wa HTML:'
+      choose_diff_view_mode: 'Linganisha hali ya kutazama:'
+      option_escaped: Ametoroka
+      option_split: Upande kwa upande
+      option_unescaped: Umetoroka
+      option_unified: Umoja
+      toggle: Geuza mwonekano
+  views:
+    pagination:
+      next: Inayofuata
+      next_title: Unganisha kwa ukurasa unaofuata
+      pagination: Pagination
+      previous: Iliyotangulia
+      previous_title: Unganisha kwa ukurasa uliopita
+      title: 'Nambari ya ukurasa:'
+      truncate: "&hellip;"

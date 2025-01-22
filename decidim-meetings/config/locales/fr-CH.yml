@@ -1,0 +1,691 @@
+---
+fr-CH:
+  activemodel:
+    attributes:
+      close_meeting:
+        attendees_count: crwdns10022:0crwdne10022:0
+        attending_organizations: crwdns10024:0crwdne10024:0
+        audio_url: crwdns10026:0crwdne10026:0
+        closing_report: crwdns10028:0crwdne10028:0
+        closing_visible: crwdns10030:0crwdne10030:0
+        contributions_count: crwdns10032:0crwdne10032:0
+        proposal_ids: crwdns10034:0crwdne10034:0
+        video_url: crwdns10036:0crwdne10036:0
+      meeting:
+        address: crwdns10038:0crwdne10038:0
+        available_slots: crwdns10040:0crwdne10040:0
+        customize_registration_email: crwdns10042:0crwdne10042:0
+        decidim_category_id: crwdns10044:0crwdne10044:0
+        decidim_scope_id: crwdns10046:0crwdne10046:0
+        decidim_user_group_id: crwdns10048:0crwdne10048:0
+        description: crwdns10050:0crwdne10050:0
+        end_time: crwdns10052:0crwdne10052:0
+        id: crwdns10054:0crwdne10054:0
+        iframe_access_level: crwdns10056:0crwdne10056:0
+        iframe_embed_type: crwdns10058:0crwdne10058:0
+        iframe_embed_type_html: crwdns10060:0crwdne10060:0
+        location: crwdns10062:0crwdne10062:0
+        location_hints: crwdns10064:0crwdne10064:0
+        online_meeting_url: crwdns10066:0crwdne10066:0
+        organizer_gid: crwdns10068:0crwdne10068:0
+        organizer_id: crwdns10070:0crwdne10070:0
+        private_meeting: crwdns10072:0crwdne10072:0
+        registration_email_custom_content: crwdns10074:0crwdne10074:0
+        registration_form_enabled: crwdns10076:0crwdne10076:0
+        registration_terms: crwdns10078:0crwdne10078:0
+        registration_type: crwdns10080:0crwdne10080:0
+        registration_url: crwdns10082:0crwdne10082:0
+        registrations_enabled: crwdns10084:0crwdne10084:0
+        reserved_slots: crwdns10086:0crwdne10086:0
+        start_time: crwdns10088:0crwdne10088:0
+        title: crwdns10090:0crwdne10090:0
+        transparent: crwdns10092:0crwdne10092:0
+        type_of_meeting: crwdns10094:0crwdne10094:0
+      meeting_agenda:
+        title: crwdns10096:0crwdne10096:0
+        visible: crwdns10098:0crwdne10098:0
+      meeting_agenda_items:
+        description: crwdns10100:0crwdne10100:0
+        duration: crwdns10102:0crwdne10102:0
+        title: crwdns10104:0crwdne10104:0
+      meeting_registration_invite:
+        email: crwdns10106:0crwdne10106:0
+        name: crwdns10108:0crwdne10108:0
+      validate_registration_code:
+        code: crwdns10110:0crwdne10110:0
+    errors:
+      models:
+        meeting:
+          attributes:
+            iframe_embed_type:
+              not_embeddable: crwdns10112:0crwdne10112:0
+            online_meeting_url:
+              url_format: crwdns10114:0crwdne10114:0
+        meeting_agenda:
+          attributes:
+            base:
+              too_many_minutes: crwdns10116:0%{count}crwdne10116:0
+              too_many_minutes_child: crwdns10118:0%{parent_title}crwdnd10118:0%{count}crwdne10118:0
+        meeting_registration_invite:
+          attributes:
+            email:
+              already_invited: crwdns10120:0crwdne10120:0
+    models:
+      decidim/meetings/close_meeting_event: crwdns10122:0crwdne10122:0
+      decidim/meetings/create_meeting_event: crwdns10124:0crwdne10124:0
+      decidim/meetings/meeting_registrations_enabled_event: crwdns10126:0crwdne10126:0
+      decidim/meetings/meeting_registrations_over_percentage_event: crwdns10128:0crwdne10128:0
+      decidim/meetings/upcoming_meeting_event: crwdns10130:0crwdne10130:0
+      decidim/meetings/update_meeting_event: crwdns10132:0crwdne10132:0
+  activerecord:
+    models:
+      decidim/meetings/meeting:
+        one: crwdns10134:1crwdne10134:1
+        other: crwdns10134:5crwdne10134:5
+      decidim/meetings/minutes:
+        one: crwdns10136:1crwdne10136:1
+        other: crwdns10136:5crwdne10136:5
+      decidim/meetings/registration:
+        one: crwdns10138:1crwdne10138:1
+        other: crwdns10138:5crwdne10138:5
+  decidim:
+    admin:
+      filters:
+        accepted_at_not_null:
+          label: crwdns10140:0crwdne10140:0
+          values:
+            'false': crwdns10142:0crwdne10142:0
+            'true': crwdns10144:0crwdne10144:0
+        meetings:
+          category_id_eq:
+            label: crwdns10146:0crwdne10146:0
+          closed_at_present:
+            label: crwdns10148:0crwdne10148:0
+            values:
+              'false': crwdns10150:0crwdne10150:0
+              'true': crwdns10152:0crwdne10152:0
+          is_upcoming_true:
+            label: crwdns10154:0crwdne10154:0
+            values:
+              'false': crwdns10156:0crwdne10156:0
+              'true': crwdns10158:0crwdne10158:0
+          scope_id_eq:
+            label: crwdns10160:0crwdne10160:0
+          with_any_origin:
+            label: crwdns10162:0crwdne10162:0
+            values:
+              official: crwdns10164:0crwdne10164:0
+              participants: crwdns10166:0crwdne10166:0
+              user_group: crwdns10168:0crwdne10168:0
+          with_any_type:
+            label: crwdns10170:0crwdne10170:0
+            values:
+              hybrid: crwdns10172:0crwdne10172:0
+              in_person: crwdns10174:0crwdne10174:0
+              online: crwdns10176:0crwdne10176:0
+        rejected_at_not_null:
+          label: crwdns10178:0crwdne10178:0
+          values:
+            'false': crwdns10180:0crwdne10180:0
+            'true': crwdns10182:0crwdne10182:0
+        search_placeholder:
+          user_name_or_user_email_cont: crwdns10184:0crwdne10184:0
+        sent_at_not_null:
+          label: crwdns10186:0crwdne10186:0
+          values:
+            'false': crwdns10188:0crwdne10188:0
+            'true': crwdns10190:0crwdne10190:0
+      meeting_copies:
+        create:
+          error: crwdns10192:0crwdne10192:0
+          success: crwdns10194:0crwdne10194:0
+        new:
+          copy: crwdns10196:0crwdne10196:0
+          title: crwdns10198:0crwdne10198:0
+    components:
+      meetings:
+        actions:
+          comment: crwdns10200:0crwdne10200:0
+          join: crwdns10202:0crwdne10202:0
+          reply_poll: crwdns10204:0crwdne10204:0
+        name: crwdns10206:0crwdne10206:0
+        settings:
+          global:
+            announcement: crwdns10208:0crwdne10208:0
+            comments_enabled: crwdns10210:0crwdne10210:0
+            comments_max_length: crwdns10212:0crwdne10212:0
+            creation_enabled_for_participants: crwdns10214:0crwdne10214:0
+            default_registration_terms: crwdns10216:0crwdne10216:0
+            enable_pads_creation: crwdns10218:0crwdne10218:0
+            maps_enabled: crwdns10220:0crwdne10220:0
+            registration_code_enabled: crwdns10222:0crwdne10222:0
+            resources_permissions_enabled: crwdns10224:0crwdne10224:0
+            scope_id: crwdns10226:0crwdne10226:0
+            scopes_enabled: crwdns10228:0crwdne10228:0
+            terms_and_conditions_url_for_meeting_creators: crwdns10230:0crwdne10230:0
+          step:
+            announcement: crwdns10232:0crwdne10232:0
+            comments_blocked: crwdns10234:0crwdne10234:0
+            creation_enabled_for_participants: crwdns10236:0crwdne10236:0
+            creation_enabled_for_user_groups: crwdns10238:0crwdne10238:0
+    events:
+      meetings:
+        meeting_closed:
+          affected_user:
+            email_intro: 'crwdns10240:0%{resource_title}crwdne10240:0'
+            email_outro: crwdns10242:0%{resource_title}crwdne10242:0
+            email_subject: crwdns10244:0%{resource_title}crwdne10244:0
+            notification_title: crwdns10246:0%{resource_path}crwdnd10246:0%{resource_title}crwdne10246:0
+          follower:
+            email_intro: 'crwdns10248:0%{resource_title}crwdne10248:0'
+            email_outro: crwdns10250:0%{resource_title}crwdne10250:0
+            email_subject: crwdns10252:0%{resource_title}crwdne10252:0
+            notification_title: crwdns10254:0%{resource_path}crwdnd10254:0%{resource_title}crwdne10254:0
+        meeting_created:
+          button_text: crwdns10256:0crwdne10256:0
+          email_intro: crwdns10258:0%{resource_title}crwdnd10258:0%{participatory_space_title}crwdne10258:0
+          email_outro: crwdns10260:0%{participatory_space_title}crwdne10260:0
+          email_subject: crwdns10262:0%{participatory_space_title}crwdne10262:0
+          notification_title: crwdns10264:0%{resource_path}crwdnd10264:0%{resource_title}crwdnd10264:0%{participatory_space_title}crwdne10264:0
+        meeting_registration_confirmed:
+          notification_title: crwdns10266:0%{resource_url}crwdnd10266:0%{resource_title}crwdnd10266:0%{registration_code}crwdne10266:0
+        meeting_registrations_over_percentage:
+          email_intro: crwdns10268:0%{resource_title}crwdnd10268:0%{percentage}crwdne10268:0
+          email_outro: crwdns10270:0crwdne10270:0
+          email_subject: crwdns10272:0%{resource_title}crwdnd10272:0%{percentage}crwdne10272:0
+          notification_title: crwdns10274:0%{resource_path}crwdnd10274:0%{resource_title}crwdnd10274:0%{percentage}crwdne10274:0
+        meeting_updated:
+          email_intro: 'crwdns10276:0%{resource_title}crwdne10276:0'
+          email_outro: crwdns10278:0%{resource_title}crwdne10278:0
+          email_subject: crwdns10280:0%{resource_title}crwdne10280:0
+          notification_title: crwdns10282:0%{resource_path}crwdnd10282:0%{resource_title}crwdne10282:0
+        registration_code_validated:
+          email_intro: crwdns10284:0%{registration_code}crwdnd10284:0%{resource_title}crwdne10284:0
+          email_outro: crwdns10286:0%{resource_title}crwdne10286:0
+          email_subject: crwdns10288:0%{registration_code}crwdnd10288:0%{resource_title}crwdne10288:0
+          notification_title: crwdns10290:0%{registration_code}crwdnd10290:0%{resource_path}crwdnd10290:0%{resource_title}crwdne10290:0
+        registrations_enabled:
+          email_intro: 'crwdns10292:0%{resource_title}crwdne10292:0'
+          email_outro: crwdns10294:0%{resource_title}crwdne10294:0
+          email_subject: crwdns10296:0%{resource_title}crwdne10296:0
+          notification_title: crwdns10298:0%{resource_path}crwdnd10298:0%{resource_title}crwdne10298:0
+        upcoming_meeting:
+          email_intro: crwdns10300:0%{resource_title}crwdne10300:0
+          email_outro: crwdns10302:0%{resource_title}crwdne10302:0
+          email_subject: crwdns10304:0%{resource_title}crwdne10304:0
+          notification_title: crwdns10306:0%{resource_path}crwdnd10306:0%{resource_title}crwdne10306:0
+    forms:
+      meetings:
+        attendees_count_help_text: crwdns10308:0crwdne10308:0
+    gamification:
+      badges:
+        attended_meetings:
+          conditions:
+            - crwdns10310:0crwdne10310:0
+          description: crwdns10312:0crwdne10312:0
+          description_another: crwdns10314:0%{score}crwdne10314:0
+          description_own: crwdns10316:0%{score}crwdne10316:0
+          name: crwdns10318:0crwdne10318:0
+          next_level_in: crwdns10320:0%{score}crwdne10320:0
+          unearned_another: crwdns10322:0crwdne10322:0
+          unearned_own: crwdns10324:0crwdne10324:0
+    meetings:
+      actions:
+        agenda: crwdns10326:0crwdne10326:0
+        attachment_collections: crwdns10328:0crwdne10328:0
+        attachments: crwdns10330:0crwdne10330:0
+        close: crwdns10332:0crwdne10332:0
+        confirm_destroy: crwdns10334:0crwdne10334:0
+        destroy: crwdns10336:0crwdne10336:0
+        edit: crwdns10338:0crwdne10338:0
+        invalid_destroy:
+          proposals_count:
+            one: 'crwdns10340:1%{count}crwdne10340:1'
+            other: 'crwdns10340:5%{count}crwdne10340:5'
+        manage_poll: crwdns10342:0crwdne10342:0
+        new_meeting: crwdns10344:0crwdne10344:0
+        preview: crwdns10346:0crwdne10346:0
+        registrations: crwdns10348:0crwdne10348:0
+        title: crwdns10350:0crwdne10350:0
+      admin:
+        agenda:
+          agenda_item:
+            add_agenda_item_child: crwdns10352:0crwdne10352:0
+            agenda_item: crwdns10354:0crwdne10354:0
+            agenda_item_children: crwdns10356:0crwdne10356:0
+            down: crwdns10358:0crwdne10358:0
+            remove: crwdns10360:0crwdne10360:0
+            up: crwdns10362:0crwdne10362:0
+          agenda_item_child:
+            agenda_item_child: crwdns10364:0crwdne10364:0
+            down: crwdns10366:0crwdne10366:0
+            remove: crwdns10368:0crwdne10368:0
+            up: crwdns10370:0crwdne10370:0
+          create:
+            invalid: crwdns10372:0crwdne10372:0
+            success: crwdns10374:0crwdne10374:0
+          edit:
+            title: crwdns10376:0crwdne10376:0
+            update: crwdns10378:0crwdne10378:0
+          form:
+            add_agenda_item: crwdns10380:0crwdne10380:0
+            agenda_items: crwdns10382:0crwdne10382:0
+            end_date: crwdns10384:0crwdne10384:0
+            start_date: crwdns10386:0crwdne10386:0
+          new:
+            create: crwdns10388:0crwdne10388:0
+            title: crwdns10390:0crwdne10390:0
+          update:
+            invalid: crwdns10392:0crwdne10392:0
+            success: crwdns10394:0crwdne10394:0
+        exports:
+          answers: crwdns10396:0crwdne10396:0
+          meeting_comments: crwdns10398:0crwdne10398:0
+          meetings: crwdns10400:0crwdne10400:0
+          registrations: crwdns10402:0crwdne10402:0
+        invite_join_meeting_mailer:
+          invite:
+            decline: crwdns10404:0crwdne10404:0
+            invited_you_to_join_a_meeting: "crwdns10406:0%{invited_by}crwdnd10406:0%{application}crwdne10406:0"
+            join: crwdns10408:0%{meeting_title}crwdne10408:0
+        invites:
+          create:
+            error: crwdns10410:0crwdne10410:0
+            success: crwdns10412:0crwdne10412:0
+          form:
+            attendee_type: crwdns10414:0crwdne10414:0
+            existing_user: crwdns10416:0crwdne10416:0
+            invite: crwdns10418:0crwdne10418:0
+            invite_explanation: crwdns10420:0crwdne10420:0
+            non_user: crwdns10422:0crwdne10422:0
+            select_user: crwdns10424:0crwdne10424:0
+          index:
+            invite_attendee: crwdns10426:0crwdne10426:0
+            invites: crwdns10428:0crwdne10428:0
+            registrations_disabled: crwdns10430:0crwdne10430:0
+        meeting_closes:
+          edit:
+            close: crwdns10432:0crwdne10432:0
+            title: crwdns10434:0crwdne10434:0
+        meetings:
+          close:
+            invalid: crwdns10436:0crwdne10436:0
+            success: crwdns10438:0crwdne10438:0
+          create:
+            invalid: crwdns10440:0crwdne10440:0
+            success: crwdns10442:0crwdne10442:0
+          destroy:
+            invalid:
+              proposals_count:
+                one: crwdns10444:1%{count}crwdne10444:1
+                other: crwdns10444:5%{count}crwdne10444:5
+            success: crwdns10446:0crwdne10446:0
+          edit:
+            title: crwdns10448:0crwdne10448:0
+            update: crwdns10450:0crwdne10450:0
+          form:
+            address_help: 'crwdns10452:0crwdne10452:0'
+            disclaimer: 'crwdns10454:0%{organization}crwdne10454:0'
+            iframe_embed_type_html: 'crwdns10456:0%{domains}crwdne10456:0'
+            location_help: 'crwdns10458:0crwdne10458:0'
+            location_hints_help: 'crwdns10460:0crwdne10460:0'
+            online_meeting_url_help: 'crwdns10462:0crwdne10462:0'
+            registration_url_help: 'crwdns10464:0crwdne10464:0'
+            select_a_meeting_type: crwdns10466:0crwdne10466:0
+            select_a_registration_type: crwdns10468:0crwdne10468:0
+            select_an_iframe_access_level: crwdns10470:0crwdne10470:0
+          index:
+            title: crwdns10472:0crwdne10472:0
+          new:
+            create: crwdns10474:0crwdne10474:0
+            title: crwdns10476:0crwdne10476:0
+          publish:
+            invalid: crwdns10478:0crwdne10478:0
+            success: crwdns10480:0crwdne10480:0
+          service:
+            description: crwdns10482:0crwdne10482:0
+            down: crwdns10484:0crwdne10484:0
+            remove: crwdns10486:0crwdne10486:0
+            service: crwdns10488:0crwdne10488:0
+            title: crwdns10490:0crwdne10490:0
+            up: crwdns10492:0crwdne10492:0
+          services:
+            add_service: crwdns10494:0crwdne10494:0
+            services: crwdns10496:0crwdne10496:0
+          unpublish:
+            invalid: crwdns10498:0crwdne10498:0
+            success: crwdns10500:0crwdne10500:0
+          update:
+            invalid: crwdns10502:0crwdne10502:0
+            success: crwdns10504:0crwdne10504:0
+        meetings_poll:
+          form:
+            title: crwdns10506:0%{questionnaire_for}crwdne10506:0
+          update:
+            invalid: crwdns10508:0crwdne10508:0
+            success: crwdns10510:0crwdne10510:0
+        poll:
+          form:
+            announcement_html:
+              - crwdns10512:0crwdne10512:0
+              - crwdns10514:0crwdne10514:0
+              - crwdns10516:0crwdne10516:0
+              - crwdns10518:0%{admin_link}crwdne10518:0
+        registrations:
+          edit:
+            save: crwdns10520:0crwdne10520:0
+            validate: crwdns10522:0crwdne10522:0
+            validate_registration_code: crwdns10524:0crwdne10524:0
+          form:
+            available_slots_help: crwdns10526:0crwdne10526:0
+            invites: crwdns10528:0crwdne10528:0
+            recommendation_message: crwdns10530:0crwdne10530:0
+            registration_email_help: crwdns10532:0crwdne10532:0
+            registration_form: crwdns10534:0crwdne10534:0
+            registrations_count:
+              one: crwdns10536:1%{count}crwdne10536:1
+              other: crwdns10536:5%{count}crwdne10536:5
+            reserved_slots_help: crwdns10538:0crwdne10538:0
+            reserved_slots_less_than: crwdns10540:0%{count}crwdne10540:0
+            title: crwdns10542:0crwdne10542:0
+          update:
+            invalid: crwdns10544:0crwdne10544:0
+            success: crwdns10546:0crwdne10546:0
+          validate_registration_code:
+            invalid: crwdns10548:0crwdne10548:0
+            success: crwdns10550:0crwdne10550:0
+      admin_log:
+        invite:
+          create: "crwdns10552:0%{user_name}crwdnd10552:0%{attendee_name}crwdnd10552:0%{resource_name}crwdnd10552:0%{space_name}crwdne10552:0"
+          deleted: "crwdns10554:0%{user_name}crwdnd10554:0%{attendee_name}crwdnd10554:0%{resource_name}crwdnd10554:0%{space_name}crwdne10554:0"
+          update: "crwdns10556:0%{user_name}crwdnd10556:0%{attendee_name}crwdnd10556:0%{resource_name}crwdnd10556:0%{space_name}crwdne10556:0"
+        meeting:
+          close: "crwdns10558:0%{user_name}crwdnd10558:0%{resource_name}crwdnd10558:0%{space_name}crwdne10558:0"
+          create: "crwdns10560:0%{user_name}crwdnd10560:0%{resource_name}crwdnd10560:0%{space_name}crwdne10560:0"
+          delete: "crwdns10562:0%{user_name}crwdnd10562:0%{resource_name}crwdnd10562:0%{space_name}crwdne10562:0"
+          export_registrations: "crwdns10564:0%{user_name}crwdnd10564:0%{resource_name}crwdnd10564:0%{space_name}crwdne10564:0"
+          update: "crwdns10566:0%{user_name}crwdnd10566:0%{resource_name}crwdnd10566:0%{space_name}crwdne10566:0"
+          value_types:
+            organizer_presenter:
+              not_found: 'crwdns10568:0%{id}crwdne10568:0'
+        questionnaire:
+          update: "crwdns10570:0%{user_name}crwdnd10570:0%{meeting_name}crwdne10570:0"
+      application_helper:
+        filter_category_values:
+          all: crwdns10572:0crwdne10572:0
+        filter_meeting_space_values:
+          all: crwdns10574:0crwdne10574:0
+      calendar:
+        meeting_to_event:
+          read_more: crwdns10576:0crwdne10576:0
+      calendar_modal:
+        calendar_url: crwdns10578:0crwdne10578:0
+        copy_calendar_url: crwdns10580:0crwdne10580:0
+        copy_calendar_url_clarification: crwdns10582:0crwdne10582:0
+        copy_calendar_url_copied: crwdns10584:0crwdne10584:0
+        copy_calendar_url_description: crwdns10586:0crwdne10586:0
+        copy_calendar_url_explanation: crwdns10588:0crwdne10588:0
+        copy_calendar_url_message: crwdns10590:0crwdne10590:0
+        export_calendar: crwdns10592:0crwdne10592:0
+      close_meeting_reminder_mailer:
+        close_meeting_reminder:
+          body: crwdns10594:0%{meeting_path}crwdnd10594:0%{meeting_title}crwdne10594:0
+          greetings: crwdns10596:0%{organization_name}crwdnd10596:0%{organization_url}crwdnd10596:0%{organization_url}crwdne10596:0
+          hello: crwdns10598:0%{username}crwdne10598:0
+          subject: crwdns10600:0%{meeting_title}crwdne10600:0
+      conference_venues: crwdns10602:0crwdne10602:0
+      content_blocks:
+        upcoming_meetings:
+          name: crwdns10604:0crwdne10604:0
+      directory:
+        meetings:
+          index:
+            meetings: crwdns10606:0crwdne10606:0
+            space_type: crwdns10608:0crwdne10608:0
+      iframe_access_level:
+        all: crwdns10610:0crwdne10610:0
+        registered: crwdns10612:0crwdne10612:0
+        signed_in: crwdns10614:0crwdne10614:0
+      iframe_embed_type:
+        embed_in_meeting_page: crwdns10616:0crwdne10616:0
+        none: crwdns10618:0crwdne10618:0
+        open_in_live_event_page: crwdns10620:0crwdne10620:0
+        open_in_new_tab: crwdns10622:0crwdne10622:0
+      last_activity:
+        meeting_updated: 'crwdns10624:0crwdne10624:0'
+        new_meeting: 'crwdns10626:0crwdne10626:0'
+      layouts:
+        live_event:
+          close: crwdns10628:0crwdne10628:0
+      mailer:
+        invite_join_meeting_mailer:
+          invite:
+            subject: crwdns10630:0crwdne10630:0
+        registration_mailer:
+          confirmation:
+            subject: crwdns10632:0crwdne10632:0
+      meeting:
+        not_allowed: crwdns10634:0crwdne10634:0
+      meeting_closes:
+        edit:
+          back: crwdns10636:0crwdne10636:0
+          close: crwdns10638:0crwdne10638:0
+          title: crwdns10640:0crwdne10640:0
+      meetings:
+        calendar_modal:
+          add_to_calendar: crwdns10642:0crwdne10642:0
+          apple: crwdns10644:0crwdne10644:0
+          full_details_html: crwdns10646:0%{link}crwdne10646:0
+          google: crwdns10648:0crwdne10648:0
+          outlook: crwdns10650:0crwdne10650:0
+        count:
+          meetings_count:
+            one: "crwdns10652:1%{count}crwdne10652:1"
+            other: "crwdns10652:5%{count}crwdne10652:5"
+        create:
+          invalid: crwdns10654:0crwdne10654:0
+          success: crwdns10656:0crwdne10656:0
+        edit:
+          back: crwdns10658:0crwdne10658:0
+          title: crwdns10660:0crwdne10660:0
+          update: crwdns10662:0crwdne10662:0
+        filters:
+          activity: crwdns10664:0crwdne10664:0
+          all: crwdns10666:0crwdne10666:0
+          category: crwdns10668:0crwdne10668:0
+          date: crwdns10670:0crwdne10670:0
+          date_values:
+            all: crwdns10672:0crwdne10672:0
+            past: crwdns10674:0crwdne10674:0
+            upcoming: crwdns10676:0crwdne10676:0
+          my_meetings: crwdns10678:0crwdne10678:0
+          origin: crwdns10680:0crwdne10680:0
+          origin_values:
+            all: crwdns10682:0crwdne10682:0
+            official: crwdns10684:0crwdne10684:0
+            participants: crwdns10686:0crwdne10686:0
+            user_group: crwdns10688:0crwdne10688:0
+          search: crwdns10690:0crwdne10690:0
+          type: crwdns10692:0crwdne10692:0
+          type_values:
+            all: crwdns10694:0crwdne10694:0
+            hybrid: crwdns10696:0crwdne10696:0
+            in_person: crwdns10698:0crwdne10698:0
+            online: crwdns10700:0crwdne10700:0
+        form:
+          address_help: 'crwdns10702:0crwdne10702:0'
+          available_slots_help: crwdns10704:0crwdne10704:0
+          create_as: crwdns10706:0crwdne10706:0
+          disclaimer: 'crwdns10708:0%{organization}crwdne10708:0'
+          iframe_embed_type_html: 'crwdns10710:0%{domains}crwdne10710:0'
+          location_help: 'crwdns10712:0crwdne10712:0'
+          location_hints_help: 'crwdns10714:0crwdne10714:0'
+          online_meeting_url_help: 'crwdns10716:0crwdne10716:0'
+          registration_url_help: 'crwdns10718:0crwdne10718:0'
+          select_a_category: crwdns10720:0crwdne10720:0
+          select_a_meeting_type: crwdns10722:0crwdne10722:0
+          select_a_registration_type: crwdns10724:0crwdne10724:0
+          select_an_iframe_access_level: crwdns10726:0crwdne10726:0
+        index:
+          click_here: crwdns10728:0crwdne10728:0
+          new_meeting: crwdns10730:0crwdne10730:0
+          see_all: crwdns10732:0crwdne10732:0
+          see_all_withdrawn: crwdns10734:0crwdne10734:0
+          text_banner: crwdns10736:0%{go_back_link}crwdne10736:0
+        meeting:
+          close_meeting: crwdns10738:0crwdne10738:0
+          edit_close_meeting: crwdns10740:0crwdne10740:0
+          edit_meeting: crwdns10742:0crwdne10742:0
+          join_meeting: crwdns10744:0crwdne10744:0
+          reply_poll: crwdns10746:0crwdne10746:0
+          view_poll: crwdns10748:0crwdne10748:0
+        meetings:
+          no_meetings_warning: crwdns10750:0crwdne10750:0
+          upcoming_meetings_warning: crwdns10752:0crwdne10752:0
+        new:
+          back: crwdns10754:0crwdne10754:0
+          create: crwdns10756:0crwdne10756:0
+          title: crwdns10758:0crwdne10758:0
+        registration_confirm:
+          cancel: crwdns10760:0crwdne10760:0
+          confirm: crwdns10762:0crwdne10762:0
+        show:
+          attendees: crwdns10764:0crwdne10764:0
+          contributions: crwdns10766:0crwdne10766:0
+          join: crwdns10768:0crwdne10768:0
+          leave: crwdns10770:0crwdne10770:0
+          leave_confirmation: crwdns10772:0crwdne10772:0
+          link_available_soon: crwdns10774:0crwdne10774:0
+          link_closed: crwdns10776:0crwdne10776:0
+          live_event: crwdns10778:0crwdne10778:0
+          meeting_minutes: crwdns10780:0crwdne10780:0
+          micro_camera_permissions_warning: crwdns10782:0crwdne10782:0
+          no_slots_available: crwdns10784:0crwdne10784:0
+          organizations: crwdns10786:0crwdne10786:0
+          registration_code_help_text: crwdns10788:0crwdne10788:0
+          registration_state:
+            validated: crwdns10790:0crwdne10790:0
+            validation_pending: crwdns10792:0crwdne10792:0
+          remaining_slots:
+            one: "crwdns10794:1%{count}crwdne10794:1"
+            other: "crwdns10794:5%{count}crwdne10794:5"
+          visit_finished: crwdns10796:0crwdne10796:0
+          withdraw_btn_hint: crwdns10798:0crwdne10798:0
+          withdraw_confirmation_html: crwdns10800:0crwdne10800:0
+          withdraw_meeting: crwdns10802:0crwdne10802:0
+        update:
+          invalid: crwdns10804:0crwdne10804:0
+          success: crwdns10806:0crwdne10806:0
+      models:
+        invite:
+          fields:
+            email: crwdns10808:0crwdne10808:0
+            name: crwdns10810:0crwdne10810:0
+            sent_at: crwdns10812:0crwdne10812:0
+            status: crwdns10814:0crwdne10814:0
+          status:
+            accepted: crwdns10816:0%{at}crwdne10816:0
+            rejected: crwdns10818:0%{at}crwdne10818:0
+            sent: crwdns10820:0crwdne10820:0
+        meeting:
+          fields:
+            closed: crwdns10822:0crwdne10822:0
+            end_time: crwdns10824:0crwdne10824:0
+            id: crwdns10826:0crwdne10826:0
+            map: crwdns10828:0crwdne10828:0
+            official_meeting: crwdns10830:0crwdne10830:0
+            start_time: crwdns10832:0crwdne10832:0
+            title: crwdns10834:0crwdne10834:0
+      polls:
+        answers:
+          index:
+            administrate: crwdns10836:0crwdne10836:0
+            title: crwdns10838:0crwdne10838:0
+          index_admin:
+            back_to_meeting: crwdns10840:0crwdne10840:0
+            title: crwdns10842:0crwdne10842:0
+            view_poll: crwdns10844:0crwdne10844:0
+        questions:
+          closed_question:
+            announcement: crwdns10846:0crwdne10846:0
+            question: crwdns10848:0crwdne10848:0
+            question_results: crwdns10850:0crwdne10850:0
+          index:
+            empty_questions: crwdns10852:0crwdne10852:0
+          index_admin:
+            edit: crwdns10854:0crwdne10854:0
+            question: crwdns10856:0crwdne10856:0
+            received_answer: crwdns10858:0crwdne10858:0
+            received_answers: crwdns10860:0crwdne10860:0
+            results: crwdns10862:0crwdne10862:0
+            send: crwdns10864:0crwdne10864:0
+            sent: crwdns10866:0crwdne10866:0
+            statuses:
+              closed: crwdns10868:0crwdne10868:0
+              published: crwdns10870:0crwdne10870:0
+              unpublished: crwdns10872:0crwdne10872:0
+          published_question:
+            max_choices_alert: crwdns10874:0crwdne10874:0
+            question: crwdns10876:0crwdne10876:0
+            question_replied: crwdns10878:0crwdne10878:0
+            reply_question: crwdns10880:0crwdne10880:0
+      public_participants_list:
+        attending_organizations: crwdns10882:0crwdne10882:0
+        attending_participants: crwdns10884:0crwdne10884:0
+        hidden_participants_count:
+          one: crwdns10886:1%{count}crwdne10886:1
+          other: crwdns10886:5%{count}crwdne10886:5
+      read_more: "crwdns10888:0crwdne10888:0"
+      registration_mailer:
+        confirmation:
+          confirmed_html: crwdns10890:0%{url}crwdnd10890:0%{title}crwdne10890:0
+          details: crwdns10892:0crwdne10892:0
+          registration_code: crwdns10894:0%{code}crwdne10894:0
+      registration_type:
+        on_different_platform: crwdns10896:0crwdne10896:0
+        on_this_platform: crwdns10898:0crwdne10898:0
+        registration_disabled: crwdns10900:0crwdne10900:0
+      registrations:
+        create:
+          invalid: crwdns10902:0crwdne10902:0
+          success: crwdns10904:0crwdne10904:0
+        decline_invitation:
+          invalid: crwdns10906:0crwdne10906:0
+          success: crwdns10908:0crwdne10908:0
+        destroy:
+          invalid: crwdns10910:0crwdne10910:0
+          success: crwdns10912:0crwdne10912:0
+      type_of_meeting:
+        hybrid: crwdns10914:0crwdne10914:0
+        in_person: crwdns10916:0crwdne10916:0
+        online: crwdns10918:0crwdne10918:0
+      types:
+        private_meeting: crwdns10920:0crwdne10920:0
+        transparent: crwdns10922:0crwdne10922:0
+        withdraw: crwdns10924:0crwdne10924:0
+      withdraw:
+        error: crwdns10926:0crwdne10926:0
+        success: crwdns10928:0crwdne10928:0
+    metrics:
+      meetings:
+        description: crwdns10930:0crwdne10930:0
+        object: crwdns10932:0crwdne10932:0
+        title: crwdns10934:0crwdne10934:0
+    participatory_spaces:
+      highlighted_meetings:
+        past_meetings: crwdns10936:0crwdne10936:0
+        see_all: crwdns10938:0crwdne10938:0
+        upcoming_meetings: crwdns10940:0crwdne10940:0
+    resource_links:
+      meetings_through_proposals:
+        meeting_result: 'crwdns10942:0crwdne10942:0'
+        result_meeting: 'crwdns10944:0crwdne10944:0'
+      proposals_from_meeting:
+        meeting_proposal: 'crwdns10946:0crwdne10946:0'
+        proposal_meeting: 'crwdns10948:0crwdne10948:0'
+    statistics:
+      meetings_count: crwdns10950:0crwdne10950:0
+  devise:
+    mailer:
+      join_meeting:
+        subject: crwdns10952:0crwdne10952:0

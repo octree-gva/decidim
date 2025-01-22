@@ -1,1 +1,522 @@
+---
 sw:
+  activemodel:
+    attributes:
+      participatory_process:
+        announcement: Tangazo
+        area_id: Eneo
+        copy_categories: Nakili kategoria
+        copy_components: Nakili vipengele
+        copy_steps: Nakili hatua
+        decidim_area_id: Eneo
+        description: Maelezo
+        developer_group: Kikundi cha wakuzaji
+        document: Hati
+        domain: Kikoa
+        end_date: Tarehe ya mwisho
+        hashtag: Hashtag
+        hero_image: Picha ya nyumbani
+        import_attachments: Ingiza viambatisho
+        import_categories: Ingiza kategoria
+        import_components: Ingiza vipengele
+        import_steps: Ingiza hatua
+        local_area: Eneo la shirika
+        meta_scope: Metadata ya upeo
+        participatory_process_group_id: Kikundi cha michakato
+        participatory_process_type_id: Aina ya michakato
+        participatory_scope: Nini kinaamuliwa
+        participatory_structure: Inaamuliwa vipi
+        private_space: Mchakato wa kibinafsi
+        promoted: Imepandishwa cheo
+        published_at: Iliyochapishwa saa
+        related_process_ids: Michakato inayohusiana
+        scope_id: Upeo
+        scope_type_max_depth_id: Urefu wa kichujio cha upeo
+        scopes_enabled: Upeo umewezeshwa
+        short_description: Maelezo mafupi
+        slug: URL slug
+        start_date: Tarehe ya kuanza
+        subtitle: Manukuu
+        target: Nani anashiriki
+        title: Kichwa
+        weight: Nafasi ya agizo
+      participatory_process_group:
+        description: Maelezo
+        developer_group: Kikundi cha wakuzaji
+        group_url: Tovuti
+        hashtag: Hashtag
+        hero_image: Picha
+        local_area: Eneo la shirika
+        meta_scope: Metadata ya upeo
+        participatory_process_ids: Michakato inayohusiana
+        participatory_scope: Nini kinaamuliwa
+        participatory_structure: Inaamuliwa vipi
+        target: Nani anashiriki
+        title: Kichwa
+      participatory_process_step:
+        cta_path: Wito kwa Njia ya Kitendo
+        cta_text: Maandishi ya Wito kwa Hatua
+        description: Maelezo
+        end_date: Tarehe ya mwisho
+        short_description: Maelezo mafupi
+        start_date: Tarehe ya kuanza
+        title: Kichwa
+      participatory_process_type:
+        title: Kichwa
+      participatory_process_user_role:
+        email: Barua pepe
+        name: Jina
+        role: Jukumu
+    errors:
+      models:
+        participatory_process:
+          attributes:
+            document:
+              allowed_file_content_types: 'Aina batili ya hati. Faili zilizo na viendelezi vifuatavyo pekee ndizo zinazoruhusiwa: %{types}'
+    models:
+      decidim/participatory_process_step_activated_event: Awamu imeamilishwa
+      decidim/participatory_process_step_changed_event: Awamu imebadilika
+  activerecord:
+    models:
+      decidim/participatory_process:
+        one: Mchakato shirikishi
+        other: Michakato shirikishi
+      decidim/participatory_process_group:
+        one: Kikundi cha mchakato shirikishi
+        other: Vikundi vya mchakato shirikishi
+      decidim/participatory_process_step:
+        one: Awamu
+        other: Awamu
+  decidim:
+    admin:
+      actions:
+        activate: Amilisha
+        configure: Sanidi
+        confirm_destroy: Thibitisha kufuta
+        destroy: Futa
+        duplicate: Nakala
+        edit: Hariri
+        import_process: Ingiza
+        moderate: Wastani
+        new_process: Mchakato mpya
+        new_process_group: Kikundi kipya cha mchakato
+        new_process_step: Awamu mpya
+        new_process_type: Aina mpya ya mchakato
+        new_process_user_role: Msimamizi mpya wa mchakato
+        preview: Hakiki
+        publish: Chapisha
+        resend_invitation: Tuma tena mwaliko
+        see_process: Angalia mchakato
+        unpublish: Batilisha uchapishaji
+      filters:
+        decidim_participatory_process_group_id_eq:
+          label: Kwa kikundi cha mchakato
+      menu:
+        participatory_process_groups: Vikundi vya mchakato
+        participatory_process_groups_submenu:
+          info: Habari
+          landing_page: Ukurasa wa kutua
+        participatory_process_types: Aina za mchakato
+        participatory_processes: Michakato
+        participatory_processes_submenu:
+          attachment_collections: Folda
+          attachment_files: Faili
+          attachments: Viambatisho
+          categories: Kategoria
+          components: Vipengele
+          info: Kuhusu mchakato huu
+          landing_page: Ukurasa wa kutua
+          moderations: Ukadiriaji
+          private_users: Washiriki wa kibinafsi
+          process_admins: Wasimamizi wa mchakato
+          steps: Awamu
+      models:
+        participatory_process:
+          fields:
+            actions: Vitendo
+            created_at: Imeundwa saa
+            private: Privat
+            published: Imechapishwa
+            title: Kichwa
+          name: Mchakato shirikishi
+        participatory_process_group:
+          fields:
+            title: Kichwa
+          name: Kikundi cha mchakato
+        participatory_process_step:
+          fields:
+            end_date: Tarehe ya mwisho
+            start_date: Tarehe ya kuanza
+            title: Kichwa
+          name: Awamu ya mchakato shirikishi
+        participatory_process_type:
+          fields:
+            created_at: Imeundwa saa
+            title: Kichwa
+          name: Aina ya mchakato
+        participatory_process_user_role:
+          fields:
+            email: Barua pepe
+            name: Jina
+            role: Jukumu
+          name: Msimamizi wa mchakato shirikishi
+          roles:
+            admin: Msimamizi
+            collaborator: Mshiriki
+            moderator: Msimamizi
+            valuator: Mthamini
+        user:
+          fields:
+            invitation_accepted_at: Mwaliko umekubaliwa saa
+            invitation_sent_at: Mwaliko umetumwa kwa
+      participatory_process_copies:
+        new:
+          copy: Nakili
+          select: Chagua data ambayo ungependa kurudia
+          title: Rudufu mchakato shirikishi
+      participatory_process_groups:
+        destroy:
+          error: Kulikuwa na hitilafu wakati wa kuharibu kikundi cha mchakato Shirikishi.
+          success: Kikundi cha mchakato shirikishi kimefutwa.
+        edit:
+          title: Badilisha kikundi cha mchakato
+          update: Sasisha
+        new:
+          create: Unda
+          title: Kikundi kipya cha mchakato
+        update:
+          error: Kulikuwa na tatizo la kusasisha kikundi hiki cha mchakato shirikishi.
+          success: Kikundi cha mchakato shirikishi kimesasishwa.
+      participatory_process_imports:
+        create:
+          error: Kulikuwa na tatizo katika kuleta mchakato huu shirikishi.
+          success: Mchakato shirikishi umefaulu kuletwa.
+        new:
+          import: Ingiza
+          select: Chagua data ambayo ungependa kuleta
+          title: Ingiza mchakato shirikishi
+      participatory_process_publications:
+        create:
+          error: Kulikuwa na tatizo la kuchapisha mchakato huu shirikishi.
+          success: Mchakato shirikishi umechapishwa.
+        destroy:
+          error: Kulikuwa na tatizo la kubatilisha uchapishaji wa mchakato huu shirikishi.
+          success: Mchakato shirikishi umebatilishwa.
+      participatory_process_step_activations:
+        create:
+          error: Kulikuwa na tatizo katika kuwezesha awamu hii ya mchakato shirikishi.
+          success: Awamu ya mchakato shirikishi imewezeshwa kuwezesha.
+      participatory_process_steps:
+        create:
+          error: Kulikuwa na tatizo kuunda awamu mpya ya mchakato shirikishi.
+          success: Awamu ya mchakato shirikishi imeundwa.
+        default_title: Utangulizi
+        destroy:
+          error:
+            active_step: Haiwezi kufuta awamu inayotumika.
+            last_step: Haiwezi kufuta awamu ya mwisho ya mchakato.
+          success: Awamu ya mchakato shirikishi imefutwa.
+        edit:
+          cta_deprecated:
+            body_html: |-
+              Usanidi wa CTA kupitia Awamu ya mchakato shirikishi umeacha kutumika na muundo mpya.
+              Sasa hii inafanywa katika <b>Ukurasa wa Kutua</b>, kwa kutumia <b>Shujaa na picha</b> kuzuia maudhui.
+              Tumeiacha hapa ili uhamishe CTA unazohitaji. Sehemu za <i>Wito kwa njia ya kitendo</i> na
+              <i>Maandishi ya mwito wa kuchukua hatua</i> yataondolewa katika toleo linalofuata.
+            title: CTA imeacha kutumika
+          title: Hariri awamu ya mchakato shirikishi
+          update: Sasisha
+        index:
+          steps_title: Awamu
+        new:
+          create: Unda
+          title: Awamu mpya ya mchakato shirikishi
+        ordering:
+          error: Kulikuwa na tatizo katika kupanga upya awamu hizi za mchakato shirikishi.
+        update:
+          error: Kulikuwa na tatizo la kusasisha awamu hii ya mchakato shirikishi.
+          success: Awamu shirikishi imesasishwa.
+      participatory_process_types:
+        create:
+          error: Kulikuwa na tatizo la kuunda aina mpya ya mchakato
+          success: Aina ya mchakato imeundwa.
+        destroy:
+          success: Aina ya mchakato imefutwa.
+        edit:
+          title: Badilisha aina ya mchakato
+          update: Sasisha
+        new:
+          create: Unda
+          title: Aina mpya ya mchakato
+        update:
+          error: Kulikuwa na tatizo la kusasisha aina hii ya mchakato.
+          success: Aina ya mchakato imesasishwa.
+      participatory_process_user_roles:
+        create:
+          error: Kulikuwa na tatizo la kuongeza mshiriki kwa mchakato huu shirikishi.
+          success: Msimamizi aliongeza kwa mchakato huu shirikishi.
+        destroy:
+          success: Msimamizi amefaulu kuondolewa kwenye mchakato huu shirikishi.
+        edit:
+          title: Sasisha msimamizi wa mchakato shirikishi
+          update: Sasisha
+        index:
+          process_admins_title: Wasimamizi wa mchakato shirikishi
+        new:
+          create: Unda
+          title: Msimamizi mpya wa mchakato shirikishi
+        update:
+          error: Kulikuwa na tatizo la kusasisha msimamizi kwa mchakato huu shirikishi.
+          success: Msimamizi amesasisha kwa mchakato huu shirikishi.
+      participatory_processes:
+        create:
+          error: Kulikuwa na tatizo katika kuunda mchakato mpya shirikishi.
+          success: Mchakato shirikishi umeundwa. Sanidi sasa awamu zake.
+        edit:
+          update: Sasisha
+        index:
+          private: Privat
+          public: Hadharani
+          published: Imechapishwa
+          unpublished: Haijachapishwa
+        new:
+          create: Unda
+          title: Mchakato mpya shirikishi
+        update:
+          error: Kulikuwa na tatizo la kusasisha mchakato huu shirikishi.
+          success: Mchakato shirikishi umesasishwa.
+      participatory_processes_copies:
+        create:
+          error: Kulikuwa na tatizo katika kunakili mchakato huu shirikishi.
+          success: Mchakato shirikishi umefaulu kunakiliwa.
+      participatory_processes_group:
+        create:
+          error: Kulikuwa na tatizo la kuunda kikundi kipya cha mchakato shirikishi.
+          success: Kikundi cha mchakato shirikishi kimeundwa.
+      titles:
+        participatory_process_groups: Vikundi vya mchakato shirikishi
+        participatory_process_types: Aina za mchakato shirikishi
+        participatory_processes: Michakato shirikishi
+      users:
+        resend_invitation:
+          error: Kulikuwa na tatizo la kutuma mwaliko tena.
+          success: Mwaliko umetumwa tena.
+    admin_log:
+      participatory_process:
+        create: "%{user_name} aliunda mchakato shirikishi wa %{resource_name}"
+        duplicate: "%{user_name} alinakili mchakato shirikishi wa %{resource_name}"
+        export: "%{user_name} alihamisha mchakato shirikishi wa %{resource_name}"
+        import: "%{user_name} aliingiza %{resource_name} mchakato shirikishi"
+        publish: "%{user_name} alichapisha mchakato shirikishi wa %{resource_name}"
+        unpublish: "%{user_name} amebatilisha uchapishaji wa mchakato shirikishi wa %{resource_name}"
+        update: "%{user_name} alisasisha mchakato shirikishi wa %{resource_name}"
+      participatory_process_group:
+        create: "%{user_name} aliunda %{resource_name} kikundi cha mchakato shirikishi"
+        update: "%{user_name} alisasisha kikundi cha mchakato shirikishi %{resource_name}"
+      participatory_process_step:
+        activate: "%{user_name} aliwezesha awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        create: "%{user_name} aliunda awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        delete: "%{user_name} alifuta awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+        update: "%{user_name} alisasisha awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
+      participatory_process_type:
+        create: "%{user_name} aliunda %{resource_name} aina ya mchakato shirikishi"
+        delete: "%{user_name} alifuta %{resource_name} aina ya mchakato shirikishi"
+        update: "%{user_name} alisasisha aina ya mchakato shirikishi %{resource_name}"
+      participatory_process_user_role:
+        create: "%{user_name} alimwalika mshiriki %{resource_name} kwenye mchakato shirikishi wa %{space_name}"
+        delete: "%{user_name} aliondoa mshiriki %{resource_name} kutoka kwa mchakato shirikishi wa %{space_name}"
+        update: "%{user_name} alibadilisha jukumu la mshiriki %{resource_name} katika mchakato shirikishi wa %{space_name}"
+    events:
+      participatory_process:
+        role_assigned:
+          email_intro: Umepewa kama %{role} kwa mchakato shirikishi "%{resource_title}".
+          email_outro: Umepokea arifa hii kwa sababu wewe ni %{role} wa mchakato shirikishi wa "%{resource_title}".
+          email_subject: Umepewa kama %{role} ya "%{resource_title}".
+          notification_title: Umepewa kama %{role} kwa mchakato shirikishi <a href="%{resource_url}">%{resource_title}</a>.
+        step_activated:
+          email_intro: 'Awamu ya %{resource_title} sasa inatumika kwa %{participatory_space_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Awamu ya %{resource_title} sasa inatumika kwa <a href="%{resource_path}">%{participatory_space_title}</a>
+        step_changed:
+          email_intro: 'Tarehe za awamu ya %{resource_title} katika %{participatory_space_title} zimesasishwa. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata %{participatory_space_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{participatory_space_title}
+          notification_title: Tarehe za awamu ya <a href="%{resource_path}">%{resource_title}</a> katika <a href="%{participatory_space_url}">%{participatory_space_title}</a> zimesasishwa.
+    help:
+      participatory_spaces:
+        participatory_processes:
+          contextual: "<p>Mchakato shirikishi</strong> ni mfuatano wa shughuli shirikishi (k.m. kwanza kujaza utafiti, kisha kutoa mapendekezo, kuyajadili ana kwa ana au mikutano ya mtandaoni, na hatimaye kuyapa kipaumbele) na lengo la kufafanua na kufanya uamuzi juu ya mada maalum.</p> <p>Mifano ya michakato shirikishi ni: mchakato wa kuchagua wajumbe wa kamati (ambapo wagombea huwasilishwa kwanza, kisha kujadiliwa na hatimaye mgombea kuchaguliwa), bajeti shirikishi (ambapo mapendekezo yanatolewa, yanathaminiwa kiuchumi na kupigiwa kura kwa fedha zilizopo), mchakato wa kupanga mikakati, utayarishaji shirikishi wa kanuni au kanuni, muundo wa eneo la mijini au utengenezaji wa mpango wa sera ya umma.</p>"
+          page: "<p>Mchakato shirikishi</strong> ni mfuatano wa shughuli shirikishi (k.m. kwanza kujaza utafiti, kisha kutoa mapendekezo, kuyajadili ana kwa ana au mikutano ya mtandaoni, na hatimaye kuyapa kipaumbele) na lengo la kufafanua na kufanya uamuzi juu ya mada maalum.</p> <p>Mifano ya michakato shirikishi ni: mchakato wa kuchagua wajumbe wa kamati (ambapo wagombea huwasilishwa kwanza, kisha kujadiliwa na hatimaye mgombea kuchaguliwa), bajeti shirikishi (ambapo mapendekezo yanatolewa, yanathaminiwa kiuchumi na kupigiwa kura kwa fedha zilizopo), mchakato wa kupanga mikakati, utayarishaji shirikishi wa kanuni au kanuni, muundo wa eneo la mijini au utengenezaji wa mpango wa sera ya umma.</p>"
+          title: Mchakato shirikishi ni upi?
+    log:
+      value_types:
+        participatory_process_type_presenter:
+          not_found: 'Aina ya mchakato haikupatikana kwenye hifadhidata (ID: %{id}).'
+    menu:
+      processes: Michakato
+    metrics:
+      participatory_processes:
+        description: Idadi ya michakato shirikishi katika shirika hili
+        object: michakato shirikishi
+        title: Michakato shirikishi
+    participatory_process_groups:
+      content_blocks:
+        extra_data:
+          developer_group: Imekuzwa na
+          name: Metadata
+          participatory_scope: Nini kinaamuliwa
+          participatory_structure: Inaamuliwa vipi
+          target: Nani anashiriki
+        html:
+          name: Kizuizi cha HTML
+        html_1:
+          name: Kizuizi cha kwanza cha HTML
+        html_2:
+          name: Kizuizi cha pili cha HTML
+        html_3:
+          name: Kizuizi cha tatu cha HTML
+        main_data:
+          name: Kichwa na maelezo
+        participatory_processes:
+          active: Michakato shirikishi hai
+          name: Michakato shirikishi
+        stats:
+          name: Takwimu
+        title:
+          meta_scope: Upeo
+          participatory_processes:
+            one: '%{count} michakato'
+            other: "%{count} michakato"
+      show:
+        title: Vikundi vya mchakato shirikishi
+    participatory_process_steps:
+      index:
+        process_steps: Awamu za mchakato
+    participatory_processes:
+      admin:
+        content_blocks:
+          highlighted_processes:
+            active: Inayotumika
+            all: Wote
+            max_results: Kiwango cha juu cha vipengele vya kuonyesha
+            selection_criteria: Vigezo vya uteuzi
+        new_import:
+          accepted_types:
+            json: JSON
+        participatory_process_copies:
+          form:
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+        participatory_process_groups:
+          form:
+            metadata: Metadata
+            title: Kuhusu mchakato huu
+            visibility: Mwonekano
+        participatory_process_imports:
+          form:
+            document_legend: Ongeza hati
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+        participatory_process_steps:
+          form:
+            cta_path_help_html: 'Tumia njia zisizo kamili, sio URL kamili hapa. Inakubali herufi, nambari, deshi na mikwaruzo, na lazima ianze na herufi. Ikiwa haijawekwa, kitufe hakitaonyeshwa. Mfano: %{url}'
+            cta_text_help: Ikiwa haijawekwa, kitufe hakitaonyeshwa.
+        participatory_processes:
+          form:
+            announcement_help: Maandishi utakayoingiza hapa yataonyeshwa kwa mtumiaji chini ya maelezo ya mchakato.
+            duration: Muda
+            filters: Vichujio
+            images: Picha
+            metadata: Metadata
+            other: Nyingine
+            related_processes: Michakato inayohusiana
+            scope_type_max_depth_help: Zuia kina cha kichujio cha upeo; Kichujio kitaonyesha kutoka kwa jumla hadi aina iliyochaguliwa ya upeo.
+            select_an_area: Chagua Eneo
+            select_participatory_process_type: Chagua aina ya mchakato
+            select_process_group: Chagua kikundi cha mchakato
+            slug_help_html: 'Uvimbe wa URL hutumiwa kutengeneza URL zinazoelekeza kwenye mchakato huu. Inakubali herufi, nambari na deshi pekee, na lazima ianze na herufi. Mfano: %{url}'
+            title: Taarifa za Jumla
+            visibility: Mwonekano
+      content_blocks:
+        extra_data:
+          name: Awamu na muda
+        hero:
+          name: Picha ya shujaa na CTA
+        highlighted_processes:
+          name: Michakato iliyoangaziwa
+        related_processes:
+          name: Michakato inayohusiana
+      index:
+        title: Michakato shirikishi
+      last_activity:
+        new_participatory_process: 'Mchakato mpya shirikishi:'
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: Michakato inayofanya kazi
+            see_all_spaces: Tazama michakato yote
+      participatory_process_steps:
+        index:
+          back_to_process: Rudi kwenye ukurasa wa mchakato
+      participatory_processes:
+        description:
+          area_name: Eneo
+          data: Mchakato wa data
+          developer_group: Kikundi cha wakuzaji
+          local_area: Eneo la Shirika
+          meta_scope: Upeo
+          participatory_scope: Nini kinaamuliwa
+          participatory_structure: Inaamuliwa vipi
+          target: Nani anashiriki
+          title: Kuhusu mchakato huu
+        filters:
+          all_types: Aina zote
+          counters:
+            active:
+              one: '%{count} michakato inayotumika'
+              other: "%{count} michakato inayotumika"
+            all:
+              one: 1 mchakato
+              other: "%{count} michakato"
+            past:
+              one: 1 mchakato
+              other: "%{count} michakato iliyopita"
+            upcoming:
+              one: Mchakato 1 ujao
+              other: "%{count} michakato ijayo"
+          date: Tarehe
+          explanations:
+            no_active: Hakuna michakato inayotumika.
+            no_active_nor_upcoming: Hakuna michakato inayoendelea au inayokuja.
+            no_active_nor_upcoming_callout: Hakuna michakato inayoendelea au inayokuja. Hapa kuna orodha ya zamani.
+          filter_by: Onyesha
+          names:
+            active: Inayotumika
+            all: Wote
+            past: Zamani
+            upcoming: Ijayo
+          see: Tazama
+          type: Aina
+        show:
+          title: Kuhusu mchakato huu
+      show:
+        belongs_to_group: Utaratibu huu ni wa
+        private_space: Huu ni mchakato wa kibinafsi
+        related_processes: Michakato inayohusiana
+    statistics:
+      processes_count: Michakato
+  layouts:
+    decidim:
+      participatory_process_groups:
+        participatory_process_group:
+          browse: Vinjari
+          browse_resource: Vinjari kikundi cha mchakato %{resource_name}
+          processes_count: 'Michakato:'
+      participatory_processes:
+        index:
+          promoted_processes: Michakato iliyoangaziwa
+        participatory_process:
+          active_step: Awamu ya sasa
+          more_info: Maelezo zaidi
+          more_info_about: Maelezo zaidi kuhusu mchakato %{resource_name}
+          take_part: Shiriki
+          take_part_in: Shiriki katika mchakato %{resource_name}

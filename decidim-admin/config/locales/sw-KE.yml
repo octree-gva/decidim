@@ -1,1 +1,1151 @@
+---
 sw:
+  activemodel:
+    attributes:
+      area:
+        area_type: Aina ya eneo
+        name: Jina
+        organization: Shirika
+      area_type:
+        name: Jina
+        organization: Shirika
+        plural: Wingi
+      attachment:
+        attachment_collection_id: Folda
+        description: Maelezo
+        file: Faili
+        title: Kiambatisho au jina la picha
+        weight: Nafasi ya agizo
+      attachment_collection:
+        description: Maelezo
+        name: Jina
+        weight: Nafasi ya agizo
+      category:
+        description: Maelezo
+        name: Jina
+        parent_id: Mzazi
+        weight: Nafasi ya agizo
+      component:
+        name: Jina
+        published_at: Iliyochapishwa saa
+        weight: Nafasi ya agizo
+      external_domain:
+        value: Thamani
+      help_section:
+        content: Maudhui
+      id: ID
+      import:
+        user_group_id: Unda uagizaji kama
+      newsletter:
+        body: Mwili
+        send_to_all_users: Tuma kwa watumiaji wote
+        send_to_followers: Tuma kwa wafuasi
+        send_to_participants: Tuma kwa washiriki
+        subject: Somo
+      organization:
+        admin_terms_of_service_body: Chombo cha sheria na masharti ya msimamizi
+        alert_color: Tahadhari
+        available_authorizations: Uidhinishaji unaopatikana
+        badges_enabled: Washa beji
+        comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+        cta_button_path: Njia ya kitufe cha Wito kwa Kitendo
+        cta_button_text: Maandishi ya kitufe cha Wito Kufanya Hatua
+        customize_welcome_notification: Badilisha arifa ya kukaribisha kukufaa
+        default_locale: Lugha chaguomsingi
+        description: Maelezo
+        enable_omnipresent_banner: Onyesha bango lililo kila mahali
+        enable_participatory_space_filters: Washa vichujio vya nafasi shirikishi
+        facebook_handler: Facebook handler
+        favicon: Aikoni
+        force_authentication: Lazimisha uthibitishaji
+        force_users_to_authenticate_before_access_organization: Lazimisha watumiaji kuthibitisha kabla ya kufikia shirika
+        from: Anwani ya barua pepe ya mtumaji
+        github_handler: GitHub handler
+        header_snippets: Vijisehemu vya kichwa
+        highlight_alternative_color: Angazia, mbadala
+        highlight_color: Angazia
+        highlighted_content_banner_action_subtitle: Manukuu ya kitufe cha kitendo
+        highlighted_content_banner_action_title: Action button title
+        highlighted_content_banner_action_url: URL ya kitufe cha kitendo
+        highlighted_content_banner_enabled: Onyesha bango la maudhui lililoangaziwa
+        highlighted_content_banner_image: Picha
+        highlighted_content_banner_short_description: Maelezo mafupi
+        highlighted_content_banner_title: Kichwa
+        host: Mwenyeji
+        instagram_handler: Instagram handler
+        logo: Nembo
+        machine_translation_display_priority: Kipaumbele cha onyesho la utafsiri wa mashine
+        machine_translation_display_priority_original: Maandishi asilia kwanza
+        machine_translation_display_priority_translation: Maandishi yaliyotafsiriwa kwanza
+        name: Jina
+        official_img_footer: Kijachini cha nembo rasmi
+        official_url: URL ya shirika rasmi
+        omnipresent_banner_short_description: Maelezo mafupi
+        omnipresent_banner_title: Kichwa
+        omnipresent_banner_url: URL
+        organization_admin_email: Barua pepe ya msimamizi wa shirika
+        organization_admin_name: Jina la msimamizi wa shirika
+        organization_locales: Maeneo ya shirika
+        primary_color: Msingi
+        reference_prefix: Kiambishi awali cha marejeleo
+        rich_text_editor_in_public_views: Washa kihariri cha maandishi tajiri kwa washiriki
+        secondary_color: Sekondari
+        secondary_hosts: Wenyeji wa sekondari
+        send_welcome_notification: Tuma arifa ya kukaribisha
+        success_color: Mafanikio
+        tertiary_color: Elimu ya juu
+        time_zone: Eneo la Saa
+        tos_version: Toleo la Masharti ya huduma
+        twitter_handler: X handler
+        user_groups_enabled: Washa vikundi
+        users_registration_mode: Hali ya usajili wa watumiaji
+        warning_color: Onyo
+        welcome_notification_body: Mwili wa arifa za kukaribisha
+        welcome_notification_subject: Somo la arifa ya kukaribisha
+        youtube_handler: YouTube handler
+      participatory_space_private_user:
+        email: Barua pepe
+        name: Jina
+      scope:
+        code: Kanuni
+        name: Jina
+        organization: Shirika
+        parent_id: Mzazi
+        scope_type: Aina ya upeo
+        scope_type_id: Aina ya upeo
+      scope_type:
+        name: Jina
+        organization: Shirika
+        plural: Wingi
+      settings:
+        scope_id: Upeo
+      static_page:
+        allow_public_access: Ruhusu ufikiaji bila uthibitishaji
+        changed_notably: Kumekuwa na mabadiliko yanayoonekana.
+        content: Maudhui
+        organization: Shirika
+        show_in_footer: Onyesha kwenye kijachini
+        slug: Uvimbe wa URL
+        title: Kichwa
+        topic_id: Mada
+        weight: Nafasi ya agizo
+      static_page_topic:
+        description: Maelezo
+        name: Jina la mada
+        show_in_footer: Onyesha kwenye kijachini
+        title: Kichwa
+        weight: Nafasi ya agizo
+      user_group_csv_verification:
+        file: Faili
+    errors:
+      models:
+        newsletter:
+          attributes:
+            base:
+              at_least_one_space: Chagua angalau nafasi moja ya ushiriki.
+        organization:
+          attributes:
+            official_img_footer:
+              allowed_file_content_types: Faili ya picha si sahihi
+        participatory_space_private_user_csv_import:
+          attributes:
+            file:
+              malformed: Faili ya kuleta yenye hitilafu, tafadhali soma maagizo kwa makini na uhakikishe kuwa faili imesimbwa UTF-8.
+        user_group_csv_verification:
+          attributes:
+            file:
+              malformed: Faili ya kuleta yenye hitilafu, tafadhali soma maagizo kwa makini na uhakikishe kuwa faili imesimbwa UTF-8.
+      new_import:
+        attributes:
+          file:
+            invalid_file: Faili batili iliyotolewa, tafadhali hakikisha kuwa faili imeumbizwa ipasavyo.
+            invalid_mime_type: Aina ya MIME si sahihi.
+  activerecord:
+    attributes:
+      decidim/static_page:
+        content: Maudhui
+        slug: Uvimbe wa URL
+        title: Kichwa
+      doorkeeper/application:
+        authorize_url: Idhinisha URL
+        client_id: ID ya Mteja
+        client_secret: Siri ya Mteja
+        organization_name: Jina la shirika
+        organization_url: URL ya shirika
+        redirect_uri: Elekeza URI kwingine
+        site: Tovuti
+  decidim:
+    admin:
+      actions:
+        add: Ongeza
+        attachment:
+          new: Kiambatisho kipya
+        attachment_collection:
+          new: Folda mpya ya kiambatisho
+        browse: Vinjari
+        category:
+          new: Kategoria mpya
+        export: Hamisha zote
+        export-selection: Uteuzi wa kuuza nje
+        import: Ingiza
+        manage: Dhibiti
+        newsletter:
+          new: Jarida jipya
+        participatory_space_private_user:
+          new: Mtumiaji wa kibinafsi wa nafasi shirikishi mpya
+        per_page: Kwa kila ukurasa
+        permissions: Ruhusa
+        reject: Kataa
+        send_me_a_test_email: Nitumie barua pepe ya majaribio
+        share: Shiriki
+        user:
+          new: Msimamizi mpya
+        verify: Thibitisha
+      admin_terms_of_service:
+        accept:
+          error: Kulikuwa na hitilafu wakati wa kukubali sheria na masharti ya msimamizi.
+          success: Kubwa! Umekubali sheria na masharti ya msimamizi.
+        actions:
+          accept: Nakubaliana na masharti
+          are_you_sure: Je, una uhakika unataka kukataa sheria na masharti ya msimamizi?
+          refuse: Kataa masharti ya msimamizi
+          title: Kubali sheria na masharti
+        required_review:
+          alert: 'Inahitajika: Kagua sheria na masharti ya msimamizi wetu'
+          callout: Tafadhali chukua muda kukagua sheria na masharti ya msimamizi. Vinginevyo hutaweza kudhibiti jukwaa.
+          cta: Zikague sasa.
+        title: Masharti ya huduma ya msimamizi
+      area_types:
+        create:
+          error: Kulikuwa na tatizo la kuunda aina mpya ya eneo.
+          success: Aina ya eneo imeundwa kwa ufanisi.
+        destroy:
+          success: Aina ya eneo imeharibiwa.
+        edit:
+          title: Badilisha aina ya eneo
+          update: Sasisha
+        new:
+          create: Unda aina ya eneo
+          title: Aina mpya ya eneo
+        update:
+          error: Kulikuwa na tatizo la kusasisha aina hii ya eneo.
+          success: Aina ya eneo imesasishwa.
+      areas:
+        create:
+          error: Kulikuwa na tatizo la kuunda eneo jipya.
+          success: Eneo limeundwa.
+        destroy:
+          has_spaces: Eneo hili lina nafasi tegemezi. Tafadhali hakikisha hakuna Nafasi Shirikishi inayorejelea eneo hili kabla ya kulifuta.
+          success: Eneo limeharibiwa.
+        edit:
+          title: Badilisha eneo
+          update: Sasisha
+        new:
+          create: Unda eneo
+          title: Eneo jipya
+        no_areas: Hakuna Maeneo
+        update:
+          error: Kulikuwa na tatizo la kusasisha eneo hili.
+          success: Eneo limesasishwa.
+      attachment_collections:
+        create:
+          error: Kulikuwa na tatizo la kuunda folda mpya.
+          success: Folda imeundwa.
+        destroy:
+          success: Folda imeharibiwa.
+        edit:
+          title: Badilisha folda
+          update: Sasisha
+        index:
+          attachment_collections_title: Folda za viambatisho
+        new:
+          create: Unda
+          title: Folda mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha folda hii.
+          success: Folda imesasishwa.
+      attachments:
+        create:
+          error: Kulikuwa na tatizo la kuunda kiambatisho kipya.
+          success: Kiambatisho kimeundwa.
+        destroy:
+          success: Kiambatisho kimeharibiwa.
+        edit:
+          title: Badilisha kiambatisho
+          update: Sasisha
+        index:
+          attachments_title: Viambatisho
+        new:
+          create: Unda kiambatisho
+          title: Kiambatisho kipya
+        update:
+          error: Kulikuwa na tatizo la kusasisha kiambatisho hiki.
+          success: Kiambatisho kimesasishwa.
+      attachments_privacy_warning:
+        message: Kuwa mwangalifu wakati wa kufanya kazi na viambatisho kwenye nafasi ya kibinafsi. Mshiriki yeyote anaweza kushiriki hati hii kwa wengine.
+      autocomplete:
+        no_results: Hakuna matokeo yaliyopatikana
+        search_prompt: Andika angalau herufi tatu ili kutafuta.
+      block_user:
+        new:
+          action: Zuia akaunti na utume sababu
+          already_reported_html: Ukiendelea na hatua hii pia utaficha maudhui yote ya washiriki.
+          description: Kuzuia mtumiaji kutafanya akaunti yake kutotumika. Unaweza kutoa katika uhalalishaji wako miongozo yoyote kuhusu njia ambazo ungezingatia kumfungulia mtumiaji.
+          justification: Kuhesabiwa haki
+          title: Zuia Mtumiaji %{name}
+      categories:
+        create:
+          error: Kulikuwa na tatizo katika kuunda aina hii.
+          success: Kitengo kimeundwa.
+        destroy:
+          error: Kulikuwa na tatizo katika kufuta aina hii. Tafadhali futa kitengo chochote kwanza, hakikisha kuwa hakuna huluki nyingine iliyo katika kategoria hii na ujaribu tena.
+          success: Kitengo kimefutwa.
+        edit:
+          title: Badilisha kategoria
+          update: Sasisha
+        index:
+          categories_title: Kategoria
+        new:
+          create: Unda kategoria
+          title: Kategoria mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha aina hii.
+          success: Kitengo kimesasishwa.
+      component_permissions:
+        update:
+          error: Kulikuwa na tatizo la kusasisha ruhusa za kipengele hiki.
+          success: Ruhusa zimesasishwa.
+      components:
+        create:
+          error: Kulikuwa na tatizo la kuunda kijenzi hiki.
+          success: Kijenzi kimeundwa.
+          success_landing_page: Kijenzi kimeundwa. Unaweza kuongeza kizuizi cha maudhui kwa kipengele hiki katika nyumba ya nafasi. Nenda kwa <a href="%{landing_page_path}">Ukurasa wa kutua</a> ili kuisanidi.
+        destroy:
+          error: Kulikuwa na tatizo la kuharibu kijenzi hiki.
+          success: Kipengele kimefutwa.
+        edit:
+          title: Hariri sehemu
+          update: Sasisha
+        form:
+          default_step_settings: Mipangilio ya hatua chaguo-msingi
+          global_settings: Mipangilio ya kimataifa
+          step_settings: Mipangilio ya hatua
+        index:
+          add: Ongeza sehemu
+          headers:
+            actions: Vitendo
+            name: Jina la sehemu
+            scope: Upeo wa kipengele
+            type: Aina ya kipengele
+        new:
+          add: Ongeza sehemu
+          title: 'Ongeza sehemu: %{name}'
+        publish:
+          success: Kipengele kimechapishwa kwa ufanisi.
+        title: Vipengele
+        unpublish:
+          success: Kijenzi kimebatilishwa.
+        update:
+          error: Kulikuwa na tatizo la kusasisha kijenzi hiki.
+          success: Kijenzi kimesasishwa.
+      conflicts:
+        attempts: Majaribio
+        'false': 'Hapana'
+        index:
+          text: Tafuta kwa barua pepe ya mtumiaji wa sasa, jina au jina la utani.
+        managed_user_name: Mtumiaji Anayesimamiwa
+        solved: Imetatuliwa
+        title: Migogoro ya uthibitishaji
+        transfer:
+          email: Barua pepe
+          error: Kulikuwa na tatizo la kuhamisha mshiriki wa sasa hadi kwa mshiriki anayesimamiwa.
+          name: Jina
+          reason: Sababu
+          success: Uhamisho wa sasa umekamilika.
+          title: Uhamisho
+        'true': 'Ndiyo'
+        user_name: Mtumiaji
+      content_blocks:
+        create:
+          error: Kulikuwa na hitilafu wakati wa kuunda kizuizi cha maudhui.
+          success: Uzuiaji wa maudhui umeundwa.
+        destroy:
+          error: Kulikuwa na tatizo wakati wa kujaribu kufuta kizuizi hiki cha maudhui.
+          success: Uzuiaji wa maudhui umefutwa.
+        edit:
+          active_content_blocks: Maudhui amilifu huzuia
+          add: Ongeza kizuizi cha yaliyomo
+          destroy_confirmation: Je, una uhakika unataka kufuta kizuizi hiki cha maudhui?
+          inactive_content_blocks: Maudhui yasiyotumika huzuia
+          title: Yaliyomo kwenye ukurasa
+          update: Sasisha
+      dashboard:
+        pending_moderations:
+          announcement:
+            one: Kuna %{count} zinazosubiri kukaguliwa
+            other: Kuna vidhibiti %{count} vinavyosubiri
+          goto_moderation: Nenda kwa udhibiti wa kimataifa
+          title: Udhibiti Unaosubiri
+        show:
+          dropdown: Kunjuzi
+          view_more_logs: Tazama kumbukumbu zaidi
+      domain_allowlist:
+        form:
+          domain_too_short: Kikoa kifupi sana
+        update:
+          error: Imeshindwa kusasisha orodha ya vikoa vya nje vinavyoruhusiwa
+          success: Orodha ya kikoa cha nje kinachoruhusiwa imesasishwa.
+      exports:
+        export_as: "%{name} kama %{export_format}"
+        formats:
+          CSV: CSV
+          Excel: Excel
+          FormPDF: PDF
+          JSON: JSON
+        notice: Uhamishaji wako unaendelea kwa sasa. Utapokea barua pepe itakapokamilika.
+      filters:
+        category_id_eq:
+          label: Kategoria
+        filter_label: Chuja
+        invitation_accepted_at_present:
+          label: Mwaliko umekubaliwa
+          values:
+            'false': 'Hapana'
+            'true': 'Ndiyo'
+        last_sign_in_at_present:
+          label: Umewahi kuingia
+          values:
+            'false': 'Hapana'
+            'true': 'Ndiyo'
+        moderated_users:
+          reports_reason_eq:
+            label: Ripoti sababu
+            values:
+              does_not_belong: Si mali
+              offensive: Inakera
+              spam: Barua taka
+        moderations:
+          reportable_type_string_eq:
+            label: Aina
+        officialized_at_null:
+          label: Jimbo
+          values:
+            'false': Imewekwa rasmi
+            'true': Si rasmi
+        participatory_space_private_users:
+          user_invitation_accepted_at_not_null:
+            label: Mwaliko umekubaliwa
+            values:
+              'false': Haikubaliki
+              'true': Imekubaliwa
+          user_invitation_sent_at_not_null:
+            label: Mwaliko umetumwa
+            values:
+              'false': Haijatumwa
+              'true': Imetumwa
+        private_space_eq:
+          label: Privat
+          values:
+            'false': Hadharani
+            'true': Privat
+        published_at_null:
+          label: Imechapishwa
+          values:
+            'false': Imechapishwa
+            'true': Haijachapishwa
+        remove_all: Ondoa zote
+        scope_id_eq:
+          label: Upeo
+        search_label: Tafuta
+        search_placeholder:
+          name_or_nickname_or_email_cont: Tafuta %{collection} kwa barua pepe, jina au lakabu.
+          report_count_eq: Idadi ya ripoti eq
+          reported_id_string_or_reported_content_cont: Tafuta %{collection} kwa kitambulisho kinachoweza kuripotiwa au maudhui.
+          title_cont: Tafuta %{collection} kwa kichwa.
+          user_name_or_user_nickname_or_user_email_cont: Tafuta %{collection} kwa barua pepe, jina au lakabu.
+        state_eq:
+          label: Jimbo
+          values:
+            all: Wote
+            pending: Inasubiri
+            rejected: Imekataliwa
+            verified: Imethibitishwa
+      forms:
+        file_help:
+          import:
+            explanation: 'Mwongozo wa faili:'
+            message_1: Faili za CSV, JSON na Excel (.xlsx) zinatumika
+            message_2: Kwa faili za CSV, kitenganishi kati ya safu wima lazima kiwe nusu koloni (";")
+      help_sections:
+        error: Kulikuwa na tatizo la kusasisha sehemu za usaidizi.
+        form:
+          save: Hifadhi
+        success: Sehemu za usaidizi zimesasishwa.
+      impersonatable_users:
+        index:
+          filter:
+            all: Wote
+            managed: Inasimamiwa
+            not_managed: Haijasimamiwa
+          impersonate: Kuiga
+          impersonate_new_managed_user: Dhibiti mshiriki mpya
+          managed: Inasimamiwa
+          name: Jina
+          needs_authorization_warning: Unahitaji angalau uidhinishaji mmoja uwezeshwe kwa shirika hili.
+          not_managed: Haijasimamiwa
+          promote: Kuza
+          search: Tafuta
+          status: Hali
+          view_logs: Tazama kumbukumbu
+      impersonations:
+        close_session:
+          error: Kulikuwa na tatizo wakati wa kufunga kipindi cha sasa cha usimamizi wa mshiriki.
+          success: Kipindi cha sasa cha uigaji kimekamilika.
+        create:
+          error: Kulikuwa na tatizo la kudhibiti mshiriki.
+          success: Mshiriki anayesimamiwa ameundwa kwa ufanisi.
+        form:
+          authorization_method: Mbinu ya uidhinishaji
+          name: Jina
+          reason: Sababu
+        new:
+          impersonate: Kuiga
+          impersonate_existing_managed_user: Dhibiti mshiriki "%{name}"
+          impersonate_existing_user: Dhibiti mshiriki "%{name}"
+          impersonate_new_managed_user: Dhibiti mshiriki mpya
+      imports:
+        and: na
+        data_errors:
+          duplicate_headers:
+            detail: Tafadhali hakikisha kuwa faili ina safu wima au vichwa vinavyohitajika mara moja tu.
+            message:
+              one: Nakala safu wima %{columns}.
+              other: Nakala safu wima %{columns}.
+          invalid_indexes:
+            lines:
+              detail: Tafadhali hakikisha kuwa mistari hii imeumbizwa ipasavyo na ina rekodi halali.
+              message:
+                one: Imepata hitilafu katika faili ya kuleta kwenye mstari %{indexes}.
+                other: Imepata hitilafu katika faili ya kuleta kwenye mistari %{indexes}.
+            records:
+              detail: Tafadhali hakikisha kwamba rekodi hizi zimeumbizwa ipasavyo na zina rekodi halali.
+              message:
+                one: Imepata hitilafu katika faili ya kuleta rekodi zilizo na nambari za agizo %{indexes}.
+                other: Imepata hitilafu katika faili ya kuleta rekodi zilizo na nambari za agizo %{indexes}.
+          missing_headers:
+            detail: Tafadhali hakikisha kuwa faili ina safu wima zinazohitajika.
+            message:
+              one: Safu wima %{columns} haipo.
+              other: Safu wima %{columns} hazipo.
+        error: Kulikuwa na tatizo wakati wa kuleta.
+        example_error: Kulikuwa na tatizo la kuunda mfano wa aina fulani.
+        new:
+          accepted_mime_types:
+            csv: CSV
+            json: JSON
+            xlsx: Excel (.xlsx)
+          actions:
+            back: Nyuma
+          download_example: Pakua mfano
+          download_example_format: Mfano kama %{name}
+          file_legend: Ongeza faili ya kuleta ambayo itachanganuliwa.
+          import: Ingiza
+        notice: "%{count} %{resource_name} imeingizwa kwa mafanikio."
+      logs:
+        filters:
+          participatory_space: Tafuta nafasi shirikishi
+          text: Tafuta kwa barua pepe ya mtumiaji, jina au jina la utani.
+          user: Mtumiaji
+        logs_list:
+          no_logs_yet: Bado hakuna kumbukumbu.
+          no_matching_logs: Hakuna kumbukumbu zilizo na vichujio vya utafutaji vilivyotolewa. Jaribu kuzibadilisha na ujaribu tena.
+      managed_users:
+        promotion:
+          error: Kulikuwa na tatizo la kukuza mshiriki anayesimamiwa.
+          success: Mshiriki anayesimamiwa amepandishwa cheo.
+        promotions:
+          new:
+            explanation: Washiriki wanaosimamiwa wanaweza kupandishwa vyeo hadi washiriki wa kawaida. Inamaanisha kuwa wataalikwa kwenye programu na hutaweza kuzidhibiti tena. Mshiriki aliyealikwa atapokea barua pepe ili kukubali mwaliko wako.
+            new_managed_user_promotion: Matangazo mapya ya mshiriki anayesimamiwa
+            promote: Kuza
+      menu:
+        admin_log: Kumbukumbu ya shughuli za msimamizi
+        admins: Wasimamizi
+        appearance: Muonekano
+        area_types: Aina za eneo
+        areas: Maeneo
+        components: Vipengele
+        configuration: Usanidi
+        content: Maudhui yaliyoripotiwa
+        external_domain_allowlist: Vikoa vya nje vinavyoruhusiwa
+        help_sections: Sehemu za usaidizi
+        homepage: Ukurasa wa nyumbani
+        impersonations: Uigaji
+        manage: Dhibiti
+        moderation: Udhibiti wa kimataifa
+        newsletters: Vijarida
+        participants: Washiriki
+        reported_users: Washiriki walioripotiwa
+        scope_types: Aina za upeo
+        scopes: Mawanda
+        see_site: Tazama tovuti
+        settings: Mipangilio
+        static_page_topics: Mada
+        static_pages: Kurasa
+        user_groups: Vikundi
+        users: Washiriki
+      metrics:
+        metrics:
+          see_more_metrics: Angalia vipimo zaidi
+      models:
+        area:
+          fields:
+            area_type: Aina ya eneo
+            name: Jina
+        area_type:
+          fields:
+            name: Jina
+            plural: Wingi
+        attachment:
+          fields:
+            collection: Folda
+            content_type: Aina
+            file_size: Ukubwa
+            title: Kichwa
+          name: Kiambatisho
+        attachment_collection:
+          name: Folda
+        category:
+          name: Kategoria
+        impersonation_log:
+          fields:
+            admin: Msimamizi
+            ended_at: Ilimalizika saa
+            expired_at: Muda wake umeisha saa
+            reason: Sababu
+            started_at: Ilianza saa
+            user: Mshiriki
+        newsletter:
+          fields:
+            created_at: Imeundwa saa
+            progress: Maendeleo
+            sent_at: Imetumwa saa
+            sent_to: Imetumwa kwa
+            subject: Somo
+          name: Jarida
+        participatory_space_private_user:
+          name: Nafasi shirikishi mshiriki binafsi
+        scope:
+          fields:
+            name: Jina
+            scope_type: Aina ya upeo
+        scope_type:
+          fields:
+            name: Jina
+            plural: Wingi
+        share_token:
+          fields:
+            created_at: Imeundwa saa
+            expires_at: Inaisha saa
+            last_used_at: Mara ya mwisho kutumika
+            times_used: Nyakati zilizotumika
+            token: Ishara
+            user: Imeundwa na
+        static_page:
+          fields:
+            created_at: Imeundwa saa
+            title: Kichwa
+        user:
+          fields:
+            created_at: Tarehe ya kuundwa
+            email: Barua pepe
+            last_sign_in_at: Tarehe ya mwisho ya kuingia
+            name: Jina
+            role: Jukumu
+            roles:
+              admin: Msimamizi
+              user_manager: Meneja mshiriki
+          name: Mshiriki
+        user_group:
+          fields:
+            actions: Vitendo
+            created_at: Imeundwa saa
+            document_number: Nambari ya hati
+            name: Jina
+            nickname: Jina la utani
+            phone: Simu
+            state: Jimbo
+            users_count: Washiriki wanahesabu
+      moderated_users:
+        index:
+          actions:
+            block: Zuia Mtumiaji
+            title: Vitendo
+            unblock: Ondoa kizuizi kwa Mtumiaji
+            unreport: Acha kuripoti
+          name: Jina
+          nickname: Jina la utani
+          reason: Sababu
+          reports: Ripoti kuhesabu
+          title: Washiriki walioripotiwa
+        report:
+          reasons:
+            does_not_belong: Si mali
+            offensive: Inakera
+            spam: Barua taka
+        tabs:
+          blocked: Imezuiwa
+          unblocked: Haijazuiwa
+      moderations:
+        index:
+          title: Maudhui yaliyoripotiwa
+        report:
+          reasons:
+            does_not_belong: Si mali
+            hidden_during_block: Imefichwa wakati inazuia mtumiaji
+            offensive: Inakera
+            spam: Barua taka
+        reports:
+          index:
+            author: Waandishi
+            callout_html: Maudhui huonekana kwenye kidirisha cha udhibiti wakati yameonyeshwa na mtumiaji (anaweza kuwa mtu yeyote aliye na akaunti iliyosajiliwa) kwa kubofya alama ya %{icon} karibu na kipengee.
+            content_original_language: Lugha asili ya maudhui
+            participatory_space: Nafasi shirikishi
+            reported_content: Maudhui yaliyoripotiwa
+            see_current: Tazama ya sasa
+            see_original: Angalia asili
+            title: Ripoti za usimamizi
+          show:
+            report_details: Maelezo ya sababu
+            report_language: Lugha ya ripoti
+            report_reason: Sababu
+            title: Ripoti maelezo
+      newsletter_templates:
+        index:
+          preview_template: Hakiki
+          title: Violezo vya jarida
+          use_template: Tumia kiolezo hiki
+        show:
+          preview: 'Hakiki kiolezo: %{template_name}'
+          use_template: Tumia kiolezo hiki
+      newsletters:
+        create:
+          error: Kulikuwa na tatizo la kuunda jarida hili.
+          success: Jarida limeundwa kwa mafanikio. Tafadhali ihakiki kabla ya kutuma.
+        deliver:
+          error: Kulikuwa na tatizo katika kuwasilisha jarida hili.
+          success: Jarida liliwasilishwa kwa mafanikio.
+        destroy:
+          error_already_sent: 'Haiwezi kuharibu jarida: Tayari limetumwa.'
+          success: Jarida limeharibiwa.
+        edit:
+          save_and_preview: Hifadhi na uhakiki
+          title: Hariri jarida
+        index:
+          all: zote
+          all_users: 'Watumiaji wote'
+          and: 'na'
+          confirm_delete: Je, una uhakika unataka kufuta jarida hili?
+          followers: 'wafuasi'
+          has_been_sent_to: 'Imetumwa kwa:'
+          no_scopes: Hakuna mawanda
+          not_sent: Haijatumwa
+          participants: 'washiriki'
+          segmented_to: 'Imegawanywa hadi %{subject}:'
+          subscribed_count: 'Umejisajili:'
+          title: Vijarida
+        new:
+          save: Hifadhi
+          title: Jarida jipya
+        select_recipients_to_deliver:
+          all_spaces: Wote
+          all_users_help: Inatuma jarida kwa watumiaji wote waliothibitishwa.
+          confirm_deliver: Je, una uhakika unataka kuwasilisha jarida hili? Kitendo hiki hakiwezi kutenduliwa.
+          deliver: Peana jarida
+          followers_help: Hutuma jarida kwa watumiaji wote waliothibitishwa wanaofuata nafasi zozote shirikishi zilizochaguliwa kwenye orodha.
+          none: Hakuna
+          participants_help: Hutuma jarida kwa watumiaji wote waliothibitishwa ambao wameshiriki katika nafasi yoyote shirikishi iliyochaguliwa kwenye orodha.
+          recipients_count: Jarida hili litatumwa kwa <strong id='recipients_count'>%{count}</strong> watumiaji.
+          scopes_help: Hutuma jarida kwa watumiaji ambao wamewezesha upeo wowote uliochaguliwa katika mipangilio ya akaunti yao ya "Maslahi Yangu".
+          select_scopes: Kichujio cha watumiaji ambao wamewasha upeo wowote waliochaguliwa katika mipangilio ya akaunti yao ya Maslahi Yangu.
+          select_spaces: Chagua nafasi ili kugawa jarida
+          select_users: Chagua watumiaji gani unataka kutuma jarida
+          title: Chagua wapokeaji wa kuwasilisha
+          warning: "<strong>Tahadhari:</strong> Jarida hili litatumwa tu kwa watumiaji ambao wamewasha <em>Nataka kupokea majarida</em> katika mipangilio yao ya arifa."
+        send:
+          no_recipients: Hakuna wapokeaji wa uteuzi huu.
+        send_to_user:
+          sent_successfully: Jarida limetumwa kwa %{email}
+        show:
+          preview: Hakiki
+          select_recipients_to_deliver: Chagua wapokeaji wa kuwasilisha
+          send_me_a_test_email: Nitumie barua pepe ya majaribio
+          subject: Somo
+        update:
+          error: Kulikuwa na tatizo la kusasisha jarida hili.
+          success: Jarida limesasishwa. Tafadhali ihakiki kabla ya kutuma.
+      officializations:
+        block:
+          error: Kulikuwa na hitilafu katika kumzuia mshiriki.
+          success: Mshiriki amezuiwa.
+        create:
+          success: Mshiriki alifaulu rasmi.
+        destroy:
+          success: Mshiriki amefaulu kuwa rasmi.
+        index:
+          actions: Vitendo
+          badge: Beji
+          block: Zuia Mtumiaji
+          created_at: Imeundwa Katika
+          name: Jina
+          nickname: Jina la utani
+          not_officialized: Si rasmi
+          officialize: Rasmishwa
+          officialized: Imewekwa rasmi
+          reofficialize: Kurasimisha upya
+          reports: Ripoti
+          show_email: Onyesha anwani ya barua pepe
+          status: Hali
+          unblock: Ondoa kizuizi kwa Mtumiaji
+          unofficialize: Usiwe rasmi
+        new:
+          badge: Beji ya kurasimisha
+          officialize: Rasmishwa
+          title: Rasmisha mshiriki "%{name}"
+        show_email_modal:
+          description: Ikiwa unahitaji kuwasiliana na mshiriki moja kwa moja, unaweza kubofya kitufe cha Onyesha ili kuona anwani yake ya barua pepe. Kitendo hiki kitawekwa.
+          email_address: Anwani ya barua pepe
+          full_name: Jina kamili
+          hidden: siri
+          show: Onyesha
+          title: Onyesha anwani ya barua pepe ya mshiriki
+        unblock:
+          error: Kulikuwa na hitilafu katika kumfungulia mshiriki.
+          success: Mshiriki amefanikiwa kufungua.
+      organization:
+        edit:
+          title: Badilisha shirika
+          update: Sasisha
+        form:
+          facebook: Facebook
+          github: GitHub
+          instagram: Instagram
+          rich_text_editor_in_public_views_help: Katika baadhi ya maeneo ya maandishi, washiriki wataweza kuingiza baadhi ya lebo za HTML kwa kutumia kihariri cha maandishi tajiri.
+          social_handlers: Kijamii
+          twitter: X
+          url: URL
+          youtube: YouTube
+        update:
+          error: Kulikuwa na tatizo la kusasisha shirika hili.
+          success: Shirika limesasishwa.
+      organization_appearance:
+        edit:
+          update: Sasisha
+        form:
+          colors:
+            choose_color: Chagua rangi ya msingi
+            colors_title: Rangi za shirika
+            colors_warning_html: Onyo! Kubadilisha rangi hizi kunaweza kuvunja utofauti wa ufikivu. Unaweza kuangalia utofauti wa chaguo lako kwa <a href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</a> au zana zingine zinazofanana.
+            explanation: Zana hii inakusaidia kuchagua mpango wa rangi, unaojumuisha rangi zilizowekwa kwa usawa karibu na gurudumu la rangi, ambazo zitatumika kwenye tovuti ya shirika.
+            legend_html: Rangi kuu za programu, kulingana na <a href="https://www.color-meanings.com/triadic-colors/">algorithm ya Triadic</a>. Rangi <i>ya pili</i> huhesabiwa kiotomatiki kutoka kwa rangi msingi na mjazo uliochagua.
+            saturation: Kueneza
+            title: Kichagua rangi
+            update_suggested_colors: Sasisha rangi zilizopendekezwa
+          cta_button_path_help_html: 'Unaweza kubatilisha ambapo kitufe cha Wito wa Kuchukua Hatua katika ukurasa wa nyumbani kinaunganishwa. Tumia njia zisizo kamili, sio URL kamili hapa. Inakubali herufi, nambari, deshi na mikwaruzo, na lazima ianze na herufi. Kitufe cha Wito wa Kuchukua Hatua kinaonyeshwa katika ukurasa wa nyumbani kati ya maandishi ya kukaribisha na maelezo. Mfano: %{url}'
+          cta_button_text_help: Unaweza kubatilisha maandishi ya kitufe cha Wito wa Kuchukua Hatua katika ukurasa wa nyumbani kwa kila lugha inayopatikana katika shirika lako. Ikiwa haijawekwa, thamani chaguo-msingi itatumika. Kitufe cha Wito wa Kuchukua Hatua kinaonyeshwa katika ukurasa wa nyumbani kati ya maandishi ya kukaribisha na maelezo.
+          header_snippets:
+            header_snippets_help_html: Tumia sehemu hii kuongeza vitu kwenye kichwa cha HTML. Matumizi ya kawaida ni kuunganisha huduma za wahusika wengine zinazohitaji JavaScript au CSS ya ziada. Pia, unaweza kuitumia kuongeza meta tagi za ziada kwenye HTML. Kumbuka kwamba hii itatolewa katika kurasa za umma pekee, si katika sehemu ya msimamizi. Ikiwa msimbo unaingiliana na API za nje au hauzingatii miongozo ya usalama ya programu, itakuwa muhimu kubadilisha Sera ya Usalama wa Maudhui. Soma zaidi kuhusu <a href="https://docs.decidim.org/develop/en/customize/content_security_policy">kwenye tovuti ya uhifadhi</a>.
+            title: Vijisehemu vya vichwa vya HTML
+          homepage_appearance_title: Badilisha mwonekano wa ukurasa wa nyumbani
+          homepage_highlighted_content_banner_title: Bango la maudhui lililoangaziwa
+          images:
+            layout_appearance_title: Badilisha mwonekano wa mpangilio
+            preview: Hakiki
+          omnipresent_banner_appearance_title: Hariri bango lililo kila mahali
+      organization_external_domain_allowlist:
+        edit:
+          update: Sasisha
+        external_domain:
+          down: Chini
+          external_domain: Kikoa cha nje
+          remove: Ondoa
+          up: Juu
+        form:
+          add: Ongeza kwenye orodha inayoruhusiwa
+          title: Orodha inayoruhusiwa ya vikoa vya nje
+      participatory_space_private_users:
+        create:
+          error: Kulikuwa na tatizo la kuongeza mshiriki wa faragha kwa nafasi hii shirikishi.
+          success: Ufikiaji wa nafasi shirikishi ya mshiriki wa faragha umeundwa.
+        destroy:
+          error: Kulikuwa na tatizo la kufuta mshiriki wa faragha kwa nafasi hii shirikishi.
+          success: Nafasi shirikishi ufikiaji wa mshiriki wa kibinafsi umeharibiwa.
+        index:
+          import_via_csv: Ingiza kupitia CSV
+          title: Nafasi shirikishi mshiriki binafsi
+        new:
+          create: Unda
+          title: Mshiriki mpya wa Nafasi shirikishi ya kibinafsi.
+      participatory_space_private_users_csv_imports:
+        create:
+          invalid: Kulikuwa na tatizo la kusoma faili ya CSV. Tafadhali hakikisha kuwa umefuata maagizo.
+          success: Faili ya CSV imepakiwa kwa mafanikio, tunatuma barua pepe ya mwaliko kwa washiriki. Hii inaweza kuchukua muda.
+        new:
+          csv_upload:
+            title: Pakia faili yako ya CSV
+          destroy:
+            button: Futa washiriki wote wa kibinafsi
+            confirm: Je, una uhakika unataka kufuta washiriki wote wa faragha? Kitendo hiki hakiwezi kutenduliwa, hutaweza kuzirejesha.
+            empty: Huna washiriki wa kibinafsi.
+            explanation: Una washiriki %{count} binafsi.
+            title: Futa washiriki wa kibinafsi
+          example_file: 'Faili ya mfano:'
+          explanation: 'Pakia faili yako ya CSV. Ni lazima iwe na safu wima mbili zilizo na barua pepe katika safu wima ya kwanza ya faili na jina katika safu ya mwisho ya faili ya watumiaji ambayo ungependa kuongeza kwenye nafasi shirikishi, bila vichwa. Epuka kutumia herufi batili kama vile `<>?%&^*#@()[]=+:;"{}\|` katika jina la mtumiaji.'
+          explanation_example: |
+            john.doe@example.org%{csv_col_sep}John Doe
+            jane.doe@example.org%{csv_col_sep}Jane Doe
+          title: Leta washiriki wa kibinafsi kupitia CSV
+          upload: Pakia
+      reminders:
+        create:
+          error: Kulikuwa na tatizo la kuunda vikumbusho.
+          success:
+            one: "%{count} mtumiaji atakumbushwa."
+            other: "%{count} mtumiaji atakumbushwa."
+        new:
+          submit: Tuma
+      resource_permissions:
+        edit:
+          submit: Wasilisha
+          title: Badilisha ruhusa
+        update:
+          success: Ruhusa zimesasishwa.
+      resources:
+        index:
+          headers:
+            scope: Upeo
+      scope_types:
+        create:
+          error: Kulikuwa na tatizo la kuunda aina mpya ya upeo.
+          success: Aina ya upeo imeundwa kwa ufanisi.
+        destroy:
+          success: Aina ya upeo imeharibiwa
+        edit:
+          title: Badilisha aina ya upeo
+          update: Sasisha
+        new:
+          create: Unda aina ya upeo
+          title: Aina mpya ya upeo
+        update:
+          error: Kulikuwa na tatizo la kusasisha aina hii ya upeo.
+          success: Aina ya upeo imesasishwa
+      scopes:
+        create:
+          error: Kulikuwa na tatizo la kuunda upeo mpya.
+          success: Upeo umefanikiwa.
+        destroy:
+          success: Upeo umefaulu kuharibiwa.
+        edit:
+          title: Badilisha upeo
+          update: Sasisha
+        new:
+          create: Unda upeo
+          title: Upeo mpya
+        no_scopes: Hakuna upeo katika kiwango hiki.
+        update:
+          error: Kulikuwa na tatizo la kusasisha upeo huu.
+          success: Upeo umesasishwa
+      share_tokens:
+        actions:
+          confirm_destroy: Je, una uhakika unataka kufuta tokeni hii?
+          destroy: Futa
+          share: Shiriki
+        destroy:
+          error: Kulikuwa na tatizo la kuharibu tokeni.
+          success: Ishara imeharibiwa.
+        share_tokens:
+          empty: Hakuna tokeni zinazotumika.
+          help: Tokeni hizi hutumika kushiriki hadharani rasilimali hii ambayo haijachapishwa kwa mtumiaji yeyote. Zitafichwa wakati rasilimali itachapishwa. Bofya kwenye ikoni ya kushiriki ya ishara ili kutembelea URL inayoweza kushirikiwa.
+          title: Shiriki tokeni
+      shared:
+        adjacent_navigation:
+          next: Inayofuata
+          next_title: Kipengee kinachofuata
+          previous: Iliyotangulia
+          previous_title: Kipengee kilichotangulia
+        gallery:
+          add_images: Ongeza picha
+          edit_images: Hariri picha
+          gallery_legend: Ongeza ghala la picha (Si lazima)
+      static_page_topics:
+        create:
+          error: Kulikuwa na tatizo kuunda mada mpya.
+          success: Mada imeundwa kwa mafanikio.
+        destroy:
+          success: Mada imeharibiwa.
+        edit:
+          title: Hariri mada
+          update: Sasisha mada
+        new:
+          create: Unda mada
+          title: Mada mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha mada hii.
+          success: Mada imesasishwa
+      static_pages:
+        actions:
+          view: Tazama ukurasa wa umma
+        create:
+          error: Kulikuwa na tatizo la kuunda ukurasa mpya.
+          success: Ukurasa umeundwa.
+        destroy:
+          success: Ukurasa umeharibiwa
+        edit:
+          changed_notably_help: Ikichaguliwa, washiriki watajulishwa kukubali sheria na masharti mapya.
+          last_notable_change: 'Mabadiliko mashuhuri ya mwisho: %{tos_version_formatted}'
+          title: Badilisha ukurasa
+          update: Sasisha
+        form:
+          none: Hakuna
+          slug_help_html: 'Tumia njia zisizo kamili, sio URL kamili hapa. Inakubali herufi, nambari, deshi na mikwaruzo, na lazima ianze na herufi. Mfano: %{url}'
+        index:
+          last_notable_change: Mabadiliko mashuhuri ya mwisho
+        new:
+          create: Unda ukurasa
+          title: Ukurasa mpya
+        topic:
+          empty: Hakuna kurasa chini ya mada hii.
+          without_topic: Kurasa zisizo na mada
+        update:
+          error: Kulikuwa na tatizo la kusasisha ukurasa huu.
+          success: Ukurasa umesasishwa.
+      titles:
+        admin_log: logi ya msimamizi
+        area_types: Aina za eneo
+        areas: Maeneo
+        authorization_workflows: Mbinu za uthibitishaji
+        dashboard: Dashibodi
+        edit_external_domains: Orodha inayoruhusiwa ya vikoa vya nje
+        edit_landing_page: Yaliyomo kwenye ukurasa
+        edit_organization_appearance: Badilisha mwonekano wa ukurasa wa nyumbani
+        impersonatable_users: Washiriki wanaoweza kudhibitiwa
+        impersonations: Usimamizi wa washiriki
+        menu: Menyu
+        metrics: Vipimo
+        page_topics: Mada
+        pages: Kurasa
+        panel: Msimamizi
+        participants: Washiriki
+        scope_types: Aina za upeo
+        scopes: Mawanda
+        statistics: Shughuli
+        user_groups: Vikundi
+        users: Wasimamizi
+      user_group:
+        csv_verify:
+          invalid: Kulikuwa na tatizo la kusoma faili ya CSV.
+          success: Faili ya CSV imepakiwa kwa ufanisi, tunathibitisha vikundi vinavyolingana na vigezo. Hii inaweza kuchukua muda.
+        reject:
+          invalid: Kulikuwa na tatizo la kukataa kikundi hiki.
+          success: Kikundi kimekataliwa.
+        verify:
+          invalid: Kulikuwa na tatizo katika kuthibitisha kikundi hiki.
+          success: Kikundi kimethibitishwa.
+      user_groups:
+        index:
+          state:
+            pending: Inasubiri
+            rejected: Imekataliwa
+            verified: Imethibitishwa
+          verify_via_csv: Thibitisha kupitia CSV
+      user_groups_csv_verifications:
+        new:
+          example_file: 'Faili ya mfano:'
+          explanation: Pakia faili yako ya CSV. Ni lazima iwe na barua pepe rasmi za vikundi katika shirika lako katika safu wima ya kwanza ya faili, bila vichwa. Vikundi ambavyo vimethibitisha barua pepe zao na ambavyo vina barua pepe inayoonekana katika faili ya CSV pekee ndivyo vitaidhinishwa.
+          explanation_example: |
+            acme@example.org
+            bubba.gump@example.org
+          title: Pakia faili yako ya CSV
+          upload: Pakia
+      users:
+        create:
+          error: Kulikuwa na tatizo katika kumwalika msimamizi huyu.
+          success: Mshiriki amealikwa.
+        destroy:
+          error: Kulikuwa na tatizo wakati wa kujaribu kufuta msimamizi huyu.
+          success: Mshiriki si msimamizi tena.
+        form:
+          email: Barua pepe
+          name: Jina
+          role: Jukumu
+        new:
+          create: Alika
+          title: Alika msimamizi mpya
+      users_statistics:
+        users_count:
+          admins: Wasimamizi
+          last_day: Siku ya mwisho
+          last_month: Mwezi uliopita
+          last_week: Wiki iliyopita
+          no_users_count_statistics_yet: Bado hakuna takwimu za hesabu ya watumiaji.
+          participants: Washiriki
+    forms:
+      errors:
+        impersonate_user:
+          reason: Unahitaji kutoa sababu unaposimamia mshiriki asiyesimamiwa.
+    metrics:
+      blocked_users:
+        object: watumiaji waliozuiwa
+        title: Watumiaji waliozuiwa
+      reported_users:
+        object: watumiaji walioripotiwa
+        title: Watumiaji walioripotiwa
+      user_reports:
+        object: ripoti za watumiaji
+        title: Ripoti za watumiaji
+    moderations:
+      actions:
+        expand: Panua
+        hidden: Imefichwa
+        hide: Ficha
+        not_hidden: Haijafichwa
+        title: Vitendo
+        unhide: Onyesha
+        unreport: Acha kuripoti
+      admin:
+        reportable:
+          hide:
+            invalid: Kulikuwa na tatizo katika kuficha rasilimali.
+            success: Nyenzo imefichwa.
+          unhide:
+            invalid: Kulikuwa na tatizo katika kufichua rasilimali.
+            success: Nyenzo imefaulu kufichwa.
+          unreport:
+            invalid: Kulikuwa na tatizo la kutoripoti rasilimali.
+            success: Rasilimali haijaripotiwa.
+      models:
+        moderation:
+          fields:
+            created_at: Imeripotiwa saa
+            deleted_resource: Rasilimali iliyofutwa
+            hidden_at: Imefichwa saa
+            participatory_space: Nafasi shirikishi
+            report_count: Ripoti kuhesabu
+            reportable_id: ID
+            reportable_type: Aina
+            reported_content_url: URL ya maudhui yaliyoripotiwa
+            reports: Sababu
+            visit_url: Tembelea URL
+        report:
+          fields:
+            details: Maelezo ya sababu
+            locale: Lugha
+            reason: Sababu
+  errors:
+    messages:
+      invalid_json: JSON batili
+  layouts:
+    decidim:
+      admin:
+        global_moderations:
+          title: Udhibiti wa kimataifa

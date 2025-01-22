@@ -1,0 +1,519 @@
+---
+fr-CH:
+  activemodel:
+    attributes:
+      participatory_process:
+        announcement: crwdns10976:0crwdne10976:0
+        area_id: crwdns10978:0crwdne10978:0
+        copy_categories: crwdns10980:0crwdne10980:0
+        copy_components: crwdns10982:0crwdne10982:0
+        copy_steps: crwdns10984:0crwdne10984:0
+        decidim_area_id: crwdns10986:0crwdne10986:0
+        description: crwdns10988:0crwdne10988:0
+        developer_group: crwdns10990:0crwdne10990:0
+        document: crwdns10992:0crwdne10992:0
+        domain: crwdns10994:0crwdne10994:0
+        end_date: crwdns10996:0crwdne10996:0
+        hashtag: crwdns10998:0crwdne10998:0
+        hero_image: crwdns11000:0crwdne11000:0
+        import_attachments: crwdns11002:0crwdne11002:0
+        import_categories: crwdns11004:0crwdne11004:0
+        import_components: crwdns11006:0crwdne11006:0
+        import_steps: crwdns11008:0crwdne11008:0
+        local_area: crwdns11010:0crwdne11010:0
+        meta_scope: crwdns11012:0crwdne11012:0
+        participatory_process_group_id: crwdns11014:0crwdne11014:0
+        participatory_process_type_id: crwdns11016:0crwdne11016:0
+        participatory_scope: crwdns11018:0crwdne11018:0
+        participatory_structure: crwdns11020:0crwdne11020:0
+        private_space: crwdns11022:0crwdne11022:0
+        promoted: crwdns11024:0crwdne11024:0
+        published_at: crwdns11026:0crwdne11026:0
+        related_process_ids: crwdns11028:0crwdne11028:0
+        scope_id: crwdns11030:0crwdne11030:0
+        scope_type_max_depth_id: crwdns11032:0crwdne11032:0
+        scopes_enabled: crwdns11034:0crwdne11034:0
+        short_description: crwdns11036:0crwdne11036:0
+        slug: crwdns11038:0crwdne11038:0
+        start_date: crwdns11040:0crwdne11040:0
+        subtitle: crwdns11042:0crwdne11042:0
+        target: crwdns11044:0crwdne11044:0
+        title: crwdns11046:0crwdne11046:0
+        weight: crwdns11048:0crwdne11048:0
+      participatory_process_group:
+        description: crwdns11050:0crwdne11050:0
+        developer_group: crwdns11052:0crwdne11052:0
+        group_url: crwdns11054:0crwdne11054:0
+        hashtag: crwdns11056:0crwdne11056:0
+        hero_image: crwdns11058:0crwdne11058:0
+        local_area: crwdns11060:0crwdne11060:0
+        meta_scope: crwdns11062:0crwdne11062:0
+        participatory_process_ids: crwdns11064:0crwdne11064:0
+        participatory_scope: crwdns11066:0crwdne11066:0
+        participatory_structure: crwdns11068:0crwdne11068:0
+        target: crwdns11070:0crwdne11070:0
+        title: crwdns11072:0crwdne11072:0
+      participatory_process_step:
+        cta_path: crwdns11074:0crwdne11074:0
+        cta_text: crwdns11076:0crwdne11076:0
+        description: crwdns11078:0crwdne11078:0
+        end_date: crwdns11080:0crwdne11080:0
+        short_description: crwdns11082:0crwdne11082:0
+        start_date: crwdns11084:0crwdne11084:0
+        title: crwdns11086:0crwdne11086:0
+      participatory_process_type:
+        title: crwdns11088:0crwdne11088:0
+      participatory_process_user_role:
+        email: crwdns11090:0crwdne11090:0
+        name: crwdns11092:0crwdne11092:0
+        role: crwdns11094:0crwdne11094:0
+    errors:
+      models:
+        participatory_process:
+          attributes:
+            document:
+              allowed_file_content_types: 'crwdns11096:0%{types}crwdne11096:0'
+    models:
+      decidim/participatory_process_step_activated_event: crwdns11098:0crwdne11098:0
+      decidim/participatory_process_step_changed_event: crwdns11100:0crwdne11100:0
+  activerecord:
+    models:
+      decidim/participatory_process:
+        one: crwdns11102:1crwdne11102:1
+        other: crwdns11102:5crwdne11102:5
+      decidim/participatory_process_group:
+        one: crwdns11104:1crwdne11104:1
+        other: crwdns11104:5crwdne11104:5
+      decidim/participatory_process_step:
+        one: crwdns11106:1crwdne11106:1
+        other: crwdns11106:5crwdne11106:5
+  decidim:
+    admin:
+      actions:
+        activate: crwdns11108:0crwdne11108:0
+        configure: crwdns11110:0crwdne11110:0
+        confirm_destroy: crwdns11112:0crwdne11112:0
+        destroy: crwdns11114:0crwdne11114:0
+        duplicate: crwdns11116:0crwdne11116:0
+        edit: crwdns11118:0crwdne11118:0
+        import_process: crwdns11120:0crwdne11120:0
+        moderate: crwdns11122:0crwdne11122:0
+        new_process: crwdns11124:0crwdne11124:0
+        new_process_group: crwdns11126:0crwdne11126:0
+        new_process_step: crwdns11128:0crwdne11128:0
+        new_process_type: crwdns11130:0crwdne11130:0
+        new_process_user_role: crwdns11132:0crwdne11132:0
+        preview: crwdns11134:0crwdne11134:0
+        publish: crwdns11136:0crwdne11136:0
+        resend_invitation: crwdns11138:0crwdne11138:0
+        see_process: crwdns11140:0crwdne11140:0
+        unpublish: crwdns11142:0crwdne11142:0
+      filters:
+        decidim_participatory_process_group_id_eq:
+          label: crwdns11144:0crwdne11144:0
+      menu:
+        participatory_process_groups: crwdns11146:0crwdne11146:0
+        participatory_process_groups_submenu:
+          info: crwdns11148:0crwdne11148:0
+          landing_page: crwdns11150:0crwdne11150:0
+        participatory_process_types: crwdns11152:0crwdne11152:0
+        participatory_processes: crwdns11154:0crwdne11154:0
+        participatory_processes_submenu:
+          attachment_collections: crwdns11156:0crwdne11156:0
+          attachment_files: crwdns11158:0crwdne11158:0
+          attachments: crwdns11160:0crwdne11160:0
+          categories: crwdns11162:0crwdne11162:0
+          components: crwdns11164:0crwdne11164:0
+          info: crwdns11166:0crwdne11166:0
+          landing_page: crwdns11168:0crwdne11168:0
+          moderations: crwdns11170:0crwdne11170:0
+          private_users: crwdns11172:0crwdne11172:0
+          process_admins: crwdns11174:0crwdne11174:0
+          steps: crwdns11176:0crwdne11176:0
+      models:
+        participatory_process:
+          fields:
+            actions: crwdns11178:0crwdne11178:0
+            created_at: crwdns11180:0crwdne11180:0
+            private: crwdns11182:0crwdne11182:0
+            published: crwdns11184:0crwdne11184:0
+            title: crwdns11186:0crwdne11186:0
+          name: crwdns11188:0crwdne11188:0
+        participatory_process_group:
+          fields:
+            title: crwdns11190:0crwdne11190:0
+          name: crwdns11192:0crwdne11192:0
+        participatory_process_step:
+          fields:
+            end_date: crwdns11194:0crwdne11194:0
+            start_date: crwdns11196:0crwdne11196:0
+            title: crwdns11198:0crwdne11198:0
+          name: crwdns11200:0crwdne11200:0
+        participatory_process_type:
+          fields:
+            created_at: crwdns11202:0crwdne11202:0
+            title: crwdns11204:0crwdne11204:0
+          name: crwdns11206:0crwdne11206:0
+        participatory_process_user_role:
+          fields:
+            email: crwdns11208:0crwdne11208:0
+            name: crwdns11210:0crwdne11210:0
+            role: crwdns11212:0crwdne11212:0
+          name: crwdns11214:0crwdne11214:0
+          roles:
+            admin: crwdns11216:0crwdne11216:0
+            collaborator: crwdns11218:0crwdne11218:0
+            moderator: crwdns11220:0crwdne11220:0
+            valuator: crwdns11222:0crwdne11222:0
+        user:
+          fields:
+            invitation_accepted_at: crwdns11224:0crwdne11224:0
+            invitation_sent_at: crwdns11226:0crwdne11226:0
+      participatory_process_copies:
+        new:
+          copy: crwdns11228:0crwdne11228:0
+          select: crwdns11230:0crwdne11230:0
+          title: crwdns11232:0crwdne11232:0
+      participatory_process_groups:
+        destroy:
+          error: crwdns11234:0crwdne11234:0
+          success: crwdns11236:0crwdne11236:0
+        edit:
+          title: crwdns11238:0crwdne11238:0
+          update: crwdns11240:0crwdne11240:0
+        new:
+          create: crwdns11242:0crwdne11242:0
+          title: crwdns11244:0crwdne11244:0
+        update:
+          error: crwdns11246:0crwdne11246:0
+          success: crwdns11248:0crwdne11248:0
+      participatory_process_imports:
+        create:
+          error: crwdns11250:0crwdne11250:0
+          success: crwdns11252:0crwdne11252:0
+        new:
+          import: crwdns11254:0crwdne11254:0
+          select: crwdns11256:0crwdne11256:0
+          title: crwdns11258:0crwdne11258:0
+      participatory_process_publications:
+        create:
+          error: crwdns11260:0crwdne11260:0
+          success: crwdns11262:0crwdne11262:0
+        destroy:
+          error: crwdns11264:0crwdne11264:0
+          success: crwdns11266:0crwdne11266:0
+      participatory_process_step_activations:
+        create:
+          error: crwdns11268:0crwdne11268:0
+          success: crwdns11270:0crwdne11270:0
+      participatory_process_steps:
+        create:
+          error: crwdns11272:0crwdne11272:0
+          success: crwdns11274:0crwdne11274:0
+        default_title: crwdns11276:0crwdne11276:0
+        destroy:
+          error:
+            active_step: crwdns11278:0crwdne11278:0
+            last_step: crwdns11280:0crwdne11280:0
+          success: crwdns11282:0crwdne11282:0
+        edit:
+          cta_deprecated:
+            body_html: |-
+              crwdns11284:0crwdne11284:0
+            title: crwdns11286:0crwdne11286:0
+          title: crwdns11288:0crwdne11288:0
+          update: crwdns11290:0crwdne11290:0
+        index:
+          steps_title: crwdns11292:0crwdne11292:0
+        new:
+          create: crwdns11294:0crwdne11294:0
+          title: crwdns11296:0crwdne11296:0
+        ordering:
+          error: crwdns11298:0crwdne11298:0
+        update:
+          error: crwdns11300:0crwdne11300:0
+          success: crwdns11302:0crwdne11302:0
+      participatory_process_types:
+        create:
+          error: crwdns11304:0crwdne11304:0
+          success: crwdns11306:0crwdne11306:0
+        destroy:
+          success: crwdns11308:0crwdne11308:0
+        edit:
+          title: crwdns11310:0crwdne11310:0
+          update: crwdns11312:0crwdne11312:0
+        new:
+          create: crwdns11314:0crwdne11314:0
+          title: crwdns11316:0crwdne11316:0
+        update:
+          error: crwdns11318:0crwdne11318:0
+          success: crwdns11320:0crwdne11320:0
+      participatory_process_user_roles:
+        create:
+          error: crwdns11322:0crwdne11322:0
+          success: crwdns11324:0crwdne11324:0
+        destroy:
+          success: crwdns11326:0crwdne11326:0
+        edit:
+          title: crwdns11328:0crwdne11328:0
+          update: crwdns11330:0crwdne11330:0
+        index:
+          process_admins_title: crwdns11332:0crwdne11332:0
+        new:
+          create: crwdns11334:0crwdne11334:0
+          title: crwdns11336:0crwdne11336:0
+        update:
+          error: crwdns11338:0crwdne11338:0
+          success: crwdns11340:0crwdne11340:0
+      participatory_processes:
+        create:
+          error: crwdns11342:0crwdne11342:0
+          success: crwdns11344:0crwdne11344:0
+        edit:
+          update: crwdns11346:0crwdne11346:0
+        index:
+          private: crwdns11348:0crwdne11348:0
+          public: crwdns11350:0crwdne11350:0
+          published: crwdns11352:0crwdne11352:0
+          unpublished: crwdns11354:0crwdne11354:0
+        new:
+          create: crwdns11356:0crwdne11356:0
+          title: crwdns11358:0crwdne11358:0
+        update:
+          error: crwdns11360:0crwdne11360:0
+          success: crwdns11362:0crwdne11362:0
+      participatory_processes_copies:
+        create:
+          error: crwdns11364:0crwdne11364:0
+          success: crwdns11366:0crwdne11366:0
+      participatory_processes_group:
+        create:
+          error: crwdns11368:0crwdne11368:0
+          success: crwdns11370:0crwdne11370:0
+      titles:
+        participatory_process_groups: crwdns11372:0crwdne11372:0
+        participatory_process_types: crwdns11374:0crwdne11374:0
+        participatory_processes: crwdns11376:0crwdne11376:0
+      users:
+        resend_invitation:
+          error: crwdns11378:0crwdne11378:0
+          success: crwdns11380:0crwdne11380:0
+    admin_log:
+      participatory_process:
+        create: "crwdns11382:0%{user_name}crwdnd11382:0%{resource_name}crwdne11382:0"
+        duplicate: "crwdns11384:0%{user_name}crwdnd11384:0%{resource_name}crwdne11384:0"
+        export: "crwdns11386:0%{user_name}crwdnd11386:0%{resource_name}crwdne11386:0"
+        import: "crwdns11388:0%{user_name}crwdnd11388:0%{resource_name}crwdne11388:0"
+        publish: "crwdns11390:0%{user_name}crwdnd11390:0%{resource_name}crwdne11390:0"
+        unpublish: "crwdns11392:0%{user_name}crwdnd11392:0%{resource_name}crwdne11392:0"
+        update: "crwdns11394:0%{user_name}crwdnd11394:0%{resource_name}crwdne11394:0"
+      participatory_process_group:
+        create: "crwdns11396:0%{user_name}crwdnd11396:0%{resource_name}crwdne11396:0"
+        update: "crwdns11398:0%{user_name}crwdnd11398:0%{resource_name}crwdne11398:0"
+      participatory_process_step:
+        activate: "crwdns11400:0%{user_name}crwdnd11400:0%{resource_name}crwdnd11400:0%{space_name}crwdne11400:0"
+        create: "crwdns11402:0%{user_name}crwdnd11402:0%{resource_name}crwdnd11402:0%{space_name}crwdne11402:0"
+        delete: "crwdns11404:0%{user_name}crwdnd11404:0%{resource_name}crwdnd11404:0%{space_name}crwdne11404:0"
+        update: "crwdns11406:0%{user_name}crwdnd11406:0%{resource_name}crwdnd11406:0%{space_name}crwdne11406:0"
+      participatory_process_type:
+        create: "crwdns11408:0%{user_name}crwdnd11408:0%{resource_name}crwdne11408:0"
+        delete: "crwdns11410:0%{user_name}crwdnd11410:0%{resource_name}crwdne11410:0"
+        update: "crwdns11412:0%{user_name}crwdnd11412:0%{resource_name}crwdne11412:0"
+      participatory_process_user_role:
+        create: "crwdns11414:0%{user_name}crwdnd11414:0%{resource_name}crwdnd11414:0%{space_name}crwdne11414:0"
+        delete: "crwdns11416:0%{user_name}crwdnd11416:0%{resource_name}crwdnd11416:0%{space_name}crwdne11416:0"
+        update: "crwdns11418:0%{user_name}crwdnd11418:0%{resource_name}crwdnd11418:0%{space_name}crwdne11418:0"
+    events:
+      participatory_process:
+        role_assigned:
+          email_intro: crwdns11420:0%{role}crwdnd11420:0%{resource_title}crwdne11420:0
+          email_outro: crwdns11422:0%{role}crwdnd11422:0%{resource_title}crwdne11422:0
+          email_subject: crwdns11424:0%{role}crwdnd11424:0%{resource_title}crwdne11424:0
+          notification_title: crwdns11426:0%{role}crwdnd11426:0%{resource_url}crwdnd11426:0%{resource_title}crwdne11426:0
+        step_activated:
+          email_intro: 'crwdns11428:0%{resource_title}crwdnd11428:0%{participatory_space_title}crwdne11428:0'
+          email_outro: crwdns11430:0%{participatory_space_title}crwdne11430:0
+          email_subject: crwdns11432:0%{participatory_space_title}crwdne11432:0
+          notification_title: crwdns11434:0%{resource_title}crwdnd11434:0%{resource_path}crwdnd11434:0%{participatory_space_title}crwdne11434:0
+        step_changed:
+          email_intro: 'crwdns11436:0%{resource_title}crwdnd11436:0%{participatory_space_title}crwdne11436:0'
+          email_outro: crwdns11438:0%{participatory_space_title}crwdne11438:0
+          email_subject: crwdns11440:0%{participatory_space_title}crwdne11440:0
+          notification_title: crwdns11442:0%{resource_path}crwdnd11442:0%{resource_title}crwdnd11442:0%{participatory_space_url}crwdnd11442:0%{participatory_space_title}crwdne11442:0
+    help:
+      participatory_spaces:
+        participatory_processes:
+          contextual: "crwdns11444:0crwdne11444:0"
+          page: "crwdns11446:0crwdne11446:0"
+          title: crwdns11448:0crwdne11448:0
+    log:
+      value_types:
+        participatory_process_type_presenter:
+          not_found: 'crwdns11450:0%{id}crwdne11450:0'
+    menu:
+      processes: crwdns11452:0crwdne11452:0
+    metrics:
+      participatory_processes:
+        description: crwdns11454:0crwdne11454:0
+        object: crwdns11456:0crwdne11456:0
+        title: crwdns11458:0crwdne11458:0
+    participatory_process_groups:
+      content_blocks:
+        extra_data:
+          developer_group: crwdns11460:0crwdne11460:0
+          name: crwdns11462:0crwdne11462:0
+          participatory_scope: crwdns11464:0crwdne11464:0
+          participatory_structure: crwdns11466:0crwdne11466:0
+          target: crwdns11468:0crwdne11468:0
+        html:
+          name: crwdns11470:0crwdne11470:0
+        html_1:
+          name: crwdns11472:0crwdne11472:0
+        html_2:
+          name: crwdns11474:0crwdne11474:0
+        html_3:
+          name: crwdns11476:0crwdne11476:0
+        main_data:
+          name: crwdns11478:0crwdne11478:0
+        participatory_processes:
+          active: crwdns11480:0crwdne11480:0
+          name: crwdns11482:0crwdne11482:0
+        stats:
+          name: crwdns11484:0crwdne11484:0
+        title:
+          meta_scope: crwdns11486:0crwdne11486:0
+          participatory_processes:
+            one: crwdns11488:1crwdne11488:1
+            other: "crwdns11488:5%{count}crwdne11488:5"
+      show:
+        title: crwdns11490:0crwdne11490:0
+    participatory_process_steps:
+      index:
+        process_steps: crwdns11492:0crwdne11492:0
+    participatory_processes:
+      admin:
+        content_blocks:
+          highlighted_processes:
+            active: crwdns11494:0crwdne11494:0
+            all: crwdns11496:0crwdne11496:0
+            max_results: crwdns11498:0crwdne11498:0
+            selection_criteria: crwdns11500:0crwdne11500:0
+        new_import:
+          accepted_types:
+            json: crwdns11502:0crwdne11502:0
+        participatory_process_copies:
+          form:
+            slug_help_html: 'crwdns11504:0%{url}crwdne11504:0'
+        participatory_process_groups:
+          form:
+            metadata: crwdns11506:0crwdne11506:0
+            title: crwdns11508:0crwdne11508:0
+            visibility: crwdns11510:0crwdne11510:0
+        participatory_process_imports:
+          form:
+            document_legend: crwdns11512:0crwdne11512:0
+            slug_help_html: 'crwdns11514:0%{url}crwdne11514:0'
+        participatory_process_steps:
+          form:
+            cta_path_help_html: 'crwdns11516:0%{url}crwdne11516:0'
+            cta_text_help: crwdns11518:0crwdne11518:0
+        participatory_processes:
+          form:
+            announcement_help: crwdns11520:0crwdne11520:0
+            duration: crwdns11522:0crwdne11522:0
+            filters: crwdns11524:0crwdne11524:0
+            images: crwdns11526:0crwdne11526:0
+            metadata: crwdns11528:0crwdne11528:0
+            other: crwdns11530:0crwdne11530:0
+            related_processes: crwdns11532:0crwdne11532:0
+            scope_type_max_depth_help: crwdns11534:0crwdne11534:0
+            select_an_area: crwdns11536:0crwdne11536:0
+            select_participatory_process_type: crwdns11538:0crwdne11538:0
+            select_process_group: crwdns11540:0crwdne11540:0
+            slug_help_html: 'crwdns11542:0%{url}crwdne11542:0'
+            title: crwdns11544:0crwdne11544:0
+            visibility: crwdns11546:0crwdne11546:0
+      content_blocks:
+        extra_data:
+          name: crwdns11548:0crwdne11548:0
+        hero:
+          name: crwdns11550:0crwdne11550:0
+        highlighted_processes:
+          name: crwdns11552:0crwdne11552:0
+        related_processes:
+          name: crwdns11554:0crwdne11554:0
+      index:
+        title: crwdns11556:0crwdne11556:0
+      last_activity:
+        new_participatory_process: 'crwdns11558:0crwdne11558:0'
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: crwdns11560:0crwdne11560:0
+            see_all_spaces: crwdns11562:0crwdne11562:0
+      participatory_process_steps:
+        index:
+          back_to_process: crwdns11564:0crwdne11564:0
+      participatory_processes:
+        description:
+          area_name: crwdns11566:0crwdne11566:0
+          data: crwdns11568:0crwdne11568:0
+          developer_group: crwdns11570:0crwdne11570:0
+          local_area: crwdns11572:0crwdne11572:0
+          meta_scope: crwdns11574:0crwdne11574:0
+          participatory_scope: crwdns11576:0crwdne11576:0
+          participatory_structure: crwdns11578:0crwdne11578:0
+          target: crwdns11580:0crwdne11580:0
+          title: crwdns11582:0crwdne11582:0
+        filters:
+          all_types: crwdns11584:0crwdne11584:0
+          counters:
+            active:
+              one: crwdns11586:1crwdne11586:1
+              other: "crwdns11586:5%{count}crwdne11586:5"
+            all:
+              one: crwdns11588:1crwdne11588:1
+              other: "crwdns11588:5%{count}crwdne11588:5"
+            past:
+              one: crwdns11590:1crwdne11590:1
+              other: "crwdns11590:5%{count}crwdne11590:5"
+            upcoming:
+              one: crwdns11592:1crwdne11592:1
+              other: "crwdns11592:5%{count}crwdne11592:5"
+          date: crwdns11594:0crwdne11594:0
+          explanations:
+            no_active: crwdns11596:0crwdne11596:0
+            no_active_nor_upcoming: crwdns11598:0crwdne11598:0
+            no_active_nor_upcoming_callout: crwdns11600:0crwdne11600:0
+          filter_by: crwdns11602:0crwdne11602:0
+          names:
+            active: crwdns11604:0crwdne11604:0
+            all: crwdns11606:0crwdne11606:0
+            past: crwdns11608:0crwdne11608:0
+            upcoming: crwdns11610:0crwdne11610:0
+          see: crwdns11612:0crwdne11612:0
+          type: crwdns11614:0crwdne11614:0
+        show:
+          title: crwdns11616:0crwdne11616:0
+      show:
+        belongs_to_group: crwdns11618:0crwdne11618:0
+        private_space: crwdns11620:0crwdne11620:0
+        related_processes: crwdns11622:0crwdne11622:0
+    statistics:
+      processes_count: crwdns11624:0crwdne11624:0
+  layouts:
+    decidim:
+      participatory_process_groups:
+        participatory_process_group:
+          browse: crwdns11626:0crwdne11626:0
+          browse_resource: crwdns11628:0%{resource_name}crwdne11628:0
+          processes_count: 'crwdns11630:0crwdne11630:0'
+      participatory_processes:
+        index:
+          promoted_processes: crwdns11632:0crwdne11632:0
+        participatory_process:
+          active_step: crwdns11634:0crwdne11634:0
+          more_info: crwdns11636:0crwdne11636:0
+          more_info_about: crwdns11638:0%{resource_name}crwdne11638:0
+          take_part: crwdns11640:0crwdne11640:0
+          take_part_in: crwdns11642:0%{resource_name}crwdne11642:0

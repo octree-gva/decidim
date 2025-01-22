@@ -1,1 +1,288 @@
+---
 sw:
+  activemodel:
+    attributes:
+      oauth_application:
+        name: Jina la Ombi la OAuth
+        organization_logo: Nembo ya shirika (mraba)
+        organization_name: Shirika
+        organization_url: URL ya shirika
+        redirect_uri: Elekeza URI kwingine
+      organization:
+        address: Jina la mpangishaji wa SMTP
+        from_email: Anwani ya barua pepe
+        from_label: Lebo
+        password: Nenosiri
+        port: Port
+        user_name: Jina la mtumiaji
+      organization_file_uploads:
+        allowed_content_types:
+          admin: Aina za MIME za usimamizi
+          default: Aina chaguomsingi za MIME
+        allowed_file_extensions:
+          admin: Viendelezi vya faili za msimamizi
+          default: Viendelezi chaguomsingi vya faili
+          image: Viendelezi vya faili za picha
+        maximum_file_size:
+          avatar: Saizi ya faili ya avatar
+          default: Ukubwa chaguomsingi wa faili
+    errors:
+      models:
+        oauth_application:
+          attributes:
+            redirect_uri:
+              must_be_ssl: URI ya kuelekeza kwingine lazima iwe SSL URI
+        organization:
+          attributes:
+            password:
+              secret_key: Unahitaji kufafanua utofauti wa mazingira wa SECRET_KEY_BASE ili uweze kuhifadhi sehemu hii
+  decidim:
+    system:
+      actions:
+        confirm_destroy: Je, una uhakika unataka kufuta hii?
+        destroy: Futa
+        edit: Hariri
+        new_admin: Msimamizi mpya
+        new_oauth_application: Programu mpya ya OAUTH
+        new_organization: Shirika jipya
+        save: Hifadhi
+        title: Vitendo
+      admins:
+        create:
+          error: Kulikuwa na tatizo la kuunda msimamizi mpya.
+          success: Msimamizi amefaulu kuunda.
+        destroy:
+          success: Msimamizi amefaulu kufutwa.
+        edit:
+          title: Badilisha msimamizi
+          update: Sasisha
+        index:
+          title: Wasimamizi
+        new:
+          create: Unda
+          title: Msimamizi mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha msimamizi huyu.
+          success: Msimamizi amesasishwa.
+      dashboard:
+        show:
+          admins: Wasimamizi
+          current_organizations: Mashirika ya sasa
+          system_checks: Ukaguzi wa mfumo
+      default_pages:
+        placeholders:
+          content: Tafadhali ongeza maudhui yenye maana kwa %{page} ukurasa tuli kwenye dashibodi ya msimamizi.
+          summary: Tafadhali ongeza muhtasari wa maana kwa %{page} ukurasa tuli kwenye dashibodi ya msimamizi.
+          title: Kichwa chaguomsingi cha %{page}
+        terms-of-service: Masharti ya huduma
+      devise:
+        passwords:
+          edit:
+            change_your_password: Badilisha nenosiri lako
+            minimum_characters: "(chini ya herufi %{minimum})"
+          new:
+            forgot_your_password: Umesahau nenosiri lako
+            send_me_reset_password_instructions: Nitumie maagizo ya kuweka upya nenosiri
+        shared:
+          links:
+            did_not_receive_confirmation_instructions?: Hukupokea maagizo ya uthibitishaji?
+            did_not_receive_unlock_instructions?: Hukupokea maagizo ya kufungua?
+            forgot_your_password?: Je, umesahau nenosiri lako?
+            log_in: Ingia
+            sign_up: Fungua akaunti
+      menu:
+        admins: Wasimamizi
+        dashboard: Dashibodi
+        oauth_applications: Maombi ya OAuth
+        organizations: Mashirika
+      models:
+        admin:
+          fields:
+            created_at: Imeundwa saa
+            email: Barua pepe
+          validations:
+            email_uniqueness: msimamizi mwingine aliye na barua pepe sawa tayari yupo
+        oauth_application:
+          fields:
+            created_at: Imeundwa saa
+            name: Jina la programu ya OAuth
+            organization_name: Shirika
+        organization:
+          actions:
+            save_and_invite: Unda shirika na mwalike msimamizi
+          fields:
+            content_security_policy: Sera ya usalama wa maudhui
+            created_at: Imeundwa saa
+            file_upload_settings: Mipangilio ya upakiaji wa faili
+            name: Jina
+            omniauth_settings: Mipangilio ya Omniauth
+            smtp_settings: Mipangilio ya SMTP
+      oauth_applications:
+        create:
+          error: Kulikuwa na tatizo la kuunda programu hii.
+          success: Programu imeundwa kwa ufanisi.
+        destroy:
+          error: Kulikuwa na tatizo la kuharibu programu hii.
+          success: Programu imeharibiwa.
+        edit:
+          save: Hifadhi
+          title: Hariri programu
+        form:
+          select_organization: Chagua shirika
+        index:
+          confirm_delete: Je, una uhakika unataka kufuta programu hii?
+          title: Maombi ya OAuth
+        new:
+          save: Hifadhi
+          title: Programu mpya
+        update:
+          error: Kulikuwa na tatizo la kusasisha programu hii.
+          success: Programu imesasishwa.
+      organizations:
+        advanced_settings:
+          hide: Ficha mipangilio ya kina
+          show: Onyesha mipangilio ya hali ya juu
+        create:
+          error: Kulikuwa na tatizo la kuunda shirika jipya.
+          error_invitation: Kulikuwa na tatizo la kuunda shirika jipya. Kagua jina la msimamizi wa shirika lako.
+          success_html: |
+            <p>
+              Shirika limeundwa.
+            </ p>
+            <ol>
+              <li>Huenda ukahitaji kusasisha msimbo wako wa maombi, ili kuruhusu maombi kwa %{host} unahitaji kuongeza yafuatayo kwenye yako.
+              usanidi wa mazingira (yaani <code>config/environment/production.rb</code>) au <code>config/application.rb</code> yako:
+                <p> config.hosts << "%{host}" </p>
+              </li>
+              <li>
+                Baada ya hayo kufanyika, utaweza kufikia mfumo wako kupitia <a href="http://%{host}">http://%{host}</a>
+              </li>
+              <li>
+                Tumetuma barua pepe kwa <b>%{email}</b> ambayo unahitaji kuthibitisha.
+              </li>
+            </ol>
+        csp_settings:
+          connect_src: Unganisha src
+          connect_src_hint: |
+            Maagizo ya kuunganisha-src huzuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <script>.
+            Jukwaa litaongeza 'binafsi', lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          default_src: src chaguomsingi
+          default_src_hint: |
+            Maagizo ya chaguo-msingi ya src ni sera chaguo-msingi ya kupakia maudhui kama vile JavaScript, Picha, CSS, Fonti, maombi ya AJAX, Fremu, HTML5 Media.
+            Jukwaa litaongeza "'binafsi' 'sio salama-inline'", lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          font_src: Fonti src
+          font_src_hint: |
+            Maagizo ya font-src yanazuia URL zinazoweza kupakiwa kwa kutumia @font-face.
+            Jukwaa litaongeza 'binafsi', lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          frame_src: Src ya fremu
+          frame_src_hint: |
+            Maagizo ya fremu-src huzuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <frame>, <iframe> na <object>.
+            Jukwaa litaongeza 'binafsi', lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          img_src: Img src
+          img_src_hint: |
+            Maagizo ya img-src yanazuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <img>, <image>, <picture> na <svg>.
+            Jukwaa litaongeza 'binafsi', lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          media_src: Media src
+          media_src_hint: |
+            Maagizo ya media-src yanazuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <video>, <audio> na <source>.
+            Jukwaa litaongeza 'binafsi', lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          script_src: Script src
+          script_src_hint: |
+            Maagizo ya hati-src huzuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <script>.
+            Jukwaa litaongeza "'binafsi' 'sio salama-inline' 'si salama-eval'", lakini inakuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+          style_src: Style src
+          style_src_hint: |
+            Maagizo ya mtindo-src huzuia URL zinazoweza kupakiwa kwa kutumia vipengele vya <style>.
+            Jukwaa litaongeza "'binafsi' 'sio salama-inline'", lakini hukuruhusu kuongeza zaidi. iache wazi ikiwa huna uhakika.
+        edit:
+          confirm_resend_invitation: Je, una uhakika unataka kutuma mwaliko upya?
+          resend_invitation: Tuma tena mwaliko
+          secondary_hosts_hint: Ingiza kila mmoja wao kwenye mstari mpya
+          title: Badilisha shirika
+        file_upload_settings:
+          content_types:
+            admin_hint: Aina hizi za MIME zinaruhusiwa kwa upakiaji wa sehemu ya wasimamizi. Watumiaji wasimamizi wanapaswa kufahamu hatari za kupakia baadhi ya fomati za hati, kwa hivyo unaweza kutarajia wawe waangalifu zaidi na upakiaji wa faili.
+            default_hint: Aina hizi za MIME zinaruhusiwa kwa watumiaji wote kwa chaguomsingi.
+            intro_html: Unaongeza kadi-mwitu zilizo na herufi ya nyota ya aina za MIME, k.m. <code>picha/*</code>.
+            title: Aina za MIME zinazoruhusiwa
+          file_extensions:
+            admin_hint: Viendelezi hivi vya faili vinaruhusiwa kwa upakiaji wa sehemu ya msimamizi. Watumiaji wasimamizi wanapaswa kufahamu hatari za kupakia baadhi ya fomati za hati, kwa hivyo unaweza kutarajia wawe waangalifu zaidi na upakiaji wa faili.
+            default_hint: Viendelezi hivi vya faili vinaruhusiwa kwa watumiaji wote kwa chaguo-msingi.
+            image_hint: Viendelezi hivi vya kushindwa vinaruhusiwa kwa aina yoyote ya upakiaji wa picha.
+            title: Viendelezi vya faili vinavyoruhusiwa
+          file_sizes:
+            avatar_hint: Megabytes (MB). Kikomo hiki cha ukubwa wa faili kinatumika kwa upakiaji wa picha ya avatar.
+            default_hint: Megabytes (MB). Kikomo hiki cha ukubwa wa faili ndicho chaguomsingi ambacho hutumika kwa upakiaji wote wa faili isipokuwa kubainishwa vinginevyo.
+            title: Upeo wa ukubwa wa faili
+          intro: |
+            Tafadhali kuwa mwangalifu zaidi unapofikiria kubadilisha mipangilio hii. Ukiruhusu kidogo, ni bora zaidi.
+            Kuruhusu viendelezi mahususi vya faili au aina za MIME kunaweza kuwaweka watumiaji wa mfumo kwenye hatari za usalama na kunaweza pia kuathiri ufikiaji wa tovuti.
+        index:
+          title: Mashirika
+        new:
+          default: Chaguomsingi?
+          enabled: Imewashwa
+          locale: Eneo
+          organization_admin_email_hint: Tutatuma barua pepe kwa anwani hii ili uweze kuithibitisha na kusanidi nenosiri lako.
+          reference_prefix_hint: Kiambishi awali cha marejeleo kinatumika kutambua rasilimali kwa njia ya kipekee katika shirika lote.
+          secondary_hosts_hint: Ingiza kila mmoja wao kwenye mstari mpya.
+          title: Shirika jipya
+        omniauth_settings:
+          decidim:
+            client_id: ID ya Mteja
+            client_secret: Siri ya mteja
+            site_url: URL ya tovuti
+          enabled: Imewashwa
+          enabled_by_default: Mtoa huduma huyu amewezeshwa kwa chaguomsingi. Inaweza kuhaririwa lakini isizime.
+          facebook:
+            app_id: App ID
+            app_secret: Siri ya programu
+          google_oauth2:
+            client_id: ID ya Mteja
+            client_secret: Siri ya mteja
+          icon: Aikoni
+          icon_path: Njia ya ikoni
+          twitter:
+            api_key: Kitufe cha API
+            api_secret: Siri ya API
+        resend_invitation:
+          error: Kulikuwa na tatizo la kutuma mwaliko.
+          success: Mwaliko umetumwa.
+        smtp_settings:
+          fieldsets:
+            sender: Mtumaji
+          instructions:
+            from_label: 'Mtumaji barua pepe atakuwa: "your-organization-name <your-organization@example.org>". Acha wazi ili kutumia jina sawa na lililofafanuliwa kwa shirika.'
+          placeholder:
+            from_email: your-organization@example.org
+            from_label: your-organization-name
+        update:
+          error: Kulikuwa na tatizo la kusasisha shirika hili.
+          success: Shirika limesasishwa.
+        users_registration_mode:
+          disabled: Ufikiaji pekee unaweza kufanywa na akaunti za nje
+          enabled: Ruhusu washiriki kuunda akaunti na kuingia
+          existing: Usiruhusu washiriki kuunda akaunti, lakini waruhusu washiriki waliopo kuingia
+      shared:
+        notices:
+          no_organization_warning_html: Ni lazima uunde shirika ili uanze. Hakikisha umesoma %{guide} kabla ya kuendelea.
+          our_getting_started_guide: mwongozo wetu wa kuanza
+        organizations_list:
+          confirm_resend_invitation: Je, una uhakika unataka kutuma mwaliko upya?
+          resend_invitation: Tuma tena mwaliko
+      system_checks:
+        active_job_queue:
+          decidim_documentation: Hati ya Decidim
+          error: Foleni ya ActiveJob haijawekwa. Huu sio usanidi unaopendekezwa kwa uzalishaji. Soma zaidi katika %{error_extra}.
+          success: Foleni ya ActiveJob imesanidiwa ipasavyo.
+        secret_key:
+          error: 'Ufunguo wa siri haujafafanuliwa kwa usahihi. Tafadhali hifadhi kwa utofauti wa mazingira wa SECRET_KEY_BASE na uanze upya seva: %{error_extra}'
+          success: Ufunguo wa siri umeundwa kwa usahihi.
+      titles:
+        dashboard: Dashibodi
+        decidim: Decidim
+  layouts:
+    decidim:
+      system:
+        login_items:
+          logout: Ondoka

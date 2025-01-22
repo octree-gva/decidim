@@ -1,1 +1,306 @@
+---
 sw:
+  activemodel:
+    attributes:
+      config:
+        available_methods: Mbinu zinazopatikana
+        offline: Nje ya mtandao
+        offline_explanation: Maagizo ya uthibitishaji wa nje ya mtandao
+        online: Mtandaoni
+      confirmation:
+        verification_code: Nambari ya uthibitishaji
+      id_document_information:
+        document_number: Nambari ya hati (na barua)
+        document_type: Aina ya hati
+      id_document_upload:
+        document_number: Nambari ya hati (na barua)
+        document_type: Aina ya hati yako
+        user: Mshiriki
+        verification_attachment: Nakala iliyochanganuliwa ya hati yako
+      mobile_phone:
+        mobile_phone_number: Nambari ya simu ya rununu
+      offline_confirmation:
+        email: Barua pepe ya mshiriki
+      postal_letter_address:
+        full_address: Anwani kamili
+      postal_letter_confirmation:
+        verification_code: Nambari ya uthibitishaji
+      postal_letter_postage:
+        full_address: Anwani kamili
+        verification_code: Nambari ya uthibitishaji
+    errors:
+      models:
+        census_data:
+          attributes:
+            file:
+              malformed: Faili ya kuleta yenye hitilafu, tafadhali soma maagizo kwa makini na uhakikishe kuwa faili imesimbwa UTF-8.
+  decidim:
+    admin:
+      menu:
+        authorization_revocation:
+          before_date_info: Inafaa ikiwa mchakato tayari umeanza na unataka kubatilisha ruhusa za mchakato uliopita.
+          button: Batilisha yote
+          button_before: Batilisha kabla ya tarehe
+          destroy:
+            confirm: Kubatilisha kabla ya tarehe uidhinishaji hauwezi kutenduliwa. Je, una uhakika ungependa kuendelea?
+            confirm_all: Kubatilisha uidhinishaji wote hakuwezi kutenduliwa. Je, una uhakika ungependa kuendelea?
+          destroy_nok: Kumekuwa na tatizo wakati wa kubatilisha uidhinishaji.
+          destroy_ok: Uidhinishaji wote unaolingana umebatilishwa.
+          info: Kuna jumla ya washiriki %{count} waliothibitishwa.
+          no_data: Hakuna washiriki waliothibitishwa.
+          title: Ubatilishaji wa uidhinishaji
+        authorization_workflows: Uidhinishaji
+    admin_log:
+      organization:
+        update_id_documents_config: "%{user_name} alisasisha usanidi wa uidhinishaji wa Hati za Utambulisho"
+      user:
+        grant_id_documents_offline_verification: "%{user_name} imethibitishwa %{resource_name} kwa kutumia uidhinishaji wa Hati za Utambulisho wa nje ya mtandao"
+    authorization_handlers:
+      admin:
+        another_dummy_authorization_handler:
+          help:
+            - Mfano wa kidhibiti cha uidhinishaji ili wasanidi waweze kuelewa jinsi uthibitishaji rahisi unavyofanya kazi.
+            - Inalenga wasanidi programu ili waweze kuelewa jinsi ya kutekeleza mfumo wao wa uthibitishaji.
+            - Thibitisha kwa kutambulisha nambari ya pasipoti inayoanza na "A".
+        csv_census:
+          help:
+            - Wasimamizi hupakia CSV yenye barua pepe za washiriki wanaokubaliwa
+            - Washiriki walio na barua pepe katika faili hiyo ya CSV pekee ndio wanaoweza kuthibitishwa.
+        default:
+          help:
+            - Usaidizi wa kidhibiti cha uidhinishaji haujafafanuliwa.
+            - Msanidi anahitaji kufafanua usaidizi katika ufunguo wa tafsiri (i18n) "%{authorization_handler}"
+        dummy_authorization_handler:
+          help:
+            - Mfano wa kidhibiti cha uidhinishaji ili wasanidi waweze kuelewa jinsi uthibitishaji rahisi unavyofanya kazi.
+            - Inalenga wasanidi programu ili waweze kuelewa jinsi ya kutekeleza mfumo wao wa uthibitishaji.
+            - Thibitisha kwa kutambulisha nambari ya hati inayoishia na "X".
+        id_documents:
+          help:
+            - Watumiaji hujaza taarifa zao za utambulisho na kupakia nakala ya hati zao.
+            - Unajaza maelezo yaliyopo kwenye picha iliyopakiwa.
+            - Habari inapaswa kuendana na chochote ambacho mtumiaji alijaza.
+            - Ikiwa huwezi kuona maelezo kwa uwazi au huwezi kuyathibitisha, unaweza kukataa ombi na mtumiaji ataweza kulirekebisha.
+        postal_letter:
+          help:
+            - Washiriki wanaomba nambari ya kuthibitisha kutumwa kwa anwani zao.
+            - Unatuma barua kwa anwani yao na nambari ya uthibitishaji.
+            - Unaweka alama kuwa barua imetumwa.
+            - Mara tu unapoweka alama kuwa barua imetumwa, mshiriki ataweza kutambulisha msimbo na kuthibitishwa.
+        sms:
+          help:
+            - Washiriki wanaomba nambari ya kuthibitisha kutumwa kwa simu zao.
+            - Wanahitaji kutambulisha msimbo ili kuthibitishwa.
+            - Ikiwa hawatapokea nambari ya kuthibitisha, wanaweza kuiomba tena.
+      csv_census:
+        explanation: Thibitisha kwa kutumia sensa ya shirika.
+        name: Sensa ya shirika
+      direct: Moja kwa moja
+      help: Msaada
+      id_documents:
+        explanation: Pakia hati zako za utambulisho ili tuweze kuangalia utambulisho wako.
+        name: Hati za utambulisho
+      multistep: Hatua nyingi
+      name: Jina
+      postal_letter:
+        explanation: Tutakutumia barua ya posta yenye msimbo ambao utalazimika kuandika ili tuweze kuthibitisha anwani yako.
+        name: Msimbo kwa barua ya posta
+    events:
+      verifications:
+        verify_with_managed_user:
+          email_intro: Mshiriki <a href="%{resource_url}">%{resource_title}</a> amejaribu kujithibitisha kwa data ya mshiriki mwingine (<a href="%{managed_user_url}">%{managed_user_name}</a> a>).
+          email_outro: Angalia <a href="%{conflicts_url}">orodha ya migogoro ya Uthibitishaji</a> na uwasiliane na mshiriki ili kuthibitisha maelezo yake na kutatua suala hilo.
+          email_subject: Jaribio la uthibitishaji lililoshindikana dhidi ya mshiriki mwingine
+          notification_title: Mshiriki <a href="%{resource_path}">%{resource_title}</a> amejaribu kujithibitisha kwa data ya mshiriki mwingine (<a href="%{managed_user_path}">%{managed_user_name}</a>).
+    verifications:
+      authorizations:
+        authorization_metadata:
+          info: 'Hii ndio data ya uthibitishaji wa sasa:'
+          no_data_stored: Hakuna data iliyohifadhiwa.
+        create:
+          error: Kulikuwa na tatizo la kuunda uidhinishaji.
+          success: Umeidhinishwa kwa ufanisi.
+          transferred: 'Tumerejesha data ifuatayo ya ushiriki kulingana na uidhinishaji wako:'
+          unconfirmed: Unahitaji kuthibitisha barua pepe yako ili kujiidhinisha.
+        destroy:
+          error: Kulikuwa na tatizo katika kufuta uidhinishaji.
+          success: Umefaulu kufuta uidhinishaji.
+        first_login:
+          actions:
+            another_dummy_authorization_handler: Thibitisha dhidi ya mfano mwingine wa kidhibiti cha uidhinishaji
+            csv_census: Thibitisha dhidi ya sensa ya shirika
+            dummy_authorization_handler: Thibitisha dhidi ya kidhibiti cha uidhinishaji cha mfano
+            dummy_authorization_workflow: Thibitisha dhidi ya mtiririko wa uidhinishaji wa mfano
+            id_documents: Thibitishwa kwa kupakia hati yako ya utambulisho
+            postal_letter: Thibitisha kwa kupokea nambari ya kuthibitisha kupitia barua ya posta
+            sms: Thibitishwa kwa kupokea nambari ya kuthibitisha ya SMS
+          title: Thibitisha utambulisho wako
+          verify_with_these_options: 'Hizi ndizo chaguo zinazopatikana ili kuthibitisha utambulisho wako:'
+        index:
+          expired_verification: Muda wa uthibitishaji umekwisha
+          granted_verification: Uthibitishaji umetolewa
+          introduce_code: Tambulisha msimbo
+          pending_verification: Inasubiri uthibitishaji
+          show_renew_info: Bofya ili upya uthibitishaji
+          subscribe: Jisajili
+          unauthorized_methods: Mbinu za uthibitishaji
+        new:
+          authorize: Tuma
+          authorize_with: Thibitisha kwa %{authorizer}
+        renew_modal:
+          cancel: Ghairi
+          continue: Endelea
+          info_renew: Ikiwa ungependa kusasisha data, endelea na usasishaji.
+          title: Uthibitishaji upya
+        skip_verification: Unaweza kuruka hii kwa sasa na %{link}
+        start_exploring: anza kuchunguza
+      csv_census:
+        admin:
+          census:
+            create:
+              error: Kulikuwa na hitilafu katika kuleta sensa.
+              success: Imefaulu kuleta bidhaa %{count} (%{errors} errors)
+            destroy_all:
+              success: Data yote ya sensa imefutwa.
+          destroy:
+            confirm: Futa sensa yote haiwezi kutenduliwa. Je, una uhakika ungependa kuendelea?
+            title: Futa data zote za sensa
+          index:
+            data: Kuna %{count} rekodi zilizopakiwa kwa jumla. Tarehe ya mwisho ya kupakiwa ilikuwa %{due_date}.
+            empty: Hakuna data ya sensa. Tumia fomu iliyo hapa chini ili kuileta kwa kutumia faili ya CSV.
+            title: Data ya sasa ya sensa
+          instructions:
+            body: Ili kufanya hivyo lazima uweke usimamizi wa mfumo na uongeze idhini ya csv_census kwa shirika
+            title: Unahitaji kuwezesha sensa ya CSV kwa shirika hili
+          new:
+            example: |
+              john.doe@example.org
+              jane.doe@example.org
+            file: ".csv faili iliyo na data ya barua pepe"
+            info: 'Lazima iwe faili katika umbizo la CSV na safu wima moja tu yenye anwani ya barua pepe:'
+            submit: Pakia faili
+            title: Pakia sensa mpya
+        authorizations:
+          new:
+            error: Hatukuweza kuthibitisha akaunti yako au hauko katika sensa ya shirika.
+            success: Akaunti yako imethibitishwa.
+      dummy_authorization:
+        extra_explanation:
+          postal_codes:
+            one: Kushiriki ni kwa washiriki walio na msimbo wa posta %{postal_codes} pekee.
+            other: 'Ushiriki ni wa washiriki walio na mojawapo ya misimbo ifuatayo ya posta: %{postal_codes}.'
+          scope: Kushiriki ni kwa washiriki walio na upeo wa %{scope_name} pekee.
+          user_postal_codes:
+            one: Kushiriki ni kwa washiriki walio na msimbo wa posta %{postal_codes} pekee, na msimbo wako wa posta ni %{user_postal_code}.
+            other: 'Ushiriki ni wa washiriki walio na mojawapo ya misimbo ifuatayo ya posta: %{postal_codes}. Msimbo wako wa posta ni %{user_postal_code}.'
+          user_scope: Kushiriki ni kwa washiriki walio na upeo wa %{scope_name} pekee, na upeo wako ni %{user_scope_name}.
+      id_documents:
+        admin:
+          config:
+            edit:
+              title: Usanidi wa hati za kitambulisho
+              update: Sasisha
+            update:
+              error: Kulikuwa na tatizo la kusasisha usanidi.
+              success: Mipangilio imesasishwa.
+          confirmations:
+            create:
+              error: Uthibitishaji haulingani. Tafadhali jaribu tena au ukatae uthibitishaji ili mshiriki aweze kuurekebisha.
+              success: Mshiriki amethibitishwa.
+            new:
+              introduce_user_data: Tambulisha data kwenye picha
+              reject: Kataa
+              verify: Thibitisha
+          offline_confirmations:
+            create:
+              error: Uthibitishaji haulingani. Tafadhali jaribu tena au mwambie mshiriki airekebishe.
+              success: Mshiriki amethibitishwa.
+            new:
+              cancel: Ghairi
+              introduce_user_data: Tambulisha barua pepe ya mshiriki na data ya hati
+              verify: Thibitisha
+          pending_authorizations:
+            index:
+              config: Sanidi
+              offline_verification: Uthibitishaji wa nje ya mtandao
+              title: Inasubiri uthibitishaji mtandaoni
+              verification_number: 'Uthibitishaji #%{n}'
+          rejections:
+            create:
+              success: Uthibitishaji umekataliwa. Mshiriki ataulizwa kurekebisha hati zao.
+        authorizations:
+          choose:
+            choose_a_type: 'Tafadhali chagua jinsi unavyotaka kuthibitishwa:'
+            offline: Nje ya mtandao
+            online: Mtandaoni
+            title: Jithibitishe kwa kutumia hati yako ya utambulisho
+          create:
+            error: Kulikuwa na tatizo la kupakia hati yako.
+            success: Hati imepakiwa.
+          edit:
+            being_reviewed: Tunakagua hati zako. Utathibitishwa hivi karibuni.
+            offline: Tumia uthibitishaji wa nje ya mtandao
+            online: Tumia uthibitishaji mtandaoni
+            rejection_clarity: Hakikisha maelezo yanaonekana wazi katika picha iliyopakiwa.
+            rejection_correctness: Hakikisha maelezo uliyoweka ni sahihi.
+            rejection_notice: Kulikuwa na tatizo na uthibitishaji wako. Tafadhali jaribu tena.
+            send: Omba uthibitisho tena
+          new:
+            send: Omba uthibitisho
+            title: Pakia hati yako ya utambulisho
+          update:
+            error: Kulikuwa na tatizo la kupakia upya hati yako.
+            success: Hati imepakiwa upya.
+        identification_number: Nambari ya kitambulisho
+        passport: Pasipoti
+      postal_letter:
+        admin:
+          pending_authorizations:
+            index:
+              address: Anwani
+              letter_sent_at: Barua iliyotumwa kwa
+              mark_as_sent: Weka alama kuwa imetumwa
+              not_yet_sent: Bado haijatumwa
+              title: Uthibitishaji unaoendelea
+              username: Jina la utani
+              verification_code: Nambari ya uthibitishaji
+          postages:
+            create:
+              error: Hitilafu katika kuashiria barua kama imetumwa.
+              success: Barua imetiwa alama kuwa imetumwa.
+        authorizations:
+          create:
+            error: Kulikuwa na tatizo na ombi lako.
+            success: Asante! Tutatuma msimbo wa uthibitishaji kwa anwani yako.
+          edit:
+            send: Thibitisha
+            title: Tambulisha nambari ya kuthibitisha uliyopokea.
+            waiting_for_letter: Tutatuma barua kwa anwani yako na nambari yako ya uthibitishaji hivi karibuni.
+          new:
+            send: Nitumie barua
+            title: Omba nambari yako ya uthibitishaji
+          update:
+            error: Nambari yako ya uthibitishaji hailingani na yetu. Tafadhali angalia tena barua tuliyokutumia.
+            success: Hongera sana. Umethibitishwa.
+      sms:
+        authorizations:
+          create:
+            error: Kulikuwa na tatizo na ombi lako.
+            success: Asante! Tumekutumia SMS kwa simu yako.
+          destroy:
+            success: Nambari ya uthibitishaji imewekwa upya. Tafadhali ingiza tena nambari yako ya simu.
+          edit:
+            confirm_destroy: Je, una uhakika unataka kuweka upya nambari ya kuthibitisha?
+            destroy: Weka upya nambari ya kuthibitisha
+            resend: Hukupokea nambari ya kuthibitisha?
+            send: Thibitisha
+            title: Tambulisha nambari ya kuthibitisha uliyopokea
+          new:
+            send: Nitumie SMS
+            title: Omba nambari yako ya uthibitishaji
+          update:
+            error: Nambari yako ya uthibitishaji hailingani na yetu. Tafadhali angalia tena SMS tuliyokutumia.
+            success: Hongera sana. Umethibitishwa.
+  errors:
+    messages:
+      uppercase_only_letters_numbers: lazima ziwe na herufi kubwa na/au nambari pekee

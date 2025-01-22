@@ -1,1 +1,114 @@
+---
 sw:
+  activemodel:
+    attributes:
+      questionnaire:
+        title: Kichwa
+      template:
+        description: Maelezo
+        name: Jina
+  decidim:
+    admin:
+      menu:
+        templates: Violezo
+      templates:
+        actions:
+          new_template: Kiolezo kipya
+        apply:
+          error: Kulikuwa na tatizo la kutumia kiolezo hiki.
+          success: Kiolezo kimetumika.
+        copy:
+          error: Kulikuwa na tatizo katika kunakili kiolezo hiki.
+          success: Kiolezo kimenakiliwa.
+        create:
+          error: Kulikuwa na tatizo la kuunda kiolezo hiki.
+          success: Kiolezo kimeundwa kwa ufanisi.
+        destroy:
+          success: Kiolezo kimefutwa.
+        empty: Bado hakuna violezo.
+        fetch:
+          error: Haikuweza kupata kiolezo hiki. Tafadhali pakia upya ukurasa.
+        missing_resource: "(rasilimali inayokosekana)"
+        update:
+          error: Kulikuwa na tatizo la kusasisha kiolezo hiki.
+          success: Kiolezo kimesasishwa.
+      titles:
+        template_types:
+          questionnaires: Violezo vya dodoso
+        templates: Violezo
+    models:
+      questionnaire_template:
+        fields:
+          questions: Idadi ya maswali
+          title: Kichwa cha Hojaji
+      template:
+        fields:
+          created_at: Imeundwa saa
+        name: Kiolezo
+    templates:
+      admin:
+        block_user_templates:
+          edit:
+            title: Badilisha kiolezo cha ujumbe wa mtumiaji wa kuzuia
+          form:
+            save: Hifadhi
+          index:
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            title: Zuia ujumbe wa mtumiaji
+          new:
+            title: Kiolezo kipya cha ujumbe wa mtumiaji wa kizuizi
+          template_chooser:
+            select_template: Chagua jibu la kiolezo
+        proposal_answer_templates:
+          edit:
+            title: Hariri kiolezo cha jibu la pendekezo
+          form:
+            component_constraint_help: Kumbuka kuwa nafasi shirikishi pekee zenye vipengele vya aina ya "mapendekezo" ndizo zitaorodheshwa.
+            hint1_html: "<strong>%{organization}</strong> itabadilishwa na jina la shirika"
+            hint2_html: "<strong>%{name}</strong> itabadilishwa na jina la mwandishi"
+            hint3_html: "<strong>%{admin}</strong> itabadilishwa na jina la msimamizi (yule anayejibu pendekezo)"
+            hint_html: "<strong>Kidokezo:</strong> Unaweza kutumia vigeu hivi popote kwenye kiolezo cha jibu ambacho kitabadilishwa unapotumia kiolezo."
+            save: Hifadhi
+          index:
+            component_constraint: Ongeza kizuizi
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            missing_state: Hali haipo
+            proposal_state_id: Hali ya ndani
+            title: Majibu ya pendekezo
+          new:
+            title: Kiolezo kipya cha jibu la pendekezo
+          template_chooser:
+            select_template: Chagua jibu la kiolezo
+        questionnaire_templates:
+          choose:
+            create_from_template: Unda kutoka kwa kiolezo
+            description: Unakaribia kuunda dodoso mpya. Unaweza kuchagua kiolezo kilichofafanuliwa awali na kukirekebisha baadaye.
+            label: Chagua kiolezo
+            placeholder: Chagua kiolezo
+            skip_template: Ruka
+          edit:
+            edit: Hariri
+            empty: Bado hakuna maswali.
+            questionnaire: Hojaji
+            title: Badilisha kiolezo cha dodoso
+          form:
+            title: Kiolezo cha dodoso %{questionnaire_for}
+          index:
+            confirm_delete: Je, una uhakika unataka kufuta kiolezo hiki?
+            title: Violezo vya dodoso
+          new:
+            title: Kiolezo kipya cha dodoso
+          preview:
+            current_step: Hatua %{step}
+            of_total_steps: kati ya %{total_steps}
+            tos_agreement: Kwa kushiriki unakubali Sheria na Masharti yake
+      admin_log:
+        template:
+          create: "%{user_name} aliunda %{resource_name} kiolezo cha dodoso"
+          delete: "%{user_name} alifuta kiolezo cha %{resource_name} hojaji"
+          duplicate: "%{user_name} amerudufisha kiolezo cha %{resource_name} dodoso"
+          update: "%{user_name} alisasisha %{resource_name} kiolezo cha dodoso"
+      template_types:
+        block_user: Zuia ujumbe wa mtumiaji
+        proposal_answer_templates: Majibu ya pendekezo
+        questionnaires: Hojaji

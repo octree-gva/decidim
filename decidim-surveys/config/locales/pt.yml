@@ -24,13 +24,14 @@ pt:
             clean_after_publish: Eliminar respostas ao publicar o inquérito
             ends_at: Respostas aceites até
             ends_at_help: Deixar em branco se sem data específica
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos activados
             starts_at: Respostas aceites a partir de
             starts_at_help: Deixar em branco se sem data específica
           step:
             allow_answers: Permitir respostas
             allow_unregistered: Permitir que utilizadores não registados respondam ao inquérito
+            allow_unregistered_help: Se ativo, não será necessário iniciar sessão para responder ao questionário. Isso pode levar a dados pobres ou pouco confiáveis e torná-lo mais vulnerável a ataques automatizados. Usa com cautela! Considera que um participante pode responder ao mesmo questionário várias vezes, usando navegadores diferentes ou o modo "navegação privada" do seu navegador.
             announcement: Anúncio
     events:
       surveys:
@@ -53,13 +54,24 @@ pt:
       answers_count: Respostas
     surveys:
       admin:
+        component:
+          actions:
+            answers_alert: Se publicares a funcionalidade, todos os resultados serão removidos.
         exports:
           survey_user_answers: Respostas dos participantes aos inquéritos
         surveys:
           update:
             invalid: Ocorreu um problema ao guardar o inquérito.
             success: Inquérito guardado corretamente.
+      last_activity:
+        new_survey: 'Novo questionário:'
+      survey_confirmation_mailer:
+        confirmation:
+          body: Respondeste com sucesso ao questionário %{questionnaire_title} no %{participatory_space}
+          subject: Confirmação de resposta ao questionário %{questionnaire_title}
+        export_name: Respostas ao questionário
       surveys:
         answer:
           invalid: Ocorreu um problema ao responder ao inquérito.
+          spam_detected: Houve um problema ao responder ao formulário. Talvez tenhas sido rápido demais. Podes tentar novamente?
           success: Inquérito respondido corretamente.

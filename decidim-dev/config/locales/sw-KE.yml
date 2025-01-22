@@ -1,1 +1,65 @@
+---
 sw:
+  activemodel:
+    attributes:
+      dummy_resource:
+        created_at: Imeundwa saa
+        decidim_scope_id: Upeo
+        field: Shamba langu
+        start_date: Tarehe ya kuanza
+        title: Kichwa
+        translatable_text: Maandishi yanayoweza kutafsiriwa
+        updated_at: Ilisasishwa saa
+  decidim:
+    components:
+      dummy:
+        settings:
+          global:
+            guided: Ingizo la kuongozwa
+            guided_help: Nakala ya usaidizi
+            guided_readonly: Ingizo limezimwa
+            guided_rich: Uingizaji tajiri unaoongozwa
+            guided_rich_help_html: HTML <strong>msaada</strong> maandishi
+            guided_rich_readonly_html: Maandishi ya <strong>msaada</strong> ya HTML ya uingizaji uliozimwa
+            readonly_attribute: Sifa ya kusoma pekee
+            test: Mtihani
+            test_choices:
+              a: A chaguo
+              b: B chaguo
+              c: C chaguo
+            test_options:
+              bar: Baa
+              baz: Baz
+              foo: Foo
+          step:
+            endorsements_blocked: Mapendekezo yamezuiwa
+            endorsements_enabled: Mapendekezo yamewashwa
+            readonly_step_attribute: Sifa ya hatua ya kusoma pekee
+            test_options:
+              bar: Baa
+              baz: Baz
+              foo: Foo
+    dummy:
+      admin:
+        exports:
+          dummies: Dummies
+    gamification:
+      badges:
+        test:
+          conditions:
+            - Tumia mazingira ya majaribio kwa decidim.
+          description: Washiriki hupata beji hii kwa kuunda majaribio.
+          description_another: Mshiriki huyu ameunda majaribio %{score}.
+          description_own: Umeunda majaribio %{score}.
+          name: Vipimo
+          next_level_in: Unda majaribio %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajaunda majaribio yoyote.
+          unearned_own: Bado hujaunda majaribio.
+    resource_links:
+      test_link:
+        dummy_resource_dummy: Dummy inayohusiana
+    statistics:
+      bar: Baa
+      dummies_count_high: Dummies juu
+      dummies_count_medium: Dummies kati
+      foo: Foo

@@ -1,1 +1,198 @@
+---
 sw:
+  activemodel:
+    attributes:
+      answer:
+        body: Jibu
+        choices: Chaguo
+        selected_choices: Chaguo zilizochaguliwa
+      question:
+        max_choices: Idadi ya juu zaidi ya chaguo
+        question_type: Aina
+      questionnaire_question:
+        mandatory: Lazima
+        max_characters: Kikomo cha herufi (acha hadi 0 ikiwa hakuna kikomo)
+    errors:
+      models:
+        answer:
+          attributes:
+            add_documents:
+              needs_to_be_reattached: Inahitaji kuunganishwa tena
+            body:
+              too_long: ni ndefu sana
+            choices:
+              missing: hazijakamilika
+              too_many: Unaweza kuchagua upeo wa %{count}.
+        questionnaire:
+          request_invalid: Kulikuwa na hitilafu katika kushughulikia ombi. Tafadhali jaribu tena
+  decidim:
+    forms:
+      admin:
+        models:
+          components:
+            description: Maelezo
+            tos: Masharti ya huduma
+        questionnaires:
+          actions:
+            back: Rudi kwa maswali
+            show: Onyesha majibu
+          answer_option:
+            answer_option: Chaguo la kujibu
+            free_text: Maandishi ya bure
+            remove: Ondoa
+            statement: Taarifa
+          answers:
+            actions:
+              back: Rudi kwa majibu
+              export: Hamisha
+              next: Inayofuata &rsaquo;
+              previous: "&lsaquo; Iliyotangulia"
+              show: Onyesha majibu
+            empty: Hakuna majibu bado
+            export:
+              answer:
+                title: 'Jibu #%{number}'
+            export_response:
+              title: survey_user_answers_%{token}
+            index:
+              title: "%{total} jumla ya majibu"
+            show:
+              title: 'Jibu #%{number}'
+          display_condition:
+            answer_option: Chaguo la kujibu
+            condition_question: Swali
+            condition_type: Hali
+            condition_types:
+              answered: Akajibu
+              equal: Sawa
+              match: Inajumuisha maandishi
+              not_answered: Haijajibiwa
+              not_equal: Sio sawa
+            condition_value: Maandishi yaliyojumuishwa
+            display_condition: Hali ya kuonyesha
+            mandatory: Hali hii inahitaji kuridhika kila wakati bila kujali hali ya hali zingine
+            remove: Ondoa
+            save_warning: Kumbuka kuhifadhi fomu kabla ya kusanidi hali ya onyesho
+            select_answer_option: Chagua chaguo la jibu
+            select_condition_question: Chagua swali
+            select_condition_type: Chagua aina ya hali
+          edit:
+            save: Hifadhi
+            title: Hariri dodoso
+          form:
+            add_question: Ongeza swali
+            add_separator: Ongeza kitenganishi
+            add_title_and_description: Ongeza kichwa na maelezo
+            already_answered_warning: Fomu tayari imejibiwa na baadhi ya watumiaji kwa hivyo huwezi kurekebisha maswali yake.
+            collapse: Kunja maswali yote
+            expand: Panua maswali yote
+            preview: Hakiki
+            title: Badilisha fomu ya %{questionnaire_for}
+            unpublished_warning: Fomu haijachapishwa. Unaweza kurekebisha maswali yake, lakini kufanya hivyo kutafuta majibu ya sasa.
+          matrix_row:
+            matrix_row: Safu
+            remove: Ondoa
+            statement: Taarifa
+          question:
+            add_answer_option: Ongeza chaguo la jibu
+            add_display_condition: Ongeza hali ya kuonyesha
+            add_display_condition_info: Hifadhi fomu ili kusanidi hali ya kuonyesha
+            add_matrix_row: Ongeza safu
+            any: Yoyote
+            collapse: Kunja
+            description: Maelezo
+            down: Chini
+            expand: Panua
+            question: Swali
+            remove: Ondoa
+            statement: Taarifa
+            up: Juu
+          separator:
+            down: Chini
+            remove: Ondoa
+            separator: Kitenganishi
+            up: Juu
+          title_and_description:
+            collapse: Kunja
+            description: Maelezo
+            down: Chini
+            expand: Panua
+            remove: Ondoa
+            title: Kichwa
+            title_and_description: Kichwa na maelezo
+            up: Juu
+          update:
+            invalid: Kulikuwa na tatizo katika kuhifadhi fomu.
+            success: Fomu imehifadhiwa.
+      admin_log:
+        questionnaire:
+          update: "%{user_name} alisasisha dodoso la %{resource_name}"
+      errors:
+        answer:
+          body: Mwili hauwezi kuwa tupu
+      images:
+        dimensions: "%{width} x %{height} px"
+        processors:
+          resize_and_pad: Picha hii itabadilishwa ukubwa na kuongezwa hadi %{dimensions}
+          resize_to_fit: Picha hii itabadilishwa ukubwa ili kutoshea %{dimensions}
+      question_types:
+        files: Faili
+        long_answer: Jibu refu
+        matrix_multiple: Matrix (Chaguo nyingi)
+        matrix_single: Matrix (Chaguo Moja)
+        multiple_option: Chaguo nyingi
+        short_answer: Jibu fupi
+        single_option: Chaguo moja
+        sorting: Inapanga
+        title_and_description: Kichwa na maelezo
+      questionnaire_answer_presenter:
+        download_attachment: Pakua kiambatisho
+      questionnaires:
+        answer:
+          invalid: Kulikuwa na tatizo la kujibu fomu.
+          max_choices_alert: Kuna chaguo nyingi sana zilizochaguliwa
+          success: Fomu imejibu kwa ufanisi.
+        question:
+          max_choices: 'Chaguo za juu zaidi: %{n}'
+        show:
+          answer_questionnaire:
+            already_have_an_account?: Je, tayari una akaunti?
+            are_you_new?: Mtumiaji mpya?
+            sign_in_description: Ingia ili kuchukua uchunguzi
+            sign_up_description: Unda akaunti ya mshiriki ili kufanya utafiti
+            title: Jibu fomu
+          current_step: Hatua %{step}
+          empty: Bado hakuna maswali yaliyosanidiwa kwa fomu hii
+          of_total_steps: kati ya %{total_steps}
+          questionnaire_answered:
+            body: Tayari umejibu fomu hii.
+            title: Tayari imejibu
+          questionnaire_closed:
+            body: Fomu imefungwa na haiwezi kujibiwa.
+            title: Fomu imefungwa
+          questionnaire_for_private_users:
+            body: Fomu hiyo inapatikana tu kwa watumiaji wa kibinafsi
+            title: Fomu imefungwa
+          questionnaire_js_disabled:
+            body: Baadhi ya vipengele vya fomu hii vitazimwa. Ili kuboresha matumizi yako, tafadhali wezesha JavaScript kwenye kivinjari chako.
+            title: JavaScript imezimwa
+          questionnaire_not_published:
+            body: Fomu hii bado haijachapishwa.
+          tos_agreement: Kwa kushiriki unakubali Sheria na Masharti yake
+      step_navigation:
+        show:
+          are_you_sure: Kitendo hiki hakiwezi kutenduliwa na hutaweza kuhariri majibu yako. Je, una uhakika?
+          back: Nyuma
+          continue: Endelea
+          submit: Wasilisha
+      user_answers_serializer:
+        body: Jibu
+        completion: Kukamilika
+        created_at: Akajibu
+        id: Jibu ID
+        ip_hash: IP Hash
+        question: Swali
+        registered: Imesajiliwa
+        session_token: Kitambulisho cha mtumiaji
+        unregistered: Haijasajiliwa
+        user_status: Hali ya mtumiaji

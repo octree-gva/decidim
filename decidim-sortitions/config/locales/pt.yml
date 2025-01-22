@@ -39,13 +39,14 @@ pt:
         actions:
           destroy: Cancelar o sorteio
           edit: Editar
+          new_sortition: Novo sorteio
           show: Detalhes do sorteio
         models:
           sortition:
             fields:
               category: Categoria
               created_at: Data de criação
-              decidim_proposals_component: Componente de propostas
+              decidim_proposals_component: Funcionalidade de propostas
               dice: Dados
               reference: Referência
               request_timestamp: Data do sorteio
@@ -59,6 +60,10 @@ pt:
             title: Cancelamento do sorteio
           create:
             error: Ocorreu um problema ao criar um novo sorteio.
+            success: Sorteio criado com sucesso.
+          destroy:
+            error: Não é possível cancelar o sorteio.
+            success: Sorteio cancelado com sucesso.
           edit:
             title: Atualizar as informações sobre o sorteio
             update: Atualizar
@@ -68,12 +73,14 @@ pt:
           index:
             title: Sorteios
           new:
+            confirm: Ao pressionar o botão seguinte, a plataforma registará a data e hora (com precisão de segundos) e, juntamente com o lançamento do dado, esta informação será usada para gerar uma seleção aleatória. A ação será irreversível. Assim que o botão for clicado, o resultado deste sorteio será publicado, juntamente com os dados inseridos neste formulário, e não poderá ser modificado. Por favor, verifica o conteúdo cuidadosamente.
             create: Criar
             title: Novo sorteio
           show:
             selected_proposals: Propostas selecionadas para sorteio
           update:
             error: Ocorreu um problema ao atualizar o sorteio.
+            success: Sorteio atualizado com sucesso.
       admin_log:
         sortition:
           create: "%{user_name} criou o sorteio %{resource_name} em %{space_name}"
@@ -90,6 +97,8 @@ pt:
           cancelled: Cancelado
           category: Categoria
           state: Estado
+        index:
+          empty: Ainda não há sorteios.
         linked_sortitions:
           selected_proposals: Propostas selecionadas
         orders:

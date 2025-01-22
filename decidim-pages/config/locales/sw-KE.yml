@@ -1,1 +1,33 @@
+---
 sw:
+  activerecord:
+    models:
+      decidim/pages/page:
+        one: Ukurasa
+        other: Kurasa
+  decidim:
+    admin_log:
+      page:
+        update: "%{user_name} alisasisha ukurasa wa %{resource_name} katika %{space_name}"
+    components:
+      pages:
+        name: Ukurasa
+        settings:
+          global:
+            announcement: Tangazo
+          step:
+            announcement: Tangazo
+    pages:
+      admin:
+        models:
+          components:
+            body: Mwili
+        pages:
+          edit:
+            save: Sasisha
+            title: Badilisha ukurasa
+          update:
+            invalid: Kulikuwa na tatizo katika kuhifadhi ukurasa.
+            success: Ukurasa umehifadhiwa.
+      show:
+        empty: Bado hakuna yaliyomo kwenye ukurasa huu.

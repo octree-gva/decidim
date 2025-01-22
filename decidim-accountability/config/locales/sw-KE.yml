@@ -1,1 +1,292 @@
+---
 sw:
+  activemodel:
+    attributes:
+      result:
+        decidim_accountability_status_id: Hali
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        description: Maelezo
+        end_date: Tarehe ya mwisho
+        meetings_ids: Ilijumuisha mikutano
+        progress: Maendeleo
+        project_ids: Ilijumuisha miradi
+        proposals: Imejumuisha mapendekezo
+        start_date: Tarehe ya kuanza
+        subresults: Matokeo madogo
+        title: Kichwa
+        updated_at: Ilisasishwa saa
+      status:
+        description: Maelezo
+        key: Ufunguo
+        name: Jina
+        progress: Maendeleo
+      timeline_entry:
+        description: Maelezo
+        entry_date: Tarehe
+        title: Kichwa
+    models:
+      decidim/accountability/proposal_linked_event: Pendekezo limejumuishwa katika matokeo
+      decidim/accountability/result_progress_updated_event: Maendeleo ya matokeo yamesasishwa
+  activerecord:
+    models:
+      decidim/accountability/result:
+        one: Matokeo
+        other: Matokeo
+  decidim:
+    accountability:
+      actions:
+        attachment_collections: Folda
+        attachments: Viambatisho
+        confirm_destroy: Je, una uhakika unataka kufuta hii %{name}?
+        destroy: Futa
+        edit: Hariri
+        import: Ingiza miradi kutoka kwa sehemu nyingine
+        import_csv: Ingiza matokeo kutoka kwa faili ya CSV
+        new_result: Matokeo mapya
+        new_status: Hali mpya
+        new_timeline_entry: Ingizo jipya la kalenda ya matukio
+        preview: Hakiki
+        timeline_entries: Maendeleo ya mradi
+        title: Vitendo
+      admin:
+        exports:
+          result_comments: Maoni
+          results: Matokeo
+        import_results:
+          new:
+            download_export: Pakua Hamisha kwa umbizo la CSV
+            import: Ingiza
+            info: |
+              <p>Tunapendekeza ufuate hatua hizi:</p>
+              <ol>
+              <li><a href='%{link_new_status}' target='_blank'>Unda Hali za Matokeo</a> ambazo ungependa kuongeza</li>
+              <li><a href='%{link_new_result}' target='_blank'>Unda angalau Tokeo moja wewe mwenyewe</a> kupitia kidirisha hiki cha Msimamizi kabla ya kutumia Leta, kwa kuelewa vyema umbizo na unachohitaji. kujaza.</li>
+              <li>%{link_export_csv}</li>
+              <li>Fanya mabadiliko ndani ya nchi. Unaweza kubadilisha safu wima zifuatazo za CSV pekee:
+                <ul>
+                <li><b>kitengo/id:</b> Kitambulisho cha Kitengo</li>
+                <li><b>wigo/id:</b> Kitambulisho cha Wigo</li>
+                <li><b>mzazi/id:</b> Kitambulisho cha mzazi (kwa Matokeo yanayohusiana). Hiari</li>
+                <li><b>kichwa/sw:</b> Kichwa kwenye lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+                <li><b>maelezo/sw:</b> Maelezo kuhusu lugha ya Kiingereza. Hii itategemea usanidi wa lugha ya jukwaa lako.</li>
+                <li><b>tarehe_ya_kuanza:</b> tarehe ambayo matokeo yanaanza utekelezaji (umbizo YYYY-MM-DD)</li>
+                <li><b>tarehe_ya_mwisho:</b> tarehe ambayo matokeo yanamaliza utekelezaji (umbizo YYYY-MM-DD)</li>
+                <li><b>hali/id:</b> Kitambulisho cha Hali ya matokeo haya</li>
+                <li><b>maendeleo:</b> Asilimia (kutoka 0 hadi 100) ya utekelezaji</li>
+                <li><b>vitambulisho_vya_mapendekezo:</b> Kitambulisho cha ndani cha mapendekezo husika (kimetenganishwa na koma). Inabadilishwa kiotomatiki hadi <span class='attribute-name'>proposal_url</span></li>
+                </ul>
+              </li>
+              </ol>
+            title: Ingiza matokeo kutoka kwa faili ya CSV
+        imports:
+          create:
+            invalid: Kulikuwa na tatizo katika kuleta matokeo.
+            success: Faili imeanza kuletwa. Utapokea barua pepe katika dakika chache zijazo na matokeo ya uletaji.
+        models:
+          result:
+            name: Matokeo
+          status:
+            name: Hali
+        projects_import:
+          create:
+            invalid: Kulikuwa na tatizo la kuingiza miradi kwenye matokeo, tafadhali fuata maagizo kwa uangalifu na uhakikishe kuwa umechagua miradi ya utekelezaji.
+          new:
+            create: Ingiza
+            import_all_selected_projects: Ingiza miradi yote iliyochaguliwa kwa utekelezaji
+            new_items:
+              one: Mradi 1 uliochaguliwa utaletwa
+              other: "%{count} miradi iliyochaguliwa itaagizwa kutoka nje"
+            no_components: Hakuna vipengele vya bajeti katika nafasi hii shirikishi ya kuingiza miradi katika matokeo.
+            origin_component_id: Sehemu ya asili
+            select_component: Chagua sehemu
+            success:
+              one: Mradi 1 umewekwa kwenye foleni kuingizwa. Utaarifiwa kwa barua pepe, mara tu kukamilika.
+              other: "%{count} miradi iliyopangwa kuagizwa kutoka nje. Utaarifiwa kwa barua pepe, mara tu kukamilika."
+            title: Ingiza miradi kutoka kwa sehemu nyingine
+        results:
+          create:
+            invalid: Kulikuwa na tatizo katika kuunda matokeo haya.
+            success: Matokeo imeundwa.
+          destroy:
+            success: Matokeo yamefutwa.
+          edit:
+            title: Hariri matokeo
+            update: Hariri matokeo
+          index:
+            title: Matokeo
+          new:
+            create: Unda matokeo
+            title: Matokeo mapya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha matokeo haya.
+            success: Matokeo kusasishwa.
+        shared:
+          subnav:
+            statuses: Hadhi
+        statuses:
+          create:
+            invalid: Kulikuwa na tatizo katika kuunda hali hii.
+            success: Hali imeundwa.
+          destroy:
+            success: Hali imefutwa.
+          edit:
+            title: Badilisha hali
+            update: Sasisha hali
+          index:
+            title: Hadhi
+          new:
+            create: Unda hali
+            title: Hali mpya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha hali hii.
+            success: Hali imesasishwa.
+        timeline_entries:
+          create:
+            invalid: Kulikuwa na tatizo kuunda ingizo hili.
+            success: Ingizo limeundwa.
+          destroy:
+            success: Ingizo limefutwa.
+          edit:
+            title: Badilisha ingizo
+            update: Sasisha ingizo
+          index:
+            title: Maingizo ya ratiba ya mradi
+          new:
+            create: Unda kiingilio
+            title: Ingizo jipya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha ingizo hili.
+            success: Ingizo limesasishwa.
+      admin_log:
+        result:
+          create: "%{user_name} imeunda matokeo %{resource_name} katika %{space_name}"
+          delete: "%{user_name} alifuta matokeo ya %{resource_name} katika %{space_name}"
+          update: "%{user_name} matokeo yaliyosasishwa %{resource_name} katika %{space_name}"
+        status:
+          create: "%{user_name} imeunda hali ya %{resource_name}"
+          delete: "%{user_name} ilifuta hali ya %{resource_name}"
+          update: "%{user_name} ilisasisha hali ya %{resource_name}"
+        timeline_entry:
+          create: "%{user_name} iliunda %{resource_name} ingizo la kalenda ya matukio"
+          delete: "%{user_name} ilifuta %{resource_name} ingizo la kalenda ya matukio"
+          update: "%{user_name} alisasisha %{resource_name} ingizo la kalenda ya matukio"
+        value_types:
+          parent_presenter:
+            not_found: 'Mzazi hakupatikana kwenye hifadhidata (Kitambulisho: %{id})'
+      content_blocks:
+        highlighted_results:
+          results: Matokeo
+      import_mailer:
+        import:
+          errors: Makosa
+          errors_present: Kulikuwa na tatizo katika kuleta matokeo.
+          row_number: Safu
+          subject: Imefaulu kuleta matokeo
+          success: Imefaulu kuleta matokeo. Unaweza kukagua matokeo katika kiolesura cha utawala.
+      import_projects_mailer:
+        import:
+          added_projects:
+            one: Matokeo moja yaliletwa kutoka kwa miradi.
+            other: "%{count} matokeo yaliingizwa kutoka kwa miradi."
+          subject: Uagizaji wa miradi uliofanikiwa
+          success: Miradi iliyoingizwa imefaulu kufikia matokeo katika kipengele cha %{component_name}. Unaweza kukagua matokeo katika kiolesura cha utawala.
+      last_activity:
+        new_result: 'Matokeo mapya:'
+      models:
+        result:
+          fields:
+            category: Kategoria
+            created_at: Imeundwa
+            end_date: Tarehe ya mwisho
+            id: ID
+            progress: Maendeleo
+            scope: Upeo
+            start_date: Tarehe ya kuanza
+            status: Hali
+            title: Kichwa
+        status:
+          fields:
+            description: Maelezo
+            key: Ufunguo
+            name: Jina
+            progress: Maendeleo
+        timeline_entry:
+          fields:
+            entry_date: Tarehe
+            title: Kichwa
+      results:
+        count:
+          results_count:
+            one: 1 matokeo
+            other: "%{count} matokeo"
+        filters:
+          all: Wote
+        home:
+          categories_label: Kategoria
+          empty: Bado hakuna matokeo.
+          empty_filters: Hakuna matokeo na vigezo hivi.
+          subcategories_label: Vijamii
+        home_header:
+          global_status: Hali ya utekelezaji wa kimataifa
+        nav_breadcrumb:
+          global: Utekelezaji wa kimataifa
+        no_results: Hakuna miradi
+        search:
+          search: Tafuta vitendo
+        show:
+          stats:
+            back_to_resource: Rudi kwenye matokeo
+        timeline:
+          title: Maendeleo ya mradi
+    admin:
+      filters:
+        results:
+          category_id_eq:
+            label: Kategoria
+          scope_id_eq:
+            label: Upeo
+          status_id_eq:
+            label: Hali
+    components:
+      accountability:
+        actions:
+          comment: Maoni
+        name: Uwajibikaji
+        settings:
+          global:
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            display_progress_enabled: Onyesha maendeleo
+            intro: Utangulizi
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+          step:
+            comments_blocked: Maoni yamezuiwa
+    events:
+      accountability:
+        proposal_linked:
+          email_intro: 'Pendekezo "%{proposal_title}" limejumuishwa kwenye tokeo. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho kwa %{proposal_title}
+          notification_title: Pendekezo <a href="%{proposal_path}">%{proposal_title}</a> limejumuishwa kwenye <a href="%{resource_path}">%{resource_title}</a> tokeo.
+        result_progress_updated:
+          email_intro: 'Matokeo "%{resource_title}", ambayo ni pamoja na pendekezo "%{proposal_title}", sasa %{progress}% imekamilika. Unaweza kuiona kutoka kwa ukurasa huu:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{proposal_title}", na pendekezo hili limejumuishwa kwenye matokeo "%{resource_title}". Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
+          email_subject: Sasisho la maendeleo ya %{resource_title}
+          notification_title: Matokeo <a href="%{resource_path}">%{resource_title}</a>, ambayo ni pamoja na pendekezo <a href="%{proposal_path}">%{proposal_title}</a>, sasa ni %{progress}% imekamilika.
+    metrics:
+      results:
+        description: Idadi ya matokeo yaliyotolewa
+        object: matokeo
+        title: Matokeo
+    participatory_spaces:
+      highlighted_results:
+        see_all: Tazama matokeo yote
+    resource_links:
+      included_projects:
+        result_project: Miradi iliyojumuishwa katika matokeo haya
+      included_proposals:
+        result_proposal: Mapendekezo yaliyojumuishwa katika matokeo haya
+    statistics:
+      results_count: Matokeo

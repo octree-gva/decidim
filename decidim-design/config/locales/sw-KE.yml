@@ -1,1 +1,309 @@
+---
 sw:
+  decidim:
+    design:
+      components:
+        accordions:
+          content_panel: Maudhui ya paneli
+          demo: Onyesho
+          demo_description: Katika programu nzima accordions hutumiwa, hasa, kuonyesha/kuficha maudhui kwenye vichupo au kukunja/kufunua maandishi yanayoonekana.
+          description_accordions_html: Accordions ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo %{link_code} a11y-accordion-component.
+          github_source_html: Msimbo wa chanzo kwenye GitHub %{github_link}
+          panel: Paneli
+          title: Accordions
+          trigger: Anzisha
+          usage: Matumizi
+          usage_p: Accordion inahitaji angalau vipengele vitatu
+          usage_p_1_html: 1. Karatasi <code>div</code>, yenye sifa ya data <code>data-component="accordion"</code>, juu ya vichochezi na paneli zote zinazopatikana.
+          usage_p_2_html: 2. Kipengele cha kufyatua, kinachoweza kutekelezeka kwa mtumiaji (kama kitufe), kinachoelekeza kwenye kipengele kinachoweza kukunjwa kupitia <code>data-controls="panel"</code>, ambapo <i>paneli</i> ni <code>id </code> ya kidirisha.
+          usage_p_3_html: 3. Kipengele kinachoweza kufichwa, ambacho <code>id</code> kinalingana na thamani ya vidhibiti vya data ambayo kichochezi kinarejelea.
+        activities:
+          activities: Shughuli
+        address:
+          title: Anwani
+        announcement:
+          iam_an_announcement: Mimi ni tangazo
+          this_is_the_body: Huu ni mwili
+          this_is_the_title: Hiki ndicho kichwa
+          title: Tangazo
+        author:
+          title: Mwandishi
+        buttons:
+          description_html: 'Vifungo hutengenezwa kwa kutumia michanganyiko tofauti ya madarasa ya CSS: darasa la <code>kitufe</code>, saizi na rangi.'
+          title: Vifungo
+        cards:
+          title: Kadi
+        dialogs:
+          dialog_demo_description_html: Maongezi, au vijenzi vya modali, hutekelezwa kupitia msaidizi wa reli <code>decidim_modal</code>.
+          dialogs_description_html: Dialogs ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo <a href="https://github.com/jonathanlevaillant/a11y-dialog-component" target="_blank" rel="noopener noreferrer">a11y-dialog-component </a>.
+          tips_description: 'Ili kuonyesha moduli changamano, inayolingana na mitindo, fanya ghafi ifuatayo:'
+          tips_description_html: Zingatia <i>sifa-data</i> na <i>vitambulisho</i>. Kwa mfano, kitambulisho cha <code>[data-dialog-title]</code> huanza na <i>kichwa cha mazungumzo</i> pamoja na <i>kitambulisho cha moduli</i>.
+          title: Maongezi
+          usage_description: Kidadisi kinahitaji vipengele viwili
+          usage_description_2_html: 2. Kipengele cha modali, ambacho <code>id</code> kinalingana na thamani ya data inayolengwa ambayo kichochezi kinarejelea.
+          usage_description_html: 1. Kipengele kinachoweza kutekelezeka na mtumiaji, chenye sifa ya data <code>data-dialog-open="example"</code>, ambapo mfano ni <code>id</code> ya modali.
+        follow:
+          title: Fuata
+        forms:
+          disabled: Imezimwa
+          emojis: Emoji
+          emojis_description: Inafanya kazi kwa textarea pekee
+          errors: Makosa
+          errors_description: Haitumiki kwa chaguo
+          header_alert: Ukurasa huu unatoka kwa mwonekano wa urithi. Maudhui yamepitwa na wakati.
+          help_texts: Nakala za msaada
+          html_regular_inputs: Ingizo za kawaida za HTML
+          min_max_length: Urefu wa chini/Upeo
+          min_max_length_description: Inafanya kazi kwa input type='text' na textarea pekee
+          multiselect: Chaguo nyingi
+          multiselect_description_html: Chaguo nyingi ni kipengele cha javascript kinachopatikana kutokana na maktaba ya nje iitwayo <a href="https://tom-select.js.org/" target="_blank" rel="noopener noreferrer">Tom Select</a>.
+          regular_inputs_description: 'Huonyesha tu aina za kawaida, orodha kamili inayopatikana: tarehe, tarehe, saa-ndani, barua pepe, mwezi, nambari, nenosiri, tafuta, simu, maandishi, saa, url, wiki.'
+          textarea_required: textarea inahitajika
+          title: Fomu
+        report:
+          title: Ripoti
+        share:
+          title: Shiriki
+        tab_panels:
+          title: Paneli za Kichupo
+        tooltips:
+          demo: Onyesho
+          demo_description: Ili kipengele hiki kifanye kazi mshiriki anahitaji kuelea juu ya kipengele.
+          description: Kidokezo ni sehemu ambayo watumiaji wanaweza kuelea juu ya kipanya chao ili kupata maelezo ya ziada kuihusu.
+          github_source_html: Msimbo wa chanzo kwenye GitHub %{github_link}
+          title: Vidokezo vya zana
+          usage: Matumizi
+          usage_p: 'Kidokezo kinahitaji matumizi ya msaidizi wa `with_tooltip`, yenye hoja tatu:'
+          usage_p_1_html: 1. Mfuatano wenye thamani ya ncha ya zana. Katika mfano wa ukurasa huu ni "Hello world".
+          usage_p_2_html: 2. Darasa la hiari lenye ishara ambapo kidokezo kitaonyeshwa. Thamani zinazowezekana ni <code>:top</code>, <code>:bottom</code>, <code>:kulia</code>, au <code>:left</code>.
+          usage_p_3_html: 3. Kizuizi chenye mfuatano ambao mtumiaji anahitaji kuelea ili kuonyeshwa.
+      foundations:
+        accessibility:
+          accessibility_labels: Lebo za ufikivu
+          accessibility_labels_paragraph: Unapofafanua vipengele, hakikisha kila mara vinaleta maana kwa watumiaji wa kisomaji skrini.
+          accessibility_title: Ufikivu
+          adjacent_links: Viungo vya karibu
+          adjacent_links_header: Viungo vya karibu vya rasilimali sawa
+          adjacent_links_paragraph: Iwapo rasilimali hiyo hiyo ina viungo vingi vilivyo karibu vinavyoielekeza, inakuwa vigumu kwa watumiaji kama hao kutazama ukurasa kwa sababu wanaweza kuhitaji kupitia viungo vingi ili kufikia rasilimali inayofuata.
+          color_contrast: Tofauti ya rangi
+          color_contrast_paragraph: Unapounda violesura vya watumiaji au kurekebisha rangi, hakikisha kila mara hauvunji ufikivu kwa mabadiliko yako. Unaweza kutumia kikagua utofautishaji wa Rangi ili kuhakikisha kuwa rangi zako zina utofautishaji wa kutosha dhidi ya rangi ya mandharinyuma ambapo zinaonyeshwa.
+          decidim_follows_html: Decidim inafuata <u>Miongozo ya Ufikiaji wa Maudhui ya Wavuti (WCAG) 2.1</u>
+          dynamic_changes_header: Utendaji mahiri hubadilisha muktadha wa ukurasa bila kueleweka
+          dynamic_changes_paragraph: Mabadiliko katika pembejeo za fomu haipaswi kubadilisha muktadha wa ukurasa kiotomatiki.
+          elements_hidden: Vipengele vimefichwa
+          elements_hidden_header: Vipengele vilivyofichwa kutoka kwa API ya ufikivu
+          elements_hidden_paragraph: Ili kuficha kipengele kutoka kwa teknolojia za usaidizi, tumia sifa ya aria-hidden="true" juu yake.
+          heading_on: Kuelekea sehemu muhimu
+          here_link: hapa
+          illogical_heading_order: Agizo la kichwa lisilo na mantiki
+          illogical_heading_paragraph: Kila ukurasa unapaswa kuwa na mpangilio mzuri wa kichwa unapotumia vipengele vya vichwa vya <h1>, <h2>, <h3>, <h4>, <h5> na <h6>.
+          important_sections_heading: Kuelekea sehemu muhimu
+          important_sections_paragraph: Ni muhimu sana kwamba kila sehemu muhimu ya ukurasa iwe na kichwa ili kurahisisha kuelewa ni sehemu gani muhimu ziko kwenye ukurasa kwa kuvinjari tu vichwa vyake.
+          links_and_buttons: Viungo na Vifungo
+          links_and_buttons_paragraph: Vipengee vya nanga (yaani viungo) vinakusudiwa kuunganisha kwa kurasa tofauti au kutia nanga nafasi ndani ya ukurasa. Ikiwa kipengele kinatakiwa k.m. fungua kipengee fulani kilichofichwa kwenye ukurasa huo, unapaswa kutumia <button> kipengele badala yake.
+          see_further_info_html: Angalia maelezo zaidi %{link}
+          unique_h1: H1 ya kipekee
+          unique_h1_paragraph: Kila ukurasa unapaswa kuwa na kichwa cha kipekee cha H1 juu yake
+          use_aria: Tumia ARIA
+          use_aria_header: Tumia sifa za ARIA inapowezekana
+          use_aria_paragraph: Vipengele vingi vinavyotoa utendakazi shirikishi kwenye tovuti vinahitaji sifa za ARIA ili kuvifanya kufikiwa.
+        color:
+          color_header: Rangi
+          description_p1: Tunatoa palette ya Msingi yenye rangi chache ili ubinafsishaji rahisi uwe rahisi. Unaweza kurekebisha paji la Msingi ama katika eneo la Utawala au katika faili ya usanidi ya Tailwind ikiwa unahitaji ubinafsishaji wa hali ya juu zaidi.
+          description_p2_html: Unapoweka mapendeleo ya rangi zako, kumbuka %{contrast_link}. Unaweza kuangalia utofauti wa chaguo lako kwa %{checker_link} au zana zingine zinazofanana.
+          wcag_compliant_rations: Uwiano wa utofautishaji unaotii WCAG 2.1 AA
+          wcag_contrast_checker: Kikagua Utofautishaji cha WebAIM
+        iconography:
+          description_iconography: Tunatumia aikoni ili kusisitiza maana ya vitendo, mada n.k
+          description_iconography_html: 'Tunatumia maktaba ya chanzo huria ya Remixicon: %{iconography_link}'
+          title: Iconografia
+        layout:
+          breakpoint: Sehemu ya mapumziko
+          breakpoints: Vizuizi
+          centered: Imewekwa katikati
+          code: Kanuni
+          columns: Kwa kuwa idadi ya safu wima 10, 8 au 6.
+          description_layout_p1: Kwa eneo-kazi, Decidim hutumia gridi ya safu wima 12 yenye idadi ndogo ya violezo (mipangilio ya gridi) kwa aina tofauti za maudhui. Kusudi ni kwamba aina fulani ya yaliyomo (ukurasa wa nyumbani, orodha ya vipengee, kipengee mahususi) ina mpangilio tofauti, kwa hivyo watumiaji wanaweza kuelewa ni aina gani ya yaliyomo kulingana na mwonekano wa jumla wa ukurasa.
+          description_layout_p2: Sheria hizi rahisi zinapaswa kufuatwa wakati wa kuunda moduli mpya au kubinafsisha zilizopo, ili tovuti ya Decidim iweze kudumisha uthabiti wake.
+          desktop: Desktop
+          full_width: Upana kamili
+          layout_list_1: 'Ukurasa wa nyumbani (wa tovuti, wa nafasi): upana kamili'
+          layout_list_2: 'Orodha ya vipengele (ya nafasi, ya vitu ndani ya nafasi, nk): kushoto kando'
+          layout_list_3: 'Kipengee cha kibinafsi (pendekezo, chapisho la blogi): iliyowekwa katikati, kwa hiari na kando ya kulia'
+          left_aside: Kushoto kando
+          mobile: Simu ya Mkononi
+          not_required: Haihitajiki
+          properties: Mali
+          right_aside: Kando ya Haki
+          section_p_breakpoints: 'Ili kudhibiti upana wa juu wa vipengele vinavyoitikia tunategemea darasa chaguo-msingi la `kontena` la Tailwind, ambalo linasema vizuizi vifuatavyo:'
+          section_p_code: Wakati wa kutekeleza moduli mpya una baadhi ya wasaidizi ambao hukupa kiotomatiki msimbo unaohitajika ili kusanidi muundo wa HTML. Unapaswa kutumia wasaidizi hawa badala ya kutumia moja kwa moja vipengele vya div na madarasa, kwa hivyo unadumisha uthabiti.
+          section_p_code_html: Unaweza kupata miundo msingi katika %{link_section_code}
+          section_p_desktop: Mfumo wa gridi ya eneo-kazi unajumuisha safu wima 12 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 48px.
+          section_p_mobile: Mfumo wa gridi ya simu unajumuisha safu wima 4 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 16px. Kwa ukubwa ulio chini ya 320px pambizo hizi zimewekwa kuwa 8px
+          section_p_tablet: Mfumo wa gridi ya kompyuta kibao unajumuisha safu wima 8 zinazonyumbulika na gutter kati ya safu wima za 16px na pambizo za kushoto na kulia za 24px.
+          tablet: Kompyuta kibao
+          title: Mpangilio
+        typography:
+          description: Mwongozo huu unatoa muhtasari wa jinsi ya kutumia uchapaji katika Decidim, na hutumika kama linda kwa wabunifu kubuni kwa uhuru wakizingatia mbinu bora za uchapaji.
+          headings:
+            characters: Wahusika kwa kila mstari
+            layout: Rangi za mpangilio
+            size: Ukubwa
+          title: Uchapaji
+          typefaces_description_1: Decidim hutumia Chanzo Sans Pro kama chapa ya msingi. Aina hii ya chapa inaweza kutumia lugha 310
+          typefaces_description_2: Fonti hizi zimepewa leseni chini ya Leseni ya Fonti Huria
+      helpers:
+        accountability: Uwajibikaji
+        accountability_cards_html: Inatumiwa na kadi za <i>Miradi ya Uwajibikaji</i>. Kadi hii inahitaji vipengee vya sehemu kuonyeshwa vizuri, yaani <code>append_stylesheet_pack_tag \"decidim_accountability\"</code>
+        activity: Shughuli
+        address_description: Kisanduku cha anwani hupokea nyenzo, na hutafuta sifa zinazoweza kusawazishwa na kijiografia ili kutoa alama maalum.
+        address_description_2: Kulingana na aina ya maudhui, anwani inaweza kuwa url ya mtandaoni. Kwa hali kama hizi, habari iliyoonyeshwa ni sawa lakini imeundwa kutoshea.
+        ally_link: a11y-dropdown-component
+        argument: Hoja
+        assemblies: Mikusanyiko
+        assembly_g: Bunge G
+        assembly_s: Bunge S
+        avatar: Avatar
+        avatar_description: Inatumika wakati kuna nafasi nyembamba, ambapo mwandishi ni habari ya sekondari.
+        background: Asili na mipaka
+        base: Msingi
+        block_text: Tumia kizuizi_cha_data
+        blog_cards_html: Inatumiwa na <i>Kadi za Blogu</i>
+        blogs: Blogu
+        budget_card_html: Inatumiwa na kadi za <i>Miradi ya Bajeti</i>. Kadi hii inahitaji vipengee vya sehemu ili vionyeshwe vizuri, yaani <code>append_stylesheet_pack_tag \"decidim_budgets\"</code>
+        budgets: Bajeti
+        callout_class: Darasa la Callout
+        callout_description: Sifa hii inatumika hadhi kwa tangazo. Kwa chaguo-msingi, hutumia rangi ya sekondari.
+        card_g: Kadi ya G
+        card_l: Kadi ya L
+        card_s: Kadi ya S
+        collaborative_draft_l: Rasimu ya Ushirikiano L
+        colors: Rangi
+        compact: Compact
+        compact_description: Toleo hili la mwandishi ndiyo njia ya kawaida ya kutambua mtayarishaji rasilimali.
+        conference_g: Mkutano wa G
+        conference_s: Mkutano wa S
+        conferences: Mikutano
+        context: Muktadha
+        context_description: Kisanduku hiki kinaonyesha taarifa fulani kuhusu mtumiaji. Ni usaidizi wa kuona kutambua rasilimali/muundaji wa maudhui. Kuelea na kipanya huonyesha kidokezo chenye maelezo zaidi na viungo vya wasifu wake.
+        context_description_2: Kwa rasilimali, seli hii inaonekana chini ya kichwa kikuu. Kwa yaliyomo mengine, inaonekana karibu na yaliyomo yenyewe.
+        debate_l: Mjadala L
+        debate_s: Mjadala S
+        debates: Mijadala
+        debates_cards_html: Inatumiwa na <i>Kadi za Mijadala</i>
+        debates_cards_text: Tumia kiolezo tofauti kwa kizuizi cha picha
+        default: Chaguomsingi
+        default_description: Kupigia simu kisanduku bila hoja za ziada, lakini mtumiaji mwenyewe.
+        demo: Onyesho
+        demo_text: 'Seli hii hupokea mfano wa vipengee vya LastActivity na huonyesha vipengele vifuatavyo:'
+        demo_text_2: Inatumiwa na ukurasa wa mwisho wa shughuli, katika kizuizi cha maudhui na ndani ya menyu kunjuzi.
+        description: Maelezo
+        disabled: Imezimwa
+        dropdowns: Kunjuzi
+        dropdowns_demo_1_description: 'Mfano ufuatao hautaonekana kwenye eneo-kazi, lakini simu ya rununu:'
+        dropdowns_demo_description: Menyu kunjuzi hutumika pamoja na programu ili kukunja menyu kubwa, zinazosomeka kwa urahisi kwa vifaa vya mezani, lakini ni neno sana kwa vifaa vya rununu.
+        dropdowns_demo_description_html: 'Kipengele hiki cha javascript kimeimarishwa kwa css ndogo, kupitia kutaja: maudhui yanayofichwa LAZIMA YAWE NA <code>id</code> inayoanza na <i>menu-kunjuzi</i>.'
+        dropdowns_description_html: Dropdowns are a javascript feature available thanks to an external library called %{link}.
+        dropdowns_usage_1_description: 2. Kipengele kinachoweza kufichwa, ambacho <code>id</code> inalingana na thamani ya data inayolengwa na kichochezi.
+        dropdowns_usage_description: 'Kushuka kunahitaji vitu viwili:'
+        dropdowns_usage_description_html: 1. Kipengele kinachoweza kutekelezeka na mtumiaji, chenye sifa za data <code>data-component="dropdown" data-target="dropdown-menu-element"</code>.
+        dummy_description: Maelezo ya rasilimali ya dummy
+        dummy_title: Kichwa cha rasilimali ya dummy
+        follow_button: Fuata Kitufe
+        follower_description_html: Hakikisha kuwa sehemu ya <code>decidim/shared/login_modal</code> ipo kwenye DOM. Sehemu hii huwekwa katika mpangilio wa programu wakati mtumiaji ameingia.
+        form_elements: Vipengele vya fomu
+        generic_cards: Kadi za kawaida
+        grid: Gridi
+        hex_code: Hex code
+        highlight: Angazia
+        highlight_description: Inatumiwa na rasilimali zinazoruhusu kuangazia
+        html_tips: Vidokezo vya HTML
+        icons: Aikoni
+        image_and_description: Picha na Maelezo
+        initiative_g: mpango_g
+        initiative_s: mpango_s
+        initiatives: Mipango
+        list: Orodha
+        main_colors: Rangi Kuu
+        meeting_l: Mkutano wa L
+        meeting_s: Mkutano wa S
+        meetings: Mikutano
+        meetings_html: Inatumiwa na kadi za <i>Mikutano</i>
+        metadata_items: Vipengee vya metadata
+        metadata_text: Kila rasilimali inafafanua vipengee vyake vya metadata
+        participatory_process_g: Mchakato Shirikishi G
+        participatory_process_group_g: Mchakato Shirikishi Kikundi G
+        participatory_process_group_s: Mchakato Shirikishi Kikundi S
+        participatory_process_s: Mchakato Shirikishi S
+        participatory_processes: Taratibu Shirikishi
+        plain_text: Mimi ni maandishi tu
+        plain_text_description: Unaweza kutoa kama hoja ya kwanza maandishi wazi na kitu cha hashi
+        plain_text_vs_hash: Maandishi Sahihi Vs Hash
+        post_g: Chapisho la G
+        post_l: Chapisho la L
+        post_s: Chapisho la S
+        project_l: Mradi wa L
+        project_s: Mradi wa S
+        proposal_l: Pendekezo L
+        proposal_s: Pendekezo S
+        proposals: Mapendekezo
+        report_button: Kitufe cha ripoti
+        report_usage_description: Kitufe cha kuripoti huzindua dirisha la modal ili kuripoti rasilimali ya sasa.
+        result_l: Matokeo L
+        rgba_code: Nambari ya RGBA
+        search: Tafuta
+        send: Tuma
+        share_button: Kitufe cha Shiriki
+        share_usage_description_html: Hakikisha kuwa sehemu ya <code>decidim/shared/share_modal</code> ipo kwenye DOM. Sehemu hii imewekwa katika mpangilio wa programu.
+        sizes: Ukubwa
+        sortition_l: mpangilio_l
+        sortitions: Upangaji
+        source_code: Msimbo wa Chanzo
+        state: Jimbo
+        tab_panels_context_description: Kipengele hiki cha paneli ya kichupo hukusanya maudhui yote yanayohusiana au rasilimali nyingine ya kipengele kikuu kinachoonyeshwa, ili kuhifadhi nafasi wima. Kubofya kichupo kutawasha kidirisha kilichoundwa ili kuonyesha maudhui.
+        tab_panels_context_description_html: Hutumika sana ndani ya <i>layout_item</i> au <i>layout_center</i>, baada ya maudhui kuu ya rasilimali.
+        tab_panels_usage_description: 'Kipengele hiki hupokea safu ya heshi, na kupanga upya matokeo ya kila kipengee katika muundo wa kidirisha cha kichupo. Sifa zinazopatikana kwa kila paneli:'
+        tab_panels_usage_description_arguments_html: "<strong>args</strong>: <i>Array</i>. Hoja za mbinu iliyotangulia"
+        tab_panels_usage_description_html: "<strong>imewezeshwa</strong>: <i>Boolean</i>. Toa kichupo kwa masharti"
+        tab_panels_usage_description_id_html: "<strong>id</strong>: <i>Mfuatano</i>. Kitambulisho cha kipekee"
+        tab_panels_usage_description_rails_html: "<strong>mbinu</strong>: <i>Alama</i>. Rails yoyote ya kazi inaelewa"
+        tab_panels_usage_description_remixicon_html: "<strong>ikoni</strong>: <i>Mfuatano</i>. Kitufe cha Remixicon"
+        tab_panels_usage_description_tab_html: "<strong>maandishi</strong>: <i>Mfuatano</i>. Kichwa cha kichupo"
+        tailwind: Jina la Tailwind
+        text: Maandishi
+        transparent: Uwazi
+        transparent_description: 'Katika kesi ya mandharinyuma nyeusi:'
+        types: Aina
+        typography_texts: Uchapaji na maandishi
+        usage: Matumizi
+        usage_background_1: Kando ya usuli
+        usage_background_2: Umechagua usuli wa kichujio cha utepe
+        usage_background_3: Rangi ya ikoni chaguomsingi
+        usage_background_4: Mistari na watenganishaji
+        usage_background_5: Mandharinyuma ya kijachini
+        usage_background_6: Mandharinyuma ya mpangilio wa msimamizi
+        usage_base_1: Mandharinyuma ya kipengele kikuu cha nav\nMenyu za Nav katika ukurasa wa nyumbani na nafasi ya kwanza
+        usage_base_2: Rangi kuu ya viungo na vifungo
+        usage_base_3: Mapambo ya picha na rangi ya lafudhi\nKadi na vitu vya orodha huelea mpaka wa serikali
+        usage_formelements_1: Mandhari-msingi ya vipengee vya ingizo
+        usage_formelements_2: Vipengele vya ingizo vimezimwa usuli wa hali
+        usage_state_1: Mpaka wa ilani ya mafanikio\nJaza aikoni ya arifa\nMandharinyuma ya kitufe kwenye ujumbe wa mafanikio
+        usage_state_2: Mpaka wa ilani ya onyo
+        usage_state_3: Mpaka wa arifa ya arifa\nJaza aikoni ya arifa
+        usage_typography_1: Vichwa na vichwa vya sehemu
+        usage_typography_2: Maandishi ya ndani
+        usage_typography_3: Maandishi juu ya mandharinyuma meusi
+        usage_typography_4: Viungo na vifungo
+        value: Thamani
+        variations: Tofauti
+        variations_cards_description: Kila kadi itaonekana tofauti kuhusu sifa za rasilimali inayoonyeshwa. Unaweza kubatilisha tabia kama hiyo katika seli maalum.
+        variations_description: Kuna matoleo matatu tofauti ya seli hii. Kila moja inafaa zaidi kuhusu muktadha unaoonyeshwa.
+        variations_text: Kuhusu aina ya shughuli, seli inaweza kuonyesha maudhui tofauti, ikiripoti rasilimali mahususi, iwe ya nafasi shirikishi au la, ina mwandishi au la.
+      home:
+        index:
+          by_sharing_principles: Kwa kushiriki kanuni, falsafa na mantiki ya maamuzi ya muundo tunataka kuipa jumuiya uwezo wa kuchangia kwa uthabiti ili tufikie matumizi bora zaidi ya mshiriki.
+          decidim_guide: Mwongozo wa kubuni vitu vyote Decidim
+          different_ui_components: Wakati huo huo, tunaandika vipengele tofauti vya UI na mifumo inayotumika, ambayo inapaswa kutumika tena au kupanuliwa.
+          github_source: Nambari ya chanzo kwenye GitHub
+          home_header: Mwongozo wa Ubunifu wa Decidim
+          welcome_sentence: Karibu kwenye Mwongozo wa Ubunifu wa Decidim (DDG). Mwongozo huu ndio nyenzo ya wabunifu na wasanidi wanaohitaji kubinafsisha, kuunda moduli mpya, na kuunganisha vipengele vipya.

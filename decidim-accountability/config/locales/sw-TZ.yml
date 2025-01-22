@@ -1,0 +1,273 @@
+---
+sw-TZ:
+  activemodel:
+    attributes:
+      result:
+        decidim_accountability_status_id: crwdns896:0crwdne896:0
+        decidim_category_id: crwdns898:0crwdne898:0
+        decidim_scope_id: crwdns900:0crwdne900:0
+        description: crwdns902:0crwdne902:0
+        end_date: crwdns904:0crwdne904:0
+        meetings_ids: crwdns906:0crwdne906:0
+        progress: crwdns908:0crwdne908:0
+        project_ids: crwdns910:0crwdne910:0
+        proposals: crwdns912:0crwdne912:0
+        start_date: crwdns914:0crwdne914:0
+        subresults: crwdns916:0crwdne916:0
+        title: crwdns918:0crwdne918:0
+        updated_at: crwdns920:0crwdne920:0
+      status:
+        description: crwdns922:0crwdne922:0
+        key: crwdns924:0crwdne924:0
+        name: crwdns926:0crwdne926:0
+        progress: crwdns928:0crwdne928:0
+      timeline_entry:
+        description: crwdns930:0crwdne930:0
+        entry_date: crwdns932:0crwdne932:0
+        title: crwdns934:0crwdne934:0
+    models:
+      decidim/accountability/proposal_linked_event: crwdns936:0crwdne936:0
+      decidim/accountability/result_progress_updated_event: crwdns938:0crwdne938:0
+  activerecord:
+    models:
+      decidim/accountability/result:
+        one: crwdns940:1crwdne940:1
+        other: crwdns940:5crwdne940:5
+  decidim:
+    accountability:
+      actions:
+        attachment_collections: crwdns942:0crwdne942:0
+        attachments: crwdns944:0crwdne944:0
+        confirm_destroy: crwdns946:0%{name}crwdne946:0
+        destroy: crwdns948:0crwdne948:0
+        edit: crwdns950:0crwdne950:0
+        import: crwdns952:0crwdne952:0
+        import_csv: crwdns954:0crwdne954:0
+        new_result: crwdns956:0crwdne956:0
+        new_status: crwdns958:0crwdne958:0
+        new_timeline_entry: crwdns960:0crwdne960:0
+        preview: crwdns962:0crwdne962:0
+        timeline_entries: crwdns964:0crwdne964:0
+        title: crwdns966:0crwdne966:0
+      admin:
+        exports:
+          result_comments: crwdns968:0crwdne968:0
+          results: crwdns970:0crwdne970:0
+        import_results:
+          new:
+            download_export: crwdns972:0crwdne972:0
+            import: crwdns974:0crwdne974:0
+            info: |
+              crwdns976:0%{link_new_status}crwdnd976:0%{link_new_result}crwdnd976:0%{link_export_csv}crwdne976:0
+            title: crwdns978:0crwdne978:0
+        imports:
+          create:
+            invalid: crwdns980:0crwdne980:0
+            success: crwdns982:0crwdne982:0
+        models:
+          result:
+            name: crwdns984:0crwdne984:0
+          status:
+            name: crwdns986:0crwdne986:0
+        projects_import:
+          create:
+            invalid: crwdns988:0crwdne988:0
+          new:
+            create: crwdns990:0crwdne990:0
+            import_all_selected_projects: crwdns992:0crwdne992:0
+            new_items:
+              one: crwdns994:1crwdne994:1
+              other: "crwdns994:5%{count}crwdne994:5"
+            no_components: crwdns996:0crwdne996:0
+            origin_component_id: crwdns998:0crwdne998:0
+            select_component: crwdns1000:0crwdne1000:0
+            success:
+              one: crwdns1002:1crwdne1002:1
+              other: "crwdns1002:5%{count}crwdne1002:5"
+            title: crwdns1004:0crwdne1004:0
+        results:
+          create:
+            invalid: crwdns1006:0crwdne1006:0
+            success: crwdns1008:0crwdne1008:0
+          destroy:
+            success: crwdns1010:0crwdne1010:0
+          edit:
+            title: crwdns1012:0crwdne1012:0
+            update: crwdns1014:0crwdne1014:0
+          index:
+            title: crwdns1016:0crwdne1016:0
+          new:
+            create: crwdns1018:0crwdne1018:0
+            title: crwdns1020:0crwdne1020:0
+          update:
+            invalid: crwdns1022:0crwdne1022:0
+            success: crwdns1024:0crwdne1024:0
+        shared:
+          subnav:
+            statuses: crwdns1026:0crwdne1026:0
+        statuses:
+          create:
+            invalid: crwdns1028:0crwdne1028:0
+            success: crwdns1030:0crwdne1030:0
+          destroy:
+            success: crwdns1032:0crwdne1032:0
+          edit:
+            title: crwdns1034:0crwdne1034:0
+            update: crwdns1036:0crwdne1036:0
+          index:
+            title: crwdns1038:0crwdne1038:0
+          new:
+            create: crwdns1040:0crwdne1040:0
+            title: crwdns1042:0crwdne1042:0
+          update:
+            invalid: crwdns1044:0crwdne1044:0
+            success: crwdns1046:0crwdne1046:0
+        timeline_entries:
+          create:
+            invalid: crwdns1048:0crwdne1048:0
+            success: crwdns1050:0crwdne1050:0
+          destroy:
+            success: crwdns1052:0crwdne1052:0
+          edit:
+            title: crwdns1054:0crwdne1054:0
+            update: crwdns1056:0crwdne1056:0
+          index:
+            title: crwdns1058:0crwdne1058:0
+          new:
+            create: crwdns1060:0crwdne1060:0
+            title: crwdns1062:0crwdne1062:0
+          update:
+            invalid: crwdns1064:0crwdne1064:0
+            success: crwdns1066:0crwdne1066:0
+      admin_log:
+        result:
+          create: "crwdns1068:0%{user_name}crwdnd1068:0%{resource_name}crwdnd1068:0%{space_name}crwdne1068:0"
+          delete: "crwdns1070:0%{user_name}crwdnd1070:0%{resource_name}crwdnd1070:0%{space_name}crwdne1070:0"
+          update: "crwdns1072:0%{user_name}crwdnd1072:0%{resource_name}crwdnd1072:0%{space_name}crwdne1072:0"
+        status:
+          create: "crwdns1074:0%{user_name}crwdnd1074:0%{resource_name}crwdne1074:0"
+          delete: "crwdns1076:0%{user_name}crwdnd1076:0%{resource_name}crwdne1076:0"
+          update: "crwdns1078:0%{user_name}crwdnd1078:0%{resource_name}crwdne1078:0"
+        timeline_entry:
+          create: "crwdns1080:0%{user_name}crwdnd1080:0%{resource_name}crwdne1080:0"
+          delete: "crwdns1082:0%{user_name}crwdnd1082:0%{resource_name}crwdne1082:0"
+          update: "crwdns1084:0%{user_name}crwdnd1084:0%{resource_name}crwdne1084:0"
+        value_types:
+          parent_presenter:
+            not_found: 'crwdns1086:0%{id}crwdne1086:0'
+      content_blocks:
+        highlighted_results:
+          results: crwdns1088:0crwdne1088:0
+      import_mailer:
+        import:
+          errors: crwdns1090:0crwdne1090:0
+          errors_present: crwdns1092:0crwdne1092:0
+          row_number: crwdns1094:0crwdne1094:0
+          subject: crwdns1096:0crwdne1096:0
+          success: crwdns1098:0crwdne1098:0
+      import_projects_mailer:
+        import:
+          added_projects:
+            one: crwdns1100:1crwdne1100:1
+            other: "crwdns1100:5%{count}crwdne1100:5"
+          subject: crwdns1102:0crwdne1102:0
+          success: crwdns1104:0%{component_name}crwdne1104:0
+      last_activity:
+        new_result: 'crwdns1106:0crwdne1106:0'
+      models:
+        result:
+          fields:
+            category: crwdns1108:0crwdne1108:0
+            created_at: crwdns1110:0crwdne1110:0
+            end_date: crwdns1112:0crwdne1112:0
+            id: crwdns1114:0crwdne1114:0
+            progress: crwdns1116:0crwdne1116:0
+            scope: crwdns1118:0crwdne1118:0
+            start_date: crwdns1120:0crwdne1120:0
+            status: crwdns1122:0crwdne1122:0
+            title: crwdns1124:0crwdne1124:0
+        status:
+          fields:
+            description: crwdns1126:0crwdne1126:0
+            key: crwdns1128:0crwdne1128:0
+            name: crwdns1130:0crwdne1130:0
+            progress: crwdns1132:0crwdne1132:0
+        timeline_entry:
+          fields:
+            entry_date: crwdns1134:0crwdne1134:0
+            title: crwdns1136:0crwdne1136:0
+      results:
+        count:
+          results_count:
+            one: crwdns1138:1crwdne1138:1
+            other: "crwdns1138:5%{count}crwdne1138:5"
+        filters:
+          all: crwdns1140:0crwdne1140:0
+        home:
+          categories_label: crwdns1142:0crwdne1142:0
+          empty: crwdns1144:0crwdne1144:0
+          empty_filters: crwdns1146:0crwdne1146:0
+          subcategories_label: crwdns1148:0crwdne1148:0
+        home_header:
+          global_status: crwdns1150:0crwdne1150:0
+        nav_breadcrumb:
+          global: crwdns1152:0crwdne1152:0
+        no_results: crwdns1154:0crwdne1154:0
+        search:
+          search: crwdns1156:0crwdne1156:0
+        show:
+          stats:
+            back_to_resource: crwdns1158:0crwdne1158:0
+        timeline:
+          title: crwdns1160:0crwdne1160:0
+    admin:
+      filters:
+        results:
+          category_id_eq:
+            label: crwdns1162:0crwdne1162:0
+          scope_id_eq:
+            label: crwdns1164:0crwdne1164:0
+          status_id_eq:
+            label: crwdns1166:0crwdne1166:0
+    components:
+      accountability:
+        actions:
+          comment: crwdns1168:0crwdne1168:0
+        name: crwdns1170:0crwdne1170:0
+        settings:
+          global:
+            comments_enabled: crwdns1172:0crwdne1172:0
+            comments_max_length: crwdns1174:0crwdne1174:0
+            display_progress_enabled: crwdns1176:0crwdne1176:0
+            intro: crwdns1178:0crwdne1178:0
+            scope_id: crwdns1180:0crwdne1180:0
+            scopes_enabled: crwdns1182:0crwdne1182:0
+          step:
+            comments_blocked: crwdns1184:0crwdne1184:0
+    events:
+      accountability:
+        proposal_linked:
+          email_intro: 'crwdns1186:0%{proposal_title}crwdne1186:0'
+          email_outro: crwdns1188:0%{proposal_title}crwdne1188:0
+          email_subject: crwdns1190:0%{proposal_title}crwdne1190:0
+          notification_title: crwdns1192:0%{proposal_path}crwdnd1192:0%{proposal_title}crwdnd1192:0%{resource_path}crwdnd1192:0%{resource_title}crwdne1192:0
+        result_progress_updated:
+          email_intro: 'crwdns1194:0%{resource_title}crwdnd1194:0%{proposal_title}crwdnd1194:0%{progress}crwdne1194:0'
+          email_outro: crwdns1196:0%{proposal_title}crwdnd1196:0%{resource_title}crwdne1196:0
+          email_subject: crwdns1198:0%{resource_title}crwdne1198:0
+          notification_title: crwdns1200:0%{resource_path}crwdnd1200:0%{resource_title}crwdnd1200:0%{proposal_path}crwdnd1200:0%{proposal_title}crwdnd1200:0%{progress}crwdne1200:0
+    metrics:
+      results:
+        description: crwdns1202:0crwdne1202:0
+        object: crwdns1204:0crwdne1204:0
+        title: crwdns1206:0crwdne1206:0
+    participatory_spaces:
+      highlighted_results:
+        see_all: crwdns1208:0crwdne1208:0
+    resource_links:
+      included_projects:
+        result_project: crwdns1210:0crwdne1210:0
+      included_proposals:
+        result_proposal: crwdns1212:0crwdne1212:0
+    statistics:
+      results_count: crwdns1214:0crwdne1214:0

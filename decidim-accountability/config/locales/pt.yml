@@ -3,16 +3,17 @@ pt:
   activemodel:
     attributes:
       result:
-        decidim_accountability_status_id: Estado
+        decidim_accountability_status_id: Estatuto
         decidim_category_id: Categoria
-        decidim_scope_id: Âmbito
+        decidim_scope_id: Escopo
         description: Descrição
-        end_date: Data final
+        end_date: Data de término
         meetings_ids: Reuniões associadas
         progress: Progresso
         project_ids: Projetos incluídos
         proposals: Propostas incluídas
         start_date: Data de início
+        subresults: Subresultados
         title: Título
         updated_at: Atualizado em
       status:
@@ -40,10 +41,11 @@ pt:
         confirm_destroy: Tem certeza de que deseja eliminar este %{name}?
         destroy: Eliminar
         edit: Editar
-        import: Importar projetos de outro componente
+        import: Importar projetos de outra funcionalidade
         import_csv: Importar resultados de um CSV
         new_result: Novo resultado
-        new_status: Novo estado
+        new_status: Novo estatuto
+        new_timeline_entry: Nova entrada do cronograma
         preview: Pré-visualizar
         timeline_entries: Evolução do projeto
         title: Ações
@@ -53,13 +55,61 @@ pt:
           results: Resultados
         import_results:
           new:
+            download_export: Baixe a exportação com formato CSV
             import: Importar
+            info: |
+              <p>Recomendamos que sigas estes passos:</p>
+              <ol>
+              <li><a href='%{link_new_status}' target='_blank'>Cria os Estatutos para os Resultados</a> que desejas adicionar</li>
+              <li><a href='%{link_new_result}' target='_blank'>Cria pelo menos um Resultado manualmente</a> através deste painel de administração antes de usar a Importação, para teres uma melhor compreensão do formato e do que precisarás preencher.</li>
+              <li>%{link_export_csv}</li>
+              <li>Faz as alterações localmente. Podes alterar apenas as seguintes colunas do CSV:
+                <ul>
+                <li><b>category/id:</b> ID para a Categoria</li>
+                <li><b>scope/id:</b> ID para o Escopo</li>
+                <li><b>parent/id:</b> ID do pai (para Resultados relacionados). Opcional</li>
+                <li><b>title/en:</b> Título em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
+                <li><b>description/en:</b> Descrição em inglês. Isto dependerá da configuração de idioma da tua plataforma.</li>
+                <li><b>start_date:</b> data de início da execução do resultado (formato YYYY-MM-DD)</li>
+                <li><b>end_date:</b> data de término da execução do resultado (formato YYYY-MM-DD)</li>
+                <li><b>status/id:</b> ID do Estatuto para este resultado</li>
+                <li><b>progress:</b> Percentagem (de 0 a 100) da execução</li>
+                <li><b>proposals_ids:</b> ID interno das propostas relacionadas (separadas por vírgulas). Isto é automaticamente convertido em <span class='attribute-name'>proposal_url</span></li>
+                </ul>
+              </li>
+              </ol>
+            title: Importar resultados de um CSV
+        imports:
+          create:
+            invalid: Ocorreu um problema na importação dos resultados.
+            success: O arquivo começou a importar. Você receberá um e-mail nos próximos minutos com o resultado da importação.
         models:
           result:
             name: Resultado
           status:
             name: Estado
+        projects_import:
+          create:
+            invalid: Houve um problema ao importar os projetos para os resultados, por favor, siga as instruções cuidadosamente e verifique se você selecionou projetos para implementação.
+          new:
+            create: Importar
+            import_all_selected_projects: Importar todos os projetos selecionados para implementação
+            new_items:
+              one: 1 projeto selecionado será importado
+              other: "%{count} projetos selecionados serão importados"
+            no_components: Não há outras, funcionalidade de orçamento neste espaço participativo para importar os projetos em resultados.
+            origin_component_id: Funcionalidade de origem
+            select_component: Selecione uma funcionalidade
+            success:
+              one: 1 projeto na fila para ser importado. Você será notificado por e-mail, assim que concluído.
+              other: "Projetos %{count} na fila para serem importados. Você será notificado por e-mail, assim que concluído."
+            title: Importar projetos de outra funcionalidade
         results:
+          create:
+            invalid: Houve um problema ao criar este resultado.
+            success: Resultado criado corretamente.
+          destroy:
+            success: Resultado criado corretamente.
           edit:
             title: Editar resultado
             update: Atualizar resultado
@@ -68,19 +118,35 @@ pt:
           new:
             create: Criar resultado
             title: Novo resultado
+          update:
+            invalid: Houve um problema ao criar este resultado.
+            success: Resultado criado corretamente.
         shared:
           subnav:
             statuses: Estados
         statuses:
+          create:
+            invalid: Houve um problema ao criar este estatuto.
+            success: Estatuto criado com sucesso.
+          destroy:
+            success: Estatuto elimidado com sucesso.
           edit:
             title: Editar estado
-            update: Atualizar estado
+            update: Atualizar estatuto
           index:
             title: Estados
           new:
-            create: Criar estado
-            title: Novo estado
+            create: Criar estatuto
+            title: Novo estatuto
+          update:
+            invalid: Houve um problema ao criar este estatuto.
+            success: Estatuto criado com sucesso.
         timeline_entries:
+          create:
+            invalid: Ocorreu um problema ao criar este elemento.
+            success: Elemento criado com sucesso.
+          destroy:
+            success: Elemento eliminado com sucesso.
           edit:
             title: Editar entrada
             update: Atualizar entrada
@@ -89,11 +155,22 @@ pt:
           new:
             create: Criar entrada
             title: Nova entrada
+          update:
+            invalid: Ocorreu um problema ao criar este elemento.
+            success: Elemento criado com sucesso.
       admin_log:
         result:
           create: "%{user_name} criou o resultado %{resource_name} em %{space_name}"
           delete: "%{user_name} eliminou o resultado %{resource_name} em %{space_name}"
           update: "%{user_name} atualizou o resultado %{resource_name} em %{space_name}"
+        status:
+          create: "%{user_name} criou o estatuto %{resource_name}"
+          delete: "%{user_name} eliminou o estatuto %{resource_name}"
+          update: "%{user_name} atualizou o estatuto %{resource_name}"
+        timeline_entry:
+          create: "%{user_name} criou o elemento de linha do tempo %{resource_name}"
+          delete: "%{user_name} eliminou o elemento de linha do tempo %{resource_name}"
+          update: "%{user_name} atualizou o elemento de linha do tempo %{resource_name}"
         value_types:
           parent_presenter:
             not_found: 'O pai não foi encontrado na base de dados (ID: %{id})'
@@ -103,20 +180,30 @@ pt:
       import_mailer:
         import:
           errors: Erros
+          errors_present: Houve um problema na importação dos resultados.
           row_number: Linha
           subject: Importação dos resultados bem-sucedida
           success: Importação dos resultados bem-sucedida. Poderá rever os resultados na interface de administração.
+      import_projects_mailer:
+        import:
+          added_projects:
+            one: Um resultado foi importado de projetos.
+            other: "%{count} resultados foram importados de projetos."
+          subject: Importação dos resultados bem-sucedida
+          success: Projetos importados com sucesso para resultados na funcionalidade %{component_name}. Podes rever os resultados no painel de controlo.
+      last_activity:
+        new_result: 'Novo resultado:'
       models:
         result:
           fields:
             category: Categoria
             created_at: Criado em
-            end_date: Data final
+            end_date: Data de término
             id: ID
             progress: Progresso
-            scope: Âmbito
+            scope: Escopo
             start_date: Data de início
-            status: Estado
+            status: Estatuto
             title: Título
         status:
           fields:
@@ -127,6 +214,7 @@ pt:
         timeline_entry:
           fields:
             entry_date: Data
+            title: Título
       results:
         count:
           results_count:
@@ -134,10 +222,16 @@ pt:
             other: "%{count} resultados"
         filters:
           all: Todos
+        home:
+          categories_label: Categorias
+          empty: Ainda não há resultados.
+          empty_filters: Não há resultados com estes critérios.
+          subcategories_label: Subcategorias
         home_header:
-          global_status: Estado de execução global
+          global_status: Estado global de execução
         nav_breadcrumb:
           global: Execução global
+        no_results: Não há projetos
         search:
           search: Pesquisa por ações
         show:
@@ -151,9 +245,9 @@ pt:
           category_id_eq:
             label: Categoria
           scope_id_eq:
-            label: Âmbito
+            label: Escopo
           status_id_eq:
-            label: Estado
+            label: Estatuto
     components:
       accountability:
         actions:
@@ -165,8 +259,8 @@ pt:
             comments_max_length: Comprimento máximo dos comentários (Deixar 0 para o valor predefinido)
             display_progress_enabled: Mostrar progresso
             intro: Introdução
-            scope_id: Âmbito
-            scopes_enabled: Âmbitos activados
+            scope_id: Escopo
+            scopes_enabled: Escopos ativados
           step:
             comments_blocked: Comentários bloqueados
     events:

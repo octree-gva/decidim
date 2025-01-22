@@ -1,1 +1,691 @@
+---
 sw:
+  activemodel:
+    attributes:
+      close_meeting:
+        attendees_count: Idadi ya waliohudhuria
+        attending_organizations: Orodha ya mashirika yaliyohudhuria
+        audio_url: URL ya sauti
+        closing_report: Dakika
+        closing_visible: Inaonekana
+        contributions_count: Idadi ya michango
+        proposal_ids: Mapendekezo yaliyoundwa katika mkutano
+        video_url: URL ya video
+      meeting:
+        address: Anwani
+        available_slots: Nafasi zinazopatikana za mkutano huu
+        customize_registration_email: Badilisha barua pepe ya usajili kukufaa
+        decidim_category_id: Kategoria
+        decidim_scope_id: Upeo
+        decidim_user_group_id: Kikundi cha watumiaji
+        description: Maelezo
+        end_time: Wakati wa mwisho
+        id: ID
+        iframe_access_level: Kiwango cha ufikiaji wa Iframe
+        iframe_embed_type: Aina ya kupachika Iframe
+        iframe_embed_type_html: Ni huduma chache tu zinazoruhusu "Pachika katika ukurasa wa mkutano" au "Fungua katika ukurasa wa tukio la moja kwa moja". Kumbuka kuwa kwa chaguo la "Pachika katika ukurasa wa mkutano" kwenye rununu, kwa kuwa skrini inarithi vipimo tofauti, itafanya kazi kama "Fungua ukurasa wa tukio la moja kwa moja".
+        location: Mahali
+        location_hints: Vidokezo vya eneo
+        online_meeting_url: URL ya mkutano mtandaoni
+        organizer_gid: Unda kama
+        organizer_id: Mratibu
+        private_meeting: Mkutano wa kibinafsi
+        registration_email_custom_content: Usajili wa barua pepe ya maudhui maalum
+        registration_form_enabled: Fomu ya usajili imewezeshwa
+        registration_terms: Masharti ya usajili
+        registration_type: Aina ya usajili
+        registration_url: URL ya Usajili
+        registrations_enabled: Usajili umewezeshwa
+        reserved_slots: Nafasi zilizohifadhiwa za mkutano huu
+        start_time: Wakati wa kuanza
+        title: Kichwa
+        transparent: Uwazi
+        type_of_meeting: Aina
+      meeting_agenda:
+        title: Kichwa
+        visible: Inaonekana
+      meeting_agenda_items:
+        description: Maelezo
+        duration: Muda
+        title: Kichwa
+      meeting_registration_invite:
+        email: Barua pepe
+        name: Jina
+      validate_registration_code:
+        code: Kanuni
+    errors:
+      models:
+        meeting:
+          attributes:
+            iframe_embed_type:
+              not_embeddable: URL hii haiwezi kupachikwa katika ukurasa wa mkutano au wa tukio la moja kwa moja.
+            online_meeting_url:
+              url_format: Lazima iwe URL halali
+        meeting_agenda:
+          attributes:
+            base:
+              too_many_minutes: Muda wa vipengee unazidi muda wa mkutano kwa dakika %{count}.
+              too_many_minutes_child: Muda wa kipengee ambacho mtoto hupokea huzidi muda wa mzazi wa kipengee cha ajenda "%{parent_title}" kwa dakika %{count}.
+        meeting_registration_invite:
+          attributes:
+            email:
+              already_invited: Akaunti hii ya barua pepe tayari imealikwa.
+    models:
+      decidim/meetings/close_meeting_event: Mkutano umefungwa
+      decidim/meetings/create_meeting_event: Mkutano
+      decidim/meetings/meeting_registrations_enabled_event: Usajili umewezeshwa
+      decidim/meetings/meeting_registrations_over_percentage_event: Usajili uliozidi kikomo
+      decidim/meetings/upcoming_meeting_event: Mkutano ujao
+      decidim/meetings/update_meeting_event: Mkutano umesasishwa
+  activerecord:
+    models:
+      decidim/meetings/meeting:
+        one: Mkutano
+        other: Mikutano
+      decidim/meetings/minutes:
+        one: Dakika
+        other: Dakika
+      decidim/meetings/registration:
+        one: Usajili
+        other: Usajili
+  decidim:
+    admin:
+      filters:
+        accepted_at_not_null:
+          label: Imekubaliwa
+          values:
+            'false': Haikubaliki
+            'true': Imekubaliwa
+        meetings:
+          category_id_eq:
+            label: Kategoria
+          closed_at_present:
+            label: Jimbo
+            values:
+              'false': Fungua
+              'true': Imefungwa
+          is_upcoming_true:
+            label: Tarehe
+            values:
+              'false': Zamani
+              'true': Ijayo
+          scope_id_eq:
+            label: Upeo
+          with_any_origin:
+            label: Asili
+            values:
+              official: Rasmi
+              participants: Mshiriki
+              user_group: Vikundi vya Watumiaji
+          with_any_type:
+            label: Aina ya mkutano
+            values:
+              hybrid: Mseto
+              in_person: Katika Mtu
+              online: Mtandaoni
+        rejected_at_not_null:
+          label: Imekataliwa
+          values:
+            'false': Haijakataliwa
+            'true': Imekataliwa
+        search_placeholder:
+          user_name_or_user_email_cont: Tafuta kwa jina au barua pepe
+        sent_at_not_null:
+          label: Imetumwa
+          values:
+            'false': Haijatumwa
+            'true': Imetumwa
+      meeting_copies:
+        create:
+          error: Kulikuwa na tatizo katika kunakili mkutano huu.
+          success: Mkutano umenakiliwa.
+        new:
+          copy: Nakili
+          title: Rudufu mkutano
+    components:
+      meetings:
+        actions:
+          comment: Maoni
+          join: Jiunge
+          reply_poll: Kura ya kujibu
+        name: Mikutano
+        settings:
+          global:
+            announcement: Tangazo
+            comments_enabled: Maoni yamewezeshwa
+            comments_max_length: Urefu wa juu wa maoni (Acha 0 kwa thamani chaguomsingi)
+            creation_enabled_for_participants: Washiriki wanaweza kuunda mikutano
+            default_registration_terms: Masharti chaguomsingi ya usajili
+            enable_pads_creation: Washa uundaji wa pedi
+            maps_enabled: Ramani zimewashwa
+            registration_code_enabled: Msimbo wa usajili umewezeshwa
+            resources_permissions_enabled: Ruhusa za vitendo zinaweza kuwekwa kwa kila mkutano
+            scope_id: Upeo
+            scopes_enabled: Upeo umewezeshwa
+            terms_and_conditions_url_for_meeting_creators: URL ya Sheria na Masharti ya watayarishi wanaokutana
+          step:
+            announcement: Tangazo
+            comments_blocked: Maoni yamezuiwa
+            creation_enabled_for_participants: Uundaji wa mkutano na washiriki umewezeshwa
+            creation_enabled_for_user_groups: Uundaji wa mikutano kwa vikundi vya watumiaji umewezeshwa
+    events:
+      meetings:
+        meeting_closed:
+          affected_user:
+            email_intro: 'Mkutano wako "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu ulipanga mkutano wa "%{resource_title}".
+            email_subject: Mkutano wa "%{resource_title}" ulifungwa
+            notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
+          follower:
+            email_intro: 'Mkutano wa "%{resource_title}" ulifungwa. Unaweza kusoma hitimisho kutoka kwa ukurasa wake:'
+            email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+            email_subject: Mkutano wa "%{resource_title}" ulifungwa
+            notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulifungwa.
+        meeting_created:
+          button_text: Jiandikishe kwenye mkutano
+          email_intro: Mkutano "%{resource_title}" umeongezwa kwenye "%{participatory_space_title}" unayofuata.
+          email_outro: Umepokea arifa hii kwa sababu unafuata "%{participatory_space_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano mpya umeongezwa kwa %{participatory_space_title}
+          notification_title: Mkutano <a href="%{resource_path}">%{resource_title}</a> umeongezwa kwenye %{participatory_space_title}
+        meeting_registration_confirmed:
+          notification_title: Usajili wako kwa mkutano <a href="%{resource_url}">%{resource_title}</a> umethibitishwa. Nambari yako ya usajili ni %{registration_code}.
+        meeting_registrations_over_percentage:
+          email_intro: Nafasi zilizotengwa za mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%.
+          email_outro: Umepokea arifa hii kwa sababu wewe ni msimamizi wa nafasi shirikishi ya mkutano.
+          email_subject: Nafasi zilizotengwa za mkutano wa "%{resource_title}" ni zaidi ya %{percentage}%
+          notification_title: Nafasi zilizotengwa za mkutano wa <a href="%{resource_path}">%{resource_title}</a> ni zaidi ya %{percentage}%.
+        meeting_updated:
+          email_intro: 'Mkutano wa "%{resource_title}" ulisasishwa. Unaweza kusoma toleo jipya kutoka kwa ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" ulisasishwa
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> ulisasishwa.
+        registration_code_validated:
+          email_intro: Msimbo wako wa usajili "%{registration_code}" wa mkutano wa "%{resource_title}" umeidhinishwa.
+          email_outro: Umepokea arifa hii kwa sababu nambari yako ya usajili ya mkutano wa "%{resource_title}" imeidhinishwa.
+          email_subject: Nambari yako ya usajili "%{registration_code}" ya mkutano wa "%{resource_title}" imethibitishwa.
+          notification_title: Nambari yako ya usajili "%{registration_code}" ya mkutano wa <a href="%{resource_path}">%{resource_title}</a> imethibitishwa.
+        registrations_enabled:
+          email_intro: 'Mkutano wa "%{resource_title}" umewezesha usajili. Unaweza kujiandikisha kwenye ukurasa wake:'
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" umewezesha usajili.
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> umewezesha usajili.
+        upcoming_meeting:
+          email_intro: Mkutano wa "%{resource_title}" utaanza chini ya 48h
+          email_outro: Umepokea arifa hii kwa sababu unafuata mkutano wa "%{resource_title}". Unaweza kuiacha kutoka kwa kiungo kilichotangulia.
+          email_subject: Mkutano wa "%{resource_title}" utaanza chini ya 48h.
+          notification_title: Mkutano wa <a href="%{resource_path}">%{resource_title}</a> utaanza chini ya 48h.
+    forms:
+      meetings:
+        attendees_count_help_text: Usisahau kujumuisha jumla ya idadi ya waliohudhuria kwenye mkutano wako, iwe ana kwa ana, mtandaoni au mseto.
+    gamification:
+      badges:
+        attended_meetings:
+          conditions:
+            - Jiandikishe kwa mikutano unayotaka kuhudhuria
+          description: Beji hii inatolewa unapohudhuria mikutano kadhaa ya ana kwa ana.
+          description_another: Mshiriki huyu amehudhuria mikutano %{score}.
+          description_own: Umehudhuria mikutano %{score}.
+          name: Walihudhuria mikutano
+          next_level_in: Hudhuria mikutano %{score} zaidi ili kufikia kiwango kinachofuata!
+          unearned_another: Mshiriki huyu bado hajahudhuria mkutano wowote.
+          unearned_own: Bado hujahudhuria mkutano wowote.
+    meetings:
+      actions:
+        agenda: Ajenda
+        attachment_collections: Folda
+        attachments: Viambatisho
+        close: Funga
+        confirm_destroy: Je, una uhakika unataka kufuta mkutano huu?
+        destroy: Futa
+        edit: Hariri
+        invalid_destroy:
+          proposals_count:
+            one: 'Mkutano hauwezi kuharibiwa kwa sababu una pendekezo %{count} linalohusishwa nao:'
+            other: 'Mkutano hauwezi kuharibiwa kwa sababu una mapendekezo %{count} yanayohusiana nao:'
+        manage_poll: Dhibiti kura ya maoni
+        new_meeting: Mkutano mpya
+        preview: Hakiki
+        registrations: Usajili
+        title: Vitendo
+      admin:
+        agenda:
+          agenda_item:
+            add_agenda_item_child: Ongeza kipengee kidogo cha ajenda
+            agenda_item: Kipengee cha Ajenda
+            agenda_item_children: Vipengee vidogo vya ajenda
+            down: Chini
+            remove: Ondoa
+            up: Juu
+          agenda_item_child:
+            agenda_item_child: Kipengele kidogo cha ajenda
+            down: Chini
+            remove: Ondoa
+            up: Juu
+          create:
+            invalid: Kulikuwa na tatizo katika kuunda ajenda hii.
+            success: Agenda imeundwa.
+          edit:
+            title: Hariri ajenda
+            update: Sasisha
+          form:
+            add_agenda_item: Ongeza kipengee cha ajenda
+            agenda_items: Vipengee vya ajenda
+            end_date: Tarehe ya mwisho
+            start_date: Tarehe ya kuanza
+          new:
+            create: Unda
+            title: Ajenda mpya
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha ajenda hii.
+            success: Agenda imesasishwa.
+        exports:
+          answers: Majibu
+          meeting_comments: Maoni
+          meetings: Mikutano
+          registrations: Usajili
+        invite_join_meeting_mailer:
+          invite:
+            decline: Kataa mwaliko
+            invited_you_to_join_a_meeting: "%{invited_by} amekualika kujiunga na mkutano katika %{application}. Unaweza kuikataa au kuikubali kupitia viungo vilivyo hapa chini."
+            join: Jiunge na mkutano '%{meeting_title}'
+        invites:
+          create:
+            error: Kulikuwa na tatizo katika kumwalika mshiriki kujiunga kwenye mkutano.
+            success: Mshiriki amealikwa kujiunga na mkutano.
+          form:
+            attendee_type: Aina ya mshiriki
+            existing_user: Mshiriki aliyepo
+            invite: Alika
+            invite_explanation: Mshiriki ataalikwa kujiunga na mkutano na kwa shirika pia.
+            non_user: Asiyekuwa mshiriki
+            select_user: Chagua mshiriki
+          index:
+            invite_attendee: Alika mshiriki
+            invites: Inaalika
+            registrations_disabled: Huwezi kumwalika mhudhuriaji kwa sababu usajili umezimwa.
+        meeting_closes:
+          edit:
+            close: Funga
+            title: Funga mkutano
+        meetings:
+          close:
+            invalid: Kulikuwa na tatizo wakati wa kufunga mkutano huu.
+            success: Mkutano umefungwa.
+          create:
+            invalid: Kulikuwa na tatizo kuunda mkutano huu.
+            success: Mkutano umeundwa. Kumbuka kuwa hii bado haijachapishwa, unahitaji kuichapisha wewe mwenyewe.
+          destroy:
+            invalid:
+              proposals_count:
+                one: Mkutano hauwezi kuharibiwa kwa sababu una pendekezo %{count} linalohusishwa nao.
+                other: Mkutano hauwezi kuharibiwa kwa sababu una mapendekezo %{count} yanayohusiana nao.
+            success: Mkutano umefutwa
+          edit:
+            title: Hariri mkutano
+            update: Sasisha
+          form:
+            address_help: 'Anwani: inayotumiwa na Geocoder kupata eneo'
+            disclaimer: 'Kanusho: Kwa kutumia mfumo wa usajili wa nje, unafahamu kuwa waandaaji wa %{organization} hawawajibikii data iliyotolewa na watumiaji kwa huduma ya nje.'
+            iframe_embed_type_html: 'Ni huduma chache tu zinazoruhusu kupachika katika mkutano au tukio la moja kwa moja kutoka kwa vikoa vifuatavyo: %{domains}'
+            location_help: 'Mahali: ujumbe unaoelekezwa kwa watumiaji unaoashiria mahali pa kukutana'
+            location_hints_help: 'Vidokezo vya eneo: maelezo ya ziada. Mfano: sakafu ya jengo ikiwa ni mkutano wa ana kwa ana, au nenosiri la mkutano ikiwa ni mkutano wa mtandaoni ambao ufikiaji umezuiwa.'
+            online_meeting_url_help: 'Kiungo: waruhusu washiriki kuunganishwa moja kwa moja kwenye mkutano wako'
+            registration_url_help: 'Kiungo: waruhusu washiriki kuendelea na huduma ya nje unayotumia kwa usajili'
+            select_a_meeting_type: Tafadhali chagua aina ya mkutano
+            select_a_registration_type: Tafadhali chagua aina ya usajili
+            select_an_iframe_access_level: Tafadhali chagua kiwango cha ufikiaji wa iframe
+          index:
+            title: Mikutano
+          new:
+            create: Unda
+            title: Unda mkutano
+          publish:
+            invalid: Kulikuwa na tatizo la kuchapisha mkutano huu.
+            success: Mkutano umechapishwa.
+          service:
+            description: Maelezo
+            down: Chini
+            remove: Ondoa
+            service: Huduma
+            title: Kichwa
+            up: Juu
+          services:
+            add_service: Ongeza huduma
+            services: Huduma
+          unpublish:
+            invalid: Kulikuwa na tatizo la kubatilisha uchapishaji wa mkutano huu.
+            success: Mkutano umebatilishwa kuchapishwa.
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha mkutano huu.
+            success: Mkutano umesasishwa.
+        meetings_poll:
+          form:
+            title: Hariri dodoso la kura ya %{questionnaire_for}
+          update:
+            invalid: Kulikuwa na tatizo la kusasisha kura hii ya mkutano.
+            success: Kura ya mkutano imesasishwa.
+        poll:
+          form:
+            announcement_html:
+              - Swali linapopokea majibu au kuchapishwa/kufungwa, haliwezi kuhaririwa tena.
+              - Unaweza kuongeza swali wakati wowote.
+              - Kura ya maoni itafungwa wakati matokeo ya maswali yote yaliyoundwa yatakapochapishwa.
+              - Tembelea <a href='%{admin_link}'>ukurasa wa usimamizi wa kura</a> ili kutuma maswali na kuchapisha matokeo.
+        registrations:
+          edit:
+            save: Hifadhi
+            validate: Thibitisha
+            validate_registration_code: Thibitisha nambari ya usajili
+          form:
+            available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana.
+            invites: Mialiko
+            recommendation_message: Kwa sababu za faragha tunapendekeza kwamba ufute fomu hii ya usajili wakati huhitaji tena. Kwa chaguo-msingi hii ni miezi 3 baada ya mkutano kumalizika.
+            registration_email_help: Maandishi haya yataonekana katikati ya barua pepe ya uthibitishaji wa usajili. Mara tu baada ya nambari ya usajili.
+            registration_form: Fomu ya usajili
+            registrations_count:
+              one: Kumekuwa na usajili %{count}.
+              other: Kumekuwa na usajili %{count}.
+            reserved_slots_help: Iache hadi 0 ikiwa huna nafasi zilizohifadhiwa.
+            reserved_slots_less_than: Lazima iwe chini ya au sawa na %{count}
+            title: Usajili
+          update:
+            invalid: Kulikuwa na tatizo katika kuhifadhi mipangilio ya usajili.
+            success: Mipangilio ya usajili wa mkutano imehifadhiwa.
+          validate_registration_code:
+            invalid: Msimbo huu wa usajili si sahihi.
+            success: Msimbo wa usajili umethibitishwa.
+      admin_log:
+        invite:
+          create: "%{user_name} alimwalika %{attendee_name} kujiunga na mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          deleted: "%{user_name} hajaalikwa %{attendee_name} kutoka kwenye mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alimwalika %{attendee_name} kujiunga na mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+        meeting:
+          close: "%{user_name} alifunga mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          create: "%{user_name} aliunda mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          delete: "%{user_name} alifuta mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          export_registrations: "%{user_name} alihamisha usajili wa mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          update: "%{user_name} alisasisha mkutano wa %{resource_name} kwenye nafasi ya %{space_name}"
+          value_types:
+            organizer_presenter:
+              not_found: 'Mratibu hakupatikana kwenye hifadhidata (ID: %{id})'
+        questionnaire:
+          update: "%{user_name} alisasisha dodoso la mkutano wa %{meeting_name}"
+      application_helper:
+        filter_category_values:
+          all: Wote
+        filter_meeting_space_values:
+          all: Wote
+      calendar:
+        meeting_to_event:
+          read_more: Soma zaidi kuhusu mkutano huu
+      calendar_modal:
+        calendar_url: URL ya Kalenda
+        copy_calendar_url: Nakili
+        copy_calendar_url_clarification: Nakili URL ya kalenda kwenye ubao wa kunakili
+        copy_calendar_url_copied: Imenakiliwa!
+        copy_calendar_url_description: Unaweza kuona mikutano yote iliyochapishwa katika programu yako ya kalenda au mtoaji huduma. Nakili na ubandike URL hii kwenye kalenda yako kwa kutumia chaguo la "Ongeza kalenda mpya kutoka kwa URL".
+        copy_calendar_url_explanation: Tafadhali kumbuka kuwa unasafirisha uteuzi wa mikutano, kwa kuwa kuna vichujio vinavyotumika. Ikiwa ungependa kuzihamisha zote, weka upya vichujio vyote kwanza.
+        copy_calendar_url_message: URL ilinakiliwa kwenye ubao wa kunakili.
+        export_calendar: Hamisha kalenda
+      close_meeting_reminder_mailer:
+        close_meeting_reminder:
+          body: Mkutano <a href="%{meeting_path}">"%{meeting_title}"</a> unasubiri kufungwa. Tafadhali ongeza ripoti ya mkutano kwa kutumia kitufe cha "Funga mkutano".
+          greetings: Salamu,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+          hello: Hujambo %{username},
+          subject: Sasa unaweza kufunga mkutano "%{meeting_title}" kwa ripoti
+      conference_venues: Maeneo ya Mikutano
+      content_blocks:
+        upcoming_meetings:
+          name: Mikutano ijayo
+      directory:
+        meetings:
+          index:
+            meetings: Mikutano
+            space_type: Nafasi shirikishi
+      iframe_access_level:
+        all: Wageni wote
+        registered: Washiriki waliojiandikisha kwenye mkutano huu
+        signed_in: Washiriki walioingia pekee
+      iframe_embed_type:
+        embed_in_meeting_page: Pachika katika ukurasa wa mkutano
+        none: Hakuna
+        open_in_live_event_page: Fungua katika ukurasa wa tukio la moja kwa moja
+        open_in_new_tab: Fungua URL kwenye kichupo kipya
+      last_activity:
+        meeting_updated: 'Mkutano umesasishwa:'
+        new_meeting: 'Mkutano mpya:'
+      layouts:
+        live_event:
+          close: funga
+      mailer:
+        invite_join_meeting_mailer:
+          invite:
+            subject: Mwaliko wa kujiunga na mkutano
+        registration_mailer:
+          confirmation:
+            subject: Usajili wa mkutano wako umethibitishwa
+      meeting:
+        not_allowed: Huruhusiwi kutazama mkutano huu.
+      meeting_closes:
+        edit:
+          back: Nyuma
+          close: Funga mkutano
+          title: Funga mkutano
+      meetings:
+        calendar_modal:
+          add_to_calendar: Ongeza kwenye kalenda
+          apple: Ongeza kwenye kalenda ya Apple
+          full_details_html: Kwa maelezo kamili nenda kwa %{link}
+          google: Ongeza kwenye kalenda ya Google
+          outlook: Ongeza kwenye kalenda ya Outlook
+        count:
+          meetings_count:
+            one: "%{count} mkutano"
+            other: "%{count} mikutano"
+        create:
+          invalid: Kulikuwa na tatizo kuunda mkutano huu.
+          success: Umeanzisha mkutano.
+        edit:
+          back: Nyuma
+          title: Hariri Mkutano Wako
+          update: Sasisha
+        filters:
+          activity: Shughuli yangu
+          all: Wote
+          category: Kategoria
+          date: Tarehe
+          date_values:
+            all: Wote
+            past: Zamani
+            upcoming: Ijayo
+          my_meetings: Mikutano yangu
+          origin: Asili
+          origin_values:
+            all: Wote
+            official: Rasmi
+            participants: Washiriki
+            user_group: Vikundi
+          search: Tafuta
+          type: Aina
+          type_values:
+            all: Wote
+            hybrid: Mseto
+            in_person: Ana kwa ana
+            online: Mtandaoni
+        form:
+          address_help: 'Anwani: inayotumiwa na Geocoder kupata eneo'
+          available_slots_help: Iache hadi 0 ikiwa una nafasi zisizo na kikomo zinazopatikana
+          create_as: Unda mkutano kama
+          disclaimer: 'Kanusho: Kwa kutumia mfumo wa usajili wa nje, unafahamu kuwa waandaaji wa %{organization} hawawajibikii data iliyotolewa na watumiaji kwa huduma ya nje.'
+          iframe_embed_type_html: 'Ni huduma chache tu zinazoruhusu kupachika katika mkutano au tukio la moja kwa moja kutoka kwa vikoa vifuatavyo: %{domains}'
+          location_help: 'Mahali: ujumbe unaoelekezwa kwa watumiaji unaoashiria mahali pa kukutana'
+          location_hints_help: 'Vidokezo vya eneo: maelezo ya ziada. Mfano: sakafu ya jengo ikiwa ni mkutano wa ana kwa ana, au nenosiri la mkutano ikiwa ni mkutano wa mtandaoni ambao ufikiaji umezuiwa.'
+          online_meeting_url_help: 'Kiungo: waruhusu washiriki kuunganishwa moja kwa moja kwenye mkutano wako'
+          registration_url_help: 'Kiungo: waruhusu washiriki kuendelea na huduma ya nje unayotumia kwa usajili'
+          select_a_category: Tafadhali chagua aina
+          select_a_meeting_type: Tafadhali chagua aina ya mkutano
+          select_a_registration_type: Tafadhali chagua aina ya usajili
+          select_an_iframe_access_level: Tafadhali chagua kiwango cha ufikiaji wa iframe
+        index:
+          click_here: Tazama mikutano yote
+          new_meeting: Mkutano mpya
+          see_all: Tazama mikutano yote
+          see_all_withdrawn: Tazama mikutano yote iliyoondolewa
+          text_banner: Unatazama orodha ya mikutano iliyoondolewa na waandishi wake. %{go_back_link}.
+        meeting:
+          close_meeting: Funga mkutano
+          edit_close_meeting: Badilisha ripoti ya mkutano
+          edit_meeting: Hariri mkutano
+          join_meeting: Jiunge na mkutano
+          reply_poll: Kura ya kujibu
+          view_poll: Tazama kura
+        meetings:
+          no_meetings_warning: Hakuna mikutano inayolingana na vigezo vyako vya utafutaji au hakuna mkutano wowote ulioratibiwa.
+          upcoming_meetings_warning: Hivi sasa, hakuna mikutano iliyoratibiwa, lakini hapa unaweza kupata mikutano yote iliyopita iliyoorodheshwa.
+        new:
+          back: Nyuma
+          create: Unda
+          title: Tengeneza Mkutano Wako
+        registration_confirm:
+          cancel: Ghairi
+          confirm: Thibitisha
+        show:
+          attendees: Wahudhuriaji wanahesabu
+          contributions: Idadi ya michango
+          join: Sajili
+          leave: Ghairi usajili wako
+          leave_confirmation: Je, una uhakika ungependa kughairi usajili wako wa mkutano huu?
+          link_available_soon: Kiungo kinapatikana hivi karibuni
+          link_closed: Kiungo cha kujiunga na mkutano kitapatikana dakika chache kabla ya kuanza
+          live_event: Mkutano huu unafanyika hivi sasa
+          meeting_minutes: Dakika za Mkutano
+          micro_camera_permissions_warning: Unapobofya kitufe kilicho hapa chini, utaombwa ruhusa za maikrofoni na/au kamera, na utajiunga na kongamano la video.
+          no_slots_available: Hakuna nafasi zinazopatikana
+          organizations: Kuhudhuria mashirika
+          registration_code_help_text: Nambari yako ya usajili
+          registration_state:
+            validated: IMETHIBITISHWA
+            validation_pending: UTHIBITISHO UNASUBIRI
+          remaining_slots:
+            one: "Nafasi %{count} imesalia"
+            other: "Nafasi %{count} zimesalia"
+          visit_finished: Tazama mkutano uliopita
+          withdraw_btn_hint: Unaweza kuondoa mkutano wako ikiwa utabadilisha nia yako. Mkutano haujafutwa, utaonekana kwenye orodha ya mikutano iliyoondolewa.
+          withdraw_confirmation_html: Je, una uhakika unataka kuondoa mkutano huu?<br><br><strong>Hatua hii haiwezi kughairiwa!</strong>
+          withdraw_meeting: Ondoa mkutano
+        update:
+          invalid: Kulikuwa na tatizo la kusasisha mkutano.
+          success: Umesasisha mkutano kwa ufanisi
+      models:
+        invite:
+          fields:
+            email: Barua pepe
+            name: Jina
+            sent_at: Imetumwa saa
+            status: Hali
+          status:
+            accepted: Imekubaliwa (%{at})
+            rejected: Imekataliwa (%{at})
+            sent: Imetumwa
+        meeting:
+          fields:
+            closed: Imefungwa
+            end_time: Tarehe ya mwisho
+            id: ID
+            map: Ramani
+            official_meeting: Mkutano rasmi
+            start_time: Tarehe ya kuanza
+            title: Kichwa
+      polls:
+        answers:
+          index:
+            administrate: Simamia
+            title: Kura ya maoni
+          index_admin:
+            back_to_meeting: Rudi kwenye mkutano
+            title: Simamia kura ya maoni
+            view_poll: Tazama kura
+        questions:
+          closed_question:
+            announcement: Majibu ya swali hili yamefungwa.
+            question: Swali
+            question_results: Matokeo
+          index:
+            empty_questions: Katika mkutano huu wote, baadhi ya maswali yatatumwa na utaweza kuyajibu. Zitaonyeshwa hapa.
+          index_admin:
+            edit: Hariri kwenye paneli ya msimamizi
+            question: Swali
+            received_answer: alipokea jibu
+            received_answers: kupokea majibu
+            results: Matokeo
+            send: Tuma
+            sent: Imetumwa
+            statuses:
+              closed: Matokeo yametumwa (yamefungwa)
+              published: Imetumwa (imefunguliwa)
+              unpublished: Inasubiri kutumwa
+          published_question:
+            max_choices_alert: Kuna chaguo nyingi sana zilizochaguliwa
+            question: Swali
+            question_replied: Swali lilijibu
+            reply_question: Jibu swali
+      public_participants_list:
+        attending_organizations: Mashirika
+        attending_participants: Washiriki
+        hidden_participants_count:
+          one: na %{count} mtu zaidi
+          other: na watu %{count} zaidi
+      read_more: "(soma zaidi)"
+      registration_mailer:
+        confirmation:
+          confirmed_html: Usajili wako kwa mkutano <a href="%{url}">%{title}</a> umethibitishwa.
+          details: Utapata maelezo ya mkutano katika kiambatisho.
+          registration_code: Msimbo wako wa usajili ni %{code}.
+      registration_type:
+        on_different_platform: Kwenye jukwaa tofauti
+        on_this_platform: Kwenye jukwaa hili
+        registration_disabled: Usajili umezimwa
+      registrations:
+        create:
+          invalid: Kulikuwa na tatizo la kujiunga kwenye mkutano huu.
+          success: Umejiunga kwenye mkutano kwa mafanikio. Kwa sababu umejiandikisha kwa mkutano huu, utaarifiwa ikiwa kuna masasisho juu yake.
+        decline_invitation:
+          invalid: Kulikuwa na tatizo la kukataa mwaliko.
+          success: Umefaulu kukataa mwaliko.
+        destroy:
+          invalid: Kulikuwa na tatizo kuondoka kwenye mkutano huu.
+          success: Umeondoka kwenye mkutano kwa mafanikio.
+      type_of_meeting:
+        hybrid: Mseto
+        in_person: Kwa kibinafsi
+        online: Mtandaoni
+      types:
+        private_meeting: Mkutano wa kibinafsi
+        transparent: Uwazi
+        withdraw: Imetolewa
+      withdraw:
+        error: Hitilafu ilitokea wakati wa kuondoa mkutano.
+        success: Mkutano umeondolewa kwa mafanikio.
+    metrics:
+      meetings:
+        description: Idadi ya mikutano iliyoundwa
+        object: mikutano
+        title: Mikutano
+    participatory_spaces:
+      highlighted_meetings:
+        past_meetings: Mikutano iliyopita
+        see_all: Tazama mikutano yote
+        upcoming_meetings: Mikutano ijayo
+    resource_links:
+      meetings_through_proposals:
+        meeting_result: 'Matokeo yanayohusiana:'
+        result_meeting: 'Mikutano inayohusiana:'
+      proposals_from_meeting:
+        meeting_proposal: 'Mapendekezo yanayohusiana:'
+        proposal_meeting: 'Mikutano inayohusiana:'
+    statistics:
+      meetings_count: Mikutano
+  devise:
+    mailer:
+      join_meeting:
+        subject: Mwaliko wa kujiunga na mkutano

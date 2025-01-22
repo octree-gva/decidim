@@ -22,6 +22,9 @@ pt:
               too_long: é demasiado longo
             choices:
               missing: não estão completos
+              too_many: Podes escolher no máximo %{count}.
+        questionnaire:
+          request_invalid: Houve um erro ao processar o pedido. Por favor, tenta novamente.
   decidim:
     forms:
       admin:
@@ -42,6 +45,8 @@ pt:
             actions:
               back: Retroceder às respostas
               export: Exportar
+              next: Próximo &rsaquo;
+              previous: "&lsaquo; Anterior"
               show: Mostrar respostas
             empty: Ainda não há respostas
             export:
@@ -77,6 +82,7 @@ pt:
           form:
             add_question: Adicionar questão
             add_separator: Adicionar separador
+            add_title_and_description: Adicionar título e descrição
             already_answered_warning: O questionário já foi respondido por alguns utilizadores por isso não pode modificar as suas questões.
             collapse: Colapsar todas as questões
             expand: Expandir todas as questões
@@ -106,11 +112,29 @@ pt:
             remove: Remover
             separator: Separador
             up: Acima
+          title_and_description:
+            collapse: Recolher
+            description: Descrição
+            down: Baixar
+            expand: Expandir
+            remove: Remover
+            title: Título
+            title_and_description: Título e descrição
+            up: Para cima
           update:
             invalid: Ocorreu um problema ao guardar o questionário.
             success: Formulário guardado com êxito
+      admin_log:
+        questionnaire:
+          update: "%{user_name} atualizou o questionário %{resource_name}"
+      errors:
+        answer:
+          body: O corpo não pode estar vazio
       images:
         dimensions: "%{width} x %{height} px"
+        processors:
+          resize_and_pad: Esta imagem será redimensionada e preenchida para %{dimensions}.
+          resize_to_fit: Esta imagem será redimensionada para caber em %{dimensions}.
       question_types:
         files: Ficheiros
         long_answer: Resposta longa
@@ -120,6 +144,9 @@ pt:
         short_answer: Resposta curta
         single_option: Escolha única
         sorting: Ordenação
+        title_and_description: Título e descrição
+      questionnaire_answer_presenter:
+        download_attachment: Descarregar anexo
       questionnaires:
         answer:
           invalid: Ocorreu um problema ao responder ao questionário.
@@ -129,8 +156,13 @@ pt:
           max_choices: 'Escolhas máximas: %{n}'
         show:
           answer_questionnaire:
+            already_have_an_account?: Já tens uma conta?
+            are_you_new?: Novo participante?
+            sign_in_description: Inicia sessão para responder ao questionário
+            sign_up_description: Cria uma conta de participante para responder ao questionário
             title: Responda ao questionário
           current_step: Passo %{step}
+          empty: Ainda não há perguntas configuradas para este formulário.
           of_total_steps: de %{total_steps}
           questionnaire_answered:
             body: Já respondeu a este questionário.
@@ -158,7 +190,7 @@ pt:
         completion: Conclusão
         created_at: Respondido em
         id: ID da resposta
-        ip_hash: IP Hash
+        ip_hash: Hash do IP
         question: Questão
         registered: Registado
         session_token: Identificador do utilizador
