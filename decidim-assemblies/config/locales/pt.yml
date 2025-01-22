@@ -193,7 +193,7 @@ pt:
             'false': Não encerrado
             'true': Encerrado
         decidim_assemblies_type_id_eq:
-          label: Tipo de assembleia
+          label: Tipo de reunião
         search_placeholder:
           full_name_or_user_name_or_user_nickname_cont: Pesquisar por nome ou alcunha
       menu:
