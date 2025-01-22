@@ -1941,6 +1941,8 @@ fr-CH:
         expire_time_html: crwdns7736:0%{minutes}crwdne7736:0
       language_chooser:
         choose_language: crwdns7738:0crwdne7738:0
+      navigation:
+        aria_label: crwdns14036:0%{title}crwdne14036:0
       notifications_dashboard:
         mark_all_as_read: crwdns7740:0crwdne7740:0
         mark_as_read: crwdns7742:0crwdne7742:0
