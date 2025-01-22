@@ -1958,6 +1958,8 @@ sw:
         expire_time_html: Muda wa kipindi chako utaisha baada ya dakika <b><span class="minutes">%{minutes}</span></b>.
       language_chooser:
         choose_language: Chagua lugha
+      navigation:
+        aria_label: Navigation menu- %{title}
       notifications_dashboard:
         mark_all_as_read: Weka alama zote kama zimesomwa
         mark_as_read: Weka alama kama imesomwa
