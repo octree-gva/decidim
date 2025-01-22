@@ -1952,6 +1952,8 @@ pt:
         expire_time_html: A sua sessão irá expirar em <b><span class="minutes">%{minutes}</span> minutos</b>.
       language_chooser:
         choose_language: Escolher idioma
+      navigation:
+        aria_label: Navigation menu- %{title}
       notifications_dashboard:
         mark_all_as_read: Marcar tudo como lida
         mark_as_read: Marcar como lida
