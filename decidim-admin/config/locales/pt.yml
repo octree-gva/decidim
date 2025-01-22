@@ -38,7 +38,7 @@ pt:
         user_group_id: Criar importações como
       newsletter:
         body: Corpo
-        send_to_all_users: Enviar a todos os usuários
+        send_to_all_users: Enviar para todas as pessoas utilizadoras
         send_to_followers: Enviar aos seguidores
         send_to_participants: Enviar aos participantes
         subject: Assunto
