@@ -120,13 +120,13 @@ fr-CH:
         destroy:
           success: crwdns4422:0crwdne4422:0
         edit:
-          title: crwdns4424:0crwdne4424:0
+          title: crwdns14038:0crwdne14038:0
           update: crwdns4426:0crwdne4426:0
         index:
           conference_speakers_title: crwdns4428:0crwdne4428:0
         new:
           create: crwdns4430:0crwdne4430:0
-          title: crwdns4432:0crwdne4432:0
+          title: crwdns14040:0crwdne14040:0
         publish:
           invalid: crwdns4434:0crwdne4434:0
           success: crwdns4436:0crwdne4436:0
@@ -143,13 +143,13 @@ fr-CH:
         destroy:
           success: crwdns4450:0crwdne4450:0
         edit:
-          title: crwdns4452:0crwdne4452:0
+          title: crwdns14042:0crwdne14042:0
           update: crwdns4454:0crwdne4454:0
         index:
           conference_admins_title: crwdns4456:0crwdne4456:0
         new:
           create: crwdns4458:0crwdne4458:0
-          title: crwdns4460:0crwdne4460:0
+          title: crwdns14044:0crwdne14044:0
         update:
           error: crwdns4462:0crwdne4462:0
           success: crwdns4464:0crwdne4464:0
@@ -179,20 +179,20 @@ fr-CH:
       media_links:
         create:
           error: crwdns4492:0crwdne4492:0
-          success: crwdns4494:0crwdne4494:0
+          success: crwdns14046:0crwdne14046:0
         destroy:
-          success: crwdns4496:0crwdne4496:0
+          success: crwdns14048:0crwdne14048:0
         edit:
-          title: crwdns4498:0crwdne4498:0
+          title: crwdns14050:0crwdne14050:0
           update: crwdns4500:0crwdne4500:0
         index:
-          media_links_title: crwdns4502:0crwdne4502:0
+          media_links_title: crwdns14052:0crwdne14052:0
         new:
           create: crwdns4504:0crwdne4504:0
-          title: crwdns4506:0crwdne4506:0
+          title: crwdns14054:0crwdne14054:0
         update:
           error: crwdns4508:0crwdne4508:0
-          success: crwdns4510:0crwdne4510:0
+          success: crwdns14056:0crwdne14056:0
       menu:
         conferences: crwdns4512:0crwdne4512:0
         conferences_submenu:
@@ -204,15 +204,15 @@ fr-CH:
           conference_admins: crwdns4524:0crwdne4524:0
           conference_invites: crwdns4526:0crwdne4526:0
           conference_speakers: crwdns4528:0crwdne4528:0
-          diploma: crwdns4530:0crwdne4530:0
+          diploma: crwdns14058:0crwdne14058:0
           info: crwdns4532:0crwdne4532:0
-          media_links: crwdns4534:0crwdne4534:0
+          media_links: crwdns14060:0crwdne14060:0
           moderations: crwdns4536:0crwdne4536:0
           partners: crwdns4538:0crwdne4538:0
-          registration_types: crwdns4540:0crwdne4540:0
+          registration_types: crwdns14062:0crwdne14062:0
           registrations: crwdns4542:0crwdne4542:0
           see_conference: crwdns4544:0crwdne4544:0
-          user_registrations: crwdns4546:0crwdne4546:0
+          user_registrations: crwdns14064:0crwdne14064:0
       models:
         conference:
           fields:
@@ -241,7 +241,7 @@ fr-CH:
             date: crwdns4578:0crwdne4578:0
             link: crwdns4580:0crwdne4580:0
             title: crwdns4582:0crwdne4582:0
-          name: crwdns4584:0crwdne4584:0
+          name: crwdns14066:0crwdne14066:0
         partner:
           fields:
             link: crwdns4586:0crwdne4586:0
@@ -267,7 +267,7 @@ fr-CH:
         destroy:
           success: crwdns4616:0crwdne4616:0
         edit:
-          title: crwdns4618:0crwdne4618:0
+          title: crwdns14068:0crwdne14068:0
           update: crwdns4620:0crwdne4620:0
         new:
           create: crwdns4622:0crwdne4622:0
@@ -289,7 +289,7 @@ fr-CH:
         destroy:
           success: crwdns4642:0crwdne4642:0
         edit:
-          title: crwdns4644:0crwdne4644:0
+          title: crwdns14070:0crwdne14070:0
           update: crwdns4646:0crwdne4646:0
         new:
           create: crwdns4648:0crwdne4648:0
@@ -384,7 +384,7 @@ fr-CH:
         diplomas:
           edit:
             save: crwdns4756:0crwdne4756:0
-            title: crwdns4758:0crwdne4758:0
+            title: crwdns14072:0crwdne14072:0
         invite_join_conference_mailer:
           invite:
             decline: crwdns4760:0%{conference_title}crwdne4760:0
@@ -404,7 +404,7 @@ fr-CH:
             diploma_html: crwdns4774:0%{url}crwdnd4774:0%{title}crwdne4774:0
           diploma_user:
             attendance_verified_by: crwdns4776:0crwdne4776:0
-            certificate_of_attendance: crwdns4778:0crwdne4778:0
+            certificate_of_attendance: crwdns14074:0crwdne14074:0
             certificate_of_attendance_description: crwdns4780:0%{user}crwdnd4780:0%{title}crwdnd4780:0%{location}crwdnd4780:0%{start}crwdnd4780:0%{end}crwdne4780:0
         send_diploma:
           error: crwdns4782:0crwdne4782:0
