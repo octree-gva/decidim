@@ -1923,17 +1923,17 @@ pt:
             description: Esses cookies permitem que o site lembre as escolhas que você fez no passado neste site para fornecer uma experiência mais personalizada para os usuários do site.
             title: Preferências
           save_settings: Guardar definições
-          title: Definições de cookie
+          title: Definições de “cookies”
           toggle: Alternar %{consent_category}
         warning:
           all_categories: todos os cookies
-          change_settings: Alterar definições de cookies
+          change_settings: Alterar configurações de “cookies”
           consent_required: Você precisa habilitar %{categories} para ver este conteúdo.
       edit_link:
         edit: Editar
       footer:
         cc_by_license: Licença Creative Commons
-        data_consent_settings: Definições de cookie
+        data_consent_settings: Definições de “cookies”
         decidim_logo: Logótipo do Decidim
         decidim_title: Decidim
         download_open_data: Transferir ficheiros Open Data
