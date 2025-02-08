@@ -203,7 +203,7 @@ pt:
         verify: Verificar
       admin_terms_of_service:
         accept:
-          error: Ocorreu um erro ao aceitar os termos do serviço para administração.
+          error: Ocorreu um erro ao aceitar os termos de utilização de administrador.
           success: Ótimo! Aceitou os termos de serviço do administrador.
         actions:
           accept: Concordo com os termos
