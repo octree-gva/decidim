@@ -1959,7 +1959,7 @@ sw:
       language_chooser:
         choose_language: Chagua lugha
       navigation:
-        aria_label: Navigation menu- %{title}
+        aria_label: Menyu ya kusogeza- %{title}
       notifications_dashboard:
         mark_all_as_read: Weka alama zote kama zimesomwa
         mark_as_read: Weka alama kama imesomwa
