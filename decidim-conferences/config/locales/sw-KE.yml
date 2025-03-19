@@ -120,13 +120,13 @@ sw:
         destroy:
           success: Spika ya mkutano imefutwa.
         edit:
-          title: Update conference speaker
+          title: Sasisha kipaza sauti cha mkutano
           update: Sasisha
         index:
           conference_speakers_title: Wazungumzaji wa mkutano
         new:
           create: Unda
-          title: New conference speaker
+          title: Spika mpya wa mkutano
         publish:
           invalid: Kulikuwa na tatizo la kuchapisha spika hii.
           success: Spika ya mkutano imechapishwa.
@@ -143,13 +143,13 @@ sw:
         destroy:
           success: Msimamizi wa mkutano ameondolewa.
         edit:
-          title: Update conference admin
+          title: Sasisha msimamizi wa mkutano
           update: Sasisha
         index:
           conference_admins_title: Wasimamizi wa mkutano
         new:
           create: Unda
-          title: New conference admin
+          title: Msimamizi mpya wa mkutano
         update:
           error: Kulikuwa na tatizo la kusasisha msimamizi wa mkutano huu.
           success: Msimamizi wa mkutano amesasishwa.
@@ -179,20 +179,20 @@ sw:
       media_links:
         create:
           error: Kulikuwa na tatizo la kuunda kiungo kipya cha midia.
-          success: Media link successfully created.
+          success: Kiungo cha media kimeundwa.
         destroy:
-          success: Media link successfully deleted.
+          success: Kiungo cha media kimefutwa.
         edit:
-          title: Update media link
+          title: Sasisha kiungo cha media
           update: Sasisha
         index:
-          media_links_title: Media links
+          media_links_title: Viungo vya media
         new:
           create: Unda
-          title: Create media link
+          title: Unda kiungo cha media
         update:
           error: Kulikuwa na tatizo la kusasisha kiungo hiki cha media.
-          success: Media link successfully updated.
+          success: Kiungo cha media kimesasishwa.
       menu:
         conferences: Mikutano
         conferences_submenu:
@@ -204,15 +204,15 @@ sw:
           conference_admins: Wasimamizi wa mkutano
           conference_invites: Inaalika
           conference_speakers: Wazungumzaji
-          diploma: Certificate of attendance
+          diploma: Cheti cha kuhudhuria
           info: Kuhusu mkutano huu
-          media_links: Media links
+          media_links: Viungo vya media
           moderations: Ukadiriaji
           partners: Washirika
-          registration_types: Registration types
+          registration_types: Aina za usajili
           registrations: Usajili
           see_conference: Tazama mkutano
-          user_registrations: User registrations
+          user_registrations: Usajili wa watumiaji
       models:
         conference:
           fields:
@@ -241,7 +241,7 @@ sw:
             date: Tarehe
             link: Kiungo
             title: Kichwa
-          name: Media link
+          name: Kiungo cha media
         partner:
           fields:
             link: Kiungo
@@ -267,7 +267,7 @@ sw:
         destroy:
           success: Mshirika wa mkutano ameondolewa.
         edit:
-          title: Update partner
+          title: Sasisha mshirika
           update: Sasisha
         new:
           create: Unda
@@ -289,7 +289,7 @@ sw:
         destroy:
           success: Aina ya usajili wa mkutano imeondolewa.
         edit:
-          title: Update registration type
+          title: Sasisha aina ya usajili
           update: Sasisha
         new:
           create: Unda
@@ -384,7 +384,7 @@ sw:
         diplomas:
           edit:
             save: Hifadhi
-            title: Certificate of attendance
+            title: Cheti cha kuhudhuria
         invite_join_conference_mailer:
           invite:
             decline: Kataa mwaliko '%{conference_title}'
@@ -404,7 +404,7 @@ sw:
             diploma_html: Utapata cheti cha kuhudhuria mkutano <a href="%{url}">%{title}</a> kwenye viambatisho.
           diploma_user:
             attendance_verified_by: Mahudhurio yamethibitishwa na
-            certificate_of_attendance: Certificate of attendance
+            certificate_of_attendance: Cheti cha kuhudhuria
             certificate_of_attendance_description: Hii ni kuthibitisha kwamba <strong>%{user}</strong> amehudhuria na kushiriki katika <strong>%{title}</strong> iliyofanyika <strong>%{location}</strong> mnamo <strong>%{start} - %{end}</strong>
         send_diploma:
           error: Kulikuwa na tatizo la kutuma vyeti vya mahudhurio ya kongamano.
