@@ -46,15 +46,7 @@ header {
     }
 
     &__logo {
-      @apply col-span-3 xl:col-span-2 prose prose-img:max-h-16 prose-img:my-0;
-    }
-
-    &__logo-desktop {
-      @apply hidden lg:block;
-    }
-
-    &__logo-mobile {
-      @apply lg:hidden;
+      @apply col-span-3 max-w-[11rem] xl:max-w-full xl:col-span-2 prose prose-img:max-h-16 prose-img:my-0;
     }
 
     &__search {
