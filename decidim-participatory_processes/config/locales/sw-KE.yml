@@ -312,6 +312,7 @@ sw:
         update: "%{user_name} alisasisha mchakato shirikishi wa %{resource_name}"
       participatory_process_group:
         create: "%{user_name} aliunda %{resource_name} kikundi cha mchakato shirikishi"
+        unpublish: "%{user_name} unpublished the %{resource_name} participatory process group"
         update: "%{user_name} alisasisha kikundi cha mchakato shirikishi %{resource_name}"
       participatory_process_step:
         activate: "%{user_name} aliwezesha awamu ya %{resource_name} katika mchakato shirikishi wa %{space_name}"
@@ -388,6 +389,8 @@ sw:
           participatory_processes:
             one: '%{count} michakato'
             other: "%{count} michakato"
+      related_processes:
+        help: All the selected processes will be assigned to this group, including the ones that are already assigned to other groups.
       show:
         title: Vikundi vya mchakato shirikishi
     participatory_process_steps:
