@@ -4,10 +4,19 @@ pt:
     attributes:
       account:
         delete_reason: Razão para cancelar a sua conta
+      attachment:
+        documents: Documents
+        image: Image
+        photos: Photos
       common:
         created_at: Criado em
+      content_block_attachment:
+        background_image: Background image
+        main_image: Main image
       conversation:
         body: Corpo
+      editor_image:
+        file: File
       group:
         about: Sobre
         avatar: Avatar
@@ -16,12 +25,15 @@ pt:
         name: Nome
         nickname: Alcunha
         phone: Telefone
+      import:
+        file: File
       message:
         body: Corpo
       report:
         details: Comentários adicionais
       user:
         about: Sobre
+        avatar: Avatar
         email: O seu e-mail
         encrypted_password: Senha
         locale: Idioma
@@ -33,6 +45,14 @@ pt:
         personal_url: URL pessoal
         remove_avatar: Remover avatar
         tos_agreement: Termos e Condições de Uso
+      user_group:
+        avatar: Avatar
+    errors:
+      models:
+        user:
+          attributes:
+            nickname:
+              format: The nickname must be lowercase and contain no spaces
     models:
       decidim/attachment_created_event: Anexo
       decidim/component_published_event: Funcionalidade ativa
@@ -146,6 +166,7 @@ pt:
       front_page_link: Ir para a página inicial
       logo: "Logótipo oficial de %{organization}"
       opens_in_new_tab: Abrir em uma nova aba
+      secondary_menu: Secondary menu
       skip_button: Avançar para o conteúdo principal
     account:
       blocked: Esta conta foi bloqueada devido a violação dos termos de serviço
@@ -498,6 +519,8 @@ pt:
             dummy_step_attribute1: Passo de Atributo Fictício 1
             dummy_step_attribute2: Passo de Atributo Fictício 2
             dummy_step_translatable_text: Passo de Texto Traduzível Fictício
+      pagination:
+        page_title: "%{component_name} - Page %{current_page} of %{total_pages}"
     contact: Contacto
     content_blocks:
       announcement:
@@ -736,6 +759,11 @@ pt:
             email_outro: Recebeu esta notificação porque segue %{amendable_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
             email_subject: Modificação de %{amendable_title} rejeitada por %{emendation_author_nickname}
             notification_title: A <a href="%{emendation_path}">modificação</a> criada por <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> foi rejeitada por <a href="%{amendable_path}">%{amendable_title}</a>.
+        emendation_promoted:
+          follower:
+            email_intro: 'An emendation has been published for %{amendable_title}. You can see it from this page:'
+            email_outro: You have received this notification because you are an author of %{amendable_title}.
+            email_subject: An emendation from %{emendation_author_nickname} has been published as a new %{amendable_type}
       attachments:
         attachment_created:
           email_intro: 'Um novo documento foi adicionado a %{resource_title}. Pode vê-lo a partir desta página:'
@@ -1158,7 +1186,7 @@ pt:
           no_conversations: Ainda não tens conversas.
           title: Conversas
         reply_form:
-          placeholder: A tua resposta...
+          placeholder: A sua resposta...
           send: Enviar
         show:
           back: Retroceder a todas as conversas
@@ -1178,6 +1206,8 @@ pt:
         not_started: Ainda não iniciado
         remaining: "%{time_distance} restantes"
     metrics:
+      blocked_users:
+        description: Number of blocked participants
       download:
         csv: Descarregar dados (CSV)
       followers:
@@ -1188,6 +1218,10 @@ pt:
         description: Número de participantes ativos na organização
         object: participantes
         title: Participantes
+      reported_users:
+        description: Number of reported participants
+      user_reports:
+        description: Number of reports done by participants
       users:
         description: Número de participantes na organização
         object: participantes
@@ -1253,10 +1287,12 @@ pt:
     notifications_digest_mailer:
       header:
         daily: Resumo Diário de Notificações
+        real_time: Real time
         weekly: Resumo Semanal de Notificações
       hello: Olá %{name},
       intro:
         daily: 'Estas são as notificações do último dia com base na atividade que estás a seguir:'
+        real_time: 'These is a notification on the activity you are following:'
         weekly: 'Estas são as notificações da última semana com base na atividade que estás a seguir:'
       outro: Recebeste estas notificações porque estás a seguir este conteúdo ou os seus autores. Podes deixar de os seguir nas respetivas páginas.
       see_more: Ver mais notificações
@@ -1371,41 +1407,41 @@ pt:
         members: Membros
         officialized: Participante oficial
         send_private_message: Enviar mensagem privada
-      sidebar:
-        badges:
-          info: Os distintivos são obtidos através da realização de atividades específicas na plataforma.
-          title: Distintivos
       user:
         actions:
-          create_user_group: Criar um grupo
+          create_user_group: Criar grupo
           disabled_message: Mensagem
           edit_profile: Editar perfil
           edit_user_group: Editar perfil do grupo
           invite_user: Convidar participante
-          join_user_group: Pedir para aderir ao grupo
-          leave_user_group: Sair do grupo
+          join_user_group: Solicitar adesão ao grupo
+          leave_user_group: Deixar o grupo
           manage_user_group: Gerir grupo
           manage_user_group_admins: Gerir administradores
           manage_user_group_users: Gerir membros
           message: Mensagem
-          resend_email_confirmation_instructions: Reenviar instruções de confirmação de email
+          resend_email_confirmation_instructions: Reenviar instruções de confirmação de e-mail
         confirmation_instructions_sent: Instruções de confirmação de email enviadas.
-        create_user_group: Criar grupo
-        edit_profile: Editar perfil
-        edit_user_group: Editar perfil do grupo
         fill_in_email_to_confirm_it: Por favor, preenche o email do teu grupo para confirmá-lo.
-        invite_user: Convidar participante
-        join_user_group: Solicitar adesão ao grupo
-        leave_user_group: Deixar o grupo
-        manage_user_group_admins: Gerir administradores
-        manage_user_group_users: Gerir membros
-        resend_email_confirmation_instructions: Reenviar instruções de confirmação de e-mail
     reported_mailer:
-      hide:
-        hello: Olá %{name},
-        manage_moderations: Gerir moderações
-        report_html: <p>O seguinte <a href="%{url}">conteúdo</a> foi ocultado automaticamente.</p>
-        subject: Um recurso foi ocultado automaticamente
+      hidden_automatically:
+        content: Reported content
+        details: Details
+        hello: Hello %{name},
+        manage_moderations: Manage moderations
+        participatory_space: Participatory space
+        reason: Reason
+        report_html: <p>The following <a href="%{url}">content</a> has been hidden automatically.</p>
+        subject: A resource has been hidden automatically
+      hidden_manually:
+        content: Reported content
+        details: Details
+        hello: Hello %{name},
+        manage_moderations: Manage moderations
+        participatory_space: Participatory space
+        reason: Reason
+        report_html: <p>The following <a href="%{url}">content</a> has been hidden by %{moderator}.</p>
+        subject: A resource has been hidden by %{moderator}
       report:
         authors: Autores
         content: Conteúdo reportado
@@ -1423,6 +1459,10 @@ pt:
       create:
         error: Ocorreu um erro ao criar o relatório. Por favor, tente novamente.
         success: O relatório foi criado corretamente e será revisto por um administrador.
+      hide:
+        success: This resource has been hidden.
+      parent_hidden:
+        report_details: The parent resource was hidden
     resource_endorsements:
       create:
         error: Ocorreu um problema durante a ação de endossamento.
@@ -1491,14 +1531,13 @@ pt:
       flag_user_modal:
         already_reported: Este conteúdo já foi denunciado e será revisto por um administrador.
         block: Bloquear este participante
-        close: Fechar
-        description: O que é inapropriado acerca do utilizador?
+        description: What is inappropriate about this participant?
         does_not_belong: Contém atividade ilegal, ameaças de suicídio, informações pessoais ou algo que achas que não pertence a %{organization_name}.
         hide: Ocultar todos os seus conteúdos
         offensive: Contém racismo, sexismo, insultos, ataques pessoais, ameaças de morte, pedidos de suicídio ou qualquer forma de discurso de ódio.
         report: Denuncie
         spam: Contém clickbait, publicidade, golpes ou bots de script.
-        title: Denunciar utilizador inapropriado
+        title: Report inappropriate participant
       floating_help:
         help: Ajuda
       follow_button:
