@@ -2,6 +2,8 @@
 sw:
   activemodel:
     attributes:
+      answer:
+        add_documents: Add documents
       close_meeting:
         attendees_count: Idadi ya waliohudhuria
         attending_organizations: Orodha ya mashirika yaliyohudhuria
@@ -545,7 +547,7 @@ sw:
         new:
           back: Nyuma
           create: Unda
-          title: Tengeneza Mkutano Wako
+          title: Create new meeting
         registration_confirm:
           cancel: Ghairi
           confirm: Thibitisha
