@@ -106,7 +106,7 @@ pt:
           success: Debate criado corretamente.
         debates:
           empty: Ainda não há debates.
-          empty_filters: Não há debates com este critério.
+          empty_filters: Não há debates com estes critérios.
         edit:
           back: Retroceder
           save: Guardar alterações
@@ -134,7 +134,7 @@ pt:
         new:
           back: Retroceder
           create: Criar
-          title: Novo debate
+          title: Create new debate
         orders:
           commented: Mais comentado
           label: Ordenar debates por
@@ -155,7 +155,7 @@ pt:
           success: Debate atualizado corretamente.
       last_activity:
         debate_updated: 'Debate atualizado:'
-        new_debate: 'Novo debate:'
+        new_debate: 'Novo debate'
       models:
         debate:
           fields:
@@ -170,11 +170,11 @@ pt:
         create_debate_event:
           space_followers:
             email_intro: |-
-              Olá,  
-              Um novo debate "%{resource_title}" foi criado no espaço participativo %{participatory_space_title}, confere e contribui:
-            email_outro: Recebeste esta notificação porque estás a seguir o espaço participativo %{participatory_space_title}. Podes parar de receber notificações através do link anterior.
+              Olá,
+              um novo debate %{resource_title}" fou criado no espaço de participação %{participatory_space_title}. Confira e contribua:
+            email_outro: Recebeu esta notificação porque segue o espaço de participação %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
             email_subject: Novo debate "%{resource_title}" no %{participatory_space_title}
-            notification_title: O debate <a href="%{resource_path}">%{resource_title}</a> foi criado em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+            notification_title: O <a href="%{resource_path}">%{resource_title}</a> debate fou criado em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
           user_followers:
             email_intro: |-
               Olá,
@@ -191,7 +191,7 @@ pt:
           email_intro: 'Agora pode iniciar novos debates em %{participatory_space_title}! Comece a participar nesta página:'
           email_outro: Recebeu esta notificação porque segue %{participatory_space_title}. Pode parar de receber notificações seguindo a hiperligação anterior.
           email_subject: Debates agora disponíveis em %{participatory_space_title}
-          notification_title: Agora podes iniciar <a href="%{resource_path}">novos debates</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
+          notification_title: Agora pode iniciar <a href="%{resource_path}">novos debates</a> em <a href="%{participatory_space_url}">%{participatory_space_title}</a>.
         debate_closed:
           affected_user:
             email_intro: 'O debate "%{resource_title}" foi encerrado. Pode ler as conclusões a partir da sua página:'
@@ -214,7 +214,7 @@ pt:
           name: Debates
           next_level_in: Participe em mais %{score} debates para alcançar o próximo nível!
           unearned_another: Este participante ainda não fez parte de nenhum debate.
-          unearned_own: Ainda não participaste em nenhum debate.
+          unearned_own: Ainda não participou de nenhum debate.
     metrics:
       debates:
         description: Número de debates criados
