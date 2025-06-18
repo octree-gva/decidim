@@ -106,6 +106,8 @@ pt:
       participatory_space_private_user:
         email: E-mail
         name: Nome
+      participatory_space_private_user_csv_import:
+        file: File
       scope:
         code: Código
         name: Nome
@@ -704,6 +706,7 @@ pt:
             does_not_belong: Não pertence
             hidden_during_block: Oculto ao bloquear usuário
             offensive: Ofensiva
+            parent_hidden: Parent content has been hidden
             spam: Spam
         reports:
           index:
@@ -720,6 +723,11 @@ pt:
             report_language: Denunciar linguagem
             report_reason: Motivo
             title: Detalhes da denúncia
+      new_import:
+        accepted_mime_types:
+          csv: CSV
+          json: JSON
+          xlsx: XLSX
       newsletter_templates:
         index:
           preview_template: Pré-visualização
@@ -892,7 +900,7 @@ pt:
           success: Arquivo CSV carregado com sucesso, estamos a enviar um e-mail de convite para os participantes. Isso pode demorar um pouco.
         new:
           csv_upload:
-            title: Carregue seu arquivo CSV
+            title: Envie o seu ficheiro CSV
           destroy:
             button: Excluir todos os participantes privados
             confirm: Tem certeza que deseja excluir todos os participantes privados? Esta ação não pode ser desfeita. Não será possível recuperá-los.
@@ -1054,9 +1062,9 @@ pt:
       user_groups:
         index:
           state:
-            pending: Pendente
-            rejected: Rejeitado
-            verified: Verificado
+            pending: Pendentes
+            rejected: Rejeitados
+            verified: Verificados
           verify_via_csv: Verificar via CSV
       user_groups_csv_verifications:
         new:
@@ -1066,7 +1074,7 @@ pt:
             acme@example.org
             bubba.gump@example.org
           title: Envie o seu ficheiro CSV
-          upload: Envio
+          upload: Carregar
       users:
         create:
           error: Ocorreu um problema ao convidar este(a) administrador(a).
@@ -1109,6 +1117,7 @@ pt:
         hidden: Ocultado
         hide: Ocultar
         not_hidden: Não oculto
+        parent_hidden: You cannot unhide this resource because its parent is still hidden.
         title: Ações
         unhide: Mostrar
         unreport: Remover denúncia
@@ -1119,6 +1128,7 @@ pt:
             success: Recurso ocultado corretamente.
           unhide:
             invalid: Ocorreu um problema ao mostrar o recurso.
+            parent_invalid: There was a problem unhiding the resource. Parent is not visible.
             success: Recurso mostrado com sucesso.
           unreport:
             invalid: Ocorreu um problema não relatando o recurso.
