@@ -2,6 +2,9 @@
 pt:
   activemodel:
     attributes:
+      dummy:
+        image: Image
+      dummy_attribute: Dummy attribute
       dummy_resource:
         created_at: Criado em
         decidim_scope_id: Escopo
