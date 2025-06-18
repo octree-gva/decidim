@@ -309,6 +309,7 @@ fr-CH:
         update: "crwdns11394:0%{user_name}crwdnd11394:0%{resource_name}crwdne11394:0"
       participatory_process_group:
         create: "crwdns11396:0%{user_name}crwdnd11396:0%{resource_name}crwdne11396:0"
+        unpublish: "crwdns14396:0%{user_name}crwdnd14396:0%{resource_name}crwdne14396:0"
         update: "crwdns11398:0%{user_name}crwdnd11398:0%{resource_name}crwdne11398:0"
       participatory_process_step:
         activate: "crwdns11400:0%{user_name}crwdnd11400:0%{resource_name}crwdnd11400:0%{space_name}crwdne11400:0"
@@ -385,6 +386,8 @@ fr-CH:
           participatory_processes:
             one: crwdns11488:1crwdne11488:1
             other: "crwdns11488:5%{count}crwdne11488:5"
+      related_processes:
+        help: crwdns14398:0crwdne14398:0
       show:
         title: crwdns11490:0crwdne11490:0
     participatory_process_steps:
