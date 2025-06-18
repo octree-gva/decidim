@@ -24,6 +24,8 @@ fr-CH:
             enabled: crwdns4040:0crwdne4040:0
             end_time: crwdns4042:0crwdne4042:0
             start_time: crwdns4044:0crwdne4044:0
+      comment_thread:
+        accessibility_label: crwdns14400:0%{full_name}crwdnd14400:0%{date}crwdne14400:0
       comments:
         create:
           error: crwdns4046:0crwdne4046:0
