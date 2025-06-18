@@ -312,6 +312,7 @@ pt:
         update: "%{user_name} atualizou o processo participativo %{resource_name}"
       participatory_process_group:
         create: "%{user_name} criou o grupo de processo participativo %{resource_name}"
+        unpublish: "%{user_name} unpublished the %{resource_name} participatory process group"
         update: "%{user_name} atualizou o grupo de processo participativo %{resource_name}"
       participatory_process_step:
         activate: "%{user_name} ativou a fase %{resource_name} no processo participativo %{space_name}"
@@ -388,6 +389,8 @@ pt:
           participatory_processes:
             one: 1 processo
             other: "%{count} processos"
+      related_processes:
+        help: All the selected processes will be assigned to this group, including the ones that are already assigned to other groups.
       show:
         title: Grupos do processo participativo
     participatory_process_steps:
