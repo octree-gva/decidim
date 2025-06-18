@@ -4,10 +4,19 @@ sw:
     attributes:
       account:
         delete_reason: Sababu ya kufuta akaunti yako
+      attachment:
+        documents: Documents
+        image: Image
+        photos: Photos
       common:
         created_at: Imeundwa saa
+      content_block_attachment:
+        background_image: Background image
+        main_image: Main image
       conversation:
         body: Mwili
+      editor_image:
+        file: File
       group:
         about: Kuhusu
         avatar: Avatar
@@ -16,12 +25,15 @@ sw:
         name: Jina
         nickname: Jina la utani
         phone: Simu
+      import:
+        file: File
       message:
         body: Mwili
       report:
         details: Maoni ya ziada
       user:
         about: Kuhusu
+        avatar: Avatar
         email: Barua pepe yako
         encrypted_password: Nenosiri
         locale: Eneo
@@ -33,6 +45,14 @@ sw:
         personal_url: URL ya kibinafsi
         remove_avatar: Ondoa avatar
         tos_agreement: Masharti ya makubaliano ya huduma
+      user_group:
+        avatar: Avatar
+    errors:
+      models:
+        user:
+          attributes:
+            nickname:
+              format: The nickname must be lowercase and contain no spaces
     models:
       decidim/attachment_created_event: Kiambatisho
       decidim/component_published_event: Sehemu inayotumika
@@ -146,6 +166,7 @@ sw:
       front_page_link: Nenda kwenye ukurasa wa mbele
       logo: "Nembo rasmi ya %{organization}"
       opens_in_new_tab: Hufungua katika kichupo kipya
+      secondary_menu: Secondary menu
       skip_button: Ruka hadi kwa yaliyomo kuu
     account:
       blocked: Akaunti hii imezuiwa kwa sababu ya ukiukaji wa sheria na masharti
@@ -499,6 +520,8 @@ sw:
             dummy_step_attribute1: Dummy Hatua Sifa 1
             dummy_step_attribute2: Dummy Hatua Sifa 2
             dummy_step_translatable_text: Maandishi ya Kutafsiri ya Hatua ya Dummy
+      pagination:
+        page_title: "%{component_name} - Page %{current_page} of %{total_pages}"
     contact: Wasiliana
     content_blocks:
       announcement:
@@ -742,6 +765,11 @@ sw:
             email_outro: Umepokea arifa hii kwa sababu unafuata %{amendable_title}. Unaweza kuacha kupokea arifa kufuatia kiungo kilichotangulia.
             email_subject: Marekebisho ya %{amendable_title} yamekataliwa kutoka kwa %{emendation_author_nickname}
             notification_title: <a href="%{emendation_path}">marekebisho</a> yaliyoundwa na <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> yamekataliwa kwa <a href="%{amendable_path}}">%{amendable_title}</a>.
+        emendation_promoted:
+          follower:
+            email_intro: 'An emendation has been published for %{amendable_title}. You can see it from this page:'
+            email_outro: You have received this notification because you are an author of %{amendable_title}.
+            email_subject: An emendation from %{emendation_author_nickname} has been published as a new %{amendable_type}
       attachments:
         attachment_created:
           email_intro: 'Hati mpya imeongezwa kwa %{resource_title}. Unaweza kuiona kutoka kwa ukurasa huu:'
@@ -1184,6 +1212,8 @@ sw:
         not_started: Bado haijaanza
         remaining: "%{time_distance} imesalia"
     metrics:
+      blocked_users:
+        description: Number of blocked participants
       download:
         csv: Pakua data (CSV)
       followers:
@@ -1194,6 +1224,10 @@ sw:
         description: Idadi ya washiriki hai katika shirika
         object: washiriki
         title: Washiriki
+      reported_users:
+        description: Number of reported participants
+      user_reports:
+        description: Number of reports done by participants
       users:
         description: Idadi ya washiriki katika shirika
         object: washiriki
@@ -1259,10 +1293,12 @@ sw:
     notifications_digest_mailer:
       header:
         daily: Muhtasari wa Arifa za Kila Siku
+        real_time: Real time
         weekly: Muhtasari wa Arifa za Kila Wiki
       hello: Hujambo %{name},
       intro:
         daily: 'Hizi ndizo arifa za siku ya mwisho kulingana na shughuli unayofuata:'
+        real_time: 'These is a notification on the activity you are following:'
         weekly: 'Hizi ndizo arifa za wiki iliyopita kulingana na shughuli unayofuata:'
       outro: Umepokea arifa hizi kwa sababu unafuata maudhui haya au waandishi wake. Unaweza kuacha kuzifuata kutoka kwa kurasa zao husika.
       see_more: Tazama arifa zaidi
@@ -1377,10 +1413,6 @@ sw:
         members: Wanachama
         officialized: Mshiriki rasmi
         send_private_message: Tuma ujumbe wa faragha
-      sidebar:
-        badges:
-          info: Beji hupatikana kwa kufanya shughuli mahususi kwenye jukwaa.
-          title: Beji
       user:
         actions:
           create_user_group: Unda kikundi
@@ -1396,22 +1428,26 @@ sw:
           message: Ujumbe
           resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
         confirmation_instructions_sent: Maagizo ya uthibitishaji wa barua pepe yametumwa.
-        create_user_group: Unda kikundi
-        edit_profile: Hariri wasifu
-        edit_user_group: Badilisha wasifu wa kikundi
         fill_in_email_to_confirm_it: Tafadhali, jaza barua pepe ya kikundi chako ili kuithibitisha.
-        invite_user: Alika mshiriki
-        join_user_group: Ombi la kujiunga na kikundi
-        leave_user_group: Ondoka kwenye kikundi
-        manage_user_group_admins: Dhibiti wasimamizi
-        manage_user_group_users: Dhibiti wanachama
-        resend_email_confirmation_instructions: Tuma tena maagizo ya uthibitishaji wa barua pepe
     reported_mailer:
-      hide:
-        hello: Hujambo %{name},
-        manage_moderations: Dhibiti ukadiriaji
-        report_html: <p> <a href="%{url}">yafuatayo</a> yamefichwa kiotomatiki.</p>
-        subject: Rasilimali imefichwa kiotomatiki
+      hidden_automatically:
+        content: Reported content
+        details: Details
+        hello: Hello %{name},
+        manage_moderations: Manage moderations
+        participatory_space: Participatory space
+        reason: Reason
+        report_html: <p>The following <a href="%{url}">content</a> has been hidden automatically.</p>
+        subject: A resource has been hidden automatically
+      hidden_manually:
+        content: Reported content
+        details: Details
+        hello: Hello %{name},
+        manage_moderations: Manage moderations
+        participatory_space: Participatory space
+        reason: Reason
+        report_html: <p>The following <a href="%{url}">content</a> has been hidden by %{moderator}.</p>
+        subject: A resource has been hidden by %{moderator}
       report:
         authors: Waandishi
         content: Maudhui yaliyoripotiwa
@@ -1429,6 +1465,10 @@ sw:
       create:
         error: Hitilafu ilitokea wakati wa kuunda ripoti. Tafadhali, ijaribu tena.
         success: Ripoti imeundwa kwa ufanisi na itakaguliwa na msimamizi.
+      hide:
+        success: This resource has been hidden.
+      parent_hidden:
+        report_details: The parent resource was hidden
     resource_endorsements:
       create:
         error: Kulikuwa na tatizo wakati wa hatua ya kuidhinisha.
@@ -1497,14 +1537,13 @@ sw:
       flag_user_modal:
         already_reported: Maudhui haya tayari yameripotiwa na yatakaguliwa na msimamizi.
         block: Mzuie mshiriki huyu
-        close: Funga
-        description: Ni nini kisichofaa kwa mtumiaji?
+        description: What is inappropriate about this participant?
         does_not_belong: Ina shughuli haramu, vitisho vya kujiua, taarifa za kibinafsi, au kitu kingine unachofikiri si cha %{organization_name}.
         hide: Ficha yaliyomo yao yote
         offensive: Ina ubaguzi wa rangi, ubaguzi wa kijinsia, kashfa, mashambulizi ya kibinafsi, vitisho vya kuuawa, maombi ya kujiua au aina yoyote ya matamshi ya chuki.
         report: Ripoti
         spam: Ina kubofya, utangazaji, ulaghai au roboti za hati.
-        title: Ripoti Mtumiaji asiyefaa
+        title: Report inappropriate participant
       floating_help:
         help: Msaada
       follow_button:
