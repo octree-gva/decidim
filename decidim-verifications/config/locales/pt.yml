@@ -2,6 +2,8 @@
 pt:
   activemodel:
     attributes:
+      authorization:
+        verification_attachment: Verification attachment
       config:
         available_methods: Métodos disponíveis
         offline: Off-line
