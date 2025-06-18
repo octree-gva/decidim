@@ -383,6 +383,6 @@ pt:
         project_proposal: Propostas incluídas neste projecto
     statistics:
       orders_count: Suportes
-      projects_count: Projectos
+      projects_count: Projetos
   index:
     confirmed_orders_count: Contagem de votos
