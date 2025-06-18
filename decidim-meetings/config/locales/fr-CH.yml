@@ -2,6 +2,8 @@
 fr-CH:
   activemodel:
     attributes:
+      answer:
+        add_documents: crwdns14392:0crwdne14392:0
       close_meeting:
         attendees_count: crwdns10022:0crwdne10022:0
         attending_organizations: crwdns10024:0crwdne10024:0
@@ -545,7 +547,7 @@ fr-CH:
         new:
           back: crwdns10754:0crwdne10754:0
           create: crwdns10756:0crwdne10756:0
-          title: crwdns10758:0crwdne10758:0
+          title: crwdns14394:0crwdne14394:0
         registration_confirm:
           cancel: crwdns10760:0crwdne10760:0
           confirm: crwdns10762:0crwdne10762:0
