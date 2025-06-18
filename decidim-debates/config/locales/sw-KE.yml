@@ -134,7 +134,7 @@ sw:
         new:
           back: Nyuma
           create: Unda
-          title: Mjadala mpya
+          title: Create new debate
         orders:
           commented: Wengi walitoa maoni
           label: Agiza mijadala na
