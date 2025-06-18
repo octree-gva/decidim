@@ -106,6 +106,8 @@ fr-CH:
       participatory_space_private_user:
         email: crwdns1396:0crwdne1396:0
         name: crwdns1398:0crwdne1398:0
+      participatory_space_private_user_csv_import:
+        file: crwdns14354:0crwdne14354:0
       scope:
         code: crwdns1400:0crwdne1400:0
         name: crwdns1402:0crwdne1402:0
@@ -704,6 +706,7 @@ fr-CH:
             does_not_belong: crwdns2168:0crwdne2168:0
             hidden_during_block: crwdns2170:0crwdne2170:0
             offensive: crwdns2172:0crwdne2172:0
+            parent_hidden: crwdns14356:0crwdne14356:0
             spam: crwdns2174:0crwdne2174:0
         reports:
           index:
@@ -720,6 +723,11 @@ fr-CH:
             report_language: crwdns2194:0crwdne2194:0
             report_reason: crwdns2196:0crwdne2196:0
             title: crwdns2198:0crwdne2198:0
+      new_import:
+        accepted_mime_types:
+          csv: crwdns14358:0crwdne14358:0
+          json: crwdns14360:0crwdne14360:0
+          xlsx: crwdns14362:0crwdne14362:0
       newsletter_templates:
         index:
           preview_template: crwdns2200:0crwdne2200:0
@@ -1107,6 +1115,7 @@ fr-CH:
         hidden: crwdns2726:0crwdne2726:0
         hide: crwdns2728:0crwdne2728:0
         not_hidden: crwdns2730:0crwdne2730:0
+        parent_hidden: crwdns14364:0crwdne14364:0
         title: crwdns2732:0crwdne2732:0
         unhide: crwdns2734:0crwdne2734:0
         unreport: crwdns2736:0crwdne2736:0
@@ -1117,6 +1126,7 @@ fr-CH:
             success: crwdns2740:0crwdne2740:0
           unhide:
             invalid: crwdns2742:0crwdne2742:0
+            parent_invalid: crwdns14366:0crwdne14366:0
             success: crwdns2744:0crwdne2744:0
           unreport:
             invalid: crwdns2746:0crwdne2746:0
