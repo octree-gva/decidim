@@ -12,6 +12,8 @@ fr-CH:
         state: crwdns11656:0crwdne11656:0
         title: crwdns11658:0crwdne11658:0
         user_group_id: crwdns11660:0crwdne11660:0
+      import_participatory_text:
+        document: crwdns14368:0crwdne14368:0
       proposal:
         address: crwdns11662:0crwdne11662:0
         answer: crwdns11664:0crwdne11664:0
@@ -22,6 +24,8 @@ fr-CH:
         decidim_proposals_proposal_state_id: crwdns11674:0crwdne11674:0
         decidim_scope_id: crwdns11676:0crwdne11676:0
         has_address: crwdns11678:0crwdne11678:0
+        latitude: crwdns14370:0crwdne14370:0
+        longitude: crwdns14372:0crwdne14372:0
         scope_id: crwdns11680:0crwdne11680:0
         state: crwdns11682:0crwdne11682:0
         suggested_hashtags: crwdns11684:0crwdne11684:0
@@ -48,6 +52,8 @@ fr-CH:
       proposals_copy:
         copy_proposals: crwdns11720:0crwdne11720:0
         origin_component_id: crwdns11722:0crwdne11722:0
+      proposals_file_import:
+        file: crwdns14374:0crwdne14374:0
       proposals_import:
         import_proposals: crwdns11724:0crwdne11724:0
         keep_answers: crwdns11726:0crwdne11726:0
@@ -377,7 +383,6 @@ fr-CH:
         title: crwdns12196:0crwdne12196:0
     participatory_spaces:
       highlighted_proposals:
-        last: crwdns12198:0crwdne12198:0
         see_all: crwdns12200:0crwdne12200:0
     proposals:
       actions:
@@ -398,6 +403,16 @@ fr-CH:
         exports:
           proposal_comments: crwdns12226:0crwdne12226:0
           proposals: crwdns12228:0crwdne12228:0
+        import_proposals_mailer:
+          notify_failure:
+            body: crwdns14376:0%{origin_component_name}crwdnd14376:0%{target_component_name}crwdne14376:0
+            subject: crwdns14378:0crwdne14378:0
+          notify_success:
+            added_proposals:
+              one: crwdns14380:1crwdne14380:1
+              other: "crwdns14380:5%{count}crwdne14380:5"
+            body: crwdns14382:0%{origin_component_name}crwdnd14382:0%{target_component_name}crwdne14382:0
+            subject: crwdns14384:0crwdne14384:0
         imports:
           help:
             answers: |
@@ -561,7 +576,7 @@ fr-CH:
         proposals_imports:
           create:
             invalid: crwdns12452:0crwdne12452:0
-            success: "crwdns12454:0%{number}crwdne12454:0"
+            success: crwdns14386:0crwdne14386:0
           new:
             create: crwdns12456:0crwdne12456:0
             no_components: crwdns12458:0crwdne12458:0
@@ -801,7 +816,7 @@ fr-CH:
           text_banner: crwdns12792:0%{go_back_link}crwdne12792:0
         new:
           send: crwdns12794:0crwdne12794:0
-          title: crwdns12796:0crwdne12796:0
+          title: crwdns14388:0crwdne14388:0
         orders:
           label: 'crwdns12798:0crwdne12798:0'
           most_commented: crwdns12800:0crwdne12800:0
