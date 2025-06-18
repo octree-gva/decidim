@@ -2,6 +2,8 @@
 pt:
   activemodel:
     attributes:
+      answer:
+        add_documents: Add documents
       close_meeting:
         attendees_count: Número de participantes
         attending_organizations: Lista de organizações que participaram
@@ -545,7 +547,7 @@ pt:
         new:
           back: Retroceder
           create: Criar
-          title: Criar a Sua Reunião
+          title: Create new meeting
         registration_confirm:
           cancel: Cancelar
           confirm: Confirmar
