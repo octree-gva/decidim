@@ -2,6 +2,8 @@
 sw:
   activemodel:
     attributes:
+      authorization:
+        verification_attachment: Verification attachment
       config:
         available_methods: Mbinu zinazopatikana
         offline: Nje ya mtandao
