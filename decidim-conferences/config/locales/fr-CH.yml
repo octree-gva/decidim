@@ -69,6 +69,8 @@ fr-CH:
         email: crwdns4370:0crwdne4370:0
         name: crwdns4372:0crwdne4372:0
         role: crwdns4374:0crwdne4374:0
+      partner:
+        logo: crwdns14402:0crwdne14402:0
     errors:
       models:
         conference_registration_invite:
