@@ -24,7 +24,7 @@ pt:
         decidim_scope_id: Escopo
         description: Descrição
         developer_group: Grupo promotor
-        document: Documentos
+        document: Documento
         domain: Domínio
         duration: Duração
         facebook: Facebook
@@ -33,7 +33,7 @@ pt:
         hero_image: Imagem da página inicial
         import_attachments: Importar anexos
         import_categories: Importar categorias
-        import_components: Importar funcionalidades
+        import_components: Importar componentes
         included_at: Incluído em
         instagram: Instagram
         internal_organisation: Organização interna
@@ -79,7 +79,7 @@ pt:
         assembly:
           attributes:
             document:
-              allowed_file_content_types: 'Tipo de documento inválido. Apenas ficheiros com as seguintes extensões são permitidos: %{types}.'
+              allowed_file_content_types: 'Tipo de documento inválido. Só são permitidos ficheiros com as seguintes extensões: %{types}.'
   activerecord:
     models:
       decidim/assembly:
@@ -98,7 +98,7 @@ pt:
         new_assembly: Nova assembleia
         new_assembly_member: Novo membro da assembleia
         new_assembly_type: Novo tipo de assembleia
-        new_assembly_user_role: Novo administrador da assembleia
+        new_assembly_user_role: Administrador da nova reunião
       assemblies:
         create:
           error: Houve um problema ao criar uma nova assembleia.
@@ -176,26 +176,26 @@ pt:
         destroy:
           success: Administrador removido com sucesso desta assembleia.
         edit:
-          title: Atualizar administrador da assembleia
+          title: Atualizar o administrador da reunião
           update: Atualizar
         index:
           assembly_admins_title: Administradores da assembleia
         new:
           create: Criar
-          title: Novo administrador da assembleia
+          title: Administrador da nova reunião
         update:
           error: Houve um problema ao atualizar um administrador para esta assembleia.
           success: Administrador atualizado com sucesso para esta assembleia.
       filters:
         ceased_date_not_null:
-          label: Encerrado
+          label: Cessou
           values:
-            'false': Não encerrado
-            'true': Encerrado
+            'false': Não cessou
+            'true': Cessou
         decidim_assemblies_type_id_eq:
           label: Tipo de reunião
         search_placeholder:
-          full_name_or_user_name_or_user_nickname_cont: Pesquisar por nome ou alcunha
+          full_name_or_user_name_or_user_nickname_cont: Pesquisar por nome ou apelido
       menu:
         assemblies: Assembleias
         assemblies_submenu:
@@ -206,11 +206,11 @@ pt:
           attachments: Anexos
           categories: Categorias
           components: Funcionalidades
-          info: Sobre esta assembleia
+          info: Sobre esta reunião
           landing_page: Página inicial
           moderations: Moderações
           private_users: Participantes privados
-          see_assembly: Ver assembleia
+          see_assembly: Veja a reunião
         assemblies_types: Tipos de assembleias
       models:
         assemblies_types:
@@ -255,9 +255,9 @@ pt:
     admin_log:
       assembly:
         create: "%{user_name} criou a assembleia %{resource_name}"
-        duplicate: "%{user_name} duplicou a assembleia %{resource_name}"
-        export: "%{user_name} exportou a assembleia %{resource_name}"
-        import: "%{user_name} importou a assembleia %{resource_name}"
+        duplicate: "%{user_name} duplicou a reunião %{resource_name}"
+        export: "%{user_name} exportou a reunião %{resource_name}"
+        import: "%{user_name} importou a reunião %{resource_name}"
         publish: "%{user_name} publicou a assembleia %{resource_name}"
         unpublish: "%{user_name} despublicou a assembleia %{resource_name}"
         update: "%{user_name} atualizou a assembleia %{resource_name}"
@@ -286,14 +286,14 @@ pt:
             duration_help: Se a duração desta assembleia for limitada, selecione a data de término. Caso contrário, ela será exibida como indefinida.
             filters: Filtros
             images: Imagens
-            included_at_help: Seleciona a data em que esta assembleia foi adicionada à plataforma. Não precisa necessariamente ser a mesma data de criação.
+            included_at_help: Selecione a data em que esta reunião foi adicionada à plataforma. Não precisa de ser necessariamente a mesma que a data de criação.
             metadata: Metadados
             other: Outro
             select_a_created_by: Seleciona um criador
             select_an_area: Seleciona uma Área
             select_an_assembly_type: Seleciona um tipo de assembleia
             select_parent_assembly: Seleciona a assembleia mãe
-            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para esta assembleia. Apenas aceita letras, números e hífens, e deve começar com uma letra. Exemplo: %{url}'
+            slug_help_html: 'São usados slugs de URL para gerar URLs que apontam para esta reunião. Aceita apenas letras, números e traços, e deve começar com uma letra. Exemplo: %{url}'
             social_handlers: Redes Sociais
             title: Informações Gerais
             visibility: Visibilidade
@@ -302,15 +302,15 @@ pt:
             title: Editar tipo de assembleia
         assembly_copies:
           form:
-            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para esta assembleia. Apenas aceita letras, números e hífens, e deve começar com uma letra. Exemplo: %{url}'
+            slug_help_html: 'São usados slugs de URL para gerar URLs que apontam para esta reunião. Aceita apenas letras, números e traços, e deve começar com uma letra. Exemplo: %{url}'
         assembly_imports:
           form:
-            slug_help_html: 'Os slugs de URL são usados para gerar os URLs que apontam para esta assembleia. Apenas aceita letras, números e hífens, e deve começar com uma letra. Exemplo: %{url}'
+            slug_help_html: 'São usados slugs de URL para gerar URLs que apontam para esta reunião. Aceita apenas letras, números e traços, e deve começar com uma letra. Exemplo: %{url}'
         assembly_members:
           form:
             existing_user: Participante existente
             explanation: 'Orientação para imagem:'
-            image_guide: De preferência uma imagem em retrato que não tenha nenhum texto.
+            image_guide: De preferência uma imagem de retrato que não tenha nenhum texto.
             non_user: Não participante
             non_user_avatar_help: Deves obter o consentimento das pessoas antes de publicá-las como membros.
             select_a_position: Seleciona uma posição
@@ -328,23 +328,23 @@ pt:
           closing_date: Data de encerramento
           created_by: Criado por
           creation_date: Data de criação
-          data: Dados da assembleia
+          data: Dados da reunião
           developer_group: Grupo promotor
           duration: Duração
           included_at: Incluído em
-          indefinite_duration: Indefinido
-          local_area: Área da organização
-          meta_scope: Escopo
+          indefinite_duration: Indeterminada
+          local_area: Área de organização
+          meta_scope: Âmbito
           participatory_scope: O que é decidido
           participatory_structure: Como é decidido
           target: Quem participa
-          title: Sobre esta assembleia
+          title: Sobre esta reunião
         filters:
           names:
             all: Todos
           type: Tipo
         show:
-          title: Sobre esta assembleia
+          title: Sobre esta reunião
       assembly_members:
         index:
           members: Membros
@@ -358,7 +358,7 @@ pt:
         working_group: Grupo de trabalho
       content_blocks:
         children_assemblies:
-          name: Assembleias
+          name: Reuniões
         dates_metadata:
           name: Metadados de datas
         extra_data:
@@ -384,12 +384,12 @@ pt:
       index:
         title: Assembleias
       last_activity:
-        new_assembly: 'Nova assembleia:'
+        new_assembly: 'Nova reunião:'
       pages:
         home:
           highlighted_assemblies:
-            active_spaces: Assembleias ativas
-            see_all_spaces: Ver todas as assembleias
+            active_spaces: Reuniões ativas
+            see_all_spaces: Ver todas as reuniões
         user_profile:
           member_of:
             member_of: Membro de
@@ -397,7 +397,7 @@ pt:
         assembly_type: Tipo de assembleia
         duration: Duração
         private_space: Esta é uma assembleia privada
-        social_networks_title: Visite a assembleia em
+        social_networks_title: Visite a reunião em
     assembly_members:
       assembly_member:
         designated_on: Designada em
@@ -407,7 +407,7 @@ pt:
       assemblies:
         create_assembly_member:
           email_intro: Um administrador da assembleia <a href="%{resource_url}">%{resource_name}</a> adicionou-te como um dos seus membros.
-          email_outro: Recebeste esta notificação porque foste convidado(a) para uma assembleia. Consulta a <a href="%{resource_url}">página da assembleia</a> para contribuir!
+          email_outro: Recebeu esta notificação porque foi convidado para uma reunião. Verifique a <a href="%{resource_url}">página da reunião</a> para contribuir!
           email_subject: Foste convidado(a) para ser membro da assembleia %{resource_name}!
           notification_title: Foste registado(a) como membro da assembleia <a href="%{resource_path}">%{resource_name}</a>. Consulta a <a href="%{resource_path}">página da assembleia</a> para contribuir!
       assembly:
@@ -450,8 +450,8 @@ pt:
           promoted_assemblies: Assembleias em destaque
         metadata:
           children_item:
-            one: "%{count} assembleia"
-            other: "%{count} assembleias"
+            one: "%{count} reunião"
+            other: "%{count} reuniões"
         order_by_assemblies:
           assemblies:
             one: "%{count} assembleia"
