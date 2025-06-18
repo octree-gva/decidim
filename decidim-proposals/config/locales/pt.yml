@@ -12,6 +12,8 @@ pt:
         state: Estado
         title: Título
         user_group_id: Criar rascunho colaborativo como
+      import_participatory_text:
+        document: Document
       proposal:
         address: Endereço
         answer: Responder
@@ -22,6 +24,8 @@ pt:
         decidim_proposals_proposal_state_id: Estado
         decidim_scope_id: Escopo
         has_address: Tem endereço
+        latitude: Latitude
+        longitude: Longitude
         scope_id: Escopo
         state: Estado
         suggested_hashtags: Hashtags sugeridos
@@ -48,6 +52,8 @@ pt:
       proposals_copy:
         copy_proposals: Entendo que isso importará todas as propostas da funcionalidade selecionada para a atual e que essa ação não poderá ser revertida.
         origin_component_id: Funcionalidade de onde copiar as propostas
+      proposals_file_import:
+        file: File
       proposals_import:
         import_proposals: Importar propostas
         keep_answers: Guardar estado e respostas
@@ -377,7 +383,6 @@ pt:
         title: Votos
     participatory_spaces:
       highlighted_proposals:
-        last: Últimas propostas
         see_all: Ver todos
     proposals:
       actions:
@@ -398,6 +403,16 @@ pt:
         exports:
           proposal_comments: Comentários
           proposals: Propostas
+        import_proposals_mailer:
+          notify_failure:
+            body: There was a problem while importing proposals from the %{origin_component_name} component to the %{target_component_name} component.
+            subject: There was an error importing proposals
+          notify_success:
+            added_proposals:
+              one: One proposal was imported.
+              other: "%{count} proposals were imported."
+            body: Successful imported proposals from the %{origin_component_name} component to the %{target_component_name} component. You can review the results in the administration interface.
+            subject: The proposals have been imported successfully
         imports:
           help:
             answers: |
@@ -572,7 +587,7 @@ pt:
         proposals_imports:
           create:
             invalid: Houve um problema ao importar as propostas.
-            success: "%{number} propostas importadas com sucesso."
+            success: The import process has started. We will let you know once it has finished.
           new:
             create: Importar propostas
             no_components: Não há outras funcionalidades de propostas neste espaço participativo para importar as propostas.
@@ -812,7 +827,7 @@ pt:
           text_banner: Está a ver a lista de propostas retiradas pelos seus próprios autores. %{go_back_link}
         new:
           send: Continuar
-          title: Cria a tua proposta
+          title: Create new proposal
         orders:
           label: 'Ordenar propostas por:'
           most_commented: Mais comentadas
