@@ -69,6 +69,8 @@ pt:
         email: E-mail
         name: Nome
         role: Função
+      partner:
+        logo: Logo
     errors:
       models:
         conference_registration_invite:
