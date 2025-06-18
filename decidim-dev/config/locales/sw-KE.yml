@@ -2,6 +2,9 @@
 sw:
   activemodel:
     attributes:
+      dummy:
+        image: Image
+      dummy_attribute: Dummy attribute
       dummy_resource:
         created_at: Imeundwa saa
         decidim_scope_id: Upeo
