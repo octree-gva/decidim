@@ -69,6 +69,8 @@ sw:
         email: Barua pepe
         name: Jina
         role: Jukumu
+      partner:
+        logo: Logo
     errors:
       models:
         conference_registration_invite:
