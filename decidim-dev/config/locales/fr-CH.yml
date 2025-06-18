@@ -2,6 +2,9 @@
 fr-CH:
   activemodel:
     attributes:
+      dummy:
+        image: crwdns14404:0crwdne14404:0
+      dummy_attribute: crwdns14406:0crwdne14406:0
       dummy_resource:
         created_at: crwdns8810:0crwdne8810:0
         decidim_scope_id: crwdns8812:0crwdne8812:0
