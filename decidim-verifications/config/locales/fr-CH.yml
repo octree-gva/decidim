@@ -2,6 +2,8 @@
 fr-CH:
   activemodel:
     attributes:
+      authorization:
+        verification_attachment: crwdns14408:0crwdne14408:0
       config:
         available_methods: crwdns13660:0crwdne13660:0
         offline: crwdns13662:0crwdne13662:0
