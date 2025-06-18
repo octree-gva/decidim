@@ -106,6 +106,8 @@ sw:
       participatory_space_private_user:
         email: Barua pepe
         name: Jina
+      participatory_space_private_user_csv_import:
+        file: File
       scope:
         code: Kanuni
         name: Jina
@@ -704,6 +706,7 @@ sw:
             does_not_belong: Si mali
             hidden_during_block: Imefichwa wakati inazuia mtumiaji
             offensive: Inakera
+            parent_hidden: Parent content has been hidden
             spam: Barua taka
         reports:
           index:
@@ -720,6 +723,11 @@ sw:
             report_language: Lugha ya ripoti
             report_reason: Sababu
             title: Ripoti maelezo
+      new_import:
+        accepted_mime_types:
+          csv: CSV
+          json: JSON
+          xlsx: XLSX
       newsletter_templates:
         index:
           preview_template: Hakiki
@@ -1109,6 +1117,7 @@ sw:
         hidden: Imefichwa
         hide: Ficha
         not_hidden: Haijafichwa
+        parent_hidden: You cannot unhide this resource because its parent is still hidden.
         title: Vitendo
         unhide: Onyesha
         unreport: Acha kuripoti
@@ -1119,6 +1128,7 @@ sw:
             success: Nyenzo imefichwa.
           unhide:
             invalid: Kulikuwa na tatizo katika kufichua rasilimali.
+            parent_invalid: There was a problem unhiding the resource. Parent is not visible.
             success: Nyenzo imefaulu kufichwa.
           unreport:
             invalid: Kulikuwa na tatizo la kutoripoti rasilimali.
