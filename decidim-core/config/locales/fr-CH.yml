@@ -4,10 +4,19 @@ fr-CH:
     attributes:
       account:
         delete_reason: crwdns5006:0crwdne5006:0
+      attachment:
+        documents: crwdns14274:0crwdne14274:0
+        image: crwdns14276:0crwdne14276:0
+        photos: crwdns14278:0crwdne14278:0
       common:
         created_at: crwdns5008:0crwdne5008:0
+      content_block_attachment:
+        background_image: crwdns14280:0crwdne14280:0
+        main_image: crwdns14282:0crwdne14282:0
       conversation:
         body: crwdns5010:0crwdne5010:0
+      editor_image:
+        file: crwdns14284:0crwdne14284:0
       group:
         about: crwdns5012:0crwdne5012:0
         avatar: crwdns5014:0crwdne5014:0
@@ -16,12 +25,15 @@ fr-CH:
         name: crwdns5020:0crwdne5020:0
         nickname: crwdns5022:0crwdne5022:0
         phone: crwdns5024:0crwdne5024:0
+      import:
+        file: crwdns14286:0crwdne14286:0
       message:
         body: crwdns5026:0crwdne5026:0
       report:
         details: crwdns5028:0crwdne5028:0
       user:
         about: crwdns5030:0crwdne5030:0
+        avatar: crwdns14288:0crwdne14288:0
         email: crwdns5032:0crwdne5032:0
         encrypted_password: crwdns5034:0crwdne5034:0
         locale: crwdns5036:0crwdne5036:0
@@ -33,6 +45,14 @@ fr-CH:
         personal_url: crwdns5048:0crwdne5048:0
         remove_avatar: crwdns5050:0crwdne5050:0
         tos_agreement: crwdns5052:0crwdne5052:0
+      user_group:
+        avatar: crwdns14290:0crwdne14290:0
+    errors:
+      models:
+        user:
+          attributes:
+            nickname:
+              format: crwdns14292:0crwdne14292:0
     models:
       decidim/attachment_created_event: crwdns5054:0crwdne5054:0
       decidim/component_published_event: crwdns5056:0crwdne5056:0
@@ -146,6 +166,7 @@ fr-CH:
       front_page_link: crwdns5190:0crwdne5190:0
       logo: "crwdns5192:0%{organization}crwdne5192:0"
       opens_in_new_tab: crwdns5194:0crwdne5194:0
+      secondary_menu: crwdns14294:0crwdne14294:0
       skip_button: crwdns5196:0crwdne5196:0
     account:
       blocked: crwdns5198:0crwdne5198:0
@@ -496,6 +517,8 @@ fr-CH:
             dummy_step_attribute1: crwdns5684:0crwdne5684:0
             dummy_step_attribute2: crwdns5686:0crwdne5686:0
             dummy_step_translatable_text: crwdns5688:0crwdne5688:0
+      pagination:
+        page_title: "crwdns14296:0%{component_name}crwdnd14296:0%{current_page}crwdnd14296:0%{total_pages}crwdne14296:0"
     contact: crwdns5690:0crwdne5690:0
     content_blocks:
       announcement:
@@ -727,6 +750,11 @@ fr-CH:
             email_outro: crwdns5984:0%{amendable_title}crwdne5984:0
             email_subject: crwdns5986:0%{amendable_title}crwdnd5986:0%{emendation_author_nickname}crwdne5986:0
             notification_title: crwdns5988:0%{emendation_path}crwdnd5988:0%{emendation_author_path}crwdnd5988:0%{emendation_author_nickname}crwdnd5988:0%{amendable_path}crwdnd5988:0%{amendable_title}crwdne5988:0
+        emendation_promoted:
+          follower:
+            email_intro: 'crwdns14298:0%{amendable_title}crwdne14298:0'
+            email_outro: crwdns14300:0%{amendable_title}crwdne14300:0
+            email_subject: crwdns14302:0%{emendation_author_nickname}crwdnd14302:0%{amendable_type}crwdne14302:0
       attachments:
         attachment_created:
           email_intro: 'crwdns5990:0%{resource_title}crwdne5990:0'
@@ -1168,6 +1196,8 @@ fr-CH:
         not_started: crwdns6608:0crwdne6608:0
         remaining: "crwdns6610:0%{time_distance}crwdne6610:0"
     metrics:
+      blocked_users:
+        description: crwdns14304:0crwdne14304:0
       download:
         csv: crwdns6612:0crwdne6612:0
       followers:
@@ -1178,6 +1208,10 @@ fr-CH:
         description: crwdns6620:0crwdne6620:0
         object: crwdns6622:0crwdne6622:0
         title: crwdns6624:0crwdne6624:0
+      reported_users:
+        description: crwdns14306:0crwdne14306:0
+      user_reports:
+        description: crwdns14308:0crwdne14308:0
       users:
         description: crwdns6626:0crwdne6626:0
         object: crwdns6628:0crwdne6628:0
@@ -1243,10 +1277,12 @@ fr-CH:
     notifications_digest_mailer:
       header:
         daily: crwdns6714:0crwdne6714:0
+        real_time: crwdns14310:0crwdne14310:0
         weekly: crwdns6716:0crwdne6716:0
       hello: crwdns6718:0%{name}crwdne6718:0
       intro:
         daily: 'crwdns6720:0crwdne6720:0'
+        real_time: 'crwdns14312:0crwdne14312:0'
         weekly: 'crwdns6722:0crwdne6722:0'
       outro: crwdns6724:0crwdne6724:0
       see_more: crwdns6726:0crwdne6726:0
@@ -1361,10 +1397,6 @@ fr-CH:
         members: crwdns6886:0crwdne6886:0
         officialized: crwdns6888:0crwdne6888:0
         send_private_message: crwdns6890:0crwdne6890:0
-      sidebar:
-        badges:
-          info: crwdns6892:0crwdne6892:0
-          title: crwdns6894:0crwdne6894:0
       user:
         actions:
           create_user_group: crwdns6896:0crwdne6896:0
@@ -1380,22 +1412,26 @@ fr-CH:
           message: crwdns6916:0crwdne6916:0
           resend_email_confirmation_instructions: crwdns6918:0crwdne6918:0
         confirmation_instructions_sent: crwdns6920:0crwdne6920:0
-        create_user_group: crwdns6922:0crwdne6922:0
-        edit_profile: crwdns6924:0crwdne6924:0
-        edit_user_group: crwdns6926:0crwdne6926:0
         fill_in_email_to_confirm_it: crwdns6928:0crwdne6928:0
-        invite_user: crwdns6930:0crwdne6930:0
-        join_user_group: crwdns6932:0crwdne6932:0
-        leave_user_group: crwdns6934:0crwdne6934:0
-        manage_user_group_admins: crwdns6936:0crwdne6936:0
-        manage_user_group_users: crwdns6938:0crwdne6938:0
-        resend_email_confirmation_instructions: crwdns6940:0crwdne6940:0
     reported_mailer:
-      hide:
-        hello: crwdns6942:0%{name}crwdne6942:0
-        manage_moderations: crwdns6944:0crwdne6944:0
-        report_html: crwdns6946:0%{url}crwdne6946:0
-        subject: crwdns6948:0crwdne6948:0
+      hidden_automatically:
+        content: crwdns14314:0crwdne14314:0
+        details: crwdns14316:0crwdne14316:0
+        hello: crwdns14318:0%{name}crwdne14318:0
+        manage_moderations: crwdns14320:0crwdne14320:0
+        participatory_space: crwdns14322:0crwdne14322:0
+        reason: crwdns14324:0crwdne14324:0
+        report_html: crwdns14326:0%{url}crwdne14326:0
+        subject: crwdns14328:0crwdne14328:0
+      hidden_manually:
+        content: crwdns14330:0crwdne14330:0
+        details: crwdns14332:0crwdne14332:0
+        hello: crwdns14334:0%{name}crwdne14334:0
+        manage_moderations: crwdns14336:0crwdne14336:0
+        participatory_space: crwdns14338:0crwdne14338:0
+        reason: crwdns14340:0crwdne14340:0
+        report_html: crwdns14342:0%{url}crwdnd14342:0%{moderator}crwdne14342:0
+        subject: crwdns14344:0%{moderator}crwdne14344:0
       report:
         authors: crwdns6950:0crwdne6950:0
         content: crwdns6952:0crwdne6952:0
@@ -1413,6 +1449,10 @@ fr-CH:
       create:
         error: crwdns6974:0crwdne6974:0
         success: crwdns6976:0crwdne6976:0
+      hide:
+        success: crwdns14346:0crwdne14346:0
+      parent_hidden:
+        report_details: crwdns14348:0crwdne14348:0
     resource_endorsements:
       create:
         error: crwdns6978:0crwdne6978:0
@@ -1481,14 +1521,13 @@ fr-CH:
       flag_user_modal:
         already_reported: crwdns7070:0crwdne7070:0
         block: crwdns7072:0crwdne7072:0
-        close: crwdns7074:0crwdne7074:0
-        description: crwdns7076:0crwdne7076:0
+        description: crwdns14350:0crwdne14350:0
         does_not_belong: crwdns7078:0%{organization_name}crwdne7078:0
         hide: crwdns7080:0crwdne7080:0
         offensive: crwdns7082:0crwdne7082:0
         report: crwdns7084:0crwdne7084:0
         spam: crwdns7086:0crwdne7086:0
-        title: crwdns7088:0crwdne7088:0
+        title: crwdns14352:0crwdne14352:0
       floating_help:
         help: crwdns7090:0crwdne7090:0
       follow_button:
