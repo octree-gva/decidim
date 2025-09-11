@@ -25,9 +25,11 @@ export const getMessages = (key = null) => {
  * @returns {Object} The converted dictionary object
  */
 export const createDictionary = (messages, prefix = "") => {
+  if (!messages) return {};
+
   let final = {};
   Object.keys(messages).forEach((key) => {
-    if (typeof messages[key] === "object") {
+    if (messages[key] && typeof messages[key] === "object") {
       final = { ...final, ...createDictionary(messages[key], `${prefix}${key}.`) };
     } else if (key === "") {
       final[prefix?.replace(/\.$/, "") || ""] = messages[key];
