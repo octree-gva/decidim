@@ -87,26 +87,26 @@ fr-CH:
           adjacent_links_paragraph: crwdns8380:0crwdne8380:0
           color_contrast: crwdns8382:0crwdne8382:0
           color_contrast_paragraph: crwdns8384:0crwdne8384:0
-          decidim_follows_html: crwdns8386:0crwdne8386:0
+          decidim_follows_html: crwdns15360:0%{link}crwdne15360:0
           dynamic_changes_header: crwdns8388:0crwdne8388:0
           dynamic_changes_paragraph: crwdns8390:0crwdne8390:0
           elements_hidden: crwdns8392:0crwdne8392:0
           elements_hidden_header: crwdns8394:0crwdne8394:0
           elements_hidden_paragraph: crwdns8396:0crwdne8396:0
           heading_on: crwdns8398:0crwdne8398:0
-          here_link: crwdns8400:0crwdne8400:0
           illogical_heading_order: crwdns8402:0crwdne8402:0
           illogical_heading_paragraph: crwdns8404:0crwdne8404:0
           important_sections_heading: crwdns8406:0crwdne8406:0
           important_sections_paragraph: crwdns8408:0crwdne8408:0
+          learn_more_about_html: crwdns15362:0%{link}crwdne15362:0
           links_and_buttons: crwdns8410:0crwdne8410:0
           links_and_buttons_paragraph: crwdns8412:0crwdne8412:0
-          see_further_info_html: crwdns8414:0%{link}crwdne8414:0
           unique_h1: crwdns8416:0crwdne8416:0
           unique_h1_paragraph: crwdns8418:0crwdne8418:0
           use_aria: crwdns8420:0crwdne8420:0
           use_aria_header: crwdns8422:0crwdne8422:0
           use_aria_paragraph: crwdns8424:0crwdne8424:0
+          wcag_guidelines: crwdns15364:0crwdne15364:0
         color:
           color_header: crwdns8426:0crwdne8426:0
           description_p1: crwdns8428:0crwdne8428:0
