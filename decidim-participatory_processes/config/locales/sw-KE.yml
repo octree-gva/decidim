@@ -7,6 +7,7 @@ sw:
         area_id: Eneo
         copy_categories: Nakili kategoria
         copy_components: Nakili vipengele
+        copy_landing_page_blocks: Duplicate landing page blocks
         copy_steps: Nakili hatua
         decidim_area_id: Eneo
         description: Maelezo
