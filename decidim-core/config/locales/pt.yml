@@ -160,6 +160,13 @@ pt:
       x_seconds:
         one: 1 segundo
         other: "%{count} segundos"
+    widget:
+      label:
+        date: Select date for %{label}
+        time: Select time for %{label}
+      picker:
+        date_button: Open calendar picker for %{label}
+        time_button: Open time picker for %{label}
   decidim:
     accessibility:
       external_link: Ligação externa
@@ -868,7 +875,7 @@ pt:
           notification_title: O participante %{name} (%{nickname}) foi oficializado.
     export_mailer:
       download_your_data_export:
-        click_button: 'Clica no link seguinte para descarregar os teus dados.<br/>O ficheiro estará disponível até %{date}.<br/>Precisarás do <a href="https://www.7-zip.org/">7-Zip</a> (para Windows), <a href="https://www.keka.io/en/">Keka</a> (para MacOS) ou <a href="https://peazip.github.io">PeaZip</a> (para Linux) para o abrir. Palavra-passe: %{password}'
+        click_button: 'Clique na ligação seguinta para descarregar os seus dados. <Br/> Irá precisar  de <a href="https://www.7-zip.org/">7-Zip</a> (para Windows), <a href="https://www.keka.io/en/">Keka</a> (para MacOS), ou <a href="https://peazip.github.io">PeaZip</a> (para Linux) para abrir o ficheiro. Palavra-chave: %{password}'
         download: Transferir
       export:
         ready: Por favor, encontre em anexo uma versão zip da sua exportação.
@@ -985,7 +992,12 @@ pt:
       title: Quais são os distintivos?
     group_admins:
       actions:
-        are_you_sure: Tens a certeza? Isto não removerá o participante do grupo.
+        confirm_modal:
+          ok_add: Add an administrator
+          ok_remove: Remove the administrator
+          title_add: Confirm the new administrator
+          title_remove: Remove the administrator
+        confirm_remove_from_admin: Are you sure you want to remove the administrator from this group?
         demote_admin: Remover administrador
       demote:
         error: Houve um problema ao remover este participante da lista de administradores.
@@ -1015,7 +1027,11 @@ pt:
         error: Houve um problema ao aceitar este pedido de adesão.
         success: Pedido de adesão aceite com sucesso.
       actions:
-        are_you_sure: Tem a certeza?
+        confirm_modal:
+          ok_remove: Remove the member
+          title_remove: Remove the member
+        confirm_promote_to_admin: Are you sure you want to add this user as an administrator?
+        confirm_remove_from_group: Are you sure you want to remove the user from this group?
         promote_to_admin: Tornar administrador
         remove_from_group: Remover participante
       index:
@@ -1253,8 +1269,9 @@ pt:
         main_image: Imagem principal
     newsletters:
       unsubscribe:
-        check_subscription: Se quiseres alterar as tuas preferências, podes fazê-lo na <a href="%{link}" target="_blank">página de configuração</a>.
+        check_subscription_html: If you'd like to start receiving them again, you can re-enable your subscription anytime from the <a href="%{link}" target="_blank">settings page</a>.
         error: Ocorreu um problema ao cancelar a assinatura.
+        subscription_preferences: We have updated your subscription preferences, and you will no longer receive newsletters from %{organization_name}.
         success: Subscrição cancelada corretamente.
         token_error: A hiperligação expirou.
         unsubscribe: Cancelar subscrição
@@ -1343,7 +1360,7 @@ pt:
           how_to_participate: Como posso fazer parte de um processo?
           meetings: Reuniões
           meetings_explanation: Descubra onde e quando pode participar em reuniões públicas.
-          more_info: Mais informações sobre %{resource_name}
+          more_info: Mais informações
           proposals: Propostas
           proposals_explanation: Faça propostas, suporte as existentes e promova as mudanças que deseja ver.
         footer_sub_hero:
@@ -1486,6 +1503,7 @@ pt:
     searches:
       filters:
         jump_to: 'Saltar para:'
+        resource: "%{label} among %{collection}"
         search: Pesquisar
         state:
           active: Ativo
@@ -1508,6 +1526,7 @@ pt:
         close_modal: Fechar modal
         ok: OK
         title: Confirmar
+      confirm_unload: This page contains unsaved changes. Are you sure you want to leave this page?
       embed:
         title: Conteúdo de vídeo embutido
       extended_navigation_bar:
@@ -1618,7 +1637,7 @@ pt:
     user_report_mailer:
       notify:
         body_1: O utilizador %{user} foi denunciado por %{token}
-        body_2: 'Motivo: %{reason}'
+        body_2: 'Razão: %{razão}'
         details: Detalhes fornecidos pelo usuário
         greetings: Saudações, <br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Olá %{admin},
@@ -1645,7 +1664,7 @@ pt:
         version: Versão %{number}
     versions_list_item:
       show:
-        version_index: Versão %{index} de %{total}
+        version_index: Versão %{index}
     welcome_notification:
       default_body: "<p>Olá {{name}}, obrigado por te juntares a {{organization}} e bem-vindo!</p>\n<ul>\n <li>Se queres ter uma ideia rápida do que podes fazer aqui, dá uma vista de olhos na secção de <a href=\"{{help_url}}\">Ajuda</a>.</li>\n <li>Assim que a leres, vais ganhar o teu primeiro distintivo. Aqui está uma <a href=\"{{badges_url}}\">lista de todos os distintivos</a> que podes ganhar à medida que participas em {{organization}}.</li>\n <li>Por último, mas não menos importante, junta-te a outras pessoas e partilha com elas a experiência de estar envolvido e participar em {{organization}}. Faz propostas, comenta, debate, reflete sobre como contribuir para o bem comum, apresenta argumentos para convencer, ouve e lê para seres convencido, expressa as tuas ideias de forma concreta e direta, responde com paciência e determinação, defende as tuas ideias e mantém a mente aberta para colaborar e juntar-te às ideias de outras pessoas.</li>\n</ul>"
       default_subject: Obrigado por se juntar a {{organization}}!
@@ -1972,14 +1991,17 @@ pt:
         edit: Editar
       footer:
         cc_by_license: Licença Creative Commons
+        current_organization_img: "%{organization} (Back home)"
         data_consent_settings: Definições de “cookies”
         decidim_logo: Logótipo do Decidim
         decidim_title: Decidim
         download_open_data: Transferir ficheiros Open Data
+        help: Help
         log_in: Iniciar sessão
         made_with_open_source: Site criado com <a target="_blank" href="https://github.com/decidim/decidim"> software livre</a>.
         resources: Recursos
         sign_up: Criar uma conta
+        social_media: Social media
         terms_of_service: Termos de Serviço
       header:
         log_in: Iniciar sessão
@@ -2019,6 +2041,8 @@ pt:
         profile: Minha conta
         public_profile: Meu perfil público
         title: Ligações de perfil
+        unread_conversations: You have unread conversations
+        unread_notifications: You have unread notifications
       user_profile:
         account: Conta
         authorizations: Autorizações
