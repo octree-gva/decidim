@@ -87,26 +87,26 @@ sw:
           adjacent_links_paragraph: Iwapo rasilimali hiyo hiyo ina viungo vingi vilivyo karibu vinavyoielekeza, inakuwa vigumu kwa watumiaji kama hao kutazama ukurasa kwa sababu wanaweza kuhitaji kupitia viungo vingi ili kufikia rasilimali inayofuata.
           color_contrast: Tofauti ya rangi
           color_contrast_paragraph: Unapounda violesura vya watumiaji au kurekebisha rangi, hakikisha kila mara hauvunji ufikivu kwa mabadiliko yako. Unaweza kutumia kikagua utofautishaji wa Rangi ili kuhakikisha kuwa rangi zako zina utofautishaji wa kutosha dhidi ya rangi ya mandharinyuma ambapo zinaonyeshwa.
-          decidim_follows_html: Decidim inafuata <u>Miongozo ya Ufikiaji wa Maudhui ya Wavuti (WCAG) 2.1</u>
+          decidim_follows_html: Decidim follows the %{link}
           dynamic_changes_header: Utendaji mahiri hubadilisha muktadha wa ukurasa bila kueleweka
           dynamic_changes_paragraph: Mabadiliko katika pembejeo za fomu haipaswi kubadilisha muktadha wa ukurasa kiotomatiki.
           elements_hidden: Vipengele vimefichwa
           elements_hidden_header: Vipengele vilivyofichwa kutoka kwa API ya ufikivu
           elements_hidden_paragraph: Ili kuficha kipengele kutoka kwa teknolojia za usaidizi, tumia sifa ya aria-hidden="true" juu yake.
           heading_on: Kuelekea sehemu muhimu
-          here_link: hapa
           illogical_heading_order: Agizo la kichwa lisilo na mantiki
           illogical_heading_paragraph: Kila ukurasa unapaswa kuwa na mpangilio mzuri wa kichwa unapotumia vipengele vya vichwa vya <h1>, <h2>, <h3>, <h4>, <h5> na <h6>.
           important_sections_heading: Kuelekea sehemu muhimu
           important_sections_paragraph: Ni muhimu sana kwamba kila sehemu muhimu ya ukurasa iwe na kichwa ili kurahisisha kuelewa ni sehemu gani muhimu ziko kwenye ukurasa kwa kuvinjari tu vichwa vyake.
+          learn_more_about_html: Learn more about %{link}
           links_and_buttons: Viungo na Vifungo
           links_and_buttons_paragraph: Vipengee vya nanga (yaani viungo) vinakusudiwa kuunganisha kwa kurasa tofauti au kutia nanga nafasi ndani ya ukurasa. Ikiwa kipengele kinatakiwa k.m. fungua kipengee fulani kilichofichwa kwenye ukurasa huo, unapaswa kutumia <button> kipengele badala yake.
-          see_further_info_html: Angalia maelezo zaidi %{link}
           unique_h1: H1 ya kipekee
           unique_h1_paragraph: Kila ukurasa unapaswa kuwa na kichwa cha kipekee cha H1 juu yake
           use_aria: Tumia ARIA
           use_aria_header: Tumia sifa za ARIA inapowezekana
           use_aria_paragraph: Vipengele vingi vinavyotoa utendakazi shirikishi kwenye tovuti vinahitaji sifa za ARIA ili kuvifanya kufikiwa.
+          wcag_guidelines: Web Content Accessibility Guidelines (WCAG)
         color:
           color_header: Rangi
           description_p1: Tunatoa palette ya Msingi yenye rangi chache ili ubinafsishaji rahisi uwe rahisi. Unaweza kurekebisha paji la Msingi ama katika eneo la Utawala au katika faili ya usanidi ya Tailwind ikiwa unahitaji ubinafsishaji wa hali ya juu zaidi.
