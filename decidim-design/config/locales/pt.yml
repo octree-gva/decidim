@@ -87,26 +87,26 @@ pt:
           adjacent_links_paragraph: Se o mesmo recurso tiver vários links adjacentes apontando para ele, dificulta para esses utilizadores percorrerem a página, pois podem precisar de passar por vários links para chegar ao próximo recurso.
           color_contrast: Contraste de cores
           color_contrast_paragraph: Ao criar interfaces de utilizador ou modificar as cores, garante sempre que não estás a comprometer a acessibilidade com as tuas alterações. Podes usar o Verificador de contraste de cores para assegurar que as tuas cores têm contraste suficiente contra a cor de fundo onde são exibidas.
-          decidim_follows_html: O Decidim segue as <u>Diretrizes de Acessibilidade para Conteúdo na Web (WCAG) 2.1</u>
+          decidim_follows_html: Decidim follows the %{link}
           dynamic_changes_header: Funcionalidade dinâmica altera o contexto da página de forma não intuitiva
           dynamic_changes_paragraph: As alterações nos campos do formulário não devem alterar automaticamente o contexto da página.
           elements_hidden: Elementos escondidos
           elements_hidden_header: Elementos escondidos da API de acessibilidade
           elements_hidden_paragraph: Para esconder um elemento de tecnologias assistivas, usa o atributo aria-hidden="true" nele.
           heading_on: Título em seções importantes
-          here_link: aqui
           illogical_heading_order: Ordem ilógica de títulos
           illogical_heading_paragraph: Cada página deve ter uma ordem lógica de títulos ao usar os elementos <h1>, <h2>, <h3>, <h4>, <h5> e <h6>.
           important_sections_heading: Título em seções importantes
           important_sections_paragraph: É altamente importante que cada seção importante da página tenha um título para facilitar a compreensão das seções importantes da página apenas navegando pelos seus títulos.
+          learn_more_about_html: Learn more about %{link}
           links_and_buttons: Links e Botões
           links_and_buttons_paragraph: Os elementos âncora (ou seja, links) são destinados a ligar para páginas diferentes ou para âncoras dentro da página. Se o elemento for, por exemplo, para abrir algum item escondido na página, deves usar o elemento <button> em vez disso.
-          see_further_info_html: Consulta mais informações %{link}
           unique_h1: H1 único
           unique_h1_paragraph: Cada página deve ter um título H1 único
           use_aria: Usa ARIA
           use_aria_header: Usa atributos ARIA sempre que possível
           use_aria_paragraph: Muitos elementos que fornecem funcionalidade interativa no site requerem atributos ARIA para torná-los acessíveis.
+          wcag_guidelines: Web Content Accessibility Guidelines (WCAG)
         color:
           color_header: Cor
           description_p1: Fornecemos uma paleta base com poucas cores para que personalizações simples sejam fáceis. Podes modificar a paleta base na área de Administração ou no ficheiro de configuração do Tailwind, se precisares de personalizações mais avançadas.
