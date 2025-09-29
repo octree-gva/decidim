@@ -115,6 +115,9 @@ pt:
           one: "%{count} comentário"
           other: "%{count} comentários"
       down_vote_button:
+        label:
+          one: Dislike button. %{count} dislike
+          other: Dislike button. %{count} dislikes
         text: Eu discordo deste comentário
       edit_comment_modal_form:
         close: Fechar
@@ -125,6 +128,9 @@ pt:
           submit: Enviar
         title: Editar o seu comentário
       up_vote_button:
+        label:
+          one: Like button. %{count} like
+          other: Like button. %{count} likes
         text: Eu concordo com este comentário
     events:
       comments:
