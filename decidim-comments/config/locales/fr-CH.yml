@@ -115,6 +115,9 @@ fr-CH:
           one: "crwdns4168:1%{count}crwdne4168:1"
           other: "crwdns4168:5%{count}crwdne4168:5"
       down_vote_button:
+        label:
+          one: crwdns15356:1%{count}crwdne15356:1
+          other: crwdns15356:5%{count}crwdne15356:5
         text: crwdns4170:0crwdne4170:0
       edit_comment_modal_form:
         close: crwdns4172:0crwdne4172:0
@@ -125,6 +128,9 @@ fr-CH:
           submit: crwdns4178:0crwdne4178:0
         title: crwdns4180:0crwdne4180:0
       up_vote_button:
+        label:
+          one: crwdns15358:1%{count}crwdne15358:1
+          other: crwdns15358:5%{count}crwdne15358:5
         text: crwdns4182:0crwdne4182:0
     events:
       comments:
