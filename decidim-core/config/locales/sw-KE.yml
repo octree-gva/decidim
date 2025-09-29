@@ -160,6 +160,13 @@ sw:
       x_seconds:
         one: Sekunde 1
         other: "Sekunde %{count}"
+    widget:
+      label:
+        date: Select date for %{label}
+        time: Select time for %{label}
+      picker:
+        date_button: Open calendar picker for %{label}
+        time_button: Open time picker for %{label}
   decidim:
     accessibility:
       external_link: Kiungo cha nje
@@ -991,7 +998,12 @@ sw:
       title: Ni beji gani?
     group_admins:
       actions:
-        are_you_sure: Je, una uhakika? Hii haitamwondoa mshiriki kwenye kikundi.
+        confirm_modal:
+          ok_add: Add an administrator
+          ok_remove: Remove the administrator
+          title_add: Confirm the new administrator
+          title_remove: Remove the administrator
+        confirm_remove_from_admin: Are you sure you want to remove the administrator from this group?
         demote_admin: Ondoa admin
       demote:
         error: Kulikuwa na tatizo la kumwondoa mshiriki huyu kutoka kwenye orodha ya wasimamizi.
@@ -1021,7 +1033,11 @@ sw:
         error: Kulikuwa na tatizo la kukubali ombi hili la kujiunga.
         success: Ombi la kujiunga limekubaliwa.
       actions:
-        are_you_sure: Je, una uhakika?
+        confirm_modal:
+          ok_remove: Remove the member
+          title_remove: Remove the member
+        confirm_promote_to_admin: Are you sure you want to add this user as an administrator?
+        confirm_remove_from_group: Are you sure you want to remove the user from this group?
         promote_to_admin: Fanya admin
         remove_from_group: Ondoa mshiriki
       index:
@@ -1259,11 +1275,12 @@ sw:
         main_image: Picha kuu
     newsletters:
       unsubscribe:
-        check_subscription: Ikiwa ungependa kubadilisha mapendeleo yako, unaweza kufanya hivyo katika <a href="%{link}" target="_blank">ukurasa wa usanidi</a>.
+        check_subscription_html: If you'd like to start receiving them again, you can re-enable your subscription anytime from the <a href="%{link}" target="_blank">settings page</a>.
         error: Kulikuwa na tatizo la kujiondoa.
+        subscription_preferences: We have updated your subscription preferences, and you will no longer receive newsletters from %{organization_name}.
         success: Umefanikiwa kujiondoa.
         token_error: Kiungo kimeisha muda wake.
-        unsubscribe: Jiondoe
+        unsubscribe: Unsubscribe from newsletter
     newsletters_opt_in:
       unauthorized: Samahani, kiungo hiki hakipatikani tena.
       update:
@@ -1271,7 +1288,7 @@ sw:
         success: Mipangilio ya jarida imesasishwa.
     newsletters_opt_in_mailer:
       notify:
-        body_1: Usindikaji wa data ya kibinafsi na ulinzi wake unazidi kuwa muhimu kwa sisi sote. Kwa kutumia Kanuni mpya ya Jumla ya Ulinzi wa Data (GDPR) ya Mei 25, 2018, watu binafsi wana udhibiti bora wa data zao za kibinafsi. Kwa sababu hii tunahitaji "Sawa" yako ili kuendelea kutuma taarifa muhimu kuhusu shughuli za %{organization_name}.
+        body_1: The processing of personal data and its protection is becoming increasingly important for all of us. With the General Data Protection Regulation (GDPR) of May 25, 2018, individuals have better control over their personal data. For this reason we need your "OK" to continue sending relevant information about the activities of the %{organization_name}.
         body_2: 'Unawezaje kutupa kibali chako? Bonyeza tu kitufe kifuatacho:'
         body_3: Kwa idhini hii utaweza kuendelea kupokea taarifa kuhusu huduma za jukwaa. Ikiwa, kinyume chake, hatutapokea uthibitisho mzuri kwa upande wako tutaacha kukutumia ujumbe wetu. Ukithibitisha kuwa ungependa kuendelea kufahamishwa, utakuwa na chaguo la kughairi wakati wowote.
         button: Ndiyo, nataka kuendelea kupokea taarifa muhimu
@@ -1492,6 +1509,7 @@ sw:
     searches:
       filters:
         jump_to: 'Rukia kwa:'
+        resource: "%{label} among %{collection}"
         search: Tafuta
         state:
           active: Inayotumika
@@ -1514,6 +1532,7 @@ sw:
         close_modal: Funga modali
         ok: SAWA
         title: Thibitisha
+      confirm_unload: This page contains unsaved changes. Are you sure you want to leave this page?
       embed:
         title: Maudhui ya video iliyopachikwa
       extended_navigation_bar:
@@ -1978,14 +1997,17 @@ sw:
         edit: Hariri
       footer:
         cc_by_license: Leseni ya Creative Commons
+        current_organization_img: "%{organization} (Back home)"
         data_consent_settings: Mipangilio ya kuki
         decidim_logo: Nembo ya Decidim
         decidim_title: Decidim
         download_open_data: Pakua faili za Fungua Data
+        help: Help
         log_in: Ingia
         made_with_open_source: Tovuti iliyotengenezwa kwa <a target="_blank" href="https://github.com/decidim/decidim">programu isiyolipishwa</a>.
         resources: Rasilimali
         sign_up: Fungua akaunti
+        social_media: Social media
         terms_of_service: Masharti ya Huduma
       header:
         log_in: Ingia
@@ -2025,6 +2047,8 @@ sw:
         profile: Akaunti yangu
         public_profile: Wasifu wangu wa umma
         title: Viungo vya wasifu
+        unread_conversations: You have unread conversations
+        unread_notifications: You have unread notifications
       user_profile:
         account: Akaunti
         authorizations: Uidhinishaji
