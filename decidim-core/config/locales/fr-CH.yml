@@ -160,6 +160,13 @@ fr-CH:
       x_seconds:
         one: crwdns5186:1crwdne5186:1
         other: "crwdns5186:5%{count}crwdne5186:5"
+    widget:
+      label:
+        date: crwdns15308:0%{label}crwdne15308:0
+        time: crwdns15310:0%{label}crwdne15310:0
+      picker:
+        date_button: crwdns15312:0%{label}crwdne15312:0
+        time_button: crwdns15314:0%{label}crwdne15314:0
   decidim:
     accessibility:
       external_link: crwdns5188:0crwdne5188:0
@@ -975,7 +982,12 @@ fr-CH:
       title: crwdns6302:0crwdne6302:0
     group_admins:
       actions:
-        are_you_sure: crwdns6304:0crwdne6304:0
+        confirm_modal:
+          ok_add: crwdns15316:0crwdne15316:0
+          ok_remove: crwdns15318:0crwdne15318:0
+          title_add: crwdns15320:0crwdne15320:0
+          title_remove: crwdns15322:0crwdne15322:0
+        confirm_remove_from_admin: crwdns15324:0crwdne15324:0
         demote_admin: crwdns6306:0crwdne6306:0
       demote:
         error: crwdns6308:0crwdne6308:0
@@ -1005,7 +1017,11 @@ fr-CH:
         error: crwdns6340:0crwdne6340:0
         success: crwdns6342:0crwdne6342:0
       actions:
-        are_you_sure: crwdns6344:0crwdne6344:0
+        confirm_modal:
+          ok_remove: crwdns15326:0crwdne15326:0
+          title_remove: crwdns15328:0crwdne15328:0
+        confirm_promote_to_admin: crwdns15330:0crwdne15330:0
+        confirm_remove_from_group: crwdns15332:0crwdne15332:0
         promote_to_admin: crwdns6346:0crwdne6346:0
         remove_from_group: crwdns6348:0crwdne6348:0
       index:
@@ -1243,11 +1259,12 @@ fr-CH:
         main_image: crwdns6666:0crwdne6666:0
     newsletters:
       unsubscribe:
-        check_subscription: crwdns6668:0%{link}crwdne6668:0
+        check_subscription_html: crwdns15334:0%{link}crwdne15334:0
         error: crwdns6670:0crwdne6670:0
+        subscription_preferences: crwdns15336:0%{organization_name}crwdne15336:0
         success: crwdns6672:0crwdne6672:0
         token_error: crwdns6674:0crwdne6674:0
-        unsubscribe: crwdns6676:0crwdne6676:0
+        unsubscribe: crwdns15338:0crwdne15338:0
     newsletters_opt_in:
       unauthorized: crwdns6678:0crwdne6678:0
       update:
@@ -1255,7 +1272,7 @@ fr-CH:
         success: crwdns6682:0crwdne6682:0
     newsletters_opt_in_mailer:
       notify:
-        body_1: crwdns6684:0%{organization_name}crwdne6684:0
+        body_1: crwdns15340:0%{organization_name}crwdne15340:0
         body_2: 'crwdns6686:0crwdne6686:0'
         body_3: crwdns6688:0crwdne6688:0
         button: crwdns6690:0crwdne6690:0
@@ -1476,6 +1493,7 @@ fr-CH:
     searches:
       filters:
         jump_to: 'crwdns7006:0crwdne7006:0'
+        resource: "crwdns15342:0%{label}crwdnd15342:0%{collection}crwdne15342:0"
         search: crwdns7008:0crwdne7008:0
         state:
           active: crwdns7010:0crwdne7010:0
@@ -1498,6 +1516,7 @@ fr-CH:
         close_modal: crwdns7032:0crwdne7032:0
         ok: crwdns7034:0crwdne7034:0
         title: crwdns7036:0crwdne7036:0
+      confirm_unload: crwdns15344:0crwdne15344:0
       embed:
         title: crwdns7038:0crwdne7038:0
       extended_navigation_bar:
@@ -1961,14 +1980,17 @@ fr-CH:
         edit: crwdns7704:0crwdne7704:0
       footer:
         cc_by_license: crwdns7706:0crwdne7706:0
+        current_organization_img: "crwdns15346:0%{organization}crwdne15346:0"
         data_consent_settings: crwdns7708:0crwdne7708:0
         decidim_logo: crwdns7710:0crwdne7710:0
         decidim_title: crwdns7712:0crwdne7712:0
         download_open_data: crwdns7714:0crwdne7714:0
+        help: crwdns15348:0crwdne15348:0
         log_in: crwdns7716:0crwdne7716:0
         made_with_open_source: crwdns7718:0crwdne7718:0
         resources: crwdns7720:0crwdne7720:0
         sign_up: crwdns7722:0crwdne7722:0
+        social_media: crwdns15350:0crwdne15350:0
         terms_of_service: crwdns7724:0crwdne7724:0
       header:
         log_in: crwdns7726:0crwdne7726:0
@@ -2008,6 +2030,8 @@ fr-CH:
         profile: crwdns7776:0crwdne7776:0
         public_profile: crwdns7778:0crwdne7778:0
         title: crwdns7780:0crwdne7780:0
+        unread_conversations: crwdns15352:0crwdne15352:0
+        unread_notifications: crwdns15354:0crwdne15354:0
       user_profile:
         account: crwdns7782:0crwdne7782:0
         authorizations: crwdns7784:0crwdne7784:0
