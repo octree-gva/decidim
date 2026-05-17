@@ -10,6 +10,14 @@ footer {
         @apply text-white;
       }
     }
+    
+    &__text {
+      @apply text-sm text-white prose;
+
+      &__bold {
+        @apply font-bold;
+      }
+    }
 
     &__down {
       @apply border-t border-black flex flex-wrap items-center gap-6 container py-6 text-white;
